@@ -1,0 +1,18 @@
+{
+  "id": "florada",
+  "name": {
+    "pt-br": "Florada",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "1d4 dano/turno. Não reduz VIT a 0. Se VIT = 1, efeito TRAVADO.",
+    "en-us": ""
+  },
+  "type": "passivo",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "doenca"
+}

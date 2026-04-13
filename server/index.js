@@ -75,6 +75,31 @@ app.post('/api/new-code', (_req, res) => {
   res.json({ sessionCode })
 })
 
+app.post('/api/save-entity', (req, res) => {
+  const { folder, id, data } = req.body
+  if (!folder || !id || !data) {
+    return res.status(400).json({ error: 'Missing folder, id, or data' })
+  }
+  
+  // Validate path traversal (only allow known folders)
+  const allowedFolders = ['personalities', 'classes', 'effects', 'auras', 'species', 'tendencies', 'environments', 'modifications', 'heroes', 'npcs', 'creatures', 'items', 'abilities']
+  
+  if (!allowedFolders.includes(folder)) {
+    return res.status(400).json({ error: 'Invalid folder' })
+  }
+  
+  try {
+    const dir = path.join(ROOT_DIR, 'src', 'data', folder)
+    fs.mkdirSync(dir, { recursive: true })
+    const filePath = path.join(dir, `${id}.json`)
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf-8')
+    res.json({ success: true, path: filePath })
+  } catch (e) {
+    console.error('[Server] Erro ao salvar JSON:', e.message)
+    res.status(500).json({ error: e.message })
+  }
+})
+
 // ── WebSocket ─────────────────────────────────────────────────────────────────
 
 wss.on('connection', (ws) => {

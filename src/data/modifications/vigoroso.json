@@ -1,0 +1,17 @@
+{
+  "id": "vigoroso",
+  "name": {
+    "pt-br": "Vigoroso",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "1x/dia, teste 1d20 > 18 para remover efeito psicológico nível 1-2 permanentemente.",
+    "en-us": ""
+  },
+  "category": "essencial",
+  "applicableTo": [
+    "vestimenta",
+    "item"
+  ],
+  "attribute_modifiers": {}
+}

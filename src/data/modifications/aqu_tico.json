@@ -1,0 +1,16 @@
+{
+  "id": "aqu_tico",
+  "name": {
+    "pt-br": "Aquático",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Ações adquirem elemento Água. Pode causar Afogamento se 1d20 > 1d20+FRC alvo.",
+    "en-us": ""
+  },
+  "category": "elemental",
+  "applicableTo": [
+    "arma"
+  ],
+  "attribute_modifiers": {}
+}

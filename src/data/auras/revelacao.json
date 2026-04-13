@@ -1,0 +1,19 @@
+{
+  "id": "revelacao",
+  "name": {
+    "pt-br": "Aura da Revelação",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Revela verdades ocultas. +3 INT/PRE investigação. Usuário: -1 RES temporário.",
+    "en-us": ""
+  },
+  "effectDetails": {
+    "pt-br": "+3 investigação / -1 RES",
+    "en-us": ""
+  },
+  "activation": {
+    "pt-br": "",
+    "en-us": ""
+  }
+}

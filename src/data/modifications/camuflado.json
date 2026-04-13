@@ -1,0 +1,17 @@
+{
+  "id": "camuflado",
+  "name": {
+    "pt-br": "Camuflado",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "+1 no dado em testes de Furtividade.",
+    "en-us": ""
+  },
+  "category": "essencial",
+  "applicableTo": [
+    "vestimenta",
+    "item"
+  ],
+  "attribute_modifiers": {}
+}

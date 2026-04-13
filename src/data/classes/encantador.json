@@ -1,0 +1,31 @@
+{
+  "id": "encantador",
+  "name": {
+    "pt-br": "Encantador",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "gravura_rúnica",
+  "legacyAbilityName": {
+    "pt-br": "Gravura Rúnica",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1,
+    "crm": 1.5,
+    "frc": 1,
+    "int": 1,
+    "res": 1,
+    "pre": 1,
+    "enr": 1.2
+  },
+  "selectableAbilities": [
+    "reforço_mágico",
+    "amaldiçoar",
+    "sintonia"
+  ]
+}

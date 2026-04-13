@@ -1,0 +1,31 @@
+{
+  "id": "atirador",
+  "name": {
+    "pt-br": "Atirador",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "tiro_ao_alvo",
+  "legacyAbilityName": {
+    "pt-br": "Tiro ao Alvo",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1.2,
+    "crm": 1,
+    "frc": 1,
+    "int": 1,
+    "res": 1,
+    "pre": 1.5,
+    "enr": 1
+  },
+  "selectableAbilities": [
+    "concentração_resilida",
+    "reforço_mágico",
+    "acelerar"
+  ]
+}

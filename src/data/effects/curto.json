@@ -1,0 +1,18 @@
+{
+  "id": "curto",
+  "name": {
+    "pt-br": "Curto",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Efeito de dano elétrico contínuo.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "condicao"
+}

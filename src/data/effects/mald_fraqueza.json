@@ -1,0 +1,18 @@
+{
+  "id": "mald_fraqueza",
+  "name": {
+    "pt-br": "Fraqueza (Maldição)",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Se FRC > FRC do alvo, perde -2 FRC -1 DEX.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "maldicao"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "domador",
+  "name": {
+    "pt-br": "Domador",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "contrato_de_sangue",
+  "legacyAbilityName": {
+    "pt-br": "Contrato de Sangue",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1.2,
+    "crm": 1.5,
+    "frc": 1,
+    "int": 1,
+    "res": 1,
+    "pre": 1,
+    "enr": 1
+  },
+  "selectableAbilities": [
+    "contrato",
+    "sintonia",
+    "marca"
+  ]
+}

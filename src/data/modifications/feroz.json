@@ -1,0 +1,16 @@
+{
+  "id": "feroz",
+  "name": {
+    "pt-br": "Feroz",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Após crítico, próximo ataque recebe +1 no dado de dano.",
+    "en-us": ""
+  },
+  "category": "ofensiva",
+  "applicableTo": [
+    "arma"
+  ],
+  "attribute_modifiers": {}
+}

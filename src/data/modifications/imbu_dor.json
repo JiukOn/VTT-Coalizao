@@ -1,0 +1,17 @@
+{
+  "id": "imbu_dor",
+  "name": {
+    "pt-br": "Imbuídor",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Gasta 1 ENR temporariamente por turno para +1 dano.",
+    "en-us": ""
+  },
+  "category": "essencial",
+  "applicableTo": [
+    "arma",
+    "item"
+  ],
+  "attribute_modifiers": {}
+}

@@ -1,0 +1,17 @@
+{
+  "id": "pesado",
+  "name": {
+    "pt-br": "Pesado",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "+1 dado de ataque, -1 dado de esquiva.",
+    "en-us": ""
+  },
+  "category": "qualidade",
+  "applicableTo": [
+    "arma",
+    "vestimenta"
+  ],
+  "attribute_modifiers": {}
+}

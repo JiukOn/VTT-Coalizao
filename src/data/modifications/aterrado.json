@@ -1,0 +1,16 @@
+{
+  "id": "aterrado",
+  "name": {
+    "pt-br": "Aterrado",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Resistência Elemental ao Elétrico no local da vestimenta.",
+    "en-us": ""
+  },
+  "category": "defensiva",
+  "applicableTo": [
+    "vestimenta"
+  ],
+  "attribute_modifiers": {}
+}

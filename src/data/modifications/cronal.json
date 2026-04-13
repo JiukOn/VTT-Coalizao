@@ -1,0 +1,16 @@
+{
+  "id": "cronal",
+  "name": {
+    "pt-br": "Cronal",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Resistência Elemental ao Tempo no local da vestimenta.",
+    "en-us": ""
+  },
+  "category": "defensiva",
+  "applicableTo": [
+    "vestimenta"
+  ],
+  "attribute_modifiers": {}
+}

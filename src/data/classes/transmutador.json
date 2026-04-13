@@ -1,0 +1,31 @@
+{
+  "id": "transmutador",
+  "name": {
+    "pt-br": "Transmutador",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "incorporação_irrestrita",
+  "legacyAbilityName": {
+    "pt-br": "Incorporação Irrestrita",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1,
+    "crm": 1,
+    "frc": 1,
+    "int": 1.2,
+    "res": 1,
+    "pre": 1,
+    "enr": 1.5
+  },
+  "selectableAbilities": [
+    "fusão_de_alma",
+    "vitralização",
+    "molliatur"
+  ]
+}

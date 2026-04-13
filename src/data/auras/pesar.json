@@ -1,0 +1,19 @@
+{
+  "id": "pesar",
+  "name": {
+    "pt-br": "Aura do Pesar",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Emana tristeza. Causa Medo e fortalece traumas. Teste: 1d20 < RES/2 do alvo.",
+    "en-us": ""
+  },
+  "effectDetails": {
+    "pt-br": "Medo + Traumas",
+    "en-us": ""
+  },
+  "activation": {
+    "pt-br": "",
+    "en-us": ""
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "caos",
+  "name": {
+    "pt-br": "Aura do Caos",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Força imprevisível. Desvantagem em todos os testes D20 no alcance. Usuário: +2 em ações. Magias gastam +1 ENR.",
+    "en-us": ""
+  },
+  "effectDetails": {
+    "pt-br": "Desvantagem geral / +2 usuário",
+    "en-us": ""
+  },
+  "activation": {
+    "pt-br": "",
+    "en-us": ""
+  }
+}

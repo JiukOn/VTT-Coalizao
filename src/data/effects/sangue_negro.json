@@ -1,0 +1,18 @@
+{
+  "id": "sangue_negro",
+  "name": {
+    "pt-br": "Sangue Negro",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Se 1d4 <= 2, -1 DEX -1 FRC -1 PRE. Se VIT <= 0, efeito MORTO-VIVO.",
+    "en-us": ""
+  },
+  "type": "passivo",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "doenca"
+}

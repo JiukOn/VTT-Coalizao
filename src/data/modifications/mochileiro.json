@@ -1,0 +1,16 @@
+{
+  "id": "mochileiro",
+  "name": {
+    "pt-br": "Mochileiro",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Dado de vantagem em movimentação longa.",
+    "en-us": ""
+  },
+  "category": "qualidade",
+  "applicableTo": [
+    "vestimenta"
+  ],
+  "attribute_modifiers": {}
+}

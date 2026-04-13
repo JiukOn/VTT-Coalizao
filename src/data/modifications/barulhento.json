@@ -1,0 +1,17 @@
+{
+  "id": "barulhento",
+  "name": {
+    "pt-br": "Barulhento",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Emite sons que podem causar confusão se 1d20 > 1d20+RES alvo.",
+    "en-us": ""
+  },
+  "category": "essencial",
+  "applicableTo": [
+    "arma",
+    "item"
+  ],
+  "attribute_modifiers": {}
+}

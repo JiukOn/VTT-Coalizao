@@ -1,0 +1,19 @@
+{
+  "id": "desordem",
+  "name": {
+    "pt-br": "Aura da Desordem",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Irradia imprevisibilidade. Causa Confusão em todos no alcance. Teste: 1d20 < RES/2 do alvo.",
+    "en-us": ""
+  },
+  "effectDetails": {
+    "pt-br": "Confusão",
+    "en-us": ""
+  },
+  "activation": {
+    "pt-br": "",
+    "en-us": ""
+  }
+}

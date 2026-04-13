@@ -1,0 +1,16 @@
+{
+  "id": "perceptivo",
+  "name": {
+    "pt-br": "Perceptivo",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "1x/combate, teste PRE > 10+DEX alvo para ignorar defesa.",
+    "en-us": ""
+  },
+  "category": "ofensiva",
+  "applicableTo": [
+    "arma"
+  ],
+  "attribute_modifiers": {}
+}

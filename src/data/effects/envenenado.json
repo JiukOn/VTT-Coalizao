@@ -1,0 +1,18 @@
+{
+  "id": "envenenado",
+  "name": {
+    "pt-br": "Envenenado",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Recebe dano/efeito do veneno utilizado (consultar tabela).",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "condicao"
+}

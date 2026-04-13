@@ -1,0 +1,31 @@
+{
+  "id": "florista",
+  "name": {
+    "pt-br": "Florista",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "aroma",
+  "legacyAbilityName": {
+    "pt-br": "Aroma",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1.2,
+    "dex": 1,
+    "crm": 1.2,
+    "frc": 1,
+    "int": 1,
+    "res": 1,
+    "pre": 1,
+    "enr": 1
+  },
+  "selectableAbilities": [
+    "florescer",
+    "barreira_de_espinhos",
+    "agricultura_rápida"
+  ]
+}

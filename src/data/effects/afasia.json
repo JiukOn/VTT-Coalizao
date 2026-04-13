@@ -1,0 +1,18 @@
+{
+  "id": "afasia",
+  "name": {
+    "pt-br": "Afasia",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "-2 CRM ao falar. Se 1d4 <= 2, incapaz de compreender/entonar palavras.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 1d20 + 5",
+    "en-us": ""
+  },
+  "category": "psicologico_ativo"
+}

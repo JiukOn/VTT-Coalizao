@@ -1,0 +1,18 @@
+{
+  "id": "arritmia",
+  "name": {
+    "pt-br": "Arritmia",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Em alto esforço, se 1d4 <= 2, -1 DEX -1 VIT temporariamente.",
+    "en-us": ""
+  },
+  "type": "passivo",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "doenca"
+}

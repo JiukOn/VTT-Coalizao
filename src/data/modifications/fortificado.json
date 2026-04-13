@@ -1,0 +1,17 @@
+{
+  "id": "fortificado",
+  "name": {
+    "pt-br": "Fortificado",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "+1 no dado em testes de Defesa.",
+    "en-us": ""
+  },
+  "category": "defensiva",
+  "applicableTo": [
+    "vestimenta",
+    "escudo"
+  ],
+  "attribute_modifiers": {}
+}

@@ -1,0 +1,18 @@
+{
+  "id": "sangralisia",
+  "name": {
+    "pt-br": "Sangralisia",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Com Sangramento ativo, teste 1d4 >= 2 ou incapaz de se movimentar.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "maldicao"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "samurai_espiritual",
+  "name": {
+    "pt-br": "Samurai Espiritual",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "coragem_invicta",
+  "legacyAbilityName": {
+    "pt-br": "Coragem Invicta",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1,
+    "crm": 1,
+    "frc": 1.5,
+    "int": 1,
+    "res": 1.2,
+    "pre": 1,
+    "enr": 1
+  },
+  "selectableAbilities": [
+    "espírito_inquebrantável",
+    "corte_preciso",
+    "concentração_resilida"
+  ]
+}

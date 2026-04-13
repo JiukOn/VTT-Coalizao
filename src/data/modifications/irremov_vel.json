@@ -1,0 +1,18 @@
+{
+  "id": "irremov_vel",
+  "name": {
+    "pt-br": "Irremovível",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Item não pode ser removido após equipado.",
+    "en-us": ""
+  },
+  "category": "penalidade",
+  "applicableTo": [
+    "arma",
+    "vestimenta",
+    "item"
+  ],
+  "attribute_modifiers": {}
+}

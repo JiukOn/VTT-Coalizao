@@ -939,6 +939,35 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   5. Criar relay server para conexões externas (Fase 7B)
   6. Deploy do relay no tier gratuito de hosting
   7. Testes de stress e otimização
+  
+
+────────────────────────────────────────────────────────────────────────────────
+  5.19 ESTRUTURA DE DADOS UNIFICADA (JSON / I18N)
+────────────────────────────────────────────────────────────────────────────────
+
+  Para facilitar a expansão, modding e internacionalização (I18N), TUDO no VTT
+  deve ser armazenado em arquivos JSON individuais separados por pastas, com as
+  informações duplicadas internamente nas chaves "pt-br" e "en-us".
+
+  REQUISITOS POR ENTIDADE:
+  • Personalidades: Nome, Descrição
+  • Classes: Nome, Descrição, Habilidade Legado, Multiplicadores
+  • Efeitos: Nome, Descrição, Tipo (ativo/passivo), Duração Temporária (turnos; usar -1 se permanente), Opções de Cura/Desativação, Categoria (psicológico, doença, ferida, etc.)
+  • Auras: Nome, Descrição, Momentos de Ativação Forçada
+  • Espécies: Nome, Descrição, Multiplicadores da espécie
+  • Modificações: Nome, Descrição, Atributos modificados (positivo ou negativo)
+  • Tendências: Nome, Descrição de Uso
+  • Ambientes (Environments): Nome, Descrição
+  • NPCs: Nome, Descrição, Personalidade (não há mais relação/tipo base), Possível Benefício, Possível Malefício, Ficha
+  • Criaturas: Nome, Descrição, Núcleo de Energia (pequeno +1, médio +2, grande +3, colossal +4), Tamanho (minúsculo, pequeno, médio, grande, colossal, mundial), Elementos (lista contendo referências aos elementos), Ficha
+  • Elementos: Nome, Descrição (Bancos de dados novos)
+  • Domínios: Nome, Descrição, Líder, Localização Principal
+
+  PERSISTÊNCIA PELO HOST:
+  Sempre que o Mestre (host) criar ou editar qualquer coisa internamente (personagem,
+  mapa, ambiente, item, etc.), o frontend deve sinalizar ao servidor local (Node.js)
+  para salvar/sobrescrever o respectivo arquivo `.json` na pasta de dados subjacente
+  (`src/data/herois`, `src/data/npcs`, etc.).
 
 
 ================================================================================
@@ -1190,6 +1219,14 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   │    - Efeitos mecânicos aplicados (multiplicadores, atributos)       │
   │    - EvolutionModal.jsx integrado em CharacterList                  │
   │ Build: 2155 módulos | 309ms | 0 erros                              │
+  └─────────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │ FASE 10 — ESTRUTURAS I18N E PERSISTÊNCIA DIRETA EM JSON 🔲 PENDENTE │
+  ├─────────────────────────────────────────────────────────────────────┤
+  │ 🔲 Refatorar todos os bancos para usar 1 JSON por entrada.          │
+  │ 🔲 Inserir chaves pt-br e en-us dentro de todos os JSONs de dados.  │
+  │ 🔲 Adicionar Endpoint no Node.js para auto-salvar criações nos     │
+  │    diretórios físicos `src/data/*` quando enviadas via web.        │
   └─────────────────────────────────────────────────────────────────────┘
 
 

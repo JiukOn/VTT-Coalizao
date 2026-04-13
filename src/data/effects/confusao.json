@@ -1,0 +1,18 @@
+{
+  "id": "confusao",
+  "name": {
+    "pt-br": "Confusão",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Dado de prejuízo para acertar. Se <= 7, 1d4 de dano. Incapaz de compreender palavras.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 1d20 + 5",
+    "en-us": ""
+  },
+  "category": "psicologico_ativo"
+}

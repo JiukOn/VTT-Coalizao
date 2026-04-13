@@ -1,0 +1,31 @@
+{
+  "id": "monge",
+  "name": {
+    "pt-br": "Monge",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "corpo_endurecido",
+  "legacyAbilityName": {
+    "pt-br": "Corpo Endurecido",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1.2,
+    "crm": 1,
+    "frc": 1.2,
+    "int": 1,
+    "res": 1.5,
+    "pre": 1,
+    "enr": 1
+  },
+  "selectableAbilities": [
+    "berserk",
+    "concentração_resilida",
+    "barreira_mental"
+  ]
+}

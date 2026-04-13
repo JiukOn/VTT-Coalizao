@@ -13,7 +13,7 @@ import { BASE_NPCS } from '../data/npcs/index.js'
 import { BASE_HEROES } from '../data/heroes/index.js'
 
 const SEED_VERSION_KEY = 'vtp-seed-version'
-const CURRENT_SEED_VERSION = '2.0.0' // Bump to re-seed with updated data
+const CURRENT_SEED_VERSION = '2.0.1' // Bump to re-seed with updated data
 
 /** Base sessions extracted from campaign reference documents */
 const BASE_SESSIONS = [

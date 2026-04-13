@@ -1,0 +1,31 @@
+{
+  "id": "tecnólogo",
+  "name": {
+    "pt-br": "Tecnólogo",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "invenção",
+  "legacyAbilityName": {
+    "pt-br": "Invenção",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1,
+    "crm": 1,
+    "frc": 1,
+    "int": 1.5,
+    "res": 1,
+    "pre": 1.2,
+    "enr": 1
+  },
+  "selectableAbilities": [
+    "manutenção",
+    "selo_energético",
+    "telecinese"
+  ]
+}

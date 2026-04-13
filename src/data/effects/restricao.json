@@ -1,0 +1,18 @@
+{
+  "id": "restricao",
+  "name": {
+    "pt-br": "Restrição",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Dado de prejuízo em qualquer uso de habilidade.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "maldicao"
+}

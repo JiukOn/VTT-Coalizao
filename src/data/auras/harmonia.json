@@ -1,0 +1,19 @@
+{
+  "id": "harmonia",
+  "name": {
+    "pt-br": "Aura da Harmonia",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Paz e equilíbrio. Reduz hostilidade. +3 CRM social. -1 ataques iniciais na área.",
+    "en-us": ""
+  },
+  "effectDetails": {
+    "pt-br": "+3 CRM / -1 ataques",
+    "en-us": ""
+  },
+  "activation": {
+    "pt-br": "",
+    "en-us": ""
+  }
+}

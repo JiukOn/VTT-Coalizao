@@ -1,0 +1,18 @@
+{
+  "id": "morto_vivo",
+  "name": {
+    "pt-br": "Morto-Vivo",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Se 1d4 <= 2, 1 de dano. Mantém vivo 2 turnos após VIT = 0.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "condicao"
+}

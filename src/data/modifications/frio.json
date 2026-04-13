@@ -1,0 +1,16 @@
+{
+  "id": "frio",
+  "name": {
+    "pt-br": "Frio",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Ações adquirem elemento Gelo. Pode causar Congelamento se 1d20 > 1d20+FRC alvo.",
+    "en-us": ""
+  },
+  "category": "elemental",
+  "applicableTo": [
+    "arma"
+  ],
+  "attribute_modifiers": {}
+}

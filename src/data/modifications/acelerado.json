@@ -1,0 +1,16 @@
+{
+  "id": "acelerado",
+  "name": {
+    "pt-br": "Acelerado",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Dado de vantagem em movimentação curta.",
+    "en-us": ""
+  },
+  "category": "qualidade",
+  "applicableTo": [
+    "vestimenta"
+  ],
+  "attribute_modifiers": {}
+}

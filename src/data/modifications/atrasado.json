@@ -1,0 +1,16 @@
+{
+  "id": "atrasado",
+  "name": {
+    "pt-br": "Atrasado",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Ações adquirem elemento Tempo. Pode causar Rejuvelhecer se 1d20 > 1d20+VIT alvo.",
+    "en-us": ""
+  },
+  "category": "elemental",
+  "applicableTo": [
+    "arma"
+  ],
+  "attribute_modifiers": {}
+}

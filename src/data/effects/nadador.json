@@ -1,0 +1,18 @@
+{
+  "id": "nadador",
+  "name": {
+    "pt-br": "Nadador",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Perde a capacidade de nadar.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "maldicao"
+}

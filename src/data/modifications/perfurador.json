@@ -1,0 +1,16 @@
+{
+  "id": "perfurador",
+  "name": {
+    "pt-br": "Perfurador",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "+1 dano perfurante.",
+    "en-us": ""
+  },
+  "category": "ofensiva",
+  "applicableTo": [
+    "arma"
+  ],
+  "attribute_modifiers": {}
+}

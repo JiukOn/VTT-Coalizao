@@ -1,0 +1,18 @@
+{
+  "id": "sangramento",
+  "name": {
+    "pt-br": "Sangramento",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "1 de dano por turno.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "condicao"
+}

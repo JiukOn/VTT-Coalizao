@@ -1,0 +1,18 @@
+{
+  "id": "envelhecer",
+  "name": {
+    "pt-br": "Envelhecer",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Efeito único de envelhecimento.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "efeito_unico"
+}

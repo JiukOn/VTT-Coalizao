@@ -1,0 +1,19 @@
+{
+  "id": "ocultacao",
+  "name": {
+    "pt-br": "Aura da Ocultação",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Mistura-se ao ambiente. -3 PRE de todos no alcance. +2 Furtividade para o usuário.",
+    "en-us": ""
+  },
+  "effectDetails": {
+    "pt-br": "-3 PRE / +2 Furtividade",
+    "en-us": ""
+  },
+  "activation": {
+    "pt-br": "",
+    "en-us": ""
+  }
+}

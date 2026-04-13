@@ -1,0 +1,31 @@
+{
+  "id": "sombra",
+  "name": {
+    "pt-br": "Sombra",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "passos_silenciosos",
+  "legacyAbilityName": {
+    "pt-br": "Passos Silenciosos",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1.5,
+    "crm": 1,
+    "frc": 1,
+    "int": 1,
+    "res": 1,
+    "pre": 1.2,
+    "enr": 1
+  },
+  "selectableAbilities": [
+    "rastejo_sombrio",
+    "nuvem_de_fumaça",
+    "acordo_silencioso"
+  ]
+}

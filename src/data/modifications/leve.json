@@ -1,0 +1,16 @@
+{
+  "id": "leve",
+  "name": {
+    "pt-br": "Leve",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "+1 no dado em testes de ataque com PRE.",
+    "en-us": ""
+  },
+  "category": "qualidade",
+  "applicableTo": [
+    "arma"
+  ],
+  "attribute_modifiers": {}
+}

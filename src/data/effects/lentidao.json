@@ -1,0 +1,18 @@
+{
+  "id": "lentidao",
+  "name": {
+    "pt-br": "Lentidão",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Dado de prejuízo para ações de movimento.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "condicao"
+}

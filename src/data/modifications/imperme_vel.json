@@ -1,0 +1,16 @@
+{
+  "id": "imperme_vel",
+  "name": {
+    "pt-br": "Impermeável",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Resistência Elemental à Água no local da vestimenta.",
+    "en-us": ""
+  },
+  "category": "defensiva",
+  "applicableTo": [
+    "vestimenta"
+  ],
+  "attribute_modifiers": {}
+}

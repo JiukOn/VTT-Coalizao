@@ -1,0 +1,17 @@
+{
+  "id": "blindado",
+  "name": {
+    "pt-br": "Blindado",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Diminui em 1 o dano recebido.",
+    "en-us": ""
+  },
+  "category": "defensiva",
+  "applicableTo": [
+    "vestimenta",
+    "escudo"
+  ],
+  "attribute_modifiers": {}
+}

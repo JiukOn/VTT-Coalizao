@@ -1,0 +1,16 @@
+{
+  "id": "sint_tico",
+  "name": {
+    "pt-br": "Sintético",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Resistência Elemental à Madeira no local da vestimenta.",
+    "en-us": ""
+  },
+  "category": "defensiva",
+  "applicableTo": [
+    "vestimenta"
+  ],
+  "attribute_modifiers": {}
+}

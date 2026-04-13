@@ -1,0 +1,31 @@
+{
+  "id": "sombra_leal",
+  "name": {
+    "pt-br": "Sombra Leal",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "rastejo_sombrio",
+  "legacyAbilityName": {
+    "pt-br": "Rastejo Sombrio",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1.5,
+    "crm": 1,
+    "frc": 1,
+    "int": 1,
+    "res": 1.2,
+    "pre": 1,
+    "enr": 1
+  },
+  "selectableAbilities": [
+    "passos_silenciosos",
+    "acordo_silencioso",
+    "nuvem_de_fumaça"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "desgaste",
+  "name": {
+    "pt-br": "Desgaste",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "-1 no dado ao usar o item até ser reparado.",
+    "en-us": ""
+  },
+  "category": "penalidade",
+  "applicableTo": [
+    "arma",
+    "vestimenta",
+    "escudo",
+    "item"
+  ],
+  "attribute_modifiers": {}
+}

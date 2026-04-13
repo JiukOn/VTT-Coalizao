@@ -1,0 +1,16 @@
+{
+  "id": "purificador",
+  "name": {
+    "pt-br": "Purificador",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Resistência Elemental ao Maligno no local da vestimenta.",
+    "en-us": ""
+  },
+  "category": "defensiva",
+  "applicableTo": [
+    "vestimenta"
+  ],
+  "attribute_modifiers": {}
+}

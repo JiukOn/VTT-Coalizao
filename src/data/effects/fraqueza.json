@@ -1,0 +1,18 @@
+{
+  "id": "fraqueza",
+  "name": {
+    "pt-br": "Fraqueza",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Perde 1d4 de dano de ataque. -2 nos dados de FRC.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "condicao"
+}

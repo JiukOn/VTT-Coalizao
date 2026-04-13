@@ -1,0 +1,18 @@
+{
+  "id": "desmaio",
+  "name": {
+    "pt-br": "Desmaio",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Incapaz de qualquer ação. Perde turno.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "condicao"
+}

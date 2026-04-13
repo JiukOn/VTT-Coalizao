@@ -1,0 +1,19 @@
+{
+  "id": "inspiracao",
+  "name": {
+    "pt-br": "Aura da Inspiração",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Confiança e carisma. +2 em todos os testes por 2 turnos. Se falhar RES: -1 FRC ou DEX.",
+    "en-us": ""
+  },
+  "effectDetails": {
+    "pt-br": "+2 testes (risco)",
+    "en-us": ""
+  },
+  "activation": {
+    "pt-br": "",
+    "en-us": ""
+  }
+}

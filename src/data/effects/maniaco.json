@@ -1,0 +1,18 @@
+{
+  "id": "maniaco",
+  "name": {
+    "pt-br": "Maníaco",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Perde controle e age por impulso se 1d4 <= 2.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 1d20 + 5",
+    "en-us": ""
+  },
+  "category": "psicologico_ativo"
+}

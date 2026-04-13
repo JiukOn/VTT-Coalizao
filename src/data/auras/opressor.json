@@ -1,0 +1,19 @@
+{
+  "id": "opressor",
+  "name": {
+    "pt-br": "Aura do Opressor",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Presença esmagadora. Causa Fraqueza e Lentidão. Teste: 1d20 < max(RES/2, FRC/2) com prejuízo.",
+    "en-us": ""
+  },
+  "effectDetails": {
+    "pt-br": "Fraqueza + Lentidão",
+    "en-us": ""
+  },
+  "activation": {
+    "pt-br": "",
+    "en-us": ""
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "medo",
+  "name": {
+    "pt-br": "Medo",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Teste 1d20 <= 11 no início do turno. Falha: perde o turno.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 1d20 + 5 (a partir do 2° turno)",
+    "en-us": ""
+  },
+  "category": "psicologico_ativo"
+}

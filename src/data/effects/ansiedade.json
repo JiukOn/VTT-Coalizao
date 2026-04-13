@@ -1,0 +1,18 @@
+{
+  "id": "ansiedade",
+  "name": {
+    "pt-br": "Ansiedade",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "-1 CRM temporário. Incapaz de comunicação longa, decisões incertas.",
+    "en-us": ""
+  },
+  "type": "ativo",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 1d20 + 5",
+    "en-us": ""
+  },
+  "category": "psicologico_ativo"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "incendiario",
+  "name": {
+    "pt-br": "Incendiário",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "corpo_flamejante",
+  "legacyAbilityName": {
+    "pt-br": "Corpo Flamejante",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1,
+    "crm": 1,
+    "frc": 1,
+    "int": 1,
+    "res": 1,
+    "pre": 1.2,
+    "enr": 1.5
+  },
+  "selectableAbilities": [
+    "chamas",
+    "chamas_dracônicas",
+    "magma"
+  ]
+}

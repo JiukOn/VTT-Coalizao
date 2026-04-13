@@ -1,0 +1,17 @@
+{
+  "id": "chamativo",
+  "name": {
+    "pt-br": "Chamativo",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "+1 CRM em interações sociais, -1 Furtividade.",
+    "en-us": ""
+  },
+  "category": "qualidade",
+  "applicableTo": [
+    "vestimenta",
+    "item"
+  ],
+  "attribute_modifiers": {}
+}

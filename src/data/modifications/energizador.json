@@ -1,0 +1,17 @@
+{
+  "id": "energizador",
+  "name": {
+    "pt-br": "Energizador",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Uma vez por combate, anula 1 de dano elemental.",
+    "en-us": ""
+  },
+  "category": "defensiva",
+  "applicableTo": [
+    "arma",
+    "item"
+  ],
+  "attribute_modifiers": {}
+}

@@ -1,0 +1,31 @@
+{
+  "id": "sincronizador",
+  "name": {
+    "pt-br": "Sincronizador",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbilityId": "sincronia",
+  "legacyAbilityName": {
+    "pt-br": "Sincronia",
+    "en-us": ""
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1,
+    "crm": 1.2,
+    "frc": 1,
+    "int": 1,
+    "res": 1.2,
+    "pre": 1,
+    "enr": 1.2
+  },
+  "selectableAbilities": [
+    "sintonia",
+    "fusão_de_alma",
+    "pacto_de_sangue"
+  ]
+}
