@@ -9,28 +9,28 @@ import BASE_EFFECTS from '../data/effects/index.js'
 import MasterToolsPanel from '../components/campaign/MasterToolsPanel.jsx'
 
 const QUICK_STATS = [
-  { icon: Users, label: 'Heróis', color: '#4ADE80', table: 'characters', filter: { type: 'hero' } },
-  { icon: Skull, label: 'Criaturas', color: '#F87171', table: 'creatures' },
-  { icon: Zap, label: 'Habilidades', color: '#FBBF24', table: 'abilities' },
-  { icon: Swords, label: 'Itens', color: '#60A5FA', table: 'items' },
+  { icon: Users, label: 'Heroes', color: '#4ADE80', table: 'characters', filter: { type: 'hero' } },
+  { icon: Skull, label: 'Creatures', color: '#F87171', table: 'creatures' },
+  { icon: Zap, label: 'Abilities', color: '#FBBF24', table: 'abilities' },
+  { icon: Swords, label: 'Items', color: '#60A5FA', table: 'items' },
   { icon: Shield, label: 'NPCs', color: '#C084FC', table: 'characters', filter: { type: 'npc' } },
-  { icon: Map, label: 'Mapas', color: '#34D399', table: 'maps' },
+  { icon: Map, label: 'Maps', color: '#34D399', table: 'maps' },
 ]
 
 const TIPS = [
-  '💡 Use Ctrl+D para rolar um D20 rápido.',
-  '💡 Clique com botão direito em um token para opções rápidas.',
-  '💡 Exporte sua campanha frequentemente como backup.',
-  '💡 O sistema Coalizão usa apenas D20 e D4.',
-  '💡 Tendências concedem dado de Vantagem em testes relacionados.',
-  '💡 Ative a Aura de um personagem clicando no ícone de aura na ficha.',
-  '💡 O bônus de atributo é +1 para cada 5 pontos finais.',
+  '💡 Use Ctrl+D for a quick D20 roll.',
+  '💡 Right-click a token for quick options.',
+  '💡 Export your campaign frequently as a backup.',
+  '💡 The Coalizao system only uses D20 and D4.',
+  '💡 Tendencies grant an Advantage die in related checks.',
+  '💡 Activate a character\'s Aura by clicking the aura icon on their sheet.',
+  '💡 Attribute bonus is +1 for every 5 final points.',
 ]
 
 export default function DashboardPage({ onSelectEntity, onEntityContextMenu, tableEntities = [], setTableEntities, onUpdateTableEntity }) {
   const [counts, setCounts] = useState({})
   const [tipIndex, setTipIndex] = useState(0)
-  const [campaignName, setCampaignName] = useState('Nova Campanha')
+  const [campaignName, setCampaignName] = useState('New Campaign')
   
   // Effects System State
   const [addingEffectTo, setAddingEffectTo] = useState(null)
@@ -109,8 +109,8 @@ export default function DashboardPage({ onSelectEntity, onEntityContextMenu, tab
       {/* Welcome banner */}
       <div className="dashboard-banner">
         <div className="dashboard-banner-content">
-          <h1 className="dashboard-title">⚔️ VTP Coalizão</h1>
-          <p className="dashboard-subtitle">Mesa Virtual para o Sistema de RPG Coalizão</p>
+          <h1 className="dashboard-title">⚔️ VTT Coalizao</h1>
+          <p className="dashboard-subtitle">Virtual Tabletop for the Coalizao RPG System</p>
           <div className="dashboard-tip">{TIPS[tipIndex]}</div>
         </div>
         <div className="dashboard-banner-decoration">
@@ -141,31 +141,31 @@ export default function DashboardPage({ onSelectEntity, onEntityContextMenu, tab
 
       {/* Quick actions */}
       <div className="dashboard-section">
-        <h3 className="dashboard-section-title">Ações Rápidas</h3>
+        <h3 className="dashboard-section-title">Quick Actions</h3>
         <div className="dashboard-actions-grid">
           <button className="dashboard-action-btn">
             <Dices size={20} />
-            <span>Rolar D20</span>
+            <span>Roll D20</span>
           </button>
           <button className="dashboard-action-btn">
             <Users size={20} />
-            <span>Novo Herói</span>
+            <span>New Hero</span>
           </button>
           <button className="dashboard-action-btn">
             <Skull size={20} />
-            <span>Nova Criatura</span>
+            <span>New Creature</span>
           </button>
           <button className="dashboard-action-btn">
             <Map size={20} />
-            <span>Importar Mapa</span>
+            <span>Import Map</span>
           </button>
           <button className="dashboard-action-btn">
             <Trophy size={20} />
-            <span>Rolar Iniciativa</span>
+            <span>Roll Initiative</span>
           </button>
           <button className="dashboard-action-btn">
             <BookOpen size={20} />
-            <span>Nova Sessão</span>
+            <span>New Session</span>
           </button>
         </div>
       </div>
@@ -174,7 +174,7 @@ export default function DashboardPage({ onSelectEntity, onEntityContextMenu, tab
       {tableEntities.length > 0 && (
         <div className="dashboard-section" style={{ border: '1px solid var(--border-color)', padding: 'var(--space-md)', borderRadius: '8px', background: 'var(--bg-secondary)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <h3 className="dashboard-section-title" style={{ margin: 0 }}>Mesa de Combate (Tracker de Iniciativa)</h3>
+            <h3 className="dashboard-section-title" style={{ margin: 0 }}>Combat Table (Initiative Tracker)</h3>
             <div style={{ display: 'flex', gap: '8px' }}>
               <button 
                 className="btn btn-sm btn-primary" 
@@ -185,9 +185,9 @@ export default function DashboardPage({ onSelectEntity, onEntityContextMenu, tab
                   })
                 }}
               >
-                Ordenar Iniciativa
+                Sort Initiative
               </button>
-              <button className="btn btn-sm btn-secondary" onClick={() => setTableEntities?.([])}>Limpar Mesa</button>
+              <button className="btn btn-sm btn-secondary" onClick={() => setTableEntities?.([])}>Clear Table</button>
             </div>
           </div>
           <div style={{ display: 'flex', gap: '12px', overflowX: 'auto', padding: '12px 0' }}>

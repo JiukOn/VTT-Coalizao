@@ -1,91 +1,91 @@
-# VTP Coalizão
+# VTT Coalizao
 
-**Virtual Tabletop Program** para o sistema de RPG homebrew **Coalizão**.
+**Virtual Tabletop Program** for the **Coalizao** homebrew RPG system.
 
-Mesa virtual completa — offline-first, sem cadastro, sem servidor obrigatório. Roda no navegador, suporta multi-jogador local (LAN/VPN) e online via relay WebSocket.
+A complete virtual tabletop — offline-first, no registration, no mandatory server. Runs in the browser, supports local multiplayer (LAN/VPN) and online via WebSocket relay.
 
 ---
 
-## Sumário
+## Summary
 
-- [Funcionalidades](#funcionalidades)
+- [Features](#features)
 - [Stack](#stack)
-- [Instalação e uso](#instalação-e-uso)
-- [Scripts disponíveis](#scripts-disponíveis)
-- [Estrutura do projeto](#estrutura-do-projeto)
-- [Sistema Coalizão — Regras básicas](#sistema-coalizão--regras-básicas)
-- [Deploy](#deploy)
+- [Installation and Usage](#installation-and-usage)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Coalizao System — Basic Rules](#coalizao-system--basic-rules)
+- [Deployment](#deployment)
 
 ---
 
-## Funcionalidades
+## Features
 
-| Módulo | Descrição |
+| Module | Description |
 |--------|-----------|
-| **Mesa do Mestre** | Dashboard com entidades ativas, dados, log, ações rápidas e referência do sistema |
-| **Fichas de Heróis** | Wizard 4 passos: Identidade, Classe & Atributos, Equipamento, Revisão |
-| **Bestiário** | 82 criaturas + 15 especiais pré-cadastradas, buscáveis e editáveis |
-| **NPCs** | 70+ NPCs por localização, com relação e notas privadas do Mestre |
-| **Habilidades** | ~131 habilidades (Legado, Ativas, Passivas, Mito, Uso Único, Descendência) |
-| **Itens** | ~127 itens com 43 tipos de modificação, raridades e stats completos |
-| **Mapa Tático** | Canvas 3000×3000, multi-abas, grid configurável, névoa de guerra, tokens, paredes |
-| **Combate Assistido** | Corpo a corpo / Distância / Mágico — rolls automáticos com aplicação de dano |
-| **Tracker de Iniciativa** | Ordem de turno, contagem de efeitos por turno, checklist de ações, alerta de furtividade |
-| **Efeitos e Condições** | Aplicar/remover efeitos com duração por turno; badges visíveis nos tokens |
-| **Investigação & Furtividade** | 4 tipos de investigação + 3 modos furtivos com classificação Coalizão |
-| **Descanso e Recuperação** | 1d20 → Crítico/Bom/Normal/Ruim/Desastre com HP recovery automático |
-| **Visibilidade por Token** | Raio configurável, cone 120° com ângulo livre, ray casting contra paredes |
-| **Sistema de Domínio** | PC = bônus INT + bônus CRM; 6 ações de comando; mecânicas de coalizão |
-| **Evolução & TransEvolução** | 3 caminhos Nv5 + 3 caminhos Nv10 com efeitos mecânicos aplicados |
-| **Modo Jogador** | Player View com 6 abas: Dados, Iniciativa, Ficha, Combate, Notas, Log |
-| **Servidor Local** | Node.js + WebSocket para sessões LAN/VPN — sem internet necessária |
-| **Relay Online** | Servidor stateless multi-sala para sessões pela internet |
-| **PWA** | Funciona offline após primeiro carregamento, instalável em desktop/mobile |
-| **Export/Import** | Campanha completa em JSON para backup e transferência |
+| **GM's Table (Dashboard)** | Dashboard with active entities, dice, logs, quick actions, and system reference |
+| **Hero Sheets** | 4-step wizard: Identity, Class & Attributes, Equipment, Review |
+| **Bestiary** | 82 creatures + 15 special ones pre-registered, searchable and editable |
+| **NPCs** | 70+ NPCs separated by location, with relations and private GM notes |
+| **Abilities** | ~131 abilities (Legacy, Active, Passive, Myth, Single Use, Lineage) |
+| **Items** | ~127 items with 43 types of modifications, rarities, and full stats |
+| **Tactical Map** | 3000×3000 Canvas, multi-tabs, configurable grid, fog of war, tokens, walls |
+| **Assisted Combat** | Melee / Ranged / Magic — automatic rolls with damage application |
+| **Initiative Tracker** | Turn order, turn-by-turn effect counting, action checklist, stealth alert |
+| **Effects and Conditions** | Apply/remove effects with per-turn duration; visible badges on tokens |
+| **Investigation & Stealth** | 4 types of investigation + 3 stealth modes with Coalizao classification |
+| **Rest and Recovery** | 1d20 → Critical/Good/Normal/Bad/Disaster with automatic HP recovery |
+| **Token Visibility** | Configurable radius, 120° cone with free angle, ray casting against walls |
+| **Domain System** | CP (Command Points) = INT bonus + CHA bonus; 6 command actions; coalition mechanics |
+| **Evolution & TransEvolution** | 3 Lv5 paths + 3 Lv10 paths with applied mechanical effects |
+| **Player Mode** | Player View with 6 tabs: Dice, Initiative, Sheet, Combat, Notes, Log |
+| **Local Server** | Node.js + WebSocket for LAN/VPN sessions — no internet required |
+| **Online Relay** | Stateless multi-room server for internet sessions |
+| **PWA** | Works offline after first load, installable on desktop/mobile |
+| **Export/Import** | Full campaign export to JSON for backup and transfer |
 
 ---
 
 ## Stack
 
-| Camada | Tecnologia |
+| Layer | Technology |
 |--------|------------|
 | Frontend | React 19, Vite 8 |
-| Estilização | CSS puro com Design System (tokens, dark/light mode) |
-| Armazenamento local | IndexedDB via Dexie.js 4 |
-| Ícones | Lucide React |
-| Fontes | Inter (UI) · Cinzel (títulos) · JetBrains Mono (stats) |
-| Servidor local | Node.js + Express 5 + ws |
-| Relay online | Node.js + Express 5 + ws (stateless, multi-sala) |
-| PWA | Service Worker cache-first |
+| Styling | Pure CSS with Design System (tokens, dark/light mode) |
+| Local Storage | IndexedDB via Dexie.js 4 |
+| Icons | Lucide React |
+| Fonts | Inter (UI) · Cinzel (titles) · JetBrains Mono (stats) |
+| Local Server | Node.js + Express 5 + ws |
+| Online Relay | Node.js + Express 5 + ws (stateless, multi-room) |
+| PWA | Cache-first Service Worker |
 
-**Node.js 18+** necessário para servidor/relay. Para o frontend basta qualquer navegador moderno.
+**Node.js 18+** is required for the server/relay. For the frontend, any modern browser works.
 
 ---
 
-## Instalação e uso
+## Installation and Usage
 
-### 1. Instalar dependências
+### 1. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Modo Solo (sem servidor)
+### 2. Solo Mode (No Server)
 
-Funciona completamente no navegador. Dados salvos no IndexedDB do navegador.
+Works entirely in the browser. Data is saved to the browser's IndexedDB.
 
 ```bash
 npm run dev
-# Abre em http://localhost:5173
+# Opens at http://localhost:5173
 ```
 
-### 3. Modo Multi-jogador Local (LAN/VPN)
+### 3. Local Multiplayer Mode (LAN/VPN)
 
-**Terminal 1 — Servidor WebSocket:**
+**Terminal 1 — WebSocket Server:**
 ```bash
 npm run server:dev     # hot-reload
-# ou
-npm run server         # produção (usa /dist)
+# or
+npm run server         # production (uses /dist)
 ```
 
 **Terminal 2 — Frontend:**
@@ -93,42 +93,42 @@ npm run server         # produção (usa /dist)
 npm run dev
 ```
 
-O servidor exibe o IP local e um código de sessão (ex: `GH4K9X`).
+The server displays your local IP and a session code (e.g., `GH4K9X`).
 
-- Mestre: `http://localhost:5173`
-- Jogadores (mesma rede): `http://{IP_DO_MESTRE}:3001/#/player`
-- Jogadores via VPN (Hamachi/ZeroTier/Tailscale): mesmo endereço, usando o IP da VPN
+- GM: `http://localhost:5173`
+- Players (same network): `http://{GM_IP}:3001/#/player`
+- Players via VPN (Hamachi/ZeroTier/Tailscale): same address, using the VPN IP
 
-### 4. Modo Multi-jogador Online (Relay)
+### 4. Online Multiplayer Mode (Relay)
 
-Requer deploy do relay em um serviço cloud. Ver [`relay/README.md`](relay/README.md).
+Requires deploying the relay on a cloud service. See [`relay/README.md`](relay/README.md).
 
-Após o deploy:
-- **Mestre:** Aba Servidor → toggle "Online (Relay)" → insira URL `wss://` do relay → Conectar
-- **Jogadores:** Acesse o VTP → toggle "Online" → insira URL + código fornecido pelo Mestre
+After deployment:
+- **GM:** Server Tab → toggle "Online (Relay)" → input the relay's `wss://` URL → Connect
+- **Players:** Access VTP → toggle "Online" → input the URL + code provided by the GM
 
 ---
 
-## Scripts disponíveis
+## Available Scripts
 
-| Script | Descrição |
+| Script | Description |
 |--------|-----------|
-| `npm run dev` | Servidor de desenvolvimento Vite (localhost:5173) |
-| `npm run build` | Build de produção em `/dist` |
-| `npm run preview` | Preview local do build produção |
-| `npm run server` | Servidor local (porta 3001, usa /dist) |
-| `npm run server:dev` | Servidor local com hot-reload (node --watch) |
-| `npm run relay` | Relay server (porta 4001 por padrão) |
-| `npm run relay:dev` | Relay server com hot-reload |
+| `npm run dev` | Vite development server (localhost:5173) |
+| `npm run build` | Production build in `/dist` |
+| `npm run preview` | Local preview of the production build |
+| `npm run server` | Local server (port 3001, uses /dist) |
+| `npm run server:dev` | Local server with hot-reload (node --watch) |
+| `npm run relay` | Relay server (default port 4001) |
+| `npm run relay:dev` | Relay server with hot-reload |
 
 ---
 
-## Estrutura do projeto
+## Project Structure
 
 ```
-Projeto VTP/
+VTP Project/
 ├── src/
-│   ├── components/           # Componentes React reutilizáveis
+│   ├── components/           # Reusable React components
 │   │   ├── abilities/        # AbilityCard, AbilityList
 │   │   ├── campaign/         # MasterToolsPanel, CampaignManager
 │   │   ├── characters/       # CharacterForm (4-step wizard), CharacterList,
@@ -142,135 +142,135 @@ Projeto VTP/
 │   │   ├── layout/           # Header, Sidebar, BottomBar, DetailPanel, MainContent
 │   │   └── map/              # Token, GridOverlay, MapToolbar, MapCanvas
 │   ├── context/              # CampaignContext, ServerContext, ThemeContext
-│   ├── data/                 # Dados pré-populados (um arquivo por entidade)
-│   │   ├── abilities/        # ~131 habilidades
+│   ├── data/                 # Pre-populated data (one file per entity)
+│   │   ├── abilities/        # ~131 abilities
 │   │   ├── auras/            # 10 auras
-│   │   ├── classes/          # Classes com multiplicadores e habilidades legado
-│   │   ├── creatures/        # 82 criaturas + 15 especiais
-│   │   ├── effects/          # ~30 efeitos/condições
-│   │   ├── heroes/           # 11 heróis da campanha Coalizão
-│   │   ├── items/            # ~127 itens com stats e modificações
-│   │   ├── modifications/    # 43 tipos de modificação de itens
-│   │   ├── npcs/             # 70+ NPCs por localização
-│   │   └── personalities/    # 13 personalidades
+│   │   ├── classes/          # Classes with multipliers and legacy abilities
+│   │   ├── creatures/        # 82 creatures + 15 specials
+│   │   ├── effects/          # ~30 effects/conditions
+│   │   ├── heroes/           # 11 heroes from the Coalizao campaign
+│   │   ├── items/            # ~127 items with stats and modifications
+│   │   ├── modifications/    # 43 types of item modifications
+│   │   ├── npcs/             # 70+ NPCs per location
+│   │   └── personalities/    # 13 personalities
 │   ├── hooks/                # useWebSocket (auto-reconnect, keepalive 25s)
-│   ├── pages/                # Páginas do app (uma por aba de navegação)
+│   ├── pages/                # App pages (one per navigation tab)
 │   ├── services/             # database.js (Dexie), campaignIO.js, dataSeeder.js
-│   ├── styles/               # CSS Design System (4 arquivos)
+│   ├── styles/               # CSS Design System (4 files)
 │   ├── utils/                # characterUtils.js, combatUtils.js, diceRoller.js
-│   ├── App.jsx               # Roteamento hash + estado global (tableEntities, etc.)
-│   └── main.jsx              # Entry point — await seedDatabase() antes de montar React
+│   ├── App.jsx               # Hash routing + global state (tableEntities, etc.)
+│   └── main.jsx              # Entry point — await seedDatabase() before React mount
 ├── server/
-│   ├── index.js              # Servidor local (Express + WS, porta 3001)
+│   ├── index.js              # Local server (Express + WS, port 3001)
 │   └── sessionManager.js     # generateCode(), getLocalIPs()
 ├── relay/
-│   ├── index.js              # Relay stateless multi-sala
-│   ├── Procfile              # Deploy Railway/Heroku
-│   ├── railway.json          # Config Railway
-│   └── render.yaml           # Config Render
+│   ├── index.js              # Stateless multi-room relay
+│   ├── Procfile              # Railway/Heroku Deploy
+│   ├── railway.json          # Railway Config
+│   └── render.yaml           # Render Config
 ├── public/
 │   ├── sw.js                 # Service Worker (PWA)
 │   └── manifest.json         # Web App Manifest
 ├── Docs/
-│   ├── Plan.txt              # Plano de desenvolvimento completo (v4.5)
-│   ├── ARCHITECTURE.md       # Arquitetura técnica detalhada
-│   ├── CHANGELOG.md          # Histórico de versões
-│   └── Logs/                 # Logs de testes por fase (Fases 1–9)
+│   ├── Plan.txt              # Complete development plan (v4.5)
+│   ├── ARCHITECTURE.md       # Detailed technical architecture
+│   ├── CHANGELOG.md          # Version history
+│   └── Logs/                 # Test logs by phase (Phases 1–9)
 ├── vite.config.js            # base: '/Projeto-VTP/', code splitting, proxy /api
 └── package.json              # v7.1.0, scripts, deps
 ```
 
 ---
 
-## Sistema Coalizão — Regras básicas
+## Coalizao System — Basic Rules
 
-### Dados usados
+### Dice Used
 
-O sistema usa **apenas D20 e D4**.
+The system uses **only D20 and D4**.
 
-**Classificação D20:**
+**D20 Classification:**
 
-| Resultado | Classificação | Cor |
+| Result | Classification | Color |
 |-----------|---------------|-----|
-| 20 | Crítico | 🟢 Verde |
-| 13–19 | Bom | 🟢 Verde claro |
-| 10–12 | Normal | 🟡 Amarelo |
-| 2–9 | Ruim | 🔴 Vermelho claro |
-| 1 | Desastre | 🔴 Vermelho |
+| 20 | Critical | 🟢 Green |
+| 13–19 | Good | 🟢 Light Green |
+| 10–12 | Normal | 🟡 Yellow |
+| 2–9 | Bad | 🔴 Light Red |
+| 1 | Disaster | 🔴 Red |
 
-### 8 Atributos
+### 8 Attributes
 
-| Código | Nome | Uso principal |
+| Code | Name | Main Use |
 |--------|------|--------------|
-| `VIT` | Vitalidade | HP, resistência a dano |
-| `DEX` | Destreza | Esquiva, movimento, iniciativa |
-| `CRM` | Carisma | Persuasão, furtividade social |
-| `FRC` | Força | Corpo a corpo, empunhadura |
-| `INT` | Inteligência | Investigação, lógica, domínio |
-| `RES` | Resiliência | Defesa mágica |
-| `PRE` | Precisão | Distância, formação mágica |
-| `ENR` | Energia | Poder mágico |
+| `VIT` | Vitality | HP, damage resistance |
+| `DEX` | Dexterity | Dodge, movement, initiative |
+| `CHA` | Charisma | Persuasion, social stealth |
+| `STR` | Strength | Melee, wielding |
+| `INT` | Intelligence | Investigation, logic, domain |
+| `RES` | Resilience | Magic defense |
+| `PRE` | Precision | Ranged, magic formation |
+| `ENR` | Energy | Magic power |
 
-**Bônus** = `⌊valorFinal / 5⌋`  
-**Valor Final** = `pontosBase × multiplicadorDaClasse`
+**Bonus** = `⌊finalValue / 5⌋`  
+**Final Value** = `basePoints × classMultiplier`
 
-### Combate
+### Combat
 
-| Tipo | Ataque | Defesa |
+| Type | Attack | Defense |
 |------|--------|--------|
-| Corpo a Corpo | 1d20 + bônus FRC | 1d20 + bônus FRC |
-| Distância | 1d20 + bônus PRE | 1d20 + bônus DEX |
-| Mágico | Formação PRE ≥ 12, depois 1d20 + ENR | 1d20 + bônus RES |
+| Melee | 1d20 + STR bonus | 1d20 + STR bonus |
+| Ranged | 1d20 + PRE bonus | 1d20 + DEX bonus |
+| Magic | Formation PRE ≥ 12, then 1d20 + ENR | 1d20 + RES bonus |
 
-**Dano:** 1d4 (aplicado ao HP do defensor se total ataque > total defesa)  
-**Esquiva:** 1d20 + bônus DEX > total do ataque (antes de aplicar dano)
+**Damage:** 1d4 (applied to defender's HP if total attack > total defense)  
+**Dodge/Evade:** 1d20 + DEX bonus > attack total (before applying damage)
 
-### Evolução
+### Evolution
 
-- **Nível 5** — Evolução de Classe: Focada (×+0.2 no mult. primário) | Equilibrada (+0.05 todos) | Legado (+3 INT ou CRM)
-- **Nível 10** — TransEvolução (requer soma base > 43): Ascendente | Transcendente | Descendente
+- **Level 5** — Class Evolution: Focused (×+0.2 to primary mult.) | Balanced (+0.05 to all) | Legacy (+3 INT or CHA)
+- **Level 10** — TransEvolution (requires base sum > 43): Ascendant | Transcendent | Descendant
 
-### Pontos de Comando (Domínio)
+### Command Points (Domain)
 
-`PC = bônus INT + bônus CRM`
+`CP = INT bonus + CHA bonus`
 
-6 ações disponíveis (ver Sistema de Domínio na aba Campanha).
+6 available actions (see Domain System in the Campaign tab).
 
 ---
 
-## Deploy
+## Deployment
 
 ### Frontend — GitHub Pages
 
-1. Ajuste o `base` em `vite.config.js` para o nome do seu repositório:
+1. Adjust `base` in `vite.config.js` to your repository's name:
    ```js
-   base: '/nome-do-seu-repo/'
+   base: '/your-repo-name/'
    ```
-2. Build e deploy:
+2. Build and deploy:
    ```bash
    npm run build
-   # Faça deploy de /dist no branch gh-pages
+   # Deploy /dist to your gh-pages branch
    ```
 
 ### Relay Server — Railway / Render / Fly.io
 
-Ver instruções completas em [`relay/README.md`](relay/README.md).
+See full instructions in [`relay/README.md`](relay/README.md).
 
-Resumo rápido (Railway):
+Quick summary (Railway):
 ```bash
 cd relay
-# Crie um projeto no Railway, conecte o repositório
-# Defina o root directory como relay/
-# A variável PORT é definida automaticamente
+# Create a Railway project, connect the repository
+# Set the root directory to relay/
+# The PORT variable is defined automatically
 ```
 
-### Servidor Local — sem configuração de roteador
+### Local Server — No Router Configuration
 
-Use uma VPN ponto-a-ponto:
-- [ZeroTier](https://www.zerotier.com/) (recomendado, gratuito)
-- [Tailscale](https://tailscale.com/) (gratuito para uso pessoal)
-- [Hamachi](https://www.vpn.net/) (alternativa clássica)
+Use a peer-to-peer VPN:
+- [ZeroTier](https://www.zerotier.com/) (recommended, free)
+- [Tailscale](https://tailscale.com/) (free for personal use)
+- [Hamachi](https://www.vpn.net/) (classic alternative)
 
 ---
 
-*Build v7.1.0 · Fases 1–9 completas · 2155 módulos · 0 erros*
+*Build v7.1.0 · Phases 1–9 Complete · 2155 modules · 0 errors*

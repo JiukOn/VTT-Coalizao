@@ -1,165 +1,165 @@
 ================================================================================
-              PADRÃO DE TESTES — VTP COALIZÃO
-            Guia para execução e registro de testes
+              TEST STANDARD — VTT COALIZAO
+            A guide for executing and logging tests
 ================================================================================
 
-Versão: 1.0
-Data: 09/04/2026
+Version: 1.0
+Date: 2026-04-09
 
 ================================================================================
-  1. ESTRUTURA DO LOG DE TESTE
+  1. TEST LOG STRUCTURE
 ================================================================================
 
-Cada teste realizado deve ser registrado como um arquivo na pasta:
+Each test performed must be logged as a file in the folder:
   docs/Logs/
 
-Nomeação do arquivo:
-  YYYY-MM-DD_FaseX_NomeDoTeste.txt
+File naming convention:
+  YYYY-MM-DD_PhaseX_TestName.txt
 
-Exemplo:
-  2026-04-10_Fase1_TesteDesignSystem.txt
-  2026-04-12_Fase2_TesteDiceRoller.txt
+Example:
+  2026-04-10_Phase1_DesignSystemTest.txt
+  2026-04-12_Phase2_DiceRollerTest.txt
 
 
 ================================================================================
-  2. TEMPLATE DE REGISTRO DE TESTE
+  2. TEST LOG TEMPLATE
 ================================================================================
 
-Copie o template abaixo para cada arquivo de log:
+Copy the template below for each log file:
 
 ────────────────────────────────────────────────────────
-TESTE: [Nome descritivo do teste]
-FASE:  [Fase do Roadmap: 1-6]
-DATA:  [YYYY-MM-DD]
-AUTOR: [Nome do testador]
+TEST:   [Descriptive name of the test]
+PHASE:  [Roadmap Phase: 1-6]
+DATE:   [YYYY-MM-DD]
+AUTHOR: [Tester's name]
 
-MÓDULO TESTADO: [Ex: Dice Roller, Ficha de Personagem]
-VERSÃO/COMMIT: [Hash do commit ou versão]
-NAVEGADOR:     [Chrome/Firefox/Edge + versão]
+MODULE TESTED: [E.g., Dice Roller, Character Sheet]
+VERSION/COMMIT: [Commit hash or version]
+BROWSER:        [Chrome/Firefox/Edge + version]
 
-── OBJETIVO ──────────────────────────────────────────
-[Descrever brevemente o que está sendo validado]
+── OBJECTIVE ──────────────────────────────────────────
+[Briefly describe what is being validated]
 
-── PRÉ-CONDIÇÕES ─────────────────────────────────────
-[Estado necessário antes de iniciar o teste]
-  Ex: Aplicação rodando em localhost:5173
-  Ex: Banco de dados pré-populado com criaturas
+── PRE-CONDITIONS ─────────────────────────────────────
+[Required state before starting the test]
+  Ex: Application running on localhost:5173
+  Ex: Database pre-populated with creatures
 
-── PASSOS EXECUTADOS ─────────────────────────────────
-1. [Ação realizada]
-   → Resultado esperado: [...]
-   → Resultado obtido:   [...]
-   → Status: ✅ PASS | ❌ FAIL | ⚠️ PARCIAL
+── STEPS EXECUTED ─────────────────────────────────
+1. [Action performed]
+   → Expected result: [...]
+   → Actual result: [...]
+   → Status: ✅ PASS | ❌ FAIL | ⚠️ PARTIAL
 
-2. [Próxima ação]
-   → Resultado esperado: [...]
-   → Resultado obtido:   [...]
-   → Status: ✅ PASS | ❌ FAIL | ⚠️ PARCIAL
+2. [Next action]
+   → Expected result: [...]
+   → Actual result: [...]
+   → Status: ✅ PASS | ❌ FAIL | ⚠️ PARTIAL
 
-[... mais passos conforme necessário]
+[... more steps as needed]
 
-── RESULTADO FINAL ───────────────────────────────────
-Status Geral: ✅ APROVADO | ❌ REPROVADO | ⚠️ PARCIAL
+── FINAL RESULT ───────────────────────────────────
+Overall Status: ✅ APPROVED | ❌ REJECTED | ⚠️ PARTIAL
 
-── BUGS ENCONTRADOS ──────────────────────────────────
-[BUG-001] Descrição do bug
-  Severidade: Crítica | Alta | Média | Baixa
-  Passos para reproduzir: [...]
-  Comportamento esperado: [...]
-  Comportamento obtido: [...]
+── BUGS FOUND ──────────────────────────────────
+[BUG-001] Bug description
+  Severity: Critical | High | Medium | Low
+  Steps to reproduce: [...]
+  Expected behavior: [...]
+  Actual behavior: [...]
 
-── NOTAS E OBSERVAÇÕES ───────────────────────────────
-[Qualquer observação relevante, sugestões, pendências]
+── NOTES AND OBSERVATIONS ───────────────────────────────
+[Any relevant observation, suggestions, pending issues]
 
-── MÉTRICAS (se aplicável) ───────────────────────────
+── METRICS (if applicable) ───────────────────────────
   Build Size: ___KB
   LCP: ___ms
-  FPS Canvas: ___
+  Canvas FPS: ___
   Lighthouse Score: ___
 ────────────────────────────────────────────────────────
 
 
 ================================================================================
-  3. CHECKLIST POR FASE
+  3. CHECKLIST BY PHASE
 ================================================================================
 
-Cada fase tem testes obrigatórios a serem registrados:
+Each phase has mandatory tests to be logged:
 
 ┌─────────────┬──────────────────────────────────────────────────┐
-│ FASE        │ TESTES OBRIGATÓRIOS                              │
+│ PHASE       │ MANDATORY TESTS                                    │
 ├─────────────┼──────────────────────────────────────────────────┤
-│ Fase 1      │ □ Build compila sem erros (npm run build)        │
-│ Fundação    │ □ Toggle Dark/Light altera todas as cores        │
-│             │ □ Layout responsivo (resize de janela)           │
-│             │ □ Navegação por abas funciona                    │
-│             │ □ Sidebar recolhe/expande                        │
-│             │ □ IndexedDB inicializa sem erros no console      │
-│             │ □ Fontes carregam (Inter, Cinzel, JetBrains)     │
+│ Phase 1     │ □ Build compiles without errors (npm run build)    │
+│ Foundation  │ □ Dark/Light toggle changes all colors           │
+│             │ □ Responsive layout (window resize)              │
+│             │ □ Tab navigation works                             │
+│             │ □ Sidebar collapses/expands                      │
+│             │ □ IndexedDB initializes without console errors     │
+│             │ □ Fonts load (Inter, Cinzel, JetBrains)          │
 ├─────────────┼──────────────────────────────────────────────────┤
-│ Fase 2      │ □ Rolar 1d20 retorna valor entre 1-20           │
-│ Dice+Fichas │ □ Classificação D20 correta (1=Desastre, 20=Crít│
-│             │ □ Rolar 1d4 retorna valor entre 1-4             │
-│             │ □ Classificação D4 correta (1=Pior, 4=Melhor)   │
-│             │ □ Rolar com Vantagem pega o maior               │
-│             │ □ Modificador de bônus soma corretamente         │
-│             │ □ Histórico registra as rolagens                 │
-│             │ □ Ficha: 25 pontos iniciais respeitados          │
-│             │ □ Bônus de atributo calcula floor(X/5)           │
-│             │ □ Personagem salva no IndexedDB                  │
+│ Phase 2     │ □ Rolling 1d20 returns value between 1-20        │
+│ Dice+Sheets │ □ Correct D20 classification (1=Disaster, 20=Crit) │
+│             │ □ Rolling 1d4 returns value between 1-4          │
+│             │ □ Correct D4 classification (1=Worst, 4=Best)    │
+│             │ □ Rolling with Advantage picks the highest       │
+│             │ □ Bonus modifier adds correctly                    │
+│             │ □ History logs the roles                           │
+│             │ □ Sheet: 25 initial points respected               │
+│             │ □ Attribute bonus calculates floor(X/5)          │
+│             │ □ Character saves to IndexedDB                     │
 ├─────────────┼──────────────────────────────────────────────────┤
-│ Fase 3      │ □ Criaturas pré-populadas aparecem na lista      │
-│ Bancos      │ □ Filtros de busca funcionam por nome/tipo       │
-│             │ □ Habilidades listam por categoria               │
-│             │ □ Itens mostram DP e modificações                │
-│             │ □ Criação de entidade customizada salva no DB    │
-│             │ □ Duplicar entidade funciona                     │
+│ Phase 3     │ □ Pre-populated creatures appear in the list       │
+│ Databases   │ □ Search filters work by name/type                 │
+│             │ □ Abilities list by category                       │
+│             │ □ Items show Durability and modifications          │
+│             │ □ Custom entity creation saves to the DB           │
+│             │ □ Duplicate entity works                           │
 ├─────────────┼──────────────────────────────────────────────────┤
-│ Fase 4      │ □ Upload de mapa renderiza no Canvas             │
-│ Mapa+Tokens │ □ Grid aparece sobre o mapa                     │
-│             │ □ Grid configurável (tamanho, cor, opacidade)    │
-│             │ □ Zoom e pan funcionam (scroll + drag)           │
-│             │ □ Token aparece no mapa                          │
-│             │ □ Drag & Drop do token funciona                  │
-│             │ □ Snap-to-grid alinha ao centro do quadrado      │
-│             │ □ Canvas mantém 60fps com 10+ tokens             │
+│ Phase 4     │ □ Map upload renders in Canvas                     │
+│ Map+Tokens  │ □ Grid appears over the map                        │
+│             │ □ Configurable grid (size, color, opacity)       │
+│             │ □ Zoom and pan work (scroll + drag)              │
+│             │ □ Token appears on the map                         │
+│             │ □ Drag & Drop of token works                       │
+│             │ □ Snap-to-grid aligns to the square's center       │
+│             │ □ Canvas maintains 60fps with 10+ tokens           │
 ├─────────────┼──────────────────────────────────────────────────┤
-│ Fase 5      │ □ Iniciativa rola 1d20+DEX para todos           │
-│ Combate     │ □ Ordem de iniciativa ordena corretamente       │
-│             │ □ "Próximo Turno" avança na lista                │
-│             │ □ Efeitos contam turnos corretamente             │
-│             │ □ Checklist de ações por turno funciona          │
-│             │ □ Combate corpo a corpo compara FRC              │
-│             │ □ Combate à distância compara PRE vs DEX         │
-│             │ □ Combate mágico: formação (PRE>=12) + ENR vs RES│
+│ Phase 5     │ □ Initiative rolls 1d20+DEX for everyone           │
+│ Combat      │ □ Initiative order sorts correctly                 │
+│             │ □ "Next Turn" advances in the list                 │
+│             │ □ Effects count turns correctly                    │
+│             │ □ Action checklist per turn works                  │
+│             │ □ Melee combat compares STR                        │
+│             │ □ Ranged combat compares PRE vs DEX              │
+│             │ □ Magic combat: formation(PRE>=12) + ENR vs RES  │
 ├─────────────┼──────────────────────────────────────────────────┤
-│ Fase 6      │ □ Exportar campanha gera JSON válido             │
-│ Polimento   │ □ Importar JSON restaura dados corretamente     │
-│             │ □ npm run build sem warnings                     │
-│             │ □ Bundle JS < 500KB gzipped                      │
-│             │ □ Lighthouse > 90 em Performance                 │
-│             │ □ Deploy no GitHub Pages funciona                │
-│             │ □ Funciona offline após cache (PWA)              │
+│ Phase 6     │ □ Export campaign generates valid JSON             │
+│ Polish      │ □ Import JSON restores data correctly              │
+│             │ □ npm run build without warnings                   │
+│             │ □ JS Bundle < 500KB gzipped                        │
+│             │ □ Lighthouse > 90 in Performance                 │
+│             │ □ Deployment on GitHub Pages works               │
+│             │ □ Works offline after caching (PWA)                │
 └─────────────┴──────────────────────────────────────────────────┘
 
 
 ================================================================================
-  4. SEVERIDADE DE BUGS
+  4. BUG SEVERITY
 ================================================================================
 
-  🔴 CRÍTICA — App quebra, perde dados, não carrega
-  🟠 ALTA    — Funcionalidade principal não funciona
-  🟡 MÉDIA   — Bug visível mas com workaround
-  🟢 BAIXA   — Cosmético, não afeta funcionalidade
-
-
-================================================================================
-  5. FORMATO DE NOME PARA BUGS
-================================================================================
-
-  [BUG-FXXX] onde F = Fase e XXX = número sequencial
-  Exemplos: BUG-1001, BUG-2003, BUG-4012
+  🔴 CRITICAL — App breaks, data loss, fails to load
+  🟠 HIGH     — Core functionality does not work
+  🟡 MEDIUM   — Visible bug but with a workaround
+  🟢 LOW      — Cosmetic, does not affect functionality
 
 
 ================================================================================
-  FIM DO PADRÃO DE TESTES
+  5. NAMING FORMAT FOR BUGS
+================================================================================
+
+  [BUG-PXXX] where P = Phase and XXX = sequential number
+  Examples: BUG-1001, BUG-2003, BUG-4012
+
+
+================================================================================
+  END OF TEST STANDARD
 ================================================================================

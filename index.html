@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="VTP Coalizão — Mesa Virtual de RPG para o sistema Coalizão. Gerenciamento de personagens, dados, mapas e combate." />
+    <meta name="description" content="VTT Coalizão — Virtual Tabletop RPG for the Coalizao system. Manage characters, dice, maps, and combat." />
     <meta name="theme-color" content="#9B59E8" />
-    <title>VTP Coalizão — Mesa Virtual de RPG</title>
-    <link rel="icon" type="image/svg+xml" href="/Projeto-VTP/favicon.svg" />
-    <link rel="manifest" href="/Projeto-VTP/manifest.json" />
+    <title>VTT Coalizao — Virtual Tabletop</title>
+    <link rel="icon" type="image/svg+xml" href="/VTT-Coalizao/favicon.svg" />
+    <link rel="manifest" href="/VTT-Coalizao/manifest.json" />
   </head>
   <body>
     <div id="root"></div>
@@ -15,7 +15,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/Projeto-VTP/sw.js').catch(() => {})
+          navigator.serviceWorker.register('/VTT-Coalizao/sw.js').catch(() => {})
         })
       }
     </script>

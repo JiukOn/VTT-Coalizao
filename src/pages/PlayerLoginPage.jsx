@@ -127,10 +127,10 @@ export default function PlayerLoginPage({ onConnect }) {
             color: 'var(--text-primary)',
             margin: '0 0 4px',
           }}>
-            VTP Coalizão
+            VTT Coalizao
           </h1>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-            Modo Jogador — Conecte-se à sessão do Mestre
+            Player Mode — Connect to Game Master session
           </p>
         </div>
 
@@ -192,13 +192,13 @@ export default function PlayerLoginPage({ onConnect }) {
           <div className="form-group" style={{ margin: 0 }}>
             <label className="input-label">
               <User size={13} style={{ marginRight: 5 }} />
-              Seu Nome
+              Your Name
             </label>
             <input
               className="input"
               value={playerName}
               onChange={e => setPlayerName(e.target.value)}
-              placeholder="Nome do personagem"
+              placeholder="Character Name"
               autoFocus
               maxLength={40}
             />
@@ -207,7 +207,7 @@ export default function PlayerLoginPage({ onConnect }) {
           <div className="form-group" style={{ margin: 0 }}>
             <label className="input-label">
               <Hash size={13} style={{ marginRight: 5 }} />
-              Código da Campanha
+              Campaign Code
             </label>
             <input
               className="input"
@@ -251,7 +251,7 @@ export default function PlayerLoginPage({ onConnect }) {
               <div className="form-group" style={{ flex: 1, margin: 0 }}>
                 <label className="input-label">
                   <Server size={13} style={{ marginRight: 5 }} />
-                  Endereço do Mestre
+                  Game Master Address
                 </label>
                 <input
                   className="input"
@@ -261,7 +261,7 @@ export default function PlayerLoginPage({ onConnect }) {
                 />
               </div>
               <div className="form-group" style={{ width: 80, margin: 0 }}>
-                <label className="input-label">Porta</label>
+                <label className="input-label">Port</label>
                 <input
                   className="input"
                   type="number"
@@ -296,16 +296,16 @@ export default function PlayerLoginPage({ onConnect }) {
             style={{ marginTop: 4, fontSize: '0.95rem', padding: '10px' }}
           >
             {connecting
-              ? '⏳ Conectando…'
-              : <><LogIn size={16} /> Entrar na Sessão</>
+              ? '⏳ Connecting…'
+              : <><LogIn size={16} /> Join Session</>
             }
           </button>
         </form>
 
         <p style={{ textAlign: 'center', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
           {mode === 'relay'
-            ? 'Peça a URL do relay e o código ao Mestre da campanha.'
-            : 'Peça o endereço e o código ao Mestre da campanha.'}
+            ? 'Ask the Game Master for the relay URL and session code.'
+            : 'Ask the Game Master for the server address and session code.'}
         </p>
       </div>
     </div>

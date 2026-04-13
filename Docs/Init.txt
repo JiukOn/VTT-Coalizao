@@ -1,64 +1,64 @@
 ================================================================================
-          ANÁLISE E INICIALIZAÇÃO — PROJETO VTP COALIZÃO
+          ANALYSIS AND INITIALIZATION — VTT COALIZAO PROJECT
 ================================================================================
 
-1. VISÃO GERAL E COMO INICIAR O PROJETO
+1. OVERVIEW AND HOW TO START THE PROJECT
 --------------------------------------------------------------------------------
-O VTP Coalizão é um Virtual Tabletop completo criado com React/Vite no frontend e Node.js/Express/WebSocket no backend.
+VTT Coalizao is a complete Virtual Tabletop created with React/Vite on the frontend and Node.js/Express/WebSocket on the backend.
 
-Como Mestre (Host) local:
-- Você pode utilizar o script `IniciarDev.bat /s` na raiz do projeto. Ele fará a verificação, instalará as dependências caso necessário e iniciará o Frontend (Vite) isolado e o Servidor Local (Node.js na porta 3001).
-- Acesse `http://localhost:5173` para abrir a interface do Mestre.
+As the Game Master (Local Host):
+- You can use the `StartDev.bat /s` script in the root of the project. It will verify, install dependencies if necessary, and start both the Frontend (Vite) and the Local Server (Node.js on port 3001).
+- Access `http://localhost:5173` to open the GM Interface.
 
-Como Jogador (Acesso Local/VPN):
-- O Mestre fornece o seu IP Local IPv4 (ex: 192.168.0.15) e o Código da Sessão.
-- Os jogadores acessam pelo navegador: `http://192.168.0.15:3001/#/player`.
-- Se os jogadores estiverem fora da rede do Mestre, será necessário usar uma VPN (ZeroTier, Hamachi, Radmin VPN) para simular a rede local, e então os jogadores digitam o IP fornecido pela VPN.
+As a Player (Local/VPN Access):
+- The GM provides their IPv4 Local IP (e.g., 192.168.0.15) and the Session Code.
+- Players access via browser: `http://192.168.0.15:3001/#/player`.
+- If players are outside the GM's network, they will need to use a VPN (ZeroTier, Hamachi, Radmin VPN) to simulate a local network, then input the IP provided by the VPN.
 
-2. O QUE DEVE SER UPADO NO GITHUB
+2. WHAT SHOULD BE UPLOADED TO GITHUB
 --------------------------------------------------------------------------------
-Você deve manter o repositório leve e organizado, enviando Apenas os Arquivos de Código Fonte.
-O arquivo `.gitignore` já deve configurar grande parte disso.
+You should keep the repository light and organized, sending Only the Source Code Files.
+The `.gitignore` file should already handle most of this.
 
-Arquivos OBRIGATÓRIOS no Git (CÓDIGO FONTE):
-- `src/` (Todo o frontend React e dados JSON base)
-- `server/` (Servidor Node local host)
-- `relay/` (Servidor online stateless)
-- `public/` (Arquivos estáticos e Service Worker)
-- `Docs/` (Arquivos de planejamento e texto, incluindo este)
-- Arquivos de configuração: `package.json`, `vite.config.js`, `eslint.config.js`, `.gitignore`, `*.bat`.
+MANDATORY Files on Git (SOURCE CODE):
+- `src/` (All React frontend and base JSON data)
+- `server/` (Local host Node server)
+- `relay/` (Stateless online server)
+- `public/` (Static files and Service Worker)
+- `Docs/` (Planning and text files, including this one)
+- Configuration files: `package.json`, `vite.config.js`, `eslint.config.js`, `.gitignore`, `*.bat`.
 
-NÃO faça upload (Adicione ao .gitignore se não estiver):
-- `node_modules/` (Dependências pesadas)
-- `dist/` (Arquivos buildados, a menos que esteja no branch `gh-pages` para deploy)
-- `.env` ou chaves de API secretas (se existir no relay, por exemplo)
-- Pastas de saves temporários de usuários ou bancos de dados criados localmente.
+DO NOT upload (Add to .gitignore if not present):
+- `node_modules/` (Heavy dependencies)
+- `dist/` (Built files, unless in the `gh-pages` branch for deployment)
+- `.env` or secret API keys (if they exist in the relay, for example)
+- Folders with user temporary saves or locally created databases.
 
-3. O QUE AINDA DEVE SER FEITO PARA SER 100% FUNCIONAL
+3. WHAT STILL NEEDS TO BE DONE TO BE 100% FUNCTIONAL
 --------------------------------------------------------------------------------
-Embora as Fases 1 a 9 no Plan.txt estejam dadas como concluídas, na prática para uma sessão flúida ainda é necessário garantir que:
-1. Sincronização de Imagens/Tokens: Como você usa WebSockets locais, se o Mestre fizer upload de uma imagem do PC dele para o mapa ou entidade (salvo no IndexedDB), os computadores dos jogadores não terão essa imagem magicamente. É necessário expor uma rota estática no Express (`server/index.js`) ou converter imagens para Base64 leve para trafegar via WebSocket.
-2. Persistência de estado de jogadores no Relay: Se utilizar o Relay online, quando o mestre piscar a internet, o estado temporário pode se perder se o relay for 100% stateless. É preciso garantir a reconexão automática restaurando o estado do mapa para os jogadores.
-3. Teste Limite de JSON/Dados: IndexedDB funciona maravilhosamente, mas à medida que o mundo cresce, importar e exportar JSONs gigantes engasgam as abas do navegador. 
-4. Validações de Desconexão: O que acontece com a ficha do jogador se ele for desconectado durante a distribuição de atributos ou se ele tentar usar uma habilidade sem conexão?
+Even though Phases 1 through 9 in Plan.txt are marked as completed, practically speaking, for a fluid session, you still need to ensure:
+1. Image/Token Synchronization: Since you use local WebSockets, if the GM uploads an image from their PC to the map or an entity (saved in IndexedDB), the players' computers won't magically get that image. It is necessary to serve a static route in Express (`server/index.js`) or convert images to lightweight Base64 to transfer via WebSocket.
+2. Player State Persistence on the Relay: If using the online Relay, if the GM drops internet, the temporary state might be lost if the relay is 100% stateless. You need to ensure automatic reconnection while restoring the map state for the players.
+3. JSON/Data Limit Testing: IndexedDB works wonderfully, but as the world grows, importing and exporting massive JSONs can freeze browser tabs.
+4. Disconnection Validations: What happens to a player's sheet if they disconnect during attribute distribution or if they try to use an ability while offline?
 
-4. MELHORIAS NO PROCESSO DE INICIAR O SERVER E ACESSO DOS PLAYERS
+4. IMPROVEMENTS TO THE SERVER START PROCESS AND PLAYER ACCESS
 --------------------------------------------------------------------------------
-Atualmente, o processo exige que o jogador saiba o IP do mestre, coloque a porta :3001 e acesse a rede via LAN ou VPN como ZeroTier/Hamachi. Isso é um pouco intimidador para RPGistas sem conhecimento de redes.
+Currently, the process requires the player to know the GM's IP, use port :3001, and access the network via LAN or VPN like ZeroTier/Hamachi. This is a bit intimidating for RPG players without networking knowledge.
 
-Melhorias Sugeridas:
-A. TÚNEL PÚBLICO INTEGRADO (Fácil):
-- Integrar tecnologias como `ngrok` ou `localtunnel` diretamente no `server/index.js`.
-- O servidor Node, ao ser iniciado pelo Mestre, gera automaticamente um túnel temporário (ex: `https://sessao-coalizao-mestre.loca.lt`).
-- O Mestre simplesmente envia este link para os jogadores no Discord. Nada de IPs, portas ou Hamachi.
+Suggested Improvements:
+A. INTEGRATED PUBLIC TUNNEL (Easy):
+- Integrate technologies like `ngrok` or `localtunnel` directly into `server/index.js`.
+- The Node server, when started by the GM, automatically generates a temporary tunnel (e.g., `https://coalizao-session-gm.loca.lt`).
+- The GM simply sends this link to the players on Discord. No need for IPs, ports, or Hamachi.
 
-B. EMPACOTAMENTO VIA ELECTRON / TAURI (Médio):
-- O Mestre não deve precisar rodar comandos como `IniciarDev.bat` ou usar Prompt de Comando. 
-- Empacotando o projeto (`React` + `Express` Node juntos no Electron), basta abrir um `.exe`. A aplicação abre visualmente, o servidor sobe escondido em background e na tela já mostra o link de acesso.
+B. PACKAGING VIA ELECTRON / TAURI (Medium):
+- The GM shouldn't need to run commands like `StartDev.bat` or use the Command Prompt.
+- Packaging the project (`React` + `Express` Node together in Electron), they just open an `.exe`. The application opens visually, the server spins up hidden in the background, and the access link is displayed on screen.
 
-C. INTEGRAÇÃO WEBRTC (Avançado):
-- Remover a necessidade do Node/Express como retransmissor e focar em WebRTC.
-- O jogo conectaria jogadores via uma API de sinalização (Relay básico) e depois eles compartilhariam dados P2P (Peer-to-Peer), o que reduz as chances de lag do server da rede e resolve a maior parte dos problemas de NAT e Firewall que bloqueiam a visibilidade entre os computadores sem Hamachi.
+C. WEBRTC INTEGRATION (Advanced):
+- Remove the need for Node/Express as a relay and focus on WebRTC.
+- The game would connect players via a signaling API (Basic Relay) and then they share data P2P (Peer-to-Peer), which reduces chances of network server lag and fixes most NAT and Firewall problems that block visibility between computers without Hamachi.
 
-CONCLUSÃO:
-O projeto está muito bem alicerçado. A principal barreira entre um projeto "funcional tech" e um "produto polido de RPG" será facilitar a conexão de rede para leigos (Túnel Público em vez de IP/VPN) e garantir que as imagens/arquivos binários transferidos pelo Host apareçam com eficiência na tela dos usuários. 
+CONCLUSION:
+The project is very well-founded. The main barrier between a "functional tech demo" and a "polished RPG product" will be facilitating network connections for laypeople (Public Tunnels instead of IP/VPN) and ensuring that binary files/images transferred by the Host appear efficiently on user screens.

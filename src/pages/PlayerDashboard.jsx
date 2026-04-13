@@ -15,11 +15,11 @@ import { resolveMeleeAttack, resolveRangedAttack, resolveMagicAttack } from '../
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 const TABS = [
-  { id: 'dados',      label: 'Dados',      icon: Dices },
-  { id: 'iniciativa', label: 'Iniciativa', icon: Activity },
-  { id: 'ficha',      label: 'Ficha',      icon: User },
-  { id: 'combate',    label: 'Combate',    icon: Swords },
-  { id: 'notas',      label: 'Notas',      icon: FileText },
+  { id: 'dados',      label: 'Dice',      icon: Dices },
+  { id: 'iniciativa', label: 'Initiative', icon: Activity },
+  { id: 'ficha',      label: 'Sheet',      icon: User },
+  { id: 'combate',    label: 'Combat',    icon: Swords },
+  { id: 'notas',      label: 'Notes',      icon: FileText },
   { id: 'log',        label: 'Log',        icon: ScrollText },
 ]
 
@@ -138,9 +138,9 @@ export default function PlayerDashboard({ session, onDisconnect }) {
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <span style={{ fontFamily: 'var(--font-title)', color: 'var(--accent-primary)', fontWeight: 700, fontSize: '1rem' }}>
-            ⚔️ VTP
+            ⚔️ VTT
           </span>
-          <span style={{ color: 'var(--text-muted)', fontSize: '0.75rem' }}>Modo Jogador</span>
+          <span style={{ color: 'var(--text-muted)', fontSize: '0.75rem' }}>Player Mode</span>
           <span style={{
             background: 'var(--accent-subtle)', color: 'var(--accent-primary)',
             borderRadius: 4, padding: '1px 8px', fontSize: '0.78rem', fontWeight: 600,
@@ -160,10 +160,10 @@ export default function PlayerDashboard({ session, onDisconnect }) {
           <button
             className="btn btn-ghost btn-sm"
             onClick={handleDisconnect}
-            title="Sair da sessão"
+            title="Leave Session"
             style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: '0.75rem' }}
           >
-            <LogOut size={12} /> Sair
+            <LogOut size={12} /> Leave
           </button>
         </div>
       </div>

@@ -8,7 +8,7 @@ export default function Header({ tabs, activeTab, onTabChange }) {
 
   return (
     <header className="header">
-      <div className="header-logo">⚔️ VTP Coalizão</div>
+      <div className="header-logo">⚔️ VTT Coalizao</div>
 
       <nav className="header-tabs">
         {tabs.map(tab => (
@@ -23,16 +23,16 @@ export default function Header({ tabs, activeTab, onTabChange }) {
       </nav>
 
       <div className="header-actions">
-        <button className="btn btn-ghost btn-icon" title="Importar" aria-label="Importar dados">
+        <button className="btn btn-ghost btn-icon" title="Import" aria-label="Import data">
           <Upload size={18} />
         </button>
-        <button className="btn btn-ghost btn-icon" title="Exportar" aria-label="Exportar dados">
+        <button className="btn btn-ghost btn-icon" title="Export" aria-label="Export data">
           <Download size={18} />
         </button>
-        <button className="btn btn-ghost btn-icon" onClick={toggleTheme} title="Alternar tema" aria-label="Alternar tema">
+        <button className="btn btn-ghost btn-icon" onClick={toggleTheme} title="Toggle Theme" aria-label="Toggle Theme">
           {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
         </button>
-        <button className="btn btn-ghost btn-icon" title="Configurações" aria-label="Configurações">
+        <button className="btn btn-ghost btn-icon" title="Settings" aria-label="Settings">
           <Settings size={18} />
         </button>
       </div>
