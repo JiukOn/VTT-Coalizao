@@ -1,9 +1,22 @@
 {
   "id": "guarda_uros",
-  "name": "Guarda Uros",
+  "name": {
+    "pt-br": "Guarda Uros",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "location": "Cidade dos Porcos",
-  "description": "",
-  "type": "npc",
-  "role": "",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

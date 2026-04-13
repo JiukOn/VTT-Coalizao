@@ -1,9 +1,22 @@
 {
   "id": "fray_o_bom_rei",
-  "name": "Fray, O bom rei",
+  "name": {
+    "pt-br": "Fray, O bom rei",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "O Bom Rei",
+    "en-us": ""
+  },
   "location": "Tumba da Descendência",
-  "description": "",
-  "type": "npc",
-  "role": "O Bom Rei",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

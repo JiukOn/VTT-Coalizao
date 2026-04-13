@@ -1,9 +1,22 @@
 {
   "id": "blake_o_rei_tirano",
-  "name": "Blake, O rei tirano",
+  "name": {
+    "pt-br": "Blake, O rei tirano",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "O Rei Tirano",
+    "en-us": ""
+  },
   "location": "Tumba da Descendência",
-  "description": "",
-  "type": "npc",
-  "role": "O Rei Tirano",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

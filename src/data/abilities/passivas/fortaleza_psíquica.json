@@ -1,9 +1,15 @@
 {
   "id": "fortaleza_psíquica",
-  "name": "Fortaleza Psíquica",
+  "name": {
+    "pt-br": "Fortaleza Psíquica",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Evo Barreira Mental",
-  "description": "Concede +4 no dado em testes de resistência contra efeitos psicológicos e rola com vantagem se o efeito durar 2 ou mais turnos. (Requer RES 6)",
+  "description": {
+    "pt-br": "Concede +4 no dado em testes de resistência contra efeitos psicológicos e rola com vantagem se o efeito durar 2 ou mais turnos. (Requer RES 6)",
+    "en-us": ""
+  },
   "classLink": "Evo Barreira Mental",
   "cost": null,
   "test": null,

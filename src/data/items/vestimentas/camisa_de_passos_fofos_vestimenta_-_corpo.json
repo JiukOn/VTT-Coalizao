@@ -1,8 +1,14 @@
 {
   "id": "camisa_de_passos_fofos_vestimenta_-_corpo",
-  "name": "Camisa de Passos Fofos (Vestimenta - Corpo)",
+  "name": {
+    "pt-br": "Camisa de Passos Fofos (Vestimenta - Corpo)",
+    "en-us": ""
+  },
   "category": "Corpo",
-  "description": "Camisa feita de pele macia que aumenta o calor corporal. (Maldição: Fraqueza - Se o personagem possuir maior FRC que o alvo, ele perde -2 FRC e -1 DEX). (4 DP).",
+  "description": {
+    "pt-br": "Camisa feita de pele macia que aumenta o calor corporal. (Maldição: Fraqueza - Se o personagem possuir maior FRC que o alvo, ele perde -2 FRC e -1 DEX). (4 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

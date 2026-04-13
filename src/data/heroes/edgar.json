@@ -1,6 +1,9 @@
 {
   "id": "edgar",
-  "name": "Edgar",
+  "name": {
+    "pt-br": "Edgar",
+    "en-us": ""
+  },
   "level": 5,
   "class": "Alquimista",
   "specie": "Humano",
@@ -15,7 +18,10 @@
     "PRE": 5,
     "ENR": 8
   },
-  "history": "Alquimista sombrio especialista em transmutação e contratos de alma.",
+  "history": {
+    "pt-br": "Alquimista sombrio especialista em transmutação e contratos de alma.",
+    "en-us": ""
+  },
   "aura": "Conhecimento",
   "isCustom": false
 }

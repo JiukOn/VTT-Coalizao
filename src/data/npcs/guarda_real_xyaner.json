@@ -1,9 +1,22 @@
 {
   "id": "guarda_real_xyaner",
-  "name": "Guarda Real Xyaner",
+  "name": {
+    "pt-br": "Guarda Real Xyaner",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Guarda Real",
+    "en-us": ""
+  },
   "location": "Capital dos Elfos",
-  "description": "",
-  "type": "npc",
-  "role": "Guarda Real",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

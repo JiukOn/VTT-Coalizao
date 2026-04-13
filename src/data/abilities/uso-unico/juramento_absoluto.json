@@ -1,9 +1,15 @@
 {
   "id": "juramento_absoluto",
-  "name": "Juramento Absoluto",
+  "name": {
+    "pt-br": "Juramento Absoluto",
+    "en-us": ""
+  },
   "category": "USO ÚNICO",
   "class": "Geral",
-  "description": "O usuário realiza um juramento absoluto diante da morte. Se o usuario estiver em estado de quase morte ele pode ativar essa habilidade e criar um juramento que nao podera ser quebrado nunca e apos isso por 3 turnos o usuario fica desmaido, porem sua VIT se mantera em 1 e nao podera ser alterada negativamente. Ao fim do efeito, o usuario perde permanentemente 1 ponto de VIT base e a habilidade some. (Requer RES 6 e aprovacao do mestre)",
+  "description": {
+    "pt-br": "O usuário realiza um juramento absoluto diante da morte. Se o usuario estiver em estado de quase morte ele pode ativar essa habilidade e criar um juramento que nao podera ser quebrado nunca e apos isso por 3 turnos o usuario fica desmaido, porem sua VIT se mantera em 1 e nao podera ser alterada negativamente. Ao fim do efeito, o usuario perde permanentemente 1 ponto de VIT base e a habilidade some. (Requer RES 6 e aprovacao do mestre)",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

@@ -1,8 +1,14 @@
 {
   "id": "coração_de_tinta_consumível",
-  "name": "Coração de Tinta (Consumível)",
+  "name": {
+    "pt-br": "Coração de Tinta (Consumível)",
+    "en-us": ""
+  },
   "category": "Consumíveis",
-  "description": "Um item Mito que, ao ser consumido, concede ao usuário a habilidade \"Domínio de Tinta\", o status especial de espécie permanente \"Rei Tinta\", e ganha permanentemente +2 ENR.",
+  "description": {
+    "pt-br": "Um item Mito que, ao ser consumido, concede ao usuário a habilidade \"Domínio de Tinta\", o status especial de espécie permanente \"Rei Tinta\", e ganha permanentemente +2 ENR.",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

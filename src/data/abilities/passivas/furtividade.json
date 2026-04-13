@@ -1,9 +1,15 @@
 {
   "id": "furtividade",
-  "name": "Furtividade",
+  "name": {
+    "pt-br": "Furtividade",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Geral",
-  "description": "Impõe -2 nos dados de testes de percepção inimigos.",
+  "description": {
+    "pt-br": "Impõe -2 nos dados de testes de percepção inimigos.",
+    "en-us": ""
+  },
   "classLink": null,
   "cost": null,
   "test": null,

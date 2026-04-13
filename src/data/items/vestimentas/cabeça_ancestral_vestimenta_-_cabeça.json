@@ -1,8 +1,14 @@
 {
   "id": "cabeça_ancestral_vestimenta_-_cabeça",
-  "name": "Cabeça Ancestral (Vestimenta - Cabeça)",
+  "name": {
+    "pt-br": "Cabeça Ancestral (Vestimenta - Cabeça)",
+    "en-us": ""
+  },
   "category": "Cabeça",
-  "description": "O esqueleto de uma criatura mágica talhado como um capacete, que confere +2 ENR e +3 INT. Possui a modificação Vigoroso, permitindo, uma vez por dia, realizar um teste (1d20 > 18) para remover um efeito psicológico de nível 1 ou 2 permanentemente. (20 DP).",
+  "description": {
+    "pt-br": "O esqueleto de uma criatura mágica talhado como um capacete, que confere +2 ENR e +3 INT. Possui a modificação Vigoroso, permitindo, uma vez por dia, realizar um teste (1d20 > 18) para remover um efeito psicológico de nível 1 ou 2 permanentemente. (20 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

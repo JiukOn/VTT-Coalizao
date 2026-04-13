@@ -1,8 +1,14 @@
 {
   "id": "escudo_largo_de_madeira_escudo",
-  "name": "Escudo Largo de Madeira (Escudo)",
+  "name": {
+    "pt-br": "Escudo Largo de Madeira (Escudo)",
+    "en-us": ""
+  },
   "category": "Itens de Defesa",
-  "description": "Um escudo grande de durabilidade média. Concede 1d4 - 2 de defesa. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (15 DP).",
+  "description": {
+    "pt-br": "Um escudo grande de durabilidade média. Concede 1d4 - 2 de defesa. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (15 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

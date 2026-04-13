@@ -1,8 +1,14 @@
 {
   "id": "shuriken_projetil",
-  "name": "Shuriken (Projetil)",
+  "name": {
+    "pt-br": "Shuriken (Projetil)",
+    "en-us": ""
+  },
   "category": "Projéteis",
-  "description": "Um projétil pequeno e afiado, ideal para lançamentos rápidos. Causa 1d4 - 1 de dano. Possui a modificação Afiado, aumentando sua capacidade de corte em +1 de dano.",
+  "description": {
+    "pt-br": "Um projétil pequeno e afiado, ideal para lançamentos rápidos. Causa 1d4 - 1 de dano. Possui a modificação Afiado, aumentando sua capacidade de corte em +1 de dano.",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

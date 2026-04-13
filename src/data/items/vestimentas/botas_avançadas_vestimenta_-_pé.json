@@ -1,8 +1,14 @@
 {
   "id": "botas_avançadas_vestimenta_-_pé",
-  "name": "Botas Avançadas (Vestimenta - Pé)",
+  "name": {
+    "pt-br": "Botas Avançadas (Vestimenta - Pé)",
+    "en-us": ""
+  },
   "category": "Pé",
-  "description": "Botas resistentes e leves para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).",
+  "description": {
+    "pt-br": "Botas resistentes e leves para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

@@ -1,9 +1,15 @@
 {
   "id": "incorporação_irrestrita",
-  "name": "Incorporação Irrestrita",
+  "name": {
+    "pt-br": "Incorporação Irrestrita",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Transmutador",
-  "description": "O usuário pode unir forçadamente partes biológicas de um ser em outro. Este processo é irreversível. A habilidade é ativada se o teste (1d20 > 16) for bem-sucedido. (Requer RES 10 e ENR 8).",
+  "description": {
+    "pt-br": "O usuário pode unir forçadamente partes biológicas de um ser em outro. Este processo é irreversível. A habilidade é ativada se o teste (1d20 > 16) for bem-sucedido. (Requer RES 10 e ENR 8).",
+    "en-us": ""
+  },
   "classLink": "Transmutador",
   "cost": null,
   "test": null,

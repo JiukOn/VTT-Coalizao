@@ -1,9 +1,15 @@
 {
   "id": "troca",
-  "name": "Troca",
+  "name": {
+    "pt-br": "Troca",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Alquimista",
-  "description": "O usuário pode inverter o material de 2 itens se o teste (1d20 > 16) for bem-sucedido.",
+  "description": {
+    "pt-br": "O usuário pode inverter o material de 2 itens se o teste (1d20 > 16) for bem-sucedido.",
+    "en-us": ""
+  },
   "classLink": "Alquimista",
   "cost": null,
   "test": null,

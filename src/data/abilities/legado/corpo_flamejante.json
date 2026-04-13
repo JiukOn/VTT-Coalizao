@@ -1,9 +1,15 @@
 {
   "id": "corpo_flamejante",
-  "name": "Corpo Flamejante",
+  "name": {
+    "pt-br": "Corpo Flamejante",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Incendiário",
-  "description": "O corpo do usuário adquire o elemento Fogo. Seus ataques corporais e ataques de energia com este elemento causam +FRC/4 de dano. No entanto, o usuário recebe o dobro de dano do elemento Água. Esse efeito fica ativo por ate 4 turnos por combate.",
+  "description": {
+    "pt-br": "O corpo do usuário adquire o elemento Fogo. Seus ataques corporais e ataques de energia com este elemento causam +FRC/4 de dano. No entanto, o usuário recebe o dobro de dano do elemento Água. Esse efeito fica ativo por ate 4 turnos por combate.",
+    "en-us": ""
+  },
   "classLink": "Incendiário",
   "cost": null,
   "test": null,

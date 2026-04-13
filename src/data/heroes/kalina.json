@@ -1,6 +1,9 @@
 {
   "id": "kalina",
-  "name": "Kalina Amster",
+  "name": {
+    "pt-br": "Kalina Amster",
+    "en-us": ""
+  },
   "level": 4,
   "class": "Feirante",
   "specie": "Humano/Demônio",
@@ -15,7 +18,10 @@
     "PRE": 4,
     "ENR": 0
   },
-  "history": "Nascida na Cidade dos Porcos, seus pais são lavradores, avô paterno demônio.",
+  "history": {
+    "pt-br": "Nascida na Cidade dos Porcos, seus pais são lavradores, avô paterno demônio.",
+    "en-us": ""
+  },
   "aura": "?",
   "isCustom": false
 }

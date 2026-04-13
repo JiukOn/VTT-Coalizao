@@ -1,6 +1,9 @@
 {
   "id": "fifo",
-  "name": "Fifo Zante",
+  "name": {
+    "pt-br": "Fifo Zante",
+    "en-us": ""
+  },
   "level": 5,
   "class": "Sincronizador",
   "specie": "Humano",
@@ -15,7 +18,10 @@
     "PRE": 2,
     "ENR": 0
   },
-  "history": "Estudava táticas de guerra e passava em veterinária. Gosta de ler Ficção.",
+  "history": {
+    "pt-br": "Estudava táticas de guerra e passava em veterinária. Gosta de ler Ficção.",
+    "en-us": ""
+  },
   "aura": "Inspiração",
   "isCustom": false
 }

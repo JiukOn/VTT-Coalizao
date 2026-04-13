@@ -1,8 +1,14 @@
 {
   "id": "elixir_da_vida_consumível",
-  "name": "Elixir da Vida (Consumível)",
+  "name": {
+    "pt-br": "Elixir da Vida (Consumível)",
+    "en-us": ""
+  },
   "category": "Consumíveis",
-  "description": "Um elixir raro que aumenta 1 ponto de VIT permanentemente.",
+  "description": {
+    "pt-br": "Um elixir raro que aumenta 1 ponto de VIT permanentemente.",
+    "en-us": ""
+  },
   "type": "consumivel",
   "subtype": "consumivel",
   "rarity": "especial",

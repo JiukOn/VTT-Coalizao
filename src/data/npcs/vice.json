@@ -1,9 +1,22 @@
 {
   "id": "vice",
-  "name": "Vice",
+  "name": {
+    "pt-br": "Vice",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Lorde Carte Unsato -",
+    "en-us": ""
+  },
   "location": "Cidade dos Porcos",
-  "description": "Lorde Carte Unsato -",
-  "type": "npc",
-  "role": "",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

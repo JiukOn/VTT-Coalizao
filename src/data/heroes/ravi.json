@@ -1,6 +1,9 @@
 {
   "id": "ravi",
-  "name": "Ravi",
+  "name": {
+    "pt-br": "Ravi",
+    "en-us": ""
+  },
   "level": 7,
   "class": "Atirador de Fluxo",
   "specie": "Humano",
@@ -15,7 +18,10 @@
     "PRE": 7,
     "ENR": 8
   },
-  "history": "Ficou 4 anos na Coreia, adora FPS, queria entrar pro exército e ser perito em armas.",
+  "history": {
+    "pt-br": "Ficou 4 anos na Coreia, adora FPS, queria entrar pro exército e ser perito em armas.",
+    "en-us": ""
+  },
   "aura": "Opressor",
   "isCustom": false
 }

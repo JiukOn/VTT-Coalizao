@@ -1,9 +1,15 @@
 {
   "id": "olhar_divino",
-  "name": "Olhar Divino",
+  "name": {
+    "pt-br": "Olhar Divino",
+    "en-us": ""
+  },
   "category": "MITO",
   "class": "Florete de Ukhel",
-  "description": "Concede ao usuário um bônus em testes de investigação igual ao número de seus pares de olhos. Pode exalar uma sensação de 'Temor' em inimigos. Aumenta +5 DEX em Batalha. (Requer ao menos 8 olhos avulsos no primeiro uso. Requer DEX 6, FRC 6, INT 5 e RES 3).",
+  "description": {
+    "pt-br": "Concede ao usuário um bônus em testes de investigação igual ao número de seus pares de olhos. Pode exalar uma sensação de 'Temor' em inimigos. Aumenta +5 DEX em Batalha. (Requer ao menos 8 olhos avulsos no primeiro uso. Requer DEX 6, FRC 6, INT 5 e RES 3).",
+    "en-us": ""
+  },
   "classLink": "Florete de Ukhel",
   "cost": null,
   "test": null,

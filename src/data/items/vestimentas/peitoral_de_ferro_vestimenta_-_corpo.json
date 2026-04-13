@@ -1,8 +1,14 @@
 {
   "id": "peitoral_de_ferro_vestimenta_-_corpo",
-  "name": "Peitoral de Ferro (Vestimenta - Corpo)",
+  "name": {
+    "pt-br": "Peitoral de Ferro (Vestimenta - Corpo)",
+    "en-us": ""
+  },
   "category": "Corpo",
-  "description": "Peitoral forjado em ferro, pesado e durável. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (8 DP).",
+  "description": {
+    "pt-br": "Peitoral forjado em ferro, pesado e durável. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (8 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

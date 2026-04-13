@@ -1,9 +1,22 @@
 {
   "id": "barista_nich",
-  "name": "Barista Nich",
+  "name": {
+    "pt-br": "Barista Nich",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "location": "Taverna Normiumor",
-  "description": "",
-  "type": "npc",
-  "role": "",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

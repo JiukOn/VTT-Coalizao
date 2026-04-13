@@ -1,8 +1,14 @@
 {
   "id": "funda_arma",
-  "name": "Funda (Arma)",
+  "name": {
+    "pt-br": "Funda (Arma)",
+    "en-us": ""
+  },
   "category": "Armas à Distância",
-  "description": "Capaz de lançar projéteis pequenos e pesados. Distância Máxima de lançamento: 4 metros. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (10 DP).",
+  "description": {
+    "pt-br": "Capaz de lançar projéteis pequenos e pesados. Distância Máxima de lançamento: 4 metros. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (10 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

@@ -1,8 +1,14 @@
 {
   "id": "chá_de_bati_consumível",
-  "name": "Chá de Bati (Consumível)",
+  "name": {
+    "pt-br": "Chá de Bati (Consumível)",
+    "en-us": ""
+  },
   "category": "Consumíveis",
-  "description": "Um chá simples que, se o usuário obtiver sucesso em um teste de 1d20 > 10, restaura 1d4 - 1 de VIT.",
+  "description": {
+    "pt-br": "Um chá simples que, se o usuário obtiver sucesso em um teste de 1d20 > 10, restaura 1d4 - 1 de VIT.",
+    "en-us": ""
+  },
   "type": "consumivel",
   "subtype": "consumivel",
   "rarity": "comum",

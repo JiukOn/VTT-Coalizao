@@ -1,9 +1,15 @@
 {
   "id": "encontrar",
-  "name": "Encontrar",
+  "name": {
+    "pt-br": "Encontrar",
+    "en-us": ""
+  },
   "category": "MITO",
   "class": "Bússola Ressentida",
-  "description": "Mostra a direção para algo conhecido ou procurado.",
+  "description": {
+    "pt-br": "Mostra a direção para algo conhecido ou procurado.",
+    "en-us": ""
+  },
   "classLink": "Bússola Ressentida",
   "cost": null,
   "test": null,

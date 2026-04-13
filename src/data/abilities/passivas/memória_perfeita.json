@@ -1,9 +1,15 @@
 {
   "id": "memória_perfeita",
-  "name": "Memória Perfeita",
+  "name": {
+    "pt-br": "Memória Perfeita",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Geral",
-  "description": "O usuário é capaz de lembrar-se de tudo o que já viu. Contudo, traumas têm efeito fortalecido, impondo 1 dado de prejuízo (rola 2 dados e pega o menor) na aquisição de traumas.",
+  "description": {
+    "pt-br": "O usuário é capaz de lembrar-se de tudo o que já viu. Contudo, traumas têm efeito fortalecido, impondo 1 dado de prejuízo (rola 2 dados e pega o menor) na aquisição de traumas.",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

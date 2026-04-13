@@ -1,8 +1,14 @@
 {
   "id": "fruta_da_aura_consumível",
-  "name": "Fruta da Aura (Consumível)",
+  "name": {
+    "pt-br": "Fruta da Aura (Consumível)",
+    "en-us": ""
+  },
   "category": "Consumíveis",
-  "description": "Uma fruta que pode mudar a aura do personagem.",
+  "description": {
+    "pt-br": "Uma fruta que pode mudar a aura do personagem.",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

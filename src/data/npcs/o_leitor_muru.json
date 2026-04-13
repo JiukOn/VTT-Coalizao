@@ -1,9 +1,22 @@
 {
   "id": "o_leitor_muru",
-  "name": "O leitor, Muru",
+  "name": {
+    "pt-br": "O leitor, Muru",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "O Leitor",
+    "en-us": ""
+  },
   "location": "Taverna Normiumor",
-  "description": "",
-  "type": "npc",
-  "role": "O Leitor",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

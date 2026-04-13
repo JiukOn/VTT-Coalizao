@@ -1,11 +1,19 @@
 {
   "id": "flonec",
-  "name": "Flonec",
-  "description": "Esse é um mamifero adaptado para ambientes perenemente floridos. Sua característica mais marcante são as orelhas extremamente grandes, proporcionais ao seu corpo, que lhe conferem uma audição aguçada e também auxiliam na dissipação de calor. Esse animal é capaz de criar flores em seu corpo, essas flores se alimentam do sangue de Flonec e a ajudam a se camuflar, podem atrair criaturas polinizadoras e apos um longo perido as raizes podem preencher o coracao de Flonec o matando por dentro.",
+  "name": {
+    "pt-br": "Flonec",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Esse é um mamifero adaptado para ambientes perenemente floridos. Sua característica mais marcante são as orelhas extremamente grandes, proporcionais ao seu corpo, que lhe conferem uma audição aguçada e também auxiliam na dissipação de calor. Esse animal é capaz de criar flores em seu corpo, essas flores se alimentam do sangue de Flonec e a ajudam a se camuflar, podem atrair criaturas polinizadoras e apos um longo perido as raizes podem preencher o coracao de Flonec o matando por dentro.",
+    "en-us": ""
+  },
   "type": "terrestre",
   "size": "medio",
   "diet": "herbivoro",
   "element": "madeira",
   "imagePath": "Flonnec.jpeg",
-  "isCustom": false
+  "isCustom": false,
+  "core": "medio",
+  "elements": []
 }

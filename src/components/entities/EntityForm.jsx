@@ -6,9 +6,11 @@ import { useCampaign } from '../../context/CampaignContext.jsx'
 
 const NPC_TYPES = ['Aliado', 'Neutro', 'Hostil', 'Comerciante', 'Nobre', 'Guarda', 'Outro']
 const CREATURE_TYPES = ['terrestre', 'aquatico', 'voador', 'semi-aquatico']
-const CREATURE_SIZES = ['pequeno', 'medio', 'grande', 'colossal']
+const CREATURE_SIZES = ['minusculo', 'pequeno', 'medio', 'grande', 'colossal', 'mundial']
+const CREATURE_KERNELS = ['pequeno', 'medio', 'grande', 'colossal']
 const CREATURE_DIETS = ['carnivoro', 'herbivoro', 'onivoro']
-const ELEMENTS = ['—', 'fogo', 'agua', 'gelo', 'eletrico', 'madeira', 'areia', 'maligno']
+import { BASE_PERSONALITIES } from '../../data/personalities/index'
+import { BASE_ELEMENTS } from '../../data/elements/index'
 
 export default function EntityForm({ entityType = 'npc', entity = null, onSave, onCancel }) {
   const { activeCampaign } = useCampaign()
@@ -17,9 +19,28 @@ export default function EntityForm({ entityType = 'npc', entity = null, onSave, 
   const [form, setForm] = useState(() => {
     if (entity) return { ...entity }
     if (entityType === 'npc') {
-      return { name: '', location: '', type: 'Neutro', description: '', notes: '', isCustom: 1 }
+      return { 
+        name: '', 
+        location: '', 
+        description: '', 
+        possibleBenefit: '', 
+        possibleHarm: '', 
+        personalities: [], 
+        notes: '', 
+        isCustom: 1 
+      }
     }
-    return { name: '', type: 'terrestre', size: 'medio', diet: 'onivoro', element: '', description: '', behavior: 'Territorial', isCustom: 1 }
+    return { 
+      name: '', 
+      type: 'terrestre', 
+      core: 'medio',
+      size: 'medio', 
+      diet: 'onivoro', 
+      elements: [], 
+      description: '', 
+      behavior: 'Territorial', 
+      isCustom: 1 
+    }
   })
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState('')
@@ -74,10 +95,21 @@ export default function EntityForm({ entityType = 'npc', entity = null, onSave, 
             <input className="input" value={form.location || ''} onChange={e => set('location', e.target.value)} placeholder="Capital dos Elfos, Cidade Caída..." />
           </div>
           <div className="form-group">
-            <label className="input-label">Tipo / Relação</label>
-            <select className="input select" value={form.type || ''} onChange={e => set('type', e.target.value)}>
-              {NPC_TYPES.map(t => <option key={t} value={t}>{t}</option>)}
+            <label className="input-label">Personalidade</label>
+            <select className="input select" value={form.personalities?.[0] || ''} onChange={e => set('personalities', [e.target.value])}>
+              <option value="">Selecione...</option>
+              {BASE_PERSONALITIES.map(p => <option key={p.id} value={p.id}>{p.name}</option>)}
             </select>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+            <div className="form-group">
+              <label className="input-label">Possível Benefício</label>
+              <input className="input" value={form.possibleBenefit || ''} onChange={e => set('possibleBenefit', e.target.value)} placeholder="Ex: Info sobre Ukhel" />
+            </div>
+            <div className="form-group">
+              <label className="input-label">Possível Malefício</label>
+              <input className="input" value={form.possibleHarm || ''} onChange={e => set('possibleHarm', e.target.value)} placeholder="Ex: Rouba Ouris" />
+            </div>
           </div>
         </>
       ) : (
@@ -90,21 +122,22 @@ export default function EntityForm({ entityType = 'npc', entity = null, onSave, 
               </select>
             </div>
             <div className="form-group">
+              <label className="input-label">Núcleo (Energia)</label>
+              <select className="input select" value={form.core} onChange={e => set('core', e.target.value)}>
+                {CREATURE_KERNELS.map(k => <option key={k} value={k}>{k}</option>)}
+              </select>
+            </div>
+            <div className="form-group">
               <label className="input-label">Tamanho</label>
               <select className="input select" value={form.size} onChange={e => set('size', e.target.value)}>
                 {CREATURE_SIZES.map(s => <option key={s} value={s}>{s}</option>)}
               </select>
             </div>
             <div className="form-group">
-              <label className="input-label">Dieta</label>
-              <select className="input select" value={form.diet} onChange={e => set('diet', e.target.value)}>
-                {CREATURE_DIETS.map(d => <option key={d} value={d}>{d}</option>)}
-              </select>
-            </div>
-            <div className="form-group">
-              <label className="input-label">Elemento</label>
-              <select className="input select" value={form.element || ''} onChange={e => set('element', e.target.value === '—' ? '' : e.target.value)}>
-                {ELEMENTS.map(el => <option key={el} value={el}>{el}</option>)}
+              <label className="input-label">Elemento Principal</label>
+              <select className="input select" value={form.elements?.[0] || ''} onChange={e => set('elements', e.target.value ? [e.target.value] : [])}>
+                <option value="">Nenhum</option>
+                {BASE_ELEMENTS.map(el => <option key={el.id} value={el.id}>{el.name}</option>)}
               </select>
             </div>
           </div>

@@ -1,8 +1,14 @@
 {
   "id": "capacete_rimu_vestimenta_-_cabeça",
-  "name": "Capacete Rimu (Vestimenta - Cabeça)",
+  "name": {
+    "pt-br": "Capacete Rimu (Vestimenta - Cabeça)",
+    "en-us": ""
+  },
   "category": "Cabeça",
-  "description": "Capacete resistente de couro alquimizado, moldado para alta proteção. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (5 DP).",
+  "description": {
+    "pt-br": "Capacete resistente de couro alquimizado, moldado para alta proteção. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (5 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

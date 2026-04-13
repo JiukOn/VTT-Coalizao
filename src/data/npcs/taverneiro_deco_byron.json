@@ -1,9 +1,22 @@
 {
   "id": "taverneiro_deco_byron",
-  "name": "Taverneiro, Deco Byron",
+  "name": {
+    "pt-br": "Taverneiro, Deco Byron",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Taverneiro",
+    "en-us": ""
+  },
   "location": "Taverna Byron",
-  "description": "",
-  "type": "npc",
-  "role": "Taverneiro",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

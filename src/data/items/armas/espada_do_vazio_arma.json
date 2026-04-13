@@ -1,8 +1,14 @@
 {
   "id": "espada_do_vazio_arma",
-  "name": "Espada do Vazio (Arma)",
+  "name": {
+    "pt-br": "Espada do Vazio (Arma)",
+    "en-us": ""
+  },
   "category": "Armas de Proximidade",
-  "description": "Uma espada média e pesada que impõe -4 DEX, mas concede +8 FRC. Causa 2d4 + 4 de dano. Possui a modificação Energizador, permitindo, uma vez por combate, anular 1 de dano elemental que o usuário sofreria. Além disso, pode absorver a força do ataque do oponente, reduzindo o dado do oponente em 2. (20 DP). (Requer 20 FRC).",
+  "description": {
+    "pt-br": "Uma espada média e pesada que impõe -4 DEX, mas concede +8 FRC. Causa 2d4 + 4 de dano. Possui a modificação Energizador, permitindo, uma vez por combate, anular 1 de dano elemental que o usuário sofreria. Além disso, pode absorver a força do ataque do oponente, reduzindo o dado do oponente em 2. (20 DP). (Requer 20 FRC).",
+    "en-us": ""
+  },
   "type": "arma",
   "subtype": "proximidade",
   "rarity": "especial",

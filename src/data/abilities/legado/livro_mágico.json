@@ -1,9 +1,15 @@
 {
   "id": "livro_mágico",
-  "name": "Livro Mágico",
+  "name": {
+    "pt-br": "Livro Mágico",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Registrador",
-  "description": "O usuário pode mostrar a ficha de qualquer ser vivo que esteja em um nível igual ou menor ao seu próprio.",
+  "description": {
+    "pt-br": "O usuário pode mostrar a ficha de qualquer ser vivo que esteja em um nível igual ou menor ao seu próprio.",
+    "en-us": ""
+  },
   "classLink": "Registrador",
   "cost": null,
   "test": null,

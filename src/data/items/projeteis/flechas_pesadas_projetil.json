@@ -1,8 +1,14 @@
 {
   "id": "flechas_pesadas_projetil",
-  "name": "Flechas Pesadas (Projetil)",
+  "name": {
+    "pt-br": "Flechas Pesadas (Projetil)",
+    "en-us": ""
+  },
   "category": "Projéteis",
-  "description": "Flechas que causam maior impacto. Causam 1d4 + 4 de dano.",
+  "description": {
+    "pt-br": "Flechas que causam maior impacto. Causam 1d4 + 4 de dano.",
+    "en-us": ""
+  },
   "type": "projetil",
   "subtype": "projetil",
   "rarity": "comum",

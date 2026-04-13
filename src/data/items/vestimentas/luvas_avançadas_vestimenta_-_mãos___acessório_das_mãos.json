@@ -1,8 +1,14 @@
 {
   "id": "luvas_avançadas_vestimenta_-_mãos_/_acessório_das_mãos",
-  "name": "Luvas Avançadas (Vestimenta - Mãos / Acessório das Mãos)",
+  "name": {
+    "pt-br": "Luvas Avançadas (Vestimenta - Mãos / Acessório das Mãos)",
+    "en-us": ""
+  },
   "category": "Mãos / Acessório das Mãos",
-  "description": "Luvas resistentes para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).",
+  "description": {
+    "pt-br": "Luvas resistentes para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

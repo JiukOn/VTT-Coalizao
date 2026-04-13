@@ -1,9 +1,15 @@
 {
   "id": "tomo_vinculativo",
-  "name": "Tomo Vinculativo",
+  "name": {
+    "pt-br": "Tomo Vinculativo",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Curioso",
-  "description": "O usuário pode escrever o nome de um personagem previamente conhecido cujo nível de entendimento possuído seja considerável em seu Livro Magico, a partir disso o usuário deve fazer um teste (1d20 > 12) e se for bem sucedido o usuário recebe +2 nos dados de interação com o alvo, além de ter a capacidade de sentir a presença do alvo em ate 1km (Mas sem precisão). (Requer INT 8 e habilidade Livro Magico)",
+  "description": {
+    "pt-br": "O usuário pode escrever o nome de um personagem previamente conhecido cujo nível de entendimento possuído seja considerável em seu Livro Magico, a partir disso o usuário deve fazer um teste (1d20 > 12) e se for bem sucedido o usuário recebe +2 nos dados de interação com o alvo, além de ter a capacidade de sentir a presença do alvo em ate 1km (Mas sem precisão). (Requer INT 8 e habilidade Livro Magico)",
+    "en-us": ""
+  },
   "classLink": "Curioso",
   "cost": null,
   "test": null,

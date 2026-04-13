@@ -1,8 +1,14 @@
 {
   "id": "adaga_de_cobre_arma",
-  "name": "Adaga de Cobre (Arma)",
+  "name": {
+    "pt-br": "Adaga de Cobre (Arma)",
+    "en-us": ""
+  },
   "category": "Armas de Proximidade",
-  "description": "Uma lâmina simples e leve, ideal para tarefas do campo, mas de pouca resistência em combate. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (10 DP).",
+  "description": {
+    "pt-br": "Uma lâmina simples e leve, ideal para tarefas do campo, mas de pouca resistência em combate. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (10 DP).",
+    "en-us": ""
+  },
   "type": "arma",
   "subtype": "proximidade",
   "rarity": "comum",

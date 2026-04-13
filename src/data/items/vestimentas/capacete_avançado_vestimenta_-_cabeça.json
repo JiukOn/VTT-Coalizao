@@ -1,8 +1,14 @@
 {
   "id": "capacete_avançado_vestimenta_-_cabeça",
-  "name": "Capacete Avançado (Vestimenta - Cabeça)",
+  "name": {
+    "pt-br": "Capacete Avançado (Vestimenta - Cabeça)",
+    "en-us": ""
+  },
   "category": "Cabeça",
-  "description": "Capacete robusto de liga metálica, projetado para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).",
+  "description": {
+    "pt-br": "Capacete robusto de liga metálica, projetado para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

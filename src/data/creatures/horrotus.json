@@ -1,11 +1,19 @@
 {
   "id": "horrotus",
-  "name": "Horrotus",
-  "description": "Um enorme inseto, com 6 patas, 4 asas, 4 olhos, uma cauda e um par de antenas, capaz de se alimentar de qualquer coisa que encontra em seu ambiente. Pode sobreviver em desertos ou grandes florestas. É um animal muito agressivo e uma das unicas criaturas que matam outros seres por diversão.",
+  "name": {
+    "pt-br": "Horrotus",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Um enorme inseto, com 6 patas, 4 asas, 4 olhos, uma cauda e um par de antenas, capaz de se alimentar de qualquer coisa que encontra em seu ambiente. Pode sobreviver em desertos ou grandes florestas. É um animal muito agressivo e uma das unicas criaturas que matam outros seres por diversão.",
+    "en-us": ""
+  },
   "type": "voador",
-  "size": "grande",
+  "size": "medio",
   "diet": "onivoro",
   "element": null,
   "imagePath": "Horrotus.jpeg",
-  "isCustom": false
+  "isCustom": false,
+  "core": "medio",
+  "elements": []
 }

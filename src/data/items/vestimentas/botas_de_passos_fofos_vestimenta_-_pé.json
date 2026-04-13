@@ -1,8 +1,14 @@
 {
   "id": "botas_de_passos_fofos_vestimenta_-_pé",
-  "name": "Botas de Passos Fofos (Vestimenta - Pé)",
+  "name": {
+    "pt-br": "Botas de Passos Fofos (Vestimenta - Pé)",
+    "en-us": ""
+  },
   "category": "Pé",
-  "description": "Botas fofas e macias, parte do conjunto de pele. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (2 DP).",
+  "description": {
+    "pt-br": "Botas fofas e macias, parte do conjunto de pele. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (2 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

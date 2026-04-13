@@ -1,8 +1,14 @@
 {
   "id": "martelo_kilicêkan_arma",
-  "name": "Martelo Kilicêkan (Arma)",
+  "name": {
+    "pt-br": "Martelo Kilicêkan (Arma)",
+    "en-us": ""
+  },
   "category": "Armas de Proximidade",
-  "description": "Um martelo médio e pesado, de alta durabilidade, capaz de imbuir energia e conferir +3 ENR e +1 FRC ao seu usuário. Causa 1d4 + 3 de dano. Possui a modificação Imbuídor, permitindo ao usuário gastar temporariamente 1 ponto de sua ENR por turno para aumentar o dano do ataque em 1. (25 DP).",
+  "description": {
+    "pt-br": "Um martelo médio e pesado, de alta durabilidade, capaz de imbuir energia e conferir +3 ENR e +1 FRC ao seu usuário. Causa 1d4 + 3 de dano. Possui a modificação Imbuídor, permitindo ao usuário gastar temporariamente 1 ponto de sua ENR por turno para aumentar o dano do ataque em 1. (25 DP).",
+    "en-us": ""
+  },
   "type": "arma",
   "subtype": "proximidade",
   "rarity": "especial",

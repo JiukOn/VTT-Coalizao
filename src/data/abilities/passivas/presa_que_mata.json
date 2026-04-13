@@ -1,9 +1,15 @@
 {
   "id": "presa_que_mata",
-  "name": "Presa que Mata",
+  "name": {
+    "pt-br": "Presa que Mata",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Evo Costume de Presa",
-  "description": "O usuário pode perceber criaturas hostis e contra-atacar com acerto garantido antes de ser atingido.",
+  "description": {
+    "pt-br": "O usuário pode perceber criaturas hostis e contra-atacar com acerto garantido antes de ser atingido.",
+    "en-us": ""
+  },
   "classLink": "Evo Costume de Presa",
   "cost": null,
   "test": null,

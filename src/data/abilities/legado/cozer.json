@@ -1,9 +1,15 @@
 {
   "id": "cozer",
-  "name": "Cozer",
+  "name": {
+    "pt-br": "Cozer",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Cozinheira",
-  "description": "O usuário pode preparar alimentos complexos que concedem bônus específicos. Um teste bem-sucedido (1d20 > 14) na preparação garante os bônus, cuja qualidade é ampliada pela qualidade dos ingredientes utilizados.",
+  "description": {
+    "pt-br": "O usuário pode preparar alimentos complexos que concedem bônus específicos. Um teste bem-sucedido (1d20 > 14) na preparação garante os bônus, cuja qualidade é ampliada pela qualidade dos ingredientes utilizados.",
+    "en-us": ""
+  },
   "classLink": "Cozinheira",
   "cost": null,
   "test": null,

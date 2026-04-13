@@ -58,6 +58,43 @@ export default function CharacterSheet({ character, onUpdate }) {
 
       <div className="divider" />
 
+      {/* ── NPC / Creature Specials ────────────────────── */}
+      {character.type === 'npc' && (
+        <section className="cs-section bg-soft-info" style={{ borderRadius: '8px', padding: '10px' }}>
+          <h3 className="cs-section-title"><Star size={16} /> Detalhes do NPC</h3>
+          <div className="cs-npc-details">
+            <div className="cs-detail-box">
+              <strong>Benefício:</strong> {character.possibleBenefit?.['pt-br'] || character.possibleBenefit || 'Nenhum'}
+            </div>
+            <div className="cs-detail-box">
+              <strong>Malefício:</strong> {character.possibleHarm?.['pt-br'] || character.possibleHarm || 'Nenhum'}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {character.type === 'creature' && (
+        <section className="cs-section bg-soft-accent" style={{ borderRadius: '8px', padding: '10px' }}>
+          <h3 className="cs-section-title"><Zap size={16} /> Dados da Criatura</h3>
+          <div className="cs-creature-meta">
+            <div className="badge badge-warning">Núcleo: {character.core} (+{
+              character.core === 'pequeno' ? 1 : 
+              character.core === 'medio' ? 2 : 
+              character.core === 'grande' ? 3 : 
+              character.core === 'colossal' ? 4 : 0
+            } Energia)</div>
+            <div className="badge badge-info">Tamanho: {character.size}</div>
+            {character.elements?.length > 0 && (
+              <div className="cs-elements-list" style={{ marginTop: '5px' }}>
+                {character.elements.map(el => <span key={el} className="badge badge-secondary">{el}</span>)}
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
+      {(character.type === 'npc' || character.type === 'creature') && <div className="divider" />}
+
       {/* ── Attributes Grid ─────────────────────────────── */}
       <section className="cs-section">
         <h3 className="cs-section-title"><Zap size={16} /> Atributos</h3>

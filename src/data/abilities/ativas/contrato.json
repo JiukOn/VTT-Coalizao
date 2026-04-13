@@ -1,9 +1,15 @@
 {
   "id": "contrato",
-  "name": "Contrato",
+  "name": {
+    "pt-br": "Contrato",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O usuário é capaz de estabelecer um contrato mágico com qualquer ser inteligente que aceite os termos. Caso uma das partes descumpra o contrato, o infrator é morto e sua alma é apagada. (Requer VIT 5).",
+  "description": {
+    "pt-br": "O usuário é capaz de estabelecer um contrato mágico com qualquer ser inteligente que aceite os termos. Caso uma das partes descumpra o contrato, o infrator é morto e sua alma é apagada. (Requer VIT 5).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

@@ -1,9 +1,15 @@
 {
   "id": "abalo_sísmico",
-  "name": "Abalo Sísmico",
+  "name": {
+    "pt-br": "Abalo Sísmico",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "Cria uma onda de tremores a partir do usuário, atingindo uma área com diâmetro de 1m a cada 2 pontos de sua ENR. O dano total é igual à sua ENR, dividido igualmente entre todos os alvos afetados. Se o teste falhar (1d20 < 16), o usuário perde 1 ENR temporariamente. (Requer ENR 4 ou mais).",
+  "description": {
+    "pt-br": "Cria uma onda de tremores a partir do usuário, atingindo uma área com diâmetro de 1m a cada 2 pontos de sua ENR. O dano total é igual à sua ENR, dividido igualmente entre todos os alvos afetados. Se o teste falhar (1d20 < 16), o usuário perde 1 ENR temporariamente. (Requer ENR 4 ou mais).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

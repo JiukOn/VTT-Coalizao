@@ -1,0 +1,19 @@
+{
+  "id": "rebel_academy",
+  "name": {
+    "pt-br": "Academia Rebelde",
+    "en-us": "Rebel Academy"
+  },
+  "description": {
+    "pt-br": "Base de treinamento para heróis e resistência contra Ukhel.",
+    "en-us": "Training base for heroes and resistance against Ukhel."
+  },
+  "leader": {
+    "pt-br": "Apolo",
+    "en-us": "Apollo"
+  },
+  "location": {
+    "pt-br": "Arquipélago Flutuante",
+    "en-us": "Floating Archipelago"
+  }
+}

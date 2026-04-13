@@ -1,9 +1,15 @@
 {
   "id": "prensa",
-  "name": "Prensa",
+  "name": {
+    "pt-br": "Prensa",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O usuário recebe +3 FRC na ação de ataque, e sempre ataca por último (em caso de empate, o com mais DEX age por último). O ataque deve ter como objetivo prensar fisicamente o oponente.",
+  "description": {
+    "pt-br": "O usuário recebe +3 FRC na ação de ataque, e sempre ataca por último (em caso de empate, o com mais DEX age por último). O ataque deve ter como objetivo prensar fisicamente o oponente.",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

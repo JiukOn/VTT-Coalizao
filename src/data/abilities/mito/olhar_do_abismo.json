@@ -1,9 +1,15 @@
 {
   "id": "olhar_do_abismo",
-  "name": "Olhar do Abismo",
+  "name": {
+    "pt-br": "Olhar do Abismo",
+    "en-us": ""
+  },
   "category": "MITO",
   "class": "Colar do Abismo",
-  "description": "A maioria dos seres que fitam os olhos do usuário ficam com MEDO por 2 turnos. Concede 1 dado bônus para convencimento forçado. (Requer ENR 8 e CRM menor que 5).",
+  "description": {
+    "pt-br": "A maioria dos seres que fitam os olhos do usuário ficam com MEDO por 2 turnos. Concede 1 dado bônus para convencimento forçado. (Requer ENR 8 e CRM menor que 5).",
+    "en-us": ""
+  },
   "classLink": "Colar do Abismo",
   "cost": null,
   "test": null,

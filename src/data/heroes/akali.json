@@ -1,6 +1,9 @@
 {
   "id": "akali",
-  "name": "Akali",
+  "name": {
+    "pt-br": "Akali",
+    "en-us": ""
+  },
   "level": 5,
   "class": "Lutadora",
   "specie": "Humano",
@@ -15,7 +18,10 @@
     "PRE": 4,
     "ENR": 3
   },
-  "history": "Lutadora profissional e campeã. Usa o corpo como arma principal.",
+  "history": {
+    "pt-br": "Lutadora profissional e campeã. Usa o corpo como arma principal.",
+    "en-us": ""
+  },
   "aura": "Intimidação",
   "isCustom": false
 }

@@ -1,11 +1,19 @@
 {
   "id": "gayutu",
-  "name": "Gayutu",
-  "description": "O Felinferno é uma criatura pequena e charmosa, capaz de voar com suas pequenas asas. É uma criatura que vive de forma domesticada junto de elfos negros e nao existem mais na natureza. Os elfos negros os vestem com pequenas armaduras para protegelos de possiveis quedas enquanto voam e sua caracteristica visual mais marcante e a pedra escura que carrega em sua capeca que constantemente mantem uma chama azulada sobre esta pequena criatura.",
+  "name": {
+    "pt-br": "Gayutu",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "O Felinferno é uma criatura pequena e charmosa, capaz de voar com suas pequenas asas. É uma criatura que vive de forma domesticada junto de elfos negros e nao existem mais na natureza. Os elfos negros os vestem com pequenas armaduras para protegelos de possiveis quedas enquanto voam e sua caracteristica visual mais marcante e a pedra escura que carrega em sua capeca que constantemente mantem uma chama azulada sobre esta pequena criatura.",
+    "en-us": ""
+  },
   "type": "voador",
-  "size": "pequeno",
+  "size": "medio",
   "diet": "onivoro",
   "element": "fogo",
   "imagePath": "Gatuyu.jpeg",
-  "isCustom": false
+  "isCustom": false,
+  "core": "medio",
+  "elements": []
 }

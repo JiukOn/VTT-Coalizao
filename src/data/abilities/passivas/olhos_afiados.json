@@ -1,9 +1,15 @@
 {
   "id": "olhos_afiados",
-  "name": "Olhos Afiados",
+  "name": {
+    "pt-br": "Olhos Afiados",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Geral",
-  "description": "Aumenta o valor da percepção do usuário, concedendo +2 no dado em testes de percepção visual e busca.",
+  "description": {
+    "pt-br": "Aumenta o valor da percepção do usuário, concedendo +2 no dado em testes de percepção visual e busca.",
+    "en-us": ""
+  },
   "classLink": null,
   "cost": null,
   "test": null,

@@ -1,9 +1,22 @@
 {
   "id": "rei_yaggnar",
-  "name": "Rei Yaggnar",
+  "name": {
+    "pt-br": "Rei Yaggnar",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Rei",
+    "en-us": ""
+  },
   "location": "Capital dos Elfos",
-  "description": "",
-  "type": "npc",
-  "role": "Rei",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

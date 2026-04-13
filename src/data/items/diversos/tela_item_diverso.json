@@ -1,8 +1,14 @@
 {
   "id": "tela_item_diverso",
-  "name": "Tela (Item Diverso)",
+  "name": {
+    "pt-br": "Tela (Item Diverso)",
+    "en-us": ""
+  },
   "category": "Itens Diversos",
-  "description": "Um material que, quando sobreposto por pigmento, pode receber formas.",
+  "description": {
+    "pt-br": "Um material que, quando sobreposto por pigmento, pode receber formas.",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

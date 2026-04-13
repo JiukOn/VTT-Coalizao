@@ -1,9 +1,15 @@
 {
   "id": "atordoar",
-  "name": "Atordoar",
+  "name": {
+    "pt-br": "Atordoar",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O usuário pode causar náusea em um alvo utilizando sons altos e constantes. Se o teste (1d20 + FRC) for maior que o teste do alvo (1d20 + RES), o alvo sofre náusea.",
+  "description": {
+    "pt-br": "O usuário pode causar náusea em um alvo utilizando sons altos e constantes. Se o teste (1d20 + FRC) for maior que o teste do alvo (1d20 + RES), o alvo sofre náusea.",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

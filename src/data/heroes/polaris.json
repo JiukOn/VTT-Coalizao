@@ -1,6 +1,9 @@
 {
   "id": "polaris",
-  "name": "Polaris Ciemin",
+  "name": {
+    "pt-br": "Polaris Ciemin",
+    "en-us": ""
+  },
   "level": 5,
   "class": "Escritora",
   "specie": "Humano/Gran",
@@ -15,7 +18,10 @@
     "PRE": 1,
     "ENR": 5
   },
-  "history": "Estudante de jornalismo, escreve desde os 13 anos. Teve um blog de Fantasia.",
+  "history": {
+    "pt-br": "Estudante de jornalismo, escreve desde os 13 anos. Teve um blog de Fantasia.",
+    "en-us": ""
+  },
   "aura": "Revelação",
   "isCustom": false
 }

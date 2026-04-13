@@ -1,9 +1,15 @@
 {
   "id": "rastejo_sombrio",
-  "name": "Rastejo Sombrio",
+  "name": {
+    "pt-br": "Rastejo Sombrio",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Sombra Leal",
-  "description": "O usuário pode se mover entre as sombras de seus aliados ou objetos inanimados.",
+  "description": {
+    "pt-br": "O usuário pode se mover entre as sombras de seus aliados ou objetos inanimados.",
+    "en-us": ""
+  },
   "classLink": "Sombra Leal",
   "cost": null,
   "test": null,

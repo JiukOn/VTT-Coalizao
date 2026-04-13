@@ -1,9 +1,22 @@
 {
   "id": "a_granda_maga_mirk",
-  "name": "A granda maga, Mirk",
+  "name": {
+    "pt-br": "A granda maga, Mirk",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "A Grande Maga",
+    "en-us": ""
+  },
   "location": "Vila Secreta",
-  "description": "",
-  "type": "npc",
-  "role": "A Grande Maga",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

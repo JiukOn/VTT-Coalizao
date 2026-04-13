@@ -1,8 +1,14 @@
 {
   "id": "binóculo_item_diverso",
-  "name": "Binóculo (Item Diverso)",
+  "name": {
+    "pt-br": "Binóculo (Item Diverso)",
+    "en-us": ""
+  },
   "category": "Itens Diversos",
-  "description": "Um binóculo usado para ver maiores distâncias, aumentando 1 no teste de vista (+1 PRE em testes de percepção visual).",
+  "description": {
+    "pt-br": "Um binóculo usado para ver maiores distâncias, aumentando 1 no teste de vista (+1 PRE em testes de percepção visual).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

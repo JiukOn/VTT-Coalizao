@@ -1,9 +1,22 @@
 {
   "id": "ju_wex",
-  "name": "Ju Wex",
+  "name": {
+    "pt-br": "Ju Wex",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "location": "Vila Secreta",
-  "description": "",
-  "type": "npc",
-  "role": "",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

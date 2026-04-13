@@ -1,9 +1,15 @@
 {
   "id": "pele_do_deserto",
-  "name": "Pele do Deserto",
+  "name": {
+    "pt-br": "Pele do Deserto",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Geral",
-  "description": "O usuário é adaptado a ambientes áridos e tórridos. Reduz em 1 o dano sofrido por ataques do elemento Fogo e se torna imune ao efeito 'Queimadura'. (Requer RES 4).",
+  "description": {
+    "pt-br": "O usuário é adaptado a ambientes áridos e tórridos. Reduz em 1 o dano sofrido por ataques do elemento Fogo e se torna imune ao efeito 'Queimadura'. (Requer RES 4).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

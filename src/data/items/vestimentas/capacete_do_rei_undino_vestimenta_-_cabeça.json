@@ -1,8 +1,14 @@
 {
   "id": "capacete_do_rei_undino_vestimenta_-_cabeça",
-  "name": "Capacete do Rei Undino (Vestimenta - Cabeça)",
+  "name": {
+    "pt-br": "Capacete do Rei Undino (Vestimenta - Cabeça)",
+    "en-us": ""
+  },
   "category": "Cabeça",
-  "description": "Capacete feito com materiais do Rei Undino, com detalhes ornamentados. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (5 DP).",
+  "description": {
+    "pt-br": "Capacete feito com materiais do Rei Undino, com detalhes ornamentados. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (5 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

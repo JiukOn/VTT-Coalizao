@@ -1,11 +1,19 @@
 {
   "id": "faiguim",
-  "name": "Faiguim",
-  "description": "O Faiguin é um ser mágico, uma criatura única capaz de voar mesmo com suas asas levemente atrofiadas. Ele é um onívoro que se alimenta de pequenos peixes, crustáceos e insetos, mas também de frutas e sementes que encontra em seu ambiente. Animal não tão poderoso mas muito belo e docil.",
+  "name": {
+    "pt-br": "Faiguim",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "O Faiguin é um ser mágico, uma criatura única capaz de voar mesmo com suas asas levemente atrofiadas. Ele é um onívoro que se alimenta de pequenos peixes, crustáceos e insetos, mas também de frutas e sementes que encontra em seu ambiente. Animal não tão poderoso mas muito belo e docil.",
+    "en-us": ""
+  },
   "type": "voador",
-  "size": "pequeno",
+  "size": "medio",
   "diet": "onivoro",
   "element": "magia",
   "imagePath": "Faiguin.jpeg",
-  "isCustom": false
+  "isCustom": false,
+  "core": "medio",
+  "elements": []
 }

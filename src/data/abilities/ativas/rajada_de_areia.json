@@ -1,9 +1,15 @@
 {
   "id": "rajada_de_areia",
-  "name": "Rajada de Areia",
+  "name": {
+    "pt-br": "Rajada de Areia",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O usuário invoca areia a partir de sua energia, causando 2d4 - 1 de dano em área a todos os atingidos. Se o teste falhar (1d20 < 16), o usuário perde 1 ENR temporariamente. (Requer ENR 10 ou mais).",
+  "description": {
+    "pt-br": "O usuário invoca areia a partir de sua energia, causando 2d4 - 1 de dano em área a todos os atingidos. Se o teste falhar (1d20 < 16), o usuário perde 1 ENR temporariamente. (Requer ENR 10 ou mais).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

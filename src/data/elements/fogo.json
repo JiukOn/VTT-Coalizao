@@ -1,0 +1,11 @@
+{
+  "id": "fogo",
+  "name": {
+    "pt-br": "Fogo",
+    "en-us": "Fire"
+  },
+  "description": {
+    "pt-br": "Poder destrutivo e calor intenso. Eficaz contra gelo e natureza.",
+    "en-us": "Destructive power and intense heat. Effective against ice and nature."
+  }
+}

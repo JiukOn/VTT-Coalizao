@@ -1,9 +1,15 @@
 {
   "id": "lâmina_de_energia",
-  "name": "Lâmina de Energia",
+  "name": {
+    "pt-br": "Lâmina de Energia",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O usuário é capaz de moldar sua energia no formato de uma lâmina qualquer como um item temporário. Gasta 1 ENR temporariamente. O dano da lâmina recebe o elemento da energia utilizada, e enquanto equipada, ela fornece +1 PRE. A lamina se dissipa em 3 turnos, Recarrega em 1 turno.",
+  "description": {
+    "pt-br": "O usuário é capaz de moldar sua energia no formato de uma lâmina qualquer como um item temporário. Gasta 1 ENR temporariamente. O dano da lâmina recebe o elemento da energia utilizada, e enquanto equipada, ela fornece +1 PRE. A lamina se dissipa em 3 turnos, Recarrega em 1 turno.",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

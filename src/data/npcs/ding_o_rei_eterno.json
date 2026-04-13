@@ -1,9 +1,22 @@
 {
   "id": "ding_o_rei_eterno",
-  "name": "Ding, O rei eterno",
+  "name": {
+    "pt-br": "Ding, O rei eterno",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "O Rei Eterno",
+    "en-us": ""
+  },
   "location": "Tumba da Descendência",
-  "description": "",
-  "type": "npc",
-  "role": "O Rei Eterno",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

@@ -1,9 +1,15 @@
 {
   "id": "lábia",
-  "name": "Lábia",
+  "name": {
+    "pt-br": "Lábia",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Vendedor",
-  "description": "\"O usuário pode tentar forçar um convencimento. Se 1d20 for > 16, o receptor é convencido. Se o dado for < 8, o receptor se torna hostil ao usuário.",
+  "description": {
+    "pt-br": "\"O usuário pode tentar forçar um convencimento. Se 1d20 for > 16, o receptor é convencido. Se o dado for < 8, o receptor se torna hostil ao usuário.",
+    "en-us": ""
+  },
   "classLink": "Vendedor",
   "cost": null,
   "test": null,

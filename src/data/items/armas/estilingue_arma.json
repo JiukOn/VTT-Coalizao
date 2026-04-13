@@ -1,8 +1,14 @@
 {
   "id": "estilingue_arma",
-  "name": "Estilingue (Arma)",
+  "name": {
+    "pt-br": "Estilingue (Arma)",
+    "en-us": ""
+  },
   "category": "Armas à Distância",
-  "description": "Capaz de lançar projéteis pequenos e confere +1 PRE. Distância Máxima de lançamento: 8 metros. Possui a modificação Leve, concedendo +1 no dado em testes de ataque com PRE. (10 DP).",
+  "description": {
+    "pt-br": "Capaz de lançar projéteis pequenos e confere +1 PRE. Distância Máxima de lançamento: 8 metros. Possui a modificação Leve, concedendo +1 no dado em testes de ataque com PRE. (10 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

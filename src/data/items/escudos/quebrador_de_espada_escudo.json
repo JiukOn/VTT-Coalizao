@@ -1,8 +1,14 @@
 {
   "id": "quebrador_de_espada_escudo",
-  "name": "Quebrador de Espada (Escudo)",
+  "name": {
+    "pt-br": "Quebrador de Espada (Escudo)",
+    "en-us": ""
+  },
   "category": "Itens de Defesa",
-  "description": "Embora possa oferecer uma defesa mínima, este item é primariamente projetado para quebrar espadas de baixa durabilidade. Concede 1d4 - 3 de defesa. (20 DP).",
+  "description": {
+    "pt-br": "Embora possa oferecer uma defesa mínima, este item é primariamente projetado para quebrar espadas de baixa durabilidade. Concede 1d4 - 3 de defesa. (20 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

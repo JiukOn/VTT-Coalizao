@@ -1,8 +1,14 @@
 {
   "id": "sapato_da_thanatos_vestimenta_-_pé",
-  "name": "Sapato da Thanatos (Vestimenta - Pé)",
+  "name": {
+    "pt-br": "Sapato da Thanatos (Vestimenta - Pé)",
+    "en-us": ""
+  },
   "category": "Pé",
-  "description": "Um sapato leve feito de couro de quimeras, focado em mobilidade para longas distâncias. Possui a modificação Mochileiro, que dá maior velocidade para longas distancias. (10 DP).",
+  "description": {
+    "pt-br": "Um sapato leve feito de couro de quimeras, focado em mobilidade para longas distâncias. Possui a modificação Mochileiro, que dá maior velocidade para longas distancias. (10 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

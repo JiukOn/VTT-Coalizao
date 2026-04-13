@@ -1,9 +1,15 @@
 {
   "id": "resistência_contra_doenças",
-  "name": "Resistência Contra Doenças",
+  "name": {
+    "pt-br": "Resistência Contra Doenças",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Geral",
-  "description": "O usuário joga um dado de vantagem para impedir de contrair doenças.",
+  "description": {
+    "pt-br": "O usuário joga um dado de vantagem para impedir de contrair doenças.",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

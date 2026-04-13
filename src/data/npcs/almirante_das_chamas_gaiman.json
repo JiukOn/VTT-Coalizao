@@ -1,9 +1,22 @@
 {
   "id": "almirante_das_chamas_gaiman",
-  "name": "Almirante das Chamas, Gaiman",
+  "name": {
+    "pt-br": "Almirante das Chamas, Gaiman",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Almirante das Chamas",
+    "en-us": ""
+  },
   "location": "Capital Unsato",
-  "description": "",
-  "type": "npc",
-  "role": "Almirante das Chamas",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

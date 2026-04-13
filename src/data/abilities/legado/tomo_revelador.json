@@ -1,9 +1,15 @@
 {
   "id": "tomo_revelador",
-  "name": "Tomo Revelador",
+  "name": {
+    "pt-br": "Tomo Revelador",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Leitor",
-  "description": "Além de mostrar a ficha de qualquer ser de mesmo nível, o usuário pode fazer um teste (1d20 > 14) e se for bem sucedido o usuário pode descobrir motivações ocultas do alvo, verificar se esta mentindo ou ler brevemente os pensamentos do alvo. (Requer INT 8 e habilidade Livro Magico)",
+  "description": {
+    "pt-br": "Além de mostrar a ficha de qualquer ser de mesmo nível, o usuário pode fazer um teste (1d20 > 14) e se for bem sucedido o usuário pode descobrir motivações ocultas do alvo, verificar se esta mentindo ou ler brevemente os pensamentos do alvo. (Requer INT 8 e habilidade Livro Magico)",
+    "en-us": ""
+  },
   "classLink": "Leitor",
   "cost": null,
   "test": null,

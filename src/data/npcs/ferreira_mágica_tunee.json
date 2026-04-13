@@ -1,9 +1,22 @@
 {
   "id": "ferreira_mágica_tunee",
-  "name": "Ferreira Mágica, Tunee",
+  "name": {
+    "pt-br": "Ferreira Mágica, Tunee",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Ferreira Mágica",
+    "en-us": ""
+  },
   "location": "Vila Secreta",
-  "description": "",
-  "type": "npc",
-  "role": "Ferreira Mágica",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

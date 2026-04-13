@@ -1,9 +1,15 @@
 {
   "id": "magma",
-  "name": "Magma",
+  "name": {
+    "pt-br": "Magma",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "Transforma o solo em magma, causando 1d4 - 1 de dano de Fogo. Alvos na área sofrem 'Queimadura' se o teste (1d20 < 16) for bem-sucedido. Modifica o terreno ao redor do usuário. Se o teste falhar (1d20 < 16), o usuário perde 1 ENR temporariamente. (Requer ENR 6 ou mais e Resistência ao Fogo).",
+  "description": {
+    "pt-br": "Transforma o solo em magma, causando 1d4 - 1 de dano de Fogo. Alvos na área sofrem 'Queimadura' se o teste (1d20 < 16) for bem-sucedido. Modifica o terreno ao redor do usuário. Se o teste falhar (1d20 < 16), o usuário perde 1 ENR temporariamente. (Requer ENR 6 ou mais e Resistência ao Fogo).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

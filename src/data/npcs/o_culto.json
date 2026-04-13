@@ -1,9 +1,22 @@
 {
   "id": "o_culto",
-  "name": "O culto",
+  "name": {
+    "pt-br": "O culto",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "location": "Torre Negra",
-  "description": "",
-  "type": "npc",
-  "role": "",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

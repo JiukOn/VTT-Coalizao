@@ -1,9 +1,15 @@
 {
   "id": "vitralização",
-  "name": "Vitralização",
+  "name": {
+    "pt-br": "Vitralização",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O usuário é capaz de transformar qualquer tipo de areia em vidro se o teste (1d20 > 14) for bem-sucedido. O vidro pode aplicar o status 'Sangramento' em um alvo atingido se o teste (1d20 > 18) for bem-sucedido. Se um segundo teste (1d20 > 16) falhar , o usuário perde 1 ENR temporariamente. (Requer ENR 8 ou mais).",
+  "description": {
+    "pt-br": "O usuário é capaz de transformar qualquer tipo de areia em vidro se o teste (1d20 > 14) for bem-sucedido. O vidro pode aplicar o status 'Sangramento' em um alvo atingido se o teste (1d20 > 18) for bem-sucedido. Se um segundo teste (1d20 > 16) falhar , o usuário perde 1 ENR temporariamente. (Requer ENR 8 ou mais).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

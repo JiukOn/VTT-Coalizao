@@ -1,9 +1,15 @@
 {
   "id": "telecinese",
-  "name": "Telecinese",
+  "name": {
+    "pt-br": "Telecinese",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O usuário é capaz de mover objetos a media distância. O peso máximo a ser levantado é determinado pela RES final do usuário.",
+  "description": {
+    "pt-br": "O usuário é capaz de mover objetos a media distância. O peso máximo a ser levantado é determinado pela RES final do usuário.",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

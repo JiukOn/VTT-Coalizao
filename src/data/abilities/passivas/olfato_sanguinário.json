@@ -1,9 +1,15 @@
 {
   "id": "olfato_sanguinário",
-  "name": "Olfato Sanguinário",
+  "name": {
+    "pt-br": "Olfato Sanguinário",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Geral",
-  "description": "O usuário pode sentir o cheiro de sangue a longas distâncias.",
+  "description": {
+    "pt-br": "O usuário pode sentir o cheiro de sangue a longas distâncias.",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

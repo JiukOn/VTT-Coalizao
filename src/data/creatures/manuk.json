@@ -1,11 +1,19 @@
 {
   "id": "manuk",
-  "name": "Manuk",
-  "description": "Uma ave majestosa com uma crista formada de forma que se assemelhe a chamas, suas asas lembram vestes nobres e sua calda possui longas penas. Possui capacidade de resistir e evocar chamas.",
+  "name": {
+    "pt-br": "Manuk",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Uma ave majestosa com uma crista formada de forma que se assemelhe a chamas, suas asas lembram vestes nobres e sua calda possui longas penas. Possui capacidade de resistir e evocar chamas.",
+    "en-us": ""
+  },
   "type": "voador",
   "size": "medio",
   "diet": "onivoro",
   "element": "fogo",
   "imagePath": "Frango Manuk.jpg",
-  "isCustom": false
+  "isCustom": false,
+  "core": "medio",
+  "elements": []
 }

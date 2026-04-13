@@ -1,8 +1,14 @@
 {
   "id": "lançador_energético_arma",
-  "name": "Lançador Energético (Arma)",
+  "name": {
+    "pt-br": "Lançador Energético (Arma)",
+    "en-us": ""
+  },
   "category": "Armas à Distância",
-  "description": "Atira feixes de energia. É inofensivo contra inimigos sem energia e confere +2 PRE. Distância Máxima de lançamento: 32 metros. Possui a modificação Imbuídor, permitindo gastar temporariamente 1 ponto de sua ENR por turno para aumentar o dano do ataque em 1. (20 DP). (Munição: 1 ENR do usuário).",
+  "description": {
+    "pt-br": "Atira feixes de energia. É inofensivo contra inimigos sem energia e confere +2 PRE. Distância Máxima de lançamento: 32 metros. Possui a modificação Imbuídor, permitindo gastar temporariamente 1 ponto de sua ENR por turno para aumentar o dano do ataque em 1. (20 DP). (Munição: 1 ENR do usuário).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

@@ -1,9 +1,15 @@
 {
   "id": "pulso_de_batalha",
-  "name": "Pulso de Batalha",
+  "name": {
+    "pt-br": "Pulso de Batalha",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Geral",
-  "description": "O usuário sente uma excitação crescente durante o combate. A cada vez que causar dano em um inimigo, recebe +1 PRE (máximo de 4) até o fim do combate. (Requer FRC 4)",
+  "description": {
+    "pt-br": "O usuário sente uma excitação crescente durante o combate. A cada vez que causar dano em um inimigo, recebe +1 PRE (máximo de 4) até o fim do combate. (Requer FRC 4)",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

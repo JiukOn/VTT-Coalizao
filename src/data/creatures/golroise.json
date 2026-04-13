@@ -1,11 +1,19 @@
 {
   "id": "golroise",
-  "name": "Golroise",
-  "description": "O Golroise é um réptil gigante que se alimenta de rochas, solo, metais e outros tipos de recursos minerais. possuem uma densa e dura camada rochosa por toda extensao de seu corpo. apesar de seu peso são criaturas surpreendetemente ageis. Possuem uma das mordidas mais poderosas entre todas as criaturas.",
+  "name": {
+    "pt-br": "Golroise",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "O Golroise é um réptil gigante que se alimenta de rochas, solo, metais e outros tipos de recursos minerais. possuem uma densa e dura camada rochosa por toda extensao de seu corpo. apesar de seu peso são criaturas surpreendetemente ageis. Possuem uma das mordidas mais poderosas entre todas as criaturas.",
+    "en-us": ""
+  },
   "type": "terrestre",
-  "size": "grande",
+  "size": "medio",
   "diet": "mineral",
   "element": "terra",
   "imagePath": "Golroise.jpeg",
-  "isCustom": false
+  "isCustom": false,
+  "core": "medio",
+  "elements": []
 }

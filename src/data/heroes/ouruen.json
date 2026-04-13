@@ -1,6 +1,9 @@
 {
   "id": "ouruen",
-  "name": "Ouruen",
+  "name": {
+    "pt-br": "Ouruen",
+    "en-us": ""
+  },
   "level": 6,
   "class": "Recluso",
   "specie": "Humano",
@@ -15,7 +18,10 @@
     "PRE": 1,
     "ENR": 13
   },
-  "history": "Era um viciado em videogames e mangás isekai. Morava no Paraguai.",
+  "history": {
+    "pt-br": "Era um viciado em videogames e mangás isekai. Morava no Paraguai.",
+    "en-us": ""
+  },
   "aura": "Desordem",
   "isCustom": false
 }

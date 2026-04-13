@@ -1,9 +1,15 @@
 {
   "id": "hipermobilidade",
-  "name": "Hipermobilidade",
+  "name": {
+    "pt-br": "Hipermobilidade",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Evo Acelerar",
-  "description": "Aumenta +4 DEX por 3 turnos. O usuário pode agir duas vezes no primeiro turno de ativação. Se um teste (1d20 > 16) falhar , o usuário perde 2 ENR temporariamente. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 18). (Requer DEX 8 ENR 3)",
+  "description": {
+    "pt-br": "Aumenta +4 DEX por 3 turnos. O usuário pode agir duas vezes no primeiro turno de ativação. Se um teste (1d20 > 16) falhar , o usuário perde 2 ENR temporariamente. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 18). (Requer DEX 8 ENR 3)",
+    "en-us": ""
+  },
   "classLink": "Evo Acelerar",
   "cost": null,
   "test": null,

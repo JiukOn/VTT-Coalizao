@@ -1,9 +1,15 @@
 {
   "id": "manutenção",
-  "name": "Manutenção",
+  "name": {
+    "pt-br": "Manutenção",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O usuário é capaz de consumir material para recuperar itens danificados. Se o teste (1d12 > 7) for bem-sucedido, o item se torna 'Novo'. Se o teste falhar (1d12 <= 7), o item quebra.",
+  "description": {
+    "pt-br": "O usuário é capaz de consumir material para recuperar itens danificados. Se o teste (1d12 > 7) for bem-sucedido, o item se torna 'Novo'. Se o teste falhar (1d12 <= 7), o item quebra.",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

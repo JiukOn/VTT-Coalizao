@@ -1,9 +1,15 @@
 {
   "id": "invenção",
-  "name": "Invenção",
+  "name": {
+    "pt-br": "Invenção",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Tecnólogo",
-  "description": "O usuário pode usar materiais para criar um item de alta qualidade. Para o sucesso (1d20 > 18), os materiais são consumidos. Se o teste falhar (1d20 < 8), parte dos materiais é consumida e nada é criado. Caso o teste resulte entre 1d20 > 8 e < 18, nada é consumido e nada é criado.",
+  "description": {
+    "pt-br": "O usuário pode usar materiais para criar um item de alta qualidade. Para o sucesso (1d20 > 18), os materiais são consumidos. Se o teste falhar (1d20 < 8), parte dos materiais é consumida e nada é criado. Caso o teste resulte entre 1d20 > 8 e < 18, nada é consumido e nada é criado.",
+    "en-us": ""
+  },
   "classLink": "Tecnólogo",
   "cost": null,
   "test": null,

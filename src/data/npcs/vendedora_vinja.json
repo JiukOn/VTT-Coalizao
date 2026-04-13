@@ -1,9 +1,22 @@
 {
   "id": "vendedora_vinja",
-  "name": "Vendedora Vinja",
+  "name": {
+    "pt-br": "Vendedora Vinja",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Vendedora",
+    "en-us": ""
+  },
   "location": "La Montana",
-  "description": "",
-  "type": "npc",
-  "role": "Vendedora",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

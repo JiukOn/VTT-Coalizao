@@ -1,8 +1,14 @@
 {
   "id": "arco_de_guerra_arma",
-  "name": "Arco de Guerra (Arma)",
+  "name": {
+    "pt-br": "Arco de Guerra (Arma)",
+    "en-us": ""
+  },
   "category": "Armas à Distância",
-  "description": "Capaz de lançar projéteis finos e alongados, confere +3 PRE. Distância Máxima de lançamento: 16 metros. Possui a modificação Perceptivo, permitindo, uma vez por combate, ignorar a defesa do alvo em um ataque. (18 DP).",
+  "description": {
+    "pt-br": "Capaz de lançar projéteis finos e alongados, confere +3 PRE. Distância Máxima de lançamento: 16 metros. Possui a modificação Perceptivo, permitindo, uma vez por combate, ignorar a defesa do alvo em um ataque. (18 DP).",
+    "en-us": ""
+  },
   "type": "arma",
   "subtype": "distancia",
   "rarity": "comum",

@@ -1,9 +1,15 @@
 {
   "id": "voar",
-  "name": "Voar",
+  "name": {
+    "pt-br": "Voar",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "Permite ao usuário voar até 6m de altura por 2 turnos. Recarrega em 1 turno. (Requer ENR 5).",
+  "description": {
+    "pt-br": "Permite ao usuário voar até 6m de altura por 2 turnos. Recarrega em 1 turno. (Requer ENR 5).",
+    "en-us": ""
+  },
   "classLink": null,
   "cost": null,
   "test": null,

@@ -1,9 +1,15 @@
 {
   "id": "área_de_vendas",
-  "name": "Área de Vendas",
+  "name": {
+    "pt-br": "Área de Vendas",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "Se o teste (1d20 > 16) for bem-sucedido, o usuário pode demarcar um local como sua 'Loja'. Enquanto estiver dentro da Loja, o usuário fica imune a habilidades de negociação, vendas e hipnose. (Requer Registro de Mercador, Moeda do Mercado Negro ou classe relacionada).",
+  "description": {
+    "pt-br": "Se o teste (1d20 > 16) for bem-sucedido, o usuário pode demarcar um local como sua 'Loja'. Enquanto estiver dentro da Loja, o usuário fica imune a habilidades de negociação, vendas e hipnose. (Requer Registro de Mercador, Moeda do Mercado Negro ou classe relacionada).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

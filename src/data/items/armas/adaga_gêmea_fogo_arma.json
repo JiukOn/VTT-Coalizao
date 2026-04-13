@@ -1,8 +1,14 @@
 {
   "id": "adaga_gêmea_fogo_arma",
-  "name": "Adaga Gêmea (Fogo) (Arma)",
+  "name": {
+    "pt-br": "Adaga Gêmea (Fogo) (Arma)",
+    "en-us": ""
+  },
   "category": "Armas de Proximidade",
-  "description": "Item pequeno e leve de alta durabilidade, que conferem +3 FRC e +4 PRE. Causam 1d4 + 2 de dano. Possui a modificação Quente, fazendo seus ataques adquirirem o elemento Fogo e poderem causar Queimadura. (25 DP).",
+  "description": {
+    "pt-br": "Item pequeno e leve de alta durabilidade, que conferem +3 FRC e +4 PRE. Causam 1d4 + 2 de dano. Possui a modificação Quente, fazendo seus ataques adquirirem o elemento Fogo e poderem causar Queimadura. (25 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

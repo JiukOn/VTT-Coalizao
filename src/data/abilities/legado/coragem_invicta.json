@@ -1,9 +1,15 @@
 {
   "id": "coragem_invicta",
-  "name": "Coragem Invicta",
+  "name": {
+    "pt-br": "Coragem Invicta",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Altruísta",
-  "description": "O usuário não pode ter o valor de seus atributos alterados, nem positivamente nem negativamente. (Requer CRM 5).",
+  "description": {
+    "pt-br": "O usuário não pode ter o valor de seus atributos alterados, nem positivamente nem negativamente. (Requer CRM 5).",
+    "en-us": ""
+  },
   "classLink": "Altruísta",
   "cost": null,
   "test": null,

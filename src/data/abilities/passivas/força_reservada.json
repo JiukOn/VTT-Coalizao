@@ -1,9 +1,15 @@
 {
   "id": "força_reservada",
-  "name": "Força Reservada",
+  "name": {
+    "pt-br": "Força Reservada",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Geral",
-  "description": "Sempre que a VIT atual < VIT/3 do usuário, ele recebe +3 FRC que e rola um dado bônus para ataques corpo-a-corpo, o efeito dura ate o usuário recuperar sua VIT para mais que VIT/3.",
+  "description": {
+    "pt-br": "Sempre que a VIT atual < VIT/3 do usuário, ele recebe +3 FRC que e rola um dado bônus para ataques corpo-a-corpo, o efeito dura ate o usuário recuperar sua VIT para mais que VIT/3.",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

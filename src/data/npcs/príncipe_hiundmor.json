@@ -1,9 +1,22 @@
 {
   "id": "príncipe_hiundmor",
-  "name": "Príncipe Hiundmor",
+  "name": {
+    "pt-br": "Príncipe Hiundmor",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Príncipe",
+    "en-us": ""
+  },
   "location": "Capital dos Elfos",
-  "description": "",
-  "type": "npc",
-  "role": "Príncipe",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

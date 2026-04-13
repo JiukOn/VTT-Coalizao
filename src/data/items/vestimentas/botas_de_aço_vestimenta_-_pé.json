@@ -1,8 +1,14 @@
 {
   "id": "botas_de_aço_vestimenta_-_pé",
-  "name": "Botas de Aço (Vestimenta - Pé)",
+  "name": {
+    "pt-br": "Botas de Aço (Vestimenta - Pé)",
+    "en-us": ""
+  },
   "category": "Pé",
-  "description": "Botas resistentes feitas de aço forjado. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).",
+  "description": {
+    "pt-br": "Botas resistentes feitas de aço forjado. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

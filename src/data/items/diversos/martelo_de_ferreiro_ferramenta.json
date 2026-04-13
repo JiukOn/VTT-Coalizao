@@ -1,8 +1,14 @@
 {
   "id": "martelo_de_ferreiro_ferramenta",
-  "name": "Martelo de Ferreiro (Ferramenta)",
+  "name": {
+    "pt-br": "Martelo de Ferreiro (Ferramenta)",
+    "en-us": ""
+  },
   "category": "Ferramentas",
-  "description": "Um martelo robusto e pesado, essencial para a forja, que também aprimora +2 PRE. Causa 1d4 - 1 de dano. Possui a modificação Prático, otimizando a eficiência do usuário em testes de criação ou reparo de itens. (15 DP).",
+  "description": {
+    "pt-br": "Um martelo robusto e pesado, essencial para a forja, que também aprimora +2 PRE. Causa 1d4 - 1 de dano. Possui a modificação Prático, otimizando a eficiência do usuário em testes de criação ou reparo de itens. (15 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

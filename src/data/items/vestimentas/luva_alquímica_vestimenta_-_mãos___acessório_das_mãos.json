@@ -1,8 +1,14 @@
 {
   "id": "luva_alquímica_vestimenta_-_mãos_/_acessório_das_mãos",
-  "name": "Luva Alquímica (Vestimenta - Mãos / Acessório das Mãos)",
+  "name": {
+    "pt-br": "Luva Alquímica (Vestimenta - Mãos / Acessório das Mãos)",
+    "en-us": ""
+  },
   "category": "Mãos / Acessório das Mãos",
-  "description": "Uma luva leve de durabilidade média, capaz de utilizar poções nos golpes físicos. Possui a modificação Prático, concedendo um dado de vantagem em testes de criação ou reparo de itens quando este item é o principal utilizado na ação. (15 DP).",
+  "description": {
+    "pt-br": "Uma luva leve de durabilidade média, capaz de utilizar poções nos golpes físicos. Possui a modificação Prático, concedendo um dado de vantagem em testes de criação ou reparo de itens quando este item é o principal utilizado na ação. (15 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

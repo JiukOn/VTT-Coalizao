@@ -1,6 +1,9 @@
 {
   "id": "aurelio",
-  "name": "Aurelio Calopsittus",
+  "name": {
+    "pt-br": "Aurelio Calopsittus",
+    "en-us": ""
+  },
   "level": 3,
   "class": "Guardião",
   "specie": "Humano/Monstro",
@@ -15,7 +18,10 @@
     "PRE": 1,
     "ENR": 5
   },
-  "history": "Um ex-segurança de uma grande banda de jazz esquecida em NY.",
+  "history": {
+    "pt-br": "Um ex-segurança de uma grande banda de jazz esquecida em NY.",
+    "en-us": ""
+  },
   "aura": "Harmonia",
   "isCustom": false
 }

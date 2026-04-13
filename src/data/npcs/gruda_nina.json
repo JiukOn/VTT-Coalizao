@@ -1,9 +1,22 @@
 {
   "id": "gruda_nina",
-  "name": "Gruda Nina",
+  "name": {
+    "pt-br": "Gruda Nina",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "location": "Vila Secreta",
-  "description": "",
-  "type": "npc",
-  "role": "",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

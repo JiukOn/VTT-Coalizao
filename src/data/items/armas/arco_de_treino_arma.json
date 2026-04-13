@@ -1,8 +1,14 @@
 {
   "id": "arco_de_treino_arma",
-  "name": "Arco de Treino (Arma)",
+  "name": {
+    "pt-br": "Arco de Treino (Arma)",
+    "en-us": ""
+  },
   "category": "Armas à Distância",
-  "description": "Capaz de lançar projéteis finos e alongados, confere +1 PRE. Distância Máxima de lançamento: 8 metros. Possui a modificação Leve, concedendo +1 no dado em testes de ataque com PRE. (12 DP).",
+  "description": {
+    "pt-br": "Capaz de lançar projéteis finos e alongados, confere +1 PRE. Distância Máxima de lançamento: 8 metros. Possui a modificação Leve, concedendo +1 no dado em testes de ataque com PRE. (12 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

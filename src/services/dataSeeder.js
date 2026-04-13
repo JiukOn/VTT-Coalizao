@@ -95,22 +95,21 @@ export async function seedDatabase() {
         console.log(`[Seeder] ✓ ${BASE_MODIFICATIONS.length} modificações`)
 
         // NPCs
-        await db.npcs.clear()
-        await db.npcs.bulkAdd(BASE_NPCS)
+        await db.npcs.where('isCustom').equals(0).delete()
+        const npcsWithFlag = BASE_NPCS.map(n => ({ ...n, isCustom: 0 }))
+        await db.npcs.bulkAdd(npcsWithFlag)
         console.log(`[Seeder] ✓ ${BASE_NPCS.length} NPCs`)
 
         // Heroes (as characters)
-        const existingHeroes = await db.characters.where('isCustom').equals(0).count()
-        if (existingHeroes === 0) {
-          const heroesForDB = BASE_HEROES.map(h => ({
-            ...h,
-            type: 'hero',
-            campaignId: 'coalizao',
-            isCustom: 0
-          }))
-          await db.characters.bulkAdd(heroesForDB)
-          console.log(`[Seeder] ✓ ${BASE_HEROES.length} heróis`)
-        }
+        await db.characters.where('isCustom').equals(0).delete()
+        const heroesForDB = BASE_HEROES.map(h => ({
+          ...h,
+          type: 'hero',
+          campaignId: 'coalizao',
+          isCustom: 0
+        }))
+        await db.characters.bulkAdd(heroesForDB)
+        console.log(`[Seeder] ✓ ${BASE_HEROES.length} heróis`)
 
         // Sessions
         const existingSessions = await db.sessionNotes.where({ campaignId: 'coalizao' }).count()

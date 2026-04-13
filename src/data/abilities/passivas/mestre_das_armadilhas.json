@@ -1,9 +1,15 @@
 {
   "id": "mestre_das_armadilhas",
-  "name": "Mestre das Armadilhas",
+  "name": {
+    "pt-br": "Mestre das Armadilhas",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Geral",
-  "description": "O usuário é excepcionalmente atento a movimentos sutis. Joga um dado de vantagem para testes relacionados a encontrar, montar ou desmontar armadilhas. (Requer INT 4, PRE 4)",
+  "description": {
+    "pt-br": "O usuário é excepcionalmente atento a movimentos sutis. Joga um dado de vantagem para testes relacionados a encontrar, montar ou desmontar armadilhas. (Requer INT 4, PRE 4)",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

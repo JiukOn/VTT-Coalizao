@@ -1,8 +1,14 @@
 {
   "id": "faca_de_serra_arma",
-  "name": "Faca de Serra (Arma)",
+  "name": {
+    "pt-br": "Faca de Serra (Arma)",
+    "en-us": ""
+  },
   "category": "Armas de Proximidade",
-  "description": "Uma faca pequena e pouco cortante, com baixa resistência. Causa 1d4 - 2 de dano. Possui a modificação Afiado, aumentando sua capacidade de corte em +1 de dano. (8 DP).",
+  "description": {
+    "pt-br": "Uma faca pequena e pouco cortante, com baixa resistência. Causa 1d4 - 2 de dano. Possui a modificação Afiado, aumentando sua capacidade de corte em +1 de dano. (8 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

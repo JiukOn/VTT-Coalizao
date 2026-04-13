@@ -1,9 +1,22 @@
 {
   "id": "guarda_jaya",
-  "name": "Guarda Jaya",
+  "name": {
+    "pt-br": "Guarda Jaya",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Guarda Elfo",
+    "en-us": ""
+  },
   "location": "Capital dos Elfos",
-  "description": "Guarda Elfo",
-  "type": "npc",
-  "role": "Guarda Elfo",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

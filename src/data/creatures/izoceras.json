@@ -1,11 +1,19 @@
 {
   "id": "izoceras",
-  "name": "Izoceras",
-  "description": "É um animal enorme, um unico dente seu pode pesar ate 3 quilos. Possui uma pele escamosa e altamente resistente seus ataques carregam o elemento agua. seus chifres que se encontram em seu nariz podem perfurar arvores como se fossem papel, por ser um animal tao grande e bruto ele altera o ambiente por onde passa derubando arvores, movendo pedras ou alterando o fluxo dos rios. Não é tao agressivo quanto aparenta,  mas mesmo que nao seja proposital somente a proximidade com esta criatura pode leva lo a uma triste morte por esmagamento.",
+  "name": {
+    "pt-br": "Izoceras",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "É um animal enorme, um unico dente seu pode pesar ate 3 quilos. Possui uma pele escamosa e altamente resistente seus ataques carregam o elemento agua. seus chifres que se encontram em seu nariz podem perfurar arvores como se fossem papel, por ser um animal tao grande e bruto ele altera o ambiente por onde passa derubando arvores, movendo pedras ou alterando o fluxo dos rios. Não é tao agressivo quanto aparenta,  mas mesmo que nao seja proposital somente a proximidade com esta criatura pode leva lo a uma triste morte por esmagamento.",
+    "en-us": ""
+  },
   "type": "semi-aquatico",
-  "size": "colossal",
+  "size": "medio",
   "diet": "herbivoro",
   "element": "agua",
   "imagePath": "Izoceras.jpeg",
-  "isCustom": false
+  "isCustom": false,
+  "core": "medio",
+  "elements": []
 }

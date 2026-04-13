@@ -1,8 +1,14 @@
 {
   "id": "vareta_item_mágico",
-  "name": "Vareta (Item Mágico)",
+  "name": {
+    "pt-br": "Vareta (Item Mágico)",
+    "en-us": ""
+  },
   "category": "Itens de Controle Mágico",
-  "description": "Uma vareta simples de baixa durabilidade. Possui a modificação Prático, cujo design otimiza a eficiência do usuário, concedendo 1 dado de vantagem em testes de criação ou reparo de itens quando este item é o principal utilizado na ação. (5 DP).",
+  "description": {
+    "pt-br": "Uma vareta simples de baixa durabilidade. Possui a modificação Prático, cujo design otimiza a eficiência do usuário, concedendo 1 dado de vantagem em testes de criação ou reparo de itens quando este item é o principal utilizado na ação. (5 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

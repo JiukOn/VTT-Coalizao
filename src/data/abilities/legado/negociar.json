@@ -1,9 +1,15 @@
 {
   "id": "negociar",
-  "name": "Negociar",
+  "name": {
+    "pt-br": "Negociar",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Feirante",
-  "description": "O usuário tem maior probabilidade de receber o que deseja. Se 1d12 >= 7, o usuário pode negociar com maior facilidade. (Requer INT 8).",
+  "description": {
+    "pt-br": "O usuário tem maior probabilidade de receber o que deseja. Se 1d12 >= 7, o usuário pode negociar com maior facilidade. (Requer INT 8).",
+    "en-us": ""
+  },
   "classLink": "Feirante",
   "cost": null,
   "test": null,

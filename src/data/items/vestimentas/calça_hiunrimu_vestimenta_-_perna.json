@@ -1,8 +1,14 @@
 {
   "id": "calça_hiunrimu_vestimenta_-_perna",
-  "name": "Calça HiunRimu (Vestimenta - Perna)",
+  "name": {
+    "pt-br": "Calça HiunRimu (Vestimenta - Perna)",
+    "en-us": ""
+  },
   "category": "Perna",
-  "description": "Calças feitas de casco de HiunRimu, resistentes e exóticas. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).",
+  "description": {
+    "pt-br": "Calças feitas de casco de HiunRimu, resistentes e exóticas. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

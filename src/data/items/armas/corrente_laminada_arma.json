@@ -1,8 +1,14 @@
 {
   "id": "corrente_laminada_arma",
-  "name": "Corrente Laminada (Arma)",
+  "name": {
+    "pt-br": "Corrente Laminada (Arma)",
+    "en-us": ""
+  },
   "category": "Armas de Proximidade",
-  "description": "Uma corrente flexível e de alta durabilidade, ideal para controle. Causa 1d4 - 2 de dano. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (25 DP).",
+  "description": {
+    "pt-br": "Uma corrente flexível e de alta durabilidade, ideal para controle. Causa 1d4 - 2 de dano. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (25 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

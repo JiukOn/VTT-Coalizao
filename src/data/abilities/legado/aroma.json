@@ -1,9 +1,15 @@
 {
   "id": "aroma",
-  "name": "Aroma",
+  "name": {
+    "pt-br": "Aroma",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Mentalista",
-  "description": "exala hormônios que podem acalmar ou enlouquecer seres próximos. Teste de 1d20 + CRM > 1d20 + RES do alvo.",
+  "description": {
+    "pt-br": "exala hormônios que podem acalmar ou enlouquecer seres próximos. Teste de 1d20 + CRM > 1d20 + RES do alvo.",
+    "en-us": ""
+  },
   "classLink": "Mentalista",
   "cost": null,
   "test": null,

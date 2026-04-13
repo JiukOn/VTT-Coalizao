@@ -1,9 +1,15 @@
 {
   "id": "linguagem_reptiliana",
-  "name": "Linguagem Reptiliana",
+  "name": {
+    "pt-br": "Linguagem Reptiliana",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Reptiliano",
-  "description": "O usuário é capaz de se comunicar com répteis.",
+  "description": {
+    "pt-br": "O usuário é capaz de se comunicar com répteis.",
+    "en-us": ""
+  },
   "classLink": "Reptiliano",
   "cost": null,
   "test": null,

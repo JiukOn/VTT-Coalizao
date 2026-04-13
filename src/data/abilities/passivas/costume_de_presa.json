@@ -1,9 +1,15 @@
 {
   "id": "costume_de_presa",
-  "name": "Costume de Presa",
+  "name": {
+    "pt-br": "Costume de Presa",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Geral",
-  "description": "O usuário pode perceber criaturas hostis antes de ser atingido.",
+  "description": {
+    "pt-br": "O usuário pode perceber criaturas hostis antes de ser atingido.",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

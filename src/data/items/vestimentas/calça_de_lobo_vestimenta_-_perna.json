@@ -1,8 +1,14 @@
 {
   "id": "calça_de_lobo_vestimenta_-_perna",
-  "name": "Calça de Lobo (Vestimenta - Perna)",
+  "name": {
+    "pt-br": "Calça de Lobo (Vestimenta - Perna)",
+    "en-us": ""
+  },
   "category": "Perna",
-  "description": "Calças feitas de couro de lobo, rústicas e duráveis. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).",
+  "description": {
+    "pt-br": "Calças feitas de couro de lobo, rústicas e duráveis. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

@@ -1,9 +1,15 @@
 {
   "id": "distorcer_aparência",
-  "name": "Distorcer Aparência",
+  "name": {
+    "pt-br": "Distorcer Aparência",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O usuário é capaz de modificar levemente sua aparência se o teste (1d20 > 10) for bem-sucedido. Não afeta massa corporal ou tamanho. Recarrega em 1 turno. (Requer ENR 4).",
+  "description": {
+    "pt-br": "O usuário é capaz de modificar levemente sua aparência se o teste (1d20 > 10) for bem-sucedido. Não afeta massa corporal ou tamanho. Recarrega em 1 turno. (Requer ENR 4).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

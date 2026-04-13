@@ -1,9 +1,15 @@
 {
   "id": "batalha_mental",
-  "name": "Batalha Mental",
+  "name": {
+    "pt-br": "Batalha Mental",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Cultista",
-  "description": "O usuário pode tentar transferir um efeito mental negativo de um aliado para um inimigo. Role o teste (1d20 + RES > 1d20 + RES do alvo), se for bem sucedido a transferência ocorre e se o teste falhar, o efeito é transferido para o próprio usuário.",
+  "description": {
+    "pt-br": "O usuário pode tentar transferir um efeito mental negativo de um aliado para um inimigo. Role o teste (1d20 + RES > 1d20 + RES do alvo), se for bem sucedido a transferência ocorre e se o teste falhar, o efeito é transferido para o próprio usuário.",
+    "en-us": ""
+  },
   "classLink": "Cultista",
   "cost": null,
   "test": null,

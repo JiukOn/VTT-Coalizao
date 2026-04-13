@@ -1,9 +1,15 @@
 {
   "id": "arte_de_mãos_livres",
-  "name": "Arte de Mãos Livres",
+  "name": {
+    "pt-br": "Arte de Mãos Livres",
+    "en-us": ""
+  },
   "category": "PASSIVAS",
   "class": "Geral",
-  "description": "O usuário recebe +2 DEX e +1 FRC em batalha quando não está utilizando armas.",
+  "description": {
+    "pt-br": "O usuário recebe +2 DEX e +1 FRC em batalha quando não está utilizando armas.",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

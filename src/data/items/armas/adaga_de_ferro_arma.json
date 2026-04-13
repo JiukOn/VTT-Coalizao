@@ -1,8 +1,14 @@
 {
   "id": "adaga_de_ferro_arma",
-  "name": "Adaga de Ferro (Arma)",
+  "name": {
+    "pt-br": "Adaga de Ferro (Arma)",
+    "en-us": ""
+  },
   "category": "Armas de Proximidade",
-  "description": "Uma adaga de tamanho médio, com durabilidade mediana. Causa 1d4 - 1 de dano. Possui a modificação Perfurador, aumentando sua capacidade de perfuração em +1 de dano. (15 DP).",
+  "description": {
+    "pt-br": "Uma adaga de tamanho médio, com durabilidade mediana. Causa 1d4 - 1 de dano. Possui a modificação Perfurador, aumentando sua capacidade de perfuração em +1 de dano. (15 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

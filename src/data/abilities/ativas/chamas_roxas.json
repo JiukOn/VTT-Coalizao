@@ -1,9 +1,15 @@
 {
   "id": "chamas_roxas",
-  "name": "Chamas Roxas",
+  "name": {
+    "pt-br": "Chamas Roxas",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Evo Chamas",
-  "description": "O usuário é capaz de convocar o elemento Tempo em um ataque de longa distância, causando 1d4+3 de dano. Há uma possibilidade de envelhecer o alvo em 1 ano se o teste (1d20 > 18) for bem-sucedido. Se o teste (1d20 > 16) falhar, o usuário perde 2 ENR temporariamente. (Requer Linhagem de Ceifeiro e ENR 10).",
+  "description": {
+    "pt-br": "O usuário é capaz de convocar o elemento Tempo em um ataque de longa distância, causando 1d4+3 de dano. Há uma possibilidade de envelhecer o alvo em 1 ano se o teste (1d20 > 18) for bem-sucedido. Se o teste (1d20 > 16) falhar, o usuário perde 2 ENR temporariamente. (Requer Linhagem de Ceifeiro e ENR 10).",
+    "en-us": ""
+  },
   "classLink": "Evo Chamas",
   "cost": null,
   "test": null,

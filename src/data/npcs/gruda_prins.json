@@ -1,9 +1,22 @@
 {
   "id": "gruda_prins",
-  "name": "Gruda Prins",
+  "name": {
+    "pt-br": "Gruda Prins",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "location": "Vila Secreta",
-  "description": "",
-  "type": "npc",
-  "role": "",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

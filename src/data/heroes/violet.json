@@ -1,6 +1,9 @@
 {
   "id": "violet",
-  "name": "Violet",
+  "name": {
+    "pt-br": "Violet",
+    "en-us": ""
+  },
   "level": 5,
   "class": "Atirador de Fluxo",
   "specie": "Humano",
@@ -15,7 +18,10 @@
     "PRE": 9,
     "ENR": 6
   },
-  "history": "Atirador com controle de fluxo de energia. Preciso e calculista.",
+  "history": {
+    "pt-br": "Atirador com controle de fluxo de energia. Preciso e calculista.",
+    "en-us": ""
+  },
   "aura": "Clareza",
   "isCustom": false
 }

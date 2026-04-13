@@ -1,9 +1,15 @@
 {
   "id": "tiro_ao_alvo",
-  "name": "Tiro ao Alvo",
+  "name": {
+    "pt-br": "Tiro ao Alvo",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Atirador",
-  "description": "Aumenta 1 de dano a longa distância utilizando armas com munição por 2 turnos. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16).",
+  "description": {
+    "pt-br": "Aumenta 1 de dano a longa distância utilizando armas com munição por 2 turnos. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16).",
+    "en-us": ""
+  },
   "classLink": "Atirador",
   "cost": null,
   "test": "1d20 > 16 (reativação)",

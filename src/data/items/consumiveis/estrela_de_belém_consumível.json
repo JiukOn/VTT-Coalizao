@@ -1,8 +1,14 @@
 {
   "id": "estrela_de_belém_consumível",
-  "name": "Estrela de Belém (Consumível)",
+  "name": {
+    "pt-br": "Estrela de Belém (Consumível)",
+    "en-us": ""
+  },
   "category": "Consumíveis",
-  "description": "Um item Mito que, ao ser consumido, permite ao usuário receber o dobro de XP em qualquer ato e garante a capacidade de transcender.",
+  "description": {
+    "pt-br": "Um item Mito que, ao ser consumido, permite ao usuário receber o dobro de XP em qualquer ato e garante a capacidade de transcender.",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

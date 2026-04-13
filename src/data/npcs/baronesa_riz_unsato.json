@@ -1,9 +1,22 @@
 {
   "id": "baronesa_riz_unsato",
-  "name": "Baronesa Riz Unsato",
+  "name": {
+    "pt-br": "Baronesa Riz Unsato",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Baronesa",
+    "en-us": ""
+  },
   "location": "Vilarejo Hamelin",
-  "description": "",
-  "type": "npc",
-  "role": "Baronesa",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

@@ -1,9 +1,22 @@
 {
   "id": "mercante_kurk",
-  "name": "Mercante Kurk",
+  "name": {
+    "pt-br": "Mercante Kurk",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Mercante",
+    "en-us": ""
+  },
   "location": "Vila Secreta",
-  "description": "",
-  "type": "npc",
-  "role": "Mercante",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

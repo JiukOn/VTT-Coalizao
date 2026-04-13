@@ -1,9 +1,15 @@
 {
   "id": "selo_energético",
-  "name": "Selo Energético",
+  "name": {
+    "pt-br": "Selo Energético",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O usuário sela a ENR do alvo por completo por 3 turnos, mas fica incapacitado e perde -2 VIT. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16). (Requer RES 4).",
+  "description": {
+    "pt-br": "O usuário sela a ENR do alvo por completo por 3 turnos, mas fica incapacitado e perde -2 VIT. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16). (Requer RES 4).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

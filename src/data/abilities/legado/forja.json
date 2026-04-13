@@ -1,9 +1,15 @@
 {
   "id": "forja",
-  "name": "Forja",
+  "name": {
+    "pt-br": "Forja",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Ferreiro",
-  "description": "O usuário é capaz de manipular diversos materiais de alta resistência para a criação de itens, recebendo +5 no valor dos dados.",
+  "description": {
+    "pt-br": "O usuário é capaz de manipular diversos materiais de alta resistência para a criação de itens, recebendo +5 no valor dos dados.",
+    "en-us": ""
+  },
   "classLink": "Ferreiro",
   "cost": null,
   "test": null,

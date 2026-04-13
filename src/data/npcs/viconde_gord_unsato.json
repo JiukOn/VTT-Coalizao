@@ -1,9 +1,22 @@
 {
   "id": "viconde_gord_unsato",
-  "name": "Viconde Gord Unsato",
+  "name": {
+    "pt-br": "Viconde Gord Unsato",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Viconde",
+    "en-us": ""
+  },
   "location": "Taverna Normiumor",
-  "description": "",
-  "type": "npc",
-  "role": "Viconde",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

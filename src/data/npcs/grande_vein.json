@@ -1,9 +1,22 @@
 {
   "id": "grande_vein",
-  "name": "Grande Vein",
+  "name": {
+    "pt-br": "Grande Vein",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Grande",
+    "en-us": ""
+  },
   "location": "Reserva Amortecida",
-  "description": "",
-  "type": "npc",
-  "role": "Grande",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

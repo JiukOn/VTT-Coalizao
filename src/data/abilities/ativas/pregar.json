@@ -1,9 +1,15 @@
 {
   "id": "pregar",
-  "name": "Pregar",
+  "name": {
+    "pt-br": "Pregar",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O usuário pode hipnotizar fiéis com sua palavra e manipular a verdade absoluta se o teste (1d20 > 16) for bem-sucedido. (Requer um Item Religioso).",
+  "description": {
+    "pt-br": "O usuário pode hipnotizar fiéis com sua palavra e manipular a verdade absoluta se o teste (1d20 > 16) for bem-sucedido. (Requer um Item Religioso).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

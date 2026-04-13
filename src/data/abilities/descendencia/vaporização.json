@@ -1,9 +1,15 @@
 {
   "id": "vaporização",
-  "name": "Vaporização",
+  "name": {
+    "pt-br": "Vaporização",
+    "en-us": ""
+  },
   "category": "DESCENDÊNCIA",
   "class": "Lucrezia Borgia",
-  "description": "O usuário é capaz de acelerar e controlar complexamente as moléculas liquidas transformando-as em vapor ou gas, podendo preencher o ambiente de forma imperceptível com o vapor ou gas de um liquido a sua disposicão se o teste (1d20 > 14) for bem sucedido.",
+  "description": {
+    "pt-br": "O usuário é capaz de acelerar e controlar complexamente as moléculas liquidas transformando-as em vapor ou gas, podendo preencher o ambiente de forma imperceptível com o vapor ou gas de um liquido a sua disposicão se o teste (1d20 > 14) for bem sucedido.",
+    "en-us": ""
+  },
   "classLink": "Lucrezia Borgia",
   "cost": null,
   "test": null,

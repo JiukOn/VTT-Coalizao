@@ -1,11 +1,19 @@
 {
   "id": "crocohog",
-  "name": "Crocohog",
-  "description": "Ele é um predador onívoro, se alimentando de pequenos e médios animais, como roedores , répteis, passaros ou cervos, e também de frutas e raízes. Sua boca é uma mistura de focinho de porco com a mandíbula poderosa. O Crocohog se reproduz de forma vivípara, mas os filhotes nascem com uma casca dura, que se desenvolve em espinhos. Os espinhos são uma forma de defesa contra predadores e são formados por queratina, o mesmo material das unhas humanas. A criatura tem uma capacidade de se adaptar a diferentes ambientes, mas prefere ambientes como florestas úmidas, rios e lagos.",
+  "name": {
+    "pt-br": "Crocohog",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "Ele é um predador onívoro, se alimentando de pequenos e médios animais, como roedores , répteis, passaros ou cervos, e também de frutas e raízes. Sua boca é uma mistura de focinho de porco com a mandíbula poderosa. O Crocohog se reproduz de forma vivípara, mas os filhotes nascem com uma casca dura, que se desenvolve em espinhos. Os espinhos são uma forma de defesa contra predadores e são formados por queratina, o mesmo material das unhas humanas. A criatura tem uma capacidade de se adaptar a diferentes ambientes, mas prefere ambientes como florestas úmidas, rios e lagos.",
+    "en-us": ""
+  },
   "type": "terrestre",
   "size": "medio",
   "diet": "onivoro",
   "element": null,
   "imagePath": "Crocohog.jpeg",
-  "isCustom": false
+  "isCustom": false,
+  "core": "medio",
+  "elements": []
 }

@@ -1,9 +1,15 @@
 {
   "id": "domínio_do_executor",
-  "name": "Domínio do Executor",
+  "name": {
+    "pt-br": "Domínio do Executor",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "O Executor determina o Alvo. O Alvo escolhe quem será a Guarda. Qualquer outro ser presente (Espectador) pode interferir apenas com a Guarda, não com o Executor ou o Alvo. Executor: Torna-se imortal a qualquer dano que não seja infligido pela Guarda. Guarda: Só pode causar dano quando o Executor tentar atacar o Alvo. Alvo: É imune a qualquer dano, exceto o do Executor, contra o qual não pode se defender. O Domínio dura 4 turnos e se desintegra ao final. Ao término da habilidade, o usuário permanece imóvel por um turno. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16).",
+  "description": {
+    "pt-br": "O Executor determina o Alvo. O Alvo escolhe quem será a Guarda. Qualquer outro ser presente (Espectador) pode interferir apenas com a Guarda, não com o Executor ou o Alvo. Executor: Torna-se imortal a qualquer dano que não seja infligido pela Guarda. Guarda: Só pode causar dano quando o Executor tentar atacar o Alvo. Alvo: É imune a qualquer dano, exceto o do Executor, contra o qual não pode se defender. O Domínio dura 4 turnos e se desintegra ao final. Ao término da habilidade, o usuário permanece imóvel por um turno. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

@@ -1,8 +1,14 @@
 {
   "id": "livro_satoré_item_diverso",
-  "name": "Livro Satoré (Item Diverso)",
+  "name": {
+    "pt-br": "Livro Satoré (Item Diverso)",
+    "en-us": ""
+  },
   "category": "Itens Diversos",
-  "description": "Um item Sentimental, o livro religioso da Igreja Unsato.",
+  "description": {
+    "pt-br": "Um item Sentimental, o livro religioso da Igreja Unsato.",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

@@ -1,9 +1,22 @@
 {
   "id": "aventureiro_nies",
-  "name": "Aventureiro Nies",
+  "name": {
+    "pt-br": "Aventureiro Nies",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "location": "Taverna Byron",
-  "description": "",
-  "type": "npc",
-  "role": "",
+  "personalities": [],
+  "possibleBenefit": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "possibleHarm": {
+    "pt-br": "",
+    "en-us": ""
+  },
   "isCustom": false
 }

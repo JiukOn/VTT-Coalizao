@@ -1,9 +1,15 @@
 {
   "id": "fratura_no_véu",
-  "name": "Fratura no Véu",
+  "name": {
+    "pt-br": "Fratura no Véu",
+    "en-us": ""
+  },
   "category": "USO ÚNICO",
   "class": "Geral",
-  "description": "O usuário dilacera a realidade ao seu redor, criando uma ruptura dimensional por 10 metros. Tudo ao redor sofre os seguintes efeitos por 2 turnos: Todos os testes são rolados com dado de prejuízo. Todas as habilidades não podem ser usadas. Entidades distintas podem se manifestar brevemente. Os envolvidos devem todos realizar um teste (1d20 > 14) caso falhem seus efeitos psicologicos irao se ativar. Os envolvidos devem todos realizar um segundo teste (1d20 > 16) e se for bem sucedido poderao ter uma visao do futuro ou passado relaciona a seus conhecimentos previos. Ao fim do efeito, o usuário perde o acesso a qualquer habilidade por 1 dia e todos os envolvidos fazem um teste (1d20 > 16) e se falhar recebem o status 'Medo'. (Requer ENR 6, INT 6 e Pergaminho de Fratura no Véu)",
+  "description": {
+    "pt-br": "O usuário dilacera a realidade ao seu redor, criando uma ruptura dimensional por 10 metros. Tudo ao redor sofre os seguintes efeitos por 2 turnos: Todos os testes são rolados com dado de prejuízo. Todas as habilidades não podem ser usadas. Entidades distintas podem se manifestar brevemente. Os envolvidos devem todos realizar um teste (1d20 > 14) caso falhem seus efeitos psicologicos irao se ativar. Os envolvidos devem todos realizar um segundo teste (1d20 > 16) e se for bem sucedido poderao ter uma visao do futuro ou passado relaciona a seus conhecimentos previos. Ao fim do efeito, o usuário perde o acesso a qualquer habilidade por 1 dia e todos os envolvidos fazem um teste (1d20 > 16) e se falhar recebem o status 'Medo'. (Requer ENR 6, INT 6 e Pergaminho de Fratura no Véu)",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

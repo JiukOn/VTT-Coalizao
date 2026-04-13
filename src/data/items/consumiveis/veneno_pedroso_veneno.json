@@ -1,8 +1,14 @@
 {
   "id": "veneno_pedroso_veneno",
-  "name": "Veneno Pedroso (Veneno)",
+  "name": {
+    "pt-br": "Veneno Pedroso (Veneno)",
+    "en-us": ""
+  },
   "category": "Venenos",
-  "description": "Um veneno que, quando aplicado, causa o efeito 'Travado' ao alvo.",
+  "description": {
+    "pt-br": "Um veneno que, quando aplicado, causa o efeito 'Travado' ao alvo.",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

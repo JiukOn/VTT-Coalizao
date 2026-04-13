@@ -1,9 +1,15 @@
 {
   "id": "acorde",
-  "name": "Acorde",
+  "name": {
+    "pt-br": "Acorde",
+    "en-us": ""
+  },
   "category": "LEGADO",
   "class": "Bardo",
-  "description": "Ao tocar uma melodia específica, o usuário concede +1 em dois atributos escolhidos por 2 turnos para o alvo. Exige 1d20 > 16 para cada tentativa de uso apos a finalização dos primeiros efeitos na situação atual.",
+  "description": {
+    "pt-br": "Ao tocar uma melodia específica, o usuário concede +1 em dois atributos escolhidos por 2 turnos para o alvo. Exige 1d20 > 16 para cada tentativa de uso apos a finalização dos primeiros efeitos na situação atual.",
+    "en-us": ""
+  },
   "classLink": "Bardo",
   "cost": null,
   "test": "1d20 > 16 (reativação)",

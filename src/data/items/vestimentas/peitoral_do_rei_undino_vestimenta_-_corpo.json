@@ -1,8 +1,14 @@
 {
   "id": "peitoral_do_rei_undino_vestimenta_-_corpo",
-  "name": "Peitoral do Rei Undino (Vestimenta - Corpo)",
+  "name": {
+    "pt-br": "Peitoral do Rei Undino (Vestimenta - Corpo)",
+    "en-us": ""
+  },
   "category": "Corpo",
-  "description": "Peitoral feito do couro resistente de um rei undino, com acabamento majestoso. Possui a modificação Blindado, diminuindo em 1 o dano recebido. Confere +1 VIT. (25 DP).",
+  "description": {
+    "pt-br": "Peitoral feito do couro resistente de um rei undino, com acabamento majestoso. Possui a modificação Blindado, diminuindo em 1 o dano recebido. Confere +1 VIT. (25 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

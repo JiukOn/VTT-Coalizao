@@ -1,8 +1,14 @@
 {
   "id": "lâmina_do_bardo_arma",
-  "name": "Lâmina do Bardo (Arma)",
+  "name": {
+    "pt-br": "Lâmina do Bardo (Arma)",
+    "en-us": ""
+  },
   "category": "Armas de Proximidade",
-  "description": "Uma lâmina de tamanho médio que produz sons musicais quando usada em batalha. Causa 1d4 + 1 de dano. Possui a modificação Barulhento, emitindo sons notáveis que podem desorientar oponentes e causar confusão. (15 DP).",
+  "description": {
+    "pt-br": "Uma lâmina de tamanho médio que produz sons musicais quando usada em batalha. Causa 1d4 + 1 de dano. Possui a modificação Barulhento, emitindo sons notáveis que podem desorientar oponentes e causar confusão. (15 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

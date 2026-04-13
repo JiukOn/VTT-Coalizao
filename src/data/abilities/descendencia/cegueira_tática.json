@@ -1,9 +1,15 @@
 {
   "id": "cegueira_tática",
-  "name": "Cegueira Tática",
+  "name": {
+    "pt-br": "Cegueira Tática",
+    "en-us": ""
+  },
   "category": "DESCENDÊNCIA",
   "class": "Sun Tzu",
-  "description": "O usuário entra num estado de combate intuitivo e fica completamente cego. Por 2 turnos, pode anular 1 acerto crítico recebido ou se o ataque não for crítico, pode fazer um teste (1d20 > 12) para realizar um contra-ataque imediato. (Requer DEX 8, PRE 6)",
+  "description": {
+    "pt-br": "O usuário entra num estado de combate intuitivo e fica completamente cego. Por 2 turnos, pode anular 1 acerto crítico recebido ou se o ataque não for crítico, pode fazer um teste (1d20 > 12) para realizar um contra-ataque imediato. (Requer DEX 8, PRE 6)",
+    "en-us": ""
+  },
   "classLink": "Sun Tzu",
   "cost": null,
   "test": null,

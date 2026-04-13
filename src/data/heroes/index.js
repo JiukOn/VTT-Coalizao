@@ -1,17 +1,7 @@
-import ouruen from './ouruen.json'
-import aurelio from './aurelio.json'
-import polaris from './polaris.json'
-import fifo from './fifo.json'
-import ravi from './ravi.json'
-import ethan from './ethan.json'
-import kalina from './kalina.json'
-import akali from './akali.json'
-import edgar from './edgar.json'
-
-/** All base heroes from the active Coalizão campaign */
-export const BASE_HEROES = [
-  ouruen, aurelio, polaris, fifo, ravi,
-  ethan, kalina, akali, edgar
-]
-
-export default BASE_HEROES
+const glob = import.meta.glob('./*.json', { eager: true });
+export const BASE_HEROES = Object.values(glob).map(m => m.default || m).map(item => ({
+  ...item,
+  name: item.name?.['pt-br'] || item.name || '',
+  description: item.description?.['pt-br'] || item.description || ''
+}));
+export default BASE_HEROES;

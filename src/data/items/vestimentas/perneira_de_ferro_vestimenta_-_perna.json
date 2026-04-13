@@ -1,8 +1,14 @@
 {
   "id": "perneira_de_ferro_vestimenta_-_perna",
-  "name": "Perneira de Ferro (Vestimenta - Perna)",
+  "name": {
+    "pt-br": "Perneira de Ferro (Vestimenta - Perna)",
+    "en-us": ""
+  },
   "category": "Perna",
-  "description": "Perneiras feitas de placas de ferro, pesadas e protetoras para as pernas. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).",
+  "description": {
+    "pt-br": "Perneiras feitas de placas de ferro, pesadas e protetoras para as pernas. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).",
+    "en-us": ""
+  },
   "type": null,
   "subtype": null,
   "rarity": null,

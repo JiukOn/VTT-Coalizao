@@ -1,9 +1,15 @@
 {
   "id": "defesa_espinhosa",
-  "name": "Defesa Espinhosa",
+  "name": {
+    "pt-br": "Defesa Espinhosa",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "Cria um escudo de energia não elemental ao redor do usuário por 2 turnos que, se o teste (1d20 > 14) for bem-sucedido, reflete metade do dano mágico sofrido ao atacante. Recarrega em 3 turnos. (Requer ENR 6 ou mais).",
+  "description": {
+    "pt-br": "Cria um escudo de energia não elemental ao redor do usuário por 2 turnos que, se o teste (1d20 > 14) for bem-sucedido, reflete metade do dano mágico sofrido ao atacante. Recarrega em 3 turnos. (Requer ENR 6 ou mais).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,

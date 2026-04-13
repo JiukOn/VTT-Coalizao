@@ -1,6 +1,9 @@
 {
   "id": "ethan",
-  "name": "Ethan",
+  "name": {
+    "pt-br": "Ethan",
+    "en-us": ""
+  },
   "level": 4,
   "class": "Bardo",
   "specie": "Humano",
@@ -15,7 +18,10 @@
     "PRE": 2,
     "ENR": 5
   },
-  "history": "Gostava de Jogar Videogames, trabalhava como músico.",
+  "history": {
+    "pt-br": "Gostava de Jogar Videogames, trabalhava como músico.",
+    "en-us": ""
+  },
   "aura": "?",
   "isCustom": false
 }

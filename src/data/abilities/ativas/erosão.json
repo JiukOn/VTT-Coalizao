@@ -1,9 +1,15 @@
 {
   "id": "erosão",
-  "name": "Erosão",
+  "name": {
+    "pt-br": "Erosão",
+    "en-us": ""
+  },
   "category": "ATIVAS",
   "class": "Geral",
-  "description": "Se o teste (1d20 > 16) for bem-sucedido, o usuário cria fendas no solo. Cada ponto de FRC do usuário equivale a 10m de profundidade. O dano causado é de 1 por cada 20m de queda. Para reativar esta habilidade na mesma situação/combate, o usuário deve ter sucesso em um teste (1d20 > 16).",
+  "description": {
+    "pt-br": "Se o teste (1d20 > 16) for bem-sucedido, o usuário cria fendas no solo. Cada ponto de FRC do usuário equivale a 10m de profundidade. O dano causado é de 1 por cada 20m de queda. Para reativar esta habilidade na mesma situação/combate, o usuário deve ter sucesso em um teste (1d20 > 16).",
+    "en-us": ""
+  },
   "classLink": "Geral",
   "cost": null,
   "test": null,
