@@ -1,0 +1,14 @@
+{
+  "id": "carapaça",
+  "name": "Carapaça",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Ao sofrer uma alta quantidade de dano, o usuário cria involuntariamente uma carapaça ao seu redor, recebendo +4 FRC, -4 DEX, e qualquer dano recebido é diminuído em 2 no valor final por 3 turnos. (A espécie do usuário se mistura com a de um Gran Belis, tornando-se Original/Gran permanentemente).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

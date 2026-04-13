@@ -1,0 +1,21 @@
+{
+  "id": "kalina",
+  "name": "Kalina Amster",
+  "level": 4,
+  "class": "Feirante",
+  "specie": "Humano/Demônio",
+  "avatar": "/assets/heroes/kalina.png",
+  "stats": {
+    "VIT": 7,
+    "DEX": 2,
+    "CRM": 5,
+    "FRC": 9,
+    "INT": 5,
+    "RES": 1,
+    "PRE": 4,
+    "ENR": 0
+  },
+  "history": "Nascida na Cidade dos Porcos, seus pais são lavradores, avô paterno demônio.",
+  "aura": "?",
+  "isCustom": false
+}

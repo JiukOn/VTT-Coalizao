@@ -1,0 +1,14 @@
+{
+  "id": "mordida_demoníaca",
+  "name": "Mordida Demoníaca",
+  "category": "PASSIVAS",
+  "class": "Evo Mordida",
+  "description": "Aumenta 6 FRC ao executar uma mordida. Se o teste (1d20 >= 18) for bem-sucedido, o efeito de 'Sucção' é aplicado. (Requer Linhagem Demônio).",
+  "classLink": "Evo Mordida",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

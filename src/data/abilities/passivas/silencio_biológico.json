@@ -1,0 +1,14 @@
+{
+  "id": "silencio_biológico",
+  "name": "Silencio Biológico",
+  "category": "PASSIVAS",
+  "class": "Evo Furtividade",
+  "description": "Impõe -4 nos dados de testes de percepção inimigos. Se o alvo rolar um desastre, o usuário pode realizar um ataque mantendo sua furtividade. (Requer DEX 5)",
+  "classLink": "Evo Furtividade",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

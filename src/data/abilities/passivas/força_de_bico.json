@@ -1,0 +1,14 @@
+{
+  "id": "força_de_bico",
+  "name": "Força de Bico",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Caso esteja sendo intimidado, o usuário ganha +1 FRC naquele turno. (Requer um BICO).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "bateria_energética_item_diverso",
+  "name": "Bateria Energética (Item Diverso)",
+  "category": "Itens Diversos",
+  "description": "Uma bateria capaz de armazenar até 5 ENR, essa energia pode ser utilizada por seres e outros itens.",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

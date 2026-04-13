@@ -1,0 +1,14 @@
+{
+  "id": "fabricação",
+  "name": "Fabricação",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "O usuário é capaz de criar itens de baixa qualidade com materiais simples, desde que tenha aprendizado visual sobre o item. Concede 1 dado bônus nesta ação.",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

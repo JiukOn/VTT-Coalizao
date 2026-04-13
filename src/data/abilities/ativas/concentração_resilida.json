@@ -1,0 +1,14 @@
+{
+  "id": "concentração_resilida",
+  "name": "Concentração Resilida",
+  "category": "ATIVAS",
+  "class": "Evo Barreira Mental",
+  "description": "O usuário concentra sua força de vontade para neutralizar maldições e efeitos negativos por 1 turno. Faça um teste de 1d20 + RES contra a Dificuldade do efeito (8, 14 ou 18). Um sucesso remove o efeito temporariamente, enquanto um Crítico pode o remover de forma permanente. Desastre fortalece o efeito contra você. Custa 1 XP por uso. Recarrega em 3 turnos. Não altera efeitos de itens apenas corta o vinculo deles com o usuario. (Requer INT 6 RES 6).",
+  "classLink": "Evo Barreira Mental",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

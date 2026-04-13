@@ -1,0 +1,14 @@
+{
+  "id": "reforço_mágico",
+  "name": "Reforço Mágico",
+  "category": "ATIVAS",
+  "class": "Geral",
+  "description": "Gasta 1 ENR temporariamente para aumentar 1 FRC por 2 turnos. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16). (Requer ENR 4).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

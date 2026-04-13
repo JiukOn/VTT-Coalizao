@@ -1,0 +1,21 @@
+{
+  "id": "fifo",
+  "name": "Fifo Zante",
+  "level": 5,
+  "class": "Sincronizador",
+  "specie": "Humano",
+  "avatar": "/assets/heroes/fifo.png",
+  "stats": {
+    "VIT": 8,
+    "DEX": 4,
+    "CRM": 5,
+    "FRC": 4,
+    "INT": 6,
+    "RES": 4,
+    "PRE": 2,
+    "ENR": 0
+  },
+  "history": "Estudava táticas de guerra e passava em veterinária. Gosta de ler Ficção.",
+  "aura": "Inspiração",
+  "isCustom": false
+}

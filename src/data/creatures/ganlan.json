@@ -1,0 +1,11 @@
+{
+  "id": "ganlan",
+  "name": "Ganlan",
+  "description": "Uma criatura grande e com chifres metalicos. É um predador mamifero que se alimenta de animais de médio e grande porte, muitas vezes atacando criaturas maiores que o mesmo.",
+  "type": "terrestre",
+  "size": "grande",
+  "diet": "carnivoro",
+  "element": "metal",
+  "imagePath": "Ganlan.png",
+  "isCustom": false
+}

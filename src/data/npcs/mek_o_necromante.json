@@ -1,0 +1,9 @@
+{
+  "id": "mek_o_necromante",
+  "name": "Mek, O necromante",
+  "location": "Cidade Caída",
+  "description": "É o líder da cidade caída, massacrou todos os seus cidadãos e reviveu os mais fortes como seus servos \"Mortos-Vivos\".",
+  "type": "npc",
+  "role": "Necromante",
+  "isCustom": false
+}

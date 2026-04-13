@@ -1,0 +1,11 @@
+{
+  "id": "beezle",
+  "name": "Beezle",
+  "description": "O Beezle é uma criatura herbívora, com uma dieta baseada em néctar, pólen e frutas. Seu sistema digestivo é especializado para processar esses alimentos, permitindo-lhe extrair os nutrientes necessários para sua sobrevivência e para a manutenção de suas asas. O Beezle é uma criatura muito ágil, capaz de voar longas distâncias em alta velocidade e possui uma estrutura corporal única, com cerca de 1,20 metro de altura. A sociedade dos Beezles é muito organizada e hierárquica eles são um exemplo de cooperação e de trabalho em equipe. Sua existência é fundamental para a manutenção do ecossistema e para a preservação da biodiversidade.",
+  "type": "voador",
+  "size": "pequeno",
+  "diet": "herbivoro",
+  "element": null,
+  "imagePath": "Beezle.jpeg",
+  "isCustom": false
+}

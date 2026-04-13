@@ -1,0 +1,9 @@
+{
+  "id": "o_culto",
+  "name": "O culto",
+  "location": "Torre Negra",
+  "description": "",
+  "type": "npc",
+  "role": "",
+  "isCustom": false
+}

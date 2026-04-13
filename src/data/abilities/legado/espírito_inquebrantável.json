@@ -1,0 +1,14 @@
+{
+  "id": "espírito_inquebrantável",
+  "name": "Espírito Inquebrantável",
+  "category": "LEGADO",
+  "class": "Monge",
+  "description": "Durante 3 turnos, o usuário canaliza a harmonia entre corpo e mente, entrando em um estado de concentração absoluta. Ele recebe +2 RES e pode anular um dano físico direto por turno se o seu teste (1d20) for menor que sua RES. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16).",
+  "classLink": "Monge",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

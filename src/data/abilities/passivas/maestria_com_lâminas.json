@@ -1,0 +1,14 @@
+{
+  "id": "maestria_com_lâminas",
+  "name": "Maestria com Lâminas",
+  "category": "PASSIVAS",
+  "class": "Evo Habil com Lâminas",
+  "description": "Concede +8 no dado em testes de precisão com lâminas.",
+  "classLink": "Evo Habil com Lâminas",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

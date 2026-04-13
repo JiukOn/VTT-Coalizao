@@ -1,0 +1,14 @@
+{
+  "id": "fusão_de_alma",
+  "name": "Fusão de Alma",
+  "category": "LEGADO",
+  "class": "Anexador de Almas",
+  "description": "Efeito único: o usuário recebe uma habilidade e 1/3 do valor de cada atributo de um ser pré-contratado, que morrerá no momento da Transevolução. Como efeito secundário, uma vez por turno, o usuário pode rolar 1d20; se o resultado for > 16, ele nega um efeito psicológico.",
+  "classLink": "Anexador de Almas",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

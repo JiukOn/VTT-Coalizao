@@ -1,0 +1,21 @@
+{
+  "id": "calça_da_thanatos_vestimenta_-_perna",
+  "name": "Calça da Thanatos (Vestimenta - Perna)",
+  "category": "Perna",
+  "description": "Calças de couro de quimera, parte do conjunto Thanatos. Possui a modificação Mochileiro, que dá maior velocidade para longas distancias. (4 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

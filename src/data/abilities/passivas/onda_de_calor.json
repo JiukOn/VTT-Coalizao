@@ -1,0 +1,14 @@
+{
+  "id": "onda_de_calor",
+  "name": "Onda de Calor",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Cria uma área de calor intenso em momentos críticos, causando 1 de dano do elemento Fogo por turno, escalando com a proximidade ao usuário. Se o usuário não possuir Resistência Elemental ao Fogo, ele sofrerá combustão espontânea.",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

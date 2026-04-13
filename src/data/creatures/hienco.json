@@ -1,0 +1,11 @@
+{
+  "id": "hienco",
+  "name": "Hienco",
+  "description": "Sua boca possui dentes resistentes para trituras os ossos de pequenos mamiferos. é uma criatura majoritariamente terrestre mas possui resistencia ao elemento agua.",
+  "type": "terrestre",
+  "size": "medio",
+  "diet": "carnivoro",
+  "element": "agua",
+  "imagePath": "Hienco.jpeg",
+  "isCustom": false
+}

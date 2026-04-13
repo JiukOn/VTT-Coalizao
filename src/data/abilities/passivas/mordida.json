@@ -1,0 +1,14 @@
+{
+  "id": "mordida",
+  "name": "Mordida",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Aumenta 2 FRC ao realizar um ataque de mordida.",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

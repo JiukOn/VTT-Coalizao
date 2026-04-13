@@ -1,0 +1,9 @@
+{
+  "id": "guarda_real_xyaner",
+  "name": "Guarda Real Xyaner",
+  "location": "Capital dos Elfos",
+  "description": "",
+  "type": "npc",
+  "role": "Guarda Real",
+  "isCustom": false
+}

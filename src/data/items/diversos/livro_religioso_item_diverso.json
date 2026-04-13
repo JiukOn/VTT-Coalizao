@@ -1,0 +1,21 @@
+{
+  "id": "livro_religioso_item_diverso",
+  "name": "Livro Religioso (Item Diverso)",
+  "category": "Itens Diversos",
+  "description": "Um livro de que aumenta a capacidade de convencimento do personagem e pode diminuir temporariamente 1 RES de um alvo se um teste de 1d20 >= 12 for bem-sucedido.",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

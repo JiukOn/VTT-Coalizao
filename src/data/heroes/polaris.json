@@ -1,0 +1,21 @@
+{
+  "id": "polaris",
+  "name": "Polaris Ciemin",
+  "level": 5,
+  "class": "Escritora",
+  "specie": "Humano/Gran",
+  "avatar": "/assets/heroes/polaris.png",
+  "stats": {
+    "VIT": 10,
+    "DEX": 2,
+    "CRM": 4,
+    "FRC": 8,
+    "INT": 8,
+    "RES": 3,
+    "PRE": 1,
+    "ENR": 5
+  },
+  "history": "Estudante de jornalismo, escreve desde os 13 anos. Teve um blog de Fantasia.",
+  "aura": "Revelação",
+  "isCustom": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "patriarca_yagamor",
+  "name": "Patriarca Yagamor",
+  "location": "Capital dos Elfos",
+  "description": "",
+  "type": "npc",
+  "role": "Patriarca",
+  "isCustom": false
+}

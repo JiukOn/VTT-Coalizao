@@ -1,0 +1,21 @@
+{
+  "id": "escudo_redondo_de_madeira_escudo",
+  "name": "Escudo Redondo de Madeira (Escudo)",
+  "category": "Itens de Defesa",
+  "description": "Um escudo pequeno e de baixa durabilidade. Concede 1d4 - 3 de defesa. Possui a modificação Frágil, tornando-o mais suscetível a quebrar sob pressão. (10 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

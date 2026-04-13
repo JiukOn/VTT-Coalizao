@@ -1,0 +1,14 @@
+{
+  "id": "oráculo",
+  "name": "Oráculo",
+  "category": "USO ÚNICO",
+  "class": "Geral",
+  "description": "O usuário pode receber apoio do Mestre em certas escolhas. (Requer Pergaminho de Oráculo).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

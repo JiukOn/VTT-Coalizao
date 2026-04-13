@@ -1,0 +1,21 @@
+{
+  "id": "botas_de_treino_vestimenta_-_pé",
+  "name": "Botas de Treino (Vestimenta - Pé)",
+  "category": "Pé",
+  "description": "Botas leves e flexíveis para mobilidade em treino. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (2 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

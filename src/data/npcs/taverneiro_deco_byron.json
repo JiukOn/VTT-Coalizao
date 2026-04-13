@@ -1,0 +1,9 @@
+{
+  "id": "taverneiro_deco_byron",
+  "name": "Taverneiro, Deco Byron",
+  "location": "Taverna Byron",
+  "description": "",
+  "type": "npc",
+  "role": "Taverneiro",
+  "isCustom": false
+}

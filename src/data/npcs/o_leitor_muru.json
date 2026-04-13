@@ -1,0 +1,9 @@
+{
+  "id": "o_leitor_muru",
+  "name": "O leitor, Muru",
+  "location": "Taverna Normiumor",
+  "description": "",
+  "type": "npc",
+  "role": "O Leitor",
+  "isCustom": false
+}

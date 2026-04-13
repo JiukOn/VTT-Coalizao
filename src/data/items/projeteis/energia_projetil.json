@@ -1,0 +1,21 @@
+{
+  "id": "energia_projetil",
+  "name": "Energia (Projetil)",
+  "category": "Projéteis",
+  "description": "Um projétil de pura energia. Causa 1d4 + 5 de dano, seu uso diminui -1 ENR temporariamente do usuário.",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

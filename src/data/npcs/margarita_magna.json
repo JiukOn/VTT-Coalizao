@@ -1,0 +1,9 @@
+{
+  "id": "margarita_magna",
+  "name": "Margarita Magna",
+  "location": "Cidade Caída",
+  "description": "Antiga rainha de Magni(Atual cidade caída).",
+  "type": "npc",
+  "role": "Rainha (antiga)",
+  "isCustom": false
+}

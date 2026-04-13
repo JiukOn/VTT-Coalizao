@@ -1,0 +1,579 @@
+Nome ? XP da Kill ?
+Nivel ? 0/30 Atributo ?
+Sobre ? Altura ?
+? Status ?
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0
+DEX 1d4 0 0 0 0
+CRM 1d4 0 0 0 0
+FRC 1d4 0 0 0 0
+INT 1d4 0 0 0 0
+RES 1d4 0 0 0 0
+PRE 1d4 0 0 0 0
+ENR 1d4 0 0 0 0
+Habilidades
+Habilidades
+Nome Cavalo XP da Kill 1
+Nivel 1 0/30 Atributo N/A
+Sobre ? Altura 1.6
+? Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 Couro 2
+DEX 1d4 0 0 0 0 Carne de Cavalo 3
+CRM 1d4 0 0 0 0
+FRC 1d4 0 0 0 0
+INT 1 1 0 0 1 0,25
+RES 0 0 0 0 0 0
+PRE 0 0 0 0 0 0
+ENR 0 0 0 0 0 0
+Habilidades
+N/A
+Nome Porco XP da Kill 1
+Nivel 1 0/30 Atributo N/A
+Sobre ? Altura 1.1
+? Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 Carne de Porco 4
+DEX 1d4 0 0 0 0
+CRM 1d4 0 0 0 0
+FRC 1d4 0 0 0 0
+INT 2 2 0 0 2 0,5
+RES 0 0 0 0 0 0
+PRE 0 0 0 0 0 0
+ENR 0 0 0 0 0 0
+Habilidades
+N/A
+Nome Carneiro XP da Kill 1
+Nivel 1 0/30 Atributo N/A
+Sobre ? Altura 1.2
+? Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 Lã 2
+DEX 1d4 0 0 0 0 Carne de Carneiro 2
+CRM 1d4 0 0 0 0
+FRC 1d4 0 0 0 0
+INT 0 0 0 0 0 0
+RES 0 0 0 0 0 0
+PRE 0 0 0 0 0 0
+ENR 0 0 0 0 0 0
+Habilidades
+N/A
+Nome Lagarto XP da Kill 1
+Nivel 1 0/30 Atributo N/A
+Sobre ? Altura 0.6
+? Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 Carne de Lagarto 2
+DEX 1d4 0 0 0 0
+CRM 1d4 0 0 0 0
+FRC 1d4 0 0 0 0
+INT 0 0 0 0 0 0
+RES 0 0 0 0 0 0
+PRE 0 0 0 0 0 0
+ENR 0 0 0 0 0 0
+Habilidades
+N/A
+Nome Lobo XP da Kill 2
+Nivel 1 0/30 Atributo N/A
+Sobre É um grande canino, tem forte olfato. Altura 1
+Costuma andar em bandos de até 8 lobos, com um chefe. Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 0 Couro de Lobo 2
+DEX 1d4 + 1 0 0 0 0 0 Presas de Lobo 4
+CRM 1d4 + 1 0 0 0 0 0
+FRC 1d4 0 0 0 0 0
+INT 1 1 0 0 1 0,25
+RES 0 0 0 0 0 0
+PRE 1 1 0 0 1 0,25
+ENR 0 0 0 0 0 0
+Habilidades
+Olfato Sanguinário
+Mordida
+Nome Lobo Infernal XP da Kill 5
+Nivel 4 0/90 Atributo Fogo
+Sobre É um grande canino, tem forte audição. É capaz de lançar rajadas de fogo.Altura 1.4
+Costuma andar em bandos de até 4 lobos, com um chefe. Ou sozinho. Status Médio
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d8 +5 0 0 0 0 0 Couro de Lobo 2
+DEX 1d4 + 3 0 0 0 0 0 Presas de Lobo 2
+CRM 1d4 0 0 0 0 0 Canino Flamejante 2
+FRC 3d4 0 0 0 0 0 Garras Vulcânicas 3
+INT 1d4 0 0 0 0 0 Núcleo Médio 1
+RES 1 1 0 0 1 0,25
+PRE 1d4 + 1 0 0 0 0 0
+ENR 4 4 0 0 4 1 Livro H(Chamas) 1
+Habilidades
+Olfato Sanguinário
+Mordida
+Chamas
+Resistência Elemental (Fogo)
+Nome Lobo Glacial XP da Kill 5
+Nivel 4 0/90 Atributo Gelo
+Sobre É um grande canino, tem forte olfato. É capaz de congelar o ambiente. Altura 1.5
+Costuma andar em bandos de até 3 lobos, com um chefe. Ou sozinho. Status Médio
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 3d4 0 0 0 0 0 Couro de Lobo 2
+DEX 1d4 + 2 0 0 0 0 0 Presas de Lobo 2
+CRM 1d4 +2 0 0 0 0 0 Canino Congelante 2
+FRC 2d4 0 0 0 0 0 Sangue Azul 2
+INT 1d4 0 0 0 0 0 Núcleo Médio 1
+RES 1 1 0 0 1 0,25
+PRE 1d4 0 0 0 0 0
+ENR 3 3 0 0 3 0,75 Livro H(Congelar) 1
+Habilidades
+Olfato Sanguinário
+Mordida
+Congelar
+Resistência Elemental (Gelo)
+Nome Chefe Lobo XP da Kill 3
+Nivel 2 0/50 Atributo N/A
+Sobre É um grande canino, tem forte olfato e audição. Altura 1.2
+É o chefe de uma alcateia de lobos. Status Líder
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 + 2 0 0 0 0 Couro de Lobo 3
+DEX 1d4 + 2 0 0 0 0 Presas de Lobo 8
+CRM 1d4 + 3 5 0 0 5 1,25 Garras do Chefe Lobo2
+FRC 1d4 + 3 0 0 0 0 Núcleo Médio 1
+INT 2 2 0 0 2 0,5
+RES 1 1 0 0 1 0,25
+PRE 0 0 0 0 0 0
+ENR 2 2 0 0 2 0,5 Livro H(Mordida) 1
+Habilidades
+Olfato Sanguinário
+Acelerar
+Mordida
+Liderar
+Nome Undino XP da Kill 1
+Nivel 1 0/30 Atributo N/A
+Sobre Um primata alado e colorido. Altura 0.6
+Vive em florestas, com bandos liderados por um "Rei". Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+ VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 Carne de Undino 2
+DEX 1d4 0 0 0 0 Garras de Undino 1
+CRM 2 2 0 0 2 0,5 Asas de Undino 2
+FRC 1d4 0 0 0 0
+INT 1d4 0 0 0 0
+RES 1 1 0 0 1 0,25
+PRE 1d4 0 0 0 0
+ENR 0 0 0 0 0 0
+Habilidades
+Atordoar
+
+Nome Rei Undino XP da Kill 10
+Nivel 3 0/70 Atributo Madeira
+Sobre Um grande primata alado, colorido e esperto. Altura 1.3
+Lidera um bando de Undinos, o tamanho do bando lidera representa sua força.Status Líder
+ATRIBUTO ALEATÓRIOVALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d8 + 2 0 0 0 0 0 Olhos do Rei Undino2
+DEX 1d8 0 0 0 0 0 Bastão do Rei Undino1
+CRM 3 3 0 0 3 0,75 Carne de Undino 4
+FRC 1d8 - 1 0 0 0 0 0 Asas de Undino 2
+INT 1d4 0 0 0 0 0 Garras de Undino 2
+RES 1d4 0 0 0 0 0 Couro do Rei Undino1
+PRE 1d4 0 0 0 0 0 Ossos do Rei Undino1
+ENR 0 0 0 0 0 0 Livro H (Atordoar) 1
+Habilidades
+Atordoar
+Liderar
+Nome Imperador Undino XP da Kill 30
+Nivel 6 0/130 Atributo Madeira
+Sobre Um grande primata forte, alado, colorido e inteligente. Altura 1.8
+Lidera uma sociedade de Undinos e Rei Undinos. Status Líder
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 3d8 +4 0 0 0 0 Núcleo Grande 1
+DEX 1d8 +2 0 0 0 0 Asas de Undino 2
+CRM 4 4 0 0 4 1 Carne de Undino 6
+FRC 2d8 0 0 0 0 Ossos do Imperador Undino1
+INT 1d4 +2 0 0 0 0 Lança do Imperador Undino1
+RES 1d4 0 0 0 0 Escudo do Imperador Undino1
+PRE 1d8 0 0 0 0 Couro do Imperador Undino4
+ENR 6 6 0 0 6 1,5 Livro H (Beserk) 1
+Habilidades
+Atordoar
+Liderar
+Beserk
+Regeneração
+Mordida
+
+Nome Tuctuc XP da Kill 0
+Nivel 1 0/30 Atributo N/A
+Sobre Um pequeno passaro colorido. Altura 0.4
+Comum em quase todos os cantos do mundo. Status Baixo
+ATRIBUTO ALEATÓRIOVALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 Bico de Tuctuc 1
+DEX 1d4 0 0 0 0 Penas De Tuctuc 4
+CRM 2d4 0 0 0 0 Asas de Tuctuc 2
+FRC 0 0 0 0 0 0
+INT 1d4 0 0 0 0
+RES 0 0 0 0 0 0
+PRE 1d4 0 0 0 0
+ENR 0 0 0 0 0 0
+Habilidades
+Costume de Presa
+Nome Paizu XP da Kill 0
+Nivel 1 0/30 Atributo Madeira
+Sobre Animal pequeno e roliço. Tem grandes orelhas e bochechas vermelhas. Altura 0.2
+Vive em troncos caídos de arvores. Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 Carne de Paizu 1
+DEX 2 2 0 0 2 0,5
+CRM 1d8 0 0 0 0
+FRC 1d4-2 0 0 0 0
+INT 0 0 0 0 0 0
+RES 0 0 0 0 0 0
+PRE 0 0 0 0 0 0
+ENR 0 0 0 0 0 0
+Habilidades
+N/A
+Nome Areat XP da Kill 5
+Nivel 2 0/50 Atributo Areia
+Sobre Uma grande ave, Utilizada como montaria. Altura 0.9
+Apesar de ser inacapaz de voar sua velocidade impressiona. Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 4 0 0 4 1 Carapaca de Areat3
+DEX 1d4 - 1 2 0 0 2 0,5 Pinça de Areat 2
+CRM 2 2 0 0 2 0,5 Nucleo Peqeuno 1
+FRC 1d4 + 2 5 0 0 5 1,25
+INT 1d4 2 0 0 2 0,5
+RES 1d4 1 0 0 1 0,25
+PRE 1d4 3 0 0 3 0,75
+ENR 3 3 0 0 3 0,75
+Habilidades
+Prensa
+Nome Gran Belis XP da Kill 110
+Nivel 6 0/150 Atributo Areia
+Sobre Uma grande ave, Utilizada como montaria. Altura 3.5
+Apesar de ser inacapaz de voar sua velocidade impressiona. Status Especial
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 3d4 12 0 0 12 3 Carapaca de Gran Belis 5
+DEX 2d4 - 2 5 0 0 5 1,25 Chifre de Gran Belis 2
+CRM 2 2 0 0 2 0,5 Nucleo Grande 1
+FRC 2d4 + 3 10 0 0 10 2,5 Livro H (Prensa) 1
+INT 1d4 3 0 0 3 0,75 Livro H (Carapaca) 1
+RES 1d4 + 1 3 0 0 3 0,75
+PRE 1d4 + 2 5 0 0 5 1,25
+ENR 1d4 + 3 7 0 0 7 1,75
+Habilidades
+Prensa
+Mordida
+Carapaca
+Chifrada
+
+Nome Hopópis XP da Kill 97
+Nivel 8 0/190 Atributo Fogo
+Sobre Um ser grande e poderoso, com muita força e agressividade Altura 2.8
+Apesar de ser inacapaz de voar sua velocidade impressiona. Status Alto
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 3d4 12 0 0 12 3 Couro de Hopopis 3
+DEX 2d4 - 2 5 0 0 5 1,25 Nucleo Grande 1
+CRM 2 2 0 0 2 0,5 Coracao de Carvao 1
+FRC 2d4 + 3 10 0 0 10 2,5
+INT 1d4 3 0 0 3 0,75
+RES 1d4 + 1 3 0 0 3 0,75
+PRE 1d4 + 2 5 0 0 5 1,25
+ENR 1d4 + 3 7 0 0 7 1,75 Livro H (Onda de Calor) 1
+Habilidades
+Resistencia Elemental (Fogo)
+Mordida
+Chamas
+Onda de Calor
+
+Nome Fafagi XP da Kill 2
+Nivel 2 0/50 Atributo N/A
+Sobre Animal de pescoço alongado. Altura 1.2
+É capaz de levar alimentos em seu pescoço. Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 Couro de Fafagi 2
+DEX 1d4 0 0 0 0 Casco de Fafagi 4
+CRM 1d4 + 2 0 0 0 0 Núcleo Pequeno 1
+FRC 1d4 0 0 0 0
+INT 2 2 0 0 2 0,5
+RES 0 0 0 0 0 0
+PRE 0 0 0 0 0 0
+ENR 2 2 0 0 2 0,5
+Habilidades
+Costume de Presa
+Nome Fabarr XP da Kill 7
+Nivel 5 0/110 Atributo N/A
+Sobre Animal de pescoço alongado e asas. Tem escamas rígidas. Altura 4.1
+Tem seis patas. É capaz de utilizar energia em seu corpo. Status Alto
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 3d4 - 1 0 0 0 0 Couro de Fabarr 3
+DEX 1d8 0 0 0 0 Asas de Fabarr 2
+CRM 1d4 + 2 0 0 0 0 Chifres de Fabarr 2
+FRC 1d8 0 0 0 0 Núcleo Grande 1
+INT 1d4 0 0 0 0
+RES 1d8 0 0 0 0 0
+PRE 1d4 0 0 0 0 0
+ENR 1d4 + 2 0 0 0 0 L H (Reforço Mágico) 1
+Habilidades
+Costume de Presa
+Reforço Mágico
+Chifrada
+Nome Faiguin XP da Kill 2
+Nivel 4 0/90 Atributo Água
+Sobre Altura 0.9
+Status Alto
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 + 1 0 0 0 0 Pena Mágica 2
+DEX 1d4 0 0 0 0 Asas de Faiguin 2
+CRM 1d8 + 2 0 0 0 0 Núcleo Pequeno 1
+FRC 1 0 0 0 0 Cristal Fada 1
+INT 1d4 0 0 0 0
+RES 1d4 0 0 0 0
+PRE 1d4 0 0 0 0
+ENR 2d8 0 0 0 0 L H (Voar)
+Habilidades
+Escudo de Água
+Voar
+Nome Moscado XP da Kill 1
+Nivel 1 0/30 Atributo N/A
+Sobre Pequeno inseto capaz de receber mana. Altura 0.01
+Se explode quando sente medo. Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 - 1 0 0 0 0 Olho de Moscado 2
+DEX 1d4 0 0 0 0
+CRM 1d4 - 2 0 0 0 0
+FRC 1d4 - 2 0 0 0 0
+INT 0 0 0 0 0 0
+RES 0 0 0 0 0 0
+PRE 1d4 -1 0 0 0 0
+ENR 1d4 0 0 0 0
+Habilidades
+Explodir
+Nome Rimu XP da Kill 2
+Nivel 1 0/30 Atributo Pedra
+Sobre Éspecie de anfíbio, vive em lagos mágicos. Altura 0.1
+Este animal possui uma "verruga" altamente venenosa e rígida. Status Média
+ATRIBUTO ALEATÓRIOVALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 Verruga Pedrosa 1
+DEX 1d4 0 0 0 0 Pernas de Rimu 4
+CRM 0 0 0 0 0 0 Olhos de Rimu 2
+FRC 1d4 0 0 0 0 Núcleo Pequeno 1
+INT 1d4 0 0 0 0
+RES 0 0 0 0 0 0
+PRE 2d4 0 0 0 0
+ENR 1d4 0 0 0 0
+Habilidades
+Envenenamento (Pedroso)
+Nome Kappa XP da Kill 2
+Nivel 1 0/30 Atributo Água
+Sobre Semelhante a uma tartaruga, costuma ser altamente agressivo e territorialista.Altura 0.3
+Sua mordida é capaz de arrancar membros instantaneamente. Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 Carapaça Leve 1
+DEX 1d4 0 0 0 0 Carne de Kappa 1
+CRM 1d4 0 0 0 0
+FRC 1d4 + 1 0 0 0 0
+INT 0 0 0 0 0 0
+RES 0 0 0 0 0 0
+PRE 2 2 0 0 2 0,5
+ENR 0 0 0 0 0 0
+Habilidades
+Mordida
+Nome Equiliz XP da Kill 4
+Nivel 1 0/30 Atributo N/A
+Sobre É uma variação de cavalo, usado como montaria. Altura 1.7
+É rapido, forte e sabe nadar. Sua pele é mais rigida que a de uma cavalo comum.Status Média
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 + 2 0 0 0 0 Couro De Equiliz 3
+DEX 1d8 0 0 0 0 Crina de Equiliz 1
+CRM 1d4 0 0 0 0 Dente de Equiliz 10
+FRC 1d4 0 0 0 0 Carne de Equiliz 4
+INT 1 1 0 0 1 0,25
+RES 0 0 0 0 0 0
+PRE 0 0 0 0 0 0
+ENR 0 0 0 0 0 0 Livro H (Acelerar)
+Habilidades
+Acelerar
+Nome Vebu XP da Kill 2
+Nivel 1 0/30 Atributo N/A
+Sobre Uma grande ave, Utilizada como montaria. Altura 1.4
+Apesar de ser inacapaz de voar sua velocidade impressiona. Status Baixo
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 1d4 0 0 0 0 Penas de Vebu 5
+DEX 1d8 0 0 0 0 Bico de Vebu 1
+CRM 1d4 0 0 0 0 Garras de Vebu 5
+FRC 1d4 0 0 0 0 Ossos de Vebu 2
+INT 0 0 0 0 0 0
+RES 0 0 0 0 0
+PRE 0 0 0 0 0 0
+ENR 0 0 0 0 0 0
+Habilidades
+Força de Bico
+Nome Móriu XP da Kill 5
+Nivel 1 0/30 Atributo Fogo
+Sobre Ave Grande, Costuma Voar Alto, Muito Agressiva. Altura 1.9
+É um parente mais "Nobre" do Frango Manuk. Descendente dos Dragões.Status Médio
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 2d4 - 1 0 0 0 0 0 Bico de Móriu 1
+DEX 1d4 0 0 0 0 0 Escamas de Móriu 2
+CRM 0 0 0 0 0 0 Carne de Móriu 3
+FRC 1d4 + 1 0 0 0 0 0
+INT 1d4 - 1 0 0 0 0 0
+RES 1d4 0 0 0 0 0
+PRE 1d4 0 0 0 0 0
+ENR 1d4 + 1 0 0 0 0 0
+Habilidades
+Chamas
+Nome Móriu Nobre XP da Kill 22
+Nivel 4 0/90 Atributo Fogo
+Sobre Lider de um grupo de Mórius. Nasceu com Alta Linhagem Dracônica. Altura 3.1
+Capaz de Destruir Casas com Sua Força e Magia. Status Líder
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop Quantia
+VIT 2d4 + 3 10 0 9 1 0,25 Carne de Móriu 4
+DEX 1d4 + 2 4 0 0 4 1 Escamas de Móriu 5
+CRM 1d4 4 0 0 4 1 Dentes do Rei Móriu5
+FRC 2d4 - 1 7 0 0 7 1,75 Garras do Rei Móriu 3
+INT 2d4 - 1 6 0 0 6 1,5 Ossos Dracônicos 1
+RES 1d4 3 0 0 3 0,75 Glândula Dracônica 1
+PRE 2d4 - 1 3 0 0 3 0,75 Núcleo Grande 1
+ENR 2d4 + 1 16 0 0 16 4 Livro H (Chamas) 1
+Habilidades
+Chamas Dracônicas
+Acelerar
+Liderar
+Nome Esqueleto Comum XP da Kill
+Nivel 1 0/30 Atributo N/A
+Sobre Ser morto-vivo, existe somente como invocação e só "Morre" após destruir o invocadorAltura
+Possui valores imutaveis de atributos. Status
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop
+VIT 1d4 3 0 0 3 0,75 Ossos
+DEX 1d4 4 0 0 4 1
+CRM 1d4 2 0 0 2 0,5
+FRC 1d4 2 0 0 2 0,5
+INT 1d4 3 0 0 3 0,75
+RES 1d4 1 0 0 1 0,25
+PRE 1d4 3 0 0 3 0,75
+ENR 1d4 4 0 0 4 1
+Habilidades
+Vinculo de Invocação
+2
+1.8
+Invocação
+Quantia
+3
+Nome Esqueleto de Elite XP da Kill
+Nivel 3 0/70 Atributo N/A
+Sobre Ser morto-vivo, existe somente como invocação e só "Morre" após destruir o invocadorAltura
+Possui valores imutaveis de atributos. Status
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop
+VIT 1d8 8 0 0 8 2 Ossos
+DEX 1d8 5 0 0 5 1,25
+CRM 1d4 1 0 0 1 0,25
+FRC 1d8 5 0 0 5 1,25
+INT 1d8 2 0 0 2 0,5
+RES 1d8 5 0 0 5 1,25
+PRE 1d8 6 0 0 6 1,5
+ENR 1d8 4 0 0 4 1
+Habilidades
+Vinculo de Invocação
+5
+2
+Invocação
+Quantia
+5
+Nome Esqueleto de Elite XP da Kill
+Nivel 6 0/130Atributo N/A
+Sobre Ser morto-vivo, existe somente como invocação e só "Morre" após destruir o invocadorAltura
+Possui valores imutaveis de atributos. Status
+ATRIBUTO ALEATÓRI
+O
+VALOR 
+BASE VALOR+VALOR- VALOR FINAL Drop
+VIT 4d4 14 0 0 14 3,5 Ossos
+DEX 2d8 12 0 0 12 3
+CRM 1d4 2 0 0 2 0,5
+FRC 4d4 16 0 0 16 4
+INT 2d8 7 0 0 7 1,75
+RES 2d8 2 0 0 2 0,5
+PRE 2d8 4 0 0 4 1
+ENR 2d8 9 0 0 9 2,25
+Habilidades
+Vinculo de Invocação
+12
+4
+Invocação
+Quantia
+10

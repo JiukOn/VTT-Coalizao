@@ -1,0 +1,14 @@
+{
+  "id": "fotossíntese",
+  "name": "Fotossíntese",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Enquanto exposto ao sol, o usuário adquire +2 ENR e +3 FRC, e não sente fome ou sono. (Requer Vegetalização ou Linhagem Vegetal).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

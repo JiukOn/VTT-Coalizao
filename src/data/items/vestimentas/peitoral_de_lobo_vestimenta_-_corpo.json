@@ -1,0 +1,21 @@
+{
+  "id": "peitoral_de_lobo_vestimenta_-_corpo",
+  "name": "Peitoral de Lobo (Vestimenta - Corpo)",
+  "category": "Corpo",
+  "description": "Peitoral feito de couro de lobo, oferecendo proteção leve e agilidade. Fornece +1 DEX. (6 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

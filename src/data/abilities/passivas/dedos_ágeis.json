@@ -1,0 +1,14 @@
+{
+  "id": "dedos_ágeis",
+  "name": "Dedos Ágeis",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Aumenta a velocidade de montagem de itens, concedendo +2 no dado em testes de montagem de itens.",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

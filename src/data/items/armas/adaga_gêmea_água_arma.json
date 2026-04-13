@@ -1,0 +1,21 @@
+{
+  "id": "adaga_gêmea_água_arma",
+  "name": "Adaga Gêmea (Água) (Arma)",
+  "category": "Armas de Proximidade",
+  "description": "Item pequeno e leve de alta durabilidade, que conferem +4 FRC e +3 PRE. Causam 1d4 + 2 de dano. Possui a modificação Aquático, fazendo seus ataques adquirirem o elemento Água e poderem causar Afogamento. (25 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

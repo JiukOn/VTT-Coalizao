@@ -1,0 +1,14 @@
+{
+  "id": "acelerar",
+  "name": "Acelerar",
+  "category": "ATIVAS",
+  "class": "Geral",
+  "description": "Aumenta a DEX em +2 por 3 turnos. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16). (Requer DEX 4).",
+  "classLink": null,
+  "cost": null,
+  "test": "1d20 > 16 (reativação)",
+  "duration": "3 turnos",
+  "cooldown": "Teste",
+  "requirements": "DEX 4",
+  "isCustom": false
+}

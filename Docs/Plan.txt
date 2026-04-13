@@ -1,0 +1,1316 @@
+================================================================================
+                  PLANO DE DESENVOLVIMENTO — VTP COALIZÃO
+              Virtual Table Program para o Sistema de RPG Coalizão
+================================================================================
+
+Versão: 4.5
+Data: 09/04/2026 (Atualizado: 12/04/2026)
+Autor: Mestre da Campanha
+Status: Fases 1-9 CONCLUÍDAS ✅ | Sistema completo 🎉
+
+  PROGRESSO ATUAL:
+  ✅ Fase 1 — Fundação (Design System, Layout, Dark/Light Mode, Navegação)
+  ✅ Fase 2 — Bancos de Dados (Heróis, Criaturas, Habilidades, Itens, NPCs, Sessões)
+  ✅ Fase 3 — Entidades e Combate (Cards, Listas, Sidebar, InitiativeTracker, CombatLog)
+  ✅ Fase 4 — Mapa Tático (Upload, Grid Configurável, Snap, Tokens, Fog, Desenho)
+  ✅ Fase 5 — Combate Assistido (CombatResolver, efeitos contagem, integração completa)
+  ✅ Fase 6 — Polimento e Distribuição (PWA, Export/Import, CharacterForm v4, Mapas multi-aba)
+  ✅ Fase 7A — Servidor Local (Node.js + Express + WebSocket, Player View, LAN/VPN)
+  ✅ Fase 7B — Conectividade Online (Relay stateless, WSS, multi-room, keepalive)
+  ✅ Fase 8  — Sistemas de Suporte (EffectManager panel, Investigação/Furtividade, Descanso, Visibilidade por token)
+  ✅ Fase 9  — Progressão (Equipamento slots, Sistema de Domínio, Evolução/TransEvolução)
+
+
+================================================================================
+  ÍNDICE
+================================================================================
+
+  1.  Visão Geral do Projeto
+  2.  Arquitetura do Sistema (Host/Client — REVISADO v4.0)
+  3.  Estratégia de Distribuição
+  4.  Design System — Identidade Visual
+  5.  Estrutura de Módulos e Funcionalidades
+      5.1  Dashboard Principal (Mesa do Mestre)
+      5.2  Sistema de Rolagem de Dados (Dice Roller)
+      5.3  Gerenciador de Personagens — Fichas Completas (REVISADO v4.0)
+      5.4  Gerenciador de Entidades (NPCs, Criaturas, Aliados)
+      5.5  Banco de Dados de Habilidades
+      5.6  Banco de Dados de Itens e Armas
+      5.7  Editor de Mapas e Grid (REVISADO v4.0 — Abas, Linhas, Visibilidade)
+      5.8  Sistema de Tokens e Tabuleiro Tático
+      5.9  Tracker de Iniciativa e Combate
+      5.10 Sistema de Efeitos e Condições
+      5.11 Gerenciador de Campanha
+      5.12 Sistema de Investigação e Furtividade
+      5.13 Sistema de Descanso e Recuperação
+      5.14 Sistema de Estado e Comando (Domínio)
+      5.15 Sistema de Evolução e TransEvolução
+      5.16 Classes, Espécies e Tendências (REVISADO v4.0)
+      5.17 Modo Jogador — Player View (NOVO v4.0)
+      5.18 Servidor e Conectividade (NOVO v4.0)
+  6.  Banco de Dados Pré-Populado
+  7.  Fluxo de Uso Principal (User Journey)
+  8.  Requisitos de Performance e Peso
+  9.  Roadmap de Desenvolvimento (Fases 1–7)
+  10. Riscos e Mitigações
+  11. Bugs Conhecidos e Pendências Técnicas (NOVO v4.0)
+
+
+================================================================================
+  1. VISÃO GERAL DO PROJETO
+================================================================================
+
+O VTP Coalizão é uma Mesa Virtual de RPG (Virtual Tabletop) projetada
+exclusivamente para o sistema homebrew "Coalizão". Seu objetivo é fornecer
+ao Mestre todas as ferramentas para conduzir sessões completas de RPG e,
+progressivamente, permitir que os jogadores participem remotamente com suas
+próprias visões da mesa.
+
+  MODO MESTRE (Host) — Controle total, execução local:
+  • Gerenciamento completo de fichas de heróis, NPCs e criaturas
+  • Rolagem de dados restrita ao sistema (apenas D20 e D4)
+  • Mapas interativos com grid, tokens, névoa, linhas e visibilidade
+  • Banco de dados integrado (habilidades, armas, itens, modificações)
+  • Tracker de combate com iniciativa, efeitos e condições
+  • Exportação/Importação total da campanha em JSON
+  • Servidor local que aceita conexões de jogadores (LAN/VPN)
+
+  MODO JOGADOR (Client) — Acesso limitado, conectado ao Host:
+  • Visão do mapa com névoa de guerra ativa (apenas campo visível)
+  • Consulta e edição da própria ficha de personagem
+  • Rolagem de dados vinculada ao próprio personagem
+  • Ver iniciativa atual e lista de turno
+  • Resolução de combate para o próprio personagem
+  • Consulta de habilidades e itens próprios
+  • Notas e diário de sessão (salvo como JSON no Host)
+  • Sem acesso a entidades, mapas globais ou dados de outros jogadores
+
+  PRINCÍPIOS DO PROJETO:
+  • OFFLINE-FIRST: funciona completamente sem internet (Host local)
+  • PROGRESSIVO: começa simples (local), evolui para online
+  • SEGURO: Host controla o que cada jogador pode ver e fazer
+  • LEVE: < 2MB build estático sem imagens do usuário
+
+O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
+
+
+================================================================================
+  2. ARQUITETURA DO SISTEMA (REVISADO v4.0)
+================================================================================
+
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │  EVOLUÇÃO DA ARQUITETURA                                           │
+  │                                                                    │
+  │  Fase 1-6: SPA puro (React + Vite), sem servidor, tudo local       │
+  │  Fase 7A:  SPA + servidor local (Express/Node), LAN/VPN            │
+  │  Fase 7B:  SPA + servidor remoto (WebSocket), conexão online       │
+  └─────────────────────────────────────────────────────────────────────┘
+
+  FASE 1-6 — STACK ATUAL:
+  ─────────────────────────────────────────────────────────────────────
+  FRAMEWORK:       Vite 8 + React 19
+  ESTILIZAÇÃO:     Vanilla CSS com Design System customizado
+  ARMAZENAMENTO:   IndexedDB (via Dexie.js 4) + localStorage
+  EXPORTAÇÃO:      JSON (campanhas, personagens, mapas)
+  IMAGENS:         Base64/Blob no IndexedDB
+  ÍCONES:          Lucide Icons
+  FONTES:          Inter (UI), Cinzel (títulos), JetBrains Mono (stats)
+  CANVAS:          HTML5 Canvas API para mapa e grid
+
+  FASE 7A — SERVIDOR LOCAL (LAN/VPN):
+  ─────────────────────────────────────────────────────────────────────
+  SERVIDOR:        Node.js + Express (backend leve)
+  COMUNICAÇÃO:     WebSocket (ws ou socket.io) para sincronização
+  AUTENTICAÇÃO:    Código de sessão gerado pelo Mestre (6 dígitos alfanum.)
+  ARMAZENAMENTO:   JSON files no disco do Host para saves de jogadores
+  REDE:            LAN local ou VPN (ex: Hamachi, ZeroTier, Tailscale)
+  HOSPEDAGEM:      GitHub Pages para página de login/lobby
+
+  COMO FUNCIONA (7A):
+  1. Mestre abre o VTP e inicia um servidor local (botão "Iniciar Servidor")
+  2. VTP exibe o IP local da máquina e um código de sessão (ex: "GH4K9X")
+  3. Jogadores acessam: https://[usuario].github.io/vtp-coalizao
+  4. Digitam o IP do Host + código da sessão para conectar
+  5. Após autenticar, recebem a visão de jogador com seu personagem
+  6. Sincronização em tempo real via WebSocket
+
+  FASE 7B — CONECTIVIDADE ONLINE:
+  ─────────────────────────────────────────────────────────────────────
+  SERVIDOR REMOTO: Node.js em VPS (Railway, Render, Fly.io — tier gratuito)
+  BANCO REMOTO:    PostgreSQL ou SQLite no servidor (apenas metadados de sessão)
+  DADOS PESADOS:   Permanecem no IndexedDB local do Mestre
+  SINCRONIZAÇÃO:   Deltas (apenas mudanças) via WebSocket para economizar banda
+  CONEXÃO:         HTTPS + WSS (WebSocket Secure)
+  LOGIN:           Username + código de campanha (sem senha = simplicidade)
+
+  DOIS PROGRAMAS (MODOS):
+  ─────────────────────────────────────────────────────────────────────
+  MODO MESTRE:
+  • Acesso a todos os módulos e telas
+  • Pode criar, editar e deletar qualquer entidade
+  • Controla névoa de guerra, visibilidade e estado do mapa
+  • Gerencia o servidor e as conexões dos jogadores
+  • Vê tudo: fichas de todos, posições, efeitos, HP
+
+  MODO JOGADOR:
+  • Acesso apenas à própria ficha e ao mapa (com névoa)
+  • Pode editar anotações, inventário e status da própria ficha
+  • Não pode ver dados de outros jogadores
+  • Não pode mover tokens que não sejam os seus
+  • Pode rolar dados e consultar suas habilidades/itens
+
+  ORDEM DE IMPLEMENTAÇÃO:
+  1. Completar o Modo Mestre (Fases 1-6) como SPA standalone
+  2. Criar o Modo Jogador como sub-rota/visão do mesmo app
+  3. Adicionar servidor local (Fase 7A) para conectar os dois
+  4. Evoluir para conectividade online (Fase 7B)
+
+
+================================================================================
+  3. ESTRATÉGIA DE DISTRIBUIÇÃO
+================================================================================
+
+  FASE 1-6 (ATUAL):
+  • Build estático via "npm run build" → pasta /dist
+  • GitHub Pages: https://[usuario].github.io/vtp-coalizao
+  • Funciona offline após primeiro carregamento (Service Worker / PWA)
+  • Tamanho estimado: < 2MB (sem imagens do usuário)
+
+  FASE 7A (SERVIDOR LOCAL):
+  • Mestre instala o pacote standalone (Electron ou Node.js + frontend)
+  • Ou: Mestre roda "npm run server" localmente e acessa localhost
+  • Jogadores acessam via GitHub Pages (landing page) + IP local do Mestre
+  • Alternativa: Hamachi/ZeroTier para VPN sem configurações de roteador
+
+  FASE 7B (ONLINE):
+  • Frontend continua no GitHub Pages
+  • Backend deployado em serviço gratuito (Railway, Render ou Fly.io)
+  • Conexão via HTTPS/WSS sem necessidade de VPN
+  • Limite: manter o tier gratuito (512MB RAM, ~500 conexões simultâneas)
+
+  CONFIGURAÇÃO DO VITE:
+  • vite.config.ts → base: '/vtp-coalizao/'
+  • Manifest.json para PWA
+  • Service Worker para cache offline
+
+
+================================================================================
+  4. DESIGN SYSTEM — IDENTIDADE VISUAL
+================================================================================
+
+  PALETA DE CORES (Modo Escuro — Padrão):
+  ─────────────────────────────────────────────────────────────────────
+  • Background Principal:    #0D0D12 (quase preto, tom azulado)
+  • Background Secundário:   #16161F (painéis, cards)
+  • Background Terciário:    #1E1E2E (inputs, dropdowns)
+  • Borda Sutil:             #2A2A3C
+  • Texto Primário:          #E8E8F0
+  • Texto Secundário:        #8888A0
+  • Destaque Primário:       #9B59E8 (roxo vibrante)
+  • Destaque Hover:          #B07AFF (roxo claro)
+  • Destaque Ativo:          #7B3FCC (roxo profundo)
+  • Destaque Glow:           rgba(155, 89, 232, 0.3)
+  • Sucesso / Crítico:       #4ADE80 (verde)
+  • Perigo / Desastre:       #F87171 (vermelho)
+  • Aviso / Neutro:          #FBBF24 (amarelo)
+  • Info:                    #60A5FA (azul)
+
+  PALETA DE CORES (Modo Claro):
+  ─────────────────────────────────────────────────────────────────────
+  • Background Principal:    #F5F3FF (lavanda muito claro)
+  • Background Secundário:   #FFFFFF
+  • Destaque Primário:       #7C3AED (roxo)
+
+  TIPOGRAFIA:
+  ─────────────────────────────────────────────────────────────────────
+  • Títulos:   "Cinzel", serif — 600/700 weight
+  • Corpo UI:  "Inter", sans-serif — 400/500/600
+  • Números:   "JetBrains Mono", monospace
+
+  COMPONENTES VISUAIS:
+  ─────────────────────────────────────────────────────────────────────
+  • Cards com bordas arredondadas (8px), sombra sutil com glow roxo
+  • Botões com gradiente roxo e efeito de hover
+  • Inputs com borda inferior destacada ao focar (roxo)
+  • Painéis laterais recolhíveis (300ms ease)
+  • Modais com backdrop blur (glassmorphism)
+  • Scrollbar customizada (fina, roxo no thumb)
+
+
+================================================================================
+  5. ESTRUTURA DE MÓDULOS E FUNCIONALIDADES
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+  5.1  DASHBOARD PRINCIPAL (MESA DO MESTRE)
+────────────────────────────────────────────────────────────────────────────────
+
+  Layout da tela principal:
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  HEADER: Logo VTP | Abas de Navegação | 🌙/☀️ Tema | Config/Conexão │
+  ├──────────┬───────────────────────────────────────┬───────────────────┤
+  │          │                                       │                   │
+  │  SIDEBAR │         ÁREA CENTRAL                  │  PAINEL DIREITO   │
+  │  (Esq.)  │   (Mapa / Banco / Ficha / etc.)       │  (Detalhes +      │
+  │  Lista   │                                       │   Efeitos +       │
+  │  Entid.  │                                       │   Atributos)      │
+  │          │                                       │                   │
+  ├──────────┴───────────────────────────────────────┴───────────────────┤
+  │  BARRA INFERIOR: Dados | Log de Ações | Iniciativa | Combate         │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  • Todos os painéis são recolhíveis (toggle)
+  • 6 abas principais: Mesa | Personagens | Bestiário | Habilidades | Itens | Campanha
+  • Dashboard mostra: stat cards, ações rápidas, referência do sistema
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.2  SISTEMA DE ROLAGEM DE DADOS (DICE ROLLER)
+────────────────────────────────────────────────────────────────────────────────
+
+  REGRA FUNDAMENTAL: Sistema Coalizão usa APENAS D20 e D4.
+
+  CLASSIFICAÇÃO AUTOMÁTICA:
+  Para D20: 20=Crítico | 13-19=Bom | 10-12=Normal | 2-9=Ruim | 1=Desastre
+  Para D4:  4=Melhor | 3=Bom | 2=Ruim | 1=Pior
+
+  FUNCIONALIDADES:
+  • Modificador de bônus (+X)
+  • Vantagem (rola 2, pega maior) e Desvantagem (rola 2, pega menor)
+  • Quantidade de dados (1 a 10)
+  • Histórico scrollável com timestamp e classificação
+  • Som opcional (dado caindo na mesa)
+  • Vinculação a personagem/atributo para bônus automático
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.3  GERENCIADOR DE PERSONAGENS — FICHAS COMPLETAS (REVISADO v4.0)
+────────────────────────────────────────────────────────────────────────────────
+
+  INFORMAÇÕES BÁSICAS:
+  • Nome e Sobrenome (obrigatório: pelo menos um nome)
+  • Idade (em anos)
+  • Aparência (campo de texto + upload de imagem/token)
+  • História Resumida (limite de 2 linhas conforme regra)
+  • Frase de Efeito (campo de texto livre)
+
+  ── ESPÉCIES (REVISADO) ────────────────────────────────────────────────────
+  Cada personagem tem ESPÉCIE PRIMÁRIA (obrigatória) e ESPÉCIE SECUNDÁRIA
+  (opcional, exceto se a primária for Anjo).
+
+  ESPÉCIES PRIMÁRIAS disponíveis:
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │ Humano     │ Padrão, sem modificadores especiais                     │
+  │ Elfo       │ Gracioso, bônus DEX/INT                                 │
+  │ Anão       │ Resistente, bônus VIT/FRC                               │
+  │ Gigante    │ Forte, bônus FRC/VIT, penalidade DEX                    │
+  │ Kobold     │ Ágil e furtivo, bônus DEX/CRM                           │
+  │ Goblin     │ Esperto e caótico, bônus INT/DEX                        │
+  │ Yomunkai   │ Disciplinado, bônus RES/PRE                             │
+  │ Demônio    │ Poderoso, bônus ENR/FRC, penalidade CRM                 │
+  │ Anjo       │ Divino, bônus CRM/ENR — PROIBE espécie secundária       │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  ESPÉCIES SECUNDÁRIAS disponíveis:
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │ Nenhuma    │ Personagem de espécie pura                              │
+  │ [Qualquer  │ Qualquer uma das espécies primárias (exceto Anjo)       │
+  │  primária] │                                                          │
+  │ Planta     │ Regeneração passiva, fraqueza ao fogo                   │
+  │ Gran       │ Grande porte físico, bônus VIT                          │
+  │ Monstro    │ Traços bestiais, habilidade natural de ataque           │
+  │ Bom        │ Alinhamento puro, bônus CRM e resistência mágica        │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  Regras de combinação:
+  • Anjo como primária → campo secundário desabilitado automaticamente
+  • Duas espécies iguais não são permitidas
+  • Efeitos das duas espécies se somam (bônus e penalidades)
+  • Interface: dois selects sequenciais, o segundo atualiza baseado no primeiro
+
+  ── ALINHAMENTOS (REVISADO) ────────────────────────────────────────────────
+  Alinhamentos são PERSONALIZADOS pelo Mestre e pelo jogador:
+  • Não há lista predefinida — qualquer texto é válido
+  • Campo de entrada de texto livre para adicionar alinhamentos
+  • Personagem pode ter múltiplos alinhamentos
+  • Interface: lista expandível com botão "Adicionar Alinhamento"
+    - Clicar abre um campo de texto para digitar o novo alinhamento
+    - Lista exibe todos os alinhamentos com botão de remoção
+    - Exemplos livres: "Leal ao Rei", "Vendetta contra os Elfos",
+      "Protetor de Crianças", "Caçador de Artefatos"
+
+  ── TENDÊNCIAS ──────────────────────────────────────────────────────────────
+  Tendências concedem DADO DE VANTAGEM em testes relacionados:
+  • Até 3 tendências por personagem
+  • Seleção de lista configurável (Mestre pode adicionar/remover)
+  • Exemplos: Botânica, Estratégia, Forja, Alquimia, Culinária, Música,
+    Religião, Artes Marciais, Caça, Furtividade, Diplomacia, Comércio,
+    Medicina, Navegação, Herbalismo, História, Engenharia
+
+  ── CLASSE E HABILIDADES INICIAIS (REVISADO) ──────────────────────────────
+  SELEÇÃO DE CLASSE:
+  • Interface de seleção com visualização de multiplicadores
+  • Para cada classe exibir:
+    - Multiplicadores de atributo (ex: FRC ×1.5, DEX ×1.2)
+    - Valores FINAIS previstos com base nos pontos distribuídos
+    - Bônus previstos (floor(valorFinal / 5))
+    - Habilidade Legado vinculada à classe
+  • Opção especial "Não Classificado":
+    - ENR não pode ser aumentado (fica em 0)
+    - Não é possível selecionar habilidades
+    - Multiplicadores: todos ×1.0
+
+  HABILIDADES INICIAIS:
+  • Cada personagem começa com 2 habilidades (vinculadas à classe)
+  • Habilidade 1: automática (habilidade Legado da classe)
+  • Habilidade 2: SELECIONÁVEL pelo jogador entre as opções da classe
+  • Interface: dropdown com as opções disponíveis para a classe escolhida
+  • Se "Não Classificado": nenhuma habilidade disponível
+
+  ── ATRIBUTOS ──────────────────────────────────────────────────────────────
+  8 atributos do sistema Coalizão:
+  ┌──────────────────┬──────────────────────────────────────────────────┐
+  │ VIT (Vitalidade) │ Pontos base × Multiplicador = Valor Final        │
+  │ DEX (Destreza)   │ Bônus = floor(Valor Final / 5)                   │
+  │ CRM (Carisma)    │                                                  │
+  │ FRC (Força)      │                                                  │
+  │ INT (Inteligência│                                                  │
+  │ RES (Resiliência)│                                                  │
+  │ PRE (Precisão)   │                                                  │
+  │ ENR (Energia)    │ Bloqueado se Não Classificado                    │
+  └──────────────────┴──────────────────────────────────────────────────┘
+
+  • Total de pontos iniciais: 25 (validação automática)
+  • Multiplicador definido pela classe
+  • Ao subir de nível, pontos extras conforme tabela
+  • Interface mostra: pontos gastos / pontos disponíveis em tempo real
+  • Preview dos valores finais e bônus visíveis enquanto distribui
+
+  ── NÍVEL E PROGRESSÃO ─────────────────────────────────────────────────────
+  • Nível 1-10
+  • XP atual / XP necessário (inicia em 0/20)
+  • Pontos extras por nível: Nv2:+3 | Nv3:+2 | Nv4:+3 | Nv5:+2 (Evolução)
+    Nv6:+3 | Nv7:+2 | Nv8:+3 | Nv9:+2 | Nv10:+3
+  • Evolução de Classe no Nível 5
+  • TransEvolução no Nível 10 (soma base > 43)
+
+  ── AURA ────────────────────────────────────────────────────────────────────
+  • Seleção de 1 entre as 10 auras do sistema
+  • Alcance: 6 + Nível metros | Duração: 2 turnos | Custo: 1d4 XP
+
+  ── EQUIPAMENTO E INVENTÁRIO (REVISADO) ───────────────────────────────────
+  SLOTS DE EQUIPAMENTO (seguindo ficha oficial):
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  Slot      │ Tipos aceitos                                          │
+  │  Cabeça    │ Capacetes, chapéus, tiara, elmo                        │
+  │  Pescoço   │ Colares, amuletos, faixas de pescoço                   │
+  │  Corpo     │ Armaduras, vestimentas, capas                          │
+  │  Mão Dta   │ Arma principal, escudo                                 │
+  │  Mão Esq   │ Arma secundária, escudo, tocha, item                   │
+  │  Cintura   │ Cintos, bolsas, faixas                                 │
+  │  Pernas    │ Calças, grevas, caneleiras                              │
+  │  Pés       │ Botas, sandálias, solas mágicas                        │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  INVENTÁRIO:
+  • Grade visual de itens (tipo mochila)
+  • Adicionar itens do banco de dados por pesquisa ou drag
+  • Campo de quantidade para consumíveis
+  • Moeda: campo para Ouris (O)
+  • Peso total calculado automaticamente (se usando Sistema de Pesos)
+
+  VINCULAÇÃO POSTERIOR:
+  • Habilidades podem ser vinculadas ao personagem a qualquer momento
+  • Equipamentos podem ser adicionados/removidos ao longo do jogo
+  • Botão "Vincular Habilidade" abre modal de busca no banco de habilidades
+  • Botão "Adicionar Item" abre modal de busca no banco de itens
+
+  ── EFEITOS ATIVOS ─────────────────────────────────────────────────────────
+  • Lista de efeitos psicológicos, físicos e condições ativas
+  • Ponto de Estilo (0 ou 1) e Ponto de Criatividade (0 ou 1)
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.4  GERENCIADOR DE ENTIDADES (NPCs, Criaturas, Aliados)
+────────────────────────────────────────────────────────────────────────────────
+
+  TIPOS: Herói | NPC | Criatura | Criatura Especial | Aliado
+
+  FICHA DE CRIATURA:
+  • Nome, imagem/token, tipo (terrestre/aquático/voador/semi-aquático)
+  • Dieta, tamanho (pequeno/médio/grande/colossal), elemento
+  • Atributos simplificados (VIT, DEX, FRC, PRE, ENR, RES, INT, CRM)
+  • Habilidades naturais, resistências, fraquezas elementais
+  • Comportamento (Agressivo/Pacífico/Territorial/Dócil)
+  • Domável? (para Contrato de Sangue)
+
+  FICHA DE NPC:
+  • Nome, localização, imagem/token, classe/profissão
+  • Atributos abreviados, inventário relevante
+  • Notas do Mestre (campo privado)
+  • Relação com heróis (Amigável/Neutro/Hostil)
+
+  FUNÇÕES:
+  • Criar, duplicar, importar/exportar JSON, filtrar e buscar
+  • Botão "Adicionar ao Mapa" direto da ficha
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.5  BANCO DE DADOS DE HABILIDADES
+────────────────────────────────────────────────────────────────────────────────
+
+  CATEGORIAS: Legado | Ativas | Passivas | Mito | Uso Único | Descendência
+
+  CAMPOS: Nome | Categoria | Classe vinculada | Descrição | Custo |
+          Teste necessário | Duração | Cooldown | Requisitos | Evolução
+
+  FUNCIONALIDADES:
+  • Pesquisa por nome, classe, categoria ou tag
+  • Botão "Vincular ao Personagem" direto da lista
+  • Campo para criar habilidades customizadas pelo Mestre
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.6  BANCO DE DADOS DE ITENS E ARMAS
+────────────────────────────────────────────────────────────────────────────────
+
+  CATEGORIAS: Armas Proximidade | Armas Distância | Escudos | Vestimentas
+              (Cabeça/Pescoço/Corpo/Mãos/Cintura/Pernas/Pés) | Projéteis |
+              Itens Mágicos | Ferramentas | Consumíveis | Venenos | Diversos
+
+  CAMPOS: Nome | Tipo/Subtipo | Raridade | Dano | Defesa | DP atual/máx
+          Modificações | Bônus | Alcance | Requisitos | Peso | Preço | Lore
+
+  RARIDADES: Comum | Sentimental | Especial | Vivo | Mito | Amaldiçoado
+
+  MODIFICAÇÕES DE ITENS (43 tipos):
+  • Defensivas: Blindado, Energizador, Fortificado, Ignífugo, Aterrado,
+    Térmico, Purificador, Sintético, Compacto, Cronal, Impermeável
+  • Elementais: Amadeirado, Apressado, Aquático, Arenoso, Atrasado,
+    Elétrico, Quente, Frio, Malicioso
+  • Essenciais: Barulhento, Imbuídor, Camuflado, Vigoroso, Vínculo
+  • Ofensivas: Afiado, Perfurador, Feroz, Perceptivo
+  • Penalidades: Frágil, Restringido, Desgaste, Irremovível
+  • Qualidade: Chamativo, Prático, Conforto, Leve, Pesado, Cura,
+    Mochileiro, Acelerado
+
+  FUNCIONALIDADES:
+  • Filtro por categoria, raridade, elemento
+  • Comparação lado a lado de 2 itens
+  • Botão "Adicionar ao inventário de [Personagem]"
+  • Criação de itens customizados pelo Mestre
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.7  EDITOR DE MAPAS E GRID (REVISADO v4.0)
+────────────────────────────────────────────────────────────────────────────────
+
+  ── SISTEMA DE ABAS DE MAPAS (NOVO) ────────────────────────────────────────
+  • Cada mapa vive em uma aba independente dentro da página de Mapas
+  • Abas mostradas horizontalmente no topo da página
+  • Botão "+" para criar novo mapa com nome
+  • Click direito na aba: renomear, duplicar, deletar
+  • Aba ativa destaca-se visualmente (borda roxa)
+  • Estado de cada mapa persiste independentemente (zoom, offset, fog, tokens)
+  • Limite recomendado: 10 mapas por campanha
+
+  ── IMPORTAÇÃO DE MAPAS ─────────────────────────────────────────────────────
+  • Upload de imagem (PNG, JPG, WebP), suporte até 4096×4096
+  • Background da aba de mapa
+  • Múltiplos mapas da pasta Reference/Mapas podem ser importados como base
+
+  ── SISTEMA DE GRID ─────────────────────────────────────────────────────────
+  • Grid quadrangular sobreposto (CSS linear-gradient, GPU-acelerado)
+  • Configurações:
+    - Tamanho do quadrado (16-150px, padrão 50px)
+    - Cor (color picker, padrão roxo #9B59E8)
+    - Opacidade (0-100%)
+    - Espessura da linha (1-5px)
+    - Offset X/Y (alinhamento com imagem)
+    - Snap-to-grid (tokens alinham ao centro dos quadrados)
+    - Coordenadas (A1, B2, etc.)
+
+  ── FERRAMENTAS DE DESENHO (REVISADO) ──────────────────────────────────────
+  FERRAMENTA: Linha Reta
+  • Click e arraste para desenhar linhas retas
+  • Shift+click para snap a ângulos (0°, 45°, 90°)
+  • Linhas funcionam como PAREDES para o sistema de visibilidade
+  • Configurável: cor, espessura (1-8px), estilo (sólido/tracejado)
+  • Clique em linha existente para selecioná-la e editar pontos
+
+  FERRAMENTA: Linha Curva
+  • Click define ponto inicial, segundo click define ponto de controle,
+    terceiro click finaliza a curva bezier
+  • Mesmas configurações de cor/espessura que a linha reta
+  • Também funciona como parede para o sistema de visibilidade
+
+  FERRAMENTA: Freehand (Caneta Livre)
+  • Arraste para desenhar traços livres (decorativo, não bloqueia visão)
+  • Cor e espessura configuráveis
+
+  FERRAMENTA: Borracha
+  • Remove desenhos próximos ao cursor
+
+  FERRAMENTA: Texto / Ícone
+  • Clique em qualquer ponto do mapa para adicionar um label de texto
+  • Texto personalizado com tamanho e cor configuráveis
+  • Seleção de ícone (de biblioteca de ícones do Lucide) com cor
+  • Exemplos: 🏰 Nome do Castelo | ⚔️ Local de batalha | ❓ Área misteriosa
+  • Labels são clicáveis para editar/remover
+
+  ── FOG OF WAR — SISTEMA DE VISIBILIDADE (REVISADO) ────────────────────────
+  NÉVOA BÁSICA:
+  • Mapa coberto por overlay escuro (rgba 0,0,0,0.85)
+  • Ferramenta de revelar: clique/arraste revela células do grid
+  • Ferramenta de ocultar: Alt+clique oculta células reveladas
+  • "Revelar Tudo" / "Ocultar Tudo" disponíveis
+
+  SISTEMA DE VISIBILIDADE POR PERSONAGEM (NOVO):
+  • Cada personagem/token na mesa pode ter um CÍRCULO DE VISIBILIDADE
+  • Raio do círculo configurável (em quadrados de grid)
+  • O círculo automaticamente revela células dentro do raio
+  • Configuração por token: botão direito → "Configurar Visibilidade"
+
+  VISÃO DIRECIONAL (CONE DE VISÃO) — NOVO:
+  • Cada token pode ter uma DIREÇÃO DE VISÃO (ângulo configurável)
+  • A visão na direção frontal tem alcance 1.2× o raio do círculo
+  • A abertura do cone é um funil: ~120° de amplitude total
+  • Visual: círculo base + cone brilhante na frente
+  • Jogador pode rotacionar a visão do seu token pelo mouse ou teclado
+
+  BLOQUEIO DE LINHA DE VISÃO (NOVO):
+  • Linhas retas/curvas desenhadas no mapa funcionam como PAREDES
+  • O sistema traça raios do token em direção às células
+  • Se um raio atingir uma parede (linha desenhada), as células atrás
+    desta parede ficam NA SOMBRA (ocultas mesmo dentro do raio)
+  • Algoritmo: ray casting para cada célula visível
+  • Resultado: tokens atrás de paredes não são visíveis pelo jogador
+  • Paredes podem ser marcadas como "transparentes" (não bloqueiam visão)
+
+  RESUMO DO SISTEMA DE VISIBILIDADE:
+  1. Token A tem raio 5 e ângulo 0° (frente = leste)
+  2. Sistema gera círculo de raio 5 ao redor do token
+  3. Cone 1.2× (raio 6) na direção leste, abertura 120°
+  4. Para cada célula no círculo/cone, traça raio do token
+  5. Se raio cruzar uma parede → célula e tudo atrás ficam na sombra
+  6. Células visíveis são reveladas automaticamente na névoa
+
+  ── FERRAMENTAS GERAIS DO MAPA ──────────────────────────────────────────────
+  • Zoom: scroll do mouse + botões ±, range 15%–500%
+  • Pan: arrastar (ferramenta mover) ou espaço+arrastar
+  • Régua de distância: SHIFT+arrastar ou ferramenta medir
+    → mostra quadrados e metros (1 quadrado = 1.5m)
+  • Recentralizar: botão reset
+  • Minimap: preview reduzido no canto inferior direito (Fase 6+)
+
+  ── GERENCIAMENTO DE MAPAS ───────────────────────────────────────────────────
+  • Lista de mapas por campanha
+  • Miniatura de preview
+  • Duplicar, renomear, deletar com confirmação
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.8  SISTEMA DE TOKENS E TABULEIRO TÁTICO
+────────────────────────────────────────────────────────────────────────────────
+
+  TIPOS DE TOKEN:
+  • Customizado: imagem recortada em círculo (upload)
+  • Ícone: círculo colorido com letra inicial ou ícone
+  • Cor de borda por facção: verde=aliado | vermelho=inimigo | azul=neutro | amarelo=NPC
+
+  PROPRIEDADES DO TOKEN:
+  • Nome (label abaixo/acima)
+  • Tamanho em grid: pequeno=0.75 | médio=1 | grande=1.5 | colossal=2
+  • Barra de HP (cor dinâmica: verde>60% | amarelo>30% | vermelho≤30%)
+  • Badge de efeitos ativos (contagem no canto)
+  • Anel de aura (ring colorido quando aura ativa)
+  • Círculo de visibilidade (quando Fog of War ativo)
+  • Cone de visão direcional
+
+  INTERAÇÃO:
+  • Drag & Drop com snap opcional ao grid
+  • Click direito → menu contextual (ajustar HP, efeitos, remover)
+  • Double-click → abre ficha rápida no painel direito
+  • Seleção múltipla (Ctrl+Click) para mover grupo
+  • Rotacionar direção de visão (roda do mouse com Alt ou handle visual)
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.9  TRACKER DE INICIATIVA E COMBATE
+────────────────────────────────────────────────────────────────────────────────
+
+  INICIATIVA:
+  • Botão "Rolar Iniciativa" → 1d20 + DEX para todas as entidades na mesa
+  • Ordem automática do maior para o menor
+  • Turno ativo destacado com borda roxa brilhante
+  • Botão "Próximo Turno" avança, voltando ao topo no fim do ciclo
+  • AO AVANÇAR TURNO: checklist de ações do novo turno é resetada
+  • AO INICIAR NOVO TURNO DE UMA ENTIDADE: efeitos dela decrescem 1
+
+  CHECKLIST POR TURNO (reseta a cada novo turno da entidade):
+  • [ ] Ação Principal (atacar, usar habilidade ativa)
+  • [ ] Ação Cognitiva (analisar, usar passiva com foco)
+  • [ ] Ação de Movimento (movimentação curta — 1d4)
+
+  CONTADORES:
+  • Contador de rodadas (Rodada 1, 2, 3...)
+  • Contadores individuais de efeitos (ex: Berserk — 3 turnos restantes)
+  • Alerta automático para efeitos que expiram no turno atual
+  • Alerta de re-teste de Furtividade a cada 2 rodadas
+
+  COMBATE ASSISTIDO (CombatResolver):
+  • Seleção de Atacante e Defensor da mesa
+  • Tipo de ataque: Corpo a Corpo | Distância | Mágico
+  • Corpo a corpo: 1d20+FRC vs 1d20+FRC
+  • Distância:     1d20+PRE vs 1d20+DEX
+  • Mágico: Teste formação 1d20+PRE ≥ 12, depois 1d20+ENR vs 1d20+RES
+  • Resultado passo a passo: rolls individuais + bônus + total + classificação
+  • Se acerto: dano 1d4, botão "Aplicar Dano" atualiza HP do defensor
+  • Botão "Testar Esquiva": 1d20+DEX do defensor vs total do atacante
+  • Todos os resultados registrados no CombatLog automaticamente
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.10 SISTEMA DE EFEITOS E CONDIÇÕES
+────────────────────────────────────────────────────────────────────────────────
+
+  PSICOLÓGICOS ATIVOS (teste de remoção: 1d20+RES > 1d20+5):
+  Medo | Confusão | Ansiedade | Depressivo | Afasia | Prosopagnosia |
+  Impostor | Protagonista | TDAH | Maníaco | Hiperfoco
+
+  PSICOLÓGICOS PASSIVOS: Dislexia | Servidão
+  DOENÇAS: Florada | Gripe do Aço | Sangue Negro | Arritmia
+  CONDIÇÕES: Envenenado | Desmaio | Lentidão | Travado | Sangramento |
+             Morto-Vivo | Fraqueza | Náusea | Afogamento |
+             Queimadura | Congelamento | Curto
+  EFEITO ÚNICO: Envelhecer | Rejuvelhecer
+  MALDIÇÕES: Fraqueza | Azar | Sangralisia | Nadador | Restrição
+
+  FUNCIONALIDADES:
+  • Aplicar efeito a qualquer entidade com 1 click
+  • Temporizador (contagem de turnos regressiva, decrementa no turno da entidade)
+  • Botão "Testar Remoção" rola 1d20+RES vs CD do efeito
+  • Efeitos aparecem como badges no token do mapa
+  • Efeitos expirados geram alerta no CombatLog
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.11 GERENCIADOR DE CAMPANHA
+────────────────────────────────────────────────────────────────────────────────
+
+  • Nome da campanha (editável)
+  • Notas do Mestre (editor de texto simples por sessão)
+  • Lista de sessões com número, título, data e notas
+  • Exportar campanha inteira como JSON
+  • Importar campanha de JSON
+  • Criar nova campanha (limpa tudo com confirmação)
+  • Múltiplas campanhas salvas simultaneamente
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.12 SISTEMA DE INVESTIGAÇÃO E FURTIVIDADE
+────────────────────────────────────────────────────────────────────────────────
+
+  INVESTIGAÇÃO:
+  • Tipo: Ambiente (PRE/INT) | Pessoa (CRM/INT) | Texto (INT) | Lógica (INT)
+  • Dificuldade: 8=Muito Fácil | 12=Comum | 16=Complexa | 18-20=Oculta
+  • Rolagem: 1d20 + bônus do atributo relevante
+  • Resultado e consequências classificadas automaticamente
+
+  FURTIVIDADE:
+  • Modo: Ambiental (DEX) | Social (CRM) | Invasão (DEX/PRE)
+  • Rolagem: 1d20 + atributo vs 1d20 + contraparte do inimigo
+  • Re-teste a cada 2 rodadas (alerta automático no tracker)
+  • Fatores de dificuldade configuráveis (iluminação, terreno, etc.)
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.13 SISTEMA DE DESCANSO E RECUPERAÇÃO
+────────────────────────────────────────────────────────────────────────────────
+
+  • Botão "Descansar" no painel do personagem
+  • Rolagem automática: 1d20 (teste de descanso)
+  • Efeitos por resultado:
+    - Desastre (1):    Perde 1 RES temporário, não recupera nada
+    - Ruim (2-9):      Diminui negativos não-naturais de VIT/ENR em até 1
+    - Normal (10-12):  Diminui 1 de todos os negativos não-naturais
+    - Bom (13-19):     Reduz metade dos negativos; teste extra para efeito psicológico
+    - Crítico (20):    Recupera tudo; desativa 1 efeito psicológico sem teste
+  • Log de descanso registrado no histórico da sessão
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.14 SISTEMA DE ESTADO E COMANDO (DOMÍNIO)
+────────────────────────────────────────────────────────────────────────────────
+
+  PONTOS DE COMANDO (PC): Bônus INT + Bônus CRM
+
+  AÇÕES DE COMANDO (6):
+  • Mobilização de Guerra (3 PC) | Rede de Informação (2 PC)
+  • Tributo Energético (2 PC) | Manutenção de Ordem (1 PC)
+  • Esforço de Produção (3 PC) | Edito de Celebração (1 PC)
+
+  MECÂNICA DE COALIZÃO:
+  • Formação de Conselho | Poder de Comando Parcial | Unificação | Dissidência
+
+  NOTA: Módulo acessível na página Campanha quando o líder possuir domínio ativo.
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.15 SISTEMA DE EVOLUÇÃO E TRANSEVOLUÇÃO
+────────────────────────────────────────────────────────────────────────────────
+
+  EVOLUÇÃO DE CLASSE (Nível 5):
+  • Modal de seleção de evolução com modificadores e habilidades
+  • Habilidades Legado podem ter versão evoluída ("Evo")
+
+  TRANSEVOLUÇÃO (Nível 10, soma base > 43):
+  • Ascendente: limite da classe, foco na habilidade legado
+  • Transcendente: classe modificada + habilidade exclusiva
+  • Descendente: contrato com Transcendente + habilidade assinatura
+  • Interface: wizard de seleção com preview de consequências
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.16 CLASSES, ESPÉCIES E TENDÊNCIAS (REVISADO v4.0)
+────────────────────────────────────────────────────────────────────────────────
+
+  CLASSES DISPONÍVEIS (com multiplicadores visíveis na seleção):
+  ─────────────────────────────────────────────────────────────────────
+  Cada classe é exibida com:
+  • Tabela de multiplicadores por atributo (VIT/DEX/CRM/FRC/INT/RES/PRE/ENR)
+  • Preview dos valores finais com a distribuição atual de pontos
+  • Preview dos bônus finais (floor(valorFinal/5))
+  • Habilidade Legado vinculada
+
+  Classes conhecidas:
+  Bardo | Pesquisador | Domador | Defensor | Ladino | Evocador | Espadachim |
+  Sombra | Atirador | Lutador | Mentalista | Cultista | Cozinheira | Florista |
+  Guardião | Monge | Encantador | Tecnólogo | Vendedor | Registrador | Feirante |
+  Alquimista | Altruísta | Incendiário | Samurai Espiritual | Açougueiro |
+  Escritor | Druida | Ferreiro | Anexador de Almas | Transmutador | Reptiliano |
+  Atirador de Fluxo | Sombra Leal | Sincronizador | Leitor | Curioso
+  + Não Classificado (sem ENR, sem habilidades)
+
+  ESPÉCIES: ver seção 5.3 (detalhes completos)
+
+  TENDÊNCIAS: lista configurável (Mestre pode adicionar/remover)
+  Padrão: Botânica | Estratégia | Forja | Alquimia | Culinária | Música |
+  Religião | Artes Marciais | Caça | Furtividade | Diplomacia | Comércio |
+  Medicina | Navegação | Herbalismo | História | Engenharia
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.17 MODO JOGADOR — PLAYER VIEW (NOVO v4.0)
+────────────────────────────────────────────────────────────────────────────────
+
+  O Modo Jogador é uma visão restrita do VTP acessada pelos jogadores
+  através de um código de campanha fornecido pelo Mestre.
+
+  ACESSO E AUTENTICAÇÃO:
+  • Jogador acessa: https://[usuario].github.io/vtp-coalizao
+  • Página inicial: campo "Nome do Personagem" + campo "Código da Campanha"
+  • Código gerado pelo Mestre (6 caracteres alfanuméricos, ex: "GH4K9X")
+  • Após autenticar, jogador entra no modo player com seu personagem carregado
+
+  VISÃO DO MAPA:
+  • Mapa exibido COM NÉVOA DE GUERRA ativa
+  • Jogador vê apenas o campo revelado dentro do raio de visão do SEU token
+  • Cone de visão direcional do próprio token
+  • Visibilidade bloqueada por paredes (linha de visão)
+  • Jogador NÃO pode revelar/ocultar névoa nem adicionar novos tokens
+  • Pode mover APENAS o próprio token
+
+  FICHA DE PERSONAGEM (Modo Jogador):
+  • Pode visualizar todos os dados da própria ficha
+  • Pode editar apenas:
+    - HP atual (recebe dano, usa poções)
+    - ENR atual (usa habilidades)
+    - XP atual (Mestre registra ganhos)
+    - Itens do inventário (adicionar/remover consumíveis)
+    - Notas de sessão (campo livre)
+  • Não pode alterar atributos, nível, classe ou habilidades base
+
+  SISTEMA DE DADOS (Modo Jogador):
+  • D20 e D4 disponíveis
+  • Rolagens vinculadas automaticamente aos atributos do personagem
+  • Histórico de rolagens visível
+  • Resultados visíveis para o Mestre em tempo real
+
+  INICIATIVA:
+  • Vê a lista de turno atual (posição de todos visíveis, mas não dados privados)
+  • Destaque visual no próprio turno
+  • Checklist de ações disponível para o próprio turno
+
+  COMBATE (Modo Jogador):
+  • Pode iniciar resolução de ataque para seu próprio personagem
+  • Seleciona apenas: a si mesmo como atacante + alvo (de uma lista visível)
+  • Resultado registrado no log compartilhado com o Mestre
+
+  HABILIDADES E ITENS:
+  • Consulta de suas próprias habilidades com descrição completa
+  • Consulta de seus próprios itens com stats
+  • Botão "Usar Habilidade" para registrar uso (desconta ENR, inicia cooldown)
+
+  NOTAS DE SESSÃO:
+  • Campo de texto livre para anotações pessoais do jogador
+  • Salvas como JSON no PC do Host ({nomeJogador}_notes_{sessao}.json)
+  • Histórico de notas de sessões anteriores acessível
+
+  RESTRIÇÕES DO MODO JOGADOR:
+  • Não acessa: banco de dados geral de criaturas/NPCs/habilidades
+  • Não acessa: fichas de outros jogadores
+  • Não modifica: estado do mapa global, névoa, posição de outros tokens
+  • Não acessa: painel de administração da campanha
+  • Não cria: entidades, mapas ou itens novos no banco
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5.18 SERVIDOR E CONECTIVIDADE (NOVO v4.0)
+────────────────────────────────────────────────────────────────────────────────
+
+  FASE 7A — SERVIDOR LOCAL (LAN/VPN):
+  ─────────────────────────────────────────────────────────────────────
+  TECNOLOGIA: Node.js + Express + ws (WebSocket nativo)
+
+  COMO O MESTRE INICIA O SERVIDOR:
+  1. Mestre clica em "Iniciar Servidor" no painel de configurações
+  2. VTP inicia servidor Node.js na porta 3000 (configurável)
+  3. App exibe: IP local da máquina + código de sessão gerado
+  4. Mestre compartilha o código com os jogadores (WhatsApp, Discord, etc.)
+  5. Jogadores conectam via página no GitHub Pages
+
+  FORMATO DO HANDSHAKE:
+  • Jogador envia: { type: "join", playerName: "Akali", campaignCode: "GH4K9X" }
+  • Host responde: { type: "welcome", playerId: "uuid", characterData: {...} }
+  • Ou: { type: "error", message: "Código inválido" }
+
+  EVENTOS EM TEMPO REAL (WebSocket):
+  • map_update: Mestre move token / revela névoa / atualiza mapa
+  • entity_update: HP, efeitos, iniciativa de uma entidade
+  • combat_event: Resultado de combate para exibir no log do jogador
+  • turn_change: Mudança de turno no tracker de iniciativa
+  • dice_roll: Rolagem de algum jogador para o Mestre ver
+  • notes_save: Notas do jogador chegando ao Host para salvar
+
+  ARMAZENAMENTO NO HOST:
+  • Saves de jogadores: /saves/{sessionCode}/{playerName}.json
+  • Notes de sessão: /saves/{sessionCode}/notes/{playerName}_{session}.json
+  • Backup automático a cada mudança de estado significativa
+
+  ALTERNATIVA DE REDE (sem configuração de roteador):
+  • Hamachi, ZeroTier ou Tailscale para VPN peer-to-peer
+  • Instruções de instalação incluídas no README do projeto
+  • Alternativa no futuro (Fase 7B): conexão direta pela internet
+
+  FASE 7B — CONECTIVIDADE ONLINE:
+  ─────────────────────────────────────────────────────────────────────
+  SERVIDOR REMOTO: Node.js + Express + Socket.io
+  HOSPEDAGEM: Railway / Render / Fly.io (tier gratuito)
+  BANCO DE SESSÕES: SQLite ou PostgreSQL (apenas metadados leves)
+
+  DADOS NA NUVEM (mínimo para economizar recursos):
+  • Registro de sessões ativas (código, host IP, timestamp)
+  • Metadados de jogadores conectados
+  • Estado de sincronização (diff/deltas)
+
+  DADOS PERMANENTES (sempre no Host local):
+  • Campanha completa (personagens, criaturas, itens, habilidades)
+  • Mapas e imagens
+  • Histórico de sessões
+
+  MODELO DE SINCRONIZAÇÃO:
+  • Host → Servidor: registra sessão com código, recebe relay ID
+  • Jogador → Servidor: conecta com código, server redireciona para Host
+  • Servidor funciona como RELAY (ponte), não armazena dados da campanha
+  • Conexão Host-Jogador é P2P via servidor (não centralizada)
+
+  SEGURANÇA:
+  • Código de sessão é único e expira após a sessão
+  • Dados da campanha nunca saem do PC do Host
+  • HTTPS/WSS obrigatório para todas as conexões
+
+  ORDEM DE IMPLEMENTAÇÃO FASE 7:
+  1. Criar servidor Express básico com WebSocket (ws)
+  2. Implementar modo Player View no frontend (sem servidor)
+  3. Conectar Player View ao servidor local via WebSocket
+  4. Testar na mesma rede (LAN) e via VPN (Hamachi/ZeroTier)
+  5. Criar relay server para conexões externas (Fase 7B)
+  6. Deploy do relay no tier gratuito de hosting
+  7. Testes de stress e otimização
+
+
+================================================================================
+  6. BANCO DE DADOS PRÉ-POPULADO
+================================================================================
+
+  O VTP é entregue com dados pré-preenchidos baseados nos documentos
+  do sistema Coalizão disponíveis na pasta Reference:
+
+  CRIATURAS PRÉ-CADASTRADAS (82 criaturas):
+  Areat, Beezle, Blobin, Caopus, Cornara, Crocohog, Dostle, Dunce,
+  Enbarr, Equiliz, Esfinge, Fabarr, Fafagi, Faiguin, Flonec, Manuk,
+  Ganlan, Gayutu, Golroise, Hienco, Hopopis, Horrotus, Inoue,
+  Izoceras, Jefus, Jocara, Jopopis, Kappa, Kiwan, Kondino, e mais...
+
+  CRIATURAS ESPECIAIS (15):
+  Abismo, Algo, Amaru, Andarilho, Anthea, Ceifeiro, Gran Cornara,
+  Guardião, Imperador Undino, Lamentador, Mandargus, Móriu Nobre,
+  Móriu Nobre Ceifeiro, Ouroboros, Tormenta
+
+  HERÓIS DA CAMPANHA (11):
+  Akali, Aurelio, Edgar, Ethan, Fifo, Kalina, Ling, Ouruen, Polaris,
+  Ravi, Violet
+
+  NPCs POR LOCALIZAÇÃO (70+):
+  Capital dos Elfos (10) | Capital Unsato (1) | Cidade Caída (6) |
+  Cidade dos Porcos (8) | Reino Evoluído (2) | Reserva Amortecida (7) |
+  La Montana (6) | Taverna Byron (2) | Taverna Normiumor (5) |
+  Torre Azul (2) | Torre Negra (1) | Torre Verde (1) |
+  Tumba da Descendência (3) | Vila Secreta (8) | Vilarejo Hamelin (8)
+
+  HABILIDADES (~131): Legado ~40 | Ativas ~40 | Passivas ~35 |
+                       Mito 9 | Uso Único 3 | Descendência 4
+
+  ITENS (~127): Armas Próx. 19 | Armas Dist. 8 | Escudos 5 |
+                Vestimentas ~60 | Projéteis 10 | Mágicos 5 |
+                Ferramentas 2 | Consumíveis 9 | Venenos 2 | Diversos 7
+
+  MODIFICAÇÕES: 43 tipos (Defensivas 13 | Elementais 9 | Essenciais 5 |
+                           Ofensivas 4 | Penalidades 4 | Qualidade 8)
+
+  PERSONALIDADES: 13 tipos
+  AURAS: 10 tipos
+  EFEITOS/CONDIÇÕES: ~30 tipos
+  LOCALIZAÇÕES: 25+ locais
+
+
+================================================================================
+  7. FLUXO DE USO PRINCIPAL (USER JOURNEY)
+================================================================================
+
+  MODO MESTRE — PREPARAÇÃO DA SESSÃO:
+  ─────────────────────────────────────────────────────────────────────
+  1. Mestre abre o VTP no navegador (localhost ou GitHub Pages)
+  2. Seleciona ou cria uma campanha
+  3. Cadastra/edita personagens dos jogadores (fichas completas)
+  4. Prepara encontros: seleciona criaturas/NPCs do banco
+  5. Cria ou importa mapas, configura o grid e as paredes (linhas)
+  6. Posiciona tokens, configura visibilidade por personagem
+  7. Se for sessão online (Fase 7): inicia o servidor, anota código e IP
+  8. Anota lembretes no gerenciador de campanha
+
+  MODO MESTRE — DURANTE A SESSÃO:
+  ─────────────────────────────────────────────────────────────────────
+  1. Narra e usa o mapa para mostrar cenários (revela névoa progressivamente)
+  2. Gerencia visibilidade dos tokens (círculos e cones por personagem)
+  3. Em combate: clica "Rolar Iniciativa" → ordem automática
+  4. Usa CombatResolver para resolver ataques com bônus automáticos
+  5. Aplica dano e efeitos; tracker decrementa efeitos a cada turno
+  6. Avança turnos, checklist de ações reseta a cada novo turno
+  7. Registra dano, cura e status em tempo real
+
+  MODO JOGADOR — DURANTE A SESSÃO (Fase 7):
+  ─────────────────────────────────────────────────────────────────────
+  1. Acessa a página de login com código fornecido pelo Mestre
+  2. Vê o mapa com névoa (apenas campo do seu token visível)
+  3. Consulta sua ficha, habilidades e itens
+  4. Rola dados, resolve seus ataques, move seu token
+  5. Faz anotações de sessão (salvas automaticamente no Host)
+  6. Acompanha o tracker de iniciativa para saber quando é seu turno
+
+  PÓS-SESSÃO:
+  ─────────────────────────────────────────────────────────────────────
+  1. Mestre registra notas da sessão
+  2. Atualiza XP e nível dos personagens
+  3. Exporta backup da campanha em JSON
+  4. Fecha o navegador — dados ficam salvos no IndexedDB
+
+
+================================================================================
+  8. REQUISITOS DE PERFORMANCE E PESO
+================================================================================
+
+  META DE TAMANHO DO BUILD (Fases 1-6, frontend):
+  • Bundle JS: < 500KB (gzipped total)
+  • CSS: < 50KB
+  • Total estático: < 2MB (sem imagens do usuário)
+
+  META DE PERFORMANCE:
+  • First Contentful Paint: < 1.5s
+  • Time to Interactive: < 2.5s
+  • Canvas do mapa a 60fps (pan, zoom, tokens)
+  • Drag de tokens sem lag perceptível
+  • Ray casting de linha de visão: < 16ms por frame (memoização agressiva)
+
+  META DO SERVIDOR (Fase 7):
+  • Suporta até 8 jogadores simultâneos no mesmo servidor local
+  • Latência WebSocket < 50ms na LAN
+  • Save de notes do jogador: < 100ms
+  • Servidor leve: < 50MB RAM em idle
+
+  OTIMIZAÇÕES PLANEJADAS:
+  • Lazy loading por aba (code splitting automático do Vite)
+  • Memoização de ray casting (recomputar apenas quando mapa muda)
+  • Canvas com double buffering para névoa e visibilidade
+  • Debounce em inputs de busca (300ms)
+  • React.memo em componentes pesados (Token, EntityCard, etc.)
+  • Service Worker para cache offline (PWA, Fase 6)
+  • Delta sync via WebSocket (não envia estado completo a cada mudança)
+
+
+================================================================================
+  9. ROADMAP DE DESENVOLVIMENTO (FASES 1–7)
+================================================================================
+
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │ FASE 1 — FUNDAÇÃO                                          ✅ DONE  │
+  ├─────────────────────────────────────────────────────────────────────┤
+  │ • Design System CSS (variáveis, temas, dark/light)                  │
+  │ • Layout do App Shell (Header, Sidebar, MainContent, DetailPanel,  │
+  │   BottomBar — todos recolhíveis)                                    │
+  │ • Toggle Dark/Light mode com persistência no localStorage           │
+  │ • Navegação por abas                                                │
+  │ • IndexedDB com Dexie.js (schemas de dados)                        │
+  │ • DiceRollerWidget, CombatLog, InitiativeTracker funcionais         │
+  └─────────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │ FASE 2 — BANCOS DE DADOS (Entidades e Seeders)             ✅ DONE  │
+  ├─────────────────────────────────────────────────────────────────────┤
+  │ • Estrutura one-JSON-per-entity para todos os dados                 │
+  │ • seedDatabase() popula IndexedDB no primeiro carregamento          │
+  │ • CharactersPage, NPCsPage, BestiaryPage, AbilitiesPage, ItemsPage │
+  │ • CharacterList, CreatureCard, AbilityCard, ItemCard implementados  │
+  │ • EntityForm (NPC + Criatura) com modal                             │
+  │ • Sidebar com lista de entidades por aba ativa                      │
+  └─────────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │ FASE 3 — ENTIDADES E COMBATE BASE                          ✅ DONE  │
+  ├─────────────────────────────────────────────────────────────────────┤
+  │ • InitiativeTracker completo (roll 1d20+DEX, turno, checklist)      │
+  │ • CombatLog com colorização e timestamps                            │
+  │ • EffectManager (aplicar/remover efeitos, contador de turnos)       │
+  │ • BottomBar com 3 seções (Dados | Log | Iniciativa)                 │
+  │ • DetailPanel com info de entidade                                  │
+  └─────────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │ FASE 4 — MAPA TÁTICO, GRID E TOKENS                        ✅ DONE  │
+  ├─────────────────────────────────────────────────────────────────────┤
+  │ • MapPage completo: 3000×3000 viewport, CSS transform               │
+  │ • Upload de imagem de mapa (PNG/JPG/WebP)                           │
+  │ • Grid CSS configurável (cor, opacidade, espessura, offset, coords) │
+  │ • Token.jsx: HP bar, facção, efeitos, aura, tamanho                 │
+  │ • MapToolbar.jsx: todas as ferramentas                              │
+  │ • Drag & Drop de tokens com snap-to-grid                            │
+  │ • Fog of War básico (revelar/ocultar células)                       │
+  │ • Ferramenta de desenho freehand + borracha                         │
+  │ • Régua de distância (SHIFT + drag)                                 │
+  └─────────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │ FASE 5 — COMBATE ASSISTIDO E EFEITOS                       ✅ DONE  │
+  ├─────────────────────────────────────────────────────────────────────┤
+  │ ✅ CombatResolver.jsx — melee/ranged/magic + dodge + apply damage   │
+  │ ✅ InitiativeTracker enhanced — effect countdown, stealth alert     │
+  │ ✅ BottomBar — 4ª seção com CombatResolver (FIX BUG-002)           │
+  │ ✅ DetailPanel — aba Efeitos com gerenciamento vinculado            │
+  │ ✅ App.jsx — setTableEntities + handleUpdateTableEntity wired       │
+  │ ✅ BUG-001 — seedDatabase() aguardado antes de montar React        │
+  │ ✅ BUG-002 — CombatResolver usa tableEntities + aplica dano ao HP  │
+  │ ✅ BUG-003 — checklist de ações reseta no próximo turno            │
+  └─────────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │ FASE 6 — POLIMENTO E DISTRIBUIÇÃO                          ✅ DONE  │
+  ├─────────────────────────────────────────────────────────────────────┤
+  │ ✅ Export/Import de campanha completa (JSON) — campaignIO.js        │
+  │ ✅ PWA: manifest.json + sw.js (cache-first Service Worker)          │
+  │ ✅ Build limpo sem erros — 2147 módulos, ~160KB gzipped total       │
+  │ ✅ CharacterForm v4.0 — espécies dual, alinhamentos livres,        │
+  │    multiplicadores preview, 2ª habilidade, Não Classificado        │
+  │ ✅ MapPage multi-abas — criar, renomear, deletar, auto-save        │
+  │ ✅ MapPage: ferramenta parede (linha reta, snap 45°)                │
+  │ ✅ MapPage: ferramenta texto (etiquetas clicáveis)                  │
+  │ 🔲 Deploy no GitHub Pages (manual — build estático em /dist)       │
+  └─────────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │ FASE 7A — SERVIDOR LOCAL (LAN/VPN)                         ✅ DONE  │
+  ├─────────────────────────────────────────────────────────────────────┤
+  │ ✅ Servidor Node.js + Express com WebSocket (ws)                    │
+  │ ✅ Geração de código de sessão (6 chars alfanuméricos)              │
+  │ ✅ Painel "Servidor" no App Mestre com IP e código para partilhar   │
+  │ ✅ Modo Jogador (Player View) — 6 abas completas                    │
+  │    - Dados (Dice Roller D20/D4), Iniciativa, Ficha, Combate         │
+  │    - Notas (auto-save → JSON no disco), Log de eventos              │
+  │ ✅ Autenticação por código de campanha (join + welcome/error)       │
+  │ ✅ Sincronização em tempo real (entity_update, turn_change etc.)    │
+  │ ✅ Hash router (/#/ = Mestre | /#/player = Jogador)                 │
+  │ ✅ useWebSocket hook com auto-reconnect + exponential backoff        │
+  │ ✅ Protocolo completo: host_hello, join, relay host↔players         │
+  │ 🔲 Visibilidade por personagem (círculo + cone de visão)            │
+  │ 🔲 Bloqueio de linha de visão por paredes desenhadas                │
+  └─────────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │ FASE 8 — SISTEMAS DE SUPORTE AO MESTRE                    ✅ DONE  │
+  ├─────────────────────────────────────────────────────────────────────┤
+  │ ✅ PEND-007: EffectManager embutido na aba Efeitos do DetailPanel   │
+  │ ✅ 5.12: Investigação (Ambiente/Pessoa/Texto/Lógica, CD, bônus)     │
+  │ ✅ 5.12: Furtividade (Ambiental/Social/Invasão, atacante vs defensor│
+  │ ✅ 5.13: Descanso por entidade (1d20 → Crítico/Bom/Normal/Ruim/Desastre│
+  │ ✅ PEND-005: Visibilidade por token (raio, cone 120°, ray casting)  │
+  │ ✅ MasterToolsPanel colapsável na Dashboard (Ferramentas do Mestre) │
+  └─────────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │ FASE 7B — CONECTIVIDADE ONLINE                             ✅ DONE  │
+  ├─────────────────────────────────────────────────────────────────────┤
+  │ ✅ relay/index.js — relay stateless multi-room (Express + WS)       │
+  │ ✅ Suporte a múltiplas salas (rooms por sessionCode)                 │
+  │ ✅ Conexão Host ↔ Jogadores via wss:// sem VPN                      │
+  │ ✅ Dados da campanha no Host (relay apenas retransmite)             │
+  │ ✅ Toggle Local/Online em ServerPage e PlayerLoginPage               │
+  │ ✅ Reconexão com mesmo código (requestedCodeRef)                     │
+  │ ✅ Keepalive ping/pong (25s) para sobreviver a proxies cloud         │
+  │ ✅ Deploy configs: Procfile, railway.json, render.yaml               │
+  │ ✅ Limite de 8 jogadores por sala                                    │
+  │ 🔲 Testes de stress reais (requer deploy em nuvem)                  │
+  └─────────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │ FASE 9 — PROGRESSÃO E SISTEMAS AVANÇADOS               ✅ DONE     │
+  ├─────────────────────────────────────────────────────────────────────┤
+  │ ✅ PEND-002: CharacterForm wizard 4 passos + 8 slots equipamento    │
+  │    - cabeca/pescoco/corpo/maoDireita/maoEsquerda/cintura/pernas/pes │
+  │    - CharacterSheet corrigido com chaves canônicas                  │
+  │ ✅ 5.14: Sistema de Domínio em CampaignPage                         │
+  │    - PC = Bônus INT + Bônus CRM (calculado do líder selecionado)   │
+  │    - 6 Ações de Comando com custo PC e log de ações                │
+  │    - Mecânicas de Coalizão (Conselho, Poder Parcial, Unificação)   │
+  │ ✅ 5.15: Evolução de Classe (Nível 5) + TransEvolução (Nível 10)   │
+  │    - 3 caminhos de Evolução: Focada / Equilibrada / Legado         │
+  │    - 3 caminhos de TransEvolução: Ascendente/Transcendente/Descend.│
+  │    - Badge "Evoluir" em cards de Nv5+ | "TransEvo" em Nv10+        │
+  │    - Efeitos mecânicos aplicados (multiplicadores, atributos)       │
+  │    - EvolutionModal.jsx integrado em CharacterList                  │
+  │ Build: 2155 módulos | 309ms | 0 erros                              │
+  └─────────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+  10. RISCOS E MITIGAÇÕES
+================================================================================
+
+  ┌──────────────────────────────┬─────────────────────────────────────┐
+  │ RISCO                       │ MITIGAÇÃO                           │
+  ├──────────────────────────────┼─────────────────────────────────────┤
+  │ Perda de dados do IndexedDB  │ Export JSON + auto-backup por sessão│
+  ├──────────────────────────────┼─────────────────────────────────────┤
+  │ Performance do ray casting   │ Memoizar por hash do mapa; só        │
+  │ (visibilidade com paredes)   │ recomputar quando mapa muda         │
+  ├──────────────────────────────┼─────────────────────────────────────┤
+  │ Muitos tokens + visibilidade │ Limitar cálculo a tokens visíveis    │
+  │ em tempo real = lag          │ na viewport; requestAnimationFrame  │
+  ├──────────────────────────────┼─────────────────────────────────────┤
+  │ Servidor local não acessível │ Documentar uso de Hamachi/ZeroTier; │
+  │ por jogadores remotos        │ Fase 7B elimina essa limitação      │
+  ├──────────────────────────────┼─────────────────────────────────────┤
+  │ Relay server gratuito com    │ Manter relay sem estado (stateless); │
+  │ limites de uso               │ dados pesados nunca passam pelo      │
+  │                              │ servidor, apenas metadados           │
+  ├──────────────────────────────┼─────────────────────────────────────┤
+  │ Build muito pesado           │ Code splitting, tree shaking,        │
+  │                              │ lazy loading por aba                │
+  ├──────────────────────────────┼─────────────────────────────────────┤
+  │ GitHub Pages com path errado │ base: '/vtp-coalizao/' no vite.config│
+  │                              │ + HashRouter no React               │
+  ├──────────────────────────────┼─────────────────────────────────────┤
+  │ Jogador com acesso indevido  │ Código de sessão expira; Player View │
+  │ a dados do Mestre            │ não recebe dados que não deve ver;  │
+  │                              │ filtro no servidor antes de enviar  │
+  └──────────────────────────────┴─────────────────────────────────────┘
+
+
+================================================================================
+  11. BUGS CONHECIDOS E PENDÊNCIAS TÉCNICAS (NOVO v4.0)
+================================================================================
+
+  Esta seção lista bugs identificados e pendências que devem ser corrigidas
+  nas próximas sessões de desenvolvimento, priorizadas por impacto.
+
+  ── BUGS RESOLVIDOS ─────────────────────────────────────────────────────────
+
+  [BUG-001] ✅ RESOLVIDO — Entidades não apareciam
+  Causa: seedDatabase() não era aguardada (fire-and-forget) no main.jsx
+  Fix:   Async IIFE no main.jsx — await seedDatabase() antes de createRoot
+
+  [BUG-002] ✅ RESOLVIDO — CombatResolver "Resolver Ataque" não funcionava
+  Causa: BottomBar usava CombatAssistant (simplificado) em vez de CombatResolver
+         e onApplyDamage não estava wired
+  Fix:   BottomBar importa CombatResolver; handleApplyDamage() aplica dano
+         ao HP da entidade em tableEntities via onUpdateTableEntity
+
+  [BUG-003] ✅ RESOLVIDO — Checklist não resetava entre turnos
+  Fix:   handleNextTurn() deleta actions do próximo entity.id antes de avançar
+
+  [BUG-004] ✅ RESOLVIDO — Mapa com mensagem confusa sobre "selecionar aba"
+  Fix:   Sistema de abas multi-mapa implementado na Fase 6; o mapa sempre
+         tem pelo menos uma aba ("Mapa 1") criada automaticamente ao abrir
+
+  ── BUGS ABERTOS ────────────────────────────────────────────────────────────
+
+  (nenhum bug crítico ou alto conhecido em aberto no momento)
+
+  ── PENDÊNCIAS TÉCNICAS (features planejadas) ───────────────────────────────
+
+  [PEND-005] ✅ IMPLEMENTADO — Visibilidade por token (12/04/2026)
+  • Círculo de visibilidade configurável por token (raio em quadrados)
+  • Cone de visão direcional (120°, alcance +20%) com ângulo livre
+  • Ray casting contra wallSegments para bloqueio de linha de visão
+  • Modal "Configurar Visibilidade" no menu de contexto do token
+  • Overlay visual (anel tracejado) no Token quando fog ativo
+  • computeVisionCells() combina revealedCells + visão dinâmica dos tokens
+
+  ── PENDÊNCIAS TÉCNICAS — TODAS RESOLVIDAS ──────────────────────────────────
+
+  [PEND-001] ✅ IMPLEMENTADO — CharacterForm espécies e alinhamentos (Fase 6)
+  • Espécie Primária e Secundária com regras de combinação
+  • Anjo = sem secundária | Alinhamentos freeform | 2ª habilidade selecionável
+  • Não Classificado (sem ENR, sem habilidades) | Preview multiplicadores
+
+  [PEND-002] ✅ IMPLEMENTADO — CharacterForm slots de equipamento (12/04/2026)
+  • 8 slots: Cabeça, Pescoço, Corpo, Mão Dta, Mão Esq, Cintura, Pernas, Pés
+  • Wizard 4 passos: Identidade → Classe → Equipamento → Revisão
+  • CharacterSheet corrigido com chaves canônicas (cabeca/pescoco/corpo/etc.)
+
+  [PEND-003] ✅ IMPLEMENTADO — MapPage abas por mapa (Fase 6)
+  • Sistema de abas implementado na Fase 6
+
+  [PEND-004] ✅ IMPLEMENTADO — MapPage linhas/paredes (Fase 6)
+  • Ferramenta parede (linha reta, snap 45°) implementada na Fase 6
+
+  [PEND-005] ✅ IMPLEMENTADO — Visibilidade por token (Fase 8 — 12/04/2026)
+  • Círculo de visibilidade configurável por token
+  • Cone de visão direcional (1.2× raio, abertura 120°)
+  • Ray casting para bloqueio por paredes
+  • Sincronização com Fog of War
+
+  [PEND-006] ✅ IMPLEMENTADO — MapPage labels e ícones (Fase 6)
+  • Ferramenta de texto/etiquetas implementada na Fase 6
+
+  [PEND-007] ✅ IMPLEMENTADO — EffectManager no DetailPanel (12/04/2026)
+  • Aba "Efeitos" no DetailPanel agora embute o EffectManager completo
+  • Aplicar novos efeitos com duração → propagam ao token no mapa via onUpdateTableEntity
+  • Remover efeitos ativos diretamente do painel direito
+
+  [PEND-008] ✅ IMPLEMENTADO — Fase 7A servidor local (11/04/2026)
+  • Completo: server/index.js, sessionManager.js, ServerContext, useWebSocket,
+    ServerPage, PlayerLoginPage, PlayerDashboard (6 abas), hash router
+  • 29 testes validados — ver Docs/Logs/2026-04-11_Fase7A_ServidorLocal.txt
+
+  ── COMO USAR ESTA SEÇÃO ────────────────────────────────────────────────────
+  • Ao corrigir um bug: marcar com [✅ CORRIGIDO em dd/mm/yyyy] e mover
+    para o histórico ou remover
+  • Ao implementar uma pendência: mover para o Roadmap como concluído
+  • Ao encontrar novo bug: adicionar nesta seção com ID sequencial
+
+
+================================================================================
+  FIM DO PLANO — VTP COALIZÃO v4.5
+================================================================================

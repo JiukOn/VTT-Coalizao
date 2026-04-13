@@ -1,0 +1,21 @@
+{
+  "id": "capacete_de_treino_vestimenta_-_cabeça",
+  "name": "Capacete de Treino (Vestimenta - Cabeça)",
+  "category": "Cabeça",
+  "description": "Capacete básico e leve, ideal para sessões de treino. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (2 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

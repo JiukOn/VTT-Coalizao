@@ -1,0 +1,11 @@
+{
+  "id": "jocara",
+  "name": "Jocara",
+  "description": "Um roedor com um par de caninos expostos e uma cauda de pelos alongados. É tranquilo e naa territorialista, costuma ser adotado para rastrear o cheiro de algo.",
+  "type": "terrestre",
+  "size": "pequeno",
+  "diet": "herbivoro",
+  "element": null,
+  "imagePath": "Jocara.jpeg",
+  "isCustom": false
+}

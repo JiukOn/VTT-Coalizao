@@ -1,0 +1,35 @@
+ Ecossistemas:
+
+Campo -
+Campo Desértico -
+Deserto -
+Floresta de Cinzas -
+Floresta Denso Roxo -
+Floresta dos Cogumelos -
+Floresta Mágica -
+Floresta Nevada -
+Floresta Outono Perene -
+Floresta Pedra Azul -
+
+ Civilizações:
+
+Capital dos Elfos -
+Capital Unsato -
+Cidade Caída -
+Cidade dos Porcos -
+Reino Evoluído -
+Reserva Amortecida -
+Subterrâneo -
+Taverna Byron -
+Taverna Normiumor -
+Vila Secreta -
+Vilarejo Hamelin -
+Mercado Negro -
+
+ Especiais:
+
+Torre Azul -
+Torre Negra -
+Torre Verde -
+Tumba dos Ascendentes -
+Centro Mundial -

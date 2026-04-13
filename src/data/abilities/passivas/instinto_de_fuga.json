@@ -1,0 +1,14 @@
+{
+  "id": "instinto_de_fuga",
+  "name": "Instinto de Fuga",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Quando o usuário estiver com VIT < VIT/2, recebe +2 em testes de esquiva e deslocamento. (Requer DEX 4)",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

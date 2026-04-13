@@ -1,0 +1,14 @@
+{
+  "id": "modificação_de_armas",
+  "name": "Modificação de Armas",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "O usuário é capaz de modificar armas pré-existentes, recebendo 1 dado bônus nesta ação. (Requer INT 4).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

@@ -1,0 +1,11 @@
+{
+  "id": "fabarr",
+  "name": "Fabarr",
+  "description": "Ele é um herbívoro que se alimenta de plantas e musgos. Sua boca possui dentes fortes, capazes de triturar as plantas mais duras. A criatura se reproduz de forma ovípara, dando à luz a ovos que são chocados em ninhos de galhos e folhas. Essa é uma criatura de porte grande com até 5 metros de altura e muito protetora com sua família.",
+  "type": "terrestre",
+  "size": "grande",
+  "diet": "herbivoro",
+  "element": null,
+  "imagePath": "Fabarr.jpeg",
+  "isCustom": false
+}

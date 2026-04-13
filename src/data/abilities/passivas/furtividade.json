@@ -1,0 +1,14 @@
+{
+  "id": "furtividade",
+  "name": "Furtividade",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Impõe -2 nos dados de testes de percepção inimigos.",
+  "classLink": null,
+  "cost": null,
+  "test": null,
+  "duration": "Permanente",
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

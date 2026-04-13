@@ -1,0 +1,21 @@
+{
+  "id": "botas_de_ferro_vestimenta_-_pé",
+  "name": "Botas de Ferro (Vestimenta - Pé)",
+  "category": "Pé",
+  "description": "Botas resistentes feitas de ferro forjado. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

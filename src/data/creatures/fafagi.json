@@ -1,0 +1,11 @@
+{
+  "id": "fafagi",
+  "name": "Fafagi",
+  "description": "A Fafagi é um mamífero ungulado, O sistema digestivo da Fafagi é capaz de processar uma grande variedade de plantas, o que a torna um animal resistente a variações na dieta.  As manchas azuis, por sua vez, são uma forma de proteção contra predadores pois são uma regiao endurecida e venenosa de seu couro.",
+  "type": "terrestre",
+  "size": "medio",
+  "diet": "herbivoro",
+  "element": "veneno",
+  "imagePath": "Fafagi.jpeg",
+  "isCustom": false
+}

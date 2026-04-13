@@ -1,0 +1,9 @@
+{
+  "id": "pequena_tina",
+  "name": "Pequena Tina",
+  "location": "Reserva Amortecida",
+  "description": "",
+  "type": "npc",
+  "role": "",
+  "isCustom": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "calça_de_treino_vestimenta_-_perna",
+  "name": "Calça de Treino (Vestimenta - Perna)",
+  "category": "Perna",
+  "description": "Calças flexíveis e leves para sessões de treino. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (2 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

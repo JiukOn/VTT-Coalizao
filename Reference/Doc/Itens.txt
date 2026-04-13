@@ -1,0 +1,170 @@
+**Armas de Proximidade_______________**
+
+Adaga de Aço (Arma) -> Uma adaga afiada que fornece +1 PRE ao seu portador. Causa 1d4 - 1 de dano. Possui a modificação Afiado, aumentando sua capacidade de corte em +1 de dano. (15 DP).
+Adaga de Cobre (Arma) -> Uma lâmina simples e leve, ideal para tarefas do campo, mas de pouca resistência em combate. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (10 DP).
+Adaga de Ferro (Arma) -> Uma adaga de tamanho médio, com durabilidade mediana. Causa 1d4 - 1 de dano. Possui a modificação Perfurador, aumentando sua capacidade de perfuração em +1 de dano. (15 DP).
+Adaga Gêmea (Água) (Arma) -> Item pequeno e leve de alta durabilidade, que conferem +4 FRC e +3 PRE. Causam 1d4 + 2 de dano. Possui a modificação Aquático, fazendo seus ataques adquirirem o elemento Água e poderem causar Afogamento. (25 DP).
+Adaga Gêmea (Fogo) (Arma) -> Item pequeno e leve de alta durabilidade, que conferem +3 FRC e +4 PRE. Causam 1d4 + 2 de dano. Possui a modificação Quente, fazendo seus ataques adquirirem o elemento Fogo e poderem causar Queimadura. (25 DP).
+Bastão de Madeira (Arma) -> Um item fraco, leve e de baixa durabilidade que fornece +1 PRE. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (8 DP).
+Chicote de Couro (Arma) -> Este item flexível, de baixa durabilidade, concede +1 DEX ao seu portador. Causa 1d4 - 1 de dano. Possui a modificação Leve, conferindo agilidade ao portador e +1 no dado em testes de ataque com PRE. (8 DP).
+Corrente Laminada (Arma) -> Uma corrente flexível e de alta durabilidade, ideal para controle. Causa 1d4 - 2 de dano. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (25 DP).
+Espada de Madeira (Arma) -> Feita de madeira, esta espada é mais leve do que as de metal e confere +1 FRC ao seu portador. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (10 DP).
+Espada do Vazio (Arma) -> Uma espada média e pesada que impõe -4 DEX, mas concede +8 FRC. Causa 2d4 + 4 de dano. Possui a modificação Energizador, permitindo, uma vez por combate, anular 1 de dano elemental que o usuário sofreria. Além disso, pode absorver a força do ataque do oponente, reduzindo o dado do oponente em 2. (20 DP). (Requer 20 FRC).
+Estrela da Meia-Noite (Arma) -> Um item pesado de durabilidade média, que impõe -1 DEX, mas concede +1 FRC. Causa 1d4 de dano. Possui a modificação Pesado, concedendo +1 no dado em testes de ataque, mas impondo -1 no dado em testes de esquiva. (20 DP).
+Faca de Serra (Arma) -> Uma faca pequena e pouco cortante, com baixa resistência. Causa 1d4 - 2 de dano. Possui a modificação Afiado, aumentando sua capacidade de corte em +1 de dano. (8 DP).
+Foice de Jardinagem (Arma) -> Uma lâmina simples e leve, ideal para tarefas do campo, mas de pouca resistência em combate. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (8 DP).
+Lâmina do Bardo (Arma) -> Uma lâmina de tamanho médio que produz sons musicais quando usada em batalha. Causa 1d4 + 1 de dano. Possui a modificação Barulhento, emitindo sons notáveis que podem desorientar oponentes e causar confusão. (15 DP).
+Martelo Kilicêkan (Arma) -> Um martelo médio e pesado, de alta durabilidade, capaz de imbuir energia e conferir +3 ENR e +1 FRC ao seu usuário. Causa 1d4 + 3 de dano. Possui a modificação Imbuídor, permitindo ao usuário gastar temporariamente 1 ponto de sua ENR por turno para aumentar o dano do ataque em 1. (25 DP).
+Martelo de Guerra (Arma) -> Este é um item grande e pesado, feito para causar impacto. Apesar de sua potência, ele impõe -1 DEX, mas concede +1 FRC. Causa 1d4 + 1 de dano. Possui a modificação Pesado, concedendo +1 no dado em testes de ataque, mas impondo -1 no dado em testes de esquiva. (20 DP).
+Porrete de Ossos -> Um item fraco, leve e de baixa durabilidade que fornece +1 PRE. Causa 1d4 - 1 de dano. Possui a modificação Feroz. (8 DP).
+
+
+**Armas à Distância_______________**
+
+Arco de Guerra (Arma) -> Capaz de lançar projéteis finos e alongados, confere +3 PRE. Distância Máxima de lançamento: 16 metros. Possui a modificação Perceptivo, permitindo, uma vez por combate, ignorar a defesa do alvo em um ataque. (18 DP).
+Arco de Treino (Arma) -> Capaz de lançar projéteis finos e alongados, confere +1 PRE. Distância Máxima de lançamento: 8 metros. Possui a modificação Leve, concedendo +1 no dado em testes de ataque com PRE. (12 DP).
+Besta de Guarda (Arma) -> Capaz de lançar projéteis finos e alongados, confere +2 PRE. Distância Máxima de lançamento: 12 metros. Possui a modificação Pesado, concedendo +1 no dado em testes de ataque, mas impondo -1 no dado em testes de esquiva. (18 DP).
+Core Beast (Arma) -> Uma arma feita com a carapaça de um Gran e 3 núcleos pequenos, fornece +2 PRE e +3 ENR. Distância Máxima de lançamento: 20 metros. Possui a modificação Leve, conferindo uma agilidade surpreendente ao portador e concedendo +1 no dado em testes de ataque com PRE. (20 DP).
+Culverin (Arma) -> Capaz de lançar projéteis esféricos e duráveis, necessita de pólvora, e confere +3 PRE. Distância Máxima de lançamento: 20 metros. Possui a modificação Pesado, concedendo +1 no dado em testes de ataque, mas impondo -1 no dado em testes de esquiva. (20 DP).
+Estilingue (Arma) -> Capaz de lançar projéteis pequenos e confere +1 PRE. Distância Máxima de lançamento: 8 metros. Possui a modificação Leve, concedendo +1 no dado em testes de ataque com PRE. (10 DP).
+Funda (Arma) -> Capaz de lançar projéteis pequenos e pesados. Distância Máxima de lançamento: 4 metros. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (10 DP).
+Lançador Energético (Arma) -> Atira feixes de energia. É inofensivo contra inimigos sem energia e confere +2 PRE. Distância Máxima de lançamento: 32 metros. Possui a modificação Imbuídor, permitindo gastar temporariamente 1 ponto de sua ENR por turno para aumentar o dano do ataque em 1. (20 DP). (Munição: 1 ENR do usuário).
+
+**Itens de Defesa_______________**
+
+Correntes de Defesa (Escudo) -> Cadeias de alta durabilidade projetadas para imobilizar armas de proximidade. Concedem 1d4 - 3 de defesa de dano. (25 DP).
+Escudo do Vazio (Escudo) -> Um escudo poderoso que reduz o dado de ataque do oponente em 4. Concede 1d4 + 2 de defesa de dano e modifica seus atributos com -2 DEX e +2 FRC. Possui a modificação Energizador, permitindo, uma vez por combate, anular 1 de dano elemental que o usuário sofreria. (25 DP).
+Escudo Largo de Madeira (Escudo) -> Um escudo grande de durabilidade média. Concede 1d4 - 2 de defesa. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (15 DP).
+Escudo Redondo de Madeira (Escudo) -> Um escudo pequeno e de baixa durabilidade. Concede 1d4 - 3 de defesa. Possui a modificação Frágil, tornando-o mais suscetível a quebrar sob pressão. (10 DP).
+Quebrador de Espada (Escudo) -> Embora possa oferecer uma defesa mínima, este item é primariamente projetado para quebrar espadas de baixa durabilidade. Concede 1d4 - 3 de defesa. (20 DP).
+
+**Vestimentas_______________**
+
+**Cabeça**
+
+Cabeça Ancestral (Vestimenta - Cabeça) -> O esqueleto de uma criatura mágica talhado como um capacete, que confere +2 ENR e +3 INT. Possui a modificação Vigoroso, permitindo, uma vez por dia, realizar um teste (1d20 > 18) para remover um efeito psicológico de nível 1 ou 2 permanentemente. (20 DP).
+Capacete Avançado (Vestimenta - Cabeça) -> Capacete robusto de liga metálica, projetado para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).
+Capacete de Aço (Vestimenta - Cabeça) -> Capacete forjado em aço, resistente e durável. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).
+Capacete de Couro (Vestimenta - Cabeça) -> Capacete de couro simples, leve e flexível. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).
+Capacete de Ferro (Vestimenta - Cabeça) -> Capacete forjado em ferro, oferecendo proteção sólida. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).
+Capacete de Lobo (Vestimenta - Cabeça) -> Capacete feito de couro de lobo, com acabamento rústico. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).
+Capacete de Passos Fofos (Vestimenta - Cabeça) -> Um chapéu de pele macia, com design chamativo. Possui a modificação Chamativo, concedendo +1 no dado em testes de CRM, mas impondo -1 no dado em testes de Furtividade. (2 DP).
+Capacete de Treino (Vestimenta - Cabeça) -> Capacete básico e leve, ideal para sessões de treino. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (2 DP).
+Capacete HiunRimu (Vestimenta - Cabeça) -> Capacete feito de casco de HiunRimu, proporcionando uma defesa exótica. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).
+Capacete Rimu (Vestimenta - Cabeça) -> Capacete resistente de couro alquimizado, moldado para alta proteção. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (5 DP).
+Capacete do Rei Undino (Vestimenta - Cabeça) -> Capacete feito com materiais do Rei Undino, com detalhes ornamentados. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (5 DP).
+Elmo de Ossos (Vestimenta - Cabeça) -> Elmo esculpido em ossos, com aparência intimidadora e robusta. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (3 DP).
+Elmo da Thanatos (Vestimenta - Cabeça) -> Elmo de couro de quimera, parte do conjunto Thanatos, com design sutil. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).
+
+**Pescoço**
+
+Colar do Abismo (Vestimenta - Pescoço) -> Um item Mito único feito das sombras, de alta durabilidade. Possui a modificação Malicioso, infundido com uma aura sombria e corruptora. Sua Habilidade Mito, Olhar do Abismo, faz a maioria dos seres que fitam os olhos do usuário ficarem com MEDO por 2 turnos, e concede 1 dado bônus para convencimento forçado. (50 DP). (Requer ENR 8 e CRM menor que 5).
+
+**Corpo**
+
+Camisa de Passos Fofos (Vestimenta - Corpo) -> Camisa feita de pele macia que aumenta o calor corporal. (Maldição: Fraqueza - Se o personagem possuir maior FRC que o alvo, ele perde -2 FRC e -1 DEX). (4 DP).
+Camisa da Thanatos (Vestimenta - Corpo) -> Camisa que compõe o conjunto da Thanatos, fornecendo +1 DEX. (8 DP).
+Peitoral Avançado (Vestimenta - Corpo) -> Peitoral robusto de liga metálica, resistente e ergonômico para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (8 DP).
+Peitoral de Aço (Vestimenta - Corpo) -> Peitoral forjado em aço, oferecendo proteção frontal robusta. Fornece +1 FRC. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (8 DP).
+Peitoral de Couro (Vestimenta - Corpo) -> Peitoral de couro simples, leve e confortável para o torso. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (6 DP).
+Peitoral de Ferro (Vestimenta - Corpo) -> Peitoral forjado em ferro, pesado e durável. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (8 DP).
+Peitoral de Lobo (Vestimenta - Corpo) -> Peitoral feito de couro de lobo, oferecendo proteção leve e agilidade. Fornece +1 DEX. (6 DP).
+Peitoral de Ossos (Vestimenta - Corpo) -> Peitoral robusto, feito de ossos reforçados, fortalece seu usuário (+2 FRC). Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (6 DP).
+Peitoral de Treino (Vestimenta - Corpo) -> Peça principal da armadura, focada em conforto. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (4 DP).
+Peitoral HiunRimu (Vestimenta - Corpo) -> Peitoral feito de casco de HiunRimu, com resistência exótica. Concede +1 FRC, -1 DEX. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (8 DP).
+Peitoral Rimu (Vestimenta - Corpo) -> Peitoral pesado de couro alquimizado, com grande capacidade de proteção. Concede +1 FRC, -4 DEX. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (10 DP).
+Peitoral do Rei Undino (Vestimenta - Corpo) -> Peitoral feito do couro resistente de um rei undino, com acabamento majestoso. Possui a modificação Blindado, diminuindo em 1 o dano recebido. Confere +1 VIT. (25 DP).
+
+**Mãos / Acessório das Mãos**
+
+Anel Mahil Pya (Vestimenta - Mãos / Acessório das Mãos) -> Um item Sentimental de alta durabilidade que confere +4 ENR e +2 RES. Possui a modificação Vigoroso, permitindo, uma vez por dia, realizar um teste (1d20 > 18) para remover um efeito psicológico de nível 1 ou 2 permanentemente. (20 DP).
+Anel Vulcânico (Vestimenta - Mãos / Acessório das Mãos) -> Um anel que confere +3 ENR. Possui a modificação Quente, fazendo seus ataques possuírem o elemento Fogo e poderem causar Queimadura. (20 DP).
+Escaravelho (Vestimenta - Acessório das Mãos) -> Um item Mito, um bracelete mágico especial que confere +2 ENR e +3 INT. Sua Habilidade Mito, Impulso Espectral, utiliza a própria alma como combustível, recebendo +2 em um atributo físico (FRC ou DEX) por 4 turnos e perdendo 1 de XP (Limitado ao XP 0 e sem regressão de nível). (50 DP). (Requer INT 8).
+Luva Alquímica (Vestimenta - Mãos / Acessório das Mãos) -> Uma luva leve de durabilidade média, capaz de utilizar poções nos golpes físicos. Possui a modificação Prático, concedendo um dado de vantagem em testes de criação ou reparo de itens quando este item é o principal utilizado na ação. (15 DP).
+Luvas Avançadas (Vestimenta - Mãos / Acessório das Mãos) -> Luvas resistentes para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).
+Manoplas Rimu (Vestimenta - Mãos / Acessório das Mãos) -> Luvas pesadas para proteção das mãos. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (5 DP).
+
+**Perna**
+
+Calça Avançada (Vestimenta - Perna) -> Calças resistentes e flexíveis para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).
+Calça de Couro (Vestimenta - Perna) -> Calças de couro simples, leves e confortáveis. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).
+Calça de Lobo (Vestimenta - Perna) -> Calças feitas de couro de lobo, rústicas e duráveis. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).
+Calça de Passos Fofos (Vestimenta - Perna) -> Calça confortável feita de pele macia e quente. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (2 DP).
+Calça de Treino (Vestimenta - Perna) -> Calças flexíveis e leves para sessões de treino. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (2 DP).
+Calça HiunRimu (Vestimenta - Perna) -> Calças feitas de casco de HiunRimu, resistentes e exóticas. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).
+Calça Rimu (Vestimenta - Perna) -> Calças pesadas que completam o conjunto Rimu, oferecendo proteção densa. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (5 DP).
+Calça da Thanatos (Vestimenta - Perna) -> Calças de couro de quimera, parte do conjunto Thanatos. Possui a modificação Mochileiro, que dá maior velocidade para longas distancias. (4 DP).
+Perneira de Aço (Vestimenta - Perna) -> Perneiras feitas de placas de aço, oferecendo proteção robusta para as pernas. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).
+Perneira de Ferro (Vestimenta - Perna) -> Perneiras feitas de placas de ferro, pesadas e protetoras para as pernas. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).
+Perneiras de Ossos (Vestimenta - Perna) -> Proteção para as pernas feita de ossos reforçados. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (3 DP).
+Perneiras do Rei Undino (Vestimenta - Perna) -> Perneiras feitas com materiais do Rei Undino, oferecendo defesa e distinção. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (5 DP).
+
+**Pé**
+
+Botas Avançadas (Vestimenta - Pé) -> Botas resistentes e leves para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).
+Botas de Aço (Vestimenta - Pé) -> Botas resistentes feitas de aço forjado. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).
+Botas de Couro (Vestimenta - Pé) -> Botas de couro simples e confortáveis. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).
+Botas de Ferro (Vestimenta - Pé) -> Botas resistentes feitas de ferro forjado. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).
+Botas de Lobo (Vestimenta - Pé) -> Botas feitas de couro de lobo, com solado robusto. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).
+Botas de Ossos (Vestimenta - Pé) -> Botas feitas de ossos, duráveis e imponentes. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (3 DP).
+Botas de Passos Fofos (Vestimenta - Pé) -> Botas fofas e macias, parte do conjunto de pele. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (2 DP).
+Botas de Treino (Vestimenta - Pé) -> Botas leves e flexíveis para mobilidade em treino. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (2 DP).
+Botas HiunRimu (Vestimenta - Pé) -> Botas feitas de casco de HiunRimu, oferecendo proteção exótica. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).
+Botas Rimu (Vestimenta - Pé) -> Botas resistentes e pesadas que completam o conjunto Rimu. Possuem a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (5 DP).
+Botas Sombras Abaixo (Vestimenta - Pé) -> Botas leves e escuras, projetadas para discrição e agilidade. Conferem +2 DEX. Possuem a modificação Camuflado, concedendo +1 no dado em testes de Furtividade. (15 DP).
+Botas do Rei Undino (Vestimenta - Pé) -> Botas feitas com materiais do Rei Undino, com detalhes únicos. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (5 DP).
+Sapato da Thanatos (Vestimenta - Pé) -> Um sapato leve feito de couro de quimeras, focado em mobilidade para longas distâncias. Possui a modificação Mochileiro, que dá maior velocidade para longas distancias. (10 DP).
+Tênis (Vestimenta - Pé) -> Um par de tênis simples, focado em leveza e conforto. Possui a modificação Mochileiro, que dá maior velocidade para longas distancias. (10 DP).
+
+**Projéteis_______________**
+
+Bolas de Metal (Projetil) -> Projéteis de metal que podem ser lançados. Causam 1d4 + 1 de dano.
+Dardo (Projetil) -> Um projétil pequeno e de baixa durabilidade. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-o mais suscetível a quebrar sob pressão.
+Energia (Projetil) -> Um projétil de pura energia. Causa 1d4 + 5 de dano, seu uso diminui -1 ENR temporariamente do usuário.
+Flechas Leves (Projetil) -> Flechas projetadas para serem rápidas. Causam 1d4 de dano.
+Flechas Médias (Projetil) -> Flechas com um bom equilíbrio entre peso e dano. Causam 1d4 + 2 de dano. Possuem a modificação Perfurador, aumentando sua capacidade de perfuração em +1 de dano.
+Flechas Pesadas (Projetil) -> Flechas que causam maior impacto. Causam 1d4 + 4 de dano.
+Pedra (Projetil) -> Uma simples pedra que pode ser lançada. Causa 1d4 - 2 de dano
+Rosas Forger (Projetil) -> Rosas que possuem um veneno floral. Causam 1d4 de dano. Infundida com uma aura sombria e corruptora que pode perturbar a mente do alvo, ativando efeitos psicológicos já existentes. Além disso, causam o efeito 'Envenenado' ao alvo.
+Shuriken (Projetil) -> Um projétil pequeno e afiado, ideal para lançamentos rápidos. Causa 1d4 - 1 de dano. Possui a modificação Afiado, aumentando sua capacidade de corte em +1 de dano.
+
+**Itens de Controle Mágico_______________**
+
+Cajado de Carvalho (Item Mágico) -> Um cajado de madeira robusto, conferindo +2 PRE. Possui a modificação Vigoroso, pulsando com uma energia que revigora o espírito do usuário, permitindo, uma vez por dia, realizar um teste (1d20 > 18) para remover um efeito psicológico de nível 1 ou 2 permanentemente. (20 DP).
+Cajado de Grama (Item Mágico) -> Um cajado leve, com bons bônus +1 PRE e +1 DEX. Possui a modificação Leve, conferindo uma agilidade surpreendente ao portador e concedendo +1 no dado em testes de ataque com PRE. (15 DP).
+Cajado de Sangue (Item Mágico) -> Um cajado que concede +1 PRE e +1 ENR. Possui a modificação Vigoroso, pulsando com uma energia que revigora o espírito do usuário, permitindo, uma vez por dia, realizar um teste (1d20 > 18) para remover um efeito psicológico de nível 1 ou 2 permanentemente. (20 DP).
+Vareta (Item Mágico) -> Uma vareta simples de baixa durabilidade. Possui a modificação Prático, cujo design otimiza a eficiência do usuário, concedendo 1 dado de vantagem em testes de criação ou reparo de itens quando este item é o principal utilizado na ação. (5 DP).
+Vareta Especial (Item Mágico) -> Um item especial que fornece +1 PRE. Possui a modificação Imbuídor, que possui uma ligação intrínseca com a energia essencial, permitindo-lhe receber e canalizá-la. (10 DP).
+
+**Ferramentas_______________**
+
+Martelo de Ferreiro (Ferramenta) -> Um martelo robusto e pesado, essencial para a forja, que também aprimora +2 PRE. Causa 1d4 - 1 de dano. Possui a modificação Prático, otimizando a eficiência do usuário em testes de criação ou reparo de itens. (15 DP).
+Pincel (Ferramenta) -> Um pincel de baixa durabilidade que concede +1 PRE ao criar "Arte". (10 DP).
+
+**Consumíveis_______________**
+
+Alma Densa do Potencial (Consumível) -> Uma alma densa que aumenta 0.5 do multiplicador em um atributo escolhido.
+Chá de Bati (Consumível) -> Um chá simples que, se o usuário obtiver sucesso em um teste de 1d20 > 10, restaura 1d4 - 1 de VIT.
+Cogumelo Verde (Consumível) -> Um cogumelo que adormece qualquer criatura de nível 1.
+Coração de Tinta (Consumível) -> Um item Mito que, ao ser consumido, concede ao usuário a habilidade "Domínio de Tinta", o status especial de espécie permanente "Rei Tinta", e ganha permanentemente +2 ENR.
+Elixir da Vida (Consumível) -> Um elixir raro que aumenta 1 ponto de VIT permanentemente.
+Ervas Psicodélicas (Consumível) -> Ervas que geram alucinações, causam náuseas e sonolência, e que, se o usuário obtiver sucesso em um teste (1d20 > 10), restaura 1d4 - 1 de VIT.
+Estrela de Belém (Consumível) -> Um item Mito que, ao ser consumido, permite ao usuário receber o dobro de XP em qualquer ato e garante a capacidade de transcender.
+Fruta da Aura (Consumível) -> Uma fruta que pode mudar a aura do personagem.
+Xarope (Consumível) -> Um xarope que cura gripes se o usuário obtiver sucesso em um teste (1d20 > 10).
+
+**Venenos_______________**
+
+Ricino (Veneno) -> Um veneno forte que causa 1d4 - 1 de dano de VIT a cada turno.
+Veneno Pedroso (Veneno) -> Um veneno que, quando aplicado, causa o efeito 'Travado' ao alvo.
+
+**Itens Diversos_______________**
+
+Bateria Energética (Item Diverso) -> Uma bateria capaz de armazenar até 5 ENR, essa energia pode ser utilizada por seres e outros itens.
+Binóculo (Item Diverso) -> Um binóculo usado para ver maiores distâncias, aumentando 1 no teste de vista (+1 PRE em testes de percepção visual).
+Câmera Fotográfica Energética (Item Diverso) -> Uma câmera que necessita de papel e 1 de energia para funcionar.
+Gema Energética (Item Diverso) -> Uma gema pequena que confere +1 ENR e pode ser utilizada para melhorar outros itens.
+Grimório (Item Diverso) -> Um livro que guarda informações sobre uma habilidade energética. Se um teste de 1d20 + INT for bem-sucedido contra uma dificuldade, o personagem pode aprender a habilidade.
+Livro Religioso (Item Diverso) -> Um livro de que aumenta a capacidade de convencimento do personagem e pode diminuir temporariamente 1 RES de um alvo se um teste de 1d20 >= 12 for bem-sucedido.
+Livro Satoré (Item Diverso) -> Um item Sentimental, o livro religioso da Igreja Unsato.
+Tela (Item Diverso) -> Um material que, quando sobreposto por pigmento, pode receber formas.

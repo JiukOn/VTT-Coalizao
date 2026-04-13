@@ -1,0 +1,21 @@
+{
+  "id": "gema_energética_item_diverso",
+  "name": "Gema Energética (Item Diverso)",
+  "category": "Itens Diversos",
+  "description": "Uma gema pequena que confere +1 ENR e pode ser utilizada para melhorar outros itens.",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

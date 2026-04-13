@@ -1,0 +1,14 @@
+{
+  "id": "chamas",
+  "name": "Chamas",
+  "category": "ATIVAS",
+  "class": "Geral",
+  "description": "O usuário é capaz de convocar o elemento Fogo em um ataque de média distância, causando 1d4 de dano. Recarrega em 1 turno. (Requer ENR 4).",
+  "classLink": null,
+  "cost": null,
+  "test": null,
+  "duration": "Instantâneo",
+  "cooldown": "1 turno",
+  "requirements": "ENR 4",
+  "isCustom": false
+}

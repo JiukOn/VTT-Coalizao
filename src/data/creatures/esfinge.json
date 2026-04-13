@@ -1,0 +1,11 @@
+{
+  "id": "esfinge",
+  "name": "Esfinge",
+  "description": "A Esfinge é uma criatura lendária e monstruosa, cuja biologia é um mistério para a ciência. Ela é um ser onívoro, capaz de se alimentar de qualquer coisa que encontra em seu ambiente, desde animais pequenos até seres humanos. A criatura se reproduz de forma assexuada, por meio de um processo de fissão, em que o seu corpo se divide em dois e uma segunda cabeca comeca a se desenvolver. Seu corpo é coberto por uma pele grossa e escura, que lhe dá uma aparência de rocha. A pele é extremamente resistente a ataques físicos, e serve como uma armadura natural. A sua inteligencia é algo curioso afinal ela tem o costume de perguntar algo para os seres inteligentes e caso esse ser minta ela se torna extremamente agressiva, porém não parece compreender de fato o idioma falado por estas criaturas inteligentes, parece mais como uma especie de mimetismo apoiado por uma habilidade desconhecida.",
+  "type": "terrestre",
+  "size": "grande",
+  "diet": "onivoro",
+  "element": null,
+  "imagePath": "Esfinge.jpeg",
+  "isCustom": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "barreira_de_espinhos",
+  "name": "Barreira de Espinhos",
+  "category": "ATIVAS",
+  "class": "Evo Barreira de Vinhas",
+  "description": "Cria fisicamente uma barreira de vinhas espinhosas reforçada de ate 10m por 3 turnos que não pode ser movida. Essa barreira bloqueia qualquer ataque físico e reflete 1 de dano contra inimigos corpo a corpo. Imune a ataques de elemento Água, Madeira, Energia Pura e Maligna. Se um teste (1d20 > 16) falhar , o usuário perde 2 ENR temporariamente. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16). (Requer ENR 8, Resistência à Madeira)",
+  "classLink": "Evo Barreira de Vinhas",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

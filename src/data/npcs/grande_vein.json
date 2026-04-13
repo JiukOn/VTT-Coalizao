@@ -1,0 +1,9 @@
+{
+  "id": "grande_vein",
+  "name": "Grande Vein",
+  "location": "Reserva Amortecida",
+  "description": "",
+  "type": "npc",
+  "role": "Grande",
+  "isCustom": false
+}

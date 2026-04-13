@@ -1,0 +1,21 @@
+{
+  "id": "tela_item_diverso",
+  "name": "Tela (Item Diverso)",
+  "category": "Itens Diversos",
+  "description": "Um material que, quando sobreposto por pigmento, pode receber formas.",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

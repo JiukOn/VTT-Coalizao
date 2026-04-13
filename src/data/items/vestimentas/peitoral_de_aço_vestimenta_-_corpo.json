@@ -1,0 +1,25 @@
+{
+  "id": "peitoral_de_aço_vestimenta_-_corpo",
+  "name": "Peitoral de Aço (Vestimenta - Corpo)",
+  "category": "Corpo",
+  "description": "Peitoral forjado em aço, oferecendo proteção frontal robusta. Fornece +1 FRC. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (8 DP).",
+  "type": "vestimenta",
+  "subtype": "corpo",
+  "rarity": "comum",
+  "damage": null,
+  "defense": null,
+  "dp": 8,
+  "dpMax": 8,
+  "modifications": [
+    "Blindado"
+  ],
+  "bonuses": {
+    "frc": 1
+  },
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": "pesado",
+  "price": 0,
+  "isCustom": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "gatilho_de_combate",
+  "name": "Gatilho de Combate",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Após sofrer dano por 3 turnos consecutivos sem que o usuário cause dano, o usuário entra em um estado de foco bruto: +4 FRC, -2 CRM até o fim do combate. Ativa-se apenas uma vez por combate. (Requer VIT 8)",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

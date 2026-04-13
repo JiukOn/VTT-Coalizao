@@ -1,0 +1,11 @@
+{
+  "id": "hopopis",
+  "name": "Hopopis",
+  "description": "é um grande e aterrorizante mamifero capaz de manter aneis de fogo e bafo flamejante ao mesmo tempo, a area de calor em volta dessa critura pode chegar a derreter as espadas do aventureiro que ousar enfrentalo. Sua enorme cabeca com olhos vermelhos brilhosos assustam quase todas as criaturas ao seu redor, por isso é comum que esse animal morra de fome em epocas mais quentes do ano, mas em epocas de frio diversas criaturas se aproximam de um hopopis para se manter aquecidas e acabam sendo devoradas.",
+  "type": "terrestre",
+  "size": "grande",
+  "diet": "carnivoro",
+  "element": "fogo",
+  "imagePath": "Hopópis.jpeg",
+  "isCustom": false
+}

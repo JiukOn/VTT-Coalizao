@@ -1,0 +1,9 @@
+{
+  "id": "vendedora_vinja",
+  "name": "Vendedora Vinja",
+  "location": "La Montana",
+  "description": "",
+  "type": "npc",
+  "role": "Vendedora",
+  "isCustom": false
+}

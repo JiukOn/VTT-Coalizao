@@ -1,0 +1,21 @@
+{
+  "id": "ethan",
+  "name": "Ethan",
+  "level": 4,
+  "class": "Bardo",
+  "specie": "Humano",
+  "avatar": "/assets/heroes/ethan.png",
+  "stats": {
+    "VIT": 6,
+    "DEX": 6,
+    "CRM": 2,
+    "FRC": 5,
+    "INT": 5,
+    "RES": 2,
+    "PRE": 2,
+    "ENR": 5
+  },
+  "history": "Gostava de Jogar Videogames, trabalhava como músico.",
+  "aura": "?",
+  "isCustom": false
+}

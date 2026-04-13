@@ -1,0 +1,21 @@
+{
+  "id": "porrete_de_ossos",
+  "name": "Porrete de Ossos",
+  "category": "Armas de Proximidade",
+  "description": "Um item fraco, leve e de baixa durabilidade que fornece +1 PRE. Causa 1d4 - 1 de dano. Possui a modificação Feroz. (8 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

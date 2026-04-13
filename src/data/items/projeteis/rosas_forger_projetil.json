@@ -1,0 +1,21 @@
+{
+  "id": "rosas_forger_projetil",
+  "name": "Rosas Forger (Projetil)",
+  "category": "Projéteis",
+  "description": "Rosas que possuem um veneno floral. Causam 1d4 de dano. Infundida com uma aura sombria e corruptora que pode perturbar a mente do alvo, ativando efeitos psicológicos já existentes. Além disso, causam o efeito 'Envenenado' ao alvo.",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

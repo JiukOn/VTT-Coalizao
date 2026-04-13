@@ -1,0 +1,26 @@
+{
+  "id": "core_beast_arma",
+  "name": "Core Beast (Arma)",
+  "category": "Armas à Distância",
+  "description": "Uma arma feita com a carapaça de um Gran e 3 núcleos pequenos, fornece +2 PRE e +3 ENR. Distância Máxima de lançamento: 20 metros. Possui a modificação Leve, conferindo uma agilidade surpreendente ao portador e concedendo +1 no dado em testes de ataque com PRE. (20 DP).",
+  "type": "arma",
+  "subtype": "distancia",
+  "rarity": "especial",
+  "damage": null,
+  "defense": null,
+  "dp": 20,
+  "dpMax": 20,
+  "modifications": [
+    "Leve"
+  ],
+  "bonuses": {
+    "pre": 2,
+    "enr": 3
+  },
+  "penalties": {},
+  "range": 20,
+  "requirements": {},
+  "weight": "leve",
+  "price": 0,
+  "isCustom": false
+}

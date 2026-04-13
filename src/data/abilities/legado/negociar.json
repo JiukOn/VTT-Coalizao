@@ -1,0 +1,14 @@
+{
+  "id": "negociar",
+  "name": "Negociar",
+  "category": "LEGADO",
+  "class": "Feirante",
+  "description": "O usuário tem maior probabilidade de receber o que deseja. Se 1d12 >= 7, o usuário pode negociar com maior facilidade. (Requer INT 8).",
+  "classLink": "Feirante",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

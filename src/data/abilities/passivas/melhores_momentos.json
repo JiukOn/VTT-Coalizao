@@ -1,0 +1,14 @@
+{
+  "id": "melhores_momentos",
+  "name": "Melhores Momentos",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Ativa-se automaticamente para conceder benefícios necessários à sobrevivência do usuário ou de uma criatura domada próxima. (Requer Habilidade Contrato de Sangue).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

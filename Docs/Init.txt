@@ -1,0 +1,64 @@
+================================================================================
+          ANÁLISE E INICIALIZAÇÃO — PROJETO VTP COALIZÃO
+================================================================================
+
+1. VISÃO GERAL E COMO INICIAR O PROJETO
+--------------------------------------------------------------------------------
+O VTP Coalizão é um Virtual Tabletop completo criado com React/Vite no frontend e Node.js/Express/WebSocket no backend.
+
+Como Mestre (Host) local:
+- Você pode utilizar o script `IniciarDev.bat /s` na raiz do projeto. Ele fará a verificação, instalará as dependências caso necessário e iniciará o Frontend (Vite) isolado e o Servidor Local (Node.js na porta 3001).
+- Acesse `http://localhost:5173` para abrir a interface do Mestre.
+
+Como Jogador (Acesso Local/VPN):
+- O Mestre fornece o seu IP Local IPv4 (ex: 192.168.0.15) e o Código da Sessão.
+- Os jogadores acessam pelo navegador: `http://192.168.0.15:3001/#/player`.
+- Se os jogadores estiverem fora da rede do Mestre, será necessário usar uma VPN (ZeroTier, Hamachi, Radmin VPN) para simular a rede local, e então os jogadores digitam o IP fornecido pela VPN.
+
+2. O QUE DEVE SER UPADO NO GITHUB
+--------------------------------------------------------------------------------
+Você deve manter o repositório leve e organizado, enviando Apenas os Arquivos de Código Fonte.
+O arquivo `.gitignore` já deve configurar grande parte disso.
+
+Arquivos OBRIGATÓRIOS no Git (CÓDIGO FONTE):
+- `src/` (Todo o frontend React e dados JSON base)
+- `server/` (Servidor Node local host)
+- `relay/` (Servidor online stateless)
+- `public/` (Arquivos estáticos e Service Worker)
+- `Docs/` (Arquivos de planejamento e texto, incluindo este)
+- Arquivos de configuração: `package.json`, `vite.config.js`, `eslint.config.js`, `.gitignore`, `*.bat`.
+
+NÃO faça upload (Adicione ao .gitignore se não estiver):
+- `node_modules/` (Dependências pesadas)
+- `dist/` (Arquivos buildados, a menos que esteja no branch `gh-pages` para deploy)
+- `.env` ou chaves de API secretas (se existir no relay, por exemplo)
+- Pastas de saves temporários de usuários ou bancos de dados criados localmente.
+
+3. O QUE AINDA DEVE SER FEITO PARA SER 100% FUNCIONAL
+--------------------------------------------------------------------------------
+Embora as Fases 1 a 9 no Plan.txt estejam dadas como concluídas, na prática para uma sessão flúida ainda é necessário garantir que:
+1. Sincronização de Imagens/Tokens: Como você usa WebSockets locais, se o Mestre fizer upload de uma imagem do PC dele para o mapa ou entidade (salvo no IndexedDB), os computadores dos jogadores não terão essa imagem magicamente. É necessário expor uma rota estática no Express (`server/index.js`) ou converter imagens para Base64 leve para trafegar via WebSocket.
+2. Persistência de estado de jogadores no Relay: Se utilizar o Relay online, quando o mestre piscar a internet, o estado temporário pode se perder se o relay for 100% stateless. É preciso garantir a reconexão automática restaurando o estado do mapa para os jogadores.
+3. Teste Limite de JSON/Dados: IndexedDB funciona maravilhosamente, mas à medida que o mundo cresce, importar e exportar JSONs gigantes engasgam as abas do navegador. 
+4. Validações de Desconexão: O que acontece com a ficha do jogador se ele for desconectado durante a distribuição de atributos ou se ele tentar usar uma habilidade sem conexão?
+
+4. MELHORIAS NO PROCESSO DE INICIAR O SERVER E ACESSO DOS PLAYERS
+--------------------------------------------------------------------------------
+Atualmente, o processo exige que o jogador saiba o IP do mestre, coloque a porta :3001 e acesse a rede via LAN ou VPN como ZeroTier/Hamachi. Isso é um pouco intimidador para RPGistas sem conhecimento de redes.
+
+Melhorias Sugeridas:
+A. TÚNEL PÚBLICO INTEGRADO (Fácil):
+- Integrar tecnologias como `ngrok` ou `localtunnel` diretamente no `server/index.js`.
+- O servidor Node, ao ser iniciado pelo Mestre, gera automaticamente um túnel temporário (ex: `https://sessao-coalizao-mestre.loca.lt`).
+- O Mestre simplesmente envia este link para os jogadores no Discord. Nada de IPs, portas ou Hamachi.
+
+B. EMPACOTAMENTO VIA ELECTRON / TAURI (Médio):
+- O Mestre não deve precisar rodar comandos como `IniciarDev.bat` ou usar Prompt de Comando. 
+- Empacotando o projeto (`React` + `Express` Node juntos no Electron), basta abrir um `.exe`. A aplicação abre visualmente, o servidor sobe escondido em background e na tela já mostra o link de acesso.
+
+C. INTEGRAÇÃO WEBRTC (Avançado):
+- Remover a necessidade do Node/Express como retransmissor e focar em WebRTC.
+- O jogo conectaria jogadores via uma API de sinalização (Relay básico) e depois eles compartilhariam dados P2P (Peer-to-Peer), o que reduz as chances de lag do server da rede e resolve a maior parte dos problemas de NAT e Firewall que bloqueiam a visibilidade entre os computadores sem Hamachi.
+
+CONCLUSÃO:
+O projeto está muito bem alicerçado. A principal barreira entre um projeto "funcional tech" e um "produto polido de RPG" será facilitar a conexão de rede para leigos (Túnel Público em vez de IP/VPN) e garantir que as imagens/arquivos binários transferidos pelo Host apareçam com eficiência na tela dos usuários. 

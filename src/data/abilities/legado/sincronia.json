@@ -1,0 +1,14 @@
+{
+  "id": "sincronia",
+  "name": "Sincronia",
+  "category": "LEGADO",
+  "class": "Sincronizador",
+  "description": "O usuário é capaz de compartilhar mutuamente atributos e habilidades com a criatura domada em momentos críticos, o que também proporciona uma comunicação mais eficaz. Além disso, permite que o usuário transporte sua consciência para o corpo da criatura domada se o teste (1d20 + CRM > 14) for bem sucedido.",
+  "classLink": "Sincronizador",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

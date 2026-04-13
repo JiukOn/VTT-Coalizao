@@ -1,0 +1,14 @@
+{
+  "id": "sorte",
+  "name": "Sorte",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "O usuário pode utilizar um dado extra sem consequências significativas por dados ruins (exceto em caso de desastre). No entanto, nunca recebe o destino perfeito ao utilizar o dado extra.",
+  "classLink": null,
+  "cost": null,
+  "test": null,
+  "duration": "Permanente",
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

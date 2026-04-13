@@ -1,0 +1,23 @@
+{
+  "id": "chá_de_bati_consumível",
+  "name": "Chá de Bati (Consumível)",
+  "category": "Consumíveis",
+  "description": "Um chá simples que, se o usuário obtiver sucesso em um teste de 1d20 > 10, restaura 1d4 - 1 de VIT.",
+  "type": "consumivel",
+  "subtype": "consumivel",
+  "rarity": "comum",
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [
+    "Cura"
+  ],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": "leve",
+  "price": 0,
+  "isCustom": false
+}

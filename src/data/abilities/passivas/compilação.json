@@ -1,0 +1,14 @@
+{
+  "id": "compilação",
+  "name": "Compilação",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "O usuário pode compreender acontecimentos e fatos com maior facilidade, ganhando +1 no dado para aprender algo.",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

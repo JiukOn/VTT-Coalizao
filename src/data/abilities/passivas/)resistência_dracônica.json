@@ -1,0 +1,14 @@
+{
+  "id": ")resistência_dracônica",
+  "name": ")Resistência Dracônica",
+  "category": "PASSIVAS",
+  "class": "Evo Resistencia Elemental (Fogo, Raio ou Gelo",
+  "description": "Concede Resistência Elemental a Fogo, Raio e Gelo. Caso o usuário entre em estado de Quase Morte, ele ganha 1 dado bônus nos testes. (Requer Linhagem Dracônica).",
+  "classLink": "Evo Resistencia Elemental (Fogo, Raio ou Gelo",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

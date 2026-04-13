@@ -1,0 +1,14 @@
+{
+  "id": "liderar",
+  "name": "Liderar",
+  "category": "ATIVAS",
+  "class": "Geral",
+  "description": "O usuário é capaz de aumentar o poder de seus 'soldados': todos os atributos deles aumentam em +1 por 2 turnos. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16). (Requer lealdade de 10 seres).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

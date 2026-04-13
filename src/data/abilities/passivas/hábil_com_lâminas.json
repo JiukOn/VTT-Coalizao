@@ -1,0 +1,14 @@
+{
+  "id": "hábil_com_lâminas",
+  "name": "Hábil com Lâminas",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Concede +4 no dado em testes de precisão com lâminas.",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

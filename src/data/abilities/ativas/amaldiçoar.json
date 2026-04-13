@@ -1,0 +1,14 @@
+{
+  "id": "amaldiçoar",
+  "name": "Amaldiçoar",
+  "category": "ATIVAS",
+  "class": "Geral",
+  "description": "O usuário é capaz de aplicar uma maldição específica em um alvo. Recarrega em 2 turnos. (Requer ENR 8).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

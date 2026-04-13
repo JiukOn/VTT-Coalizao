@@ -1,0 +1,14 @@
+{
+  "id": "aceleração_divina",
+  "name": "Aceleração Divina",
+  "category": "MITO",
+  "class": "Botas de Hermes",
+  "description": "O usuário ganha um dado extra para ações de desvio. (Requer DEX 10 e ENR 10).",
+  "classLink": "Botas de Hermes",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

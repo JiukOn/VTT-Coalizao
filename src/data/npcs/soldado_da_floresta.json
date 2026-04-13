@@ -1,0 +1,9 @@
+{
+  "id": "soldado_da_floresta",
+  "name": "Soldado da Floresta",
+  "location": "Capital dos Elfos",
+  "description": "",
+  "type": "npc",
+  "role": "",
+  "isCustom": false
+}

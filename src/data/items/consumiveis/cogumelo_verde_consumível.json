@@ -1,0 +1,21 @@
+{
+  "id": "cogumelo_verde_consumível",
+  "name": "Cogumelo Verde (Consumível)",
+  "category": "Consumíveis",
+  "description": "Um cogumelo que adormece qualquer criatura de nível 1.",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

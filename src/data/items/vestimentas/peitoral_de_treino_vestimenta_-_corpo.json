@@ -1,0 +1,21 @@
+{
+  "id": "peitoral_de_treino_vestimenta_-_corpo",
+  "name": "Peitoral de Treino (Vestimenta - Corpo)",
+  "category": "Corpo",
+  "description": "Peça principal da armadura, focada em conforto. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. (4 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

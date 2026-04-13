@@ -1,0 +1,21 @@
+{
+  "id": "veneno_pedroso_veneno",
+  "name": "Veneno Pedroso (Veneno)",
+  "category": "Venenos",
+  "description": "Um veneno que, quando aplicado, causa o efeito 'Travado' ao alvo.",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

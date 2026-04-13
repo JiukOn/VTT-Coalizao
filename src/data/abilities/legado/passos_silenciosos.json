@@ -1,0 +1,14 @@
+{
+  "id": "passos_silenciosos",
+  "name": "Passos Silenciosos",
+  "category": "LEGADO",
+  "class": "Sombra",
+  "description": "Aumenta +2 DEX, diminui em 2 nos dados de testes de percepção inimigos, e dura 2 turnos. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16).",
+  "classLink": "Sombra",
+  "cost": null,
+  "test": "1d20 > 16 (reativação)",
+  "duration": "2 turnos",
+  "cooldown": "Teste",
+  "requirements": "",
+  "isCustom": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "general_milianu",
+  "name": "General Milianu",
+  "location": "La Montana",
+  "description": "",
+  "type": "npc",
+  "role": "General",
+  "isCustom": false
+}

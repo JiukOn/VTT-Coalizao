@@ -1,0 +1,21 @@
+{
+  "id": "foice_de_jardinagem_arma",
+  "name": "Foice de Jardinagem (Arma)",
+  "category": "Armas de Proximidade",
+  "description": "Uma lâmina simples e leve, ideal para tarefas do campo, mas de pouca resistência em combate. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (8 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

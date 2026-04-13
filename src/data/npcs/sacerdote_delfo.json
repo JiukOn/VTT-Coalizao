@@ -1,0 +1,9 @@
+{
+  "id": "sacerdote_delfo",
+  "name": "Sacerdote Delfo",
+  "location": "Cidade dos Porcos",
+  "description": "",
+  "type": "npc",
+  "role": "Sacerdote",
+  "isCustom": false
+}

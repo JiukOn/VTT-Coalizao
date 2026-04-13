@@ -1,0 +1,21 @@
+{
+  "id": "bastão_de_madeira_arma",
+  "name": "Bastão de Madeira (Arma)",
+  "category": "Armas de Proximidade",
+  "description": "Um item fraco, leve e de baixa durabilidade que fornece +1 PRE. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (8 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

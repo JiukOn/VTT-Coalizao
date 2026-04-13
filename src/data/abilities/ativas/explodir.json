@@ -1,0 +1,14 @@
+{
+  "id": "explodir",
+  "name": "Explodir",
+  "category": "ATIVAS",
+  "class": "Geral",
+  "description": "Causa 2xVIT de dano em área. No entanto, a VIT do usuário é reduzida a 0, resultando em entrada instantânea no estado de quase morte.",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

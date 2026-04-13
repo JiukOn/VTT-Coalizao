@@ -1,0 +1,9 @@
+{
+  "id": "baronesa_riz_unsato",
+  "name": "Baronesa Riz Unsato",
+  "location": "Vilarejo Hamelin",
+  "description": "",
+  "type": "npc",
+  "role": "Baronesa",
+  "isCustom": false
+}

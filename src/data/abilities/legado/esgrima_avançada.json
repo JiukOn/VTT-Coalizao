@@ -1,0 +1,14 @@
+{
+  "id": "esgrima_avançada",
+  "name": "Esgrima Avançada",
+  "category": "LEGADO",
+  "class": "Espadachim",
+  "description": "Ao utilizar lâminas, o usuário causa +1 de dano por 3 turnos. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16).",
+  "classLink": "Espadachim",
+  "cost": null,
+  "test": "1d20 > 16 (reativação)",
+  "duration": "3 turnos",
+  "cooldown": "Teste",
+  "requirements": "",
+  "isCustom": false
+}

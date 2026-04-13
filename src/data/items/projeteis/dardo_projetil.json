@@ -1,0 +1,21 @@
+{
+  "id": "dardo_projetil",
+  "name": "Dardo (Projetil)",
+  "category": "Projéteis",
+  "description": "Um projétil pequeno e de baixa durabilidade. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-o mais suscetível a quebrar sob pressão.",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

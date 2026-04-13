@@ -1,0 +1,9 @@
+{
+  "id": "victorius_magna",
+  "name": "Victorius Magna",
+  "location": "Cidade Caída",
+  "description": "Antigo rei de Magni(Atual cidade caída).",
+  "type": "npc",
+  "role": "Rei (antigo)",
+  "isCustom": false
+}

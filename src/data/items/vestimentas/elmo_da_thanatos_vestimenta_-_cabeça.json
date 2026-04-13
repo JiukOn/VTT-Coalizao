@@ -1,0 +1,21 @@
+{
+  "id": "elmo_da_thanatos_vestimenta_-_cabeça",
+  "name": "Elmo da Thanatos (Vestimenta - Cabeça)",
+  "category": "Cabeça",
+  "description": "Elmo de couro de quimera, parte do conjunto Thanatos, com design sutil. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

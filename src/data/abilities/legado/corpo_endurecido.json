@@ -1,0 +1,14 @@
+{
+  "id": "corpo_endurecido",
+  "name": "Corpo Endurecido",
+  "category": "LEGADO",
+  "class": "Defensor",
+  "description": "O usuário endurece seu corpo, ganhando +2 FRC por 3 turnos. Exige 1d20 > 16 para cada tentativa de uso apos a finalização dos primeiros efeitos na situação atual.",
+  "classLink": "Defensor",
+  "cost": null,
+  "test": "1d20 > 16 (reativação)",
+  "duration": "3 turnos",
+  "cooldown": "Teste após efeito",
+  "requirements": "",
+  "isCustom": false
+}

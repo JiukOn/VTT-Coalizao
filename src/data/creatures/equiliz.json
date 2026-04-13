@@ -1,0 +1,11 @@
+{
+  "id": "equiliz",
+  "name": "Equiliz",
+  "description": "O Equiliz é uma especie de anfibio, é considerado um símbolo de nobreza e de força. É usado como montaria aquatica por sua capacidade de se movimentar sobre ela, afinal suas patas tem caracteristicas hidrofobicas e de alta flutuabilidade.",
+  "type": "aquatico",
+  "size": "medio",
+  "diet": "onivoro",
+  "element": "agua",
+  "imagePath": "Equiliz.png",
+  "isCustom": false
+}

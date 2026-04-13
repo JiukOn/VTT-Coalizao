@@ -1,0 +1,14 @@
+{
+  "id": "linguagem_reptiliana",
+  "name": "Linguagem Reptiliana",
+  "category": "LEGADO",
+  "class": "Reptiliano",
+  "description": "O usuário é capaz de se comunicar com répteis.",
+  "classLink": "Reptiliano",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

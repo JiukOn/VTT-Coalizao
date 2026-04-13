@@ -1,0 +1,14 @@
+{
+  "id": "arco_de_energia",
+  "name": "Arco de Energia",
+  "category": "ATIVAS",
+  "class": "Geral",
+  "description": "O usuário molda sua energia no formato de um arco como um item temporário. Gasta 1 ENR temporariamente. Enquanto equipado, o Arco de Energia fornece +3 PRE. O arco se dissipa em 3 turnos, Recarrega em 1 turno.",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

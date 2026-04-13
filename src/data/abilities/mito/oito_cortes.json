@@ -1,0 +1,14 @@
+{
+  "id": "oito_cortes",
+  "name": "Oito Cortes",
+  "category": "MITO",
+  "class": "Kusanagi-no-Tsurugi",
+  "description": "Se o oponente tiver mais FRC que o usuário, este recebe +5 FRC. Se o oponente for uma serpente ou tiver mais de uma cabeça, o usuário recebe +8 DEX. Efeitos validos ate o fim da batalha. (Requer FRC 4 e Esgrima Avançada).",
+  "classLink": "Kusanagi-no-Tsurugi",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

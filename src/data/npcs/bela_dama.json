@@ -1,0 +1,9 @@
+{
+  "id": "bela_dama",
+  "name": "Bela dama",
+  "location": "Torre Azul",
+  "description": "",
+  "type": "npc",
+  "role": "",
+  "isCustom": false
+}

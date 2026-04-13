@@ -1,0 +1,21 @@
+{
+  "id": "alma_densa_do_potencial_consumível",
+  "name": "Alma Densa do Potencial (Consumível)",
+  "category": "Consumíveis",
+  "description": "Uma alma densa que aumenta 0.5 do multiplicador em um atributo escolhido.",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "previsão",
+  "name": "Previsão",
+  "category": "MITO",
+  "class": "Baralho de Zoroastro",
+  "description": "Permite ao usuário ver 30 segundos do futuro fora de batalha. Concede 1 dado bônus para ações rápidas. (Requer ENR 5 e RES 7).",
+  "classLink": "Baralho de Zoroastro",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

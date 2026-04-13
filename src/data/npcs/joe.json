@@ -1,0 +1,9 @@
+{
+  "id": "joe",
+  "name": "Joe",
+  "location": "Cidade dos Porcos",
+  "description": "",
+  "type": "npc",
+  "role": "",
+  "isCustom": false
+}

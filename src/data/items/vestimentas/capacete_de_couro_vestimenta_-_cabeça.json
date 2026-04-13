@@ -1,0 +1,21 @@
+{
+  "id": "capacete_de_couro_vestimenta_-_cabeça",
+  "name": "Capacete de Couro (Vestimenta - Cabeça)",
+  "category": "Cabeça",
+  "description": "Capacete de couro simples, leve e flexível. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (3 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

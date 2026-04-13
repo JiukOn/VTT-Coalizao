@@ -1,0 +1,21 @@
+{
+  "id": "flechas_pesadas_projetil",
+  "name": "Flechas Pesadas (Projetil)",
+  "category": "Projéteis",
+  "description": "Flechas que causam maior impacto. Causam 1d4 + 4 de dano.",
+  "type": "projetil",
+  "subtype": "projetil",
+  "rarity": "comum",
+  "damage": "1d4 + 4",
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": "pesado",
+  "price": 0,
+  "isCustom": false
+}

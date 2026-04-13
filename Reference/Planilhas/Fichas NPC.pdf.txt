@@ -1,0 +1,369 @@
+Nome ?
+Item de Cabeça N/A
+Idade ? Nivel 1
+Item de Corpo N/A
+Dinheiro 0 ₾ XP 0/20
+Espécie ? Status Saudável Item de Mão N/A
+Trabalho ?, ?, ?
+Item de Perna N/A
+Característica ?
+Item de Pé N/A
+História do Personagem 
+?
+? Inventário?
+Caminho de Classe ?
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 1 0 0 1 0,3 Legado
+DEX 1 0 0 1 0,3
+CRM 1 0 0 1 0,3 Efeito Positivo
+FRC 1 0 0 1 0,3
+INT 1 0 0 1 0,3 Efeito Negativo
+RES 1 0 0 1 0,3
+PRE 1 0 0 1 0,3
+ENR 1 0 0 1 0,3
+Pontos de Turno 19 0 0
+Valor BaseValor-Valor Final
+
+Nome Lorde dos Porcos, Roan Unsato Brinco de Mitril +4 ENRIdade 32 Nivel 9 Jaqueta de Couro Dracônico+4 FRC,  Resistência á fogoDinheiro 20.000.000 ₾ XP 26/180
+Espécie Humano Status Saudável Luvas de Couro de Ganlan+1 FRC, +1 ENR
+Trabalho Líder da Cidade dos Porcos,  Alta Santidade Calças Reforçadas com Ossos de Rei Undino- 3 de Dano nas PernasCaracterística Máscara Social +2 CRM Botas de Hermes (Mito)+4 DEX, +4 ENR
+História do Personagem Nasceu na 5ª Geração Unsato, Nomeado Lorde aos 22 Anos por sua "Divindade"É secretamente um tirano que implantou estigmas de alma em seu povo. InventárioEstudou esgrima com a "General de Kyoto". Kusanagi-no-Tsurugi (Mito)Cantil de Água (Especial)Livro H (Chamas Dracônicas)Carne Assada de TucTuc (7)Caminho de Classe Samurai Espiritual
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL HabilidadesVIT 17 0 0 17 4,3 Corte de AlmaDEX 9 4 0 13 3,3 Esgrima AvançadaCRM 6 2 0 8 2,0 Efeito PositivoFacilidades na Cidade dos Porcos LiderarFRC 12 5 0 17 4,3 Aceleração DivinaINT 8 0 0 8 2,0 Efeito NegativoInimizade dos "Porcos" Oito CortesRES 6 0 0 6 1,5PRE 4 0 0 4 1,0ENR 13 9 0 22 5,5
+Pontos de Turno 40 0 0Valor Base Valor-Valor Final
+
+Nome Vice-Lorde dos Porcos, Lina Unsato Enfeite de Palha (Sentimental)N/AIdade 13 Nivel 3 Vestido de Couro de Ganlan+1 ENR
+Dinheiro 30.000 ₾ XP 7/60
+Espécie Humano Status Saudável Fita de Seda N/A
+Trabalho Alta Santidade Vestido de Couro de Ganlan+1 ENRCaracterística Bondade +4 CRM Sapatilha de Pavlova (Mito)+2 Dex
+História do Personagem É intimidada pelo seu irmão Carter desde que era pequena.Não concorda com as ações da fámilia Unsato. Se sente sozinha. InventárioRecebeu, contra sua vontade, diversos elixires e tônicos. Espelho de MãoGlândula Dracônica (2)
+Caminho de Classe Evocadora
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 6 0 0 6 1,5 Evocar EnergiaDEX 4 2 0 6 1,5 Grand PasCRM 4 4 0 8 2,0 Efeito PositivoRecebe admiração dos camponeses
+FRC 1 0 0 1 0,3INT 6 0 0 6 1,5 Efeito NegativoRecebe ódio dos fiéis da igreja nobre
+RES 1 0 0 1 0,3PRE 1 0 0 1 0,3ENR 10 2 0 12 3,0
+Pontos de Turno30 0 0Valor BaseValor-Valor Final
+
+Nome Guarda da Cidade dos Porcos Capacete de Couro-1 de danoIdade 21 - 35 Nivel 3 Peitoral de Ferro  +1 FRC
+Dinheiro 0 ₾ XP 0/60
+Espécie Humano Status Saudável Espada de Ferro +1 FRC +1 PRE
+Trabalho Guarda Calça de Couro -1 de DanoCaracterística Obediente  + RES Sapato de Couro -1 de Dano
+História do Personagem ?? Inventário?
+Caminho de Classe Capanga
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 8 0 0 8 2,0 Juntos Somos Mais ( FRC )
+DEX 4 0 0 4 1,0
+CRM 1 0 0 1 0,3 Efeito PositivoPode treinar com a thanatos.
+FRC 4 4 0 8 2,0
+INT 1 0 0 1 0,3 Efeito NegativoA thanatos irá te atacar.
+RES 2 1 0 3 0,8
+PRE 7 1 0 8 2,0ENR 1 0 0 1 0,3
+Pontos de Turno19 0 0Valor BaseValor-Valor Final
+
+Nome Joe Chapéu de Couro-1 de Dano na CabeçaIdade 12 Nivel 1 Tunica N/ADinheiro 17 ₾ XP 1/20
+Espécie Humano Status Saudável Saco de Pano (1) N/A
+Trabalho Recolhedor de Bati Calça N/ACaracterística Humorista +1 CRM Sandalia N/A
+História do Personagem Filho de Camponeses, Joe trabalha desde os 7 anos.Secretamente odeia os Unsato. Sua famiía teve dar a casa para o vice-lorde Carte. InventárioÉ amigo da vice-lorde Lina, conheceu ela quando a viu sendo intimidada pelo irmão.Semente de Bati (4)Copo de Argila
+Caminho de Classe Bloqueado
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 2 0 0 2 0,5 BloqueadoDEX 4 0 0 4 1,0CRM 5 1 0 6 1,5 Efeito PositivoRecebe admiração da Vice-Lorde LinaFRC 1 0 0 1 0,3INT 3 0 0 3 0,8 Efeito NegativoÉ incapaz de comprar Bati no mercadoRES 1 0 0 1 0,3PRE 1 0 0 1 0,3ENR 0 0 0 0 0,0
+Pontos de Turno18 0 0Valor BaseValor-Valor Final
+
+Nome Sacerdote Delfos Boina N/AIdade 61 Nivel 2 Túnica N/ADinheiro 120.500 ₾ XP 05/40
+Espécie Humano Status Saudável Livro Satoré (Especial)+1 CRM
+Trabalho Sacerdote da Igreja Nobre, Sequestrador Calças de Couro de Equiliz-2 de dano nas PernasCaracterística Religioso -1 INT Sandalia N/A
+História do Personagem Aceita suborno e vende Indulgencias.Está relacionado ao alto escalão Unsato. Sequestra cidadãos para os Unsato. InventárioMente sobre a "Divindade" dos Unsato. Cogumelo Verde (8)Adaga de Cobre
+Caminho de Classe Sacerdote
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 7 0 0 7 1,8 PregarDEX 1 0 0 1 0,3 AtordoarCRM 7 1 0 8 2,0 Efeito PositivoFacilidade em se informar sobre a IgrejaFRC 4 0 0 4 1,0INT 3 0 1 2 0,5 Efeito NegativoÓdio vindo dos fieis da Igreja NobreRES 6 0 0 6 1,5PRE 1 0 0 1 0,3ENR 5 0 0 5 1,3
+Pontos de Turno23 0 0Valor BaseValor-Valor Final
+
+Nome Amélia Pano N/AIdade 67 Nivel 1 Avental N/A
+Dinheiro 8.306 ₾ XP 0/20
+Espécie Humano Status Saudável Colher de Madeira N/A
+Trabalho Dona de Restaurante Saia de Pano N/ACaracterística Gentil +2 CRM Sapato de Couro de Lobo- 1 de dano no pé
+História do Personagem Filha de um dona de Restaurante.Nasceu no Vilarejo Hamelin. InventárioSecretamente é uma Revolucionária. Carne de Undino (4)Geléia de Bati
+Caminho de Classe Bloqueado
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 6 0 0 6 1,5 BloqueadoDEX 2 0 0 2 0,5CRM 6 2 0 8 2,0 Efeito PositivoDesconto no Restaurante
+FRC 4 0 0 4 1,0INT 3 0 0 3 0,8 Efeito NegativoAumento dos preços de refeições
+RES 4 0 0 4 1,0PRE 2 0 0 2 0,5ENR 0 0 0 0 0,0
+Pontos de Turno18 0 0Valor BaseValor-Valor Final
+
+Nome Anilso Turbante de Pano N/AIdade 37 Nivel 3 Túnica N/ADinheiro 4.309 ₾ XP 0/60
+Espécie Humano Status Saudável Jarra de Metal N/A
+Trabalho Vendedor, Fabricante Consumíveis Calça de Pano N/ACaracterística Direto -1 CRM Sandalia de Fibra N/A
+História do Personagem Nasceu e Cresceu como um criador de frango-cabeça-de-fogo.Juntou dinheiro até os seus 25 anos, com 26 anos se descobriu jogador, alquimista. InventárioAbriu sua loja de consumíveis. Criou a pilula "Cabeça Ardente". Pilula Cabeça Ardente (12)Registro de MercadorVerruga Pedrosa (2)Asa de Undino (3)Poção de Gigantificação E ( 1 )Caminho de Classe Alquimista
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL HabilidadesVIT 5 0 0 5 1,3 TrocaDEX 4 0 0 4 1,0 Resistência contra DoençasCRM 4 0 1 3 0,8 Efeito PositivoDesconto na Loja de Consumiveis.FRC 1 0 0 1 0,3INT 5 0 0 5 1,3 Efeito NegativoElevação do Preço dos Recursos.RES 1 0 0 1 0,3PRE 5 0 0 5 1,3ENR 2 0 0 2 0,5
+Pontos de Turno 20 0 0Valor Base Valor-Valor Final
+
+Nome Walmiro N/A N/AIdade 67 Nivel 1 Camisa de Seda N/ADinheiro 7.509 ₾ XP 0/20
+Espécie Humano Status Saudável Bracelete de Fibra N/A
+Trabalho Hoteleiro Calça de Pano N/ACaracterística Orgulhoso +1 PRE Sandália de Fibra N/A
+História do Personagem Abriu seu Hotel quando tinha 32 anos.Se consolidou como o único hoteleiro da cidade dos porcos próximo ao castelo. InventárioTem uma paixão secreta com a Dona Amélia. Registro do HotelBalestra LeveEsferas de Metal (40)
+Caminho de Classe Bloqueado
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 3 0 0 3 0,8 BloqueadoDEX 4 0 0 4 1,0CRM 3 0 0 3 0,8 Efeito PositivoEstadia VIP no Hotel.FRC 2 0 0 2 0,5INT 2 0 0 2 0,5 Efeito NegativoImpossibilidade de Estadia no Hotel.RES 2 0 0 2 0,5PRE 1 1 0 2 0,5ENR 0 0 0 0 0,0
+Pontos de Turno18 0 0Valor BaseValor-Valor Final
+
+Nome Guarda dos Porcos, Uros Capuz N/AIdade 48 Nivel 4 Colete de Couro de Lobo-1 de Dano no Corpo
+Dinheiro 8.900 ₾ XP 12/80
+Espécie Humano Status Arritmia N/A N/A
+Trabalho Guarda, Soldado Thanatos Calça de Couro de Lobo-1 de Dano no CorpoCaracterística Cansado -1 DEX Sapato N/A
+História do Personagem Há 7 anos atrás ele sofreu um ataque de um "Imperador Undino".O estresse do trabalho lhe rendeu o status "Arritmia". InventárioNão gosta do Vice-Lorde Carter. Adora Batis. Bati (1) Mapa da Cidade
+Caminho de Classe Lutador
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 6 0 0 6 1,5 Mãos PesadasDEX 5 0 1 4 1,0 Arte de Mãos LivresCRM 4 0 0 4 1,0 Efeito PositivoUros pode te Ensinar a lutar
+FRC 9 0 0 9 2,3INT 2 0 0 2 0,5 Efeito NegativoSerá barrado na entrada da cidade
+RES 3 0 0 3 0,8PRE 1 0 0 1 0,3ENR 2 0 0 2 0,5
+Pontos de Turno20 0 0Valor BaseValor-Valor Final
+
+Nome Histund, O Guarda-Costas Chapéu de Couro-1 dano na cabeçaIdade 29 Nivel 2 Colete de Couro de Lobo-1 dano no bustoDinheiro 870 ₾ XP 09/40
+Espécie Humano Status Saudável Espada de Ferro +1 FRC
+Trabalho Guarda da Feira Caçlça de Couro-1 dano nas pernasCaracterística Leal +1 RES Sapato de Couro-1 dano no pé
+História do Personagem Desde que era criaça ele sonhava em se tornar guarda da cidade dos porcos.Ele acredita nas palavras do Lorde, acredita que ele sera o seu salvador. InventárioApesar de nunca ter efetuado uma prisão, ele já entrou em diversas brigas na feira.Bati (3)
+Caminho de Classe Bloqueado
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 3 0 1 2 0,5 BloqueadoDEX 2 0 0 2 0,5CRM 2 0 0 2 0,5 Efeito PositivoInformações sobre a cidade.FRC 5 1 0 6 1,5INT 3 0 0 3 0,8 Efeito NegativoOs guardas prestarão atenção em você.RES 3 1 0 4 1,0PRE 3 0 0 3 0,8ENR 0 0 0 0 0,0
+Pontos de Turno18 0 0Valor BaseValor-Valor Final
+
+Nome Sina, a Cavaleira Tiara de Renda N/AIdade 27 Nivel 4 Peitoral de Ferro-2 de Dano no Torso
+Dinheiro 23.000 ₾ XP 34/80
+Espécie Humano Status Saudável Braçadeira de Ferro-2 de Dano nos Braços
+Trabalho Cavaleira Placa de Ferro-2 de Dano nas PernasCaracterística Nobre +1 FRC Protetor de Ferro-2 de Dano nos Pés
+História do Personagem Serve aos Unsato, mas não os vê como deuses. É contra o Vice-Lorde Carte.Nasceu no antigo reino de Magni. InventárioAprendeu a cavalgar com seu pai. Espada de Ferro
+Caminho de Classe Bloqueado
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 4 0 0 4 1,0 BloqueadoDEX 3 0 0 3 0,8 MontariaCRM 3 0 0 3 0,8 Efeito PositivoPode aprender "Montaria".
+FRC 3 1 0 4 1,0INT 3 0 0 3 0,8 Efeito NegativoRecebe voz de Prisão.
+RES 3 0 0 3 0,8PRE 3 0 0 3 0,8ENR 0 0 0 0 0,0
+Pontos de Turno18 0 0Valor Base Valor-Valor Final
+
+Nome Granada Véu de Renda N/AIdade 37 Nivel 3 Vestido de PanoN/ADinheiro 7.300 ₾ XP 47/60
+Espécie Humano Status Depressão Espada de TreinoN/A
+Trabalho Agricultora, Criadora de Porcos, Guarda das Plantações Saia de Pano N/ACaracterística Descrente +1 PRE Sapato de Fibra N/A
+História do Personagem Líder dos Revolucionários da "Cidade dos Porcos".Está em constante contato com a Reserva Amortecida. InventárioCria Porcos como fonte de Renda.
+Caminho de Classe Bloqueado
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL HabilidadesVIT 3 0 0 3 0,8 BloqueadoDEX 4 0 0 4 1,0CRM 3 0 0 3 0,8 Efeito PositivoDesconto na carne de Porco, Contato com a Reserva Amortecida.FRC 2 0 0 2 0,5INT 3 0 0 3 0,8 Efeito NegativoÓdio dos revolucionários.RES 1 0 0 1 0,3PRE 1 1 0 2 0,5ENR 0 0 0 0 0,0
+Pontos de Turno18 0 0Valor BaseValor-Valor Final
+
+Nome T-02 N/A N/AIdade 26 Nivel 6 Marca de Transmutação+4 ENR
+Dinheiro 0 ₾ XP 0/120
+Espécie Humano/Gigante/IndefinidoStatus Transmutado N/A N/A
+Trabalho Cobaia Calça de Pano N/ACaracterística Criatura + 3 FRC N/A N/A
+História do Personagem Era um Campônes do Reino Magni.Foi transmutado predominantemente com sangue do "Ceifeiro". InventárioÉ incapaz de pensar racionalmente quando em modo "Beserk".
+Caminho de Classe Não-Classificado
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 18 0 0 18 4,5 BeserkDEX 8 0 0 8 2,0 Chamas RoxasCRM 4 0 0 4 1,0 Efeito PositivoSalvação dos Transmutos. AtordoarFRC 7 3 0 10 2,5 AcelerarINT 7 0 0 7 1,8 Efeito NegativoExtermínio da Humanidade. Olfato SanguinarioRES 2 0 0 2 0,5 Resistência Elemental (Tempo)PRE 13 0 0 13 3,3ENR 10 4 0 14 3,5
+Pontos de Turno32 0 0Valor BaseValor-Valor Final
+
+Nome T-17 N/A N/AIdade 25 Nivel 3 Marca de Transmutação+4 ENR
+Dinheiro 0 ₾ XP 0/60
+Espécie Huamano/Demônio/IndefinidaStatus Transmutado N/A N/A
+Trabalho Cobaia N/A N/ACaracterística Criatura + 3 FRC N/A N/A
+História do Personagem Foi uma escrava de Carte Unsato. Conheceu Kalina. Supostamente foi morta por eresia.Foi transmutada com partes do corpo de diversas criaturas. InventárioNão perdeu suas memórias. Quer matar Carte Unsato.
+Caminho de Classe Não-Classificado
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 6 0 0 6 1,5 Força de BicoDEX 5 0 0 5 1,3 Costume de PresaCRM 5 0 0 5 1,3 Efeito PositivoSalvação dos Transmutos. Resistência Elemental (Madeira)FRC 3 3 0 6 1,5 Envenenamento (Ricino)INT 6 0 0 6 1,5 Efeito NegativoExtermínio da Humanidade.
+RES 4 0 0 4 1,0PRE 1 0 0 1 0,3ENR 4 4 0 8 2,0
+Pontos de Turno26 0 0Valor BaseValor-Valor Final
+
+Nome T-23 N/A N/AIdade 3 Nivel 3 Marca de Transmutação+4 ENR
+Dinheiro 0 ₾ XP 0/60
+Espécie Huamano/Indefinida Status Transmutado N/A N/A
+Trabalho Cobaia N/A N/ACaracterística Criatura + 3 FRC N/A N/A
+História do Personagem Não se lembra do seu passado.Foi Transmutado predominantemente com um Javali. InventárioTem grande falta de equilíbrio.
+Caminho de Classe Não-Classificado
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 5 0 0 5 1,3 Olfato SanguinarioDEX 3 0 0 3 0,8 Costume de PresaCRM 5 0 0 5 1,3 Efeito PositivoSalvação dos Transmutos. Resistência Contra DoençasFRC 5 3 0 8 2,0 MordidaINT 3 0 0 3 0,8 Efeito NegativoExtermínio da Humanidade.
+RES 3 0 0 3 0,8PRE 1 0 0 1 0,3ENR 3 4 0 7 1,8
+Pontos de Turno25 0 0Valor BaseValor-Valor Final
+
+Nome Geórgius Brinco De Ouro N/AIdade 50 Nivel 8 Pochete +1 de ArmazenmentoDinheiro 40.450 ₾ XP 6/160
+Espécie Rei Tinta Status Tinta N/A N/A
+Trabalho Treinador Físico, Fisiculturista, Mercenário Aposentado Calça de Couro de GanLan-2 de dano nas Pernas, +2 FRCCaracterística Força Absoluta +3 FRC Sapato de Couro de Lobo-1 de dano nos Pés
+História do Personagem Foi membro do esquadrão de mercenários Thanatos. Seu filho foi Sequestrado.Sua mãe era um gigante e foi caçada na "Guerra do Extermínio". InventárioIngeriu o Coracao de tinta para se livrar do controle Unsato.
+Caminho de Classe Mercenário
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL HabilidadesVIT 14 0 0 14 3,5 ContratoDEX 3 0 0 3 0,8 AcelerarCRM 5 0 0 5 1,3 Efeito PositivoSobrevive Arte Mãos LivresFRC 16 6 0 22 5,5 BeserkINT 2 0 0 2 0,5 Efeito NegativoSe torna Tinta. Domínio de TintaRES 4 0 0 4 1,0PRE 1 0 0 1 0,3ENR 8 3 0 11 2,8
+Pontos de Turno29 0 0Valor Base Valor-Valor Final
+
+Nome Ukhel, Aquele que é como a Morte Brinco de Mitril +2 ENRIdade 345 Nivel Ascendente Sobretudo de Couro de Jopópis+4 FRC
+Dinheiro 4.456.000 ₾ XP 200/0
+Espécie Indefinido Status Saudável N/A N/A
+Trabalho Mestre de Forja, Líder da Thanatos, Mercenário, Existência Superior Calça de Couro de Inoue+3 FRC +1 RESCaracterística Completamente Cruel +2 INT Sapato de Areat +1 VIT
+História do Personagem Se tornou jogador no nascimento. Toda sua família foi morta pela coalisão inumana.  Viveu com a tribo da vila Figo. Foi o maior Alquímista da 2 Guerra HomoElfis. InventárioCriou a Thanathos com intuito de vingar os humanos mortos nas guerras.Estrela de Bélem (Mito)
+Caminho de Classe Não-Classificado
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 18 1 7 12 3,0 LíderarDEX 12 0 0 12 3,0 RegeneraçãoCRM 0 0 0 0 0,0 Efeito PositivoPoderá formar um Contrato. FurtividadeFRC 12 8 0 20 5,0 Olhar DivinoINT 8 2 0 10 2,5 Efeito NegativoSerá assassinado lentamente. Presa que MataRES 11 1 0 12 3,0 Envenenamento (LACRINO)PRE 5 0 0 5 1,3 Distorcer AparênciaENR 10 6 0 16 4,0
+Pontos de Turno34 0 0Valor BaseValor-Valor Final
+
+Nome Soldado Thanatos Mascára Thanatos +1 DEXIdade 19 - 43 Nivel 4 Peitoral Thanatos  +2 FRC
+Dinheiro 0 ₾ XP 0/80
+Espécie Humano / Indefinido Status Saudável Adaga Thanatos +1 DEX +1 PRE
+Trabalho Mercenário Calça Thanatos  +1 FRCCaracterística Obediente  + RES Sapato Thanatos  +1 ENR
+História do Personagem ?? Inventário?
+Caminho de Classe Capanga
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 5 0 0 5 1,3 Juntos Somos Mais ( DEX )
+DEX 8 4 0 12 3,0
+CRM 0 0 0 0 0,0 Efeito PositivoPode treinar com a thanatos.
+FRC 5 3 0 8 2,0
+INT 0 0 0 0 0,0 Efeito NegativoA thanatos irá te atacar.
+RES 5 1 0 6 1,5
+PRE 5 1 0 6 1,5ENR 0 1 0 1 0,3
+Pontos de Turno19 0 0Valor BaseValor-Valor Final
+
+Nome Deco Byron N/A N/AIdade 30 Nivel 2 Colete de Couro N/A
+Dinheiro 23.004 ₾ XP 30/40
+Espécie Humano Status Saudável Taça de Vidro N/A
+Trabalho Taverneiro Calça de Tecido N/ACaracterística Confiável +1 CRM Bota de Couro de Equilliz +1 DEX
+História do Personagem É o filho mais novo da família Byron.Por conta de um mal subito do seu irmão, assumiu a taverna da família. InventárioAumentou a popularidade da taverna entre os aventureiros. Faca de Serra Bati (21)
+Caminho de Classe Não Classificado
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 3 0 0 3 0,8DEX 8 1 0 9 2,3CRM 5 1 0 6 1,5 Efeito PositivoGanha Desconto na Taverna.
+FRC 1 0 0 1 0,3INT 3 0 0 3 0,8 Efeito NegativoNão entra na taverna
+RES 2 0 0 2 0,5PRE 3 0 0 3 0,8ENR 3 0 0 3 0,8
+Pontos de Turno 21 0 0Valor BaseValor-Valor Final
+
+Nome Cayro Byron N/A N/AIdade 54 Nivel 6 Colete de Couro N/A
+Dinheiro 9.745 ₾ XP 30/120
+Espécie Humano/Planta Status Saudável Espada de Aço  +1 FRC
+Trabalho Aventureiro Calça de Tecido N/ACaracterística Inumano  +2 ENR Bota de Couro de Equilliz +1 DEX
+História do Personagem É o filho mais velho da família Byron.Foi atacado pela doença florada. InventárioFoi curado pelos herois e se tornou um ser vegetalizado. Pergaminho (Oráculo)
+Caminho de Classe Vegetal
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 15 0 0 15 3,8 RegeneraçãoDEX 7 1 0 8 2,0 EnvenenamentoCRM 3 0 0 3 0,8 Efeito PositivoGanha Desconto na Taverna. FotossínteseFRC 10 1 0 11 2,8 VegetalizaçãoINT 2 0 0 2 0,5 Efeito NegativoNão entra na taverna Distorcer AparênciaRES 3 0 0 3 0,8 Barreira de VinhasPRE 2 0 0 2 0,5ENR 6 2 0 8 2,0
+Pontos de Turno 26 0 0Valor BaseValor-Valor Final
+
+Nome Nies Stratowisk N/A N/AIdade 46 Nivel 6 Colete de Couro N/A
+Dinheiro 13.276 ₾ XP 46/120
+Espécie Humano Status Saudável Espada de Aço  +1 FRC
+Trabalho Aventureiro Calça de Tecido N/ACaracterística Curioso  +1 INT Bota de Couro de Enbarr +1 FRC
+História do Personagem Colega de Cayro Byron.Ajudou Deco após a doença de seu irmão. InventárioÉ um aventureiro de nível ouro na AAU. Moeda MNPoção Extravagente (1)
+Caminho de Classe Sombra Leal
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 10 0 0 10 2,5 Rastejo SombrioDEX 3 1 0 4 1,0 Passos SilenciososCRM 4 0 0 4 1,0 Efeito PositivoPode Acompanhar as aventuras. Distorcer AparênciaFRC 6 0 0 6 1,5 ContratoINT 8 1 0 9 2,3 Efeito NegativoN/A BeserkRES 3 0 0 3 0,8PRE 2 0 0 2 0,5ENR 4 0 0 4 1,0
+Pontos de Turno22 0 0Valor BaseValor-Valor Final
+
+Nome Apolo, Sucessor de Lucrezia Borgia N/A N/AIdade 71 Nivel Descendente N/A N/A
+Dinheiro 34.000 ₾ XP 200/0
+Espécie Humano/Lançax Status Saudável Pulseira de Pedra Azul+3 ENR
+Trabalho Líder Rebelde, Criador de Poços Faixa de Seda N/ACaracterística Heroísmo +4 CRM Sapatilha de Okaka +2 DEX
+História do Personagem Após chegar a este mundo, se tornou um jogador e fez amizade com Lancelot.Repudiou as ações dos Unsato e se tornou um rebelde, se uniu com outros jogadores. InventárioSe sacrificou para proteger Lançax, e com isso pode evoluir e se tornar um com ele.Garrafa d'agua (3)Pergaminho (Congelar) (2)Tônico Temporario (6)Bati (34)Caminho de Classe Não-Classificado, Altruísta
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 17 0 0 17 4,3 VaporizaçãoDEX 5 2 0 7 1,8 Coragem InvictaCRM 4 4 0 8 2,0 Efeito PositivoApoio dos Rebeldes Amaldiçoar (Água)FRC 2 0 0 2 0,5 Costume de PresaINT 4 0 0 4 1,0 Efeito NegativoMaldição da Água AcelerarRES 2 0 0 2 0,5 Dobra de ÁguaPRE 2 0 0 2 0,5ENR 1 3 0 4 1,0
+Pontos de Turno 22 0 0Valor Base Valor-Valor Final
+
+Nome Abigail Clemonth N/A N/AIdade 27 Nivel 0 Vestido de Pano N/A
+Dinheiro 7.000 ₾ XP 0/0
+Espécie Indefinido Status Restrição Cinturão de Pedra Azul +3 ENR
+Trabalho Maga, Vice-General Rebelde, Pesquisadora, Trapaceira Saia Pano N/ACaracterística Entusiasta  +2 INT N/A N/A
+História do Personagem Veio de outro mundo chamado "Trasmoz".Estuda como se livrar do sistema. Consegue "Simular" o sistema. InventárioFoi a primeira jogadora a criar uma habilidade artificial. Teka (7) Pergaminho (Oráculo)
+Caminho de Classe Desclassificada
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 0 0 4 -4 -1,0 N/ADEX 0 0 0 0 0,0 N/ACRM 0 0 0 0 0,0 Efeito PositivoApoio dos Rebeldes N/AFRC 0 2 0 2 0,5 N/AINT 0 2 0 2 0,5 Efeito NegativoUma Ocasião de Azar N/ARES 0 0 0 0 0,0 N/APRE 0 0 0 0 0,0 N/AENR 0 4 0 4 1,0 N/A
+Pontos de Turno 22 0 0Valor Base Valor-Valor Final
+
+Nome Stam Abennor N/A N/AIdade 62 Nivel 7 Colete de Couro N/A
+Dinheiro 8.643 ₾ XP 21/140
+Espécie Humano/Anão Status Saudável Martelo de Mitrill +2 ENR +2 PRE
+Trabalho Ferreiro Calça de Couro N/ACaracterística Sábio  +3 INT Sapatos de Couro N/A
+História do Personagem Sua mãe era da antiga espécie dos anões, porém foi assassinada pelo regime Unsato.Jurou forjar as armas que cortariam a cabeça do ultimo Unsato. InventárioDedicou mais de 50 anos a criação de armas de guerra. Barra Mithrill (3)Couro de Dragão (6)Moeda MNLaser de MãoCaminho de Classe Ferreiro
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 10 0 0 10 2,5 ForjaDEX 6 0 0 6 1,5 Resistência Elemental (Fogo)CRM 4 0 0 4 1,0 Efeito PositivoApoio dos Rebeldes Dedos ÁgeisFRC 8 2 0 10 2,5 N/AINT 4 0 0 4 1,0 Efeito NegativoMarca de Aço Quente N/ARES 3 0 0 3 0,8 N/APRE 12 2 0 14 3,5 N/AENR 4 2 0 6 1,5 N/A
+Pontos de Turno 24 0 0Valor Base Valor-Valor Final
+
+Nome Média Yenefer N/A N/AIdade 40 Nivel 1 Vestido de Pano N/ADinheiro 56.763 ₾ XP 08/20
+Espécie Humano Status Saudável N/A N/A
+Trabalho Ministra Rebelde Saia de Pano N/ACaracterística Sortuda  +1 ENR Sapatos de Couro-1 dano nos pés
+História do Personagem Recém chegada no ministério, é uma empresaria de sucesso.Cuida do dinheiro e do jornal dos rebeldes. InventárioInvestiu em varios negocios, inclusive no restaurante da Dona Amélia.Moeda MN
+Caminho de Classe não-classificado
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 5 0 0 5 1,3 N/ADEX 1 0 0 1 0,3 N/ACRM 3 0 0 3 0,8 Efeito PositivoGanha um favor. N/AFRC 3 0 0 3 0,8 N/AINT 2 0 0 2 0,5 Efeito NegativoMenor afeição rebelde. N/ARES 3 1 0 4 1,0 N/APRE 1 0 0 1 0,3 N/AENR 4 1 0 5 1,3 N/A
+Pontos de Turno 23 0 0Valor Base Valor-Valor Final
+
+Nome Pequena Tina N/A N/AIdade 25 Nivel 1 N/ADinheiro 3.234 ₾ XP 02/20
+Espécie Humano/Homúnculo Status Saudável N/A N/A
+Trabalho Ministra Rebelde N/ACaracterística Charmosa  +3 CRM Sapatos de Couro-1 dano nos pés
+História do Personagem Inventário
+Caminho de Classe não-classificado
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 0 0 0 0 0,0 N/ADEX 0 0 0 0 0,0 N/ACRM 0 3 0 3 0,8 Efeito PositivoGanha um favor. N/AFRC 0 0 0 0 0,0 N/AINT 0 0 0 0 0,0 Efeito NegativoMenor afeição rebelde. N/ARES 0 0 0 0 0,0 N/APRE 0 0 0 0 0,0 N/AENR 0 0 0 0 0,0 N/A
+Pontos de Turno 18 0 0Valor Base Valor-Valor Final
+
+Nome Pequeno Ocoa Unsato N/A N/AIdade 40 Nivel 6 N/ADinheiro 56.763 ₾ XP 09/120
+Espécie Humano Status Saudável N/A N/A
+Trabalho Ministro Rebelde N/ACaracterística Sapatos de Couro-1 dano nos pés
+História do Personagem Inventário
+Caminho de Classe não-classificado
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 0 0 0 0 0,0 N/ADEX 0 0 0 0 0,0 N/ACRM 0 0 0 0 0,0 Efeito PositivoGanha um favor. N/AFRC 0 0 0 0 0,0 N/AINT 0 0 0 0 0,0 Efeito NegativoMenor afeição rebelde. N/ARES 0 0 0 0 0,0 N/APRE 0 0 0 0 0,0 N/AENR 0 0 0 0 0,0 N/A
+Pontos de Turno 18 0 0Valor Base Valor-Valor Final
+
+Nome Létra N/A N/AIdade 40 Nivel 1 N/ADinheiro 56.763 ₾ XP 08/20
+Espécie Humano Status Saudável Espada de Ferro  +1 FRC +1 PRE
+Trabalho Assassina do Pavilhão Lunar N/ACaracterística Sapatos de Couro-1 dano nos pés
+História do Personagem Inventário
+Caminho de Classe
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 0 0 0 0 0,0 N/ADEX 0 0 0 0 0,0 N/ACRM 0 0 0 0 0,0 Efeito PositivoGanha um favor. N/AFRC 0 1 0 1 0,3 N/AINT 0 0 0 0 0,0 Efeito NegativoMenor afeição rebelde. N/ARES 0 0 0 0 0,0 N/APRE 0 1 0 1 0,3 N/AENR 0 0 0 0 0,0 N/A
+Pontos de Turno 18 0 0Valor Base Valor-Valor Final
+
+Nome Conan Houdini N/A N/AIdade 26 Nivel 5 Blazer de Pano N/ADinheiro 1.348 ₾ XP 76/100
+Espécie Humano Status Saudável Varinha Mágica(Especial) +1 RES +1 PRE
+Trabalho Florista Calça de Pano N/ACaracterística Quietude  +2 RES Sapatos de Couro -1 dano nos pés
+História do Personagem É filho de Harry Houdini um Ilusionista Impressionante que veio da Terra.Sua maior paixão é cuidar de seu jardim. InventárioVive no Bunker desde a morte de seu pai, pelas mãos de seu ex-companheiro.Sementes de Girassol (5)Sementes de Couve-Sangue (2)Adaga de  Cerne
+Caminho de Classe Druida
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 6 0 0 6 1,5 EnraizarDEX 3 0 0 3 0,8 Agricultura RápidaCRM 6 0 0 6 1,5 Efeito PositivoPode entrar no Bunker Resistência Elemental (Madeira)FRC 2 0 0 2 0,5 FlorescerINT 3 0 0 3 0,8 Efeito NegativoSe torna inimigo de Nero Barreira de VinhasRES 2 3 0 5 1,3 Abalo SísmicoPRE 0 1 0 1 0,3ENR 8 0 0 8 2,0
+Pontos de Turno 26 0 0Valor Base Valor-Valor Final
+
+Nome Rebecca Bishop Chapéu de Pano N/AIdade 15 Nivel 5 Vestido de Pano N/A
+Dinheiro 348 ₾ XP 17/100
+Espécie Humano Status Saudável Cajado de Grama +1 PRE +1 DEX
+Trabalho Bruxa Saia de Pano N/ACaracterística Aceitação  +1 RES Sapatos de Couro-1 dano nos pés
+História do Personagem Foi chamada de Bruxa por seus aliados em sua terra natal.Se tornou jogadora com 5 anos. Conheceu Nero enquanto fugia de sua cidade. InventárioÉ um prodigio quando se trata de uso de energia. Moeda MNPoção de Cura P (3)
+Caminho de Classe Elementalista
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 6 0 0 6 1,5 Evocar Elemento
+DEX 2 1 0 3 0,8 Reforço Mágico
+CRM 7 0 0 7 1,8 Efeito PositivoPode entrar no Bunker Defesa Espinhosa
+FRC 2 0 0 2 0,5
+INT 5 0 0 5 1,3 Efeito NegativoSe torna inimigo de Nero
+RES 1 1 0 2 0,5
+PRE 3 1 0 4 1,0ENR 10 0 0 10 2,5
+Pontos de Turno28 0 0Valor BaseValor-Valor Final
+
+Nome Nero Germânico N/A N/AIdade 57 Nivel 9 Peitoral de Ferro  +1 VIT 
+Dinheiro 4.348 ₾ XP 13/180
+Espécie Humano Status Saudável Manoplas de Leonidas (Especial) +2 FRC
+Trabalho Imperador, Lider do Bunker Caneleira de Ferro N/ACaracterística Fortitude  +2 VIT Sapatos de Fibra N/A
+História do Personagem Foi imperador de Roma, foi confundido com um incendiador assassinoNo dia de sua excução foi transportado para esse novo mundo InventárioPor ironia do destino se tornou muito hábil com as chamas
+Caminho de Classe Incendiário
+ATRIBUTO VALOR BASEVALOR+VALOR-VALOR FINAL Habilidades
+VIT 10 3 0 13 3,3 Corpo FlamejanteDEX 4 0 0 4 1,0 ChamasCRM 4 0 0 4 1,0 Efeito PositivoPode entrar no Bunker Resistência Elemental (Fogo)FRC 18 2 0 20 5,0 Presa que MataINT 4 0 0 4 1,0 Efeito NegativoDesconhecido BeserkRES 3 0 0 3 0,8PRE 5 0 0 5 1,3ENR 10 0 0 10 2,5
+Pontos de Turno 28 0 0Valor Base Valor-Valor Final
+
+Nome General Milianu N/A N/AIdade 84 Nivel 9 Peitoral de Couro de HopópisResistência ao Fogo +2 FRCDinheiro 74.039 ₾ XP 123/200
+Espécie Yomunkai Status Saudável Adaga de Aço  +1 PRE
+Trabalho General de Montana Calça de Fibra N/ACaracterística Rígido  +1 FRC Sadália de Fibra N/A
+História do Personagem Viveu por 20 anos Lutando nas Grandes Guerras. Foi Expulso de seu Grupo.Voltou a Ativa com 36 anos e Matou os remanescentes do vilarejo Figo. InventárioÉ a favor do fim do sistema. Tem Conhecimentos sobre o passado de Ukhel.
+Caminho de Classe Açougueiro
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL HabilidadesVIT 14 0 0 14 3,5 Corte PrecisoDEX 6 0 0 6 1,5 ContratoCRM 2 0 0 2 0,5 Efeito PositivoPode conviver com Montana LiderarFRC 8 3 0 11 2,8INT 8 0 0 8 2,0 Efeito NegativoÉ permanentemente inimigo de MontanaRES 8 0 0 8 2,0PRE 9 1 0 10 2,5ENR 2 0 0 2 0,5
+Pontos de Turno20 0 0Valor BaseValor- Valor Final
+
+Nome Aladin Turbante de Pano N/AIdade 38 Nivel 4 Tunica de Pano N/ADinheiro 3.178 ₾ XP 0/80
+Espécie Humano Status Saudável Lanca de Aco  +2 PRE
+Trabalho Andarilho, Ladrão, Rei Calca de Pano N/ACaracterística Calmo +1 INT Sandália de Couro N/A
+História do Personagem Passou por diversas aventuras com um djinn azul em sua terra natal.Foi transportado por essa terra em meio a uma guerra em seu povoado. InventárioConheceu Nu, um Inue confivel e vaidoso. Odre (Agua)
+Caminho de Classe Domador
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL HabilidadesVIT 8 0 0 8 2,0 Contrato de SangueDEX 4 0 0 4 1,0 ExplodirCRM 5 0 0 5 1,3 Efeito PositivoGanha um Aliado. Nuvem de FumaçaFRC 5 0 0 5 1,3INT 2 1 0 3 0,8 Efeito NegativoInicia uma batalha.RES 3 0 0 3 0,8PRE 4 0 0 4 1,0ENR 1 0 0 1 0,3
+Pontos de Turno 19 0 0Valor Base Valor-Valor Final
+
+Nome Mahri Bandana Florida +1 CRMIdade 42 Nivel 5 Vestido de Pano N/ADinheiro 94.000 ₾ XP 0/100
+Espécie Kobold/Elfo Status Saudável Cesta de Vime +1 de Armazenamento
+Trabalho Escritora, Acadêmica, Herbologista Saia de Pano N/ACaracterística Eloquente +1 INT Sandália de Couro de LoboN/A
+História do Personagem Aprendeu agricultura com os pais na capital dos elfos.Por ser uma Híbrida foi expulsa da cidade e agora vive na Muralha do Exílio. InventárioTem 1 Filha. É dona de uma loja de ervas medicinais. TesouraSaco de Sementes (Margaridas)Lampião
+Caminho de Classe Agricultora
+ATRIBUTOVALOR BASEVALOR+VALOR-VALOR FINAL HabilidadesVIT 8 0 0 8 2,0 Agricultura RápidaDEX 1 0 0 1 0,3 Memória PerfeitaCRM 3 1 0 4 1,0 Efeito PositivoEnsina sobre Herbologia, Ganha Desconto.EnvenenamentoFRC 4 0 0 4 1,0INT 7 1 0 8 2,0 Efeito NegativoVocê é expulso da Muralha do Exílio.RES 1 0 0 1 0,3PRE 1 0 0 1 0,3ENR 2 0 0 2 0,5
+Pontos de Turno 20 0 0Valor Base Valor-Valor Final
+

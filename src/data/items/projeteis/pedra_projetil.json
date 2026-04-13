@@ -1,0 +1,21 @@
+{
+  "id": "pedra_projetil",
+  "name": "Pedra (Projetil)",
+  "category": "Projéteis",
+  "description": "Uma simples pedra que pode ser lançada. Causa 1d4 - 2 de dano",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

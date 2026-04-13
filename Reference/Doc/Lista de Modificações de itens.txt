@@ -1,0 +1,58 @@
+DEFENSIVO -> O grupo de modificações Defensivas é a espinha dorsal da proteção. Elas representam encantamentos, forjas aprimoradas ou materiais resistentes que visam absorver ou desviar o perigo, transformando um item em um escudo adicional entre o usuário e as adversidades. Incluem: 
+
+Blindado: Este aprimoramento confere ao item uma proteção extra, que se manifesta diminuindo em 1 o dano recebido, sendo a escolha ideal para Vestimentas e Escudos que precisam de maior resistência física, transformando-os em barreiras mais impenetráveis. 
+Energizador: Um item energizado pulsa com uma capacidade latente de absorver e dissipar fluxos de poder. Sua natureza permite, uma vez por combate, anular 1 de dano elemental que o usuário sofreria, tornando-o um escudo contra as forças da natureza. Aplicável a Armas e Itens diversos. 
+Fortificado: Reforçando a própria estrutura do item, esta modificação concede +1 no dado em testes de Defesa, sendo o aprimoramento perfeito para Vestimentas e Escudos que buscam a solidez inabalável, elevando sua capacidade de resistir ao impacto. 
+Ignífugo: Esta modificação confere ao item uma resistência localizada ao calor intenso e às chamas. Enquanto o item estiver equipado, o usuário recebe Resistência Elemental ao Fogo no Local da Vestimenta. Aplicável a Vestimentas. 
+Aterrado: Esta modificação imbui o item com a capacidade de repelir descargas elétricas. Enquanto o item estiver equipado, o usuário recebe Resistência Elemental ao Elétrico no Local da Vestimenta. Aplicável a Vestimentas. 
+Térmico: Esta modificação infunde o item com uma aura que o protege do frio extremo. Enquanto o item estiver equipado, o usuário recebe Resistência Elemental ao Gelo no Local da Vestimenta. Aplicável a Vestimentas. 
+Purificador: Esta modificação tece no item uma essência que dissipa as energias negativas e corruptoras. Enquanto o item estiver equipado, o usuário recebe Resistência Elemental ao Maligno no Local da Vestimenta. Aplicável a Vestimentas. 
+Sintético: Esta modificação confere ao item uma resistência inflexível contra a força de plantas e madeiras. Enquanto o item estiver equipado, o usuário recebe Resistência Elemental à Madeira no Local da Vestimenta. Aplicável a Vestimentas. 
+Compacto: Esta modificação reveste o item com uma densidade que o torna resistente à manipulação da terra e da areia. Enquanto o item estiver equipado, o usuário recebe Resistência Elemental à Areia no Local da Vestimenta. Aplicável a Vestimentas. 
+Cronal: Esta modificação distorce ligeiramente o fluxo do tempo ao redor do item. Enquanto o item estiver equipado, o usuário recebe Resistência Elemental ao Tempo no Local da Vestimenta. Aplicável a Vestimentas. 
+Impermeável: Esta modificação infunde o item com a capacidade de repelir e isolar contra a água e seus impactos. Enquanto o item estiver equipado, o usuário recebe Resistência Elemental à Água no Local da Vestimenta. Aplicável a Vestimentas. 
+
+ELEMENTAL -> As modificações Elementais infundem o item com a própria força da natureza ou de reinos mais sutis. Elas transformam as ações do usuário em manifestações de poder primordial, impondo condições elementais ao alvo, testando sua resistência física ou vital. Incluem: 
+
+Amadeirado: Infundido com a essência bruta da floresta, este item faz com que suas ações ofensivas ou narrativas adquiram o elemento Madeira. Essa conexão elemental permite enredar o alvo, causando o efeito 'Travado', se o teste (1d20 > 1d20 + FRC do alvo) for bem-sucedido. Típico de Armas de todos os tipos. 
+Apressado: Este item pulsa com a energia volátil do Tempo, uma força que acelera os processos vitais. Suas ações ofensivas ou narrativas adquirem o elemento Tempo, podendo apressar o envelhecimento do alvo e causar o efeito 'Envelhecer', se o teste (1d20 > 1d20 + VIT do alvo) for bem-sucedido. Encontrado em Armas de todos os tipos. 
+Aquático: Imbuído com a força fluida e avassaladora da água, este item faz com que suas ações ofensivas ou narrativas adquiram o elemento Água. Elas podem encharcar o alvo, causando o efeito 'Afogamento', se o teste (1d20 > 1d20 + FRC do alvo) for bem-sucedido. Exclusivo para Armas de todos os tipos. 
+Arenoso: Imbuído com a granularidade esmagadora da areia, este item faz com que suas ações ofensivas ou narrativas adquiram o elemento Areia. Sua natureza permite imobilizar o alvo, causando o efeito 'Travado', se o teste (1d20 > 1d20 + FRC do alvo) for bem-sucedido. Presente em Armas de todos os tipos. 
+Atrasado: Este item contém a quietude imponente do Tempo, uma força capaz de reverter o fluxo natural da vida. Suas ações ofensivas ou narrativas adquirem o elemento Tempo, podendo rejuvenescer o alvo e causar o efeito 'Rejuvelhecer', se o teste (1d20 > 1d20 + VIT do alvo) for bem-sucedido. Encontrado em Armas de todos os tipos. 
+Elétrico: Carregado com a fúria imprevisível dos raios, este item faz com que suas ações ofensivas ou narrativas adquiram o elemento Elétrico. Sua descarga pode sobrecarregar o alvo, causando o efeito 'Curto', se o teste (1d20 > 1d20 + FRC do alvo) for bem-sucedido. Comum em Armas de todos os tipos. 
+Quente: Incandescente com o calor destruidor das chamas, este item faz com que suas ações ofensivas ou narrativas adquiram o elemento Fogo. Seu calor abrasador pode incinerar o alvo, causando o efeito 'Queimadura', se o teste (1d20 > 1d20 + FRC do alvo) for bem-sucedido. Presente em Armas de todos os tipos. 
+Frio: Gelado com o frio cortante e paralisante, este item faz com que suas ações ofensivas ou narrativas adquiram o elemento Gelo. Sua frieza pode congelar o alvo, causando o efeito 'Congelamento', se o teste (1d20 > 1d20 + FRC do alvo) for bem-sucedido. Encontrado em Armas de todos os tipos. 
+Malicioso: Imbuído com uma aura sombria e corruptora, este item faz com que suas ações ofensivas ou narrativas adquiram o elemento Maligno. Sua influência nefasta pode perturbar a mente do alvo, ativando efeitos psicológicos já existentes, se o teste (1d20 > 1d20 + RES do alvo) for bem-sucedido. Comum em Armas de todos os tipos. 
+
+ESSENCIAL -> Esta categoria abrange modificações que tocam na essência mais sutil dos itens, ligando-os a forças não-físicas como a energia e o som, ou a capacidades de discrição. Incluem: 
+
+Barulhento: Este item não apenas cumpre sua função, mas também ressoa com uma energia vibratória sutil. Ele emite sons notáveis que podem ser usados narrativamente. Em batalha, o usuário pode tentar desorientar oponentes com essas emanações, causando confusão, se o teste (1d20 > 1d20 + RES do alvo) for bem-sucedido. Aplicável a Armas e Itens diversos. 
+Imbuídor: Este item possui uma ligação intrínseca com a energia essencial, permitindo-lhe receber e canalizá-la. O usuário pode gastar temporariamente 1 ponto de sua ENR por turno através dele para aumentar o dano do ataque em 1. Aplicável a Itens Manipulaveis. 
+Camuflado: Este item é envolto em uma essência que lhe permite camuflar-se visualmente de forma sobrenatural. Concede +1 no dado em testes de Furtividade, tornando o portador e o item mais difíceis de serem percebidos. Ideal para Itens que buscam a discrição e Vestimentas. 
+Vigoroso: Este item pulsa com uma energia que revigora o espírito do usuário. Uma vez por dia, o usuário pode realizar um teste (1d20 > 18) para remover um efeito psicológico de nivel 1 ou 2 permanentemente (Consultar lista de Nivel de Efeitos Psicologicos). Aplicável a Itens diversos e Vestimentas.
+Vínculo: Este item forma uma conexão sutil com o portador. Concede 1 dado de vantagem em testes de interação social com criaturas não inteligentes, se o usuário tiver tido contato com elas anteriormente. Aplicável a Itens diversos.
+
+OFENSIVO -> Modificações Ofensivas são para aqueles que buscam a supremacia no combate. Elas aprimoram a letalidade intrínseca de uma arma, tornando-a mais afiada ou mais penetrante, visando maximizar a capacidade do usuário de causar dano. Incluem: 
+
+Afiado: Aumenta a capacidade de corte do item. Suas lâminas e bordas tornam-se incrivelmente mais letais, elevando o dano de ataques cortantes em +1. Exclusivo para Armas (Cortantes). 
+Perfurador: Aumenta a capacidade de perfuração do item. Suas pontas e gumes tornam-se excepcionalmente mais penetrantes, elevando o dano de ataques perfurantes em +1. Exclusivo para Armas (Perfurantes). 
+Feroz: Este item parece sedento por sangue, aumentando a ferocidade de seus ataques. Após um acerto crítico com este item, o próximo ataque do usuário recebe +1 no dado de dano. Aplicável a Armas.
+Perceptivo: Este item é sensível aos movimentos do inimigo. Uma vez por combate, o usuário pode realizar um teste (1d20 + PRE > 10 + DEX do alvo) para ignorar a defesa do alvo em um ataque. Aplicável a Armas.
+
+PENALIDADE -> Nem toda modificação é um aprimoramento; as Penalidades representam defeitos, maldições ou o desgaste inerente de um item, adicionando um desafio e uma camada de risco ao seu uso. Incluem: 
+
+Frágil: O item é forjado com materiais de baixa resistência ou possui falhas estruturais inerentes, tornando-o alarmantemente mais suscetível a quebrar sob pressão. Em testes de dano direcionado ao item, o atacante recebe +1 no dado. Pode ser encontrada em Armas, Vestimentas e Escudos. 
+Restringido: Este item, por seu design opressor ou sua composição densa, impõe uma penalidade notável ao usuário, fazendo-o jogar um dado de prejuízo ao se movimentar enquanto equipado. Afeta Itens e Vestimentas. 
+Desgaste: O item se deteriora rapidamente com o uso. Impõe -1 no dado ao usar esse item até ser reparado. Aplicável a Armas, Vestimentas, Escudos, Itens diversoss.
+Irremovível: Este item não pode ser removido apos ser equipado.
+
+QUALIDADE-> As modificações de Qualidade elevam o conforto, a praticidade ou as propriedades de suporte do item, focando no bem-estar e na vantagem indireta que o item oferece ao usuário. Incluem: 
+
+Chamativo: Este item é de beleza excepcional e chama a atenção. Concede +1 no dado em testes de Carisma em interações social, mas impõe -1 no dado em testes de Furtividade. Aplicável a Vestimentas e Itens diversos.
+Prático: O design do item otimiza a eficiência do usuário. Concede 1 dado de vantagem em testes de criação ou reparo de itens quando este item é o principal utilizado na ação. Aplicável a Ferramentas e Itens diversos.
+Conforto: O item oferece um conforto excepcional e inesperado, contribuindo para o bem-estar e a recuperação do usuário. Concede 1 dado de vantagem em testes de descanso, tornando as pausas mais revigorantes. Ideal para Vestimentas. 
+Leve: O item é construído para ser excepcionalmente leve, conferindo uma agilidade surpreendente ao portador. Ao usá-lo, o usuário concede +1 no dado em testes de ataque com PRE, facilitando golpes rápidos e precisos. Aplicável apenas a Armas. 
+Pesado: O item possui um peso e uma inércia consideráveis, conferindo-lhe uma presença marcante e um poder de impacto esmagador. Concede +1 no dado em testes de ataque. Contudo, seu próprio volume impõe -1 no dado em testes de esquiva. Aplicável a Armas e Vestimentas. 
+Cura: Este item possui propriedades restauradoras notáveis, imbuídas em sua própria essência. Ao ser consumido, ele restaura 1d4 de VIT, oferecendo um alívio rápido em momentos de necessidade. Aplicável apenas a Consumíveis.
+Mochileiro: Este item confere uma agilidade aprimorada nos percursos distantes. Concede 1 dado de vantagem em todos os testes de movimentação longa. Aplicável a Vestimentas dos pés.
+Acelerado: Este item confere uma agilidade aprimorada nos movimentos. Concede 1 dado de vantagem em todos os testes de movimentação curta. Aplicável a Vestimentas dos pés.

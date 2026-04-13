@@ -1,0 +1,14 @@
+{
+  "id": "olhos_atentos",
+  "name": "Olhos Atentos",
+  "category": "PASSIVAS",
+  "class": "Evo Olhos Afiados",
+  "description": "Aumenta o valor da percepção do usuário, concedendo +2 no dado em testes de percepção visual e busca e um dado de vantagem nessas rolagens. (Requer PRE 5)",
+  "classLink": "Evo Olhos Afiados",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

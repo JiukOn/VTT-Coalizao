@@ -1,0 +1,14 @@
+{
+  "id": "congelar",
+  "name": "Congelar",
+  "category": "ATIVAS",
+  "class": "Geral",
+  "description": "O usuário é capaz de reduzir a temperatura e congelar o ambiente se o teste (1d20 > 12) for bem-sucedido. Recarrega em 1 turno.(Requer ENR 3).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

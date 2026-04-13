@@ -1,0 +1,21 @@
+{
+  "id": "akali",
+  "name": "Akali",
+  "level": 5,
+  "class": "Lutadora",
+  "specie": "Humano",
+  "avatar": "/assets/heroes/akali.png",
+  "stats": {
+    "VIT": 12,
+    "DEX": 7,
+    "CRM": 3,
+    "FRC": 8,
+    "INT": 3,
+    "RES": 5,
+    "PRE": 4,
+    "ENR": 3
+  },
+  "history": "Lutadora profissional e campeã. Usa o corpo como arma principal.",
+  "aura": "Intimidação",
+  "isCustom": false
+}

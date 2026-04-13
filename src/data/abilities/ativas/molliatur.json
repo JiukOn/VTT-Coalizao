@@ -1,0 +1,14 @@
+{
+  "id": "molliatur",
+  "name": "Molliatur",
+  "category": "ATIVAS",
+  "class": "Geral",
+  "description": "O usuário é capaz de reduzir ou inativar efeitos psicológicos ativos em aliados se o teste (1d20 > 16) for bem-sucedido. (Requer um Instrumento Musical).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

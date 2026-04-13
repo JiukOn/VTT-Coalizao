@@ -1,0 +1,21 @@
+{
+  "id": "vareta_especial_item_mágico",
+  "name": "Vareta Especial (Item Mágico)",
+  "category": "Itens de Controle Mágico",
+  "description": "Um item especial que fornece +1 PRE. Possui a modificação Imbuídor, que possui uma ligação intrínseca com a energia essencial, permitindo-lhe receber e canalizá-la. (10 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

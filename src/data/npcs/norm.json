@@ -1,0 +1,9 @@
+{
+  "id": "norm",
+  "name": "Norm",
+  "location": "La Montana",
+  "description": "",
+  "type": "npc",
+  "role": "",
+  "isCustom": false
+}

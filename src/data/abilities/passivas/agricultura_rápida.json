@@ -1,0 +1,14 @@
+{
+  "id": "agricultura_rápida",
+  "name": "Agricultura Rápida",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Aumenta a velocidade de crescimento das plantações do usuário. Se um 20 natural (crítico) for rolado, as plantações crescem instantaneamente.",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

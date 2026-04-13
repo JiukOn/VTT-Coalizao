@@ -1,0 +1,9 @@
+{
+  "id": "pequeno_ocoa_unsato_o_excluso",
+  "name": "Pequeno Ocoa Unsato, O excluso",
+  "location": "Reserva Amortecida",
+  "description": "",
+  "type": "npc",
+  "role": "O Excluso",
+  "isCustom": false
+}

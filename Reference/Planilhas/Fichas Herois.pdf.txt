@@ -1,0 +1,93 @@
+MembrosCargo Inventário da GuildaFifoLíder Pinça de Areat (5)Sangue Flamejante (3)Peitoral de rei undino (1)Chifre de Gran Belis (1)Coração de Carvão (1)Couro Dracônico (5)Núcleo Grande (1)Osso Dracônico (2)MóriuVice-Líder Peixes (12)cara. tarta. quebra (1)Fruta Bachi (5)Fruta T eca (3)RaviOficial Couro de Ganodonte (6)PolarisOficial Marfim de Ganodonte (2)LingMembro Ponteiro de Cedro [8]T romba de Ganodonte (2)AurelioMembro
+Nome ? Nome AtributoCaracterísticaIdade 0 Nível 1 Cabeça ? N/A N/AEspécie ? XP 0/20 Rosto ? N/A N/A
+Personalidade? Dinheiro0 ₾ Pescoço ? N/A N/AFrase de Efeito ? ? Corpo ? N/A N/A
+Aura ? Guilda N/A Mão Direita ? N/A N/AHistória ? Mão Esquerda? N/A N/Ado Personagem ? Acessórios das Mãos? N/A N/A
+Tendencias N/A Perna ? N/A N/AEfeito N/A Pé ? N/A N/AObservação N/AClasse ? HabilidadesAtributoMúltiploBase Valor +Valor - Final Bônus LegadoVIT 1 0 0 0 0 ExtraDEX 1 0 0 0 0 Total N/ACRM 1 0 0 0 0 0 N/AFRC 1 0 0 0 0 0 N/AINT 1 0 0 0 0 0 N/ARES 1 0 0 0 0 0 N/APRE 1 0 0 0 0 N/AENR 1 0 0 0 0 N/A
+InventárioConsumível Recurso Simples ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome Ouruen Nome AtributoCaracterísticaIdade 26 Nível 6 CabeçaChapéu de Couro de Lobo [14]1 DEX N/AEspécieHumano XP 22/120 Rosto ? N/A N/A
+PersonalidadeJúbilo Dinheiro12.420 ₾ Pescoço ? N/A N/AFrase de EfeitoCurvem-se ao prota seus lixo!1 DEX Corpo Camisa de Seda [3]N/A N/A
+Aura Desordem Guilda N/A Mão Direita ? N/A N/AHistóriaTinha problemas com os pais. Sofreu Bullying. Gostava de Magia em Jogos.Mão Esquerda? N/A N/Ado PersonagemEra um viciado em videogames e mangás isekai.  Morava no Paraguai.Acessórios das Mãos? N/A N/A
+TendenciasHistória, Linguagem Rúnica e Sistemas. Perna Calça de Seda [3]N/A N/AEfeito Amnésia, Protagonista Pé Sapato de Couro de Lobo [4]1 DEX N/AObservação N/AClasse Recluso HabilidadesAtributoMúltiploBase Valor +Valor - Final Bônus MordidaVIT 2 12 0 0 24 4 Olfato SanguinárioDEX 1,5 5 2 0 9 ,5 1 Total Olhos AfiadosCRM 1 2 0 0 2 0 39 Reclusão T otalFRC 1 1 0 0 1 0 3 VoarINT 1,5 1 0 0 1,5 0 72 N/ARES 1,5 4 0 0 6 1 11 N/APRE 1 1 1 0 2 0 N/AENR 2 13 0 0 26 5 N/A
+InventárioSoro Nasal (2)Controle de Videogame (1)? ? ? ? ?Carne Assada de Undino (4)Bati (5) ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome Aurelio Calopsittus Nome AtributoCaracterísticaIdade 32 Nível 3 Cabeça Chapeu [3]N/A N/AEspécieHumano/MonstroXP 12/60 Rosto Oculos Escuros [3]N/A N/A
+PersonalidadeConsciência Dinheiro0 ₾ Pescoço N/A N/A N/AFrase de EfeitoComigo ninguém cai!1 FRC Corpo Blazer [3] N/A N/A
+Aura Harmonia Guilda OP Mão DireitaPorrete [5]1 PRE N/AHistória Um ex-segurança de uma grande banda de jazz esquecida em NY Mão EsquerdaN/A N/A N/Ado PersonagemAma jazz, noites silenciosas e gosta de cuidar de pássaros na praçaAcessórios das MãosN/A N/A N/A
+TendenciasPrimeiros Socorros, Armas de Fogo, Defesa Pessoal Perna Calca Social [3]N/A N/AEfeito Hiperfoco Pé N/A N/A N/AObservação N/AClasse Guardião HabilidadesAtributo MúltiploBase Valor +Valor -Final Bônus Escudo de VitalidadeVIT 2 7 0 7 7 1 SorteDEX 1 2 0 0 2 0 Total VoarCRM 1,5 4 0 0 6 1 30 N/AFRC 1,5 4 0 0 6 1 -6 N/AINT 1 3 0 0 3 0 39 N/ARES 2 4 0 0 8 1 5 N/APRE 1 1 1 0 2 0 N/AENR 1 5 0 0 5 1 N/A
+InventárioSaco de Alpiste (3) ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome Polaris Ciemin Nome AtributoCaracterísticaIdade 20 Nível 5 Cabeça Brincos de Aicanã [8]5 ENR N/AEspécieHumano/Gran XP 32/100 Rosto Óculos [3] N/A N/A
+PersonalidadeDesencanto Dinheiro3.587 ₾ Pescoço ? N/A N/AFrase de Efeito Cai Dentro! 1 FRC Corpo Peitoral de Ossos [4]2 FRC Fortificado
+Aura Revelação Guilda OP Mão DireitaSigilo Lovelace [50]1 PRE AfiadoHistóriaEstudante de jornalismo, se interessou pela área e escreve desde os 13 anos.Mão EsquerdaAnel Vulcânico [6]3 ENR Quentedo PersonagemT eve um blog para contar suas Histórias de Fantasia. Acessórios das MãosAnel de ouro (Especial) [14]N/A N/A
+Tendencias Liguagem Rúnica, Botânica, Leitura Perna Saia de Seda [3]N/A N/AEfeito Prosopagnosia Pé Sapato Thanatos [8]1 DEX MochileiroObservação PKClasse Escritora HabilidadesAtributoMúltiplo Base Valor +Valor - Final Bônus AnulaçãoVIT 2,0 10 0 1 19 3 CarapaçaDEX 1,0 2 1 0 3 0 Total ContratoCRM 1,5 4 0 0 6 1 41 Controle AbsolutoFRC 1,0 8 2 0 10 2 11 Crônica VivaINT 2,0 8 0 0 16 3 77 ,5 Fortaleza PsíquicaRES 2,0 3 0 0 6 1 13 Livro MágicoPRE 1,0 1 1 0 2 0 SintoniaENR 1,5 5 8 0 15,5 3 N/A
+InventárioCaneta Rosa Livro Antes Livro DepoisFolha de Papel (8)Livro H Vazio (1) ? ?Verruga Luminosa (1)? Bestiário Fruta Bachi (5) ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome Fifo Zante Nome AtributoCaracterísticaIdade 20 Nível 5 Cabeça Elmo de OssosN/A FortificadoEspécieHumano XP 55/100 Rosto ? N/A N/APersonalidadeConsciência Dinheiro333 ₾ Pescoço ? N/A N/AFrase de EfeitoHora da caça! 1 FRC Corpo Peitoral de Osso [6]2 FRC Fortificado
+Aura Inspiração Guilda OP Mão DireitaAdaga Gemêa (Agua) [25]4 FRC 3 PREAquáticoHistóriaGosta de ler Ficção, estudava táticas de guerra, estava se formando em medicina veterinaria.Mão EsquerdaAdaga Gemêa (Fogo) [20]3 FRC 4 PREQuentedo PersonagemT enta sempre adquirir novos conhecimentos, é uma pessoa divertida.Acessórios das MãosLuva de Cornara (Especial) [15] 1 VIT 1 ENRIgnífugo
+Tendencias T aticas de Combate, Medicina, Nerd Perna Calça de Couro de Inoue [6]1 FRC N/AEfeito Hiperfoco, Medo, Impostor Pé Sapato de Crocohog [6]1 FRC N/AObservação PK Classe Sincronizador , Cozinheiro HabilidadesAtributoMúltiploBase Valor + Valor - Final Bônus Costume de PresaVIT 2 8 1 0 17 3 Hábil com LâminasDEX 1,5 4 0 0 6 1 Total Melhores MomentosCRM 2 5 0 0 10 2 33 Onda de CalorFRC 1,5 4 11 0 17 3 20 Pacto de SangueINT 2,5 6 0 0 15 3 80 Resistência Elemental (T empo)RES 1,5 4 0 0 6 1 14 SincroniaPRE 1 2 7 0 9 1 AcelerarENR 0 0 1 0 0 0 N/A
+InventárioOvo Indefinido (42%)Machadinha [5]Poção de Força (3)        ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome Ravi Nome AtributoCaracterísticaIdade 21 Nível 7 Cabeça Elmo de Ferro [8]N/A BlindadoEspécieHumano XP 39/140 Rosto Brinco de Mitril [10]3 ENR N/APersonalidadeÍmpeto Dinheiro703 ₾ Pescoço Colar do abismoN/A Irremovivel Frase de EfeitoSinta o Pulso da Minha Criação1 ENR Corpo Blazer de Plumo [15]2 FRC N/A
+Aura Opressor Guilda OP Mão DireitaCore Beast [20]2 PRE 3 ENRLeveHistória Ficou 4 anos na Coreia e ser um atirador sempre foi algo interessante para ele.Mão EsquerdaBesta de Pulso [15]N/A N/Ado Personagemjogava jogos de FPS, gostaria de servir o exército e se tornar um grande perito em armas.Acessórios das Mãos? N/A N/A
+TendenciasModificações de Arma, Criação de Estratégias e FeitiçariaPerna Calça de Couro de Rei Undino [13]N/A BlindadoEfeito Ansiedade, TDAH Pé Sapato Thanatos [7]1 DEX MochileiroObservação PKClasse Atirador de Fluxo HabilidadesAtributoMúltiplo Base Valor + Valor - Final Bônus FurtividadeVIT 1,5 6 0 2 7 1 Manipulação de FluxoDEX 1,0 4 1 0 5 1 Total Modificação de ArmasCRM 1,0 3 0 0 3 0 40 Olhos AtentosFRC 1,0 4 2 0 6 1 9 Presa que MataINT 2,0 4 0 0 8 1 69 Tiro ao AlvoRES 1,5 4 0 0 6 1 11 Arco de EnergiaPRE 2,0 7 2 0 16 3 Olhar do AbismoENR 1,5 8 6 0 18 3 N/A
+InventárioArco de Guerra [5]Poção Sombra (2)Núcleo Medio (1)Protese MágicaNúcleo Grande (1) ? ?Flechas (116)        Vareta (Especial) [12]? ? ? ? ?Caderninho (79/80)? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome Ling T ạw Nìm Nome AtributoCaracterísticaIdade 25 Nível 3 Cabeça Elmo de OssosN/A FortificadoEspécieHumano XP 46/60 Rosto ? N/A N/APersonalidadeZelo Dinheiro987 ₾ Pescoço ? N/A N/AFrase de Efeitopalavras sagradas não tem valor sem ação 1 RES Corpo Peitoral de Ossos [4]2 FRC Fortificado
+Aura Caos Guilda OP Mão DireitaBastão de Madeira (Sentimental) [14]1 PRE N/AHistóriaNasceu na tailandia, aprendeu muay thai lá, se mudou para a China,Mão Esquerda? N/A N/Ado Personagempara se tornar um monge shaolin e descobrir o lado espiritual do mundo.Acessórios das MãosBracelete de Madeira [3]1 RES N/A
+Tendencias Muay Thay, Parkour , Espiritualidade Perna Calças de Pano [3]N/A N/AEfeito Bipolaridade, Maníaco Pé Sapato de Pano [3]N/A N/AObservação PK, T em 9 OlhosClasse Monge HabilidadesAtributoMúltiploBase Valor +Valor -Final Bônus Arte de Mãos LivresVIT 2,0 6 0 0 12 2 Espírito InquebrantávelDEX 1,0 1 0 0 1 0 Total FabricaçãoCRM 1,5 1 0 0 1,5 0 30 TelecineseFRC 1,5 10 2 0 17 3 4 N/AINT 1,0 1 0 0 1 0 50,5 N/ARES 2,0 5 1 0 11 2 8 N/APRE 1,0 1 1 0 2 0 N/AENR 1,0 5 0 0 5 1 N/A
+InventárioBandagem (1) ? Livro H ( Reforço Mágico)Florete de Ukhel [50]? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome Ethan Nome Atributo CaracterísticaIdade 23 Nível 4 Cabeça ? N/A N/AEspécieHumano XP 35/80 Rosto ? N/A N/A
+Personalidade? Dinheiro246 ₾ Pescoço N/A N/A N/AFrase de EfeitoT e desafio a me acompanhar!1 DEX Corpo Camisa de Couro [4]N/A Blindado
+Aura ? Guilda N/A Mão DireitaLâmina de Bardo [14]1 PRE 1 DEX BarulhentoHistória Gostava de Jogar Videogames, trabalhava como músico, Mão EsquerdaFlauta Doce (Especial) [14]N/A N/Ado Personagem Acessórios das Mãos? N/A N/A
+TendenciasCriação de Instrumentos Musicais, Amaldiçoar , LinguísticaPerna Calça de Seda [3]N/A N/AEfeito Afasia Pé T ênis  [3] N/A MochileiroObservação ?Classe Bardo HabilidadesAtributoMúltiploBase Valor +Valor - Final Bônus AcordeVIT 1,5 6 0 0 9 1 Canção da AuroraDEX 2 6 1 0 13 2 Total MolliaturCRM 2 2 0 0 4 0 33 N/AFRC 1 5 0 0 5 1 2 N/AINT 1,5 5 0 0 7 ,5 1 49,5 N/ARES 1 2 0 0 2 0 6 N/APRE 1,5 2 1 0 4 0 N/AENR 1 5 0 0 5 1 N/A
+InventárioGarrafa com Água Limpador de FlautaMoeda do Mercado NegroPergaminho (T eleporte)? ? ?Amendoas Mara (40)? Pena de Móriu (1)Dentes de Panguar (42)? ? ?Adaga de Ferro ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome Edgar Gagarin Nome Atributo CaracterísticaIdade 19 Nível 3 Cabeça ? N/A N/AEspécieHumano XP 43/60 Rosto ? N/A N/A
+Personalidade? Dinheiro7 .623 ₾
+Pescoço ? N/A N/AFrase de EfeitoPense antes de fazer...1 INT Corpo Sobretudo  [2]N/A N/A
+Aura ? Guilda N/A Mão Direita? N/A N/AHistóriaExpulso da universidade de química da siberia por envenenar o diretor.Mão Esquerda? N/A N/Ado Personagem Se tornou um nômade. Acessórios das Mãos? N/A N/A
+Tendencias Calculo, Lábia, Luta Perna Calça Jeans [2]N/A N/AEfeito Maníaco Pé Sapato de Couro [3]N/A BlindadoObservação Perdeu o braço esquerdoClasse Alquimista HabilidadesAtributoMúltiploBase Valor +Valor - Final Bônus Barreira MentalVIT 1,5 5 0 0 7 ,5 1 TrocaDEX 1 2 0 0 2 0 Total N/ACRM 1,5 2 0 0 3 0 30 N/AFRC 1 6 0 0 6 1 0 N/AINT 2 4 0 0 8 1 41,5 N/ARES 1 2 0 0 2 0 5 N/APRE 2 4 0 0 8 1 N/AENR 1 5 0 0 5 1 N/A
+InventárioBeker Vazio Livro de MagiaEsfera de Amônia ( 3 )Moeda do Mercado Negro? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome ? Nome Atributo CaracterísticaIdade 24 Nível 4 Cabeça Bandana [3]N/A N/AEspécieHumana XP 37/80 Rosto ? N/A N/A
+Personalidade? Dinheiro2.145 ₾
+Pescoço ? N/A N/AFrase de EfeitoBola um pra mim!1 RES Corpo Blusa Ouija [3]N/A N/A
+Aura ? Guilda N/A Mão Direita? N/A N/AHistória Era uma perita criminal. Nasceu em Nova York Mão EsquerdaPochete [3]N/A N/Ado Personagem ? Acessórios das Mãos? N/A N/A
+Tendencias Espiritismo, Química, Luta Dançante Perna Calça Jeans [3]N/A N/AEfeito TDAH Pé T ênis [3] N/A MochileiroObservação N/AClasse Cultista HabilidadesAtributoMúltiploBase Valor +Valor - Final Bônus AtordoarVIT 1,5 5 0 0 7 ,5 1 Barreira MentalDEX 1,5 4 0 0 6 1 Total Batalha MentalCRM 1,5 4 0 0 6 1 33 N/AFRC 1,0 2 0 0 2 0 0 N/AINT 1,5 4 0 0 6 1 48,5 N/ARES 2,0 7 0 0 14 2 7 N/APRE 1,0 2 0 0 2 0 N/AENR 1,0 5 0 0 5 1 N/A
+InventárioMoeda do Mercado Negro? ? ? ? ? ?Brizadeiros (3) ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome Kalina Amster NomeAtributoCaracterísticaIdade 28 Nível 4 Cabeça ? N/A N/AEspécieHumano/Demônio XP 79/80 Rosto ? N/A N/A
+Personalidade? Dinheiro 854 ₾ Pescoço ? N/A N/AFrase de EfeitoVou Bordar uma Flor para o seu T umulo!1 FRC Corpo Peitoral de Aço [5]1 FRC Blindado
+Aura ? Guilda N/A Mão DireitaCesta de Palha [3]N/A N/AHistóriaNascida na Cidade dos Porcos, seus pais são lavradores, seu avô paterno e um demônioMão Esquerda? N/A N/Ado PersonagemAprendeu a vender e negociar bem pequena, Faz parte do Mercado Negro.Acessórios das Mãos? N/A N/A
+Tendencias Costura , Cozinha , Mercantilismo Perna Saia de Renda [3]N/A N/AEfeito N/A Pé Sapato de Couro de Lobo [6]1 DEX N/AObservaçãoFez um pacto com seu ancestral mais antigo para ser capaz de matar Lorde Roan.
+Classe Feirante HabilidadesAtributoMúltiplo Base Valor + Valor - Final Bônus Área de VendasVIT 1,5 7 0 0 10,5 2 Mordida DemoníacaDEX 1,5 2 1 0 4 0 Total NegociarCRM 2,0 5 0 0 10 2 33 N/AFRC 1,0 9 1 0 10 2 2 N/AINT 2,0 5 0 0 10 2 51,5 N/ARES 1,0 1 0 0 1 0 9 N/APRE 1,5 4 0 0 6 1 N/AENR 0,0 0 0 0 0 0 N/A
+InventárioPano com Sol BordadoPano com Unsato BordadoPano com Quadrado BordadoPano com Kalina BordadoAgulha ? ?Registro de MercadorMoeda do Mercado Negro (2)? ? ? ? ?Olho do Rei Undino (1)? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome Poskorks Nome AtributoCaracterísticaIdade 29 Nível 3 Cabeça Capuz de PanoN/A N/AEspécie Humano XP 0/60 Rosto ? N/A N/APersonalidadeArrogância Dinheiro230 ₾ PescoçoCapa de Couro de Lobo Infernal [2]N/A IgnífugoFrase de EfeitoRebelião também é arte! +1 INT Corpo ? N/A N/A
+Aura Pesada Guilda N/A Mão DireitaSpray de Tinta ( Azul )N/A N/AHistória ? Mão Esquerda? N/A N/Ado Personagem ? Acessórios das Mãos? N/A N/A
+Tendencias Artes Marciais, Cozinhar , Desenhar Perna Calça de CouroN/A -1 de dano nas PernasEfeito Síndrome do Protagonista Pé T ênis de CorridaN/A  -1 dado de movimentoObservação N/AClasse Defensor HabilidadesAtributo Múltiplo BaseValor +Valor -Final Bônus Corpo EndurecidoVIT 2 7 0 0 14 2 Arte de Mãos LivresDEX 1,5 5 0 0 7 ,5 1 Total SorteCRM 1,5 2 0 0 3 0 30 N/AFRC 2 8 0 0 16 3 0 N/AINT 1 3 0 0 3 0 49,5 N/ARES 1,5 2 0 0 3 0 6 N/APRE 1 2 0 0 2 0 N/AENR 1 1 0 0 1 0 N/A
+InventárioRefil de Tinta (Azul)Canivete SuiçoOlhos de Moriu (3)Amendoa de Mara (20)? ? ?Martelo de PedraAgulhas (3)Corrente de Ferro  (2)Ossos Humanos (5)Ossos de Kobold (3) ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome ? Nome Atributo CaracterísticaIdade 0 Nível 1 Cabeça ? N/A N/AEspécie ? XP 0/20 Rosto ? N/A N/A
+Personalidade? Dinheiro0 ₾
+Pescoço ? N/A N/AFrase de Efeito ? ? Corpo ? N/A N/A
+Aura ? Guilda N/A Mão Direita? N/A N/AHistória ? Mão Esquerda? N/A N/Ado Personagem ? Acessórios das Mãos? N/A N/A
+Tendencias N/A Perna ? N/A N/AEfeito N/A Pé ? N/A N/AObservação N/AClasse ? HabilidadesAtributoMúltiploBase Valor +Valor - Final Bônus LegadoVIT 1 0 0 0 0 0 ExtraDEX 1 0 0 0 0 0 Total N/ACRM 1 0 0 0 0 0 0 N/AFRC 1 0 0 0 0 0 0 N/AINT 1 0 0 0 0 0 0 N/ARES 1 0 0 0 0 0 0 N/APRE 1 0 0 0 0 0 N/AENR 1 0 0 0 0 0 N/A
+Inventário? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome ? Nome Atributo CaracterísticaIdade 0 Nível 1 Cabeça ? N/A N/AEspécie ? XP 0/20 Rosto ? N/A N/A
+Personalidade? Dinheiro0 ₾
+Pescoço ? N/A N/AFrase de Efeito ? ? Corpo ? N/A N/A
+Aura ? Guilda N/A Mão Direita? N/A N/AHistória ? Mão Esquerda? N/A N/Ado Personagem ? Acessórios das Mãos? N/A N/A
+Tendencias N/A Perna ? N/A N/AEfeito N/A Pé ? N/A N/AObservação N/AClasse ? HabilidadesAtributoMúltiploBase Valor +Valor - Final Bônus LegadoVIT 1 0 0 0 0 0 ExtraDEX 1 0 0 0 0 0 Total N/ACRM 1 0 0 0 0 0 0 N/AFRC 1 0 0 0 0 0 0 N/AINT 1 0 0 0 0 0 0 N/ARES 1 0 0 0 0 0 0 N/APRE 1 0 0 0 0 0 N/AENR 1 0 0 0 0 0 N/A
+Inventário? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+
+Nome ? Nome Atributo CaracterísticaIdade 0 Nível 1 Cabeça ? N/A N/AEspécie ? XP 0/20 Rosto ? N/A N/A
+Personalidade? Dinheiro0 ₾
+Pescoço ? N/A N/AFrase de Efeito ? ? Corpo ? N/A N/A
+Aura ? Guilda N/A Mão Direita? N/A N/AHistória ? Mão Esquerda? N/A N/Ado Personagem ? Acessórios das Mãos? N/A N/A
+Tendencias N/A Perna ? N/A N/AEfeito N/A Pé ? N/A N/AObservação N/AClasse ? HabilidadesAtributoMúltiploBase Valor +Valor - Final Bônus LegadoVIT 1 0 0 0 0 0 ExtraDEX 1 0 0 0 0 0 Total N/ACRM 1 0 0 0 0 0 0 N/AFRC 1 0 0 0 0 0 0 N/AINT 1 0 0 0 0 0 0 N/ARES 1 0 0 0 0 0 0 N/APRE 1 0 0 0 0 0 N/AENR 1 0 0 0 0 0 N/A
+Inventário? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?? ? ? ? ? ? ?
+

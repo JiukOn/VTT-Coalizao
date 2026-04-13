@@ -1,0 +1,21 @@
+{
+  "id": "tênis_vestimenta_-_pé",
+  "name": "Tênis (Vestimenta - Pé)",
+  "category": "Pé",
+  "description": "Um par de tênis simples, focado em leveza e conforto. Possui a modificação Mochileiro, que dá maior velocidade para longas distancias. (10 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

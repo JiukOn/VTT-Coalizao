@@ -1,0 +1,21 @@
+{
+  "id": "estrela_da_meia-noite_arma",
+  "name": "Estrela da Meia-Noite (Arma)",
+  "category": "Armas de Proximidade",
+  "description": "Um item pesado de durabilidade média, que impõe -1 DEX, mas concede +1 FRC. Causa 1d4 de dano. Possui a modificação Pesado, concedendo +1 no dado em testes de ataque, mas impondo -1 no dado em testes de esquiva. (20 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

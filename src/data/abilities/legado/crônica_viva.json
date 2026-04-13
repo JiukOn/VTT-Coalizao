@@ -1,0 +1,14 @@
+{
+  "id": "crônica_viva",
+  "name": "Crônica Viva",
+  "category": "LEGADO",
+  "class": "Escritor",
+  "description": "O usuário escreve eventos significativos da campanha em tempo real. Isso permite alterar uma rolagem já feita (de qualquer personagem visível), uma vez por sessão para Desastre ou Critico, justificando narrativamente com base no registro. (Requer INT 7 e Aprovação do Mestre)",
+  "classLink": "Escritor",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "peitoral_de_ferro_vestimenta_-_corpo",
+  "name": "Peitoral de Ferro (Vestimenta - Corpo)",
+  "category": "Corpo",
+  "description": "Peitoral forjado em ferro, pesado e durável. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (8 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

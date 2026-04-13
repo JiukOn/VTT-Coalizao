@@ -1,0 +1,21 @@
+{
+  "id": "xarope_consumível",
+  "name": "Xarope (Consumível)",
+  "category": "Consumíveis",
+  "description": "Um xarope que cura gripes se o usuário obtiver sucesso em um teste (1d20 > 10).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

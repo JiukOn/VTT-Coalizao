@@ -1,0 +1,14 @@
+{
+  "id": "resistência_elemental",
+  "name": "Resistência Elemental",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "O usuário não recebe dano vindo do elemento especificado. (Requer RES 1).",
+  "classLink": null,
+  "cost": null,
+  "test": null,
+  "duration": "Permanente",
+  "cooldown": null,
+  "requirements": "RES 1",
+  "isCustom": false
+}

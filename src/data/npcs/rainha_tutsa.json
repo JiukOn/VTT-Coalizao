@@ -1,0 +1,9 @@
+{
+  "id": "rainha_tutsa",
+  "name": "Rainha Tutsa",
+  "location": "Capital dos Elfos",
+  "description": "",
+  "type": "npc",
+  "role": "Rainha",
+  "isCustom": false
+}

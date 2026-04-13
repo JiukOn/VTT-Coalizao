@@ -1,0 +1,21 @@
+{
+  "id": "elmo_de_ossos_vestimenta_-_cabeça",
+  "name": "Elmo de Ossos (Vestimenta - Cabeça)",
+  "category": "Cabeça",
+  "description": "Elmo esculpido em ossos, com aparência intimidadora e robusta. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. (3 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

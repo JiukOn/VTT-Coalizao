@@ -1,0 +1,21 @@
+{
+  "id": "besta_de_guarda_arma",
+  "name": "Besta de Guarda (Arma)",
+  "category": "Armas à Distância",
+  "description": "Capaz de lançar projéteis finos e alongados, confere +2 PRE. Distância Máxima de lançamento: 12 metros. Possui a modificação Pesado, concedendo +1 no dado em testes de ataque, mas impondo -1 no dado em testes de esquiva. (18 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

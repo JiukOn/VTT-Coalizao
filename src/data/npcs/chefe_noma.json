@@ -1,0 +1,9 @@
+{
+  "id": "chefe_noma",
+  "name": "Chefe Noma",
+  "location": "La Montana",
+  "description": "",
+  "type": "npc",
+  "role": "Chefe",
+  "isCustom": false
+}

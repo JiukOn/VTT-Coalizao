@@ -1,0 +1,9 @@
+{
+  "id": "porteiro",
+  "name": "Porteiro",
+  "location": "Torre Azul",
+  "description": "",
+  "type": "npc",
+  "role": "",
+  "isCustom": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "mercante_kurk",
+  "name": "Mercante Kurk",
+  "location": "Vila Secreta",
+  "description": "",
+  "type": "npc",
+  "role": "Mercante",
+  "isCustom": false
+}

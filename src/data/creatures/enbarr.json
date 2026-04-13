@@ -1,0 +1,11 @@
+{
+  "id": "enbarr",
+  "name": "Enbarr",
+  "description": "O Enbarr é um mamífero reptiliano conhecido por sua beleza e por sua velocidade, que habita ambientes montanhosos e florestas frias. A crina e o rabo são formados por escamas em tons de azul-celeste, que lembram a crista de um dragão.",
+  "type": "terrestre",
+  "size": "grande",
+  "diet": "herbivoro",
+  "element": "gelo",
+  "imagePath": "Enbarr.jpeg",
+  "isCustom": false
+}

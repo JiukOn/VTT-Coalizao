@@ -1,0 +1,21 @@
+{
+  "id": "escaravelho_vestimenta_-_acessório_das_mãos",
+  "name": "Escaravelho (Vestimenta - Acessório das Mãos)",
+  "category": "Mãos / Acessório das Mãos",
+  "description": "Um item Mito, um bracelete mágico especial que confere +2 ENR e +3 INT. Sua Habilidade Mito, Impulso Espectral, utiliza a própria alma como combustível, recebendo +2 em um atributo físico (FRC ou DEX) por 4 turnos e perdendo 1 de XP (Limitado ao XP 0 e sem regressão de nível). (50 DP). (Requer INT 8).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

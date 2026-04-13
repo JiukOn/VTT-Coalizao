@@ -1,0 +1,21 @@
+{
+  "id": "capacete_de_aço_vestimenta_-_cabeça",
+  "name": "Capacete de Aço (Vestimenta - Cabeça)",
+  "category": "Cabeça",
+  "description": "Capacete forjado em aço, resistente e durável. Possui a modificação Blindado, diminuindo em 1 o dano recebido. (4 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

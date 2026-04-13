@@ -1,0 +1,9 @@
+{
+  "id": "carte",
+  "name": "Carte",
+  "location": "Taverna Normiumor",
+  "description": "",
+  "type": "npc",
+  "role": "",
+  "isCustom": false
+}

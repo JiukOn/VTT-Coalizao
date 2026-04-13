@@ -1,0 +1,9 @@
+{
+  "id": "rei_yaggnar",
+  "name": "Rei Yaggnar",
+  "location": "Capital dos Elfos",
+  "description": "",
+  "type": "npc",
+  "role": "Rei",
+  "isCustom": false
+}

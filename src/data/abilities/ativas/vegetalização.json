@@ -1,0 +1,14 @@
+{
+  "id": "vegetalização",
+  "name": "Vegetalização",
+  "category": "ATIVAS",
+  "class": "Geral",
+  "description": "O usuário transforma seu corpo em plantas e vinhas por 3 turnos. Seus ataques físicos adquirem o elemento Madeira, o usuário ganha Resistência ao elemento Madeira, mas se torna vulnerável ao elemento Fogo. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16). (A espécie do usuário muda para Original/Vegetal durante o período da habilidade).",
+  "classLink": "Geral",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

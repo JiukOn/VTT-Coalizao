@@ -1,0 +1,21 @@
+{
+  "id": "ricino_veneno",
+  "name": "Ricino (Veneno)",
+  "category": "Venenos",
+  "description": "Um veneno forte que causa 1d4 - 1 de dano de VIT a cada turno.",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

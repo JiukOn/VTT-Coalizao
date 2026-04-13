@@ -1,0 +1,318 @@
+ Valores dos Dados
+D20-----------------
+>> Critico = 20
+>> Bom 12 - 19
+>> Neutro 8 - 11
+>> Ruim 2 - 7
+>> Desastre = 1
+D4-----------------
+>> Melhor = 4
+>> Ok+ = 3
+>> Ok- = 2
+>> Pior = 1
+-------------------
+
+--> A cada 5 pontos em um status o jogador recebe 1 numero a mais de bônus nos dados de teste do mesmo status.
+
+Iniciativa -> A Ordem das Ações deve ser organizada com o D20 maior.
+
+-Combate -> Se a batalha possuir mais de 2 integrantes em grupos diferentes deverá ser feita a Iniciativa. Todos os efeitos e habilidades passivas aplicaveis precisam ser considerados.
+
+-em um ataque corpo a corpo, após considerar efeitos e habilidades, deverá ser feita a batalha de força, se o 1d20 + FRC do alvo for maior que a 1d20 + FRC do atacante, o alvo anula o valor bonus de FRC do dano recebido.
+-em um ataque fisico a distância ocorre uma batalha entre PRE e DEX, se 1d20 + PRE do atacante for maior que 1d20 + DEX do alvo o acerto ocorre.
+-em um ataque mágico, após considerar efeitos e habilidades, o atacante deve fazer um teste de PRE, se 1d20 + PRE >= 12 a magia se forma, agora ocorre uma batalha entre ENR e RES, se 1d20 + ENR do atacante for maior que 1d20 + RES do alvo o acerto ocorre.
+-em qualquer tipo de ataque o alvo pode rola 1d20 + DEX contra o dado do atacante para realizar uma esquiva. No caso de um ataque em area o alvo deve rodar 1d4 de movimentacao curta para verificar se pode sair da area de acerto antes de realizar o teste de esquiva.
+
+Movimentação Curta -> Individual ou em Grupo.
+Individual: Após considerar efeitos e habilidades jogue 1d4 para definir o valor máximo de movimentação no turno. O maior valor (4) é o valor bonus de DEX multiplicado por 4 em metros. O menor valor (1) é 4 metros.
+Grupo: Considere somente efeitos em área e habilidades de grupo, jogue 1d4 para definir o valor máximo de movimentação no turno. O maior valor (4) é o valor bonus de DEX mais alta entre os integrantes do grupo multiplicado por 4 em metros. O menor valor (1) é o valor bonus de DEX mais baixo entre os integrantes do grupo multiplicado por 4 em metros.
+
+Movimentação Longa -> Individual ou em Grupo.
+Individual: Após considerar efeitos e habilidades jogue 1d4 para definir o valor máximo de movimentação no dia. O maior valor (4) é o equivalente em quilometros do valor bônus de DEX, o menor (1) valor é 1 quilometro.
+Grupo: Considere somente efeitos em área e habilidades de grupo, jogue 1d4 para definir o valor máximo de movimentação no dia.  O maior valor (4) é o equivalente em quilometros do valor bônus de DEX mais alta entre os integrantes do grupo, o menor valor (1) é o equivalente em quilometros do valor bônus de DEX mais baixo entre os integrantes do grupo
+
+
+-Efeitos -> São diferenciais geralmente negativos de um personagem.
+
+Inativação de Efeito Psicologico -> O afetado deve realizar um teste (1d20 + RES > 16) a partir do 2 turno de efeito.
+
+PSICOLÓGICOS ATIVOS__________ (Até passar no teste de inativação de efeito psicologico)
+Medo -> O usuário faz um teste (1d20 <= 11) no inicio de seu turno,se falhar ele não pode fazer nenhuma ação no turno.
+Confusão -> Da um dado de prejuízo para acertar qualquer ação ou ataque, se o valor for <= 7 o afetado recebe 1d4 de dano. Além disso, o afetado se torna incapaz de compreender palavras.
+Ansiedade -> O afetado recebe -1 CRM temporariamente, se torna incapaz de se comunicar por longos periodos e toma decisões incertas.
+Depressivo -> O afetado toma decisões que maleficiam a si próprio e recebe -2 CRM temporariamente.
+Afasia -> O afetado recebe -2 CRM quando forçado ou induzido a falar, se 1d4 <= 2 o personagem se torna incapaz de compreender e entonar palavras.
+Prosopagnosia -> Se 1d4 <= 2 O afetado se torna incapaz de identificar rostos, se o personagem não for capaz de identificar outro personagem já conhecido com esse efeito ativo então recebe -1 CRM temporariamente.
+Impostor -> Se 1d4 <= 2 O afetado se sente inferior aos outros, se 1d4 <= 2 o afetado se torna indeciso e perde seu turno.
+Protagonista -> O afetado se arrisca mais que outros por acreditar ser especial, se 1d4 <= 2 o personagem pode perder o controle de suas ações.
+TDAH -> se 1d4 <= 2 o afetado pode perder o controle de suas ações. O personagem se torna incapaz de entender o que está fazendo e como as coisas estão acontecendo de maneira clara.
+Maníaco -> O afetado perde o controle das ações e age por impulso se 1d4 <= 2.
+Hiperfoco -> Se 1d4 <= 2 o afetado esquece do que está acontecendo ao redor e age no automático.
+
+PSICOLÓGICOS PASSIVOS__________ (Estão sempre ativos)
+Dislexia -> O afetado recebe -2 no valor dos dados de aprendizado.
+Servidão -> O afetado teme o seu 'soberano'.
+
+DOENÇAS__________ (Até curar)
+Florada -> Causa 1d4 de dano por turno ao afetado, não pode reduzir VIT para 0, se VIT = 1 o personagem recebe o efeito TRAVADO.
+Gripe Do Aço -> Causa fraqueza, se 1d20 <= 7 o personagem recebe 1 de dano no turno. A pele do afetado se torna prateada. (É Transmissivel pelo ar)
+Sangue Negro -> Pode ser contraída ao entrar em contato com o sangue de um ser infectado ou ao utilizar magia negra, se 1d4 <= 2 o personagem recebe temporariamente -1 DEX -1 FRC -1 PRE. Se VIT <= 0 equanto a doença estiver ativa o personagem recebe o efeito MORTO-VIVO.
+Arritmia -> Em momentos de alto esforço se 1d4 <= 2, o personagem recebe -1 DEX -1 VIT temporariamente.
+
+PASSIVOS__________ (Até amenizar)
+Envenenado -> O afetado recebe o dano e/ou  efeito do veneno utilizado. (Consultar Tabela de Venenos)
+Desmaio -> O afetado se torna incapaz de realizar qualquer ação e perde seu turno.
+Lentidão -> O afetado joga um dado de prejuizo para ações de movimento.
+Travado -> O afetado é incapaz de realizar qualquer ação ou movimento.
+Sangramento -> O afetado recebe 1 de dano por turno.
+Morto-Vivo -> Se 1d4 <= 2 recebe 1 de dano, mantém o afetado vivo por 2 turnos após atingir VIT = 0.
+Fraqueza -> O afetado Perde 1d4 de dano de ataque. E perde 2 nos dados de teste de FRC.
+Nausea -> O afetado recebe -1 nos dados de movimentação e 2 nos dados de precisão e percepção.
+Afogamento -> O afetado recebe 1 de dano por turno, a partir do 3 turno de efeito o afetado deve relizar um teste (1d4>1) se falhar o afetado ira ficar sob efeito do 'Desmaio' por 2 turnos.
+Queimadura ->
+Congelamento ->
+Curto ->
+
+EFEITO UNICO__________ (Acontecem apenas uma vez)
+Envelhecer ->
+Rejuvelhecer ->
+
+MALDIÇÕES__________ (Até conseguir remover)
+Fraqueza -> Se o personagem possuir maior valor de FRC que o alvo, ele perde -2 FRC -1 DEX.
+Azar -> Incapaz de acertar o critico nos dados.
+Sangralisia -> Quando estiver sob efeito de 'Sangramento' o afetado deve realizar um teste (1d4 >=2), se falhar ele se torna incapaz de se movimentar.
+Nadador -> O afetado perde a capacidade de nadar.
+Restrição -> O afetado deve jogar um dado de prejuizo em qualquer uso de habilidade.
+
+-Itens -> São divididos entre os tipos:
+
+Comum - Não possuem efeito ou habilidade diferencial, podem ter uma modificação entre os pré-definidos (Verificar na Tabela de Modificações de Itens).
+Sentimental - Itens Recebidos por pessoas importantes que trazem lembranças de momentos felizes, podem ter uma modificação entre os pré-definidos (Verificar na Tabela de Modificações de Itens).
+Especial - Itens Capazes de dividir o XP recebido pelo usuario, podem ter uma modificação entre os pré-definidos (Verificar na Tabela de Modificações de Itens).
+Vivo - Itens que possuem alma, podem ter uma modificação entre os pré-definidos (Verificar na Tabela de Modificações de Itens).
+Mito - Itens que passaram por uma "TransEvolução" com seu usuario e possuem ligação com a habilidade adquirida nesse processo, tornando-a uma habilidade Mito deste item, podem ter uma modificação entre os pré-definidos (Verificar na Tabela de Modificações de Itens).
+Amaldiçoado - Itens que possuem apenas modificações negativas (Verificar na Tabela de Modificações de Itens) ou uma maldição, possuem atributo maligno.
+
+
+-Evoluções -> Processo de mudança na classe de um jogador.
+
+
+*Ao chegar no nível 5 o jogador recebe uma evolução de classe.
+*Ao chegar no fim do nível 10, se conter a soma de atríbutos base superior a 43 o jogador pode passar por uma TransEvolução quando desejar.
+
+A evolução de classe modifica os atributos, multiplicadores e habilidades da classe escolhida pelo jogador.
+
+A transevolução é possível quando o jogador recebe atríbutos o suficiente para superar sua própria classe. Após isso o jogador pode entrar em uma das 3 categorias da transevolução:
+
+ Ascendente -> Categoria mais "Baixa", o jogador atinge o limite de sua classe e tem sua evolução com foco de completar sua classe e habilidade de classe.
+ Transcendente -> Categoria aplicada aos jogadores que mostraram ser mais habilidosos que sua própria classificação, dessa forma o jogador modifica ligeiramente sua classe e é capaz de aprender uma habilidade exclusivamente criada para ele ( Essa habilidade não pode ser aprendida ou ensinada fora do contrato de descendencia ), relacionada a sua nova classificação que ultrapassa os limites de uma classe completa.
+ Descendente -> Categoria aplicada a um jogador que formou um contrato com um transcendente antes de transevoluir. Dessa forma o jogador é capaz de modificar sua classe segundo suas conquistas somada as conquistas do transcendente , também é capaz de receber um habilidade exclusiva de sua nova classificação além de receber a habilidade assinatura do transcendente contratado.
+
+Investigação-----------------------
+
+Testes Envolvidos:
+INT (Inteligência): Raciocínio lógico, dedução, leitura de documentos e pistas.
+PRE (Precisão): Atenção a detalhes visuais, pistas escondidas.
+CRM (Carisma): Interrogatório, persuasão, leitura emocional.
+RES (Resiliência): Resistência a informações perturbadoras, segredos proibidos.
+
+Mecânica Básica:
+
+Role 1d20 + status relevante.
+
+Tabela de dificuldade:
+8 / Muito Fácil
+12 / Comum
+16 / Complexa
+18–20 / Oculta/Proibida
+Tipos de Investigação:
+
+Ambiente: procurar objetos, entradas secretas, armadilhas → PRE ou INT.
+Pessoa/NPC: identificar mentiras, intenções, sentimentos → CRM ou INT.
+Texto/Rúnico: decifrar livros, runas, enigmas → INT ou habilidades específicas.
+Lógica: conectar pistas ou traçar um culpado → INT + habilidades específicas.
+
+Falhas e Complicações:
+
+Desastre (1): Pista falsa, armadilha ativada ou trauma (rolar 1d20 para efeito psicológico leve).
+Ruim (2–5): Pista incompleta ou mal interpretada.
+Neutro (6–8): Pista vaga, exige nova ação.
+
+FURTIVIDADE----------------------
+
+Testes Envolvidos:
+DEX (Destreza): Furtividade, movimentação silenciosa, disfarce corporal.
+PRE (Precisão): Observar padrões de patrulha, trancas, armadilhas.
+CRM (Carisma): Disfarce social, mentir com naturalidade.
+ 
+Mecânica Básica:
+Role 1d20 + DEX.
+
+O alvo é definido pela percepção do inimigo: 1d20 + PRE do inimigo.
+
+Modos de Furtividade:
+Ambiental: Esconder-se em sombras, arbustos, multidões.
+Social: Falsas identidades, disfarces, blefes.
+Invasão: Invadir locais, arrombar trancas, hackear sistemas mágicos.
+
+Fatores de Dificuldade:
+Iluminação, tipo de terreno, presença de guardas, itens usados (ex: Botas Sombras Abaixo, Anel Vulcânico chamativo), barulho ambiente, tempo para agir.
+
+FALHAS EM FURTIVIDADE:
+
+Desastre (1): Personagem faz barulho, chama atenção ou aciona armadilha.
+Ruim (2–5): É percebido, mas pode tentar se justificar (CRM).
+Neutro (6–9): Permanece oculto parcialmente — ações limitadas.
+
+A cada 2 turno deve se rolar novamente o teste de furtividade.
+
+
+
+-----Sistema de Estado e Comando--------
+
+Pontos de Comando (PC)
+Os Pontos de Comando representam a capacidade logística, autoridade e fôlego administrativo do líder para coordenar estruturas complexas.
+
+Cálculo de Limite: O total de PC é igual à soma do Bônus de INT + Bônus de CRM.
+
+Recuperação por Descanso:
+
+No Domínio: Recuperação total da quantia após um Descanso Bom (13-19) ou Crítico (20).
+
+Em Viagem: Recuperação de apenas metade do valor total (arredondado para baixo) após um Descanso Bom ou Crítico.
+
+Recuperação por Feito Heroico: Se o Comandante obtiver um Crítico (20) em qualquer teste de atributo realizado para resolver uma situação problemática ou crise dentro de seu domínio, ele recupera imediatamente 100% de seus PC.
+
+------------
+
+Ações de Comando:
+
+Mobilização de Guerra (3 PC) -> Convoca o exército para deslocamento. Deve-se realizar um teste de Movimentação Longa em Grupo para definir o tempo de viagem das tropas até o objetivo.
+
+Rede de Informação (2 PC) -> Destina grupos de soldados exclusivamente para espionagem. Estes soldados não podem realizar outras ações até o cumprimento da missão.
+
+Tributo Energético (2 PC) -> O líder exige o sacrifício vital de seus subordinados. 10% da tropa é consumida/morta para conceder ao Comandante 2d4 de ENR ou FRC temporária.
+
+Manutenção de Ordem (1 PC) -> Utilizada para estabilizar o domínio durante a ausência do líder. O sucesso é atingido se: 1d20 + Bônus do Maior Atributo (INT ou CRM) > 16 + Bônus do Menor Atributo (INT ou CRM)
+
+Esforço de Produção (3 PC) -> O Comandante direciona sua mão de obra para focar na criação ou reparo de bens materiais para o domínio ou para um grupo.
+
+Edito de Celebração (1 PC) -> Uma ação focada em manipular a moral e o psicológico dos súditos e aliados.
+
+------------
+
+Logística de Guerra e Integridade
+
+Ao iniciar um cenário de guerra, o líder deve definir o alvo, estimar a duração da guerra e distribuir suas tropas entre: Combate Direto (limite de 60%), Defesa da Base, Coleta de Recursos, Suporte, Informação e Livres.
+
+Tropas de Informação ou Livres não são consideradas ativas.
+
+
+Tabela de Consumo de Rações
+Tropas ativas exigem manutenção (1 item calórico, 1 não calórico e 1L de água por ração).
+
+-Pequeno (até 1m) -> 1 ração a cada 2 dias
+-Médio (1m a 3m) -> 1 ração por dia
+-Grande (3m a 5m) -> 2 rações por dia
+-Colossal (acima de 5m) -> 5 rações por dia
+
+Teste de Integridade -> O líder deve prover ao menos 50% das rações estimadas antes da guerra. Caso os suprimentos acabem, deve-se rolar diariamente: 1d20 + Bônus de CRM ou INT > 14
+Falha: A tropa inteira recebe a Condição Fraqueza (perda de 1d4 de dano e -2 Bonus de FRC em testes).
+
+------------
+
+Execução da Rede de Informação
+
+Soldados enviados em missão de espionagem não possuem contato com o Comandante até o fim do prazo ou obtenção do dado.
+
+O Teste: Ao retornarem, o jogador realiza um Teste de Investigação (INT ou PRE) contra a CD definida pelo Mestre (8, 12, 16 ou 18+).
+
+Risco de Vida: Em missões perigosas, so comandante deve jogar 1d20 bruto e se for menor que 12, rode um dado de 1d4 e os informantes são mortos e removidos do total de tropas do domínio em proporção de 25% a 100% dependendo do numero no dado.
+
+Bônus de Escala: O líder recebe +1 no resultado final para cada 10 soldados focados exclusivamente nesta informação.
+
+------------
+
+Mecânica de Estabilidade e Ausência
+Governar à distância gera desgaste e risco de insurreição. Sempre que o Comandante estiver fora de seu domínio, deve realizar um Teste de Estabilidade a cada dia de viagem (Movimentação Longa).
+
+Rolagem: 1d20 + Bônus de CRM ou INT > 12 + número de dias fora da cidade.
+
+Resultados:
+Sucesso -> A ordem se mantém.
+Falha (2 a 11+) -> Surge um Efeito Psicológico Ativo no domínio que dura 1d4 dias.
+Desastre (1) -> Golpe de Estado iminente. O líder deve retornar com urgência. A cada dia de atraso, a dificuldade para recuperar o poder aumenta cumulativamente sendo necessário realizar diariamente um teste de 1d20 + CRM ou INT > 14 + Dias de Ausência.
+
+------------
+
+Esforço de Produção
+
+O Comandante escolhe um foco entre Manutenção ou Extração.
+
+Manutenção: Os subordinados trabalham no reparo de armaduras, armas, construções ou vegetacão. Em itens isso restaura 1d4 de Durabilidade (DP) em itens de numero semelhante a metade das troaps separadas para o trabalho, e com o custo dos materiais necessários para os consertos.
+
+Extração: Os subordinados são enviados para coletar recursos naturais. Isso gera um valor em Ouris ou em Recursos equivalente a 1d20 + Bônus de INT do Comandante. Por ser um trabalho exaustivo, se o resultado do dado de Extração for um Desastre (1), a produção é sabotada ou ocorre um acidente, e o domínio recebe o efeito Fraqueza por 1 dia devido ao cansaço extremo dos trabalhadores e metade deles deve ser considerada morta.
+
+------------
+
+Edito de Celebração
+
+O Comandante organiza um evento, banquete ou feriado para elevar os ânimos.
+
+Efeito: Concede a todos os aliados e subordinados no alcance do domínio se tornam amigáveis e felizes por 24 horas.
+
+Bônus Político: O próximo Teste de Estabilidade ou Manutenção de Ordem realizado na próxima semana horas recebe Vantagem (rola 2 dados e pega o maior).
+
+Além do PC, o Comandante deve prover uma quantidade de rações equivalente a 10% de sua tropa para realizar o evento.
+
+------------
+
+Mecânica de Coalizão
+
+Quando dois ou mais domínios ou grupos militares estabelecem uma parceria ou união estratégica, novas regras de governança e comando entram em vigor.
+
+A Formação do Conselho
+Para que a união seja legitimada, é necessária a criação de um Conselho.
+
+Composição: Pelo menos 2 representantes de cada grupo integrante.
+Restrição do Comandante: Os Comandantes não podem ocupar uma cadeira no conselho por eles mesmos. Eles devem nomear representantes que agirão como intermediários de suas vontades.
+
+Poder de Comando Parcial
+
+Os membros do conselho recebem autoridade limitada para garantir a agilidade em operações menores:
+
+Autonomia: Cada conselheiro pode comandar pequenos grupos (equivalentes a 5% do total da tropa unida) com autonomia total, não dependendo de ordens diretas do Comandante para ações imediatas.
+Sobriedade de Comando: Essas pequenas tropas agem sob a responsabilidade do conselheiro. Caso falhem ou ajam contra o interesse da união, o Comandante pode sofrer penalidades no seu Teste de Estabilidade.
+
+Unificação Permanente (Comando Único)
+
+Se a união entre os grupos for declarada permanente, a estrutura deve ser simplificada para uma hierarquia absoluta:
+Seleção do Líder: Deve ser definido, por meios diplomáticos, força ou votação, quem será o Comandante Único da nova força unida.
+Perda de Poder: O Comandante que não for selecionado como o líder perde imediatamente seu status de Comandante, abdicando de seu Poder de Estado e de todos os seus Pontos de Comando (PC). 
+
+Possibilidade de Dissidência
+
+A Dissidência ocorre quando um dos grupos integrantes da União decide romper o acordo, recuperar sua autonomia e retirar suas tropas do controle do Comandante Único ou do Conselho.
+
+O Gatilho da Ruptura
+A dissidência pode ser declarada voluntariamente por um líder, conselho ou ser causada por um Desastre (1) no Teste de Estabilidade do domínio unido.
+
+O Teste de Separação (Cisão de Tropas)
+
+Retirar soldados de uma estrutura unificada não é um processo limpo. O líder dissidente deve realizar um Teste de Carisma (CRM) ou Inteligência (INT) contra o Melhor Atributo dentre esses do Comandante do outro grupo.
+
+Consequências da Dissidência
+O sucesso ou falha no teste define como o grupo se separa:
+
+Sucesso (Supera o Comandante Rival): A separação é "limpa". O dissidente recupera suas tropas originais (menos as baixas de guerra) e ainda pode jogar 1d20 para levar ate 10% da tropa do outro comando, seus Pontos de Comando (PC) são restaurados ao valor máximo após o primeiro descanso.
+
+Falha (Não supera o Comandante Rival): Ocorre uma Cisão Traumática. Metade das tropas do dissidente decide permanecer fiel à união atual ou deserta. O dissidente recupera apenas 50% de sua tropa original.
+
+Desastre (1 no dado do Dissidente): Guerra Civil Imediata. As tropas se voltam umas contra as outras no local onde estão. O domínio entra em estado de caos e o dissidente é considerado um traidor, perdendo o direito de recuperar seus PC até que reconquiste um novo domínio por força.
+
+O Destino do Conselho
+
+No momento em que a Dissidência é declarada, o Conselho é dissolvido. Os representantes que possuíam o Poder de Comando Parcial (5%) devem escolher um lado imediatamente. Se não houver consenso, os 5% de tropas sob o comando de cada conselheiro entram em combate direto entre si.
+
+------------
+

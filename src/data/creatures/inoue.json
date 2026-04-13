@@ -1,0 +1,11 @@
+{
+  "id": "inoue",
+  "name": "Inoue",
+  "description": "Ele se alimenta de frutas, raízes e peixes. Possui um corpo pesado e um couro rigido e pouco flexivel, isso faz dele um animal lento. Mas caso voce se engane por sua face plena e suas listras belas, devera lidar com poderosos ataques realizados com a cauda dessa criatura, que se assemelham a chicotadas mas muito mais pesadas.",
+  "type": "terrestre",
+  "size": "grande",
+  "diet": "onivoro",
+  "element": null,
+  "imagePath": "Inoue.jpeg",
+  "isCustom": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "cavaleira_sina",
+  "name": "Cavaleira Sina",
+  "location": "Cidade dos Porcos",
+  "description": "",
+  "type": "npc",
+  "role": "Cavaleira",
+  "isCustom": false
+}

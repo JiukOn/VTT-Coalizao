@@ -1,0 +1,14 @@
+{
+  "id": "florescer",
+  "name": "Florescer",
+  "category": "LEGADO",
+  "class": "Druida",
+  "description": "O usuário se transforma temporariamente em um ser brilhoso, criando chifres de madeira com flores rosadas e brilhosas. Temporariamente, recebe +5 CRM e +3 VIT. Causa um efeito de cura de 4 VIT com Energia de Madeira em alvos escolhidos a até 5m de distância se o teste (1d20 > 12) for bem-sucedido. Dura 3 turnos. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste (1d20 > 16).",
+  "classLink": "Druida",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

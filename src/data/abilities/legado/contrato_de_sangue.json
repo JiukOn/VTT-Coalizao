@@ -1,0 +1,14 @@
+{
+  "id": "contrato_de_sangue",
+  "name": "Contrato de Sangue",
+  "category": "LEGADO",
+  "class": "Domador",
+  "description": "Ao gastar 10 XP, o usuário pode tentar estabelecer um contrato com um ser não inteligente. Faça um teste comparando (1d20 + o maior valor entre sua INT ou CRM) contra (1d20 + o maior valor entre a INT ou CRM do alvo). Se o resultado do usuário for superior, o contrato é aceito. Se o teste inicial falhar, o usuário faz outro teste (1d20 >= 18) se este último também falhar, o usuário perde 15 XP adicionais (o nível não regride, mas o XP pode ficar negativo).",
+  "classLink": "Domador",
+  "cost": "10 XP",
+  "test": "Comparativo INT/CRM",
+  "duration": "Permanente",
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

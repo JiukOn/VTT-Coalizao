@@ -1,0 +1,21 @@
+{
+  "id": "ouruen",
+  "name": "Ouruen",
+  "level": 6,
+  "class": "Recluso",
+  "specie": "Humano",
+  "avatar": "/assets/heroes/ouruen.png",
+  "stats": {
+    "VIT": 12,
+    "DEX": 5,
+    "CRM": 2,
+    "FRC": 1,
+    "INT": 1,
+    "RES": 4,
+    "PRE": 1,
+    "ENR": 13
+  },
+  "history": "Era um viciado em videogames e mangás isekai. Morava no Paraguai.",
+  "aura": "Desordem",
+  "isCustom": false
+}

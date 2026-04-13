@@ -1,0 +1,14 @@
+{
+  "id": "corte_preciso",
+  "name": "Corte Preciso",
+  "category": "LEGADO",
+  "class": "Açougueiro",
+  "description": "O usuário possui acerto garantido em golpes com lâminas uma vez a cada 3 turnos. Esta habilidade não afeta os dados de Defesa do inimigo.",
+  "classLink": "Açougueiro",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "barreira_mental",
+  "name": "Barreira Mental",
+  "category": "PASSIVAS",
+  "class": "Geral",
+  "description": "Concede +2 no dado em testes de resistência contra efeitos psicológicos.",
+  "classLink": null,
+  "cost": null,
+  "test": null,
+  "duration": "Permanente",
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

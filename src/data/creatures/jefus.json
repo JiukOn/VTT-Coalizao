@@ -1,0 +1,11 @@
+{
+  "id": "jefus",
+  "name": "Jefus",
+  "description": "Um ser canino aquatico, com um conjunto de guelrras junto de suas patas e cauda o faz um excelente nadador ou corredor. seus dentes finos e boca alongado o permite se alimentar de peixes com grande facilidade.",
+  "type": "semi-aquatico",
+  "size": "medio",
+  "diet": "carnivoro",
+  "element": "agua",
+  "imagePath": "Jefus.jpeg",
+  "isCustom": false
+}

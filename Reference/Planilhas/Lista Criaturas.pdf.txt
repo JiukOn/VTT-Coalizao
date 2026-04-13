@@ -1,0 +1,114 @@
+Nome Nivel Classe V Inteligente
+Abismo 9 Único 0 Sim
+Aezara 4 Alto 1 Não
+Agadzaru 4 Alto 1 Não
+Amaru 7 Único 0 Sim
+Andarilho 11 Único 0 Sim
+Anjo 3 Médio 0 Não
+Anthea 5 Líder 2 Sim
+Arcanjo 4 Alto 0 Não
+Areat 2 Médio 3 Não
+Áster-Cacho 3 Alto 2 Sim
+Bafo-Aéreo 1 Baixo 3 Não
+Beezle 3 Médio 2 Não
+Blobin 5 Médio 1 Sim
+Boto-Agatha 1 Baixo 3 Não
+Cangal 4 Baixo 3 Não
+Caopus 5 Médio 2 Não
+Carneiro 1 Baixo 4 Não
+Cavalo 1 Baixo 2 Não
+Ceifeiro 10 Único 0 Sim
+Chefe Lobo 2 Líder 3 Não
+Coguma 1 Baixo 5 Não
+Cornara 4 Médio 3 Não
+Crocohog 4 Médio 2 Não
+Dostle 2 Alto 2 Não
+Dunce 3 Baixo 4 Não
+Écanus 3 Médio 3 Não
+Enbarr 3 Alto 4 Não
+Equiliz 1 Médio 3 Não
+Espectro 6 Único 0 Sim
+Fabarr 5 Alto 1 Não
+Fafagi 2 Baixo 3 Não
+Faiguin 4 Alto 2 Não
+Flonnec 3 Baixo 2 Não
+Frango Manuk 1 Baixo 4 Não
+GanLan 4 Alto 3 Não
+Ganodonte 5 Alto 1 Não
+Gatuyu 3 Médio 2 Não
+Géldum 1 Baixo 4 Não
+Golroise 7 Médio 2 Não
+Gran Belis 7 Líder 1 Não
+Guardião 7 Alto 1 Sim
+Hakoto 1 Baixo 3 Não
+Hienco 4 Baixo 3 Não
+Hipocelata 3 Alto 2 Não
+Hopópis 8 Alto 1 Não
+Horrotus 6 Médio 2 Não
+Imperador Undino6 Líder 1 Sim
+Inoue 5 Médio 2 Não
+Izoceras 8 Alto 1 Não
+Jefus 4 Médio 3 Não
+Jocara 2 Baixo 3 Não
+Jopópis 4 Baixo 2 Não
+Kaborro 2 Médio 4 Não
+Kappa 1 Médio 3 Não
+Kiwan 2 Baixo 3 Não
+Kondino 4 Alto 2 Não
+Lamentador 5 Baixo 0 Não
+Lançax 5 Alto 2 Não
+Liwu 3 Alto 0 Não
+Lobo 1 Baixo 4 Não
+Lobo Glacial 4 Médio 2 Não
+Lobo Infernal 4 Médio 2 Não
+Madan 7 Baixo 1 Não
+Mandargus 11 Único 0 Sim
+Mandragora 2 Baixo 3 Não
+Móriu 2 Alto 3 Não
+Móriu Nobre 4 Líder 1 Não
+Moscados 2 Baixo 4 Não
+Namu 7 Médio 1 Não
+Nyy 6 Alto 1 Sim
+Okaka 4 Médio 2 Não
+Ottagu 5 Médio 2 Não
+Ouroboros 6 Único 0 Sim
+Owu 1 Médio 0 Não
+Paizu 1 Baixo 4 Não
+Panguar 6 Alto 1 Não
+Passo Fofo 1 Médio 2 Não
+Pedrita-Forte 3 Médio 3 Não
+Pedrita-Rasa 1 Baixo 5 Não
+Pedrita-Velha 5 Líder 2 Sim
+Peixe Sapo 2 Alto 3 Não
+Pequeno Ladino 1 Baixo 3 Sim
+Petizor 3 Médio 2 Não
+Pexote 1 Baixo 4 Não
+Plumo 2 Baixo 3 Não
+Poira 1 Baixo 4 Não
+Porco 1 Baixo 4 Não
+Principado 5 Alto 0 Não
+Psitche 6 Alto 1 Não
+Ramu 1 Baixo 3 Não
+Rei Undino 3 Líder 3 Não
+Rezibra 6 Médio 2 Não
+Rimu 1 Médio 3 Não
+Snoroach 3 Médio 2 Não
+Squeroo 4 Baixo 2 Não
+Tormenta 8 Alto 1 Não
+Tsemom 6 Alto 2 Não
+Tuctuc 1 Baixo 5 Não
+Turliga 5 Baixo 2 Não
+Undino 1 Baixo 5 Não
+Urso-Broto 1 Médio 3 Não
+Vebu 1 Baixo 5 Não
+Vespa Bati 1 Baixo 5 Não
+Virtude 5 Alto 0 Não
+Vulto 1 Alto 0 Sim
+Wahau 7 Alto 1 Não
+Wawu 3 Alto 0 Não
+Yashi 7 Único 0 Não
+Yeti 6 Alto 1 Não
+Zaubar 2 Médio 3 Não
+
+
+

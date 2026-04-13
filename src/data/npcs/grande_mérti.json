@@ -1,0 +1,9 @@
+{
+  "id": "grande_mérti",
+  "name": "Grande Mérti",
+  "location": "Reserva Amortecida",
+  "description": "",
+  "type": "npc",
+  "role": "Grande",
+  "isCustom": false
+}

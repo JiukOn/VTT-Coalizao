@@ -1,0 +1,14 @@
+{
+  "id": "escudo_de_vitalidade",
+  "name": "Escudo de Vitalidade",
+  "category": "LEGADO",
+  "class": "Guardião",
+  "description": "O usuário manifesta uma barreira de energia vital, protegendo a si mesmo ou a um aliado. O usuário gasta 3 VIT para conceder um bônus de defesa única ao alvo. O escudo é ativado no primeiro turno, e nos turnos 2 e 3, o alvo recupera 2 VIT em cada um. Para reativar esta habilidade na mesma situação/combate após seus efeitos cessarem, o usuário deve ter sucesso em um teste 1d20 > 16. Se o teste falhar, o usuário não pode usar a habilidade por 3 turnos. Efeito Secundário: Quando a VIT do usuário for 3 ou menos, ele ganha um dado extra de esquiva de uso único.",
+  "classLink": "Guardião",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

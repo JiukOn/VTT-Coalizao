@@ -1,0 +1,9 @@
+{
+  "id": "bozo",
+  "name": "Bozo",
+  "location": "Cidade Caída",
+  "description": "Antes de ser infectado pelo poder de Mek, Bozo era das forças especiais de Magni. Ele era conhecido como \"O Palhaço Raivoso\".",
+  "type": "npc",
+  "role": "O Palhaço Raivoso",
+  "isCustom": false
+}

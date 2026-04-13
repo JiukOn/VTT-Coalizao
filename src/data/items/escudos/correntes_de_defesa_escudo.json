@@ -1,0 +1,21 @@
+{
+  "id": "correntes_de_defesa_escudo",
+  "name": "Correntes de Defesa (Escudo)",
+  "category": "Itens de Defesa",
+  "description": "Cadeias de alta durabilidade projetadas para imobilizar armas de proximidade. Concedem 1d4 - 3 de defesa de dano. (25 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

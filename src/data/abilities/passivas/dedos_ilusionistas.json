@@ -1,0 +1,14 @@
+{
+  "id": "dedos_ilusionistas",
+  "name": "Dedos Ilusionistas",
+  "category": "PASSIVAS",
+  "class": "Evo Dedos Ágeis",
+  "description": "Concede +3 em testes de montagem e +2 em testes de furto. (Requer INT 4, DEX 4)",
+  "classLink": "Evo Dedos Ágeis",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}

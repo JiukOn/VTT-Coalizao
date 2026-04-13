@@ -1,0 +1,11 @@
+{
+  "id": "caopus",
+  "name": "Caopus",
+  "description": "O Caopus é um mamífero semi-aquatico A protuberância em seu dorso é uma cúpula de pele e cartilagem, que armazena grandes quantidades de água e nutrientes, permitindo ao Caopus sobreviver por longos períodos sem beber. Os tentáculos que saem de seu pescoço e de suas laterais tem a função de auxiliar na alimentação. O Caopus é uma criatura que vive nos oasis dos desertos, conhecida por sua capacidade de atravessar grandes extensões de areia ou agua sem se cansar. Eles são considerados em lendas como mensageiros e sua aparição é vista como um bom presságio.",
+  "type": "semi-aquatico",
+  "size": "medio",
+  "diet": "onivoro",
+  "element": "agua",
+  "imagePath": "Caopus.jpeg",
+  "isCustom": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "york",
+  "name": "York",
+  "location": "La Montana",
+  "description": "",
+  "type": "npc",
+  "role": "",
+  "isCustom": false
+}

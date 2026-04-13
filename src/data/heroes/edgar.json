@@ -1,0 +1,21 @@
+{
+  "id": "edgar",
+  "name": "Edgar",
+  "level": 5,
+  "class": "Alquimista",
+  "specie": "Humano",
+  "avatar": "/assets/heroes/edgar.png",
+  "stats": {
+    "VIT": 7,
+    "DEX": 4,
+    "CRM": 3,
+    "FRC": 3,
+    "INT": 10,
+    "RES": 5,
+    "PRE": 5,
+    "ENR": 8
+  },
+  "history": "Alquimista sombrio especialista em transmutação e contratos de alma.",
+  "aura": "Conhecimento",
+  "isCustom": false
+}

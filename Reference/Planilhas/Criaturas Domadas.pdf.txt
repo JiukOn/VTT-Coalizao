@@ -1,0 +1,15 @@
+Nome MóriuEspécie Móriu Nobre Ceifeiro Tempo Item EfeitoNúcleo Grande 4 ENRIdade 6 Nível 5Guilda OP XP 85/110
+Personalidade Animado 2 CRM
+História Ave Grande, Costuma Voar Alto, Muito Agressiva. Possui Linhagem de Ceifeiro.
+do PersonagemÉ um parente mais "Nobre" do Frango Manuk. T em Alta Linhagem Dracônica.
+Altura 2,8 m StatusSaudável
+Observação Medo de T artarugaAtributo Base Valor +Valor -FinalBônus HabilidadesVIT 10 0 2 8 1 AcelerarDEX 4 0 0 4 0 Total Chamas DracônicasCRM 0 2 0 0 0 38 Chamas RoxasFRC 6 0 0 6 1 4 MordidaINT 3 0 0 3 0 40 Resistência DracônicaRES 4 0 0 4 0 4 MagmaPRE 3 0 0 3 0 N/AENR 8 4 0 12 2 N/AN/A
+Nome CésarEspécie Imperador Undino VerdeMadeira Item EfeitoNúcleo Medio 3 ENRIdade 17 Nível 6 PC T otal3 Armadura de Ossos [6]2 FRCGuilda N/A XP 13/130PC Atual3
+Personalidade Ousado 1 FRC
+História O Grande Imperador dos Undinos Verdes presentes no Continente Central.
+do PersonagemT eve uma vida sofrida e perdeu seus pais quando jovem, foi o primeiro imperador verde.
+Altura 1,8 m StatusSaudável
+Observação N/AAtributo Base Valor +Valor -FinalBônus HabilidadesVIT 29 0 0 29 5 AtordoarDEX 13 0 0 13 2 Total LiderarCRM 10 0 0 10 2 82 BerserkFRC 14 3 0 17 3 6 RegeneraçãoINT 8 0 0 8 1 88 MordidaRES 2 0 0 2 0 14 N/APRE 2 0 0 2 0 N/AENR 4 3 0 7 1 N/AN/A
+Dominio de CesarEstatisticas Deposito GeralExercito 212Couro de GanLan (3)Ossos de Undino (654)Bati (342)Minerio de Ferro (21)Couro de Lobo (29)Pedra (128)Madeira (67)Nucleo Pequeno (12)Nucleo Medio (2)Undinos208Rei Undinos3Sacerdotes Undinos1
+RegiõesFontes de Agua Limpa3Casa Central1Deposito1Casa de Espiritualidade1Cabanas de Moradia92
+ArmamentoPorrete de Osso32Funda56Elmo de Ossos10Capacete de Couro9Peitoral do Rei Undino8Peitoral de Ossos3Em Missão 5Undinos4Rei Undinos1

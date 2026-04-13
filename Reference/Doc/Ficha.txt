@@ -1,0 +1,341 @@
+___Criação da ficha________
+
+Bem-vindo, Jogador(a)! Prepare-se para forjar sua lenda em "Coalizão", um mundo vibrante onde sua essência, escolhas e até mesmo a melodia de sua alma moldarão seu destino. Este guia é o seu primeiro passo na jornada, uma tela em branco onde você pintará a alma do seu personagem.
+
+Passo 1 – Quem é Você?
+Imagine-se diante de um espelho antigo, onde não apenas seu reflexo físico, mas sua própria alma é revelada. Comece a traçar os contornos mais íntimos do seu ser.
+
+Nome: O primeiro suspiro de sua existência neste mundo. Qual é o nome pelo qual será conhecido? Ele carrega um legado, um propósito, ou é um sussurro que ecoa sua origem? Esse campo exige ao menos um nome e opcionalmente um sobrenome.
+
+Idade: Quantas estações você já testemunhou? Sua idade moldou sua sabedoria, sua agilidade ou sua força? Um jovem impetuoso, um adulto experiente, ou um ancião com um passado vasto? Esse campo exige sua idade em anos de vida.
+
+Espécie: Qual a sua natureza fundamental neste mundo? Você é um humano comum ou talvez um dos seres híbridos que habitam o reino da Coalizão? Sua espécie pode trazer características únicas, resistências ou até mesmo vulnerabilidades. Esse campo exige uma das espécies iniciais que se pode ter. Verifique na lista de espécies iniciais.
+
+Aparência: Detalhe a imagem que você projeta para o mundo. Descreva o tom de sua pele, a cor de seus olhos que espelham histórias, o estilo de seu cabelo, sua estatura e constituição física. Há cicatrizes que contam batalhas, tatuagens que marcam a alma, ou peculiaridades que o tornam único? Que estilo de vestimentas você prefere, e o que elas revelam sobre você? Faça uma breve descrição do seu personagem e detalhe suas vestimentas. Se possível, faça um desenho ou encontre uma inspiração para representá-lo.
+
+História Resumida: Cada vida é um rio de experiências. Quais foram os momentos cruciais que esculpiram seu espírito? Onde você nasceu e sob qual céu cresceu? Houve uma perda que o marcou, uma vitória que o impulsionou, ou um encontro que mudou seu caminho para sempre? E o mais importante: o que o trouxe para as fileiras da Coalizão? Qual é o seu propósito inicial nesta grande tapeçaria? Este campo requer um resumo de apenas 2 linhas de toda a vasta história de seu personagem.
+
+Tendências: Pense nos temas que o fascinavam antes de sua aventura começar, as áreas onde sua curiosidade se aprofundou ou onde suas mãos já eram habilidosas. Estas são suas tendências, seus conhecimentos prévios ou interesses naturais. Escolha até três temas (ex: "Botânica", "Estratégia", "Forja"). Quando você buscar aprender algo novo ou obter informações/habilidades relacionadas a essas áreas, a familiaridade de sua mente lhe concederá um dado de vantagem (rola 2 dados e pega o maior resultado), representando sua aptidão inata. Verifique na lista de Tendências.
+
+Traço de Personalidade: Defina o cerne do comportamento de seu personagem. Dentre as opções como "Serenidade", "Júbilo", "Ímpeto" ou "Apatia", selecione aquela que captura a verdadeira essência de seu personagem. Esta escolha será a bússola para sua interpretação e a chave para a obtenção de Pontos de Estilo e Interpretação. Verifique na lista de Personalidades.
+
+Frase de Efeito: Todo herói (ou anti-herói) tem um mote, um bordão que ecoa sua essência. Qual é a frase que ressoa com sua alma, aquela que você diria em um momento de triunfo, desafio ou até mesmo desespero? Ela deve ser um espelho de sua personalidade e sua filosofia de vida. Esta frase pode conferir um bônus temporário em seus atributos; os detalhes sobre como isso funciona serão explicados nas regras gerais.
+
+Efeitos Psicológicos Iniciais: O passado, às vezes, deixa marcas na alma. Seu personagem carrega algum traço psicológico passivo ou uma vulnerabilidade latente desde o início? Consulte a lista de Efeitos Psicológicos Passivos (como "Dislexia" ou "Servidão") e reflita sobre como eles se manifestam em seu cotidiano, mesmo que sutilmente. Verifique na lista de Efeitos Psicológicos Iniciais.
+
+Passo 2 – Atributos, Habilidades e Ferramentas
+Agora, é hora de erguer os pilares que sustentam suas capacidades, e acender a chama que define seu chamado no mundo.
+
+Escolha da Classe Inicial: O chamado do destino ecoa. Qual é a sua vocação inicial? Sua classe é mais do que um título; ela define as primeiras sementes de suas habilidades e seu caminho de aprimoramento. Pense em seu estilo de jogo preferido. Você empunha uma lâmina, conjura habilidades energéticas, defende os fracos ou se move nas sombras? Decida sua classe base verificando a lista de classes iniciais.
+
+Pontos de Atributo Iniciais: Você recebeu 25 pontos de energia vital para moldar seus atributos. Distribua-os entre:
+
+VITALIDADE (VIT): Sua Vitalidade é a chama da vida, o limiar entre consciência e a morte. Permite resistir a danos e doenças, sendo crucial para se manter de pé.
+
+DESTREZA (DEX): A Destreza é a dança do seu corpo, sua agilidade para esquivar-se ou mover-se imperceptivelmente. Torna seus reflexos apurados e define sua Movimentação.
+
+CARISMA (CRM): O Carisma é o brilho de sua presença, sua capacidade de influenciar corações e mentes, tecer palavras que convencem e ler emoções.
+
+FORÇA (FRC): A Força é o poder bruto em seus músculos, sua capacidade de esmagar e empunhar, e a constituição que o mantém de pé.
+
+INTELIGÊNCIA (INT): A Inteligência é a clareza de sua mente, sua capacidade de desvendar enigmas, absorver conhecimento e traçar estratégias.
+
+RESILIÊNCIA (RES): A Resiliência é a muralha de sua mente e espírito, protegendo-o de influências externas, energéticas ou psicológicas.
+
+PRECISÃO (PRE): A Precisão é sua mira certeira, o olhar que não falha e a coordenação fina para feitos detalhados.
+
+ENERGIA (ENR): A Energia é o fluxo de poder primordial em suas veias, fonte de capacidade energética e domínio sobre forças ocultas.
+
+Pense no tipo de aventureiro(a) que você deseja ser: um(a) gigante de força, um(a) sussurro ágil, um(a) erudito(a) carismático(a), ou um(a) líder inteligente?
+Lembre-se também de que o múltiplo de cada atributo fornecido por sua classe será importante para o cálculo final do bônus, que é de +1 para cada 5 pontos finais em um atributo. Os detalhes do cálculo do múltiplo serão explicados nas regras gerais.
+
+Equipamento Inicial: O Mestre agora concederá a você os recursos para equipar seu personagem. Seja um conjunto de itens pré-definidos ou um valor em Ouris (O dinheiro deste universo) para que você escolha a dedo seus pertences. Navegue pelas listas de Armas (de Proximidade e Distância), Itens de Defesa (Escudos), Vestimentas (para cada parte do corpo, da cabeça aos pés), Projéteis, Itens de Controle Energético ou Ferramentas. Pense nas modificações que seus itens podem ter (Defensivas, Elementais, Essenciais, Ofensivas, ou de Qualidade) e como elas complementam seu estilo. Lembrando que os equipamentos iniciais devem obedecer a narrativa, então o Mestre deverá decidir onde e como a aventura começa.
+
+Inventário Inicial: Sua mochila de aventureiro(a) é um reflexo de sua preparação para o desconhecido. Você pode selecionar um recurso simples e um item consumível inicial para levar consigo neste percurso. Esses itens são essenciais para um momento difícil ou para dar o pontapé inicial em sua jornada. Lembre-se que o inventário inicial também deve obedecer à narrativa, então o Mestre decidirá onde e como a aventura começa.
+
+Aura: Mergulhe nas descrições das dez Auras disponíveis e escolha apenas uma. Qual delas é o espelho mais fiel de sua alma, de seu poder e de sua influência sobre o mundo? Esta escolha determinará os efeitos que você emanará para todos ao seu redor, aliados, inimigos e civis, indistintamente, dentro do seu alcance. Verifique na lista de Auras.
+
+Passo 3 - Finalização da Ficha
+Com todos os detalhes em mente, você está quase pronto para dar o primeiro passo em sua aventura.
+
+Nível: Você começa sua jornada no Nível 1.
+
+XP: Sua experiência é uma página em branco; você começa com 0/20 XP.
+
+Habilidades: No Nível 1, você terá a habilidade legado de sua classe e uma habilidade inicial extra a sua escolha. Verifique na lista de habilidades iniciais.
+
+Verificação Final: Respire fundo. Examine sua ficha. Todas as escolhas refletem o personagem que você imaginou? Há coerência entre sua história, atributos, espécie, aura e personalidade? Quando sentir que tudo está no lugar, sua ficha estará pronta, e uma nova lenda aguardará para ser escrita em "Coalizão".
+
+Agora que já está preparado(a) vamos passar para as regras gerais!
+________
+
+__Regras Gerais________
+
+Bem-vindo(a) às Regras Gerais de "Coalizão"! Este é o manual fundamental que guiará suas ações, decisões e interações dentro do nosso mundo. Entender estes princípios é essencial para navegar pelos desafios e forjar sua própria lenda.
+
+Testes de Atributos: 
+
+Sempre que houver uma incerteza sobre o sucesso de uma ação – seja atacar, persuadir, investigar ou se esgueirar – o Mestre solicitará um Teste de Atributo.
+
+A Rolagem: Você rolará um dado de vinte faces (1d20).
+
+Bônus de Atributo: Ao resultado do 1d20, você adicionará o valor do bônus do atributo requisitado para a ação. Lembre-se de que o bônus do atributo é o valor adquirido a cada 5 pontos finais no mesmo. Considere também quaisquer outros bônus ou penalidades aplicáveis (por habilidades, equipamentos, condições, etc.).
+
+Dificuldade: O Mestre definirá uma Dificuldade para a ação. Seu objetivo é igualar ou superar essa Dificuldade com o resultado final da sua rolagem.
+
+Sucesso e Fracasso: Se seu resultado final for igual ou superior à Dificuldade, você obteve sucesso. Caso contrário, a ação falha, e pode haver consequências adicionais definidas pelo Mestre.
+
+Vantagem/Desvantagem: Quando você tiver Vantagem (mencionada nas Tendências, por exemplo), role 2d20 e use o resultado mais alto. Se tiver Desvantagem, role 2d20 e use o resultado mais baixo.
+
+Exemplo Prático: O Mestre narra: "Você entra em um calabouço antigo e olha em diversas direções. Solicito um Teste de PRECISÃO (PRE) com Dificuldade 16." Você rola 1d20, soma seu bônus de PRE e outros modificadores. Se o valor final for maior que 16, o Mestre diria: "Você encontrou uma armadilha bem abaixo dos seus pés, logo antes de dar o próximo passo." Se o valor for menor que 16, o Mestre então diria: "Você dá um passo em falso e ativa uma armadilha; uma gaiola cai e o(a) prende."
+
+Classificação dos Resultados (Dados 1d20): Um resultado de 20 é um Crítico, representando um sucesso extraordinário, geralmente com efeitos adicionais poderosos. Um resultado de 13 a 19 é Bom, indicando um sucesso competente e eficaz na ação. De 10 a 12, o resultado é Normal, um sucesso com pequenas imperfeições ou um resultado neutro, sem grandes destaques. De 2 a 9, o resultado é Ruim, um fracasso claro ou um sucesso com custos significativos. Um resultado de 1 é um Desastre, um fracasso catastrófico, com consequências graves e inesperadas, muitas vezes impondo novas complicações.
+
+Testes Complementares (Dados 1d4): Existem também testes que utilizam um dado de quatro faces (1d4). Estes estão geralmente relacionados a cálculos de dano, defesa, cura ou movimento, e possuem pouca relação com a incerteza da ação em si, focando mais nos cálculos de seus efeitos. Sua classificação é mais simples: Um resultado de 1 é o Pior. Um resultado de 2 é Ruim. Um resultado de 3 é Bom. Um resultado de 4 é o Melhor.
+
+Combate:
+
+Nem tudo em sua aventura são flores e bebidas; esteja preparado(a) para uma briga antes mesmo que ela comece.
+
+Iniciativa: No início de um confronto, todos os envolvidos – personagens dos(as) jogadores(as) e criaturas – farão um Teste de Iniciativa, que consiste em 1d20 + DEX. Sempre considere os efeitos ativos e habilidades aplicáveis. O Mestre ordenará as ações do maior para o menor resultado, definindo a ordem dos turnos, exceto em caso de uso de habilidades que possam alterar essa sequência.
+
+Turno de Combate: No seu turno, você pode realizar uma Ação Principal (atacar, utilizar habilidades ativas, etc.), uma Ação Cognitiva (analisar algo, procurar alguém, utilizar passivas que exigem foco, etc.) e uma Ação de Movimento (seguindo as regras de Movimentação Curta descritas futuramente). Algumas habilidades podem conceder ações adicionais.
+
+Ataque: Para atacar, faça um Teste de Atributo. O atributo usado dependerá do tipo de ataque: FORÇA para ataques corpo a corpo (como socos ou lâminas perfurantes), PRECISÃO para ataques à distância (ou ataques precisos com lâminas cortantes), ou ENERGIA para ataques com habilidades energéticas. A dificuldade a ser superada é a Defesa do alvo.
+
+Dano: Se o ataque for bem-sucedido, role os dados de dano da sua arma ou habilidade, adicionando os bônus apropriados do seu atributo e outras fontes. Para ataques sem armas ou habilidades específicas, que só é possível no caso do ataque corpo a corpo desarmado, seu dano é 1d4 + bônus de Força / 2, arredondado para baixo (mínimo arredondamento é 0).
+
+Defesa: O alvo atingido deve reduzir o valor do dano recebido com sua Defesa. Essa Defesa é contabilizada pelo bônus de Força para defesa física ou pelo bônus de Resiliência na defesa energética. Considere o bônus do seu atributo como o valor máximo e caso necessário, faça um teste de 1d4 seguindo a mesma lógica do cálculo de dano desarmado para determinar o valor de defesa aplicado em uma situação adversa seguindo decisão do mestre.
+
+Esquiva: Em qualquer tipo de ataque, o alvo pode decidir fazer um Teste de Destreza (1d20+DEX) contra o dado do atacante para realizar uma esquiva. No caso de um ataque em área, o alvo deve primeiro realizar um Teste de Movimentação Curta para verificar se pode sair da área de acerto antes de realizar o Teste de Esquiva.
+
+Movimentação:
+
+A movimentação determina o quanto seu personagem pode se deslocar no mundo de Coalizão, seja em um combate dinâmico ou em uma longa jornada.
+
+Movimentação Curta: Usada para definir o deslocamento em um único turno de combate ou exploração detalhada. Pode ser Individual ou em Grupo.
+
+Movimentação Curta Individual: Após considerar efeitos e habilidades, joga-se 1d4 para definir o valor máximo de movimentação no turno. O maior valor (4) é o bônus de Destreza (DEX) do(a) jogador(a) multiplicado por 4 em metros. O menor valor (1) é 4 metros.
+
+Movimentação Curta em Grupo: Considera-se somente efeitos em área e habilidades de grupo. Joga-se 1d4 para definir o valor máximo de movimentação no turno. O maior valor (4) é o bônus de Destreza (DEX) mais alta entre os integrantes do grupo multiplicado por 4 em metros. O menor valor (1) é o bônus de Destreza (DEX) mais baixo entre os integrantes do grupo multiplicado por 4 em metros.
+
+Movimentação Longa: Usada para definir o deslocamento ao longo de um dia de viagem ou exploração de vasta área. Pode ser Individual ou em Grupo.
+
+Movimentação Longa Individual: Após considerar efeitos e habilidades, joga-se 1d4 para definir o valor máximo de movimentação no dia. O maior valor (4) é o equivalente em quilômetros do bônus de Destreza (DEX). O menor valor (1) é 1 quilômetro.
+
+Movimentação Longa em Grupo: Considera-se somente efeitos em área e habilidades de grupo. Joga-se 1d4 para definir o valor máximo de movimentação no dia. O maior valor (4) é o equivalente em quilômetros do bônus de Destreza (DEX) mais alta entre os integrantes do grupo. O menor valor (1) é o equivalente em quilômetros do bônus de Destreza (DEX) mais baixo entre os integrantes do grupo.
+
+Resultados Intermediários (2 e 3 nos dados 1d4 de movimentação): No caso dos resultados 2 e 3 nos dados de movimentação, o Mestre deve decidir entre duas opções de interpretação:
+
+Opção A (Simples): Se o resultado for 2, considera-se o mesmo que 1 (Pior). Se o resultado for 3, considera-se o mesmo que 4 (Melhor).
+
+Opção B (Calculada): Se o resultado for 2, soma-se o valor "Pior" com metade do valor "Melhor", arredondando para o inteiro acima. Se o resultado for 3, subtrai-se metade do valor "Pior" do valor "Melhor", arredondando para o inteiro abaixo.
+
+Habilidades:
+
+Habilidades são a manifestação dos poderes e talentos específicos que seu personagem pode dominar, cada uma com sua própria forma de ser utilizada.
+
+Ativação: Algumas habilidades são sempre funcionais, operando de forma passiva no seu personagem. Outras, no entanto, exigem uma ação deliberada, a ocorrência de uma condição específica ou o sucesso em testes, conforme detalhado na descrição individual de cada uma.
+
+Custo de Energia: Muitas habilidades, especialmente aquelas que canalizam forças primordiais, consomem ou podem consumir um certo valor de Energia para serem ativadas ou mantidas. Se o valor final de sua Energia não for suficiente, seu personagem não poderá utilizar a habilidade desejada.
+
+Detalhes específicos de cada habilidade, incluindo seus custos e efeitos, serão fornecidos na seção "Lista de Habilidades".
+
+Recuperação de Atributos:
+
+Descanso: Um período de descanso, medido em horas, que permite ao personagem recuperar uma certa quantidade de seus atributos, e até mesmo desativar efeitos psicológicos ativos ou curar doenças em alguns casos. O resultado do descanso é determinado por um Teste de Atributo de 1d20.
+
+Desastre (1): O personagem perde 1 ponto de RES temporariamente, não recupera nada e sofre um efeito adverso, como pesadelos, dormir demais ou de menos, ou outra criação narrativa do Mestre.
+
+Ruim (2 a 9): O personagem pode diminuir em até 1 ponto os valores negativos "não naturais" de VIT e ENR (regra descrita futuramente), ou seja, aqueles que não são aplicados por seus próprios itens e habilidades. O descanso não excederá 4 horas.
+
+Normal (10 a 12): O personagem pode diminuir em até 1 ponto todos os seus atributos que estejam em valores negativos "não naturais". O descanso durará até 6 horas.
+
+Bom (13 a 19): O personagem diminui pela metade todos os valores negativos "não naturais" de sua ficha e de todos os atributos. Além disso, pode rolar um teste extra para desativar efeitos psicológicos ativos e realizar um teste de cura de doenças. O descanso pode durar até 8 horas.
+
+Crítico (20): O personagem não só recupera completamente todos os seus atributos, diminuindo seus valores negativos "não naturais" para 0, como também pode desativar um efeito psicológico ativo sem teste algum e ainda realizar o teste de cura de doenças. Tudo isso ocorre independentemente da quantia de tempo dormida decidida pelo(a) jogador(a).
+
+Equipamento e Inventário:
+
+Seus pertences são mais do que meros objetos; são extensões de suas capacidades e reflexos de sua jornada. Gerenciar seu equipamento e inventário é crucial para a sobrevivência e o sucesso em Coalizão.
+
+Durabilidade (DP): Seus itens possuem um valor de durabilidade, desgastando-se com o uso e os danos sofridos, e exigindo reparos para manter sua funcionalidade.
+
+A queda no valor de durabilidade acontece quando o(a) jogador(a) realiza uma ação com o item e o resultado é um Desastre (1). Nesses casos, uma das consequências negativas narradas deverá ser o item sendo desgastado ou quebrado. Em caso de vestimentas ou itens de defesa, essa baixa também pode ocorrer caso um personagem atacante acerte um desses itens com um Crítico (20).Para contabilizar o dano, o(a) jogador(a) jogará 1d4, e o resultado será reduzido da durabilidade atual do item. 
+
+Ouris: Ouris é a moeda de Coalizão, o padrão de troca universal usado para comprar e vender itens, serviços e realizar transações no mundo, se fala 1 Ouri ou 2 Ouris.
+
+Capacidade de Carga: Seu personagem pode carregar uma quantidade limitada de itens. O Mestre pode optar por utilizar um de dois sistemas de jogo para gerenciar a carga, permitindo uma experiência que se adapta ao estilo de mesa:
+
+Sistema de Pesos: Nesse sistema, a capacidade de carga do personagem baseia-se em sua Força. O peso máximo que pode ser carregado é de 20 vezes o seu bônus de Força em quilogramas, mais um adicional de 50 quilogramas. Os itens são classificados entre:
+
+Pesados: Itens com mais de 20 quilogramas (para cálculo, consideram-se 20 quilogramas).
+
+Médios: Itens entre 10 e 19 quilogramas (para cálculo, consideram-se 10 quilogramas).
+
+Leves: Itens de 9 quilogramas para baixo (para cálculo, consideram-se 5 quilogramas).
+
+Sistema de Metarealidade: Se o Mestre optar por este sistema, você não precisará se preocupar com o peso exato de suas mochilas. Essa abordagem oferece uma interface visual (semelhante a um jogo de videogame) com uma janela de atributos e um inventário subespacial visível para seu personagem. Detalhes sobre essas regras e narrativas especiais serão explicados mais futuramente.
+
+Condições e Efeitos Psicológicos:
+
+O corpo e a mente de seu personagem são vulneráveis a uma série de estados que podem alterar sua performance e comportamento.
+
+Condições: São estados temporários que afetam diretamente as capacidades físicas ou sensoriais de seu personagem. Exemplos incluem: Atordoado, Envenenado , Travado , Sangramento , Morto-Vivo , Fraqueza , Náusea e mais. Cada condição possui efeitos específicos sobre as ações e testes, e é crucial verificar a lista de efeitos para compreender seu impacto.
+
+Efeitos Psicológicos: Representam traços mentais que podem influenciar o comportamento do personagem, concedendo desvantagens ou modificadores em certas situações. Podem ser de natureza ativa (temporários e passíveis de remoção) ou passiva (constantes). Para realizar a Inativação de um Efeito Psicológico Ativo, o(a) afetado(a) deve realizar um teste (1d20+RES>1d20+5) a partir do segundo turno de efeito, buscando superar a condição mental. Para mais informações sobre cada efeito, verifique também na lista completa de efeitos.
+
+Progressão do Personagem
+Sua jornada em Coalizão é um caminho de constante evolução. A cada desafio superado, seu personagem se fortalece, ganhando novas capacidades e expandindo sua influência no mundo.
+
+Experiência (XP): Você ganha Pontos de Experiência (XP) ao superar desafios, completar missões, derrotar inimigos e interpretar bem seu personagem.
+
+Nível: Ao atingir uma certa quantidade de XP, seu personagem avança de nível, ganhando novos pontos de atributos, habilidades e outras melhorias, conforme a tabela a seguir:
+
+Nível 1: Criação do personagem; você distribui seus 25 pontos de atributo e escolhe sua classe inicial.
+Nível 2: Recebe 3 pontos novos para distribuir em seus atributos.
+Nível 3: Recebe 2 pontos novos para distribuir em seus atributos.
+Nível 4: Recebe 3 pontos novos para distribuir em seus atributos.
+Nível 5: Seu personagem alcança a Evolução de Classe e recebe 2 pontos novos para distribuir em seus atributos. 
+Nível 6: Recebe 3 pontos novos para distribuir em seus atributos.
+Nível 7: Recebe 2 pontos novos para distribuir em seus atributos.
+Nível 8: Recebe 3 pontos novos para distribuir em seus atributos.
+Nível 9: Recebe 2 pontos novos para distribuir em seus atributos.
+Nível 10: Para seu XP acumulado este é o limite de nível. O personagem se torna passível de TransEvolução, e você recebe 3 pontos novos para distribuir em seus atributos. 
+
+Mais detalhes sobre as evoluções, incluindo a Evolução de Classe e a TransEvolução, serão explicados futuramente em uma seção dedicada. 
+
+Investigação:
+
+A arte da investigação é desvendar segredos e mistérios, usando a mente afiada e os sentidos apurados para encontrar o que está oculto.
+
+Atributos Envolvidos:
+
+INTELIGÊNCIA (INT): Usada para raciocínio lógico, deduções complexas, e para a leitura e interpretação de documentos ou pistas.
+PRECISÃO (PRE): Essencial para a atenção a detalhes visuais e para a descoberta de pistas que estejam escondidas.
+CARISMA (CRM): Aplicada em interrogatórios, na persuasão de indivíduos e na leitura de emoções para desvendar intenções.
+RESILIÊNCIA (RES): Necessária para resistir ao impacto de informações perturbadoras ou ao choque de segredos proibidos.
+
+Mecânica Básica:
+
+Para realizar um Teste de Investigação, role 1d20 e adicione o bônus do atributo mais relevante para a situação.
+
+Tabela de Dificuldade:
+
+8 / Muito Fácil: Uma pista evidente ou um problema simples de resolver.
+12 / Comum: Uma descoberta que exige alguma atenção ou esforço.
+16 / Complexa: Uma informação bem escondida ou um quebra-cabeça desafiador.
+18–20 / Oculta/Proibida: Um segredo guardado a sete chaves, acessível apenas a mentes excepcionais ou por meios extremos.
+
+Tipos de Investigação:
+
+Ambiente: Para procurar objetos específicos, entradas secretas ou armadilhas disfarçadas. (TESTE de PRECISÃO ou INTELIGÊNCIA) .
+Pessoa/NPC: Para identificar mentiras, intenções ocultas ou sentimentos verdadeiros de indivíduos. (TESTE de CARISMA ou INTELIGÊNCIA) .
+Texto: Para decifrar livros antigos, runas misteriosas ou enigmas complexos. (TESTE de INTELIGÊNCIA ou habilidades específicas) .
+Lógica: Para conectar pistas aparentemente desconexas ou para traçar a identidade de um(a) culpado(a). (TESTE de INTELIGÊNCIA + habilidades específicas) .
+
+Falhas e Complicações:
+
+Desastre (1): Sua investigação leva a uma pista falsa, ativa uma armadilha inesperada ou causa um trauma psicológico (rola 1d20 para determinar um efeito psicológico leve).
+Ruim (2–5): Você encontra uma pista, mas ela está incompleta ou foi mal interpretada, levando a conclusões erradas.
+Normal (6–8): A pista encontrada é vaga, exigindo uma nova ação ou um esforço adicional para ser compreendida em sua totalidade.
+
+Furtividade:
+
+A furtividade é a arte de mover-se sem ser visto(a) ou ouvido(a), de misturar-se às sombras e de enganar os sentidos alheios. É uma habilidade essencial para espiões, ladrões(as) e qualquer um(a) que precise operar sem chamar a atenção.
+
+Testes Envolvidos:
+
+DESTREZA (DEX): Fundamental para a própria furtividade, para movimentos silenciosos e para a execução de um disfarce corporal. 
+PRECISÃO (PRE): Utilizada para observar padrões de patrulha, identificar trancas complexas e detectar armadilhas ocultas. 
+CARISMA (CRM): Aplicada no disfarce social e na capacidade de mentir com naturalidade, convencendo os outros de sua identidade ou intenções. 
+
+Mecânica Básica:
+
+Para realizar um Teste de Furtividade, role 1d20 e adicione o bônus do atributo que melhor se encaixe na sua tentativa. 
+
+Modos de Furtividade:
+
+Ambiental: Esconder-se usando o ambiente, como sombras, arbustos ou multidões. 
+Social: Utilizar falsas identidades, disfarces ou blefes para se misturar socialmente. 
+Invasão: Entrar em locais restritos, arrombar trancas ou hackear sistemas energéticos. 
+
+Fatores de Dificuldade:
+
+A Dificuldade de um Teste de Furtividade pode ser influenciada por diversos fatores, como iluminação do ambiente, tipo de terreno, presença e número de guardas, itens que o(a) personagem esteja usando, o barulho ambiente e o tempo disponível para agir. 
+
+Falhas em Furtividade:
+
+Desastre (1): O personagem faz barulho, chama a atenção imediatamente ou aciona uma armadilha. 
+Ruim (2–5): O personagem é percebido, mas pode tentar se justificar utilizando um teste de Carisma (CRM). 
+Normal (6–9): O personagem permanece oculto apenas parcialmente, resultando em ações limitadas. 
+
+Re-rolagem Contínua:
+
+A cada 2 turnos, o(a) jogador(a) deve rolar novamente o Teste de Furtividade para verificar se continua oculto(a). 
+
+Percepção do Alvo (Quando Parcialmente Visível):
+
+Em caso do personagem estar parcialmente visível para alguém de quem ele(a) tenta se esconder: o sucesso da sua furtividade agora é determinado pela percepção do inimigo. Este inimigo fará um teste de 1d20 + o bônus do atributo que for a contraparte do atributo utilizado pelo(a) jogador(a) que está sendo furtivo(a). Seu objetivo é que seu resultado de furtividade seja maior do que o resultado de percepção do alvo. As contrapartes são: PRECISÃO contra DESTREZA (PRE vs DEX), INTELIGÊNCIA contra CARISMA (INT vs CRM), e DESTREZA contra PRECISÃO (DEX vs PRE). 
+
+Pontos Especiais
+Além dos atributos e habilidades, a fluidez de sua interpretação e a agilidade de sua mente podem render recompensas únicas.
+
+Ponto de Estilo:
+
+Obtenção: Ao interpretar bem o personagem, criando cenas épicas ou memoráveis, o(a) jogador(a) ganha um Ponto de Estilo.
+
+Limite e Perda: Este ponto é único e só pode ser obtido novamente após ser gasto ou perdido. Ele pode ser perdido caso o(a) jogador(a) o mantenha até o fim do arco atual da campanha.
+
+Uso: Só pode ser usado em alvos próximos (outros personagens, aliados ou inimigos) e não pode ser utilizado em si mesmo(a). Ao ser usado, concede um dado qualquer de Vantagem para o alvo escolhido.
+
+Ponto de Criatividade:
+
+Obtenção: Ao resolver situações e puzzles de forma criativa ou inovadora, o(a) jogador(a) ganha um Ponto de Criatividade.
+
+Limite e Perda: Este ponto é único e só pode ser obtido novamente após ser gasto ou perdido. Ele pode ser perdido caso o(a) jogador(a) o mantenha até o fim da próxima batalha.
+
+Uso: Pode ser utilizado em qualquer entidade a qualquer momento. Ao ser usado, concede um dado qualquer de Desvantagem para o alvo.
+________
+
+__Lista de Personalidades________
+
+-Serenidade--> Seu personagem mantém a calma sob pressão, respondendo a crises com ponderação. É uma força interior que busca soluções racionais, agindo como mediador e inspirando confiança. Sua imperturbável presença o destaca em qualquer situação.
+-Júbilo--> Uma alegria vibrante impulsiona seu personagem, que encontra otimismo mesmo na adversidade. Sua energia é contagiante, levantando o ânimo e desarmando situações com bom humor. Ele valoriza as pequenas belezas e a promessa de um amanhã melhor.
+-Ímpeto--> Seu personagem possui uma energia inquieta, preferindo agir diretamente em vez de esperar. A inação alheia o frustra e ele opta por resoluções rápidas, mesmo que arriscadas. Sua natureza explosiva garante que ele raramente seja pego desprevenido.
+-Desencanto--> Seu personagem raramente se surpreende, tendo visto demais ou perdido a capacidade de se maravilhar. Age com pragmatismo frio, sem esperança ou desespero, e suas respostas são frequentemente sarcásticas. O mundo é visto com distanciamento filosófico.
+-Benevolência--> O bem-estar dos outros é prioridade para seu personagem, que se arrisca para proteger os mais fracos. Ele oferece ajuda sem hesitar e busca a justiça para todos, não apenas para si. Sua bússola moral o guia em cada ação.
+-Pragmatismo--> Seu personagem foca em eficiência e funcionalidade, com decisões baseadas em lógica e resultados. Ele evita sentimentalismos, vendo emoções como distrações. O mundo é um sistema a ser manipulado para alcançar objetivos claros.
+-Zelo--> Uma paixão intensa ou uma causa consome seu personagem, que a persegue com devoção quase fanática. Ele é incansável em sua dedicação, disposto a sacrifícios e a enfrentar obstáculos. Essa determinação o torna um aliado inabalável ou um adversário temível.
+-Vigilância--> Com os sentidos sempre alertas, seu personagem busca ameaças e oportunidades no ambiente. Ele desconfia facilmente e prefere a precaução, notando armadilhas e padrões incomuns. Sua natureza cautelosa garante sua sobrevivência.
+-Fervor--> Seu personagem é guiado por uma intensa paixão e entusiasmo inabalável. Há uma energia ardente em suas ações, um desejo de mergulhar de cabeça nos desafios. Essa intensidade pode torná-lo inspirador, mas às vezes dramático ou impulsivo.
+-Consciência--> Seu personagem pondera cada ação por suas implicações a longo prazo e impacto moral. Ele carrega o peso do conhecimento, buscando a redenção ou o "certo". Essa profundidade o torna um conselheiro valioso, mas também alguém com um fardo considerável.
+-Apatia--> Seu personagem exibe profundo desinteresse pelo mundo e pelos outros. Emoções e motivação são mínimas, a menos que haja benefício próprio. Essa indiferença pode irritar ou desesperar quem busca ajuda.
+-Arrogância-->Seu personagem se considera superior a todos em intelecto ou importância. Ele despreza opiniões alheias e a humildade, subestimando aliados e adversários. Sua autoconvicção inabalável o faz buscar validação constantemente.
+-Hostilidade--> Uma postura defensiva e agressiva define seu personagem, que vê o mundo como uma ameaça constante. Pequenas provocações podem gerar raiva e reações desproporcionais. Ele encontra satisfação em confrontos, tornando a convivência difícil.
+________
+
+__Lista de Efeitos de Aura________
+
+A Aura é uma manifestação sutil do poder interior e da essência de um personagem, irradiando um efeito que pode influenciar todos os seres em sua proximidade. Mais do que meros bônus ou penalidades mecânicas, as Auras servem como um espelho da alma do personagem, alterando não apenas a forma como ele age, mas também como é percebido e reagido pelos outros.
+
+Ativação Voluntária: Para ativar a Aura propositalmente, o jogador deve gastar 1d4 de XP(Com limite do XP em 0 e sem regressão de nível). Isso representa um uso consciente da essência do personagem para manifestar sua aura.
+Ativação Involuntária: Em momentos de tensão (definidos pelo Mestre), a aura pode se ativar involuntariamente. Um teste (1d20 > 12) será feito para determinar se há alguma complicação na ativação involuntária.
+Alcance: O alcance da Aura é de 6 + Nível do personagem em metros. Isso significa que, à medida que o personagem cresce em poder, sua aura se torna mais abrangente.
+Duração: Uma vez ativada (voluntária ou involuntariamente), a aura permanece ativa por 2 turnos.
+
+O jogador deverá escolher 1 tipo de Aura para seu personagem dentre as opções:
+
+Aura do Pesar -> O personagem emana tristeza e sofrimento, oprimindo o ambiente e fazendo os outros o verem como uma figura de desolação. Causa Medo e fortalece traumas em seres no alcance, manifestando a essência do ativador. Afetados testam (1d20<RES/2 do alvo) para resistir à opressão emocional.
+Aura da Desordem -> O personagem irradia imprevisibilidade, parecendo fora de sincronia com a realidade e inspirando desorientação. Causa Confusão em todos os seres no alcance, distorcendo sua percepção. Afetados testam (1d20<RES/2 do alvo) para resistir; falha com prejuízo ≤7 causa 1d4 de dano e incapacita compreensão de palavras.
+Aura do Tirano -> O personagem exala autoridade sombria, dominando e subjugando, sendo visto como figura de poder. Amplifica debuffs e maldições (prejuízo extra para resistir) em todos os seres no alcance, e aumenta encantamentos de armas próprias em +2 ao dado de ataque. Afetados testam (1d20<RES/2 do alvo) para resistir com prejuízo.
+Aura do Opressor -> O personagem emana presença esmagadora, drenando energia e vontade, tornando os outros lentos e pesados. Causa Fraqueza (perde 1d4 dano, -2 FRC em testes) e Lentidão (dado de prejuízo para movimento) em todos os seres no alcance. Afetados testam (1d20<(o maior atributo entre RES/2 ou FRC/2) do alvo) para resistir, rolando com prejuízo.
+Aura da Inspiração -> O personagem irradia confiança e carisma, sendo visto como líder, fortalecendo a todos e fazendo quem o confronta vacilar. Todos os seres no alcance ganham +2 no dado para todos os testes por 2 turnos. No entanto, se o afetado falhar em teste (1d20<RES/2 do alvo), sofre "Perda de Confiança" (-1 FRC ou DEX).
+Aura da Ocultação -> O personagem se mistura ao ambiente, tornando-se difícil de notar, como um vulto nebuloso. Diminui a percepção (testes de PRE) de todos os seres no alcance em -3 no dado. O usuário ganha +2 no dado em testes de Furtividade. Todos os seres no alcance fazem testes de PRE para percebê-lo com desvantagem.
+Aura da Harmonia -> O personagem emana paz e equilíbrio, sendo visto como pacificador que acalma tensões. Reduz hostilidade entre todos os seres no alcance, concedendo +3 no dado para testes de CRM sociais. Impõe -1 no dado para testes de ataques iniciais entre quaisquer seres na área (exceto o usuário).
+Aura da Revelação -> O personagem emana luz que revela verdades ocultas, sendo visto como portador da verdade. Todos os seres no alcance testam (1d20<INT/2 do alvo); sucesso revela pista vaga sobre segredo. Aumenta sucesso de testes de INT e PRE em investigações na área em +3 no dado. Usuário tem RES reduzida em -1 temporariamente.
+Aura da Regeneração -> O personagem irradia vitalidade, um bálsamo para feridas, sendo percebido como curador. Todos os seres no alcance restauram 1 VIT por turno. O usuário perde 2 ENR temporariamente por turno enquanto a aura estiver ativa, canalizando sua própria energia para a cura.
+Aura do Caos -> O personagem é uma força imprevisível e perturbadora, distorcendo a realidade ao redor. Impõe desvantagem em todos os testes de D20 de todos os seres no alcance. Concede +2 ao dado para o usuário em qualquer ação. Magias e habilidades mágicas na área gastam +1 ENR.
+
+
+________

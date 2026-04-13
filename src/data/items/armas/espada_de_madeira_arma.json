@@ -1,0 +1,21 @@
+{
+  "id": "espada_de_madeira_arma",
+  "name": "Espada de Madeira (Arma)",
+  "category": "Armas de Proximidade",
+  "description": "Feita de madeira, esta espada é mais leve do que as de metal e confere +1 FRC ao seu portador. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. (10 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

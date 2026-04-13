@@ -1,0 +1,9 @@
+{
+  "id": "guarda_jaya",
+  "name": "Guarda Jaya",
+  "location": "Capital dos Elfos",
+  "description": "Guarda Elfo",
+  "type": "npc",
+  "role": "Guarda Elfo",
+  "isCustom": false
+}

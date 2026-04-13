@@ -1,0 +1,21 @@
+{
+  "id": "chicote_de_couro_arma",
+  "name": "Chicote de Couro (Arma)",
+  "category": "Armas de Proximidade",
+  "description": "Este item flexível, de baixa durabilidade, concede +1 DEX ao seu portador. Causa 1d4 - 1 de dano. Possui a modificação Leve, conferindo agilidade ao portador e +1 no dado em testes de ataque com PRE. (8 DP).",
+  "type": null,
+  "subtype": null,
+  "rarity": null,
+  "damage": null,
+  "defense": null,
+  "dp": null,
+  "dpMax": null,
+  "modifications": [],
+  "bonuses": {},
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": null,
+  "price": 0,
+  "isCustom": false
+}

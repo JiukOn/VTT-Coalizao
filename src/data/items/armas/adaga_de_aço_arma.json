@@ -1,0 +1,25 @@
+{
+  "id": "adaga_de_aço_arma",
+  "name": "Adaga de Aço (Arma)",
+  "category": "Armas de Proximidade",
+  "description": "Uma adaga afiada que fornece +1 PRE ao seu portador. Causa 1d4 - 1 de dano. Possui a modificação Afiado, aumentando sua capacidade de corte em +1 de dano. (15 DP).",
+  "type": "arma",
+  "subtype": "proximidade",
+  "rarity": "comum",
+  "damage": "1d4 - 1",
+  "defense": null,
+  "dp": 15,
+  "dpMax": 15,
+  "modifications": [
+    "Afiado"
+  ],
+  "bonuses": {
+    "pre": 1
+  },
+  "penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": "leve",
+  "price": 0,
+  "isCustom": false
+}

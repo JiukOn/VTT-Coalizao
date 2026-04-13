@@ -1,0 +1,14 @@
+{
+  "id": "berserk",
+  "name": "Berserk",
+  "category": "ATIVAS",
+  "class": "Geral",
+  "description": "O usuário entra em estado de Berserk por 4 turnos, recebendo +4 DEX, +4 FRC, +2 ENR, mas sofrendo -8 INT, -2 CRM e -4 RES. A habilidade recarrega em 3 turnos. (Requer VIT 10).",
+  "classLink": null,
+  "cost": null,
+  "test": null,
+  "duration": "4 turnos",
+  "cooldown": "3 turnos",
+  "requirements": "VIT 10",
+  "isCustom": false
+}

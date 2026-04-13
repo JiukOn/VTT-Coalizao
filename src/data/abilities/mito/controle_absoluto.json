@@ -1,0 +1,14 @@
+{
+  "id": "controle_absoluto",
+  "name": "Controle Absoluto",
+  "category": "MITO",
+  "class": "Sigilo Lovelace",
+  "description": "O usuário ganha 1 dado bônus no uso de qualquer habilidade uma vez a cada 3 turnos. Também possibilita aprender habilidades de outras classes. (Requer ENR 8).",
+  "classLink": "Sigilo Lovelace",
+  "cost": null,
+  "test": null,
+  "duration": null,
+  "cooldown": null,
+  "requirements": "",
+  "isCustom": false
+}
