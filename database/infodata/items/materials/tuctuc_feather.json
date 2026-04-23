@@ -1,0 +1,10 @@
+{
+  "id": "tuctuc_feather",
+  "name": {
+    "pt-br": "Pena De Tuctuc",
+    "en-us": "Tuctuc Feather"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "abyss_gaze",
+  "name": { "pt-br": "Olhar do Abismo", "en-us": "Abyss Gaze" },
+  "description": {
+    "pt-br": "A maioria dos seres que fitam os olhos do usuário ficam com MEDO por 2 turnos. Concede 1 dado bônus para convencimento forçado.",
+    "en-us": "Most beings who gaze into the user's eyes receive FEAR for 2 turns. Grants 1 bonus die for forced convincing."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": true, "item_id": "abyss_necklace" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 8 },
+  "isCustom": false
+}

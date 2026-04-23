@@ -1,0 +1,12 @@
+{
+  "id": "ice",
+  "name": {
+    "pt-br": "Gelo",
+    "en-us": "Ice"
+  },
+  "description": {
+    "pt-br": "Elemento congelado e paralisante, capaz de desacelerar e imobilizar os inimigos.",
+    "en-us": "Frozen and slowing element, capable of decelerating and immobilizing enemies."
+  },
+  "weak_against": "fire"
+}

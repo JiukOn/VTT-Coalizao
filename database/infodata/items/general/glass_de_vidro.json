@@ -1,0 +1,19 @@
+{
+  "id": "glass_de_vidro",
+  "name": {
+    "pt-br": "Copo de Vidro",
+    "en-us": "Glass Cup"
+  },
+  "category": "general",
+  "type": "Item Geral",
+  "description": {
+    "pt-br": "Um copo de vidro simples.",
+    "en-us": "A simple glass cup."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 2,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

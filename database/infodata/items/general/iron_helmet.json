@@ -1,0 +1,21 @@
+{
+  "id": "iron_helmet",
+  "name": {
+    "pt-br": "Capacete de Ferro",
+    "en-us": "Iron Helmet"
+  },
+  "category": "general",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Um capacete robusto de ferro. Concede +1 RES.",
+    "en-us": "A sturdy iron helmet. Grants +1 RES."
+  },
+  "stats": {
+    "res": 1
+  },
+  "damage": "",
+  "price": 20,
+  "weight": 3,
+  "rarity": "comum",
+  "isCustom": false
+}

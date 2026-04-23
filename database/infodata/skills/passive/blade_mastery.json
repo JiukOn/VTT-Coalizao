@@ -1,0 +1,19 @@
+{
+  "id": "blade_mastery",
+  "name": { "pt-br": "Maestria com Lâminas", "en-us": "Blade Mastery" },
+  "description": {
+    "pt-br": "Concede +8 no dado em testes de precisão com lâminas.",
+    "en-us": "Grants +8 to the die on precision tests with blades."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "blade_proficiency" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

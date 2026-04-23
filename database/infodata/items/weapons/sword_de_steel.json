@@ -1,0 +1,21 @@
+{
+  "id": "sword_de_steel",
+  "name": {
+    "pt-br": "Espada de Aco",
+    "en-us": "Steel Sword"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma espada de aco refinada. Concede +1 FRC e causa 1d4 + 2 de dano.",
+    "en-us": "A refined steel sword. Grants +1 FRC and deals 1d4 + 2 damage."
+  },
+  "stats": {
+    "frc": 1
+  },
+  "damage": "1d4 + 2",
+  "price": 30,
+  "weight": 3,
+  "rarity": "comum",
+  "isCustom": false
+}

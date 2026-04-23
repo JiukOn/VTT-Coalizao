@@ -1,0 +1,94 @@
+{
+  "id": "t_02",
+  "type": "Hostil",
+  "name": {
+    "pt-br": "T-02",
+    "en-us": "T-02"
+  },
+  "description": {
+    "pt-br": "Era um Camponês do Reino Magni. Foi transmutado predominantemente com sangue do 'Ceifeiro'. É incapaz de pensar racionalmente quando em modo 'Beserk'.",
+    "en-us": "Was a Peasant from the Kingdom of Magni. Transmuted predominantly with 'Reaper' blood. Unable to think rationally when in 'Berserk' mode."
+  },
+  "age": 26,
+  "level": 6,
+  "classId": "unclassified",
+  "species1": "human",
+  "species2": "giant",
+  "avatar": "",
+  "locationId": "unknown",
+  "ouris": 0,
+  "stats": {
+    "attributes": {
+      "VIT": 18,
+      "DEX": 8,
+      "CRM": 4,
+      "FRC": 10,
+      "INT": 7,
+      "RES": 2,
+      "PRE": 13,
+      "ENR": 14
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "transmutation_mark",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "cloth_pants",
+    "Feet": ""
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "beserk",
+      "2": "purple_flames",
+      "3": "stun",
+      "4": "accelerate",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "bloodhound_sense",
+      "2": "elemental_time_resistance",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "creature",
+  "possibleBenefit": {
+    "pt-br": "Salvação dos Transmutos.",
+    "en-us": "Salvation of the Transmuted."
+  },
+  "possibleHarm": {
+    "pt-br": "Extermínio da Humanidade.",
+    "en-us": "Extermination of Humanity."
+  },
+  "inventory": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

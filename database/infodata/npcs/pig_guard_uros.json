@@ -1,0 +1,94 @@
+{
+  "id": "pig_guard_uros",
+  "type": "Guarda",
+  "name": {
+    "pt-br": "Guarda dos Porcos, Uros",
+    "en-us": "Pig Guard, Uros"
+  },
+  "description": {
+    "pt-br": "Há 7 anos atrás ele sofreu um ataque de um 'Imperador Undino'. O estresse do trabalho lhe rendeu o status 'Arritmia'. Não gosta do Vice-Lorde Carter. Adora Batis.",
+    "en-us": "7 years ago he was attacked by an 'Undino Emperor'. Work stress gave him the 'Arrhythmia' status. Dislikes Vice-Lord Carter. Loves Batis."
+  },
+  "age": 48,
+  "level": 4,
+  "classId": "fighter",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 8900,
+  "stats": {
+    "attributes": {
+      "VIT": 6,
+      "DEX": 4,
+      "CRM": 4,
+      "FRC": 9,
+      "INT": 2,
+      "RES": 3,
+      "PRE": 1,
+      "ENR": 2
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "capuz",
+    "Face": "",
+    "Neck": "",
+    "Chest": "colete_de_leather_de_wolf",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "calca_de_leather_de_wolf",
+    "Feet": "shoes"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "maos_pesadas",
+      "2": "arte_maos_livres",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "tired",
+  "possibleBenefit": {
+    "pt-br": "Uros pode te ensinar a lutar.",
+    "en-us": "Uros can teach you to fight."
+  },
+  "possibleHarm": {
+    "pt-br": "Será barrado na entrada da cidade.",
+    "en-us": "You will be blocked at the city entrance."
+  },
+  "inventory": {
+    "1": "bati_fruit",
+    "2": "map_da_cidade",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

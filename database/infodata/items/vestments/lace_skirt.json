@@ -1,0 +1,21 @@
+{
+  "id": "lace_skirt",
+  "name": {
+    "pt-br": "Saia de Renda",
+    "en-us": "Lace Skirt"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Uma saia de renda delicada. Concede +1 CRM.",
+    "en-us": "A delicate lace skirt. Grants +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 15,
+  "weight": 1,
+  "rarity": "sentimental",
+  "isCustom": false
+}

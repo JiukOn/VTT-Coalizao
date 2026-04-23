@@ -1,0 +1,23 @@
+{
+  "id": "alchemist",
+  "name": {
+    "pt-br": "Alquimista",
+    "en-us": "Alchemist"
+  },
+  "description": {
+    "pt-br": "Um mestre de substâncias e reações que combina inteligência aguçada com precisão cirúrgica. Cria poções, venenos e barreiras mentais para dominar o campo de batalha.",
+    "en-us": "A master of substances and reactions who combines sharp intelligence with surgical precision. Creates potions, poisons, and mental barriers to dominate the battlefield."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 1,
+    "crm": 1.5,
+    "frc": 1,
+    "int": 2,
+    "res": 1,
+    "pre": 2,
+    "enr": 1
+  },
+  "legacyAbilityId": "swap",
+  "isCustom": false
+}

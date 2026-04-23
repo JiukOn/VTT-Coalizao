@@ -1,0 +1,94 @@
+{
+  "id": "granada",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Granada",
+    "en-us": "Granada"
+  },
+  "description": {
+    "pt-br": "Líder dos Revolucionários da 'Cidade dos Porcos'. Está em constante contato com a Reserva Amortecida. Cria Porcos como fonte de renda.",
+    "en-us": "Leader of the Revolutionaries of the 'City of Pigs'. Constantly in contact with the Buffered Reserve. Raises Pigs as an income source."
+  },
+  "age": 37,
+  "level": 3,
+  "classId": "blocked",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 7300,
+  "stats": {
+    "attributes": {
+      "VIT": 3,
+      "DEX": 4,
+      "CRM": 3,
+      "FRC": 2,
+      "INT": 3,
+      "RES": 1,
+      "PRE": 2,
+      "ENR": 0
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "lace_veil",
+    "Face": "",
+    "Neck": "",
+    "Chest": "cloth_dress",
+    "Back": "",
+    "Right Hand": "sword_de_treino",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "cloth_skirt",
+    "Feet": "shoes_de_fibra"
+  },
+  "abilities": {
+    "legacy": "blocked",
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "descrente",
+  "possibleBenefit": {
+    "pt-br": "Desconto na carne de Porco, Contato com a Reserva Amortecida.",
+    "en-us": "Discount on Pork, Contact with the Buffered Reserve."
+  },
+  "possibleHarm": {
+    "pt-br": "Ódio dos revolucionários.",
+    "en-us": "Hatred from the revolutionaries."
+  },
+  "inventory": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

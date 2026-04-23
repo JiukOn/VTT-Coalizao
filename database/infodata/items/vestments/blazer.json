@@ -1,0 +1,19 @@
+{
+  "id": "blazer",
+  "name": {
+    "pt-br": "Blazer",
+    "en-us": "Blazer"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Um blazer simples.",
+    "en-us": "A simple blazer."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 12,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

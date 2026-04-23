@@ -1,0 +1,22 @@
+{
+  "id": "estrela_da_meia_noite",
+  "name": {
+    "pt-br": "Estrela da Meia-Noite",
+    "en-us": "Estrela Da Meia Noite"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Um item pesado de durabilidade média, que impõe -1 DEX, mas concede +1 FRC. Causa 1d4 de dano. Possui a modificação Pesado, concedendo +1 no dado em testes de ataque, mas impondo -1 no dado em testes de esquiva. .",
+    "en-us": ""
+  },
+  "stats": {
+    "dex": -1,
+    "frc": 1
+  },
+  "damage": "1d4",
+  "price": 20,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

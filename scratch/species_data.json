@@ -1,0 +1,15 @@
+[
+  { "id": "human", "name": { "pt-br": "Humano", "en-us": "Human" }, "description": { "pt-br": "Padrão, sem modificadores especiais.", "en-us": "Standard, no special modifiers." } },
+  { "id": "elf", "name": { "pt-br": "Elfo", "en-us": "Elf" }, "description": { "pt-br": "Gracioso, bônus DEX/INT.", "en-us": "Graceful, DEX/INT bonus." } },
+  { "id": "dwarf", "name": { "pt-br": "Anão", "en-us": "Dwarf" }, "description": { "pt-br": "Resistente, bônus VIT/FRC.", "en-us": "Resilient, VIT/FRC bonus." } },
+  { "id": "giant", "name": { "pt-br": "Gigante", "en-us": "Giant" }, "description": { "pt-br": "Forte, bônus FRC/VIT, penalidade DEX.", "en-us": "Strong, FRC/VIT bonus, DEX penalty." } },
+  { "id": "kobold", "name": { "pt-br": "Kobold", "en-us": "Kobold" }, "description": { "pt-br": "Ágil e furtivo, bônus DEX/CRM.", "en-us": "Agile and stealthy, DEX/CRM bonus." } },
+  { "id": "goblin", "name": { "pt-br": "Goblin", "en-us": "Goblin" }, "description": { "pt-br": "Esperto e caótico, bônus INT/DEX.", "en-us": "Smart and chaotic, INT/DEX bonus." } },
+  { "id": "yomunkai", "name": { "pt-br": "Yomunkai", "en-us": "Yomunkai" }, "description": { "pt-br": "Disciplinado, bônus RES/PRE.", "en-us": "Disciplined, RES/PRE bonus." } },
+  { "id": "demon", "name": { "pt-br": "Demônio", "en-us": "Demon" }, "description": { "pt-br": "Poderoso, bônus ENR/FRC, penalidade CRM.", "en-us": "Powerful, ENR/FRC bonus, CRM penalty." } },
+  { "id": "angel", "name": { "pt-br": "Anjo", "en-us": "Angel" }, "description": { "pt-br": "Divino, bônus CRM/ENR — PROIBE espécie secundária.", "en-us": "Divine, CRM/ENR bonus — PROHIBITS secondary species." } },
+  { "id": "plant", "name": { "pt-br": "Planta", "en-us": "Plant" }, "description": { "pt-br": "Regeneração passiva, fraqueza ao fogo.", "en-us": "Passive regeneration, fire weakness." } },
+  { "id": "gran", "name": { "pt-br": "Gran", "en-us": "Gran" }, "description": { "pt-br": "Grande porte físico, bônus VIT.", "en-us": "Large physical size, VIT bonus." } },
+  { "id": "monster", "name": { "pt-br": "Monstro", "en-us": "Monster" }, "description": { "pt-br": "Traços bestiais, habilidade natural de ataque.", "en-us": "Bestial traits, natural attack ability." } },
+  { "id": "good", "name": { "pt-br": "Bom", "en-us": "Good" }, "description": { "pt-br": "Alinhamento puro, bônus CRM e resistência mágica.", "en-us": "Pure alignment, CRM bonus and magical resistance." } }
+]

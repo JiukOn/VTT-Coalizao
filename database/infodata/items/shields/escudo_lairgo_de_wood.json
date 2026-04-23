@@ -1,0 +1,19 @@
+{
+  "id": "escudo_lairgo_de_wood",
+  "name": {
+    "pt-br": "Escudo Largo de Madeira",
+    "en-us": "Escudo Largo De Madeira"
+  },
+  "category": "shields",
+  "type": "Escudo",
+  "description": {
+    "pt-br": "Um escudo grande de durabilidade média. Concede 1d4 - 2 de defesa. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 - 2",
+  "price": 15,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

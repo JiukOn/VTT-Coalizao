@@ -1,0 +1,22 @@
+{
+  "id": "mairtelo_de_guerra",
+  "name": {
+    "pt-br": "Martelo de Guerra",
+    "en-us": "Martelo De Guerra"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Este é um item grande e pesado, feito para causar impacto. Apesar de sua potência, ele impõe -1 DEX, mas concede +1 FRC. Causa 1d4 + 1 de dano. Possui a modificação Pesado, concedendo +1 no dado em testes de ataque, mas impondo -1 no dado em testes de esquiva. .",
+    "en-us": ""
+  },
+  "stats": {
+    "dex": -1,
+    "frc": 1
+  },
+  "damage": "1d4 + 1",
+  "price": 20,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

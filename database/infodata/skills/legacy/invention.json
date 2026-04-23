@@ -1,0 +1,19 @@
+{
+  "id": "invention",
+  "name": { "pt-br": "Invenção", "en-us": "Invention" },
+  "description": {
+    "pt-br": "O usuário pode usar materiais para criar um item de alta qualidade. Para sucesso (1d20 > 18), os materiais são consumidos. Se falhar (1d20 < 8), parte dos materiais é consumida. Entre 8 e 18, nada acontece.",
+    "en-us": "The user can use materials to create a high-quality item. For success (1d20 > 18), materials are consumed. On failure (1d20 < 8), some materials are consumed. Between 8 and 18, nothing happens."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "technologist" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

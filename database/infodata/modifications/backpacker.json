@@ -1,0 +1,11 @@
+{
+  "id": "backpacker",
+  "name": { "pt-br": "Mochileiro", "en-us": "Backpacker" },
+  "description": {
+    "pt-br": "Confere agilidade aprimorada nos percursos distantes. Concede 1 dado de vantagem em todos os testes de movimentação longa. Aplicável a Vestimentas dos pés.",
+    "en-us": "Grants improved agility on long journeys. Grants 1 advantage die on all long movement tests. Applicable to foot Vestments."
+  },
+  "category": "qualidade",
+  "applicableTo": ["vestment"],
+  "attribute_modifiers": {}
+}

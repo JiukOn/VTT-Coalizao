@@ -1,0 +1,9 @@
+{
+  "id": "hamelin_village",
+  "name": { "pt-br": "Vilarejo Hamelin", "en-us": "Hamelin Village" },
+  "description": {
+    "pt-br": "Um vilarejo tranquilo com forte tradição musical, onde os moradores usam melodias para se comunicar com criaturas do entorno.",
+    "en-us": "A peaceful village with strong musical traditions, where residents use melodies to communicate with surrounding creatures."
+  },
+  "type": { "pt-br": "Civilização", "en-us": "Civilization" }
+}

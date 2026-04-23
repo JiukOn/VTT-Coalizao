@@ -1,0 +1,19 @@
+{
+  "id": "bolas_de_metal",
+  "name": {
+    "pt-br": "Bolas de Metal",
+    "en-us": "Bolas De Metal"
+  },
+  "category": "projectiles",
+  "type": "Projetil",
+  "description": {
+    "pt-br": "Projéteis de metal que podem ser lançados. Causam 1d4 + 1 de dano.",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 + 1",
+  "price": 0,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

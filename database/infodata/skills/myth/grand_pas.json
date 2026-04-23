@@ -1,0 +1,19 @@
+{
+  "id": "grand_pas",
+  "name": { "pt-br": "Grand Pas", "en-us": "Grand Pas" },
+  "description": {
+    "pt-br": "Concede +4 DEX e +2 FRC. Ao dançar em batalha, o usuário pode prever movimentos, concedendo 1 dado de vantagem na esquiva.",
+    "en-us": "Grants +4 DEX and +2 FRC. When dancing in battle, the user can predict movements, granting 1 advantage die on evasion."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": true, "item_id": "pavlova_slipper" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "DEX": 4 },
+  "isCustom": false
+}

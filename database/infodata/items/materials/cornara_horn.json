@@ -1,0 +1,10 @@
+{
+  "id": "cornara_horn",
+  "name": {
+    "pt-br": "Chifre de Cornara",
+    "en-us": "Cornara Horn"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

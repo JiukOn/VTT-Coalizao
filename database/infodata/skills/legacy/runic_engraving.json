@@ -1,0 +1,19 @@
+{
+  "id": "runic_engraving",
+  "name": { "pt-br": "Gravura Rúnica", "en-us": "Runic Engraving" },
+  "description": {
+    "pt-br": "O usuário pode aplicar um efeito rúnico pré-determinado em um item. Para sucesso (1d20 > 18), consome Núcleos Mágicos. Usável apenas uma vez por dia. Se falhar, o usuário sofre 1 de dano.",
+    "en-us": "The user can apply a predetermined runic effect to an item. For success (1d20 > 18), Magic Cores are consumed. Usable only once per day. On failure, the user takes 1 damage."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "runic_engraver" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "camera_fotografica_energetica",
+  "name": {
+    "pt-br": "Câmera Fotográfica Energética",
+    "en-us": "Camera Fotografica Energetica"
+  },
+  "category": "general",
+  "type": "Item Diverso",
+  "description": {
+    "pt-br": "Uma câmera que necessita de papel e 1 de energia para funcionar.",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 0,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

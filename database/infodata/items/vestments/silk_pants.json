@@ -1,0 +1,21 @@
+{
+  "id": "silk_pants",
+  "name": {
+    "pt-br": "Calca de Seda",
+    "en-us": "Silk Pants"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Calcas de seda suave. Concedem +1 CRM.",
+    "en-us": "Smooth silk pants. Grant +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 18,
+  "weight": 1,
+  "rarity": "sentimental",
+  "isCustom": false
+}

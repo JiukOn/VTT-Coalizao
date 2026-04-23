@@ -1,0 +1,19 @@
+{
+  "id": "resilient_concentration",
+  "name": { "pt-br": "Concentração Resilida", "en-us": "Resilient Concentration" },
+  "description": {
+    "pt-br": "O usuário concentra sua força de vontade para neutralizar maldições e efeitos negativos por 1 turno. Teste de 1d20 + RES contra a Dificuldade do efeito (8, 14 ou 18). Sucesso remove temporariamente; Crítico pode remover permanentemente; Desastre fortalece o efeito. Custa 1 XP por uso. Recarrega em 3 turnos.",
+    "en-us": "The user concentrates their willpower to neutralize curses and negative effects for 1 turn. Test 1d20 + RES against the effect's Difficulty (8, 14, or 18). Success removes temporarily; Critical may remove permanently; Disaster strengthens the effect. Costs 1 XP per use. Recharges in 3 turns."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "mental_barrier" },
+  "single_use": false,
+  "cost": "1 XP",
+  "turns_duration": null,
+  "turns_cooldown": 3,
+  "requirements": { "INT": 6, "RES": 6 },
+  "isCustom": false
+}

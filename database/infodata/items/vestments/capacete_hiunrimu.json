@@ -1,0 +1,19 @@
+{
+  "id": "capacete_hiunrimu",
+  "name": {
+    "pt-br": "Capacete HiunRimu",
+    "en-us": "Capacete Hiunrimu"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeça",
+  "description": {
+    "pt-br": "Capacete feito de casco de HiunRimu, proporcionando uma defesa exótica. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

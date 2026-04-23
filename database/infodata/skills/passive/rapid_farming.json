@@ -1,0 +1,19 @@
+{
+  "id": "rapid_farming",
+  "name": { "pt-br": "Agricultura Rápida", "en-us": "Rapid Farming" },
+  "description": {
+    "pt-br": "Aumenta a velocidade de crescimento das plantações do usuário. Se um 20 natural (crítico) for rolado, as plantações crescem instantaneamente.",
+    "en-us": "Increases the growth speed of the user's crops. If a natural 20 (critical) is rolled, crops grow instantly."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

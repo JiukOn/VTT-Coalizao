@@ -1,0 +1,9 @@
+{
+  "id": "arid_desert",
+  "name": { "pt-br": "Deserto Árido", "en-us": "Arid Desert" },
+  "description": {
+    "pt-br": "Bioma de calor extremo e baixíssima umidade, com areia e rochas como elementos dominantes. Elemento predominante: Fogo e Areia.",
+    "en-us": "Extreme heat and very low humidity biome, with sand and rocks as dominant elements. Predominant element: Fire and Sand."
+  },
+  "type": { "pt-br": "Bioma Natural", "en-us": "Natural Biome" }
+}

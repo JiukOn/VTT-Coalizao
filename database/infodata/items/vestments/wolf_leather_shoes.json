@@ -1,0 +1,21 @@
+{
+  "id": "wolf_leather_shoes",
+  "name": {
+    "pt-br": "Sapatos de Couro de Lobo",
+    "en-us": "Wolf Leather Shoes"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Sapatos de couro de lobo. Concedem +1 DEX.",
+    "en-us": "Wolf leather shoes. Grant +1 DEX."
+  },
+  "stats": {
+    "dex": 1
+  },
+  "damage": "",
+  "price": 18,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

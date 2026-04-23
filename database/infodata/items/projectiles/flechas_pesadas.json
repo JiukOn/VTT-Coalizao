@@ -1,0 +1,19 @@
+{
+  "id": "flechas_pesadas",
+  "name": {
+    "pt-br": "Flechas Pesadas",
+    "en-us": "Flechas Pesadas"
+  },
+  "category": "projectiles",
+  "type": "Projetil",
+  "description": {
+    "pt-br": "Flechas que causam maior impacto. Causam 1d4 + 4 de dano.",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 + 4",
+  "price": 0,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

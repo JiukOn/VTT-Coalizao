@@ -1,0 +1,12 @@
+{
+  "id": "fire",
+  "name": {
+    "pt-br": "Fogo",
+    "en-us": "Fire"
+  },
+  "description": {
+    "pt-br": "Elemento do calor e da destruição, capaz de consumir tudo ao seu redor.",
+    "en-us": "Element of heat and destruction, capable of consuming everything around it."
+  },
+  "weak_against": "water"
+}

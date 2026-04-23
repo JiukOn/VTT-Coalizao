@@ -1,0 +1,19 @@
+{
+  "id": "blade_skill",
+  "name": { "pt-br": "Esgrima Avançada", "en-us": "Advanced Fencing" },
+  "description": {
+    "pt-br": "Ao utilizar lâminas, o usuário causa +1 de dano por 3 turnos. Para reativar na mesma situação após os efeitos cessarem: 1d20 > 16.",
+    "en-us": "When using blades, the user deals +1 damage for 3 turns. To reactivate in the same situation after effects end: 1d20 > 16."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "swordsman" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

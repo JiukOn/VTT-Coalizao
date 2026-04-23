@@ -1,0 +1,12 @@
+{
+  "id": "strategy",
+  "name": {
+    "pt-br": "Estrategias",
+    "en-us": "Strategy"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

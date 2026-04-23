@@ -1,0 +1,23 @@
+{
+  "id": "summoner",
+  "name": {
+    "pt-br": "Evocadora",
+    "en-us": "Summoner"
+  },
+  "description": {
+    "pt-br": "Uma invocadora de entidades e energias que canaliza grandes quantidades de poder primordial. Depende de alta energia e inteligência para evocar e controlar suas criações.",
+    "en-us": "An invoker of entities and energies who channels vast amounts of primordial power. Relies on high energy and intelligence to summon and control her creations."
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1,
+    "crm": 1.5,
+    "frc": 1,
+    "int": 2,
+    "res": 1.5,
+    "pre": 1,
+    "enr": 2.5
+  },
+  "legacyAbilityId": "evoke_energy",
+  "isCustom": false
+}

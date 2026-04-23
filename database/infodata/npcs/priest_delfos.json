@@ -1,0 +1,94 @@
+{
+  "id": "priest_delfos",
+  "type": "Hostil",
+  "name": {
+    "pt-br": "Sacerdote Delfos",
+    "en-us": "Priest Delfos"
+  },
+  "description": {
+    "pt-br": "Aceita suborno e vende indulgências. Está relacionado ao alto escalão Unsato. Sequestra cidadãos para os Unsato. Mente sobre a 'Divindade' dos Unsato.",
+    "en-us": "Accepts bribes and sells indulgences. Connected to the upper Unsato echelon. Kidnaps citizens for the Unsatos. Lies about the Unsato 'Divinity'."
+  },
+  "age": 61,
+  "level": 2,
+  "classId": "priest",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 120500,
+  "stats": {
+    "attributes": {
+      "VIT": 7,
+      "DEX": 1,
+      "CRM": 8,
+      "FRC": 4,
+      "INT": 2,
+      "RES": 6,
+      "PRE": 1,
+      "ENR": 5
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "boina",
+    "Face": "",
+    "Neck": "",
+    "Chest": "tunica",
+    "Back": "",
+    "Right Hand": "book_satore",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "calcas_de_leather_de_equiliz",
+    "Feet": "sandalia"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "pregar",
+      "2": "atordoar",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "religious",
+  "possibleBenefit": {
+    "pt-br": "Facilidade em se informar sobre a Igreja Nobre.",
+    "en-us": "Easy access to information about the Noble Church."
+  },
+  "possibleHarm": {
+    "pt-br": "Ódio vindo dos fiéis da Igreja Nobre.",
+    "en-us": "Hatred from the Noble Church faithful."
+  },
+  "inventory": {
+    "1": "cogumelo_green",
+    "2": "dagger_de_cobre",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

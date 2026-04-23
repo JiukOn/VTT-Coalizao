@@ -1,0 +1,19 @@
+{
+  "id": "biological_silence",
+  "name": { "pt-br": "Silêncio Biológico", "en-us": "Biological Silence" },
+  "description": {
+    "pt-br": "Impõe -4 nos dados de testes de percepção inimigos. Se o alvo rolar um desastre, o usuário pode realizar um ataque mantendo sua furtividade.",
+    "en-us": "Imposes -4 on enemy perception test dice. If the target rolls a disaster, the user can perform an attack while maintaining stealth."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "stealth_passive" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "DEX": 5 },
+  "isCustom": false
+}

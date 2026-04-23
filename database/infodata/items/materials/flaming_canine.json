@@ -1,0 +1,10 @@
+{
+  "id": "flaming_canine",
+  "name": {
+    "pt-br": "Canino Flamejante",
+    "en-us": "Flaming Canine"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

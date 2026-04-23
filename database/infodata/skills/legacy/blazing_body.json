@@ -1,0 +1,19 @@
+{
+  "id": "blazing_body",
+  "name": { "pt-br": "Corpo Flamejante", "en-us": "Blazing Body" },
+  "description": {
+    "pt-br": "O corpo do usuário adquire o elemento Fogo. Ataques corporais e de energia com este elemento causam +FRC/4 de dano. O usuário recebe o dobro de dano do elemento Água. Ativo por até 4 turnos por combate.",
+    "en-us": "The user's body acquires the Fire element. Physical and energy attacks with this element deal +FRC/4 damage. The user receives double damage from the Water element. Active for up to 4 turns per combat."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": true, "class_id": "incendiary" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 4,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

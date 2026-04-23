@@ -1,0 +1,19 @@
+{
+  "id": "maira_almonds",
+  "name": {
+    "pt-br": "Amendoas Maira",
+    "en-us": "Maira Almonds"
+  },
+  "category": "general",
+  "type": "Consumivel",
+  "description": {
+    "pt-br": "Amendoas colhidas das arvores Maira. Nutritivas e de sabor agradavel.",
+    "en-us": "Almonds harvested from Maira trees. Nutritious and pleasant-tasting."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

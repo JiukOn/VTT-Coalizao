@@ -1,0 +1,19 @@
+{
+  "id": "contract",
+  "name": { "pt-br": "Contrato", "en-us": "Contract" },
+  "description": {
+    "pt-br": "O usuário é capaz de estabelecer um contrato mágico com qualquer ser inteligente que aceite os termos. Caso uma das partes descumpra, o infrator é morto e sua alma é apagada.",
+    "en-us": "The user establishes a magical contract with any intelligent being who accepts the terms. If either party breaks it, the violator is killed and their soul erased."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "VIT": 5 },
+  "isCustom": false
+}

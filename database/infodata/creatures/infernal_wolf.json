@@ -1,0 +1,90 @@
+{
+  "id": "infernal_wolf",
+  "name": {
+    "pt-br": "Lobo Infernal",
+    "en-us": "Infernal Wolf"
+  },
+  "description": {
+    "pt-br": "Um grande canino com forte audição. É capaz de lançar rajadas de fogo. Costuma andar em bandos de até 4 lobos, com um chefe.",
+    "en-us": "A large canine with strong hearing. Capable of launching fire blasts. Usually travels in packs of up to 4 wolves."
+  },
+  "element": "fire",
+  "size": "medium",
+  "coreSize": "médio",
+  "diet": "carnívoro",
+  "imagePath": "Criatura/LoboInfernal.jpeg",
+  "level": 4,
+  "attributes": {
+    "VIT": 9,
+    "DEX": 6,
+    "CRM": 3,
+    "FRC": 8,
+    "INT": 3,
+    "RES": 1,
+    "PRE": 4,
+    "ENR": 4
+  },
+  "abilities": {
+    "active": {
+      "1": "bloodhound_sense",
+      "2": "bite",
+      "3": "flames",
+      "4": "fire_resistance"
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "wolf_leather",
+      "chance": "100%",
+      "amount": 2
+    },
+    "2": {
+      "item": "wolf_fangs",
+      "chance": "100%",
+      "amount": 2
+    },
+    "3": {
+      "item": "flaming_canine",
+      "chance": "100%",
+      "amount": 2
+    },
+    "4": {
+      "item": "volcanic_claws",
+      "chance": "100%",
+      "amount": 3
+    },
+    "5": {
+      "item": "medium_core",
+      "chance": "100%",
+      "amount": 1
+    },
+    "6": {
+      "item": "book_h_flames",
+      "chance": "100%",
+      "amount": 1
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "ammonia_sphere",
+  "name": {
+    "pt-br": "Esfera de Amonia",
+    "en-us": "Ammonia Sphere"
+  },
+  "category": "general",
+  "type": "Item Especial",
+  "description": {
+    "pt-br": "Uma esfera de vidro cheia de amonia. Pode ser arremessada para criar nevoa irritante.",
+    "en-us": "A glass sphere filled with ammonia. Can be thrown to create an irritating fog."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 15,
+  "weight": 0,
+  "rarity": "especial",
+  "isCustom": false
+}

@@ -1,0 +1,22 @@
+{
+  "id": "chestplate_de_iron",
+  "name": {
+    "pt-br": "Peitoral de Ferro",
+    "en-us": "Iron Chestplate"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Um peitoral de ferro solido. Concede +2 RES e +1 VIT.",
+    "en-us": "A solid iron chestplate. Grants +2 RES and +1 VIT."
+  },
+  "stats": {
+    "res": 2,
+    "vit": 1
+  },
+  "damage": "",
+  "price": 35,
+  "weight": 4,
+  "rarity": "comum",
+  "isCustom": false
+}

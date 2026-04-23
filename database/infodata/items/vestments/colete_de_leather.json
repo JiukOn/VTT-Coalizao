@@ -1,0 +1,21 @@
+{
+  "id": "colete_de_leather",
+  "name": {
+    "pt-br": "Colete de Couro",
+    "en-us": "Leather Vest"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Um colete de couro resistente. Concede +1 RES.",
+    "en-us": "A durable leather vest. Grants +1 RES."
+  },
+  "stats": {
+    "res": 1
+  },
+  "damage": "",
+  "price": 16,
+  "weight": 2,
+  "rarity": "comum",
+  "isCustom": false
+}

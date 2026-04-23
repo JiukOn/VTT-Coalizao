@@ -1,0 +1,19 @@
+{
+  "id": "pochete",
+  "name": {
+    "pt-br": "Pochete",
+    "en-us": "Fanny Pack"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Uma pochete pratica.",
+    "en-us": "A practical fanny pack."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 8,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

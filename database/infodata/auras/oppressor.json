@@ -1,0 +1,16 @@
+{
+  "id": "oppressor",
+  "name": {
+    "pt-br": "Opressor",
+    "en-us": "Oppressor"
+  },
+  "description": {
+    "pt-br": "Uma aura de dominância e intimidação que pressiona os seres ao redor. Inimigos próximos tendem a sentir medo e hesitação, enquanto o portador irradia autoridade absoluta.",
+    "en-us": "An aura of dominance and intimidation that pressures nearby beings. Nearby enemies tend to feel fear and hesitation, while the bearer radiates absolute authority."
+  },
+  "activationMoments": {
+    "pt-br": "Sempre ativa. Os efeitos de intimidação são mais fortes quando o portador exerce autoridade diretamente ou em combate.",
+    "en-us": "Always active. The intimidation effects are stronger when the bearer exerts authority directly or in combat."
+  },
+  "isCustom": false
+}

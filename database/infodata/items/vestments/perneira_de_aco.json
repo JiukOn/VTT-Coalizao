@@ -1,0 +1,19 @@
+{
+  "id": "perneira_de_aco",
+  "name": {
+    "pt-br": "Perneira de Aço",
+    "en-us": "Perneira De Aco"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Perna",
+  "description": {
+    "pt-br": "Perneiras feitas de placas de aço, oferecendo proteção robusta para as pernas. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

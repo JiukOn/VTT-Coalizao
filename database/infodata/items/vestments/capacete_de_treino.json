@@ -1,0 +1,19 @@
+{
+  "id": "capacete_de_treino",
+  "name": {
+    "pt-br": "Capacete de Treino",
+    "en-us": "Capacete De Treino"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeça",
+  "description": {
+    "pt-br": "Capacete básico e leve, ideal para sessões de treino. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 2,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

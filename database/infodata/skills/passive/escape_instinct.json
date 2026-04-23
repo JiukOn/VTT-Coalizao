@@ -1,0 +1,19 @@
+{
+  "id": "escape_instinct",
+  "name": { "pt-br": "Instinto de Fuga", "en-us": "Escape Instinct" },
+  "description": {
+    "pt-br": "Quando o usuário estiver com VIT < VIT/2, recebe +2 em testes de esquiva e deslocamento.",
+    "en-us": "When the user has VIT < VIT/2, receives +2 on evasion and displacement tests."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "DEX": 4 },
+  "isCustom": false
+}

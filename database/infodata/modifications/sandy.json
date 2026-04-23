@@ -1,0 +1,11 @@
+{
+  "id": "sandy",
+  "name": { "pt-br": "Arenoso", "en-us": "Sandy" },
+  "description": {
+    "pt-br": "As ações ofensivas adquirem o elemento Areia. Pode causar o efeito 'Travado' se o teste (1d20 > 1d20 + FRC do alvo) for bem-sucedido.",
+    "en-us": "Offensive actions gain the Sand element. Can cause the 'Locked' effect if test (1d20 > 1d20 + target FRC) succeeds."
+  },
+  "category": "elemental",
+  "applicableTo": ["weapon"],
+  "attribute_modifiers": { "attribute": "element", "value": "sand" }
+}

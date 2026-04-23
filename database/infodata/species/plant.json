@@ -1,0 +1,18 @@
+{
+  "id": "plant",
+  "name": {
+    "pt-br": "Planta",
+    "en-us": "Plant"
+  },
+  "description": {
+    "pt-br": "Seres de natureza vegetal com consciência. Possuem alta resiliência e uma conexão profunda com a natureza, mas sua mobilidade é limitada e carecem de habilidades sociais convencionais.",
+    "en-us": "Beings of plant nature with consciousness. They possess high resilience and a deep connection with nature, but their mobility is limited and they lack conventional social skills."
+  },
+  "attributeModifiers": {
+    "res": 2,
+    "vit": 1,
+    "dex": -1,
+    "crm": -1
+  },
+  "isCustom": false
+}

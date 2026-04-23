@@ -1,0 +1,23 @@
+{
+  "id": "guardian",
+  "name": {
+    "pt-br": "Guardião",
+    "en-us": "Guardian"
+  },
+  "description": {
+    "pt-br": "Um protetor resistente que coloca a vida dos aliados à frente da própria. Possui alta vitalidade e resiliência, sendo o escudo do grupo.",
+    "en-us": "A resilient protector who puts the lives of allies first. Has high vitality and resilience, serving as the group's shield."
+  },
+  "multipliers": {
+    "vit": 2,
+    "dex": 1,
+    "crm": 1.5,
+    "frc": 1.5,
+    "int": 1,
+    "res": 2,
+    "pre": 1,
+    "enr": 1
+  },
+  "legacyAbilityId": "vitality_shield",
+  "isCustom": false
+}

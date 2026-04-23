@@ -1,0 +1,9 @@
+{
+  "id": "deep_caverns",
+  "name": { "pt-br": "Cavernas Profundas", "en-us": "Deep Caverns" },
+  "description": {
+    "pt-br": "Bioma subterrâneo sem luz solar, com formações rochosas e criaturas altamente adaptadas à escuridão. Elemento predominante: Areia e Maligno.",
+    "en-us": "Subterranean biome without sunlight, with rock formations and creatures highly adapted to darkness. Predominant element: Sand and Malign."
+  },
+  "type": { "pt-br": "Bioma Natural", "en-us": "Natural Biome" }
+}

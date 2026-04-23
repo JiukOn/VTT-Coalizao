@@ -1,0 +1,9 @@
+{
+  "id": "malign_wastes",
+  "name": { "pt-br": "Ermos Malignos", "en-us": "Malign Wastes" },
+  "description": {
+    "pt-br": "Bioma corrompido por energia maligna, onde a vida natural foi distorcida e criaturas sombrias prosperam. Elemento predominante: Maligno.",
+    "en-us": "Biome corrupted by malign energy, where natural life has been distorted and shadowy creatures thrive. Predominant element: Malign."
+  },
+  "type": { "pt-br": "Bioma Corrompido", "en-us": "Corrupted Biome" }
+}

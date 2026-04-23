@@ -1,0 +1,9 @@
+{
+  "id": "pig_city",
+  "name": { "pt-br": "Cidade dos Porcos", "en-us": "Pig City" },
+  "description": {
+    "pt-br": "Uma cidade peculiar habitada principalmente por criaturas suínas e seus aliados, conhecida pelo comércio informal.",
+    "en-us": "A peculiar city mainly inhabited by swine creatures and their allies, known for informal trade."
+  },
+  "type": { "pt-br": "Civilização", "en-us": "Civilization" }
+}

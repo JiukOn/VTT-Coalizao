@@ -1,0 +1,21 @@
+{
+  "id": "luvas_de_leather_de_ganlan",
+  "name": {
+    "pt-br": "Luvas de Couro de Ganlan",
+    "en-us": "Ganlan Leather Gloves"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mao",
+  "description": {
+    "pt-br": "Luvas de couro no estilo Ganlan. Concedem +1 FRC.",
+    "en-us": "Ganlan-style leather gloves. Grant +1 FRC."
+  },
+  "stats": {
+    "frc": 1
+  },
+  "damage": "",
+  "price": 15,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "precise_cut",
+  "name": { "pt-br": "Corte Preciso", "en-us": "Precise Cut" },
+  "description": {
+    "pt-br": "O usuário possui acerto garantido em golpes com lâminas uma vez a cada 3 turnos. Esta habilidade não afeta os dados de Defesa do inimigo.",
+    "en-us": "The user has guaranteed hits with blade strikes once every 3 turns. This skill does not affect the enemy's Defense dice."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": true, "class_id": "butcher" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": 3,
+  "requirements": {},
+  "isCustom": false
+}

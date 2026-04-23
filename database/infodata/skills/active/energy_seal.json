@@ -1,0 +1,19 @@
+{
+  "id": "energy_seal",
+  "name": { "pt-br": "Selo Energético", "en-us": "Energy Seal" },
+  "description": {
+    "pt-br": "O usuário sela completamente a ENR do alvo por 3 turnos, mas fica incapacitado e perde -2 VIT. Para reativar: 1d20 > 16.",
+    "en-us": "The user completely seals the target's ENR for 3 turns, but becomes incapacitated and loses -2 VIT. To reactivate: 1d20 > 16."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": { "RES": 4 },
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "sharp_eyes",
+  "name": { "pt-br": "Olhos Afiados", "en-us": "Sharp Eyes" },
+  "description": {
+    "pt-br": "Aumenta o valor da percepção do usuário, concedendo +2 no dado em testes de percepção visual e busca.",
+    "en-us": "Increases the user's perception value, granting +2 to the die on visual perception and search tests."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

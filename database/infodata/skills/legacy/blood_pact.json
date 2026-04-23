@@ -1,0 +1,19 @@
+{
+  "id": "blood_pact",
+  "name": { "pt-br": "Pacto de Sangue", "en-us": "Blood Pact" },
+  "description": {
+    "pt-br": "O usuário pode manter até 2 contratos simultâneos com seres não inteligentes. O segundo contrato impõe -2 permanente no maior atributo entre INT ou CRM. Se uma criatura contratada morrer, o usuário pode absorver 1 ponto de atributo dela (uma vez por sessão).",
+    "en-us": "The user can maintain up to 2 simultaneous contracts with non-intelligent beings. The second contract imposes a permanent -2 to the highest attribute between INT or CRM. If a contracted creature dies, the user can absorb 1 attribute point from it (once per session)."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "blood_pacter" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "blood_contract" },
+  "single_use": false,
+  "cost": "20 XP",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "CRM": 6, "INT": 6 },
+  "isCustom": false
+}

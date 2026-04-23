@@ -1,0 +1,19 @@
+{
+  "id": "small_box",
+  "name": {
+    "pt-br": "Caixinha",
+    "en-us": "Small Box"
+  },
+  "category": "general",
+  "type": "Item Geral",
+  "description": {
+    "pt-br": "Uma caixinha de madeira para guardar pequenos objetos.",
+    "en-us": "A small wooden box for storing small objects."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

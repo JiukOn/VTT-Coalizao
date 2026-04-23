@@ -1,0 +1,22 @@
+{
+  "id": "lovelace_sigil",
+  "name": {
+    "pt-br": "Sigilo de Lovelace",
+    "en-us": "Lovelace Sigil"
+  },
+  "category": "weapons",
+  "type": "Arma Especial",
+  "description": {
+    "pt-br": "Um sigilo magico de Lovelace. Concede +2 INT e +1 ENR.",
+    "en-us": "A magical sigil of Lovelace. Grants +2 INT and +1 ENR."
+  },
+  "stats": {
+    "int": 2,
+    "enr": 1
+  },
+  "damage": "",
+  "price": 50,
+  "weight": 0,
+  "rarity": "especial",
+  "isCustom": false
+}

@@ -1,0 +1,90 @@
+{
+  "id": "moriu",
+  "name": {
+    "pt-br": "Móriu",
+    "en-us": "Moriu"
+  },
+  "description": {
+    "pt-br": "Ave grande e agressiva, parente nobre do Frango Manuk e descendente dos dragões. Costuma voar alto.",
+    "en-us": "A large, aggressive bird, noble relative of the Manuk Chicken and descendant of dragons. Known for flying high."
+  },
+  "element": "fire",
+  "size": "medium",
+  "coreSize": "pequeno",
+  "diet": "carnívoro",
+  "imagePath": "Criatura/Móriu.png",
+  "level": 2,
+  "attributes": {
+    "VIT": 4,
+    "DEX": 5,
+    "CRM": 4,
+    "FRC": 3,
+    "INT": 3,
+    "RES": 2,
+    "PRE": 4,
+    "ENR": 3
+  },
+  "abilities": {
+    "active": {
+      "1": "fly",
+      "2": "flames",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "moriu_feather",
+      "chance": "100%",
+      "amount": 3
+    },
+    "2": {
+      "item": "moriu_eyes",
+      "chance": "50%",
+      "amount": 1
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false
+}

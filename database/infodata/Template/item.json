@@ -1,0 +1,28 @@
+{
+  "id": "",
+  "name": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "",
+  "sub_category": "",
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "where_equip": [],
+  "damage": "",
+  "defense": null,
+  "dpMax": 15,
+  "modification_id": "",
+  "stats_bonuses": {},
+  "stats_penalties": {},
+  "range": null,
+  "requirements": {},
+  "weight": "",
+  "myth": {
+    "ismyth": false,
+    "skill_id": ""
+  },
+  "isCustom": false
+}

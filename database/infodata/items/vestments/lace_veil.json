@@ -1,0 +1,19 @@
+{
+  "id": "lace_veil",
+  "name": {
+    "pt-br": "Veu de Renda",
+    "en-us": "Lace Veil"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Um veu de renda fino.",
+    "en-us": "A fine lace veil."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 10,
+  "weight": 0,
+  "rarity": "sentimental",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "escudo_redondo_de_wood",
+  "name": {
+    "pt-br": "Escudo Redondo de Madeira",
+    "en-us": "Escudo Redondo De Madeira"
+  },
+  "category": "shields",
+  "type": "Escudo",
+  "description": {
+    "pt-br": "Um escudo pequeno e de baixa durabilidade. Concede 1d4 - 3 de defesa. Possui a modificação Frágil, tornando-o mais suscetível a quebrar sob pressão. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 - 3",
+  "price": 10,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

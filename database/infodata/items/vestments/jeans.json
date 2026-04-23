@@ -1,0 +1,19 @@
+{
+  "id": "jeans",
+  "name": {
+    "pt-br": "Calca Jeans",
+    "en-us": "Jeans"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Um par de calcas jeans simples.",
+    "en-us": "A pair of simple jeans."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 10,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

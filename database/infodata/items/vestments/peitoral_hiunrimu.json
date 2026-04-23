@@ -1,0 +1,22 @@
+{
+  "id": "peitoral_hiunrimu",
+  "name": {
+    "pt-br": "Peitoral HiunRimu",
+    "en-us": "Peitoral Hiunrimu"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Corpo",
+  "description": {
+    "pt-br": "Peitoral feito de casco de HiunRimu, com resistência exótica. Concede +1 FRC, -1 DEX. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {
+    "dex": -1,
+    "frc": 1
+  },
+  "damage": "",
+  "price": 8,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

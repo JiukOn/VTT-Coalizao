@@ -1,0 +1,19 @@
+{
+  "id": "arrhythmia",
+  "name": {
+    "pt-br": "Arritmia",
+    "en-us": "Arrhythmia"
+  },
+  "description": {
+    "pt-br": "Em momentos de alto esforço, se 1d4 <= 2, o personagem recebe -1 DEX e -1 VIT temporariamente.",
+    "en-us": "In moments of high effort, if 1d4 <= 2, the character temporarily receives -1 DEX and -1 VIT."
+  },
+  "category": "doenca",
+  "type": "doenca",
+  "sub_type": "penalidade_esforco",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até curar.",
+    "en-us": "Until cured."
+  }
+}

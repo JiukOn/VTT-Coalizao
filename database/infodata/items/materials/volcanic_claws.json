@@ -1,0 +1,10 @@
+{
+  "id": "volcanic_claws",
+  "name": {
+    "pt-br": "Garras Vulcanicas",
+    "en-us": "Volcanic Claws"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

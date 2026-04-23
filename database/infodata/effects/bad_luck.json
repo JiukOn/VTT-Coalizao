@@ -1,0 +1,19 @@
+{
+  "id": "bad_luck",
+  "name": {
+    "pt-br": "Azar",
+    "en-us": "Bad Luck"
+  },
+  "description": {
+    "pt-br": "Incapaz de acertar o crítico nos dados.",
+    "en-us": "Unable to roll a critical on dice."
+  },
+  "category": "maldicao",
+  "type": "maldicao",
+  "sub_type": "penalidade_critico",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "Até conseguir remover.",
+    "en-us": "Until removed."
+  }
+}

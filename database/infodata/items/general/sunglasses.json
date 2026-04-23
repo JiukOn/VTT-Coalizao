@@ -1,0 +1,19 @@
+{
+  "id": "sunglasses",
+  "name": {
+    "pt-br": "Oculos de Sol",
+    "en-us": "Sunglasses"
+  },
+  "category": "general",
+  "type": "Vestimenta - Rosto",
+  "description": {
+    "pt-br": "Oculos escuros modernos.",
+    "en-us": "Modern dark glasses."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 8,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

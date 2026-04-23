@@ -1,0 +1,19 @@
+{
+  "id": "botas_do_rei_undino",
+  "name": {
+    "pt-br": "Botas do Rei Undino",
+    "en-us": "Botas Do Rei Undino"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pé",
+  "description": {
+    "pt-br": "Botas feitas com materiais do Rei Undino, com detalhes únicos. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

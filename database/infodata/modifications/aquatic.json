@@ -1,0 +1,11 @@
+{
+  "id": "aquatic",
+  "name": { "pt-br": "Aquático", "en-us": "Aquatic" },
+  "description": {
+    "pt-br": "As ações ofensivas adquirem o elemento Água. Pode causar o efeito 'Afogamento' se o teste (1d20 > 1d20 + FRC do alvo) for bem-sucedido.",
+    "en-us": "Offensive actions gain the Water element. Can cause the 'Drowning' effect if test (1d20 > 1d20 + target FRC) succeeds."
+  },
+  "category": "elemental",
+  "applicableTo": ["weapon"],
+  "attribute_modifiers": { "attribute": "element", "value": "water" }
+}

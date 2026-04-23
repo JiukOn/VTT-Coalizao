@@ -1,0 +1,19 @@
+{
+  "id": "thorn_barrier",
+  "name": { "pt-br": "Barreira de Espinhos", "en-us": "Thorn Barrier" },
+  "description": {
+    "pt-br": "Cria uma barreira de vinhas espinhosas reforçada de até 10m por 3 turnos que não pode ser movida. Bloqueia qualquer ataque físico e reflete 1 de dano contra inimigos corpo a corpo. Imune a ataques de Água, Madeira, Energia Pura e Maligna. Se (1d20 > 16) falhar, perde 2 ENR temporariamente.",
+    "en-us": "Creates a reinforced thorny vine barrier up to 10m for 3 turns, immovable. Blocks any physical attack and reflects 1 damage against melee enemies. Immune to Water, Wood, Pure Energy and Malign attacks. If (1d20 > 16) fails, loses 2 ENR temporarily."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "vine_barrier" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 8 },
+  "isCustom": false
+}

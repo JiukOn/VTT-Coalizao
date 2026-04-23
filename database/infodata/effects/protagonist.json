@@ -1,0 +1,19 @@
+{
+  "id": "protagonist",
+  "name": {
+    "pt-br": "Protagonista",
+    "en-us": "Protagonist"
+  },
+  "description": {
+    "pt-br": "O afetado se arrisca mais que outros por acreditar ser especial. Se 1d4 <= 2 o personagem pode perder o controle de suas ações.",
+    "en-us": "The affected takes more risks than others believing they are special. If 1d4 <= 2, the character may lose control of their actions."
+  },
+  "category": "psicologico_ativo",
+  "type": "psicologico_ativo",
+  "sub_type": "controle_de_acao",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 16 a partir do 2º turno.",
+    "en-us": "1d20 + RES > 16 from 2nd turn."
+  }
+}

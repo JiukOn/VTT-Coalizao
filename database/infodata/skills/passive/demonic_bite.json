@@ -1,0 +1,19 @@
+{
+  "id": "demonic_bite",
+  "name": { "pt-br": "Mordida Demoníaca", "en-us": "Demonic Bite" },
+  "description": {
+    "pt-br": "Aumenta 6 FRC ao executar uma mordida. Se o teste (1d20 >= 18) for bem-sucedido, o efeito de 'Sucção' é aplicado.",
+    "en-us": "Increases FRC by 6 when executing a bite. If test (1d20 >= 18) succeeds, the 'Suction' effect is applied."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "bite" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

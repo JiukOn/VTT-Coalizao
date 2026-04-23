@@ -1,0 +1,19 @@
+{
+  "id": "accelerate",
+  "name": { "pt-br": "Acelerar", "en-us": "Accelerate" },
+  "description": {
+    "pt-br": "Aumenta a DEX em +2 por 3 turnos. Para reativar na mesma situação após os efeitos cessarem: 1d20 > 16.",
+    "en-us": "Increases DEX by +2 for 3 turns. To reactivate in the same situation after effects end: 1d20 > 16."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": { "DEX": 4 },
+  "isCustom": false
+}

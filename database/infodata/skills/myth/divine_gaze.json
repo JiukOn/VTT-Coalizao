@@ -1,0 +1,19 @@
+{
+  "id": "divine_gaze",
+  "name": { "pt-br": "Olhar Divino", "en-us": "Divine Gaze" },
+  "description": {
+    "pt-br": "Concede bônus em testes de investigação igual ao número de pares de olhos. Pode exalar uma sensação de 'Temor' em inimigos. Aumenta +5 DEX em batalha.",
+    "en-us": "Grants a bonus on investigation tests equal to the number of eye pairs. Can exude a sense of 'Dread' in enemies. Increases +5 DEX in battle."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": true, "item_id": "ukhel_foil" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "DEX": 6, "FRC": 6, "INT": 5, "RES": 3 },
+  "isCustom": false
+}

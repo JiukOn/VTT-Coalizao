@@ -1,0 +1,19 @@
+{
+  "id": "avental",
+  "name": {
+    "pt-br": "Avental",
+    "en-us": "Apron"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Um avental de cozinha.",
+    "en-us": "A kitchen apron."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

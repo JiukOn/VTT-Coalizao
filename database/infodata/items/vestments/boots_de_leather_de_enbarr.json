@@ -1,0 +1,21 @@
+{
+  "id": "boots_de_leather_de_enbarr",
+  "name": {
+    "pt-br": "Botas de Couro de Enbarr",
+    "en-us": "Enbarr Leather Boots"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Botas de couro de Enbarr. Concedem +1 DEX.",
+    "en-us": "Enbarr leather boots. Grant +1 DEX."
+  },
+  "stats": {
+    "dex": 1
+  },
+  "damage": "",
+  "price": 18,
+  "weight": 2,
+  "rarity": "especial",
+  "isCustom": false
+}

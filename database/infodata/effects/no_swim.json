@@ -1,0 +1,19 @@
+{
+  "id": "no_swim",
+  "name": {
+    "pt-br": "Nadador",
+    "en-us": "No Swim"
+  },
+  "description": {
+    "pt-br": "O afetado perde a capacidade de nadar.",
+    "en-us": "The affected loses the ability to swim."
+  },
+  "category": "maldicao",
+  "type": "maldicao",
+  "sub_type": "perda_de_habilidade",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "Até conseguir remover.",
+    "en-us": "Until removed."
+  }
+}

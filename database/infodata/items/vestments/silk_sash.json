@@ -1,0 +1,21 @@
+{
+  "id": "silk_sash",
+  "name": {
+    "pt-br": "Faixa de Seda",
+    "en-us": "Silk Sash"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Costas",
+  "description": {
+    "pt-br": "Uma faixa de seda. Concede +1 CRM.",
+    "en-us": "A silk sash. Grants +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 10,
+  "weight": 0,
+  "rarity": "sentimental",
+  "isCustom": false
+}

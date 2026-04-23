@@ -1,0 +1,21 @@
+{
+  "id": "boots_de_leather_de_equilliz",
+  "name": {
+    "pt-br": "Botas de Couro de Equiliz",
+    "en-us": "Equiliz Leather Boots"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Botas de couro de Equiliz. Concedem +1 DEX.",
+    "en-us": "Equiliz leather boots. Grant +1 DEX."
+  },
+  "stats": {
+    "dex": 1
+  },
+  "damage": "",
+  "price": 18,
+  "weight": 2,
+  "rarity": "especial",
+  "isCustom": false
+}

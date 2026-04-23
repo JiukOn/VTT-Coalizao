@@ -1,0 +1,9 @@
+{
+  "id": "blue_stone_forest",
+  "name": { "pt-br": "Floresta Pedra Azul", "en-us": "Blue Stone Forest" },
+  "description": {
+    "pt-br": "Uma floresta onde as rochas possuem tonalidade azulada e emitem uma luz fraca durante a noite.",
+    "en-us": "A forest where rocks have a blue hue and emit a faint light during the night."
+  },
+  "type": { "pt-br": "Ecossistema", "en-us": "Ecosystem" }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "chicote_de_couro",
+  "name": {
+    "pt-br": "Chicote de Couro",
+    "en-us": "Chicote De Couro"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Este item flexível, de baixa durabilidade, concede +1 DEX ao seu portador. Causa 1d4 - 1 de dano. Possui a modificação Leve, conferindo agilidade ao portador e +1 no dado em testes de ataque com PRE. .",
+    "en-us": ""
+  },
+  "stats": {
+    "dex": 1
+  },
+  "damage": "1d4 - 1",
+  "price": 8,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

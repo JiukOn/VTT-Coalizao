@@ -1,0 +1,19 @@
+{
+  "id": "capacete_de_ferro",
+  "name": {
+    "pt-br": "Capacete de Ferro",
+    "en-us": "Capacete De Ferro"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeça",
+  "description": {
+    "pt-br": "Capacete forjado em ferro, oferecendo proteção sólida. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

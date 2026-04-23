@@ -1,0 +1,22 @@
+{
+  "id": "mairtelo_kilicekan",
+  "name": {
+    "pt-br": "Martelo Kilicêkan",
+    "en-us": "Martelo Kilicekan"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Um martelo médio e pesado, de alta durabilidade, capaz de imbuir energia e conferir +3 ENR e +1 FRC ao seu usuário. Causa 1d4 + 3 de dano. Possui a modificação Imbuídor, permitindo ao usuário gastar temporariamente 1 ponto de sua ENR por turno para aumentar o dano do ataque em 1. .",
+    "en-us": ""
+  },
+  "stats": {
+    "frc": 1,
+    "enr": 3
+  },
+  "damage": "1d4 + 3",
+  "price": 25,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

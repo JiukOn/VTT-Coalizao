@@ -1,0 +1,22 @@
+{
+  "id": "calcas_reforcadas_com_ossos_de_king_undino",
+  "name": {
+    "pt-br": "Calcas Reforcadas com Ossos de Rei Undino",
+    "en-us": "King Undino Bone-Reinforced Pants"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Calcas reforcadas com ossos do Rei Undino. Concedem +2 RES e +1 VIT.",
+    "en-us": "Pants reinforced with King Undino bones. Grant +2 RES and +1 VIT."
+  },
+  "stats": {
+    "res": 2,
+    "vit": 1
+  },
+  "damage": "",
+  "price": 50,
+  "weight": 3,
+  "rarity": "especial",
+  "isCustom": false
+}

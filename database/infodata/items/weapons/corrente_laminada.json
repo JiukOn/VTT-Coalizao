@@ -1,0 +1,19 @@
+{
+  "id": "corrente_laminada",
+  "name": {
+    "pt-br": "Corrente Laminada",
+    "en-us": "Corrente Laminada"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma corrente flexível e de alta durabilidade, ideal para controle. Causa 1d4 - 2 de dano. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 - 2",
+  "price": 25,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

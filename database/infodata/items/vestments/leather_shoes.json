@@ -1,0 +1,19 @@
+{
+  "id": "leather_shoes",
+  "name": {
+    "pt-br": "Sapatos de Couro",
+    "en-us": "Leather Shoes"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Sapatos simples de couro.",
+    "en-us": "Simple leather shoes."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 10,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

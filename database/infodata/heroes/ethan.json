@@ -1,0 +1,114 @@
+{
+  "id": "ethan",
+  "name": {
+    "pt-br": "Ethan",
+    "en-us": "Ethan"
+  },
+  "age": 23,
+  "level": 4,
+  "classId": "bard",
+  "species1": "human",
+  "species2": "",
+  "ouris": 246,
+  "tendencies": {
+    "1": "instrument_creation",
+    "2": "curse",
+    "3": "linguistics"
+  },
+  "avatar": "ethan.png",
+  "stats": {
+    "multipliers": {
+      "VIT": 1.5,
+      "DEX": 2,
+      "CRM": 2,
+      "FRC": 1,
+      "INT": 1.5,
+      "RES": 1,
+      "PRE": 1.5,
+      "ENR": 1
+    },
+    "stats_base": {
+      "VIT": 6,
+      "DEX": 6,
+      "CRM": 2,
+      "FRC": 5,
+      "INT": 5,
+      "RES": 2,
+      "PRE": 2,
+      "ENR": 5
+    },
+    "stats_add": {
+      "VIT": 0,
+      "DEX": 1,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 1,
+      "ENR": 0
+    },
+    "stats_remove": {
+      "VIT": 0,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "leather_shirt",
+    "Back": "",
+    "Right Hand": "bard_blade",
+    "Left Hand": "sweet_flute",
+    "Hand Accessories": "",
+    "Legs": "silk_pants",
+    "Feet": "sneakers"
+  },
+  "abilities": {
+    "legacy": "chord",
+    "active": {
+      "1": "song_of_dawn",
+      "2": "molliatur",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "history": {
+    "pt-br": "Gostava de jogar videogames, trabalhava como músico.",
+    "en-us": "Liked playing video games, worked as a musician."
+  },
+  "auraId": "",
+  "personalityId": "",
+  "catchphrase": {
+    "pt-br": "Te desafio a me acompanhar!",
+    "en-us": "I dare you to follow me!",
+    "attribute_id": "dex"
+  },
+  "inventory": {
+    "1": "bottle_with_water",
+    "2": "flute_cleaner",
+    "3": "black_market_coin",
+    "4": "teleport_scroll",
+    "5": "mara_almonds",
+    "6": "moriu_feather",
+    "7": "panguar_teeth",
+    "8": "iron_dagger",
+    "9": ""
+  },
+  "isCustom": false
+}

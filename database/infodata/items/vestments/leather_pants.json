@@ -1,0 +1,19 @@
+{
+  "id": "leather_pants",
+  "name": {
+    "pt-br": "Calça de Couro",
+    "en-us": "Leather Pants"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Perna",
+  "description": {
+    "pt-br": "Calças de couro simples, leves e confortáveis. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

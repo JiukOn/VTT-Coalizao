@@ -1,0 +1,19 @@
+{
+  "id": "mind_dichotomy",
+  "name": { "pt-br": "Dicotomia da Mente", "en-us": "Mind Dichotomy" },
+  "description": {
+    "pt-br": "O usuário divide sua mente em dois fluxos racionais distintos por 3 turnos, podendo ativar 2 habilidades ativas por turno ou realizar 2 ações cognitivas ao mesmo tempo. Ao final, recebe -4 RES por exaustão mental. Para reativar: 1d20 > 18.",
+    "en-us": "The user divides their mind into two distinct rational flows for 3 turns, able to activate 2 active skills per turn or perform 2 cognitive actions simultaneously. At end, receives -4 RES from mental exhaustion. To reactivate: 1d20 > 18."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": true, "npc_id": "rene_descartes" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": { "INT": 8, "RES": 5 },
+  "isCustom": false
+}

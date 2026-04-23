@@ -1,0 +1,94 @@
+{
+  "id": "rebecca_bishop",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Rebecca Bishop",
+    "en-us": "Rebecca Bishop"
+  },
+  "description": {
+    "pt-br": "Foi chamada de Bruxa por seus aliados em sua terra natal. Se tornou jogadora com 5 anos. Conheceu Nero enquanto fugia de sua cidade. É um prodígio quando se trata de uso de energia.",
+    "en-us": "Was called a Witch by her allies in her homeland. Became a player at age 5. Met Nero while fleeing her city. Is a prodigy when it comes to energy use."
+  },
+  "age": 15,
+  "level": 5,
+  "classId": "elementalist",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "bunker",
+  "ouris": 348,
+  "stats": {
+    "attributes": {
+      "VIT": 6,
+      "DEX": 3,
+      "CRM": 7,
+      "FRC": 2,
+      "INT": 5,
+      "RES": 2,
+      "PRE": 4,
+      "ENR": 10
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "cloth_hat",
+    "Face": "",
+    "Neck": "",
+    "Chest": "cloth_dress",
+    "Back": "",
+    "Right Hand": "grass_staff",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "cloth_skirt",
+    "Feet": "leather_shoes"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "evocar_elemento",
+      "2": "reforco_magico",
+      "3": "defesa_espinhosa",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "acceptance",
+  "possibleBenefit": {
+    "pt-br": "Pode entrar no Bunker.",
+    "en-us": "Can enter the Bunker."
+  },
+  "possibleHarm": {
+    "pt-br": "Se torna inimigo de Nero.",
+    "en-us": "Becomes Nero's enemy."
+  },
+  "inventory": {
+    "1": "coin_mn",
+    "2": "small_healing_potion",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

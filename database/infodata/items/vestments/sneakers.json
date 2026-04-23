@@ -1,0 +1,19 @@
+{
+  "id": "sneakers",
+  "name": {
+    "pt-br": "Tênis",
+    "en-us": "Sneakers"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pé",
+  "description": {
+    "pt-br": "Um par de tênis simples, focado em leveza e conforto. Possui a modificação Mochileiro, que dá maior velocidade para longas distancias. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 10,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

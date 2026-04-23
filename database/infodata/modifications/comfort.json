@@ -1,0 +1,11 @@
+{
+  "id": "comfort",
+  "name": { "pt-br": "Conforto", "en-us": "Comfort" },
+  "description": {
+    "pt-br": "Conforto excepcional que contribui para o bem-estar e recuperação do usuário. Concede 1 dado de vantagem em testes de descanso.",
+    "en-us": "Exceptional comfort that contributes to the user's well-being and recovery. Grants 1 advantage die in rest tests."
+  },
+  "category": "qualidade",
+  "applicableTo": ["vestment"],
+  "attribute_modifiers": {}
+}

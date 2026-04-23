@@ -1,0 +1,19 @@
+{
+  "id": "trap_master",
+  "name": { "pt-br": "Mestre das Armadilhas", "en-us": "Trap Master" },
+  "description": {
+    "pt-br": "O usuário é excepcionalmente atento a movimentos sutis. Joga um dado de vantagem para testes relacionados a encontrar, montar ou desmontar armadilhas.",
+    "en-us": "The user is exceptionally attentive to subtle movements. Rolls an advantage die for tests related to finding, setting up, or dismantling traps."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "INT": 4, "PRE": 4 },
+  "isCustom": false
+}

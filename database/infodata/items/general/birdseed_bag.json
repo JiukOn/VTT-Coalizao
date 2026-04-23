@@ -1,0 +1,19 @@
+{
+  "id": "birdseed_bag",
+  "name": {
+    "pt-br": "Saco de Alpiste",
+    "en-us": "Birdseed Bag"
+  },
+  "category": "general",
+  "type": "Item Geral",
+  "description": {
+    "pt-br": "Um saco de sementes para passaros.",
+    "en-us": "A bag of seeds for birds."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

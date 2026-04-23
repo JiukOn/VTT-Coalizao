@@ -1,0 +1,21 @@
+{
+  "id": "sword_de_iron",
+  "name": {
+    "pt-br": "Espada de Ferro",
+    "en-us": "Iron Sword"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma espada de ferro. Concede +1 FRC e causa 1d4 + 1 de dano.",
+    "en-us": "An iron sword. Grants +1 FRC and deals 1d4 + 1 damage."
+  },
+  "stats": {
+    "frc": 1
+  },
+  "damage": "1d4 + 1",
+  "price": 20,
+  "weight": 3,
+  "rarity": "comum",
+  "isCustom": false
+}

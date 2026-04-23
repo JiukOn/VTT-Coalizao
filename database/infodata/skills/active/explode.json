@@ -1,0 +1,19 @@
+{
+  "id": "explode",
+  "name": { "pt-br": "Explodir", "en-us": "Explode" },
+  "description": {
+    "pt-br": "Causa 2xVIT de dano em área. No entanto, a VIT do usuário é reduzida a 0, resultando em entrada instantânea no estado de quase morte.",
+    "en-us": "Deals 2×VIT area damage. The user's VIT is reduced to 0, instantly entering near-death state."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

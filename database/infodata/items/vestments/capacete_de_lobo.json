@@ -1,0 +1,19 @@
+{
+  "id": "capacete_de_lobo",
+  "name": {
+    "pt-br": "Capacete de Lobo",
+    "en-us": "Capacete De Lobo"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeça",
+  "description": {
+    "pt-br": "Capacete feito de couro de lobo, com acabamento rústico. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

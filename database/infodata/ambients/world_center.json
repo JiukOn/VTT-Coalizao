@@ -1,0 +1,9 @@
+{
+  "id": "world_center",
+  "name": { "pt-br": "Centro Mundial", "en-us": "World Center" },
+  "description": {
+    "pt-br": "O ponto geográfico e energético central do mundo, onde linhas de força convergem e grandes eventos históricos ocorreram.",
+    "en-us": "The geographical and energetic central point of the world, where lines of force converge and great historical events have occurred."
+  },
+  "type": { "pt-br": "Especial", "en-us": "Special" }
+}

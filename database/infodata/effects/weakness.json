@@ -1,0 +1,19 @@
+{
+  "id": "weakness",
+  "name": {
+    "pt-br": "Fraqueza",
+    "en-us": "Weakness"
+  },
+  "description": {
+    "pt-br": "O afetado perde 1d4 de dano de ataque e perde 2 nos dados de teste de FRC.",
+    "en-us": "The affected loses 1d4 attack damage and loses 2 on FRC test dice."
+  },
+  "category": "condicao",
+  "type": "condicao",
+  "sub_type": "penalidade_ataque",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até amenizar.",
+    "en-us": "Until alleviated."
+  }
+}

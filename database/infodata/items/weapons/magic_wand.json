@@ -1,0 +1,21 @@
+{
+  "id": "magic_wand",
+  "name": {
+    "pt-br": "Varinha Magica",
+    "en-us": "Magic Wand"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma varinha magica. Concede +2 ENR.",
+    "en-us": "A magic wand. Grants +2 ENR."
+  },
+  "stats": {
+    "enr": 2
+  },
+  "damage": "",
+  "price": 20,
+  "weight": 0,
+  "rarity": "especial",
+  "isCustom": false
+}

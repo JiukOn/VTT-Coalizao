@@ -1,0 +1,19 @@
+{
+  "id": "short_circuit",
+  "name": {
+    "pt-br": "Curto",
+    "en-us": "Short Circuit"
+  },
+  "description": {
+    "pt-br": "O afetado sofre interferência elétrica, perdendo controle sobre habilidades enquanto o efeito durar.",
+    "en-us": "The affected suffers electrical interference, losing control over abilities while the effect lasts."
+  },
+  "category": "condicao",
+  "type": "condicao",
+  "sub_type": "dano_elemental",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até amenizar.",
+    "en-us": "Until alleviated."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "locked",
+  "name": {
+    "pt-br": "Travado",
+    "en-us": "Locked"
+  },
+  "description": {
+    "pt-br": "O afetado é incapaz de realizar qualquer ação ou movimento.",
+    "en-us": "The affected is unable to perform any action or movement."
+  },
+  "category": "condicao",
+  "type": "condicao",
+  "sub_type": "imobilizacao",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até amenizar.",
+    "en-us": "Until alleviated."
+  }
+}

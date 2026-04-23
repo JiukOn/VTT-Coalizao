@@ -1,0 +1,10 @@
+{
+  "id": "undino_king_bone",
+  "name": {
+    "pt-br": "Osso De Rei Undino",
+    "en-us": "Undino King Bone"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

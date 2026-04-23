@@ -1,0 +1,21 @@
+{
+  "id": "cloth_blazer",
+  "name": {
+    "pt-br": "Blazer de Pano",
+    "en-us": "Cloth Blazer"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Um blazer de pano leve. Concede +1 CRM.",
+    "en-us": "A light cloth blazer. Grants +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 12,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

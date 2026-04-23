@@ -1,0 +1,23 @@
+{
+  "id": "farmer",
+  "name": {
+    "pt-br": "Fazendeiro",
+    "en-us": "Farmer"
+  },
+  "description": {
+    "pt-br": "Um trabalhador rural resistente com profundo conhecimento da terra e da natureza. Sua força e vitalidade compensam a falta de treinamento formal em combate.",
+    "en-us": "A resilient rural worker with deep knowledge of the land and nature. Their strength and vitality compensate for the lack of formal combat training."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 1,
+    "crm": 1,
+    "frc": 1.5,
+    "int": 1,
+    "res": 1.5,
+    "pre": 1,
+    "enr": 0.5
+  },
+  "legacyAbilityId": "enroot",
+  "isCustom": false
+}

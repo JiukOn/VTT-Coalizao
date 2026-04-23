@@ -1,0 +1,19 @@
+{
+  "id": "shadow_crawl",
+  "name": { "pt-br": "Rastejo Sombrio", "en-us": "Shadow Crawl" },
+  "description": {
+    "pt-br": "O usuário pode se mover entre as sombras de seus aliados ou objetos inanimados.",
+    "en-us": "The user can move between the shadows of their allies or inanimate objects."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": true, "class_id": "loyal_shadow" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

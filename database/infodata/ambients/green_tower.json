@@ -1,0 +1,9 @@
+{
+  "id": "green_tower",
+  "name": { "pt-br": "Torre Verde", "en-us": "Green Tower" },
+  "description": {
+    "pt-br": "Uma torre coberta por vegetação viva que cresce e muda a cada dia, lar de entidades ligadas à natureza.",
+    "en-us": "A tower covered in living vegetation that grows and changes each day, home to entities tied to nature."
+  },
+  "type": { "pt-br": "Especial", "en-us": "Special" }
+}

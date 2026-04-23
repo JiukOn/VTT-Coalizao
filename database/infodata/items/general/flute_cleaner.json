@@ -1,0 +1,19 @@
+{
+  "id": "flute_cleaner",
+  "name": {
+    "pt-br": "Limpa-Flauta",
+    "en-us": "Flute Cleaner"
+  },
+  "category": "general",
+  "type": "Ferramenta",
+  "description": {
+    "pt-br": "Um utensilio para limpar flautas e instrumentos de sopro.",
+    "en-us": "A tool for cleaning flutes and wind instruments."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 2,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

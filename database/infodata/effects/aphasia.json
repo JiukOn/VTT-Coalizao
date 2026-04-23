@@ -1,0 +1,19 @@
+{
+  "id": "aphasia",
+  "name": {
+    "pt-br": "Afasia",
+    "en-us": "Aphasia"
+  },
+  "description": {
+    "pt-br": "O afetado recebe -2 CRM quando forçado ou induzido a falar, se 1d4 <= 2 o personagem se torna incapaz de compreender e entonar palavras.",
+    "en-us": "The affected receives -2 CRM when forced or induced to speak; if 1d4 <= 2, the character becomes unable to understand and speak words."
+  },
+  "category": "psicologico_ativo",
+  "type": "psicologico_ativo",
+  "sub_type": "penalidade_comunicacao",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 16 a partir do 2º turno.",
+    "en-us": "1d20 + RES > 16 from 2nd turn."
+  }
+}

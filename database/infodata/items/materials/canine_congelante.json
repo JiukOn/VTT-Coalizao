@@ -1,0 +1,10 @@
+{
+  "id": "canine_congelante",
+  "name": {
+    "pt-br": "Canine Congelante",
+    "en-us": "Canine Congelante"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

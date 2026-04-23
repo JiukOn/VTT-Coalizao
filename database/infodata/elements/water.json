@@ -1,0 +1,12 @@
+{
+  "id": "water",
+  "name": {
+    "pt-br": "Água",
+    "en-us": "Water"
+  },
+  "description": {
+    "pt-br": "Elemento fluido e adaptável, que molda a si mesmo conforme o ambiente.",
+    "en-us": "Fluid and adaptive element that shapes itself according to its surroundings."
+  },
+  "weak_against": "lightning"
+}

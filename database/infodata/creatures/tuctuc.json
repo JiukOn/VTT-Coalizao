@@ -1,0 +1,90 @@
+{
+  "id": "tuctuc",
+  "name": {
+    "pt-br": "TucTuc",
+    "en-us": "TucTuc"
+  },
+  "description": {
+    "pt-br": "Uma pequena ave com penas coloridas e bico afiado. Comum em áreas florestadas.",
+    "en-us": "A small bird with colorful feathers and a sharp beak. Common in forested areas."
+  },
+  "element": "",
+  "size": "tiny",
+  "coreSize": "pequeno",
+  "diet": "onívoro",
+  "imagePath": "Criatura/Tuctuc.png",
+  "level": 1,
+  "attributes": {
+    "VIT": 1,
+    "DEX": 6,
+    "CRM": 2,
+    "FRC": 1,
+    "INT": 1,
+    "RES": 0,
+    "PRE": 3,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "fly",
+      "2": "peck",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "roasted_tuctuc_meat",
+      "chance": "100%",
+      "amount": 2
+    },
+    "2": {
+      "item": "tuctuc_feather",
+      "chance": "100%",
+      "amount": 3
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "desert_field",
+  "name": { "pt-br": "Campo Desértico", "en-us": "Desert Field" },
+  "description": {
+    "pt-br": "Planícies áridas entre regiões de campo e deserto, com vegetação esparsa e calor intenso.",
+    "en-us": "Arid plains between grassland and desert regions, with sparse vegetation and intense heat."
+  },
+  "type": { "pt-br": "Ecossistema", "en-us": "Ecosystem" }
+}

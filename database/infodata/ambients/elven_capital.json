@@ -1,0 +1,9 @@
+{
+  "id": "elven_capital",
+  "name": { "pt-br": "Capital dos Elfos", "en-us": "Elven Capital" },
+  "description": {
+    "pt-br": "A imponente capital dos elfos, construída entre árvores milenares com arquitetura orgânica e magia natural.",
+    "en-us": "The imposing capital of the elves, built among ancient trees with organic architecture and natural magic."
+  },
+  "type": { "pt-br": "Civilização", "en-us": "Civilization" }
+}

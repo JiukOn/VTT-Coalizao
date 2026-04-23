@@ -1,0 +1,11 @@
+{
+  "id": "fragile",
+  "name": { "pt-br": "Frágil", "en-us": "Fragile" },
+  "description": {
+    "pt-br": "O item é mais suscetível a quebrar. Em testes de dano direcionado ao item, o atacante recebe +1 no dado. Pode ser encontrado em Armas, Vestimentas e Escudos.",
+    "en-us": "The item is more susceptible to breaking. In damage tests directed at the item, the attacker receives +1 to the die. Found in Weapons, Vestments, and Shields."
+  },
+  "category": "penalidade",
+  "applicableTo": ["weapon", "vestment", "shield"],
+  "attribute_modifiers": {}
+}

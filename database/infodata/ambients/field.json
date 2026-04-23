@@ -1,0 +1,9 @@
+{
+  "id": "field",
+  "name": { "pt-br": "Campo", "en-us": "Field" },
+  "description": {
+    "pt-br": "Vastas planícies abertas onde o vento corre livre e pequenas criaturas habitam a grama alta.",
+    "en-us": "Vast open plains where the wind runs free and small creatures dwell in the tall grass."
+  },
+  "type": { "pt-br": "Ecossistema", "en-us": "Ecosystem" }
+}

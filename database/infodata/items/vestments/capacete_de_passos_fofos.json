@@ -1,0 +1,19 @@
+{
+  "id": "capacete_de_passos_fofos",
+  "name": {
+    "pt-br": "Capacete de Passos Fofos",
+    "en-us": "Capacete De Passos Fofos"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeça",
+  "description": {
+    "pt-br": "Um chapéu de pele macia, com design chamativo. Possui a modificação Chamativo, concedendo +1 no dado em testes de CRM, mas impondo -1 no dado em testes de Furtividade. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 2,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

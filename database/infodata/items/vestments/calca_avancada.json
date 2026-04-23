@@ -1,0 +1,19 @@
+{
+  "id": "calca_avancada",
+  "name": {
+    "pt-br": "Calça Avançada",
+    "en-us": "Calca Avancada"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Perna",
+  "description": {
+    "pt-br": "Calças resistentes e flexíveis para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

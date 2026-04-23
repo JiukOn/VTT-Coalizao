@@ -1,0 +1,21 @@
+{
+  "id": "transmutation_mark",
+  "name": {
+    "pt-br": "Marca de Transmutacao",
+    "en-us": "Transmutation Mark"
+  },
+  "category": "general",
+  "type": "Item Especial",
+  "description": {
+    "pt-br": "Uma marca magica de transmutacao. Concede +1 INT.",
+    "en-us": "A magical transmutation mark. Grants +1 INT."
+  },
+  "stats": {
+    "int": 1
+  },
+  "damage": "",
+  "price": 0,
+  "weight": 0,
+  "rarity": "especial",
+  "isCustom": false
+}

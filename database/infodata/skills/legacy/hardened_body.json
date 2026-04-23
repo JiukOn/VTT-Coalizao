@@ -1,0 +1,19 @@
+{
+  "id": "hardened_body",
+  "name": { "pt-br": "Corpo Endurecido", "en-us": "Hardened Body" },
+  "description": {
+    "pt-br": "O usuário endurece seu corpo, ganhando +2 FRC por 3 turnos. Exige 1d20 > 16 para reativar após os primeiros efeitos na situação atual.",
+    "en-us": "The user hardens their body, gaining +2 FRC for 3 turns. Requires 1d20 > 16 to reactivate after first effects end in the current situation."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "defender" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

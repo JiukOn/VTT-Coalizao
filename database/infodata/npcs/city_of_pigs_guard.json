@@ -1,0 +1,94 @@
+{
+  "id": "city_of_pigs_guard",
+  "type": "Guarda",
+  "name": {
+    "pt-br": "Guarda da Cidade dos Porcos",
+    "en-us": "City of Pigs Guard"
+  },
+  "description": {
+    "pt-br": "Guardas leais à família Unsato. Obedientes e treinados para manter a ordem na Cidade dos Porcos.",
+    "en-us": "Guards loyal to the Unsato family. Obedient and trained to maintain order in the City of Pigs."
+  },
+  "age": 28,
+  "level": 3,
+  "classId": "henchman",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 0,
+  "stats": {
+    "attributes": {
+      "VIT": 8,
+      "DEX": 4,
+      "CRM": 1,
+      "FRC": 8,
+      "INT": 1,
+      "RES": 3,
+      "PRE": 8,
+      "ENR": 1
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "capacete_de_leather",
+    "Face": "",
+    "Neck": "",
+    "Chest": "chestplate_de_iron",
+    "Back": "",
+    "Right Hand": "sword_de_iron",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "calca_de_leather",
+    "Feet": "leather_shoes"
+  },
+  "abilities": {
+    "legacy": "juntos_somos_mais",
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "obedient",
+  "possibleBenefit": {
+    "pt-br": "Pode treinar com a Thanatos.",
+    "en-us": "Can train with Thanatos."
+  },
+  "possibleHarm": {
+    "pt-br": "A Thanatos irá te atacar.",
+    "en-us": "Thanatos will attack you."
+  },
+  "inventory": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

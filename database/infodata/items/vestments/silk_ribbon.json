@@ -1,0 +1,21 @@
+{
+  "id": "silk_ribbon",
+  "name": {
+    "pt-br": "Fita de Seda",
+    "en-us": "Silk Ribbon"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mao",
+  "description": {
+    "pt-br": "Uma fita de seda. Concede +1 CRM.",
+    "en-us": "A silk ribbon. Grants +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 8,
+  "weight": 0,
+  "rarity": "sentimental",
+  "isCustom": false
+}

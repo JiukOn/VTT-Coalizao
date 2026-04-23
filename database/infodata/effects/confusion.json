@@ -1,0 +1,19 @@
+{
+  "id": "confusion",
+  "name": {
+    "pt-br": "Confusão",
+    "en-us": "Confusion"
+  },
+  "description": {
+    "pt-br": "Dá um dado de prejuízo para acertar qualquer ação ou ataque, se o valor for <= 7 o afetado recebe 1d4 de dano. Além disso, o afetado se torna incapaz de compreender palavras.",
+    "en-us": "Grants a disadvantage die to hit any action or attack; if result <= 7 the affected takes 1d4 damage. The affected also becomes unable to understand words."
+  },
+  "category": "psicologico_ativo",
+  "type": "psicologico_ativo",
+  "sub_type": "penalidade_cognitiva",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 16 a partir do 2º turno.",
+    "en-us": "1d20 + RES > 16 from 2nd turn."
+  }
+}

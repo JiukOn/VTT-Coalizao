@@ -1,0 +1,19 @@
+{
+  "id": "lace_headband",
+  "name": {
+    "pt-br": "Faixa de Renda",
+    "en-us": "Lace Headband"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Uma faixa de renda delicada.",
+    "en-us": "A delicate lace headband."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

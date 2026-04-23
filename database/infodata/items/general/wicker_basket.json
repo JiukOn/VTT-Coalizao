@@ -1,0 +1,19 @@
+{
+  "id": "wicker_basket",
+  "name": {
+    "pt-br": "Cesta de Vime",
+    "en-us": "Wicker Basket"
+  },
+  "category": "general",
+  "type": "Item Geral",
+  "description": {
+    "pt-br": "Uma cesta de vime trancado.",
+    "en-us": "A woven wicker basket."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 2,
+  "rarity": "comum",
+  "isCustom": false
+}

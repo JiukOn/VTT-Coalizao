@@ -1,0 +1,19 @@
+{
+  "id": "pano",
+  "name": {
+    "pt-br": "Pano",
+    "en-us": "Cloth"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Um pedaco de pano simples.",
+    "en-us": "A simple piece of cloth."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 2,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

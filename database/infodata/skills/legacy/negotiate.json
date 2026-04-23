@@ -1,0 +1,19 @@
+{
+  "id": "negotiate",
+  "name": { "pt-br": "Negociar", "en-us": "Negotiate" },
+  "description": {
+    "pt-br": "O usuário tem maior probabilidade de receber o que deseja. Se 1d12 >= 7, o usuário pode negociar com maior facilidade.",
+    "en-us": "The user has a higher probability of receiving what they desire. If 1d12 >= 7, the user can negotiate more easily."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "market_dealer" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "INT": 8 },
+  "isCustom": false
+}

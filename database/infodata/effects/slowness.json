@@ -1,0 +1,19 @@
+{
+  "id": "slowness",
+  "name": {
+    "pt-br": "Lentidão",
+    "en-us": "Slowness"
+  },
+  "description": {
+    "pt-br": "O afetado joga um dado de prejuízo para ações de movimento.",
+    "en-us": "The affected rolls a disadvantage die for movement actions."
+  },
+  "category": "condicao",
+  "type": "condicao",
+  "sub_type": "penalidade_movimento",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até amenizar.",
+    "en-us": "Until alleviated."
+  }
+}

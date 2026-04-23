@@ -1,0 +1,21 @@
+{
+  "id": "",
+  "name": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "stats_multiplier": {
+    "VIT": 1,
+    "DEX": 1,
+    "CRM": 1,
+    "FRC": 1,
+    "INT": 1,
+    "RES": 1,
+    "PRE": 1,
+    "ENR": 1
+  }
+}

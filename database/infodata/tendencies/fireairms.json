@@ -1,0 +1,12 @@
+{
+  "id": "fireairms",
+  "name": {
+    "pt-br": "Armas_de_fogo",
+    "en-us": "Firearms"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

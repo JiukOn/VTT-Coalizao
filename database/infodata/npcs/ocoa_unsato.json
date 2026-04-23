@@ -1,0 +1,94 @@
+{
+  "id": "ocoa_unsato",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Pequeno Ocoa Unsato",
+    "en-us": "Little Ocoa Unsato"
+  },
+  "description": {
+    "pt-br": "Ministro Rebelde da família Unsato que virou aliado dos rebeldes.",
+    "en-us": "Rebel Minister from the Unsato family who became a rebel ally."
+  },
+  "age": 40,
+  "level": 6,
+  "classId": "unclassified",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "dampened_reserve",
+  "ouris": 56763,
+  "stats": {
+    "attributes": {
+      "VIT": 0,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "",
+    "Feet": "leather_shoes"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "",
+  "possibleBenefit": {
+    "pt-br": "Ganha um favor.",
+    "en-us": "Gain a favor."
+  },
+  "possibleHarm": {
+    "pt-br": "Menor afeição rebelde.",
+    "en-us": "Reduced rebel affection."
+  },
+  "inventory": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

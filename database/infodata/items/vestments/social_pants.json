@@ -1,0 +1,21 @@
+{
+  "id": "social_pants",
+  "name": {
+    "pt-br": "Calca Social",
+    "en-us": "Social Pants"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Calca elegante que concede +1 CRM.",
+    "en-us": "Elegant pants that grant +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 12,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

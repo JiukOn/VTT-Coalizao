@@ -1,0 +1,9 @@
+{
+  "id": "eternal_autumn_forest",
+  "name": { "pt-br": "Floresta Outono Perene", "en-us": "Eternal Autumn Forest" },
+  "description": {
+    "pt-br": "Uma floresta presa em eterno outono, com folhas de ouro e vermelho que nunca caem completamente.",
+    "en-us": "A forest locked in eternal autumn, with gold and red leaves that never fully fall."
+  },
+  "type": { "pt-br": "Ecossistema", "en-us": "Ecosystem" }
+}

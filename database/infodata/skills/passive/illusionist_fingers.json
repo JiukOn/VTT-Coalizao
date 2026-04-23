@@ -1,0 +1,19 @@
+{
+  "id": "illusionist_fingers",
+  "name": { "pt-br": "Dedos Ilusionistas", "en-us": "Illusionist Fingers" },
+  "description": {
+    "pt-br": "Concede +3 em testes de montagem e +2 em testes de furto.",
+    "en-us": "Grants +3 on assembly tests and +2 on theft tests."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "nimble_fingers" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "INT": 4, "DEX": 4 },
+  "isCustom": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "dampened_reserve",
+  "name": { "pt-br": "Reserva Amortecida", "en-us": "Dampened Reserve" },
+  "description": {
+    "pt-br": "Uma área protegida onde o fluxo de energia é suprimido, criando uma zona neutra para negociações e acordos.",
+    "en-us": "A protected area where energy flow is suppressed, creating a neutral zone for negotiations and agreements."
+  },
+  "type": { "pt-br": "Civilização", "en-us": "Civilization" }
+}

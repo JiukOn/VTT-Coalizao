@@ -1,0 +1,9 @@
+{
+  "id": "deep_purple_forest",
+  "name": { "pt-br": "Floresta Denso Roxo", "en-us": "Deep Purple Forest" },
+  "description": {
+    "pt-br": "Uma floresta densa de tonalidades roxas e violetas, envolta em névoa mágica e energia misteriosa.",
+    "en-us": "A dense forest of purple and violet hues, shrouded in magical mist and mysterious energy."
+  },
+  "type": { "pt-br": "Ecossistema", "en-us": "Ecosystem" }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "black_market_coin",
+  "name": {
+    "pt-br": "Moeda do Mercado Negro",
+    "en-us": "Black Market Coin"
+  },
+  "category": "general",
+  "type": "Moeda",
+  "description": {
+    "pt-br": "Uma moeda usada em transacoes do mercado negro.",
+    "en-us": "A coin used in black market transactions."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 0,
+  "rarity": "sentimental",
+  "isCustom": false
+}

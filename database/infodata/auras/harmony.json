@@ -1,0 +1,16 @@
+{
+  "id": "harmony",
+  "name": {
+    "pt-br": "Harmonia",
+    "en-us": "Harmony"
+  },
+  "description": {
+    "pt-br": "Uma aura de equilíbrio e paz que acalma os ânimos ao redor. Seres próximos tendem a cooperar mais facilmente e resistem melhor a efeitos psicológicos negativos.",
+    "en-us": "An aura of balance and peace that calms the spirits around it. Nearby beings tend to cooperate more easily and resist negative psychological effects better."
+  },
+  "activationMoments": {
+    "pt-br": "Sempre ativa. Os efeitos calmantes são mais pronunciados em momentos de conflito ou tensão.",
+    "en-us": "Always active. The calming effects are more pronounced in moments of conflict or tension."
+  },
+  "isCustom": false
+}

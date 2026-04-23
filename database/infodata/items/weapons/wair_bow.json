@@ -1,0 +1,21 @@
+{
+  "id": "wair_bow",
+  "name": {
+    "pt-br": "Arco de Guerra",
+    "en-us": "War Bow"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Capaz de lançar projéteis finos e alongados, confere +3 PRE. Distância Máxima de lançamento: 16 metros. Possui a modificação Perceptivo, permitindo, uma vez por combate, ignorar a defesa do alvo em um ataque. .",
+    "en-us": ""
+  },
+  "stats": {
+    "pre": 3
+  },
+  "damage": "",
+  "price": 18,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

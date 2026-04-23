@@ -1,0 +1,19 @@
+{
+  "id": "cook_skill",
+  "name": { "pt-br": "Cozer", "en-us": "Cook" },
+  "description": {
+    "pt-br": "O usuário pode preparar alimentos complexos que concedem bônus específicos. Teste bem-sucedido (1d20 > 14) na preparação garante os bônus, ampliados pela qualidade dos ingredientes.",
+    "en-us": "The user can prepare complex foods that grant specific bonuses. A successful test (1d20 > 14) during preparation guarantees the bonuses, amplified by ingredient quality."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "cook" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

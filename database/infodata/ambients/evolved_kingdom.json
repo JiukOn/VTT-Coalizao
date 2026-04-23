@@ -1,0 +1,9 @@
+{
+  "id": "evolved_kingdom",
+  "name": { "pt-br": "Reino Evoluído", "en-us": "Evolved Kingdom" },
+  "description": {
+    "pt-br": "Um reino governado por seres que passaram por TransEvolução, onde o poder e a hierarquia são definidos pelo nível de evolução.",
+    "en-us": "A kingdom governed by beings who have undergone TransEvolution, where power and hierarchy are defined by level of evolution."
+  },
+  "type": { "pt-br": "Civilização", "en-us": "Civilization" }
+}

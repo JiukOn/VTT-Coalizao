@@ -1,0 +1,19 @@
+{
+  "id": "special_stick",
+  "name": {
+    "pt-br": "Vareta",
+    "en-us": "Special Stick"
+  },
+  "category": "general",
+  "type": "Item Mágico",
+  "description": {
+    "pt-br": "Uma vareta simples de baixa durabilidade. Possui a modificação Prático, cujo design otimiza a eficiência do usuário, concedendo 1 dado de vantagem em testes de criação ou reparo de itens quando este item é o principal utilizado na ação. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

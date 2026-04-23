@@ -1,0 +1,19 @@
+{
+  "id": "oracle",
+  "name": { "pt-br": "Oráculo", "en-us": "Oracle" },
+  "description": {
+    "pt-br": "O usuário pode receber apoio do Mestre em certas escolhas. Requer Pergaminho de Oráculo.",
+    "en-us": "The user can receive support from the Master in certain choices. Requires Oracle Scroll."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": true,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

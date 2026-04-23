@@ -1,0 +1,10 @@
+{
+  "id": "equiliz_leather",
+  "name": {
+    "pt-br": "Couro De Equiliz",
+    "en-us": "Equiliz Leather"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

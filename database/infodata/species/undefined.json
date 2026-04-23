@@ -1,0 +1,13 @@
+{
+  "id": "undefined",
+  "name": {
+    "pt-br": "Indefinido",
+    "en-us": "Undefined"
+  },
+  "description": {
+    "pt-br": "Uma espécie ainda não catalogada ou de origem desconhecida. Sem bônus ou penalidades definidos — a natureza exata do ser é um mistério.",
+    "en-us": "A species not yet cataloged or of unknown origin. No defined bonuses or penalties — the exact nature of the being is a mystery."
+  },
+  "attributeModifiers": {},
+  "isCustom": false
+}

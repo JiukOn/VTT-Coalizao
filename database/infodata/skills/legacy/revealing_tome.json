@@ -1,0 +1,19 @@
+{
+  "id": "revealing_tome",
+  "name": { "pt-br": "Tomo Revelador", "en-us": "Revealing Tome" },
+  "description": {
+    "pt-br": "Além de mostrar a ficha de qualquer ser de mesmo nível, o usuário pode fazer um teste (1d20 > 14) para descobrir motivações ocultas, verificar se está mentindo ou ler brevemente os pensamentos do alvo.",
+    "en-us": "In addition to showing any same-level being's sheet, the user can roll (1d20 > 14) to discover hidden motivations, verify if lying, or briefly read the target's thoughts."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "reader" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "INT": 8 },
+  "isCustom": false
+}

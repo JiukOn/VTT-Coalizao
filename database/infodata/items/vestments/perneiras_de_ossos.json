@@ -1,0 +1,19 @@
+{
+  "id": "perneiras_de_ossos",
+  "name": {
+    "pt-br": "Perneiras de Ossos",
+    "en-us": "Perneiras De Ossos"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Perna",
+  "description": {
+    "pt-br": "Proteção para as pernas feita de ossos reforçados. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

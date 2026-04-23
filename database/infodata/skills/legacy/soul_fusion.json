@@ -1,0 +1,19 @@
+{
+  "id": "soul_fusion",
+  "name": { "pt-br": "Fusão de Alma", "en-us": "Soul Fusion" },
+  "description": {
+    "pt-br": "Efeito único: o usuário recebe uma habilidade e 1/3 do valor de cada atributo de um ser pré-contratado, que morrerá no momento da Transevolução. Uma vez por turno, pode rolar 1d20; se > 16, nega um efeito psicológico.",
+    "en-us": "Unique effect: the user receives a skill and 1/3 of each attribute value from a pre-contracted being, who will die at the moment of TransEvolution. Once per turn, can roll 1d20; if > 16, negates a psychological effect."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": true, "class_id": "soul_merger" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

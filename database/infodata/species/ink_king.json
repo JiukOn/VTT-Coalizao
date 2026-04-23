@@ -1,0 +1,16 @@
+{
+  "id": "ink_king",
+  "name": {
+    "pt-br": "Rei Tinta",
+    "en-us": "Ink King"
+  },
+  "description": {
+    "pt-br": "Uma espécie rara obtida através do consumo do Coração de Tinta. O Rei Tinta possui domínio sobre a tinta como substância viva, além de energia amplificada e uma ligação mística com a criação.",
+    "en-us": "A rare species obtained through consuming the Ink Heart. The Ink King possesses dominion over ink as a living substance, along with amplified energy and a mystical connection to creation."
+  },
+  "attributeModifiers": {
+    "enr": 2,
+    "int": 1
+  },
+  "isCustom": false
+}

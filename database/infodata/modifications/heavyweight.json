@@ -1,0 +1,11 @@
+{
+  "id": "heavyweight",
+  "name": { "pt-br": "Pesado", "en-us": "Heavyweight" },
+  "description": {
+    "pt-br": "Peso e inércia consideráveis, conferindo poder de impacto esmagador. Concede +1 no dado em testes de ataque, mas impõe -1 no dado em testes de esquiva.",
+    "en-us": "Considerable weight and inertia, granting crushing impact power. Grants +1 to attack test dice, but imposes -1 to evasion test dice."
+  },
+  "category": "qualidade",
+  "applicableTo": ["weapon", "vestment"],
+  "attribute_modifiers": { "attribute": "attack_dice", "value": "+1" }
+}

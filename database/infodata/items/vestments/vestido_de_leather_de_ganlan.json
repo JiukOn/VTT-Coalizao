@@ -1,0 +1,21 @@
+{
+  "id": "vestido_de_leather_de_ganlan",
+  "name": {
+    "pt-br": "Vestido de Couro de Ganlan",
+    "en-us": "Ganlan Leather Dress"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Vestido de couro no estilo Ganlan. Concede +1 CRM.",
+    "en-us": "Ganlan-style leather dress. Grants +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 30,
+  "weight": 2,
+  "rarity": "especial",
+  "isCustom": false
+}

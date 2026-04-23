@@ -1,0 +1,19 @@
+{
+  "id": "botas_de_lobo",
+  "name": {
+    "pt-br": "Botas de Lobo",
+    "en-us": "Botas De Lobo"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pé",
+  "description": {
+    "pt-br": "Botas feitas de couro de lobo, com solado robusto. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

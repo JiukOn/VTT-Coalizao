@@ -1,0 +1,10 @@
+{
+  "id": "book_h_flames",
+  "name": {
+    "pt-br": "Livro H Chamas",
+    "en-us": "Book H Flames"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

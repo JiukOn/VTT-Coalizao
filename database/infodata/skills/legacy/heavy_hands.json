@@ -1,0 +1,19 @@
+{
+  "id": "heavy_hands",
+  "name": { "pt-br": "Mãos Pesadas", "en-us": "Heavy Hands" },
+  "description": {
+    "pt-br": "Aumenta 2 de dano no corpo a corpo por 2 turnos. Para reativar na mesma situação: 1d20 > 16.",
+    "en-us": "Increases melee damage by 2 for 2 turns. To reactivate in the same situation: 1d20 > 16."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "fighter" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 2,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

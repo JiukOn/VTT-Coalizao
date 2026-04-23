@@ -1,0 +1,12 @@
+{
+  "id": "sorcery",
+  "name": {
+    "pt-br": "Feiticaria",
+    "en-us": "Sorcery"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

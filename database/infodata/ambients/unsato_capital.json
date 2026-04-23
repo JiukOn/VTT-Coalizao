@@ -1,0 +1,9 @@
+{
+  "id": "unsato_capital",
+  "name": { "pt-br": "Capital Unsato", "en-us": "Unsato Capital" },
+  "description": {
+    "pt-br": "A capital do povo Unsato, conhecida por sua indústria avançada e estruturas de metal e pedra.",
+    "en-us": "The capital of the Unsato people, known for its advanced industry and structures of metal and stone."
+  },
+  "type": { "pt-br": "Civilização", "en-us": "Civilization" }
+}

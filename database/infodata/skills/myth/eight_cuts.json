@@ -1,0 +1,19 @@
+{
+  "id": "eight_cuts",
+  "name": { "pt-br": "Oito Cortes", "en-us": "Eight Cuts" },
+  "description": {
+    "pt-br": "Se o oponente tiver mais FRC que o usuário, recebe +5 FRC. Se o oponente for uma serpente ou tiver mais de uma cabeça, o usuário recebe +8 DEX. Efeitos válidos até o fim da batalha.",
+    "en-us": "If the opponent has more FRC than the user, receives +5 FRC. If the opponent is a serpent or has more than one head, the user receives +8 DEX. Effects valid until the end of battle."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": true, "item_id": "kusanagi_no_tsurugi" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "FRC": 4 },
+  "isCustom": false
+}

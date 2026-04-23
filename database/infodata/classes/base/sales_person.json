@@ -1,0 +1,23 @@
+{
+  "id": "sales_person",
+  "name": {
+    "pt-br": "Feirante",
+    "en-us": "Sales Person"
+  },
+  "description": {
+    "pt-br": "Um comerciante astuto com lábia afiada e olho clínico para negócios. Usa carisma e inteligência para obter vantagem em qualquer situação, dentro e fora do mercado.",
+    "en-us": "A shrewd merchant with a sharp tongue and a keen eye for business. Uses charisma and intelligence to gain the upper hand in any situation, inside and outside the market."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 1.5,
+    "crm": 2,
+    "frc": 1,
+    "int": 2,
+    "res": 1,
+    "pre": 1.5,
+    "enr": 0
+  },
+  "legacyAbilityId": "negotiate",
+  "isCustom": false
+}

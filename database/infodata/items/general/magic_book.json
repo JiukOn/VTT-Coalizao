@@ -1,0 +1,21 @@
+{
+  "id": "magic_book",
+  "name": {
+    "pt-br": "Livro Magico",
+    "en-us": "Magic Book"
+  },
+  "category": "general",
+  "type": "Item Especial",
+  "description": {
+    "pt-br": "Um livro imbuido de energia magica. Concede +1 ENR ao portador.",
+    "en-us": "A book imbued with magical energy. Grants +1 ENR to the bearer."
+  },
+  "stats": {
+    "enr": 1
+  },
+  "damage": "",
+  "price": 25,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

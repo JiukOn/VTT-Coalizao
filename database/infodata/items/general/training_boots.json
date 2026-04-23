@@ -1,0 +1,19 @@
+{
+  "id": "training_boots",
+  "name": {
+    "pt-br": "Botas de Treino",
+    "en-us": "Training Boots"
+  },
+  "category": "general",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Botas resistentes para treinamento fisico.",
+    "en-us": "Durable boots for physical training."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 10,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "rejuvenation",
+  "name": {
+    "pt-br": "Rejuvelhecer",
+    "en-us": "Rejuvenation"
+  },
+  "description": {
+    "pt-br": "O alvo rejuvenesce 1 ano instantaneamente. Efeito único: acontece apenas uma vez.",
+    "en-us": "The target rejuvenates by 1 year instantly. Unique effect: happens only once."
+  },
+  "category": "efeito_unico",
+  "type": "efeito_unico",
+  "sub_type": "alteracao_temporal",
+  "duration": 1,
+  "removalCondition": {
+    "pt-br": "Acontece apenas uma vez.",
+    "en-us": "Happens only once."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weapon_modification",
+  "name": { "pt-br": "Modificação de Armas", "en-us": "Weapon Modification" },
+  "description": {
+    "pt-br": "O usuário é capaz de modificar armas pré-existentes, recebendo 1 dado bônus nesta ação.",
+    "en-us": "The user is capable of modifying pre-existing weapons, receiving 1 bonus die in this action."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "INT": 4 },
+  "isCustom": false
+}

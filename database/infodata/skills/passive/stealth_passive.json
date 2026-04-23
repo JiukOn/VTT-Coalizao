@@ -1,0 +1,19 @@
+{
+  "id": "stealth_passive",
+  "name": { "pt-br": "Furtividade", "en-us": "Stealth" },
+  "description": {
+    "pt-br": "Impõe -2 nos dados de testes de percepção inimigos.",
+    "en-us": "Imposes -2 on enemy perception test dice."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

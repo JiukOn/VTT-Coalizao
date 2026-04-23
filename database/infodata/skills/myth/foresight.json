@@ -1,0 +1,19 @@
+{
+  "id": "foresight",
+  "name": { "pt-br": "Previsão", "en-us": "Foresight" },
+  "description": {
+    "pt-br": "Permite ao usuário ver 30 segundos do futuro fora de batalha. Concede 1 dado bônus para ações rápidas.",
+    "en-us": "Allows the user to see 30 seconds into the future outside of battle. Grants 1 bonus die for quick actions."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": true, "item_id": "zoroaster_deck" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 5, "RES": 7 },
+  "isCustom": false
+}

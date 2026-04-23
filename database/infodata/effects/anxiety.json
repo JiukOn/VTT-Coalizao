@@ -1,0 +1,19 @@
+{
+  "id": "anxiety",
+  "name": {
+    "pt-br": "Ansiedade",
+    "en-us": "Anxiety"
+  },
+  "description": {
+    "pt-br": "O afetado recebe -1 CRM temporariamente, se torna incapaz de se comunicar por longos períodos e toma decisões incertas.",
+    "en-us": "The affected temporarily receives -1 CRM, becomes unable to communicate for long periods, and makes uncertain decisions."
+  },
+  "category": "psicologico_ativo",
+  "type": "psicologico_ativo",
+  "sub_type": "penalidade_social",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 16 a partir do 2º turno.",
+    "en-us": "1d20 + RES > 16 from 2nd turn."
+  }
+}

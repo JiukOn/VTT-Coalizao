@@ -1,0 +1,19 @@
+{
+  "id": "training_pants",
+  "name": {
+    "pt-br": "Calca de Treino",
+    "en-us": "Training Pants"
+  },
+  "category": "general",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Calcas confortaveis para treino fisico.",
+    "en-us": "Comfortable pants for physical training."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 10,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

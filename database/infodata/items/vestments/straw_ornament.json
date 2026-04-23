@@ -1,0 +1,19 @@
+{
+  "id": "straw_ornament",
+  "name": {
+    "pt-br": "Enfeite de Palha",
+    "en-us": "Straw Ornament"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Um enfeite trancado com palha.",
+    "en-us": "A braided straw ornament."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

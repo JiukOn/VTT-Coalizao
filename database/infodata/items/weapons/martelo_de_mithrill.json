@@ -1,0 +1,22 @@
+{
+  "id": "martelo_de_mithrill",
+  "name": {
+    "pt-br": "Martelo de Mithril",
+    "en-us": "Mithril Hammer"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Um martelo forjado em mithril. Concede +2 FRC e +1 RES. Causa 1d4 + 2 de dano.",
+    "en-us": "A mithril-forged hammer. Grants +2 FRC and +1 RES. Deals 1d4 + 2 damage."
+  },
+  "stats": {
+    "frc": 2,
+    "res": 1
+  },
+  "damage": "1d4 + 2",
+  "price": 60,
+  "weight": 4,
+  "rarity": "especial",
+  "isCustom": false
+}

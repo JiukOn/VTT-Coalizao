@@ -1,0 +1,19 @@
+{
+  "id": "attunement",
+  "name": { "pt-br": "Sintonia", "en-us": "Attunement" },
+  "description": {
+    "pt-br": "O usuário troca seus pontos de atributos e habilidades com um alvo vivo inconsciente da mesma espécie. Só funciona se o usuário tiver grande entendimento sobre o alvo e se o teste (1d20 + ENR > 12) for bem-sucedido. O efeito dura 2 turnos.",
+    "en-us": "The user swaps their attribute points and skills with an unconscious living target of the same species. Only works if the user has great understanding of the target and test (1d20 + ENR > 12) succeeds. Effect lasts 2 turns."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 2,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

@@ -1,0 +1,90 @@
+{
+  "id": "equiliz",
+  "name": {
+    "pt-br": "Equiliz",
+    "en-us": "Equiliz"
+  },
+  "description": {
+    "pt-br": "Uma montaria ágil com aparência equina e reflexos aguçados. Rápida e leal ao seu dono.",
+    "en-us": "An agile mount with equine appearance and sharp reflexes. Fast and loyal to its owner."
+  },
+  "element": "",
+  "size": "medium",
+  "coreSize": "pequeno",
+  "diet": "herbívoro",
+  "imagePath": "Criatura/Equiliz.png",
+  "level": 1,
+  "attributes": {
+    "VIT": 4,
+    "DEX": 7,
+    "CRM": 3,
+    "FRC": 4,
+    "INT": 3,
+    "RES": 2,
+    "PRE": 3,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "accelerate",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "equiliz_leather",
+      "chance": "100%",
+      "amount": 2
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false
+}

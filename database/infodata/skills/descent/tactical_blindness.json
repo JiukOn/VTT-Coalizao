@@ -1,0 +1,19 @@
+{
+  "id": "tactical_blindness",
+  "name": { "pt-br": "Cegueira Tática", "en-us": "Tactical Blindness" },
+  "description": {
+    "pt-br": "O usuário entra em estado de combate intuitivo e fica completamente cego. Por 2 turnos, pode anular 1 acerto crítico recebido ou, se o ataque não for crítico, pode fazer um teste (1d20 > 12) para realizar um contra-ataque imediato.",
+    "en-us": "The user enters an intuitive combat state and becomes completely blind. For 2 turns, can nullify 1 received critical hit or, if the attack is not critical, can roll (1d20 > 12) to perform an immediate counter-attack."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": true, "npc_id": "sun_tzu" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 2,
+  "turns_cooldown": null,
+  "requirements": { "DEX": 8, "PRE": 6 },
+  "isCustom": false
+}

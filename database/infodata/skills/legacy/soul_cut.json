@@ -1,0 +1,19 @@
+{
+  "id": "soul_cut",
+  "name": { "pt-br": "Corte de Alma", "en-us": "Soul Cut" },
+  "description": {
+    "pt-br": "O usuário pode cortar parte de sua própria Alma e implantá-la em outro ser, forçando a benevolência do alvo. Só é possível se a RES do alvo for baixa em relação à do usuário. Gasta permanentemente 1 ponto base de ENR se o efeito for exercido.",
+    "en-us": "The user can cut part of their own Soul and implant it in another being, forcing the target's benevolence. Only possible if the target's RES is low relative to the user's. Permanently spends 1 base ENR point if the effect is exercised."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "soul_samurai" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "1 ENR base permanente",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "CRM": 8 },
+  "isCustom": false
+}

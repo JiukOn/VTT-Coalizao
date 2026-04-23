@@ -1,0 +1,11 @@
+{
+  "id": "flashy",
+  "name": { "pt-br": "Chamativo", "en-us": "Flashy" },
+  "description": {
+    "pt-br": "Beleza excepcional que chama atenção. Concede +1 no dado em testes de Carisma em interações sociais, mas impõe -1 no dado em testes de Furtividade.",
+    "en-us": "Exceptional beauty that draws attention. Grants +1 to Charisma test dice in social interactions, but imposes -1 to Stealth test dice."
+  },
+  "category": "qualidade",
+  "applicableTo": ["vestment", "general"],
+  "attribute_modifiers": { "attribute": "CRM_dice", "value": "+1" }
+}

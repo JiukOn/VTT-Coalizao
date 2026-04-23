@@ -1,0 +1,19 @@
+{
+  "id": "bare_hands_art",
+  "name": { "pt-br": "Arte de Mãos Livres", "en-us": "Bare Hands Art" },
+  "description": {
+    "pt-br": "O usuário recebe +2 DEX e +1 FRC em batalha quando não está utilizando armas.",
+    "en-us": "The user receives +2 DEX and +1 FRC in battle when not using weapons."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

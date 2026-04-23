@@ -1,0 +1,19 @@
+{
+  "id": "vitality_shield",
+  "name": { "pt-br": "Escudo de Vitalidade", "en-us": "Vitality Shield" },
+  "description": {
+    "pt-br": "O usuário gasta 3 VIT para conceder um bônus de defesa única ao alvo. Ativo por 1 turno; nos turnos 2 e 3, o alvo recupera 2 VIT por turno. Para reativar na mesma situação: 1d20 > 16. Efeito Secundário: quando VIT <= 3, ganha um dado extra de esquiva de uso único.",
+    "en-us": "The user spends 3 VIT to grant a unique defense bonus to the target. Active for 1 turn; on turns 2 and 3, the target recovers 2 VIT per turn. To reactivate in same situation: 1d20 > 16. Secondary effect: when VIT <= 3, gains a one-time extra evasion die."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "guardian" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "3 VIT",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

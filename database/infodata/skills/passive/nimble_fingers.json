@@ -1,0 +1,19 @@
+{
+  "id": "nimble_fingers",
+  "name": { "pt-br": "Dedos Ágeis", "en-us": "Nimble Fingers" },
+  "description": {
+    "pt-br": "Aumenta a velocidade de montagem de itens, concedendo +2 no dado em testes de montagem de itens.",
+    "en-us": "Increases item assembly speed, granting +2 to the die on item assembly tests."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

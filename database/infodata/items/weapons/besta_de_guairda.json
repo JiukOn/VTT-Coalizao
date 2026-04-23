@@ -1,0 +1,21 @@
+{
+  "id": "besta_de_guairda",
+  "name": {
+    "pt-br": "Besta de Guarda",
+    "en-us": "Besta De Guarda"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Capaz de lançar projéteis finos e alongados, confere +2 PRE. Distância Máxima de lançamento: 12 metros. Possui a modificação Pesado, concedendo +1 no dado em testes de ataque, mas impondo -1 no dado em testes de esquiva. .",
+    "en-us": ""
+  },
+  "stats": {
+    "pre": 2
+  },
+  "damage": "",
+  "price": 18,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

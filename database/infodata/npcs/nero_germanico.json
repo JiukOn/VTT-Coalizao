@@ -1,0 +1,94 @@
+{
+  "id": "nero_germanico",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Nero Germânico",
+    "en-us": "Nero Germanicus"
+  },
+  "description": {
+    "pt-br": "Foi imperador de Roma, foi confundido com um incendiador assassino. No dia de sua execução foi transportado para esse novo mundo. Por ironia do destino se tornou muito hábil com as chamas.",
+    "en-us": "Was emperor of Rome, mistaken for a murderous arsonist. On the day of his execution was transported to this new world. By irony of fate became highly skilled with flames."
+  },
+  "age": 57,
+  "level": 9,
+  "classId": "incendiary",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "bunker",
+  "ouris": 4348,
+  "stats": {
+    "attributes": {
+      "VIT": 13,
+      "DEX": 4,
+      "CRM": 4,
+      "FRC": 20,
+      "INT": 4,
+      "RES": 3,
+      "PRE": 5,
+      "ENR": 10
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "peitoral_de_iron",
+    "Back": "",
+    "Right Hand": "manoplas_de_leonidas",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "caneleira_de_iron",
+    "Feet": "fiber_sandal"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "corpo_flamejante",
+      "2": "chamas",
+      "3": "presa_que_mata",
+      "4": "beserk",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "elemental_fire_resistance",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "fortitude",
+  "possibleBenefit": {
+    "pt-br": "Pode entrar no Bunker.",
+    "en-us": "Can enter the Bunker."
+  },
+  "possibleHarm": {
+    "pt-br": "Se torna inimigo de Nero.",
+    "en-us": "Becomes Nero's enemy."
+  },
+  "inventory": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

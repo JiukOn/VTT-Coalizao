@@ -1,0 +1,114 @@
+{
+  "id": "ling_taw_nim",
+  "name": {
+    "pt-br": "Ling Tạw Nìm",
+    "en-us": "Ling Taw Nim"
+  },
+  "age": 25,
+  "level": 3,
+  "classId": "monk",
+  "species1": "human",
+  "species2": "",
+  "ouris": 987,
+  "tendencies": {
+    "1": "muay_thai",
+    "2": "parkour",
+    "3": "spirituality"
+  },
+  "avatar": "ling.png",
+  "stats": {
+    "multipliers": {
+      "VIT": 2,
+      "DEX": 1,
+      "CRM": 1.5,
+      "FRC": 1.5,
+      "INT": 1,
+      "RES": 2,
+      "PRE": 1,
+      "ENR": 1
+    },
+    "stats_base": {
+      "VIT": 6,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 10,
+      "INT": 1,
+      "RES": 5,
+      "PRE": 1,
+      "ENR": 5
+    },
+    "stats_add": {
+      "VIT": 0,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 2,
+      "INT": 0,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 0
+    },
+    "stats_remove": {
+      "VIT": 0,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    }
+  },
+  "equipment": {
+    "Head": "bone_helmet",
+    "Face": "",
+    "Neck": "",
+    "Chest": "bone_chestplate",
+    "Back": "",
+    "Right Hand": "wooden_staff",
+    "Left Hand": "",
+    "Hand Accessories": "wooden_bracelet",
+    "Legs": "cloth_pants",
+    "Feet": "cloth_shoes"
+  },
+  "abilities": {
+    "legacy": "hand_free_airt",
+    "active": {
+      "1": "unbreakable_spirit",
+      "2": "fabrication",
+      "3": "telekinesis",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "history": {
+    "pt-br": "Nasceu na tailândia, aprendeu muay thai lá, se mudou para a China para se tornar um monge shaolin e descobrir o lado espiritual do mundo.",
+    "en-us": "Born in Thailand, learned muay thai there, moved to China to become a Shaolin monk and discover the spiritual side of the world."
+  },
+  "auraId": "chaos",
+  "personalityId": "zealous",
+  "catchphrase": {
+    "pt-br": "palavras sagradas não tem valor sem ação",
+    "en-us": "sacred words have no value without action",
+    "attribute_id": "res"
+  },
+  "inventory": {
+    "1": "bandages",
+    "2": "magic_reinforcement_book",
+    "3": "ukhel_rapier",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

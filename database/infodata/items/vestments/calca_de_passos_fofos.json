@@ -1,0 +1,19 @@
+{
+  "id": "calca_de_passos_fofos",
+  "name": {
+    "pt-br": "Calça de Passos Fofos",
+    "en-us": "Calca De Passos Fofos"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Perna",
+  "description": {
+    "pt-br": "Calça confortável feita de pele macia e quente. Possui a modificação Conforto, concedendo 1 dado de vantagem em testes de descanso. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 2,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

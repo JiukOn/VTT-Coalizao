@@ -1,0 +1,22 @@
+{
+  "id": "sobretudo_de_leather_de_jopopis",
+  "name": {
+    "pt-br": "Sobretudo de Couro de Jopopis",
+    "en-us": "Jopopis Leather Overcoat"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Sobretudo de couro no estilo Jopopis. Concede +1 RES e +1 DEX.",
+    "en-us": "Jopopis-style leather overcoat. Grants +1 RES and +1 DEX."
+  },
+  "stats": {
+    "res": 1,
+    "dex": 1
+  },
+  "damage": "",
+  "price": 35,
+  "weight": 3,
+  "rarity": "especial",
+  "isCustom": false
+}

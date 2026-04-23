@@ -1,0 +1,19 @@
+{
+  "id": "metal_jar",
+  "name": {
+    "pt-br": "Jarra de Metal",
+    "en-us": "Metal Jar"
+  },
+  "category": "general",
+  "type": "Item Geral",
+  "description": {
+    "pt-br": "Uma jarra de metal para armazenar liquidos.",
+    "en-us": "A metal jar for storing liquids."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 2,
+  "rarity": "comum",
+  "isCustom": false
+}

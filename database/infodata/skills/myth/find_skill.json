@@ -1,0 +1,19 @@
+{
+  "id": "find_skill",
+  "name": { "pt-br": "Encontrar", "en-us": "Find" },
+  "description": {
+    "pt-br": "Mostra a direção para algo conhecido ou procurado.",
+    "en-us": "Shows the direction to something known or sought."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": true, "item_id": "resentful_compass" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

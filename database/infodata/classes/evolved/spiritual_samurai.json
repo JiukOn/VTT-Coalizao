@@ -1,0 +1,23 @@
+{
+  "id": "spiritual_samurai",
+  "name": {
+    "pt-br": "Samurai Espiritual",
+    "en-us": "Spiritual Samurai"
+  },
+  "description": {
+    "pt-br": "Um guerreiro que funde disciplina marcial com poder espiritual. Combina força e destreza com resiliência e energia para atingir o pico do combate com lâminas.",
+    "en-us": "A warrior who fuses martial discipline with spiritual power. Combines strength and dexterity with resilience and energy to reach the peak of blade combat."
+  },
+  "multipliers": {
+    "vit": 2,
+    "dex": 2,
+    "crm": 1,
+    "frc": 2,
+    "int": 1.5,
+    "res": 2,
+    "pre": 1.5,
+    "enr": 1
+  },
+  "legacyAbilityId": "soul_cut",
+  "isCustom": false
+}

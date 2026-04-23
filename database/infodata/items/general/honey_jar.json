@@ -1,0 +1,19 @@
+{
+  "id": "honey_jar",
+  "name": {
+    "pt-br": "Pote de Mel",
+    "en-us": "Honey Jar"
+  },
+  "category": "general",
+  "type": "Consumivel",
+  "description": {
+    "pt-br": "Um pote de mel dourado.",
+    "en-us": "A jar of golden honey."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

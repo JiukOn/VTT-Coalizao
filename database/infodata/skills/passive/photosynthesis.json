@@ -1,0 +1,19 @@
+{
+  "id": "photosynthesis",
+  "name": { "pt-br": "Fotossíntese", "en-us": "Photosynthesis" },
+  "description": {
+    "pt-br": "Enquanto exposto ao sol, o usuário adquire +2 ENR e +3 FRC, e não sente fome ou sono.",
+    "en-us": "While exposed to the sun, the user acquires +2 ENR and +3 FRC, and does not feel hunger or sleep."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

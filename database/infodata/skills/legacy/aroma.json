@@ -1,0 +1,19 @@
+{
+  "id": "aroma",
+  "name": { "pt-br": "Aroma", "en-us": "Aroma" },
+  "description": {
+    "pt-br": "Exala hormônios que podem acalmar ou enlouquecer seres próximos. Teste de 1d20 + CRM > 1d20 + RES do alvo.",
+    "en-us": "Exhales hormones that can calm or drive nearby beings mad. Test of 1d20 + CRM vs 1d20 + target RES."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "mentalist" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

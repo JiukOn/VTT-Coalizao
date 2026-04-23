@@ -1,0 +1,19 @@
+{
+  "id": "smooth_talk",
+  "name": { "pt-br": "Lábia", "en-us": "Smooth Talk" },
+  "description": {
+    "pt-br": "O usuário pode tentar forçar um convencimento. Se 1d20 > 16, o receptor é convencido. Se 1d20 < 8, o receptor se torna hostil ao usuário.",
+    "en-us": "The user can attempt to force a conviction. If 1d20 > 16, the receiver is convinced. If 1d20 < 8, the receiver becomes hostile to the user."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "sales_person" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

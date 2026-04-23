@@ -1,0 +1,19 @@
+{
+  "id": "flechas_medias",
+  "name": {
+    "pt-br": "Flechas Médias",
+    "en-us": "Flechas Medias"
+  },
+  "category": "projectiles",
+  "type": "Projetil",
+  "description": {
+    "pt-br": "Flechas com um bom equilíbrio entre peso e dano. Causam 1d4 + 2 de dano. Possuem a modificação Perfurador, aumentando sua capacidade de perfuração em +1 de dano.",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 + 2",
+  "price": 0,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

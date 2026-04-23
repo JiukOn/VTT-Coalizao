@@ -1,0 +1,19 @@
+{
+  "id": "flourish",
+  "name": { "pt-br": "Florescer", "en-us": "Flourish" },
+  "description": {
+    "pt-br": "O usuário se transforma temporariamente, criando chifres de madeira floridos. Recebe +5 CRM e +3 VIT. Causa cura de 4 VIT com Energia de Madeira em alvos a até 5m se (1d20 > 12). Dura 3 turnos. Para reativar: 1d20 > 16.",
+    "en-us": "The user temporarily transforms, growing flowery wooden antlers. Receives +5 CRM and +3 VIT. Causes 4 VIT healing with Wood Energy on targets up to 5m away if (1d20 > 12). Lasts 3 turns. To reactivate: 1d20 > 16."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "druid" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

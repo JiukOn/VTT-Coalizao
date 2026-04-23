@@ -1,0 +1,19 @@
+{
+  "id": "overcoat",
+  "name": {
+    "pt-br": "Sobretudo",
+    "en-us": "Overcoat"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Um casaco comprido para protecao contra o frio.",
+    "en-us": "A long coat for cold weather protection."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 15,
+  "weight": 2,
+  "rarity": "comum",
+  "isCustom": false
+}

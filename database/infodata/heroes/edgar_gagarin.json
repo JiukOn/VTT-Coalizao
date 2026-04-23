@@ -1,0 +1,114 @@
+{
+  "id": "edgar_gagarin",
+  "name": {
+    "pt-br": "Edgar Gagarin",
+    "en-us": "Edgar Gagarin"
+  },
+  "age": 19,
+  "level": 3,
+  "classId": "alchemist",
+  "species1": "human",
+  "species2": "",
+  "ouris": 7623,
+  "tendencies": {
+    "1": "calculation",
+    "2": "charm",
+    "3": "fight"
+  },
+  "avatar": "edgar.png",
+  "stats": {
+    "multipliers": {
+      "VIT": 1.5,
+      "DEX": 1,
+      "CRM": 1.5,
+      "FRC": 1,
+      "INT": 2,
+      "RES": 1,
+      "PRE": 2,
+      "ENR": 1
+    },
+    "stats_base": {
+      "VIT": 5,
+      "DEX": 2,
+      "CRM": 2,
+      "FRC": 6,
+      "INT": 4,
+      "RES": 2,
+      "PRE": 4,
+      "ENR": 5
+    },
+    "stats_add": {
+      "VIT": 0,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    },
+    "stats_remove": {
+      "VIT": 0,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "overcoat",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "jeans",
+    "Feet": "leather_shoes"
+  },
+  "abilities": {
+    "legacy": "mental_bairrier",
+    "active": {
+      "1": "swap",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "history": {
+    "pt-br": "Expulso da universidade de química da Sibéria por envenenar o diretor. Se tornou um nômade. Perdeu o braço esquerdo.",
+    "en-us": "Expelled from the Siberia chemistry university for poisoning the director. Became a nomad. Lost his left arm."
+  },
+  "auraId": "",
+  "personalityId": "",
+  "catchphrase": {
+    "pt-br": "Pense antes de fazer...",
+    "en-us": "Think before you act...",
+    "attribute_id": "int"
+  },
+  "inventory": {
+    "1": "empty_becker",
+    "2": "magic_book",
+    "3": "ammonia_sphere",
+    "4": "black_market_coin",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

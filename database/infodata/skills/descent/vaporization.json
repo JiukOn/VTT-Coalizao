@@ -1,0 +1,19 @@
+{
+  "id": "vaporization",
+  "name": { "pt-br": "Vaporização", "en-us": "Vaporization" },
+  "description": {
+    "pt-br": "O usuário é capaz de acelerar e controlar complexamente as moléculas líquidas transformando-as em vapor ou gás, podendo preencher o ambiente de forma imperceptível com o vapor ou gás de um líquido à disposição se o teste (1d20 > 14) for bem-sucedido.",
+    "en-us": "The user is capable of accelerating and complexly controlling liquid molecules, transforming them into vapor or gas, and imperceptibly filling the environment with the vapor or gas of an available liquid if test (1d20 > 14) succeeds."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": true, "npc_id": "lucrezia_borgia" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

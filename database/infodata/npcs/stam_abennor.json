@@ -1,0 +1,94 @@
+{
+  "id": "stam_abennor",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Stam Abennor",
+    "en-us": "Stam Abennor"
+  },
+  "description": {
+    "pt-br": "Sua mãe era da antiga espécie dos anões, porém foi assassinada pelo regime Unsato. Jurou forjar as armas que cortariam a cabeça do último Unsato. Dedicou mais de 50 anos à criação de armas de guerra.",
+    "en-us": "His mother was from the ancient dwarf species but was killed by the Unsato regime. Swore to forge the weapons that would behead the last Unsato. Dedicated over 50 years to crafting weapons of war."
+  },
+  "age": 62,
+  "level": 7,
+  "classId": "blacksmith",
+  "species1": "human",
+  "species2": "dwarf",
+  "avatar": "",
+  "locationId": "dampened_reserve",
+  "ouris": 8643,
+  "stats": {
+    "attributes": {
+      "VIT": 10,
+      "DEX": 6,
+      "CRM": 4,
+      "FRC": 10,
+      "INT": 4,
+      "RES": 3,
+      "PRE": 14,
+      "ENR": 6
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "colete_de_leather",
+    "Back": "",
+    "Right Hand": "martelo_de_mithrill",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "calca_de_leather",
+    "Feet": "leather_shoes"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "forja",
+      "2": "dedos_ageis",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "elemental_fire_resistance",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "wise",
+  "possibleBenefit": {
+    "pt-br": "Apoio dos Rebeldes, pode forjar armas especiais.",
+    "en-us": "Support from the Rebels, can forge special weapons."
+  },
+  "possibleHarm": {
+    "pt-br": "Marca de Aço Quente.",
+    "en-us": "Hot Steel Brand."
+  },
+  "inventory": {
+    "1": "mithrill_bar",
+    "2": "dragon_leather",
+    "3": "coin_mn",
+    "4": "hand_laser",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "fiber_sandal",
+  "name": {
+    "pt-br": "Sandalia de Fibra",
+    "en-us": "Fiber Sandal"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Sandalias simples de fibra.",
+    "en-us": "Simple fiber sandals."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

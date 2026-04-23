@@ -1,0 +1,21 @@
+{
+  "id": "shoes_de_areat",
+  "name": {
+    "pt-br": "Sapatos de Areat",
+    "en-us": "Areat Shoes"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Sapatos de artesanato Areat. Concedem +1 DEX.",
+    "en-us": "Areat-crafted shoes. Grant +1 DEX."
+  },
+  "stats": {
+    "dex": 1
+  },
+  "damage": "",
+  "price": 20,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

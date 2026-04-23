@@ -1,0 +1,19 @@
+{
+  "id": "fabric_pants",
+  "name": {
+    "pt-br": "Calca de Tecido",
+    "en-us": "Fabric Pants"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Calcas de tecido leve.",
+    "en-us": "Light fabric pants."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 8,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

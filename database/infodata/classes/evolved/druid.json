@@ -1,0 +1,23 @@
+{
+  "id": "druid",
+  "name": {
+    "pt-br": "Druida",
+    "en-us": "Druid"
+  },
+  "description": {
+    "pt-br": "Um guardião da natureza que canaliza energias primordiais dos elementos e dos seres vivos. Combina poderes mágicos com sabedoria natural para curar e destruir.",
+    "en-us": "A guardian of nature who channels primordial energies from elements and living beings. Combines magical powers with natural wisdom to heal and destroy."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 1,
+    "crm": 1.5,
+    "frc": 1,
+    "int": 2,
+    "res": 2,
+    "pre": 1,
+    "enr": 2
+  },
+  "legacyAbilityId": "enroot",
+  "isCustom": false
+}

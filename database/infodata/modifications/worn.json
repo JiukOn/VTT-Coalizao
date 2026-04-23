@@ -1,0 +1,11 @@
+{
+  "id": "worn",
+  "name": { "pt-br": "Desgaste", "en-us": "Worn" },
+  "description": {
+    "pt-br": "O item se deteriora rapidamente com o uso. Impõe -1 no dado ao usar esse item até ser reparado. Aplicável a Armas, Vestimentas, Escudos e Itens diversos.",
+    "en-us": "The item deteriorates rapidly with use. Imposes -1 to the die when using this item until repaired. Applicable to Weapons, Vestments, Shields, and miscellaneous Items."
+  },
+  "category": "penalidade",
+  "applicableTo": ["weapon", "vestment", "shield", "general"],
+  "attribute_modifiers": { "attribute": "use_dice", "value": "-1" }
+}

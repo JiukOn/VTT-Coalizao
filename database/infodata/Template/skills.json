@@ -1,0 +1,34 @@
+{
+  "id": "",
+  "name": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "category": "active/passive",
+  "legacy": {
+    "islegacy": false,
+    "class_id": ""
+  },
+  "myth": {
+    "ismyth": false,
+    "item_id": ""
+  },
+  "succession": {
+    "issuccession": false,
+    "npc_id": ""
+  },
+  "evolved": {
+    "isevolved": false,
+    "skill_id": ""
+  },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

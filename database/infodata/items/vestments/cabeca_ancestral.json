@@ -1,0 +1,22 @@
+{
+  "id": "cabeca_ancestral",
+  "name": {
+    "pt-br": "Cabeça Ancestral",
+    "en-us": "Cabeca Ancestral"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeça",
+  "description": {
+    "pt-br": "O esqueleto de uma criatura mágica talhado como um capacete, que confere +2 ENR e +3 INT. Possui a modificação Vigoroso, permitindo, uma vez por dia, realizar um teste (1d20 > 18) para remover um efeito psicológico de nível 1 ou 2 permanentemente. .",
+    "en-us": ""
+  },
+  "stats": {
+    "int": 3,
+    "enr": 2
+  },
+  "damage": "1d20",
+  "price": 20,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

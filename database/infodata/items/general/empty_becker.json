@@ -1,0 +1,19 @@
+{
+  "id": "empty_becker",
+  "name": {
+    "pt-br": "Bequar Vazio",
+    "en-us": "Empty Becker"
+  },
+  "category": "general",
+  "type": "Item Geral",
+  "description": {
+    "pt-br": "Um bequar de vidro vazio para uso em alquimia.",
+    "en-us": "An empty glass beaker for use in alchemy."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

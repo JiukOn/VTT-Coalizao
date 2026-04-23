@@ -1,0 +1,94 @@
+{
+  "id": "joe",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Joe",
+    "en-us": "Joe"
+  },
+  "description": {
+    "pt-br": "Filho de camponeses, Joe trabalha desde os 7 anos. Secretamente odeia os Unsato. Sua família teve que dar a casa para o vice-lorde Carter. É amigo da vice-lorde Lina, conheceu ela quando a viu sendo intimidada pelo irmão.",
+    "en-us": "Son of farmers, Joe has worked since age 7. Secretly hates the Unsatos. His family had to give their house to Vice-Lord Carter. He's friends with Vice-Lord Lina, met her when he saw her being bullied by her brother."
+  },
+  "age": 12,
+  "level": 1,
+  "classId": "blocked",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 17,
+  "stats": {
+    "attributes": {
+      "VIT": 2,
+      "DEX": 4,
+      "CRM": 6,
+      "FRC": 1,
+      "INT": 3,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 0
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "chapeu_de_leather",
+    "Face": "",
+    "Neck": "",
+    "Chest": "tunica",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "bag_de_pano",
+    "Hand Accessories": "",
+    "Legs": "calca",
+    "Feet": "sandalia"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "humorist",
+  "possibleBenefit": {
+    "pt-br": "Recebe admiração da Vice-Lorde Lina, conhece bem as ruas da cidade.",
+    "en-us": "Receives admiration from Vice-Lord Lina, knows the city streets well."
+  },
+  "possibleHarm": {
+    "pt-br": "É incapaz de comprar Bati no mercado.",
+    "en-us": "Unable to buy Bati in the market."
+  },
+  "inventory": {
+    "1": "semente_de_bati",
+    "2": "cup_de_argila",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

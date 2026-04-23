@@ -1,0 +1,9 @@
+{
+  "id": "desert",
+  "name": { "pt-br": "Deserto", "en-us": "Desert" },
+  "description": {
+    "pt-br": "Uma extensão interminável de areia e rochas, habitada por criaturas que sobrevivem sem água.",
+    "en-us": "An endless expanse of sand and rock, inhabited by creatures that survive without water."
+  },
+  "type": { "pt-br": "Ecossistema", "en-us": "Ecosystem" }
+}

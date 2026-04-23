@@ -1,0 +1,17 @@
+{
+  "id": "gran",
+  "name": {
+    "pt-br": "Gran",
+    "en-us": "Gran"
+  },
+  "description": {
+    "pt-br": "Híbridos com traços da poderosa criatura Gran. Possuem uma conexão especial com energia e força bruta, além de uma resistência física notável.",
+    "en-us": "Hybrids with traits of the powerful Gran creature. They possess a special connection to energy and brute strength, as well as notable physical resilience."
+  },
+  "attributeModifiers": {
+    "frc": 1,
+    "enr": 1,
+    "vit": 1
+  },
+  "isCustom": false
+}

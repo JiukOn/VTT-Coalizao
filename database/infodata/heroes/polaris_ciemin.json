@@ -1,0 +1,114 @@
+{
+  "id": "polaris_ciemin",
+  "name": {
+    "pt-br": "Polaris Ciemin",
+    "en-us": "Polaris Ciemin"
+  },
+  "age": 20,
+  "level": 5,
+  "classId": "writer",
+  "species1": "human",
+  "species2": "gran",
+  "ouris": 3587,
+  "tendencies": {
+    "1": "runic_language",
+    "2": "botany",
+    "3": "reading"
+  },
+  "avatar": "polaris.png",
+  "stats": {
+    "multipliers": {
+      "VIT": 2,
+      "DEX": 1,
+      "CRM": 1.5,
+      "FRC": 1,
+      "INT": 2,
+      "RES": 2,
+      "PRE": 1,
+      "ENR": 1.5
+    },
+    "stats_base": {
+      "VIT": 10,
+      "DEX": 2,
+      "CRM": 4,
+      "FRC": 8,
+      "INT": 8,
+      "RES": 3,
+      "PRE": 1,
+      "ENR": 5
+    },
+    "stats_add": {
+      "VIT": 0,
+      "DEX": 1,
+      "CRM": 0,
+      "FRC": 2,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 1,
+      "ENR": 8
+    },
+    "stats_remove": {
+      "VIT": 1,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    }
+  },
+  "equipment": {
+    "Head": "aicana_earrings",
+    "Face": "glasses",
+    "Neck": "",
+    "Chest": "bone_chestplate",
+    "Back": "",
+    "Right Hand": "lovelace_sigil",
+    "Left Hand": "volcanic_ring",
+    "Hand Accessories": "gold_ring",
+    "Legs": "silk_skirt",
+    "Feet": "thanatos_shoes"
+  },
+  "abilities": {
+    "legacy": "nullification",
+    "active": {
+      "1": "carapace",
+      "2": "contract",
+      "3": "absolute_control",
+      "4": "living_chronicle",
+      "5": "psychic_fortress",
+      "6": "magic_book"
+    },
+    "passive": {
+      "1": "tuning",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "history": {
+    "pt-br": "Estudante de jornalismo, se interessou pela área e escreve desde os 13 anos. Teve um blog para contar suas Histórias de Fantasia.",
+    "en-us": "Journalism student who got interested in the field and has been writing since age 13. Had a blog to tell her fantasy stories."
+  },
+  "auraId": "revelation",
+  "personalityId": "disenchantment",
+  "catchphrase": {
+    "pt-br": "Cai Dentro!",
+    "en-us": "Dive In!",
+    "attribute_id": "frc"
+  },
+  "inventory": {
+    "1": "pink_pen",
+    "2": "before_book",
+    "3": "after_book",
+    "4": "sheet_of_paper",
+    "5": "empty_h_book",
+    "6": "luminous_wart",
+    "7": "bestiary",
+    "8": "bati_fruit",
+    "9": ""
+  },
+  "isCustom": false
+}

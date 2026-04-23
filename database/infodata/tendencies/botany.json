@@ -1,0 +1,12 @@
+{
+  "id": "botany",
+  "name": {
+    "pt-br": "Botanica",
+    "en-us": "Botany"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

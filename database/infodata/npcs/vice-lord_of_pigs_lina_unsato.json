@@ -1,0 +1,94 @@
+{
+  "id": "vice_lord_of_pigs_lina_unsato",
+  "type": "Neutro",
+  "name": {
+    "pt-br": "Vice-Lorde dos Porcos, Lina Unsato",
+    "en-us": "Vice-Lord of Pigs, Lina Unsato"
+  },
+  "description": {
+    "pt-br": "É intimidada pelo seu irmão Carter desde que era pequena. Não concorda com as ações da família Unsato. Se sente sozinha. Recebeu, contra sua vontade, diversos elixires e tônicos.",
+    "en-us": "Has been bullied by her brother Carter since childhood. Disagrees with the Unsato family's actions. Feels lonely. Received various elixirs and tonics against her will."
+  },
+  "age": 13,
+  "level": 3,
+  "classId": "summoner",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 30000,
+  "stats": {
+    "attributes": {
+      "VIT": 6,
+      "DEX": 6,
+      "CRM": 8,
+      "FRC": 1,
+      "INT": 6,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 12
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "straw_ornament",
+    "Face": "",
+    "Neck": "",
+    "Chest": "vestido_de_leather_de_ganlan",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "silk_ribbon",
+    "Legs": "vestido_de_leather_de_ganlan",
+    "Feet": "pavlova_shoes"
+  },
+  "abilities": {
+    "legacy": "evocair_energy",
+    "active": {
+      "1": "grand_pas",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "goodness",
+  "possibleBenefit": {
+    "pt-br": "Recebe admiração dos camponeses, aliada potencial contra os Unsato.",
+    "en-us": "Receives admiration from peasants, potential ally against the Unsatos."
+  },
+  "possibleHarm": {
+    "pt-br": "Recebe ódio dos fiéis da igreja nobre.",
+    "en-us": "Receives hatred from the noble church faithful."
+  },
+  "inventory": {
+    "1": "mirror_de_mao",
+    "2": "glandula_draconica",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

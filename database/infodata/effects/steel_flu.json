@@ -1,0 +1,19 @@
+{
+  "id": "steel_flu",
+  "name": {
+    "pt-br": "Gripe do Aço",
+    "en-us": "Steel Flu"
+  },
+  "description": {
+    "pt-br": "Causa fraqueza; se 1d20 <= 7 o personagem recebe 1 de dano no turno. A pele do afetado se torna prateada. É transmissível pelo ar.",
+    "en-us": "Causes weakness; if 1d20 <= 7, the character takes 1 damage that turn. The affected's skin turns silver. Transmitted through the air."
+  },
+  "category": "doenca",
+  "type": "doenca",
+  "sub_type": "transmissivel",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até curar.",
+    "en-us": "Until cured."
+  }
+}

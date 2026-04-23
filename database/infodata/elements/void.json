@@ -1,0 +1,12 @@
+{
+  "id": "void",
+  "name": {
+    "pt-br": "Vazio",
+    "en-us": "Void"
+  },
+  "description": {
+    "pt-br": "Elemento consumidor e anulador, capaz de absorver e apagar tudo que existe.",
+    "en-us": "Consuming and nullifying element, capable of absorbing and erasing all that exists."
+  },
+  "weak_against": "light"
+}

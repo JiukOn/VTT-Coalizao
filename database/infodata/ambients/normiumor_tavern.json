@@ -1,0 +1,9 @@
+{
+  "id": "normiumor_tavern",
+  "name": { "pt-br": "Taverna Normiumor", "en-us": "Normiumor Tavern" },
+  "description": {
+    "pt-br": "Uma taverna discreta conhecida por seus segredos e por hospedar aqueles que preferem não ser notados.",
+    "en-us": "A discreet tavern known for its secrets and for hosting those who prefer not to be noticed."
+  },
+  "type": { "pt-br": "Civilização", "en-us": "Civilization" }
+}

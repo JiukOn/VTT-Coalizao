@@ -1,0 +1,11 @@
+{
+  "id": "purified",
+  "name": { "pt-br": "Purificador", "en-us": "Purified" },
+  "description": {
+    "pt-br": "Enquanto o item estiver equipado, o usuário recebe Resistência Elemental ao Maligno no local da vestimenta. Aplicável a Vestimentas.",
+    "en-us": "While the item is equipped, the user gains Elemental Resistance to Malign at the vestment location. Applicable to Vestments."
+  },
+  "category": "defensivo",
+  "applicableTo": ["vestment"],
+  "attribute_modifiers": { "attribute": "elemental_resistance", "value": "malign" }
+}

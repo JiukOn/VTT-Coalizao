@@ -1,0 +1,10 @@
+{
+  "id": "wolf_fangs",
+  "name": {
+    "pt-br": "Presas De Lobo",
+    "en-us": "Wolf Fangs"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

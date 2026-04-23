@@ -1,0 +1,21 @@
+{
+  "id": "gold_ring",
+  "name": {
+    "pt-br": "Anel de Ouro",
+    "en-us": "Gold Ring"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mao",
+  "description": {
+    "pt-br": "Um anel de ouro fino. Concede +1 CRM.",
+    "en-us": "A fine gold ring. Grants +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 25,
+  "weight": 0,
+  "rarity": "sentimental",
+  "isCustom": false
+}

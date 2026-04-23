@@ -1,0 +1,10 @@
+{
+  "id": "undino_feather",
+  "name": {
+    "pt-br": "Pena De Undino",
+    "en-us": "Undino Feather"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

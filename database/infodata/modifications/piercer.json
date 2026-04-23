@@ -1,0 +1,11 @@
+{
+  "id": "piercer",
+  "name": { "pt-br": "Perfurador", "en-us": "Piercer" },
+  "description": {
+    "pt-br": "Aumenta a capacidade de perfuração do item. Eleva o dano de ataques perfurantes em +1. Exclusivo para Armas Perfurantes.",
+    "en-us": "Increases the item's piercing capacity. Raises piercing attack damage by +1. Exclusive to Piercing Weapons."
+  },
+  "category": "ofensivo",
+  "applicableTo": ["weapon"],
+  "attribute_modifiers": { "attribute": "piercing_damage", "value": "+1" }
+}

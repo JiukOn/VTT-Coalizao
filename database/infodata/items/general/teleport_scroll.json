@@ -1,0 +1,19 @@
+{
+  "id": "teleport_scroll",
+  "name": {
+    "pt-br": "Pergaminho de Teleporte",
+    "en-us": "Teleport Scroll"
+  },
+  "category": "general",
+  "type": "Item Magico",
+  "description": {
+    "pt-br": "Um pergaminho com a runa de teleporte. Uso unico.",
+    "en-us": "A scroll with the teleport rune. Single use."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 50,
+  "weight": 0,
+  "rarity": "especial",
+  "isCustom": false
+}

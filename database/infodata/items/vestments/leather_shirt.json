@@ -1,0 +1,19 @@
+{
+  "id": "leather_shirt",
+  "name": {
+    "pt-br": "Camisa de Couro",
+    "en-us": "Leather Shirt"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Uma camisa leve de couro.",
+    "en-us": "A light leather shirt."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 12,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

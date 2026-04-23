@@ -1,0 +1,90 @@
+{
+  "id": "undino",
+  "name": {
+    "pt-br": "Undino",
+    "en-us": "Undino"
+  },
+  "description": {
+    "pt-br": "Um primata alado e colorido. Vive em florestas, com bandos liderados por um 'Rei'.",
+    "en-us": "A colorful winged primate. Lives in forests, in flocks led by a 'King'."
+  },
+  "element": "",
+  "size": "small",
+  "coreSize": "pequeno",
+  "diet": "onívoro",
+  "imagePath": "Criatura/Undino.png",
+  "level": 1,
+  "attributes": {
+    "VIT": 2,
+    "DEX": 5,
+    "CRM": 3,
+    "FRC": 1,
+    "INT": 2,
+    "RES": 0,
+    "PRE": 3,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "fly",
+      "2": "bite",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "undino_feather",
+      "chance": "100%",
+      "amount": 3
+    },
+    "2": {
+      "item": "undino_meat",
+      "chance": "100%",
+      "amount": 2
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false
+}

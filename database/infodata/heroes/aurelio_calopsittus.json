@@ -1,0 +1,114 @@
+{
+  "id": "aurelio_calopsittus",
+  "name": {
+    "pt-br": "Aurelio Calopsittus",
+    "en-us": "Aurelio Calopsittus"
+  },
+  "age": 32,
+  "level": 3,
+  "classId": "guardian",
+  "species1": "human",
+  "species2": "monster",
+  "ouris": 0,
+  "tendencies": {
+    "1": "first_aid",
+    "2": "firearms",
+    "3": "personal_defense"
+  },
+  "avatar": "aurelio.png",
+  "stats": {
+    "multipliers": {
+      "VIT": 2,
+      "DEX": 1,
+      "CRM": 1.5,
+      "FRC": 1.5,
+      "INT": 1,
+      "RES": 2,
+      "PRE": 1,
+      "ENR": 1
+    },
+    "stats_base": {
+      "VIT": 7,
+      "DEX": 2,
+      "CRM": 4,
+      "FRC": 4,
+      "INT": 3,
+      "RES": 4,
+      "PRE": 1,
+      "ENR": 5
+    },
+    "stats_add": {
+      "VIT": 0,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 1,
+      "ENR": 0
+    },
+    "stats_remove": {
+      "VIT": 7,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    }
+  },
+  "equipment": {
+    "Head": "hat",
+    "Face": "sunglasses",
+    "Neck": "",
+    "Chest": "blazer",
+    "Back": "",
+    "Right Hand": "club",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "social_pants",
+    "Feet": ""
+  },
+  "abilities": {
+    "legacy": "shield_of_vitality",
+    "active": {
+      "1": "sorte",
+      "2": "fly",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "history": {
+    "pt-br": "Um ex-segurança de uma grande banda de jazz esquecida em NY. Ama jazz, noites silenciosas e gosta de cuidar de pássaros na praça.",
+    "en-us": "A former bodyguard for a forgotten big jazz band in NY. Loves jazz, silent nights and likes to take care of birds in the park."
+  },
+  "auraId": "harmony",
+  "personalityId": "conscience",
+  "catchphrase": {
+    "pt-br": "Comigo ninguém cai!",
+    "en-us": "Nobody falls on my watch!",
+    "attribute_id": "frc"
+  },
+  "inventory": {
+    "1": "birdseed_bag",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

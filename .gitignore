@@ -29,10 +29,6 @@ coverage/
 .env.production.local
 *.local
 
-# Project specific
-saves/
-*.json.bak
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -49,3 +45,10 @@ saves/
 # OS System Files
 Thumbs.db
 desktop.ini
+
+# Dev
+scripts/
+reference/
+saves/
+*.json.bak
+*.dev

@@ -1,0 +1,21 @@
+{
+  "id": "chestplate_de_leather_de_hopopis",
+  "name": {
+    "pt-br": "Peitoral de Couro de Hopopis",
+    "en-us": "Hopopis Leather Chestplate"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Peitoral de couro no estilo Hopopis. Concede +1 RES.",
+    "en-us": "Hopopis-style leather chestplate. Grants +1 RES."
+  },
+  "stats": {
+    "res": 1
+  },
+  "damage": "",
+  "price": 22,
+  "weight": 3,
+  "rarity": "especial",
+  "isCustom": false
+}

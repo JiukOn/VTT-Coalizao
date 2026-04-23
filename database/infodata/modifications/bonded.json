@@ -1,0 +1,11 @@
+{
+  "id": "bonded",
+  "name": { "pt-br": "Vínculo", "en-us": "Bonded" },
+  "description": {
+    "pt-br": "Concede 1 dado de vantagem em testes de interação social com criaturas não inteligentes, se o usuário tiver tido contato com elas anteriormente.",
+    "en-us": "Grants 1 advantage die in social interaction tests with non-intelligent creatures, if the user has had prior contact with them."
+  },
+  "category": "essencial",
+  "applicableTo": ["general"],
+  "attribute_modifiers": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "manic",
+  "name": {
+    "pt-br": "Maníaco",
+    "en-us": "Manic"
+  },
+  "description": {
+    "pt-br": "O afetado perde o controle das ações e age por impulso se 1d4 <= 2.",
+    "en-us": "The affected loses control of actions and acts on impulse if 1d4 <= 2."
+  },
+  "category": "psicologico_ativo",
+  "type": "psicologico_ativo",
+  "sub_type": "controle_de_acao",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 16 a partir do 2º turno.",
+    "en-us": "1d20 + RES > 16 from 2nd turn."
+  }
+}

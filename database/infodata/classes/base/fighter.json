@@ -1,0 +1,23 @@
+{
+  "id": "fighter",
+  "name": {
+    "pt-br": "Lutador",
+    "en-us": "Fighter"
+  },
+  "description": {
+    "pt-br": "Um combatente bruto especializado em confrontos físicos diretos. Usa força e destreza para dominar adversários no corpo a corpo.",
+    "en-us": "A brute combatant specialized in direct physical confrontation. Uses strength and dexterity to dominate opponents in close combat."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 1.5,
+    "crm": 1,
+    "frc": 2,
+    "int": 1,
+    "res": 1.5,
+    "pre": 1.5,
+    "enr": 0.5
+  },
+  "legacyAbilityId": "heavy_hands",
+  "isCustom": false
+}

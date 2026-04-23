@@ -1,0 +1,23 @@
+{
+  "id": "shadow_leal",
+  "name": {
+    "pt-br": "Sombra Leal",
+    "en-us": "Loyal Shadow"
+  },
+  "description": {
+    "pt-br": "Variante da Sombra Leal que mantém lealdade absoluta a seu mestre. Opera nas sombras com destreza superior, eliminando ameaças antes que cheguem ao protegido.",
+    "en-us": "Variant of the Loyal Shadow who maintains absolute loyalty to their master. Operates in the shadows with superior dexterity, eliminating threats before they reach the ward."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 2.5,
+    "crm": 1,
+    "frc": 1,
+    "int": 1,
+    "res": 1.5,
+    "pre": 2.5,
+    "enr": 0.5
+  },
+  "legacyAbilityId": "silent_steps",
+  "isCustom": false
+}

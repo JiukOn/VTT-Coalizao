@@ -1,0 +1,10 @@
+{
+  "id": "undino_king_eye",
+  "name": {
+    "pt-br": "Olho Do Rei Undino",
+    "en-us": "Undino King Eye"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

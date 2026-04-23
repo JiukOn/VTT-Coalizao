@@ -1,0 +1,23 @@
+{
+  "id": "incendiary",
+  "name": {
+    "pt-br": "Incendiário",
+    "en-us": "Incendiary"
+  },
+  "description": {
+    "pt-br": "Um especialista em ataques de fogo e explosões que semeia o caos no campo de batalha. Usa energia e precisão para desencadear destruição em área.",
+    "en-us": "A specialist in fire attacks and explosions who sows chaos on the battlefield. Uses energy and precision to unleash area-wide destruction."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 1.5,
+    "crm": 1,
+    "frc": 1.5,
+    "int": 1.5,
+    "res": 1,
+    "pre": 2,
+    "enr": 1.5
+  },
+  "legacyAbilityId": "blazing_body",
+  "isCustom": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "frozen_tundra",
+  "name": { "pt-br": "Tundra Congelada", "en-us": "Frozen Tundra" },
+  "description": {
+    "pt-br": "Bioma de temperaturas extremamente baixas, com permafrost e vegetação mínima. Elemento predominante: Gelo.",
+    "en-us": "Biome of extremely low temperatures, with permafrost and minimal vegetation. Predominant element: Ice."
+  },
+  "type": { "pt-br": "Bioma Natural", "en-us": "Natural Biome" }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "ervas_psicodelicas",
+  "name": {
+    "pt-br": "Ervas Psicodélicas",
+    "en-us": "Ervas Psicodelicas"
+  },
+  "category": "consumables",
+  "type": "Consumível",
+  "description": {
+    "pt-br": "Ervas que geram alucinações, causam náuseas e sonolência, e que, se o usuário obtiver sucesso em um teste (1d20 > 10), restaura 1d4 - 1 de VIT.",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d20",
+  "price": 0,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

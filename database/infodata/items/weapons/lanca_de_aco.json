@@ -1,0 +1,21 @@
+{
+  "id": "lanca_de_aco",
+  "name": {
+    "pt-br": "Lanca de Aco",
+    "en-us": "Steel Spear"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma lanca de aco resistente. Concede +1 FRC e causa 1d4 + 1 de dano.",
+    "en-us": "A sturdy steel spear. Grants +1 FRC and deals 1d4 + 1 damage."
+  },
+  "stats": {
+    "frc": 1
+  },
+  "damage": "1d4 + 1",
+  "price": 20,
+  "weight": 3,
+  "rarity": "comum",
+  "isCustom": false
+}

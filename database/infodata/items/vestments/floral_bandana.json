@@ -1,0 +1,19 @@
+{
+  "id": "floral_bandana",
+  "name": {
+    "pt-br": "Bandana Floral",
+    "en-us": "Floral Bandana"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Uma bandana com estampa floral.",
+    "en-us": "A bandana with a floral print."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "tamer",
+  "name": {
+    "pt-br": "Domador",
+    "en-us": "Tamer"
+  },
+  "description": {
+    "pt-br": "Um especialista em domar e trabalhar com criaturas selvagens. Usa sua conexão com animais e carisma natural para transformar feras em aliados leais.",
+    "en-us": "A specialist in taming and working with wild creatures. Uses his connection with animals and natural charisma to transform beasts into loyal allies."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 1.5,
+    "crm": 2,
+    "frc": 1,
+    "int": 1.5,
+    "res": 1,
+    "pre": 2,
+    "enr": 0.5
+  },
+  "legacyAbilityId": "aroma",
+  "isCustom": false
+}

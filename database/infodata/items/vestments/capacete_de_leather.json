@@ -1,0 +1,21 @@
+{
+  "id": "capacete_de_leather",
+  "name": {
+    "pt-br": "Capacete de Couro",
+    "en-us": "Leather Helmet"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Um capacete de couro moldado. Concede +1 RES.",
+    "en-us": "A molded leather helmet. Grants +1 RES."
+  },
+  "stats": {
+    "res": 1
+  },
+  "damage": "",
+  "price": 14,
+  "weight": 2,
+  "rarity": "comum",
+  "isCustom": false
+}

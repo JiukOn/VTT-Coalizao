@@ -1,0 +1,12 @@
+{
+  "id": "history",
+  "name": {
+    "pt-br": "Historia",
+    "en-us": "History"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

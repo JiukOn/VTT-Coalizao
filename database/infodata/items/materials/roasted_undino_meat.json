@@ -1,0 +1,10 @@
+{
+  "id": "roasted_undino_meat",
+  "name": {
+    "pt-br": "Carne Assada De Undino",
+    "en-us": "Roasted Undino Meat"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

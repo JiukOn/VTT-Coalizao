@@ -1,0 +1,8 @@
+{
+  "id": "dampened_reserve",
+  "name": {
+    "pt-br": "reserva_amortecida",
+    "en-us": "Dampened Reserve"
+  },
+  "isCustom": false
+}

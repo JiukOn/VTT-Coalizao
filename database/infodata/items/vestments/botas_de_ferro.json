@@ -1,0 +1,19 @@
+{
+  "id": "botas_de_ferro",
+  "name": {
+    "pt-br": "Botas de Ferro",
+    "en-us": "Botas De Ferro"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pé",
+  "description": {
+    "pt-br": "Botas resistentes feitas de ferro forjado. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

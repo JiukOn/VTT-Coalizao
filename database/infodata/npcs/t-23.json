@@ -1,0 +1,94 @@
+{
+  "id": "t_23",
+  "type": "Hostil",
+  "name": {
+    "pt-br": "T-23",
+    "en-us": "T-23"
+  },
+  "description": {
+    "pt-br": "Não se lembra do seu passado. Foi Transmutado predominantemente com um Javali. Tem grande falta de equilíbrio.",
+    "en-us": "Does not remember his past. Transmuted predominantly with a Boar. Has great difficulty with balance."
+  },
+  "age": 3,
+  "level": 3,
+  "classId": "unclassified",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "unknown",
+  "ouris": 0,
+  "stats": {
+    "attributes": {
+      "VIT": 5,
+      "DEX": 3,
+      "CRM": 5,
+      "FRC": 8,
+      "INT": 3,
+      "RES": 3,
+      "PRE": 1,
+      "ENR": 7
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "marca_de_transmutacao",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "",
+    "Feet": ""
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "bite",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "bloodhound_sense",
+      "2": "prey_habit",
+      "3": "resistance_contra_doencas",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "creature",
+  "possibleBenefit": {
+    "pt-br": "Salvação dos Transmutos.",
+    "en-us": "Salvation of the Transmuted."
+  },
+  "possibleHarm": {
+    "pt-br": "Extermínio da Humanidade.",
+    "en-us": "Extermination of Humanity."
+  },
+  "inventory": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

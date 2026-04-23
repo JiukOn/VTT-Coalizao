@@ -1,0 +1,19 @@
+{
+  "id": "telekinesis",
+  "name": { "pt-br": "Telecinese", "en-us": "Telekinesis" },
+  "description": {
+    "pt-br": "O usuário é capaz de mover objetos a média distância. O peso máximo a ser levantado é determinado pela RES final do usuário.",
+    "en-us": "The user is capable of moving objects at medium range. Maximum liftable weight is determined by the user's final RES."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

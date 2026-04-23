@@ -1,0 +1,90 @@
+{
+  "id": "cornara",
+  "name": {
+    "pt-br": "Cornara",
+    "en-us": "Cornara"
+  },
+  "description": {
+    "pt-br": "Uma criatura de montaria resistente, com chifres e cascos poderosos. Pode ser domesticada.",
+    "en-us": "A resilient mount creature with powerful horns and hooves. Can be domesticated."
+  },
+  "element": "",
+  "size": "large",
+  "coreSize": "médio",
+  "diet": "herbívoro",
+  "imagePath": "Criatura/Cornara.jpeg",
+  "level": 4,
+  "attributes": {
+    "VIT": 10,
+    "DEX": 4,
+    "CRM": 3,
+    "FRC": 8,
+    "INT": 2,
+    "RES": 3,
+    "PRE": 2,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "charge",
+      "2": "chifrada",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "physical_resistance",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "cornara_leather",
+      "chance": "100%",
+      "amount": 3
+    },
+    "2": {
+      "item": "cornara_horn",
+      "chance": "100%",
+      "amount": 2
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false
+}

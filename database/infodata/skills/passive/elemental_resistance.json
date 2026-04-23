@@ -1,0 +1,19 @@
+{
+  "id": "elemental_resistance",
+  "name": { "pt-br": "Resistência Elemental", "en-us": "Elemental Resistance" },
+  "description": {
+    "pt-br": "O usuário não recebe dano vindo do elemento especificado.",
+    "en-us": "The user does not receive damage from the specified element."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "RES": 1 },
+  "isCustom": false
+}

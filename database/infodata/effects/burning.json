@@ -1,0 +1,19 @@
+{
+  "id": "burning",
+  "name": {
+    "pt-br": "Queimadura",
+    "en-us": "Burning"
+  },
+  "description": {
+    "pt-br": "O afetado sofre dano contínuo de elemento Fogo por turno enquanto o efeito durar.",
+    "en-us": "The affected suffers continuous Fire element damage per turn while the effect lasts."
+  },
+  "category": "condicao",
+  "type": "condicao",
+  "sub_type": "dano_elemental",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até amenizar.",
+    "en-us": "Until alleviated."
+  }
+}

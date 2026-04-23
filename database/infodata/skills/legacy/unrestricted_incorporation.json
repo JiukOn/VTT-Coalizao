@@ -1,0 +1,19 @@
+{
+  "id": "unrestricted_incorporation",
+  "name": { "pt-br": "Incorporação Irrestrita", "en-us": "Unrestricted Incorporation" },
+  "description": {
+    "pt-br": "O usuário pode unir forçadamente partes biológicas de um ser em outro. Processo irreversível. A habilidade é ativada se (1d20 > 16) for bem-sucedido.",
+    "en-us": "The user can forcibly merge biological parts of one being into another. Irreversible process. The skill activates if (1d20 > 16) succeeds."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "transmutator" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "RES": 10, "ENR": 8 },
+  "isCustom": false
+}

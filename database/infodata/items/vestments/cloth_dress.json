@@ -1,0 +1,19 @@
+{
+  "id": "cloth_dress",
+  "name": {
+    "pt-br": "Vestido de Pano",
+    "en-us": "Cloth Dress"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Um vestido simples de pano.",
+    "en-us": "A simple cloth dress."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 10,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

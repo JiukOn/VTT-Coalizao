@@ -1,0 +1,22 @@
+{
+  "id": "escudo_do_void",
+  "name": {
+    "pt-br": "Escudo do Vazio",
+    "en-us": "Escudo Do Vazio"
+  },
+  "category": "shields",
+  "type": "Escudo",
+  "description": {
+    "pt-br": "Um escudo poderoso que reduz o dado de ataque do oponente em 4. Concede 1d4 + 2 de defesa de dano e modifica seus atributos com -2 DEX e +2 FRC. Possui a modificação Energizador, permitindo, uma vez por combate, anular 1 de dano elemental que o usuário sofreria. .",
+    "en-us": ""
+  },
+  "stats": {
+    "dex": -2,
+    "frc": 2
+  },
+  "damage": "1d4 + 2",
+  "price": 25,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

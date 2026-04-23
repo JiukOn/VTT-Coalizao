@@ -1,0 +1,21 @@
+{
+  "id": "calca_de_leather",
+  "name": {
+    "pt-br": "Calca de Couro",
+    "en-us": "Leather Pants"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Calcas de couro resistente. Concedem +1 RES.",
+    "en-us": "Durable leather pants. Grant +1 RES."
+  },
+  "stats": {
+    "res": 1
+  },
+  "damage": "",
+  "price": 14,
+  "weight": 2,
+  "rarity": "comum",
+  "isCustom": false
+}

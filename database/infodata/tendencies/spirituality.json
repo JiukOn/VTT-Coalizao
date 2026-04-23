@@ -1,0 +1,12 @@
+{
+  "id": "spirituality",
+  "name": {
+    "pt-br": "Espiritualidade",
+    "en-us": "Spirituality"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

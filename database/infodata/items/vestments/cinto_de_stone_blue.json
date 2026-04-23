@@ -1,0 +1,21 @@
+{
+  "id": "cinto_de_stone_blue",
+  "name": {
+    "pt-br": "Cinto de Pedra Azul",
+    "en-us": "Stone Blue Belt"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mao",
+  "description": {
+    "pt-br": "Um cinto com pedras azuis que concedem +1 ENR.",
+    "en-us": "A belt set with blue stones that grant +1 ENR."
+  },
+  "stats": {
+    "enr": 1
+  },
+  "damage": "",
+  "price": 20,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

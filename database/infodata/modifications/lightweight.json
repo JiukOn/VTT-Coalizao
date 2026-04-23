@@ -1,0 +1,11 @@
+{
+  "id": "lightweight",
+  "name": { "pt-br": "Leve", "en-us": "Lightweight" },
+  "description": {
+    "pt-br": "Excepcionalmente leve, conferindo agilidade surpreendente ao portador. Concede +1 no dado em testes de ataque com PRE. Aplicável apenas a Armas.",
+    "en-us": "Exceptionally light, granting surprising agility to the carrier. Grants +1 to PRE attack test dice. Applicable only to Weapons."
+  },
+  "category": "qualidade",
+  "applicableTo": ["weapon"],
+  "attribute_modifiers": { "attribute": "PRE_dice", "value": "+1" }
+}

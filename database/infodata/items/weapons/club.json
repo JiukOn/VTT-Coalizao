@@ -1,0 +1,21 @@
+{
+  "id": "club",
+  "name": {
+    "pt-br": "Porrete",
+    "en-us": "Club"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Um porrete simples de madeira. Concede +1 FRC ao portador.",
+    "en-us": "A simple wooden club. Grants +1 FRC to the bearer."
+  },
+  "stats": {
+    "frc": 1
+  },
+  "damage": "1d4",
+  "price": 5,
+  "weight": 2,
+  "rarity": "comum",
+  "isCustom": false
+}

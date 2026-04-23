@@ -1,0 +1,19 @@
+{
+  "id": "curse_cast",
+  "name": { "pt-br": "Amaldiçoar", "en-us": "Curse Cast" },
+  "description": {
+    "pt-br": "O usuário é capaz de aplicar uma maldição específica em um alvo. Recarrega em 2 turnos.",
+    "en-us": "The user is capable of applying a specific curse to a target. Recharges in 2 turns."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": 2,
+  "requirements": { "ENR": 8 },
+  "isCustom": false
+}

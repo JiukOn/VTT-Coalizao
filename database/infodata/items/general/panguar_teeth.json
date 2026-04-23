@@ -1,0 +1,19 @@
+{
+  "id": "panguar_teeth",
+  "name": {
+    "pt-br": "Dentes de Panguar",
+    "en-us": "Panguar Teeth"
+  },
+  "category": "general",
+  "type": "Material",
+  "description": {
+    "pt-br": "Dentes afiados de um Panguar. Usados em artesanato e como amuletos.",
+    "en-us": "Sharp teeth from a Panguar. Used in crafting and as amulets."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 10,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "disorder",
+  "name": {
+    "pt-br": "Desordem",
+    "en-us": "Disorder"
+  },
+  "description": {
+    "pt-br": "Uma aura de desequilíbrio que fragmenta a concentração e a coordenação de todos ao redor. Seres próximos tendem a agir de forma descoordenada e impulsiva.",
+    "en-us": "An aura of imbalance that fragments the concentration and coordination of everyone nearby. Beings in range tend to act in a disorganized and impulsive manner."
+  },
+  "activationMoments": {
+    "pt-br": "Sempre ativa. Intensifica-se quando o portador perde o controle emocional ou entra em combate.",
+    "en-us": "Always active. Intensifies when the bearer loses emotional control or enters combat."
+  },
+  "isCustom": false
+}

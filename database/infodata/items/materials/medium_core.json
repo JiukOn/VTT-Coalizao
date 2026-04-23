@@ -1,0 +1,10 @@
+{
+  "id": "medium_core",
+  "name": {
+    "pt-br": "Medium Core",
+    "en-us": "Medium Core"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "espada_de_wood",
+  "name": {
+    "pt-br": "Espada de Madeira",
+    "en-us": "Espada De Madeira"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Feita de madeira, esta espada é mais leve do que as de metal e confere +1 FRC ao seu portador. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. .",
+    "en-us": ""
+  },
+  "stats": {
+    "frc": 1
+  },
+  "damage": "1d4 - 2",
+  "price": 10,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

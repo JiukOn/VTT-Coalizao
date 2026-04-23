@@ -1,0 +1,19 @@
+{
+  "id": "veil_fracture",
+  "name": { "pt-br": "Fratura no Véu", "en-us": "Veil Fracture" },
+  "description": {
+    "pt-br": "O usuário dilacera a realidade criando uma ruptura dimensional de 10m. Por 2 turnos: todos os testes com dado de prejuízo, habilidades não podem ser usadas, entidades podem se manifestar. Ao fim: usuário perde acesso a habilidades por 1 dia. Requer Pergaminho de Fratura no Véu.",
+    "en-us": "The user tears reality creating a 10m dimensional rupture. For 2 turns: all tests with disadvantage die, skills cannot be used, entities may manifest briefly. At end: user loses skill access for 1 day. Requires Veil Fracture Scroll."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": true,
+  "cost": "",
+  "turns_duration": 2,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 6, "INT": 6 },
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mental_battle",
+  "name": { "pt-br": "Batalha Mental", "en-us": "Mental Battle" },
+  "description": {
+    "pt-br": "O usuário pode tentar transferir um efeito mental negativo de um aliado para um inimigo. Teste de 1d20 + RES vs 1d20 + RES do alvo. Se falhar, o efeito é transferido para o próprio usuário.",
+    "en-us": "The user can attempt to transfer a negative mental effect from an ally to an enemy. Test 1d20 + RES vs 1d20 + target RES. On failure, the effect transfers to the user."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "cultist" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

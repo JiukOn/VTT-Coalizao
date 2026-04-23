@@ -1,0 +1,90 @@
+{
+  "id": "king_undino",
+  "name": {
+    "pt-br": "Rei Undino",
+    "en-us": "King Undino"
+  },
+  "description": {
+    "pt-br": "O líder do bando de Undinos. Maior e mais poderoso que os comuns, exerce controle sobre sua matilha.",
+    "en-us": "The leader of the Undino flock. Larger and more powerful than common ones, exercises control over his pack."
+  },
+  "element": "wood",
+  "size": "medium",
+  "coreSize": "médio",
+  "diet": "onívoro",
+  "imagePath": "Criatura/ReiUndino.jpeg",
+  "level": 3,
+  "attributes": {
+    "VIT": 8,
+    "DEX": 7,
+    "CRM": 8,
+    "FRC": 5,
+    "INT": 5,
+    "RES": 2,
+    "PRE": 5,
+    "ENR": 2
+  },
+  "abilities": {
+    "active": {
+      "1": "liderar",
+      "2": "fly",
+      "3": "bite",
+      "4": "accelerate"
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "undino_feather",
+      "chance": "100%",
+      "amount": 5
+    },
+    "2": {
+      "item": "undino_king_eye",
+      "chance": "50%",
+      "amount": 1
+    },
+    "3": {
+      "item": "undino_king_bone",
+      "chance": "100%",
+      "amount": 3
+    },
+    "4": {
+      "item": "roasted_undino_meat",
+      "chance": "50%",
+      "amount": 3
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false
+}

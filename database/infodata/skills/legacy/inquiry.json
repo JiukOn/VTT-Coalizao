@@ -1,0 +1,19 @@
+{
+  "id": "inquiry",
+  "name": { "pt-br": "Apuração", "en-us": "Inquiry" },
+  "description": {
+    "pt-br": "Com foco aguçado, o usuário pode detectar informações cruciais sobre o ambiente, o sistema e os seres ao seu redor. O efeito acontece se o teste (1d20 + INT > 14) for bem-sucedido.",
+    "en-us": "With sharp focus, the user can detect crucial information about the environment, system, and beings around them. The effect occurs if the test (1d20 + INT > 14) succeeds."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "researcher" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

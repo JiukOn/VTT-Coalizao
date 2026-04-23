@@ -1,0 +1,23 @@
+{
+  "id": "blacksmith",
+  "name": {
+    "pt-br": "Ferreiro",
+    "en-us": "Blacksmith"
+  },
+  "description": {
+    "pt-br": "Um artesão especializado em forja que combina força bruta com conhecimento técnico avançado. Cria e repara equipamentos superiores, tornando-se indispensável ao grupo.",
+    "en-us": "A forge-specialized craftsman who combines brute strength with advanced technical knowledge. Creates and repairs superior equipment, becoming indispensable to the group."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 1,
+    "crm": 1,
+    "frc": 2.5,
+    "int": 1.5,
+    "res": 1.5,
+    "pre": 1.5,
+    "enr": 0.5
+  },
+  "legacyAbilityId": "forge_skill",
+  "isCustom": false
+}

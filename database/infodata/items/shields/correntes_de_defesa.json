@@ -1,0 +1,19 @@
+{
+  "id": "correntes_de_defesa",
+  "name": {
+    "pt-br": "Correntes de Defesa",
+    "en-us": "Correntes De Defesa"
+  },
+  "category": "shields",
+  "type": "Escudo",
+  "description": {
+    "pt-br": "Cadeias de alta durabilidade projetadas para imobilizar armas de proximidade. Concedem 1d4 - 3 de defesa de dano. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 - 3",
+  "price": 25,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

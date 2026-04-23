@@ -1,0 +1,19 @@
+{
+  "id": "calca",
+  "name": {
+    "pt-br": "Calca",
+    "en-us": "Pants"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Uma calca simples.",
+    "en-us": "Simple pants."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 8,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "enroot",
+  "name": { "pt-br": "Enraizar", "en-us": "Enroot" },
+  "description": {
+    "pt-br": "O usuário invoca raízes que prendem o alvo. Se o teste (1d20 + ENR) for maior que (1d20 + maior entre FRC ou DEX do alvo), o alvo fica imobilizado por 2 turnos.",
+    "en-us": "The user invokes roots that restrain the target. If test (1d20 + ENR) exceeds (1d20 + target's highest FRC or DEX), the target is immobilized for 2 turns."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "florist" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 2,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

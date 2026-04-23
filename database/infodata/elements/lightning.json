@@ -1,0 +1,12 @@
+{
+  "id": "lightning",
+  "name": {
+    "pt-br": "Relâmpago",
+    "en-us": "Lightning"
+  },
+  "description": {
+    "pt-br": "Elemento veloz e paralisante, que age com a velocidade da eletricidade.",
+    "en-us": "Fast and paralyzing element that acts with the speed of electricity."
+  },
+  "weak_against": "earth"
+}

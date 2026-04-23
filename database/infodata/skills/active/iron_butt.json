@@ -1,0 +1,19 @@
+{
+  "id": "iron_butt",
+  "name": { "pt-br": "Bumbum Durinho", "en-us": "Iron Butt" },
+  "description": {
+    "pt-br": "Após gritar 'Meu bumbum é durinho', o usuário recebe +3 FRC por 1 turno. Para reativar na mesma situação: 1d20 > 18.",
+    "en-us": "After shouting 'My butt is hard', the user receives +3 FRC for 1 turn. To reactivate in the same situation: 1d20 > 18."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 1,
+  "turns_cooldown": null,
+  "requirements": { "RES": 6 },
+  "isCustom": false
+}

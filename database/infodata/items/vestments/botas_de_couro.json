@@ -1,0 +1,19 @@
+{
+  "id": "botas_de_couro",
+  "name": {
+    "pt-br": "Botas de Couro",
+    "en-us": "Botas De Couro"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pé",
+  "description": {
+    "pt-br": "Botas de couro simples e confortáveis. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

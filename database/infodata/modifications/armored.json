@@ -1,0 +1,11 @@
+{
+  "id": "armored",
+  "name": { "pt-br": "Blindado", "en-us": "Armored" },
+  "description": {
+    "pt-br": "Confere proteção extra ao item, diminuindo em 1 o dano recebido. Ideal para Vestimentas e Escudos.",
+    "en-us": "Grants extra protection to the item, reducing received damage by 1. Ideal for Vestments and Shields."
+  },
+  "category": "defensivo",
+  "applicableTo": ["vestment", "shield"],
+  "attribute_modifiers": { "attribute": "damage_reduction", "value": "1" }
+}

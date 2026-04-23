@@ -1,0 +1,19 @@
+{
+  "id": "best_moments",
+  "name": { "pt-br": "Melhores Momentos", "en-us": "Best Moments" },
+  "description": {
+    "pt-br": "Ativa-se automaticamente para conceder benefícios necessários à sobrevivência do usuário ou de uma criatura domada próxima.",
+    "en-us": "Activates automatically to grant necessary survival benefits to the user or a nearby tamed creature."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

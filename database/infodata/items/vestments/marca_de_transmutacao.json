@@ -1,0 +1,21 @@
+{
+  "id": "marca_de_transmutacao",
+  "name": {
+    "pt-br": "Marca de Transmutacao",
+    "en-us": "Transmutation Mark"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Uma marca magica gravada na pele. Concede +1 INT.",
+    "en-us": "A magical mark inscribed on the skin. Grants +1 INT."
+  },
+  "stats": {
+    "int": 1
+  },
+  "damage": "",
+  "price": 0,
+  "weight": 0,
+  "rarity": "especial",
+  "isCustom": false
+}

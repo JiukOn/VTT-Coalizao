@@ -1,0 +1,12 @@
+{
+  "id": "earth",
+  "name": {
+    "pt-br": "Terra",
+    "en-us": "Earth"
+  },
+  "description": {
+    "pt-br": "Elemento sólido e resistente, a base sobre a qual tudo repousa.",
+    "en-us": "Solid and resistant element, the foundation upon which everything rests."
+  },
+  "weak_against": "water"
+}

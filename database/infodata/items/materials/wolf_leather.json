@@ -1,0 +1,10 @@
+{
+  "id": "wolf_leather",
+  "name": {
+    "pt-br": "Couro De Lobo",
+    "en-us": "Wolf Leather"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

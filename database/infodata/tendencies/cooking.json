@@ -1,0 +1,12 @@
+{
+  "id": "cooking",
+  "name": {
+    "pt-br": "Cozinha",
+    "en-us": "Cooking"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

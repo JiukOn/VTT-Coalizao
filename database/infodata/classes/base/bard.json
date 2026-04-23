@@ -1,0 +1,23 @@
+{
+  "id": "bard",
+  "name": {
+    "pt-br": "Bardo",
+    "en-us": "Bard"
+  },
+  "description": {
+    "pt-br": "Um artista e músico versátil que usa sua performance para inspirar aliados e confundir inimigos. Mistura agilidade com carisma nas batalhas.",
+    "en-us": "A versatile artist and musician who uses performance to inspire allies and confuse enemies. Blends agility with charisma in battle."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 2,
+    "crm": 2,
+    "frc": 1,
+    "int": 1.5,
+    "res": 1,
+    "pre": 1.5,
+    "enr": 1
+  },
+  "legacyAbilityId": "chord",
+  "isCustom": false
+}

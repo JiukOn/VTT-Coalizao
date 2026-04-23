@@ -1,0 +1,19 @@
+{
+  "id": "luva_alquimica",
+  "name": {
+    "pt-br": "Luva Alquímica",
+    "en-us": "Luva Alquimica"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mãos / Acessório das Mãos",
+  "description": {
+    "pt-br": "Uma luva leve de durabilidade média, capaz de utilizar poções nos golpes físicos. Possui a modificação Prático, concedendo um dado de vantagem em testes de criação ou reparo de itens quando este item é o principal utilizado na ação. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 15,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

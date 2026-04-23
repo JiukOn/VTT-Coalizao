@@ -1,0 +1,19 @@
+{
+  "id": "bite",
+  "name": { "pt-br": "Mordida", "en-us": "Bite" },
+  "description": {
+    "pt-br": "Aumenta 2 FRC ao realizar um ataque de mordida.",
+    "en-us": "Increases FRC by 2 when performing a bite attack."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

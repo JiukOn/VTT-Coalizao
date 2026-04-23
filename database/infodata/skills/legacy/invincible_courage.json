@@ -1,0 +1,19 @@
+{
+  "id": "invincible_courage",
+  "name": { "pt-br": "Coragem Invicta", "en-us": "Invincible Courage" },
+  "description": {
+    "pt-br": "O usuário não pode ter o valor de seus atributos alterados, nem positivamente nem negativamente.",
+    "en-us": "The user cannot have their attribute values altered, neither positively nor negatively."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": true, "class_id": "altruist" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "CRM": 5 },
+  "isCustom": false
+}

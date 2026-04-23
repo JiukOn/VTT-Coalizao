@@ -1,0 +1,21 @@
+{
+  "id": "peitoral_de_iron",
+  "name": {
+    "pt-br": "Peitoral de Ferro",
+    "en-us": "Iron Breastplate"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Um peitoral de ferro. Concede +2 RES.",
+    "en-us": "An iron breastplate. Grants +2 RES."
+  },
+  "stats": {
+    "res": 2
+  },
+  "damage": "",
+  "price": 30,
+  "weight": 4,
+  "rarity": "comum",
+  "isCustom": false
+}

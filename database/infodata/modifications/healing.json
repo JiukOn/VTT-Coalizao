@@ -1,0 +1,11 @@
+{
+  "id": "healing",
+  "name": { "pt-br": "Cura", "en-us": "Healing" },
+  "description": {
+    "pt-br": "Propriedades restauradoras notáveis. Ao ser consumido, restaura 1d4 de VIT. Aplicável apenas a Consumíveis.",
+    "en-us": "Notable restorative properties. When consumed, restores 1d4 VIT. Applicable only to Consumables."
+  },
+  "category": "qualidade",
+  "applicableTo": ["consumable"],
+  "attribute_modifiers": { "attribute": "VIT", "value": "1d4" }
+}

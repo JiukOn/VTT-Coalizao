@@ -1,0 +1,12 @@
+{
+  "id": "combat_tactics",
+  "name": {
+    "pt-br": "Taticas_de_combate",
+    "en-us": "Combat Tactics"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

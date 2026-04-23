@@ -1,0 +1,19 @@
+{
+  "id": "silent_steps",
+  "name": { "pt-br": "Passos Silenciosos", "en-us": "Silent Steps" },
+  "description": {
+    "pt-br": "Aumenta +2 DEX, diminui em 2 nos dados de testes de percepção inimigos, e dura 2 turnos. Para reativar na mesma situação: 1d20 > 16.",
+    "en-us": "Increases +2 DEX, decreases enemy perception test dice by 2, lasts 2 turns. To reactivate in the same situation: 1d20 > 16."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "shadow" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 2,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

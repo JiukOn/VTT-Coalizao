@@ -1,0 +1,19 @@
+{
+  "id": "wooden_bracelet",
+  "name": {
+    "pt-br": "Bracelete de Madeira",
+    "en-us": "Wooden Bracelet"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mao",
+  "description": {
+    "pt-br": "Um bracelete de madeira.",
+    "en-us": "A wooden bracelet."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "leveled_seal",
+  "name": { "pt-br": "Selo Nivelado", "en-us": "Leveled Seal" },
+  "description": {
+    "pt-br": "O usuário perde permanentemente 1d4-1 em todos os atributos e fica incapacitado por 3 turnos. O alvo tem sua ENR reduzida a 0 e todos os outros atributos reduzidos a 1 por 1 turno, pela metade no turno seguinte, retornando ao normal no 3º turno.",
+    "en-us": "The user permanently loses 1d4-1 in all attributes and becomes incapacitated for 3 turns. The target's ENR is reduced to 0 and all other attributes reduced to 1 for 1 turn, halved the next, returning to normal on the 3rd turn."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "energy_seal" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "energy_bow",
+  "name": { "pt-br": "Arco de Energia", "en-us": "Energy Bow" },
+  "description": {
+    "pt-br": "O usuário molda sua energia no formato de um arco como item temporário. Gasta 1 ENR temporariamente. Enquanto equipado, fornece +3 PRE. O arco se dissipa em 3 turnos. Recarrega em 1 turno.",
+    "en-us": "The user shapes their energy into a temporary bow item. Spends 1 ENR temporarily. While equipped, provides +3 PRE. The bow dissipates in 3 turns. Recharges in 1 turn."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "1 ENR",
+  "turns_duration": 3,
+  "turns_cooldown": 1,
+  "requirements": {},
+  "isCustom": false
+}

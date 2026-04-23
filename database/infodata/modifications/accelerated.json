@@ -1,0 +1,11 @@
+{
+  "id": "accelerated",
+  "name": { "pt-br": "Acelerado", "en-us": "Accelerated" },
+  "description": {
+    "pt-br": "Confere agilidade aprimorada nos movimentos. Concede 1 dado de vantagem em todos os testes de movimentação curta. Aplicável a Vestimentas dos pés.",
+    "en-us": "Grants improved agility in movements. Grants 1 advantage die on all short movement tests. Applicable to foot Vestments."
+  },
+  "category": "qualidade",
+  "applicableTo": ["vestment"],
+  "attribute_modifiers": {}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "capacete_avancado",
+  "name": {
+    "pt-br": "Capacete Avançado",
+    "en-us": "Capacete Avancado"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeça",
+  "description": {
+    "pt-br": "Capacete robusto de liga metálica, projetado para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

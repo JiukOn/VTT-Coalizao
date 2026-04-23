@@ -1,0 +1,94 @@
+{
+  "id": "sina_the_knight",
+  "type": "Neutro",
+  "name": {
+    "pt-br": "Sina, a Cavaleira",
+    "en-us": "Sina, the Knight"
+  },
+  "description": {
+    "pt-br": "Serve aos Unsato, mas não os vê como deuses. É contra o Vice-Lorde Carter. Nasceu no antigo reino de Magni. Aprendeu a cavalgar com seu pai.",
+    "en-us": "Serves the Unsatos but doesn't see them as gods. Opposes Vice-Lord Carter. Born in the ancient kingdom of Magni. Learned to ride from her father."
+  },
+  "age": 27,
+  "level": 4,
+  "classId": "blocked",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 23000,
+  "stats": {
+    "attributes": {
+      "VIT": 4,
+      "DEX": 3,
+      "CRM": 3,
+      "FRC": 4,
+      "INT": 3,
+      "RES": 3,
+      "PRE": 3,
+      "ENR": 0
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "lace_headband",
+    "Face": "",
+    "Neck": "",
+    "Chest": "chestplate_de_iron",
+    "Back": "",
+    "Right Hand": "sword_de_iron",
+    "Left Hand": "",
+    "Hand Accessories": "bracadeira_de_iron",
+    "Legs": "placa_de_iron",
+    "Feet": "protetor_de_iron"
+  },
+  "abilities": {
+    "legacy": "blocked",
+    "active": {
+      "1": "montaria",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "noble",
+  "possibleBenefit": {
+    "pt-br": "Pode aprender 'Montaria'.",
+    "en-us": "Can learn 'Riding'."
+  },
+  "possibleHarm": {
+    "pt-br": "Recebe voz de Prisão.",
+    "en-us": "Receives an arrest order."
+  },
+  "inventory": {
+    "1": "sword_de_iron",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

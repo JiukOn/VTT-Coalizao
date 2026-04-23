@@ -1,0 +1,12 @@
+{
+  "id": "personal_defense",
+  "name": {
+    "pt-br": "Defesa_pessoal",
+    "en-us": "Personal Defense"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

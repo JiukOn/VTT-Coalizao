@@ -1,0 +1,19 @@
+{
+  "id": "reserved_strength",
+  "name": { "pt-br": "Força Reservada", "en-us": "Reserved Strength" },
+  "description": {
+    "pt-br": "Sempre que a VIT atual < VIT/3 do usuário, ele recebe +3 FRC e rola um dado bônus para ataques corpo a corpo. O efeito dura até o usuário recuperar sua VIT para mais que VIT/3.",
+    "en-us": "Whenever current VIT < user's VIT/3, they receive +3 FRC and roll a bonus die for melee attacks. The effect lasts until the user recovers VIT to above VIT/3."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

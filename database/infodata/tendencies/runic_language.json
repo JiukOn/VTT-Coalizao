@@ -1,0 +1,12 @@
+{
+  "id": "runic_language",
+  "name": {
+    "pt-br": "Linguagem_runica",
+    "en-us": "Runic Language"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

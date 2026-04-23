@@ -1,0 +1,90 @@
+{
+  "id": "",
+  "name": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "element": "",
+  "size": "",
+  "coreSize": "",
+  "diet": "",
+  "imagePath": "",
+  "level": 1,
+  "attributes": {
+    "VIT": 1,
+    "DEX": 1,
+    "CRM": 1,
+    "FRC": 1,
+    "INT": 1,
+    "RES": 1,
+    "PRE": 1,
+    "ENR": 1
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false
+}

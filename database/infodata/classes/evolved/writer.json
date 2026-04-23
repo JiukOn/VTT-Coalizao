@@ -1,0 +1,23 @@
+{
+  "id": "writer",
+  "name": {
+    "pt-br": "Escritora",
+    "en-us": "Writer"
+  },
+  "description": {
+    "pt-br": "Uma cronista poderosa que registra e reescreve a realidade através de suas obras. Usa inteligência, resiliência e energia para criar contratos, anular ações e manifestar poder.",
+    "en-us": "A powerful chronicler who records and rewrites reality through her works. Uses intelligence, resilience, and energy to create contracts, nullify actions, and manifest power."
+  },
+  "multipliers": {
+    "vit": 2,
+    "dex": 1,
+    "crm": 1.5,
+    "frc": 1,
+    "int": 2,
+    "res": 2,
+    "pre": 1,
+    "enr": 1.5
+  },
+  "legacyAbilityId": "living_chronicle",
+  "isCustom": false
+}

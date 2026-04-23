@@ -1,0 +1,21 @@
+{
+  "id": "steel_helmet",
+  "name": {
+    "pt-br": "Capacete de Aco",
+    "en-us": "Steel Helmet"
+  },
+  "category": "general",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Um capacete de aco de alta qualidade. Concede +2 RES.",
+    "en-us": "A high-quality steel helmet. Grants +2 RES."
+  },
+  "stats": {
+    "res": 2
+  },
+  "damage": "",
+  "price": 30,
+  "weight": 3,
+  "rarity": "comum",
+  "isCustom": false
+}

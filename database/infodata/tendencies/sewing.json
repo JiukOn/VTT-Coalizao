@@ -1,0 +1,12 @@
+{
+  "id": "sewing",
+  "name": {
+    "pt-br": "Costura",
+    "en-us": "Sewing"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

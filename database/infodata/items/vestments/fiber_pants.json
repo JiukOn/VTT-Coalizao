@@ -1,0 +1,19 @@
+{
+  "id": "fiber_pants",
+  "name": {
+    "pt-br": "Calca de Fibra",
+    "en-us": "Fiber Pants"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Calcas feitas de fibra natural.",
+    "en-us": "Pants made from natural fiber."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 6,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

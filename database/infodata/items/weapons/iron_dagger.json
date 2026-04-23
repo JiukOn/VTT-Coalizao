@@ -1,0 +1,19 @@
+{
+  "id": "iron_dagger",
+  "name": {
+    "pt-br": "Adaga de Ferro",
+    "en-us": "Iron Dagger"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma adaga de tamanho médio, com durabilidade mediana. Causa 1d4 - 1 de dano. Possui a modificação Perfurador, aumentando sua capacidade de perfuração em +1 de dano. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 - 1",
+  "price": 15,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

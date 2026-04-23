@@ -1,0 +1,19 @@
+{
+  "id": "purple_flames",
+  "name": { "pt-br": "Chamas Roxas", "en-us": "Purple Flames" },
+  "description": {
+    "pt-br": "O usuário é capaz de convocar o elemento Tempo em um ataque de longa distância, causando 1d4+3 de dano. Pode envelhecer o alvo 1 ano se (1d20 > 18) for bem-sucedido. Se (1d20 > 16) falhar, perde 2 ENR temporariamente.",
+    "en-us": "The user summons the Time element in a long-range attack, dealing 1d4+3 damage. Can age the target by 1 year if (1d20 > 18) succeeds. If (1d20 > 16) fails, loses 2 ENR temporarily."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "flames" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 10 },
+  "isCustom": false
+}

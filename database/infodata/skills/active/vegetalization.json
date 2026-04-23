@@ -1,0 +1,19 @@
+{
+  "id": "vegetalization",
+  "name": { "pt-br": "Vegetalização", "en-us": "Vegetalization" },
+  "description": {
+    "pt-br": "O usuário transforma seu corpo em plantas e vinhas por 3 turnos. Seus ataques físicos adquirem o elemento Madeira, ganha Resistência ao elemento Madeira, mas se torna vulnerável ao elemento Fogo. Para reativar: 1d20 > 16. A espécie do usuário muda para Original/Vegetal durante o período.",
+    "en-us": "The user transforms their body into plants and vines for 3 turns. Physical attacks gain the Wood element, user gains Resistance to Wood, but becomes vulnerable to Fire. To reactivate: 1d20 > 16. User's species changes to Original/Vegetal during the period."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "hat",
+  "name": {
+    "pt-br": "Chapeu",
+    "en-us": "Hat"
+  },
+  "category": "general",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Um chapeu simples.",
+    "en-us": "A simple hat."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 8,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

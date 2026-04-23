@@ -1,0 +1,19 @@
+{
+  "id": "calca_da_thanatos",
+  "name": {
+    "pt-br": "Calça da Thanatos",
+    "en-us": "Calca Da Thanatos"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Perna",
+  "description": {
+    "pt-br": "Calças de couro de quimera, parte do conjunto Thanatos. Possui a modificação Mochileiro, que dá maior velocidade para longas distancias. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

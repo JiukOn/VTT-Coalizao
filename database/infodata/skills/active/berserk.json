@@ -1,0 +1,19 @@
+{
+  "id": "berserk",
+  "name": { "pt-br": "Berserk", "en-us": "Berserk" },
+  "description": {
+    "pt-br": "O usuário entra em estado de Berserk por 4 turnos: +4 DEX, +4 FRC, +2 ENR, mas sofre -8 INT, -2 CRM e -4 RES. Recarrega em 3 turnos.",
+    "en-us": "The user enters Berserk state for 4 turns: +4 DEX, +4 FRC, +2 ENR, but suffers -8 INT, -2 CRM, -4 RES. Recharges in 3 turns."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 4,
+  "turns_cooldown": 3,
+  "requirements": { "VIT": 10 },
+  "isCustom": false
+}

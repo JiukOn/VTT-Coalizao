@@ -1,0 +1,11 @@
+{
+  "id": "irremovable",
+  "name": { "pt-br": "Irremovível", "en-us": "Irremovable" },
+  "description": {
+    "pt-br": "Este item não pode ser removido após ser equipado.",
+    "en-us": "This item cannot be removed once equipped."
+  },
+  "category": "penalidade",
+  "applicableTo": ["weapon", "vestment", "shield", "general"],
+  "attribute_modifiers": {}
+}

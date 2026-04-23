@@ -1,0 +1,19 @@
+{
+  "id": "peitoral_avancado",
+  "name": {
+    "pt-br": "Peitoral Avançado",
+    "en-us": "Peitoral Avancado"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Corpo",
+  "description": {
+    "pt-br": "Peitoral robusto de liga metálica, resistente e ergonômico para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 8,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

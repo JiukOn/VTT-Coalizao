@@ -1,0 +1,19 @@
+{
+  "id": "mark",
+  "name": { "pt-br": "Marca", "en-us": "Mark" },
+  "description": {
+    "pt-br": "O usuário marca um inimigo por pura intenção de combate. Durante os próximos 2 turnos, recebe +2 PRE contra esse alvo. Recarrega em 2 turnos. Se (1d20 > 16) falhar, perde 1 ENR temporariamente.",
+    "en-us": "The user marks an enemy by pure combat intent. For the next 2 turns, receives +2 PRE against that target. Recharges in 2 turns. If (1d20 > 16) fails, loses 1 ENR temporarily."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 2,
+  "turns_cooldown": 2,
+  "requirements": { "PRE": 4 },
+  "isCustom": false
+}

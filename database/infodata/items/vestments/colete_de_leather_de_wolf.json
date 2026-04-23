@@ -1,0 +1,21 @@
+{
+  "id": "colete_de_leather_de_wolf",
+  "name": {
+    "pt-br": "Colete de Couro de Lobo",
+    "en-us": "Wolf Leather Vest"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Colete de couro de lobo. Concede +1 DEX.",
+    "en-us": "Wolf leather vest. Grants +1 DEX."
+  },
+  "stats": {
+    "dex": 1
+  },
+  "damage": "",
+  "price": 22,
+  "weight": 2,
+  "rarity": "especial",
+  "isCustom": false
+}

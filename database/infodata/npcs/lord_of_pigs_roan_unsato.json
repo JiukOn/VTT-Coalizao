@@ -1,0 +1,94 @@
+{
+  "id": "lord_of_pigs_roan_unsato",
+  "type": "Hostil",
+  "name": {
+    "pt-br": "Lorde dos Porcos, Roan Unsato",
+    "en-us": "Lord of Pigs, Roan Unsato"
+  },
+  "description": {
+    "pt-br": "Nasceu na 5ª Geração Unsato, nomeado Lorde aos 22 anos por sua 'Divindade'. É secretamente um tirano que implantou estigmas de alma em seu povo. Estudou esgrima com a 'General de Kyoto'.",
+    "en-us": "Born into the 5th Unsato Generation, named Lord at 22 for his 'Divinity'. Secretly a tyrant who implanted soul stigmas on his people. Studied fencing with the 'General of Kyoto'."
+  },
+  "age": 32,
+  "level": 9,
+  "classId": "spiritual_samurai",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 20000000,
+  "stats": {
+    "attributes": {
+      "VIT": 17,
+      "DEX": 13,
+      "CRM": 8,
+      "FRC": 17,
+      "INT": 8,
+      "RES": 6,
+      "PRE": 4,
+      "ENR": 22
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "mithril_earring",
+    "Face": "",
+    "Neck": "",
+    "Chest": "jaqueta_de_leather_draconico",
+    "Back": "",
+    "Right Hand": "kusanagi_no_tsurugi",
+    "Left Hand": "",
+    "Hand Accessories": "luvas_de_leather_de_ganlan",
+    "Legs": "calcas_reforcadas_com_ossos_de_king_undino",
+    "Feet": "botas_de_hermes"
+  },
+  "abilities": {
+    "legacy": "corte_de_alma",
+    "active": {
+      "1": "esgrima_avancada",
+      "2": "aceleracao_divina",
+      "3": "oito_cortes",
+      "4": "liderar",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "social_mask",
+  "possibleBenefit": {
+    "pt-br": "Facilidades na Cidade dos Porcos, acesso ao alto escalão Unsato.",
+    "en-us": "Advantages in the City of Pigs, access to the upper Unsato echelon."
+  },
+  "possibleHarm": {
+    "pt-br": "Inimizade dos 'Porcos', poderoso adversário em combate.",
+    "en-us": "Enmity of the 'Pigs', powerful combat adversary."
+  },
+  "inventory": {
+    "1": "kusanagi_no_tsurugi",
+    "2": "cantil_de_water",
+    "3": "book_h_flames_draconicas",
+    "4": "roasted_tuctuc_meat",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

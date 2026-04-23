@@ -1,0 +1,19 @@
+{
+  "id": "botas_rimu",
+  "name": {
+    "pt-br": "Botas Rimu",
+    "en-us": "Botas Rimu"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pé",
+  "description": {
+    "pt-br": "Botas resistentes e pesadas que completam o conjunto Rimu. Possuem a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

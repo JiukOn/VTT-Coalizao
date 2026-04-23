@@ -1,0 +1,21 @@
+{
+  "id": "placa_de_iron",
+  "name": {
+    "pt-br": "Placa de Ferro",
+    "en-us": "Iron Plate"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Uma placa de ferro para proteger as pernas. Concede +1 RES.",
+    "en-us": "An iron plate to protect the legs. Grants +1 RES."
+  },
+  "stats": {
+    "res": 1
+  },
+  "damage": "",
+  "price": 22,
+  "weight": 3,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "capacete_rimu",
+  "name": {
+    "pt-br": "Capacete Rimu",
+    "en-us": "Capacete Rimu"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeça",
+  "description": {
+    "pt-br": "Capacete resistente de couro alquimizado, moldado para alta proteção. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

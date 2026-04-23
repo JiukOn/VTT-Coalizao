@@ -1,0 +1,19 @@
+{
+  "id": "dyslexia",
+  "name": {
+    "pt-br": "Dislexia",
+    "en-us": "Dyslexia"
+  },
+  "description": {
+    "pt-br": "O afetado recebe -2 no valor dos dados de aprendizado.",
+    "en-us": "The affected receives -2 to learning dice rolls."
+  },
+  "category": "psicologico_passivo",
+  "type": "psicologico_passivo",
+  "sub_type": "penalidade_aprendizado",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  }
+}

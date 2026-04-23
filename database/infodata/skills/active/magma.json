@@ -1,0 +1,19 @@
+{
+  "id": "magma",
+  "name": { "pt-br": "Magma", "en-us": "Magma" },
+  "description": {
+    "pt-br": "Transforma o solo em magma, causando 1d4-1 de dano de Fogo. Alvos na área sofrem 'Queimadura' se o teste (1d20 < 16) for bem-sucedido. Modifica o terreno ao redor. Se falhar (1d20 < 16), perde 1 ENR temporariamente.",
+    "en-us": "Transforms the ground into magma, dealing 1d4-1 Fire damage. Targets in the area suffer 'Burning' if test (1d20 < 16) succeeds. Modifies surrounding terrain. On failure (1d20 < 16), loses 1 ENR temporarily."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 6 },
+  "isCustom": false
+}

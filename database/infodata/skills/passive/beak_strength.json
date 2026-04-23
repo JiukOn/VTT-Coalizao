@@ -1,0 +1,19 @@
+{
+  "id": "beak_strength",
+  "name": { "pt-br": "Força de Bico", "en-us": "Beak Strength" },
+  "description": {
+    "pt-br": "Caso esteja sendo intimidado, o usuário ganha +1 FRC naquele turno.",
+    "en-us": "When being intimidated, the user gains +1 FRC that turn."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

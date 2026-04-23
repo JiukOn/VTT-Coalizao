@@ -1,0 +1,19 @@
+{
+  "id": "headbutt",
+  "name": { "pt-br": "Chifrada", "en-us": "Headbutt" },
+  "description": {
+    "pt-br": "Aumenta 2 FRC em ataques desferidos com chifres.",
+    "en-us": "Increases FRC by 2 in attacks made with horns."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "FRC": 3 },
+  "isCustom": false
+}

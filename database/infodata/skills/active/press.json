@@ -1,0 +1,19 @@
+{
+  "id": "press",
+  "name": { "pt-br": "Prensa", "en-us": "Press" },
+  "description": {
+    "pt-br": "O usuário recebe +3 FRC na ação de ataque e sempre ataca por último. O ataque deve ter como objetivo prensar fisicamente o oponente.",
+    "en-us": "The user receives +3 FRC on the attack action and always attacks last. The attack must aim to physically press the opponent."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "dagger_de_steel",
+  "name": {
+    "pt-br": "Adaga de Aco",
+    "en-us": "Steel Dagger"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma adaga afiada de aco. Concede +1 PRE e causa 1d4 de dano.",
+    "en-us": "A sharp steel dagger. Grants +1 PRE and deals 1d4 damage."
+  },
+  "stats": {
+    "pre": 1
+  },
+  "damage": "1d4",
+  "price": 12,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

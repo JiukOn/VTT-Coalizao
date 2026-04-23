@@ -1,0 +1,21 @@
+{
+  "id": "adaga_de_aco",
+  "name": {
+    "pt-br": "Adaga de Aço",
+    "en-us": "Adaga De Aco"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma adaga afiada que fornece +1 PRE ao seu portador. Causa 1d4 - 1 de dano. Possui a modificação Afiado, aumentando sua capacidade de corte em +1 de dano. .",
+    "en-us": ""
+  },
+  "stats": {
+    "pre": 1
+  },
+  "damage": "1d4 - 1",
+  "price": 15,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

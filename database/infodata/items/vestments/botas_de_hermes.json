@@ -1,0 +1,21 @@
+{
+  "id": "botas_de_hermes",
+  "name": {
+    "pt-br": "Botas de Hermes",
+    "en-us": "Hermes Boots"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Botas miticas que conferem velocidade sobrenatural. Concedem +3 DEX.",
+    "en-us": "Mythic boots that grant supernatural speed. Grant +3 DEX."
+  },
+  "stats": {
+    "dex": 3
+  },
+  "damage": "",
+  "price": 80,
+  "weight": 1,
+  "rarity": "mito",
+  "isCustom": false
+}

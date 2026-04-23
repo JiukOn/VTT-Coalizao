@@ -1,0 +1,19 @@
+{
+  "id": "grimorio",
+  "name": {
+    "pt-br": "Grimório",
+    "en-us": "Grimorio"
+  },
+  "category": "general",
+  "type": "Item Diverso",
+  "description": {
+    "pt-br": "Um livro que guarda informações sobre uma habilidade energética. Se um teste de 1d20 + INT for bem-sucedido contra uma dificuldade, o personagem pode aprender a habilidade.",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d20",
+  "price": 0,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

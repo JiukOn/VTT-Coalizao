@@ -1,0 +1,9 @@
+{
+  "id": "fallen_city",
+  "name": { "pt-br": "Cidade Caída", "en-us": "Fallen City" },
+  "description": {
+    "pt-br": "Os restos de uma grande cidade destruída, habitada por oportunistas, saqueadores e criaturas que tomaram o lugar dos antigos moradores.",
+    "en-us": "The remains of a great destroyed city, inhabited by opportunists, scavengers, and creatures that took the place of the old residents."
+  },
+  "type": { "pt-br": "Civilização", "en-us": "Civilization" }
+}

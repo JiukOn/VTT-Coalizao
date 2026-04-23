@@ -1,0 +1,19 @@
+{
+  "id": "sand_blast",
+  "name": { "pt-br": "Rajada de Areia", "en-us": "Sand Blast" },
+  "description": {
+    "pt-br": "O usuário invoca areia a partir de sua energia, causando 2d4-1 de dano em área a todos os atingidos. Se o teste falhar (1d20 < 16), perde 1 ENR temporariamente.",
+    "en-us": "The user invokes sand from their energy, dealing 2d4-1 area damage to all hit. If test fails (1d20 < 16), loses 1 ENR temporarily."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 10 },
+  "isCustom": false
+}

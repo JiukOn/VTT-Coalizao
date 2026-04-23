@@ -1,0 +1,11 @@
+{
+  "id": "restricted",
+  "name": { "pt-br": "Restringido", "en-us": "Restricted" },
+  "description": {
+    "pt-br": "Impõe uma penalidade notável ao usuário, fazendo-o jogar um dado de prejuízo ao se movimentar enquanto equipado. Afeta Itens e Vestimentas.",
+    "en-us": "Imposes a notable penalty on the user, making them roll a disadvantage die when moving while equipped. Affects Items and Vestments."
+  },
+  "category": "penalidade",
+  "applicableTo": ["vestment", "general"],
+  "attribute_modifiers": { "attribute": "movement_dice", "value": "-1" }
+}

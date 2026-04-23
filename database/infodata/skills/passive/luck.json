@@ -1,0 +1,19 @@
+{
+  "id": "luck",
+  "name": { "pt-br": "Sorte", "en-us": "Luck" },
+  "description": {
+    "pt-br": "O usuário pode utilizar um dado extra sem consequências significativas por dados ruins (exceto em caso de desastre). No entanto, nunca recebe o destino perfeito ao utilizar o dado extra.",
+    "en-us": "The user can use an extra die without significant consequences for bad results (except in case of disaster). However, never receives the perfect outcome when using the extra die."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

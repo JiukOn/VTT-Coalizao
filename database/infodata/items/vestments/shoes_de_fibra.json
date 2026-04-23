@@ -1,0 +1,19 @@
+{
+  "id": "shoes_de_fibra",
+  "name": {
+    "pt-br": "Sapatos de Fibra",
+    "en-us": "Fiber Shoes"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Sapatos feitos de fibra natural.",
+    "en-us": "Shoes made from natural fiber."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 6,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

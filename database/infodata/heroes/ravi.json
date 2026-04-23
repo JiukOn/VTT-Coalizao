@@ -1,0 +1,114 @@
+{
+  "id": "ravi",
+  "name": {
+    "pt-br": "Ravi",
+    "en-us": "Ravi"
+  },
+  "age": 21,
+  "level": 7,
+  "classId": "flow_shooter",
+  "species1": "human",
+  "species2": "",
+  "ouris": 703,
+  "tendencies": {
+    "1": "weapon_modification",
+    "2": "strategy_creation",
+    "3": "sorcery"
+  },
+  "avatar": "ravi.png",
+  "stats": {
+    "multipliers": {
+      "VIT": 1.5,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 2,
+      "RES": 1.5,
+      "PRE": 2,
+      "ENR": 1.5
+    },
+    "stats_base": {
+      "VIT": 6,
+      "DEX": 4,
+      "CRM": 3,
+      "FRC": 4,
+      "INT": 4,
+      "RES": 4,
+      "PRE": 7,
+      "ENR": 8
+    },
+    "stats_add": {
+      "VIT": 0,
+      "DEX": 1,
+      "CRM": 0,
+      "FRC": 2,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 2,
+      "ENR": 6
+    },
+    "stats_remove": {
+      "VIT": 2,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    }
+  },
+  "equipment": {
+    "Head": "iron_helmet",
+    "Face": "mithril_earring",
+    "Neck": "abyss_necklace",
+    "Chest": "plumo_blazer",
+    "Back": "",
+    "Right Hand": "core_beast",
+    "Left Hand": "wrist_crossbow",
+    "Hand Accessories": "",
+    "Legs": "undino_king_leather_pants",
+    "Feet": "thanatos_shoes"
+  },
+  "abilities": {
+    "legacy": "stealth",
+    "active": {
+      "1": "flow_manipulation",
+      "2": "weapon_modification",
+      "3": "sharp_eyes",
+      "4": "killing_fang",
+      "5": "target_shot",
+      "6": "energy_bow"
+    },
+    "passive": {
+      "1": "abyss_gaze",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "history": {
+    "pt-br": "Ficou 4 anos na Coreia e ser um atirador sempre foi algo interessante para ele. Jogava jogos de FPS, gostaria de servir o exército e se tornar um grande perito em armas.",
+    "en-us": "Spent 4 years in Korea and being a shooter was always something interesting to him. Played FPS games, wanted to serve in the military and become a weapons expert."
+  },
+  "auraId": "oppressor",
+  "personalityId": "impetus",
+  "catchphrase": {
+    "pt-br": "Sinta o Pulso da Minha Criação",
+    "en-us": "Feel the Pulse of My Creation",
+    "attribute_id": "enr"
+  },
+  "inventory": {
+    "1": "war_bow",
+    "2": "shadow_potion",
+    "3": "medium_core",
+    "4": "magic_prosthesis",
+    "5": "large_core",
+    "6": "arrows",
+    "7": "special_stick",
+    "8": "notebook",
+    "9": ""
+  },
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "fabrication",
+  "name": { "pt-br": "Fabricação", "en-us": "Fabrication" },
+  "description": {
+    "pt-br": "O usuário é capaz de criar itens de baixa qualidade com materiais simples, desde que tenha aprendizado visual sobre o item. Concede 1 dado bônus nesta ação.",
+    "en-us": "The user can create low-quality items with simple materials, as long as they have visual knowledge about the item. Grants 1 bonus die in this action."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

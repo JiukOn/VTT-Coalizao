@@ -1,0 +1,94 @@
+{
+  "id": "anilso",
+  "type": "Comerciante",
+  "name": {
+    "pt-br": "Anilso",
+    "en-us": "Anilso"
+  },
+  "description": {
+    "pt-br": "Nasceu e cresceu como um criador de frango-cabeça-de-fogo. Juntou dinheiro até os seus 25 anos, com 26 anos se descobriu jogador e alquimista. Abriu sua loja de consumíveis. Criou a pílula 'Cabeça Ardente'.",
+    "en-us": "Grew up as a fire-head-chicken farmer. Saved money until age 25, discovered he was a player and alchemist at 26. Opened his consumables shop. Created the 'Burning Head' pill."
+  },
+  "age": 37,
+  "level": 3,
+  "classId": "alchemist",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 4309,
+  "stats": {
+    "attributes": {
+      "VIT": 5,
+      "DEX": 4,
+      "CRM": 3,
+      "FRC": 1,
+      "INT": 5,
+      "RES": 1,
+      "PRE": 5,
+      "ENR": 2
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "cloth_turban",
+    "Face": "",
+    "Neck": "",
+    "Chest": "tunica",
+    "Back": "",
+    "Right Hand": "metal_jar",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "cloth_pants",
+    "Feet": "fiber_sandal"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "swap",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "resistance_contra_doencas",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "direct",
+  "possibleBenefit": {
+    "pt-br": "Desconto na Loja de Consumíveis.",
+    "en-us": "Discount at the Consumables Shop."
+  },
+  "possibleHarm": {
+    "pt-br": "Elevação do Preço dos Recursos.",
+    "en-us": "Increased Resource Prices."
+  },
+  "inventory": {
+    "1": "pilula_cabeca_ardente",
+    "2": "merchant_record",
+    "3": "verruga_pedrosa",
+    "4": "asa_de_undino",
+    "5": "potion_de_gigantificacao_e",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "cloth_hat",
+  "name": {
+    "pt-br": "Chapeu de Pano",
+    "en-us": "Cloth Hat"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Um chapeu de pano leve.",
+    "en-us": "A light cloth hat."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

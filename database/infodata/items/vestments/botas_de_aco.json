@@ -1,0 +1,19 @@
+{
+  "id": "botas_de_aco",
+  "name": {
+    "pt-br": "Botas de Aço",
+    "en-us": "Botas De Aco"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pé",
+  "description": {
+    "pt-br": "Botas resistentes feitas de aço forjado. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "seismic_shockwave",
+  "name": { "pt-br": "Abalo Sísmico", "en-us": "Seismic Shockwave" },
+  "description": {
+    "pt-br": "Cria uma onda de tremores com diâmetro de 1m a cada 2 pontos de ENR. O dano total é igual à ENR, dividido igualmente entre todos os alvos afetados. Se o teste falhar (1d20 < 16), o usuário perde 1 ENR temporariamente.",
+    "en-us": "Creates a tremor wave 1m in diameter for every 2 ENR points. Total damage equals ENR, split equally among all affected targets. On test failure (1d20 < 16), user temporarily loses 1 ENR."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 4 },
+  "isCustom": false
+}

@@ -1,0 +1,94 @@
+{
+  "id": "walmiro",
+  "type": "Comerciante",
+  "name": {
+    "pt-br": "Walmiro",
+    "en-us": "Walmiro"
+  },
+  "description": {
+    "pt-br": "Abriu seu Hotel quando tinha 32 anos. Se consolidou como o único hoteleiro da cidade dos porcos próximo ao castelo. Tem uma paixão secreta com a Dona Amélia.",
+    "en-us": "Opened his Hotel at age 32. Established himself as the only hotelier near the castle in the City of Pigs. Has a secret infatuation with Dona Amélia."
+  },
+  "age": 67,
+  "level": 1,
+  "classId": "blocked",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 7509,
+  "stats": {
+    "attributes": {
+      "VIT": 3,
+      "DEX": 4,
+      "CRM": 3,
+      "FRC": 2,
+      "INT": 2,
+      "RES": 2,
+      "PRE": 2,
+      "ENR": 0
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "silk_shirt",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "fiber_bracelet",
+    "Legs": "cloth_pants",
+    "Feet": "fiber_sandal"
+  },
+  "abilities": {
+    "legacy": "blocked",
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "proud",
+  "possibleBenefit": {
+    "pt-br": "Estadia VIP no Hotel.",
+    "en-us": "VIP stay at the Hotel."
+  },
+  "possibleHarm": {
+    "pt-br": "Impossibilidade de Estadia no Hotel.",
+    "en-us": "Impossible to stay at the Hotel."
+  },
+  "inventory": {
+    "1": "registro_do_hotel",
+    "2": "balestra_leve",
+    "3": "esferas_de_metal",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

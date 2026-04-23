@@ -1,0 +1,21 @@
+{
+  "id": "aicana_earrings",
+  "name": {
+    "pt-br": "Brincos Aicana",
+    "en-us": "Aicana Earrings"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Brincos tradicionais Aicana. Concedem +1 CRM.",
+    "en-us": "Traditional Aicana earrings. Grant +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 15,
+  "weight": 0,
+  "rarity": "especial",
+  "isCustom": false
+}

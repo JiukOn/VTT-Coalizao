@@ -1,0 +1,21 @@
+{
+  "id": "bracadeira_de_iron",
+  "name": {
+    "pt-br": "Bracelete de Ferro",
+    "en-us": "Iron Bracelet"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mao",
+  "description": {
+    "pt-br": "Um bracelete de ferro resistente. Concede +1 RES.",
+    "en-us": "A sturdy iron bracelet. Grants +1 RES."
+  },
+  "stats": {
+    "res": 1
+  },
+  "damage": "",
+  "price": 15,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

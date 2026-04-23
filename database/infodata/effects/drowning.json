@@ -1,0 +1,19 @@
+{
+  "id": "drowning",
+  "name": {
+    "pt-br": "Afogamento",
+    "en-us": "Drowning"
+  },
+  "description": {
+    "pt-br": "O afetado recebe 1 de dano por turno. A partir do 3º turno, o afetado deve realizar um teste (1d4 > 1); se falhar, ficará sob efeito de 'Desmaio' por 2 turnos.",
+    "en-us": "The affected receives 1 damage per turn. From the 3rd turn, the affected must roll (1d4 > 1); on failure, they will be under 'Unconscious' effect for 2 turns."
+  },
+  "category": "condicao",
+  "type": "condicao",
+  "sub_type": "dano_por_turno",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até amenizar.",
+    "en-us": "Until alleviated."
+  }
+}

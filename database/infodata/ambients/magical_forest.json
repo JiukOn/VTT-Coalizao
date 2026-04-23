@@ -1,0 +1,9 @@
+{
+  "id": "magical_forest",
+  "name": { "pt-br": "Floresta Mágica", "en-us": "Magical Forest" },
+  "description": {
+    "pt-br": "Uma floresta permeada por energia arcana, onde as árvores pulsam com luz e os animais possuem habilidades incomuns.",
+    "en-us": "A forest permeated by arcane energy, where trees pulse with light and animals possess unusual abilities."
+  },
+  "type": { "pt-br": "Ecossistema", "en-us": "Ecosystem" }
+}

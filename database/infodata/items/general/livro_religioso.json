@@ -1,0 +1,19 @@
+{
+  "id": "livro_religioso",
+  "name": {
+    "pt-br": "Livro Religioso",
+    "en-us": "Livro Religioso"
+  },
+  "category": "general",
+  "type": "Item Diverso",
+  "description": {
+    "pt-br": "Um livro de que aumenta a capacidade de convencimento do personagem e pode diminuir temporariamente 1 RES de um alvo se um teste de 1d20 >= 12 for bem-sucedido.",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d20",
+  "price": 0,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

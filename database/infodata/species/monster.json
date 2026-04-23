@@ -1,0 +1,17 @@
+{
+  "id": "monster",
+  "name": {
+    "pt-br": "Monstro",
+    "en-us": "Monster"
+  },
+  "description": {
+    "pt-br": "Seres com características monstruosas que os afastam da normalidade. Possuem atributos físicos elevados, mas sua aparência e natureza criam barreiras sociais significativas.",
+    "en-us": "Beings with monstrous characteristics that set them apart from normality. They possess elevated physical attributes, but their appearance and nature create significant social barriers."
+  },
+  "attributeModifiers": {
+    "vit": 1,
+    "frc": 1,
+    "crm": -2
+  },
+  "isCustom": false
+}

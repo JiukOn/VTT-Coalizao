@@ -1,0 +1,18 @@
+{
+  "id": "giant",
+  "name": {
+    "pt-br": "Gigante",
+    "en-us": "Giant"
+  },
+  "description": {
+    "pt-br": "Seres de estatura e massa corporal muito superiores aos humanos. Possuem força e vitalidade excepcionais, mas sua grande estrutura os torna mais lentos e dificulta movimentos precisos.",
+    "en-us": "Beings of stature and body mass far superior to humans. They possess exceptional strength and vitality, but their large frame makes them slower and hinders precise movements."
+  },
+  "attributeModifiers": {
+    "vit": 2,
+    "frc": 2,
+    "dex": -1,
+    "pre": -1
+  },
+  "isCustom": false
+}

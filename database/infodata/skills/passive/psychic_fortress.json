@@ -1,0 +1,19 @@
+{
+  "id": "psychic_fortress",
+  "name": { "pt-br": "Fortaleza Psíquica", "en-us": "Psychic Fortress" },
+  "description": {
+    "pt-br": "Concede +4 no dado em testes de resistência contra efeitos psicológicos e rola com vantagem se o efeito durar 2 ou mais turnos.",
+    "en-us": "Grants +4 to the die on resistance tests against psychological effects and rolls with advantage if the effect lasts 2 or more turns."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "mental_barrier" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "RES": 6 },
+  "isCustom": false
+}

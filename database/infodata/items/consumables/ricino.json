@@ -1,0 +1,19 @@
+{
+  "id": "ricino",
+  "name": {
+    "pt-br": "Ricino",
+    "en-us": "Ricino"
+  },
+  "category": "consumables",
+  "type": "Veneno",
+  "description": {
+    "pt-br": "Um veneno forte que causa 1d4 - 1 de dano de VIT a cada turno.",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 - 1",
+  "price": 0,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,12 @@
+{
+  "id": "weapon_modification",
+  "name": {
+    "pt-br": "Modificacoes_de_arma",
+    "en-us": "Weapon Modification"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

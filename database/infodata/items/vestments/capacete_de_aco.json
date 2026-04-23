@@ -1,0 +1,19 @@
+{
+  "id": "capacete_de_aco",
+  "name": {
+    "pt-br": "Capacete de Aço",
+    "en-us": "Capacete De Aco"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeça",
+  "description": {
+    "pt-br": "Capacete forjado em aço, resistente e durável. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

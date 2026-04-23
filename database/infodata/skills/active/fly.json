@@ -1,0 +1,19 @@
+{
+  "id": "fly",
+  "name": { "pt-br": "Voar", "en-us": "Fly" },
+  "description": {
+    "pt-br": "Permite ao usuário voar até 6m de altura por 2 turnos. Recarrega em 1 turno.",
+    "en-us": "Allows the user to fly up to 6m high for 2 turns. Recharges in 1 turn."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 2,
+  "turns_cooldown": 1,
+  "requirements": { "ENR": 5 },
+  "isCustom": false
+}

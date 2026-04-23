@@ -1,0 +1,19 @@
+{
+  "id": "bag_de_pano",
+  "name": {
+    "pt-br": "Bolsa de Pano",
+    "en-us": "Cloth Bag"
+  },
+  "category": "general",
+  "type": "Item Geral",
+  "description": {
+    "pt-br": "Uma bolsa simples de pano.",
+    "en-us": "A simple cloth bag."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

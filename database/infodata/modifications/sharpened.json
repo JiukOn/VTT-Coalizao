@@ -1,0 +1,11 @@
+{
+  "id": "sharpened",
+  "name": { "pt-br": "Afiado", "en-us": "Sharpened" },
+  "description": {
+    "pt-br": "Aumenta a capacidade de corte do item. Eleva o dano de ataques cortantes em +1. Exclusivo para Armas Cortantes.",
+    "en-us": "Increases the item's cutting capacity. Raises slashing attack damage by +1. Exclusive to Slashing Weapons."
+  },
+  "category": "ofensivo",
+  "applicableTo": ["weapon"],
+  "attribute_modifiers": { "attribute": "slashing_damage", "value": "+1" }
+}

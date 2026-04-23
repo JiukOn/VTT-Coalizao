@@ -1,0 +1,22 @@
+{
+  "id": "anel_mahil_pya",
+  "name": {
+    "pt-br": "Anel Mahil Pya",
+    "en-us": "Anel Mahil Pya"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mãos / Acessório das Mãos",
+  "description": {
+    "pt-br": "Um item Sentimental de alta durabilidade que confere +4 ENR e +2 RES. Possui a modificação Vigoroso, permitindo, uma vez por dia, realizar um teste (1d20 > 18) para remover um efeito psicológico de nível 1 ou 2 permanentemente. .",
+    "en-us": ""
+  },
+  "stats": {
+    "res": 2,
+    "enr": 4
+  },
+  "damage": "1d20",
+  "price": 20,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

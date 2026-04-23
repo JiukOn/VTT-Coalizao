@@ -1,0 +1,114 @@
+{
+  "id": "fifo_zante",
+  "name": {
+    "pt-br": "Fifo Zante",
+    "en-us": "Fifo Zante"
+  },
+  "age": 20,
+  "level": 5,
+  "classId": "synchronizer",
+  "species1": "human",
+  "species2": "",
+  "ouris": 333,
+  "tendencies": {
+    "1": "combat_tactics",
+    "2": "medicine",
+    "3": "nerd"
+  },
+  "avatar": "fifo.png",
+  "stats": {
+    "multipliers": {
+      "VIT": 2,
+      "DEX": 1.5,
+      "CRM": 2,
+      "FRC": 1.5,
+      "INT": 2.5,
+      "RES": 1.5,
+      "PRE": 1,
+      "ENR": 0
+    },
+    "stats_base": {
+      "VIT": 8,
+      "DEX": 4,
+      "CRM": 5,
+      "FRC": 4,
+      "INT": 6,
+      "RES": 4,
+      "PRE": 2,
+      "ENR": 0
+    },
+    "stats_add": {
+      "VIT": 1,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 11,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 7,
+      "ENR": 1
+    },
+    "stats_remove": {
+      "VIT": 0,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    }
+  },
+  "equipment": {
+    "Head": "bone_helmet",
+    "Face": "",
+    "Neck": "",
+    "Chest": "bone_chestplate",
+    "Back": "",
+    "Right Hand": "twin_daggers_water",
+    "Left Hand": "twin_daggers_fire",
+    "Hand Accessories": "cornara_glove",
+    "Legs": "inoue_leather_pants",
+    "Feet": "crocohog_shoes"
+  },
+  "abilities": {
+    "legacy": "prey_habit",
+    "active": {
+      "1": "blade_skill",
+      "2": "best_moments",
+      "3": "heat_wave",
+      "4": "blood_pact",
+      "5": "elemental_resistance",
+      "6": "synchrony"
+    },
+    "passive": {
+      "1": "accelerate",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "history": {
+    "pt-br": "Gosta de ler Ficção, estudava táticas de guerra, estava se formando em medicina veterinária. Tenta sempre adquirir novos conhecimentos, é uma pessoa divertida.",
+    "en-us": "Likes reading fiction, studied war tactics, was graduating in veterinary medicine. Always tries to acquire new knowledge, a fun person."
+  },
+  "auraId": "inspiration",
+  "personalityId": "conscience",
+  "catchphrase": {
+    "pt-br": "Hora da caça!",
+    "en-us": "Time for the hunt!",
+    "attribute_id": "frc"
+  },
+  "inventory": {
+    "1": "undefined_egg",
+    "2": "hatchet",
+    "3": "strength_potion",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

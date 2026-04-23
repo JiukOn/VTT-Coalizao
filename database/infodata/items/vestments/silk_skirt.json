@@ -1,0 +1,21 @@
+{
+  "id": "silk_skirt",
+  "name": {
+    "pt-br": "Saia de Seda",
+    "en-us": "Silk Skirt"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Uma saia de seda. Concede +1 CRM.",
+    "en-us": "A silk skirt. Grants +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 15,
+  "weight": 1,
+  "rarity": "sentimental",
+  "isCustom": false
+}

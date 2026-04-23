@@ -1,0 +1,12 @@
+{
+  "id": "wood",
+  "name": {
+    "pt-br": "Madeira",
+    "en-us": "Wood"
+  },
+  "description": {
+    "pt-br": "Força vital da natureza, representando crescimento, vida e resiliência.",
+    "en-us": "Life force of nature, representing growth, life, and resilience."
+  },
+  "weak_against": "fire"
+}

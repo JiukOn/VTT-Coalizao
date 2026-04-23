@@ -1,0 +1,9 @@
+{
+  "id": "arcane_highlands",
+  "name": { "pt-br": "Planaltos Arcanos", "en-us": "Arcane Highlands" },
+  "description": {
+    "pt-br": "Bioma de altitude elevada permeado por energia mágica, onde as leis naturais se comportam de forma imprevisível. Elemento predominante: Energia Pura.",
+    "en-us": "High-altitude biome permeated by magical energy, where natural laws behave unpredictably. Predominant element: Pure Energy."
+  },
+  "type": { "pt-br": "Bioma Mágico", "en-us": "Magical Biome" }
+}

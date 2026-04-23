@@ -1,0 +1,19 @@
+{
+  "id": "magic_book_skill",
+  "name": { "pt-br": "Livro Mágico", "en-us": "Magic Book" },
+  "description": {
+    "pt-br": "O usuário pode mostrar a ficha de qualquer ser vivo que esteja em um nível igual ou menor ao seu próprio.",
+    "en-us": "The user can show the sheet of any living being at a level equal to or lower than their own."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "recorder" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

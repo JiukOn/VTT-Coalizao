@@ -1,0 +1,21 @@
+{
+  "id": "cornaira_glove",
+  "name": {
+    "pt-br": "Luva Cornaira",
+    "en-us": "Cornaira Glove"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mao",
+  "description": {
+    "pt-br": "Luvas feitas do couro da Cornara. Concedem +1 DEX.",
+    "en-us": "Gloves made from Cornara leather. Grant +1 DEX."
+  },
+  "stats": {
+    "dex": 1
+  },
+  "damage": "",
+  "price": 20,
+  "weight": 0,
+  "rarity": "especial",
+  "isCustom": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "bone_chestplate",
+  "name": {
+    "pt-br": "Peitoral de Ossos",
+    "en-us": "Bone Chestplate"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Corpo",
+  "description": {
+    "pt-br": "Peitoral robusto, feito de ossos reforçados, fortalece seu usuário (+2 FRC). Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
+    "en-us": ""
+  },
+  "stats": {
+    "frc": 2
+  },
+  "damage": "",
+  "price": 6,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

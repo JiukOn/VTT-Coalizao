@@ -1,0 +1,19 @@
+{
+  "id": "binding_tome",
+  "name": { "pt-br": "Tomo Vinculativo", "en-us": "Binding Tome" },
+  "description": {
+    "pt-br": "O usuário pode escrever o nome de um personagem previamente conhecido em seu Livro Mágico. Teste (1d20 > 12): se bem-sucedido, recebe +2 nos dados de interação com o alvo e pode sentir sua presença em até 1km.",
+    "en-us": "The user can write the name of a previously known character in their Magic Book. Test (1d20 > 12): if successful, receives +2 on interaction dice with the target and can sense their presence up to 1km away."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "curious" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "INT": 8 },
+  "isCustom": false
+}

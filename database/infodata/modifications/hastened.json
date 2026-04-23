@@ -1,0 +1,11 @@
+{
+  "id": "hastened",
+  "name": { "pt-br": "Apressado", "en-us": "Hastened" },
+  "description": {
+    "pt-br": "As ações ofensivas adquirem o elemento Tempo. Pode causar o efeito 'Envelhecer' se o teste (1d20 > 1d20 + VIT do alvo) for bem-sucedido.",
+    "en-us": "Offensive actions gain the Time element. Can cause the 'Aging' effect if test (1d20 > 1d20 + target VIT) succeeds."
+  },
+  "category": "elemental",
+  "applicableTo": ["weapon"],
+  "attribute_modifiers": { "attribute": "element", "value": "time" }
+}

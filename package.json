@@ -8,11 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "node server/index.js",
-    "server:dev": "node --watch server/index.js",
-    "start": "node server/index.js",
-    "relay": "node relay/index.js",
-    "relay:dev": "node --watch relay/index.js"
+    "server": "node host/server/index.js",
+    "server:dev": "node --watch host/server/index.js",
+    "start": "node host/server/index.js",
+    "relay": "node host/relay/index.js",
+    "relay:dev": "node --watch host/relay/index.js"
   },
   "dependencies": {
     "dexie": "^4.4.2",

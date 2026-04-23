@@ -1,0 +1,23 @@
+{
+  "id": "synchronizer",
+  "name": {
+    "pt-br": "Sincronizador",
+    "en-us": "Synchronizer"
+  },
+  "description": {
+    "pt-br": "Um combatente que sincroniza seus movimentos e habilidades com os de seus aliados, amplificando o potencial de toda a equipe. Mestre em combinar força e inteligência táticas.",
+    "en-us": "A combatant who synchronizes movements and abilities with allies, amplifying the entire team's potential. Master at combining strength and tactical intelligence."
+  },
+  "multipliers": {
+    "vit": 2,
+    "dex": 1.5,
+    "crm": 2,
+    "frc": 1.5,
+    "int": 2.5,
+    "res": 1.5,
+    "pre": 1,
+    "enr": 0
+  },
+  "legacyAbilityId": "synchrony",
+  "isCustom": false
+}

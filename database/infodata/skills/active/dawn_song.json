@@ -1,0 +1,19 @@
+{
+  "id": "dawn_song",
+  "name": { "pt-br": "Canção da Aurora", "en-us": "Dawn Song" },
+  "description": {
+    "pt-br": "O usuário entoa uma melodia ancestral. Se o teste (1d20 + CRM > 14) for bem-sucedido, o alvo recupera 1d4 de VIT. Não pode ter o próprio usuário como alvo. O alvo precisa estar consciente. Recarrega em 3 turnos. Se (1d20 > 16) falhar, perde 1 ENR temporariamente.",
+    "en-us": "The user intones an ancestral melody. If test (1d20 + CRM > 14) succeeds, the target recovers 1d4 VIT. Cannot target the user. The target must be conscious. Recharges in 3 turns. If (1d20 > 16) fails, loses 1 ENR temporarily."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": 3,
+  "requirements": { "ENR": 4 },
+  "isCustom": false
+}

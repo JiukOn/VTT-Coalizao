@@ -1,0 +1,19 @@
+{
+  "id": "ink_bottle",
+  "name": {
+    "pt-br": "Frasco de Tinta",
+    "en-us": "Ink Bottle"
+  },
+  "category": "general",
+  "type": "Material",
+  "description": {
+    "pt-br": "Um frasco de tinta preta para escrever.",
+    "en-us": "A bottle of black ink for writing."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "training_chestplate",
+  "name": {
+    "pt-br": "Peitoral de Treino",
+    "en-us": "Training Chestplate"
+  },
+  "category": "general",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Um peitoral de treinamento sem resistencia real.",
+    "en-us": "A training breastplate with no real resistance."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 15,
+  "weight": 2,
+  "rarity": "comum",
+  "isCustom": false
+}

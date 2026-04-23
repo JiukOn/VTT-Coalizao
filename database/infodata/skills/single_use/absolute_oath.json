@@ -1,0 +1,19 @@
+{
+  "id": "absolute_oath",
+  "name": { "pt-br": "Juramento Absoluto", "en-us": "Absolute Oath" },
+  "description": {
+    "pt-br": "Ativável em estado de quase morte. O usuário cria um juramento inquebrável; por 3 turnos fica desmaiado mas sua VIT se mantém em 1 e não pode ser alterada negativamente. Ao fim, perde permanentemente 1 ponto de VIT base e a habilidade desaparece. Requer aprovação do Mestre.",
+    "en-us": "Activatable in near-death state. The user creates an unbreakable oath; for 3 turns they are unconscious but VIT remains at 1 and cannot be negatively altered. At the end, permanently loses 1 base VIT point and the skill disappears. Requires Master approval."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": true,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": { "RES": 6 },
+  "isCustom": false
+}

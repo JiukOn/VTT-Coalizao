@@ -1,0 +1,94 @@
+{
+  "id": "histund_the_bodyguard",
+  "type": "Guarda",
+  "name": {
+    "pt-br": "Histund, O Guarda-Costas",
+    "en-us": "Histund, The Bodyguard"
+  },
+  "description": {
+    "pt-br": "Desde que era criança ele sonhava em se tornar guarda da cidade dos porcos. Ele acredita nas palavras do Lorde, acredita que ele será o seu salvador. Apesar de nunca ter efetuado uma prisão, ele já entrou em diversas brigas na feira.",
+    "en-us": "Since childhood he dreamed of becoming a city guard. He believes in the Lord's words, believing he will be his savior. Despite never making an arrest, he has gotten into many fights at the fair."
+  },
+  "age": 29,
+  "level": 2,
+  "classId": "blocked",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 870,
+  "stats": {
+    "attributes": {
+      "VIT": 2,
+      "DEX": 2,
+      "CRM": 2,
+      "FRC": 6,
+      "INT": 3,
+      "RES": 4,
+      "PRE": 3,
+      "ENR": 0
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "chapeu_de_leather",
+    "Face": "",
+    "Neck": "",
+    "Chest": "colete_de_leather_de_wolf",
+    "Back": "",
+    "Right Hand": "sword_de_iron",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "calca_de_leather",
+    "Feet": "leather_shoes"
+  },
+  "abilities": {
+    "legacy": "blocked",
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "loyal",
+  "possibleBenefit": {
+    "pt-br": "Informações sobre a cidade.",
+    "en-us": "Information about the city."
+  },
+  "possibleHarm": {
+    "pt-br": "Os guardas prestarão atenção em você.",
+    "en-us": "The guards will pay attention to you."
+  },
+  "inventory": {
+    "1": "bati_fruit",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

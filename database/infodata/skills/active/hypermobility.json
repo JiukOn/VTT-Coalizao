@@ -1,0 +1,19 @@
+{
+  "id": "hypermobility",
+  "name": { "pt-br": "Hipermobilidade", "en-us": "Hypermobility" },
+  "description": {
+    "pt-br": "Aumenta +4 DEX por 3 turnos. O usuário pode agir duas vezes no primeiro turno de ativação. Se (1d20 > 16) falhar, perde 2 ENR temporariamente. Para reativar: 1d20 > 18.",
+    "en-us": "Increases DEX by +4 for 3 turns. The user can act twice on the first activation turn. If (1d20 > 16) fails, loses 2 ENR temporarily. To reactivate: 1d20 > 18."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "accelerate" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": { "DEX": 8, "ENR": 3 },
+  "isCustom": false
+}

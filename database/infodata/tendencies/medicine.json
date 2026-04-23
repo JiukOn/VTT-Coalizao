@@ -1,0 +1,12 @@
+{
+  "id": "medicine",
+  "name": {
+    "pt-br": "Medicina",
+    "en-us": "Medicine"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "combat_trigger",
+  "name": { "pt-br": "Gatilho de Combate", "en-us": "Combat Trigger" },
+  "description": {
+    "pt-br": "Após sofrer dano por 3 turnos consecutivos sem causar dano, o usuário entra em estado de foco bruto: +4 FRC, -2 CRM até o fim do combate. Ativa-se apenas uma vez por combate.",
+    "en-us": "After receiving damage for 3 consecutive turns without dealing damage, the user enters a raw focus state: +4 FRC, -2 CRM until end of combat. Activates only once per combat."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "VIT": 8 },
+  "isCustom": false
+}

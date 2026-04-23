@@ -1,0 +1,21 @@
+{
+  "id": "brinco_de_gold",
+  "name": {
+    "pt-br": "Brinco de Ouro",
+    "en-us": "Gold Earring"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Um brinco fino de ouro. Concede +1 CRM.",
+    "en-us": "A fine gold earring. Grants +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 20,
+  "weight": 0,
+  "rarity": "sentimental",
+  "isCustom": false
+}

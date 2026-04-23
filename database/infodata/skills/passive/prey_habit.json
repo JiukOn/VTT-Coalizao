@@ -1,0 +1,19 @@
+{
+  "id": "prey_habit",
+  "name": { "pt-br": "Costume de Presa", "en-us": "Prey Habit" },
+  "description": {
+    "pt-br": "O usuário pode perceber criaturas hostis antes de ser atingido.",
+    "en-us": "The user can perceive hostile creatures before being hit."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

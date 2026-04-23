@@ -1,0 +1,19 @@
+{
+  "id": "aimed_shot",
+  "name": { "pt-br": "Tiro ao Alvo", "en-us": "Aimed Shot" },
+  "description": {
+    "pt-br": "Aumenta 1 de dano a longa distância utilizando armas com munição por 2 turnos. Para reativar na mesma situação: 1d20 > 16.",
+    "en-us": "Increases ranged damage by 1 using ammunition weapons for 2 turns. To reactivate in the same situation: 1d20 > 16."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "archer" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 2,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

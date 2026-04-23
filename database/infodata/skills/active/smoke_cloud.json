@@ -1,0 +1,19 @@
+{
+  "id": "smoke_cloud",
+  "name": { "pt-br": "Nuvem de Fumaça", "en-us": "Smoke Cloud" },
+  "description": {
+    "pt-br": "Espalha uma neblina ao redor do usuário que diminui a visibilidade. Impõe -1 nos dados de percepção de todos os envolvidos. Recarrega em 2 turnos.",
+    "en-us": "Spreads a haze around the user that decreases visibility. Imposes -1 on all involved parties' perception dice. Recharges in 2 turns."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": 2,
+  "requirements": { "ENR": 4 },
+  "isCustom": false
+}

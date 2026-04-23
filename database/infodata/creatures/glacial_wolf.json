@@ -1,0 +1,90 @@
+{
+  "id": "glacial_wolf",
+  "name": {
+    "pt-br": "Lobo Glacial",
+    "en-us": "Glacial Wolf"
+  },
+  "description": {
+    "pt-br": "Um grande canino com forte olfato. É capaz de congelar o ambiente. Costuma andar em bandos de até 3 lobos, com um chefe.",
+    "en-us": "A large canine with a strong sense of smell. Capable of freezing the environment. Usually in packs of up to 3 wolves."
+  },
+  "element": "ice",
+  "size": "medium",
+  "coreSize": "médio",
+  "diet": "carnívoro",
+  "imagePath": "Criatura/LoboGlacial.jpeg",
+  "level": 4,
+  "attributes": {
+    "VIT": 8,
+    "DEX": 5,
+    "CRM": 5,
+    "FRC": 6,
+    "INT": 3,
+    "RES": 1,
+    "PRE": 3,
+    "ENR": 3
+  },
+  "abilities": {
+    "active": {
+      "1": "bloodhound_sense",
+      "2": "bite",
+      "3": "freeze",
+      "4": "ice_resistance"
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "wolf_leather",
+      "chance": "100%",
+      "amount": 2
+    },
+    "2": {
+      "item": "wolf_fangs",
+      "chance": "100%",
+      "amount": 2
+    },
+    "3": {
+      "item": "canine_congelante",
+      "chance": "100%",
+      "amount": 2
+    },
+    "4": {
+      "item": "blood_blue",
+      "chance": "100%",
+      "amount": 2
+    },
+    "5": {
+      "item": "medium_core",
+      "chance": "100%",
+      "amount": 1
+    },
+    "6": {
+      "item": "book_h_freeze",
+      "chance": "100%",
+      "amount": 1
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "adhd",
+  "name": {
+    "pt-br": "TDAH",
+    "en-us": "ADHD"
+  },
+  "description": {
+    "pt-br": "Se 1d4 <= 2 o afetado pode perder o controle de suas ações. O personagem se torna incapaz de entender o que está fazendo e como as coisas estão acontecendo de maneira clara.",
+    "en-us": "If 1d4 <= 2, the affected may lose control of their actions. The character becomes unable to clearly understand what they are doing and how things are happening."
+  },
+  "category": "psicologico_ativo",
+  "type": "psicologico_ativo",
+  "sub_type": "controle_de_acao",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 16 a partir do 2º turno.",
+    "en-us": "1d20 + RES > 16 from 2nd turn."
+  }
+}

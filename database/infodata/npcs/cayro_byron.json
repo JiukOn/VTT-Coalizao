@@ -1,0 +1,94 @@
+{
+  "id": "cayro_byron",
+  "type": "Neutro",
+  "name": {
+    "pt-br": "Cayro Byron",
+    "en-us": "Cayro Byron"
+  },
+  "description": {
+    "pt-br": "É o filho mais velho da família Byron. Foi atacado pela doença florada. Foi curado pelos heróis e se tornou um ser vegetalizado.",
+    "en-us": "The oldest son of the Byron family. Was attacked by the flower disease. Was cured by the heroes and became a vegetalized being."
+  },
+  "age": 54,
+  "level": 6,
+  "classId": "vegetal",
+  "species1": "human",
+  "species2": "plant",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 9745,
+  "stats": {
+    "attributes": {
+      "VIT": 15,
+      "DEX": 8,
+      "CRM": 3,
+      "FRC": 11,
+      "INT": 2,
+      "RES": 3,
+      "PRE": 2,
+      "ENR": 8
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "colete_de_leather",
+    "Back": "",
+    "Right Hand": "sword_de_steel",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "fabric_pants",
+    "Feet": "boots_de_leather_de_equilliz"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "vegetalizacao",
+      "2": "envenenamento_ricino",
+      "3": "distorcer_aparencia",
+      "4": "barreira_de_vinhas",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "regeneration",
+      "2": "fotossintese",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "inhuman",
+  "possibleBenefit": {
+    "pt-br": "Ganha Desconto na Taverna.",
+    "en-us": "Gains a Discount at the Tavern."
+  },
+  "possibleHarm": {
+    "pt-br": "Não entra na taverna.",
+    "en-us": "Cannot enter the tavern."
+  },
+  "inventory": {
+    "1": "scroll_oraculo",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

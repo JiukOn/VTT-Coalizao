@@ -1,0 +1,9 @@
+{
+  "id": "temperate_plains",
+  "name": { "pt-br": "Planícies Temperadas", "en-us": "Temperate Plains" },
+  "description": {
+    "pt-br": "Bioma de campos abertos com clima ameno, ventos constantes e vegetação rasteira. Favorece criaturas ágeis e de médio porte.",
+    "en-us": "Open plains biome with mild climate, constant winds, and low vegetation. Favors agile and medium-sized creatures."
+  },
+  "type": { "pt-br": "Bioma Natural", "en-us": "Natural Biome" }
+}

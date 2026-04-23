@@ -1,0 +1,19 @@
+{
+  "id": "chord",
+  "name": { "pt-br": "Acorde", "en-us": "Chord" },
+  "description": {
+    "pt-br": "Ao tocar uma melodia específica, o usuário concede +1 em dois atributos escolhidos por 2 turnos para o alvo. Exige 1d20 > 16 para cada tentativa de uso após a finalização dos primeiros efeitos na situação atual.",
+    "en-us": "By playing a specific melody, the user grants +1 in two chosen attributes for 2 turns to the target. Requires 1d20 > 16 for each use attempt after the first effects end in the current situation."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "bard" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 2,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

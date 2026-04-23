@@ -1,0 +1,19 @@
+{
+  "id": "botas_de_ossos",
+  "name": {
+    "pt-br": "Botas de Ossos",
+    "en-us": "Botas De Ossos"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pé",
+  "description": {
+    "pt-br": "Botas feitas de ossos, duráveis e imponentes. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,10 @@
+{
+  "id": "ganodonte_leather",
+  "name": {
+    "pt-br": "Couro De Ganodonte",
+    "en-us": "Ganodonte Leather"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "vareta_especial",
+  "name": {
+    "pt-br": "Vareta Especial",
+    "en-us": "Vareta Especial"
+  },
+  "category": "general",
+  "type": "Item Mágico",
+  "description": {
+    "pt-br": "Um item especial que fornece +1 PRE. Possui a modificação Imbuídor, que possui uma ligação intrínseca com a energia essencial, permitindo-lhe receber e canalizá-la. .",
+    "en-us": ""
+  },
+  "stats": {
+    "pre": 1
+  },
+  "damage": "",
+  "price": 10,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

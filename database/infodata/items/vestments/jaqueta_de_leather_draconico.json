@@ -1,0 +1,22 @@
+{
+  "id": "jaqueta_de_leather_draconico",
+  "name": {
+    "pt-br": "Jaqueta de Couro Draconico",
+    "en-us": "Draconic Leather Jacket"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Jaqueta de couro draconico. Concede +2 RES e +1 ENR.",
+    "en-us": "Draconic leather jacket. Grants +2 RES and +1 ENR."
+  },
+  "stats": {
+    "res": 2,
+    "enr": 1
+  },
+  "damage": "",
+  "price": 60,
+  "weight": 2,
+  "rarity": "especial",
+  "isCustom": false
+}

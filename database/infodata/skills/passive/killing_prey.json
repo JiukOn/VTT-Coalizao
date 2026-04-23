@@ -1,0 +1,19 @@
+{
+  "id": "killing_prey",
+  "name": { "pt-br": "Presa que Mata", "en-us": "Killing Prey" },
+  "description": {
+    "pt-br": "O usuário pode perceber criaturas hostis e contra-atacar com acerto garantido antes de ser atingido.",
+    "en-us": "The user can perceive hostile creatures and counter-attack with a guaranteed hit before being struck."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "prey_habit" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "wolf_leather_hat",
+  "name": {
+    "pt-br": "Chapeu de Couro de Lobo",
+    "en-us": "Wolf Leather Hat"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Chapeu feito com o couro de um lobo. Concede +1 DEX.",
+    "en-us": "Hat made from wolf leather. Grants +1 DEX."
+  },
+  "stats": {
+    "dex": 1
+  },
+  "damage": "",
+  "price": 18,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

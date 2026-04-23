@@ -1,0 +1,10 @@
+{
+  "id": "moriu_feather",
+  "name": {
+    "pt-br": "Pena De Moriu",
+    "en-us": "Moriu Feather"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

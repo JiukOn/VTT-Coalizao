@@ -1,0 +1,9 @@
+{
+  "id": "snowy_forest",
+  "name": { "pt-br": "Floresta Nevada", "en-us": "Snowy Forest" },
+  "description": {
+    "pt-br": "Uma floresta coberta por neve perene, onde o silêncio é interrompido apenas pelo farfalhar das folhas congeladas.",
+    "en-us": "A forest covered in perennial snow, where silence is only broken by the rustling of frozen leaves."
+  },
+  "type": { "pt-br": "Ecossistema", "en-us": "Ecosystem" }
+}

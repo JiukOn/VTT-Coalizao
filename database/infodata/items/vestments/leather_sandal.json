@@ -1,0 +1,19 @@
+{
+  "id": "leather_sandal",
+  "name": {
+    "pt-br": "Sandalia de Couro",
+    "en-us": "Leather Sandal"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Sandalias de couro.",
+    "en-us": "Leather sandals."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 8,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

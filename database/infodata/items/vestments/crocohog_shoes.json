@@ -1,0 +1,19 @@
+{
+  "id": "crocohog_shoes",
+  "name": {
+    "pt-br": "Sapatos Crocohog",
+    "en-us": "Crocohog Shoes"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Sapatos robustos feitos do couro do Crocohog.",
+    "en-us": "Sturdy shoes made from Crocohog leather."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 15,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

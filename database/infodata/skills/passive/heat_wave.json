@@ -1,0 +1,19 @@
+{
+  "id": "heat_wave",
+  "name": { "pt-br": "Onda de Calor", "en-us": "Heat Wave" },
+  "description": {
+    "pt-br": "Cria uma área de calor intenso em momentos críticos, causando 1 de dano do elemento Fogo por turno, escalando com a proximidade ao usuário. Se o usuário não possuir Resistência Elemental ao Fogo, sofrerá combustão espontânea.",
+    "en-us": "Creates an area of intense heat in critical moments, dealing 1 Fire element damage per turn, scaling with proximity to the user. If the user lacks Elemental Resistance to Fire, they suffer spontaneous combustion."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

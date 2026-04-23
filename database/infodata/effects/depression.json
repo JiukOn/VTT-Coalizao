@@ -1,0 +1,19 @@
+{
+  "id": "depression",
+  "name": {
+    "pt-br": "Depressivo",
+    "en-us": "Depression"
+  },
+  "description": {
+    "pt-br": "O afetado toma decisões que maleficiam a si próprio e recebe -2 CRM temporariamente.",
+    "en-us": "The affected makes decisions that harm themselves and temporarily receives -2 CRM."
+  },
+  "category": "psicologico_ativo",
+  "type": "psicologico_ativo",
+  "sub_type": "penalidade_social",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 16 a partir do 2º turno.",
+    "en-us": "1d20 + RES > 16 from 2nd turn."
+  }
+}

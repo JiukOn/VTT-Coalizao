@@ -1,0 +1,19 @@
+{
+  "id": "shoes",
+  "name": {
+    "pt-br": "Sapatos",
+    "en-us": "Shoes"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Um par de sapatos simples.",
+    "en-us": "A pair of simple shoes."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 8,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

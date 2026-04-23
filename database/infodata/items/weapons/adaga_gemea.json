@@ -1,0 +1,22 @@
+{
+  "id": "adaga_gemea",
+  "name": {
+    "pt-br": "Adaga Gêmea",
+    "en-us": "Adaga Gemea"
+  },
+  "category": "weapons",
+  "type": "Fogo) (Arma",
+  "description": {
+    "pt-br": "Item pequeno e leve de alta durabilidade, que conferem +3 FRC e +4 PRE. Causam 1d4 + 2 de dano. Possui a modificação Quente, fazendo seus ataques adquirirem o elemento Fogo e poderem causar Queimadura. .",
+    "en-us": ""
+  },
+  "stats": {
+    "frc": 3,
+    "pre": 4
+  },
+  "damage": "1d4 + 2",
+  "price": 25,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

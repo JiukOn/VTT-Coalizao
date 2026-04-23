@@ -1,0 +1,10 @@
+{
+  "id": "blue_blood",
+  "name": {
+    "pt-br": "Sangue Azul",
+    "en-us": "Blue Blood"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

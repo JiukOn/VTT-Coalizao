@@ -1,0 +1,12 @@
+{
+  "id": "calculation",
+  "name": {
+    "pt-br": "Calculo",
+    "en-us": "Calculation"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

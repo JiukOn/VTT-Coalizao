@@ -1,0 +1,19 @@
+{
+  "id": "silent_agreement",
+  "name": { "pt-br": "Acordo Silencioso", "en-us": "Silent Agreement" },
+  "description": {
+    "pt-br": "Sempre que o usuário estiver em modo furtivo, recebe +2 CRM para interações e testes envolvendo disfarce ou mentira.",
+    "en-us": "Whenever the user is in stealth mode, receives +2 CRM for interactions and tests involving disguise or lying."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "DEX": 3, "CRM": 2 },
+  "isCustom": false
+}

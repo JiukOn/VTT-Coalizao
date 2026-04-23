@@ -1,0 +1,19 @@
+{
+  "id": "compilation",
+  "name": { "pt-br": "Compilação", "en-us": "Compilation" },
+  "description": {
+    "pt-br": "O usuário pode compreender acontecimentos e fatos com maior facilidade, ganhando +1 no dado para aprender algo.",
+    "en-us": "The user can understand events and facts more easily, gaining +1 to the die when learning something."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "underground",
+  "name": { "pt-br": "Subterrâneo", "en-us": "Underground" },
+  "description": {
+    "pt-br": "Um vasto sistema de cavernas e túneis habitados por criaturas adaptadas à escuridão e civilizações que fugiram da superfície.",
+    "en-us": "A vast system of caves and tunnels inhabited by darkness-adapted creatures and civilizations that fled the surface."
+  },
+  "type": { "pt-br": "Civilização", "en-us": "Civilization" }
+}

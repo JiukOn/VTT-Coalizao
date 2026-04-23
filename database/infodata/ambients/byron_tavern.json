@@ -1,0 +1,9 @@
+{
+  "id": "byron_tavern",
+  "name": { "pt-br": "Taverna Byron", "en-us": "Byron Tavern" },
+  "description": {
+    "pt-br": "Uma famosa taverna no cruzamento de rotas comerciais, ponto de encontro de aventureiros, mercadores e informantes.",
+    "en-us": "A famous tavern at the crossroads of trade routes, meeting point for adventurers, merchants, and informants."
+  },
+  "type": { "pt-br": "Civilização", "en-us": "Civilization" }
+}

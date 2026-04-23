@@ -1,0 +1,10 @@
+{
+  "id": "ganodonte_ivory",
+  "name": {
+    "pt-br": "Marfim De Ganodonte",
+    "en-us": "Ganodonte Ivory"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

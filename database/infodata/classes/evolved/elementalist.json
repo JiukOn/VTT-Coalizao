@@ -1,0 +1,23 @@
+{
+  "id": "elementalist",
+  "name": {
+    "pt-br": "Elementalista",
+    "en-us": "Elementalist"
+  },
+  "description": {
+    "pt-br": "Um mago especializado no domínio de elementos primordiais como fogo, água, gelo e relâmpago. Canaliza enormes quantidades de energia para ataques devastadores.",
+    "en-us": "A mage specialized in mastering primordial elements like fire, water, ice, and lightning. Channels enormous amounts of energy for devastating attacks."
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1.5,
+    "crm": 1,
+    "frc": 1,
+    "int": 2,
+    "res": 1.5,
+    "pre": 1.5,
+    "enr": 2.5
+  },
+  "legacyAbilityId": "evoke_energy",
+  "isCustom": false
+}

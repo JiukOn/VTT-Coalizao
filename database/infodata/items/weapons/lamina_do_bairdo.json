@@ -1,0 +1,19 @@
+{
+  "id": "lamina_do_bairdo",
+  "name": {
+    "pt-br": "Lâmina do Bardo",
+    "en-us": "Lamina Do Bardo"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma lâmina de tamanho médio que produz sons musicais quando usada em batalha. Causa 1d4 + 1 de dano. Possui a modificação Barulhento, emitindo sons notáveis que podem desorientar oponentes e causar confusão. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 + 1",
+  "price": 15,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

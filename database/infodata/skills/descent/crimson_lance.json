@@ -1,0 +1,19 @@
+{
+  "id": "crimson_lance",
+  "name": { "pt-br": "Lança Carmesim", "en-us": "Crimson Lance" },
+  "description": {
+    "pt-br": "O usuário conjura uma lança de sangue de elemento Maligno que causa 2d4-2 de dano perfurante. Ao criar a lança, perde 2 VIT temporariamente. Se matar um alvo com ela, recupera 1 VIT e ganha +1 PRE até o fim do combate. A lança existe por 3 turnos. Para reativar: 1d20 > 18.",
+    "en-us": "The user conjures a blood lance of Malign element dealing 2d4-2 piercing damage. Creating the lance costs 2 VIT temporarily. Killing a target with it recovers 1 VIT and grants +1 PRE until end of combat. The lance exists for 3 turns. To reactivate: 1d20 > 18."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": true, "npc_id": "vlad_the_impaler" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "2 VIT",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": { "VIT": 10, "FRC": 6 },
+  "isCustom": false
+}

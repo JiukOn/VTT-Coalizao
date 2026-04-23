@@ -1,0 +1,10 @@
+{
+  "id": "moriu_eyes",
+  "name": {
+    "pt-br": "Olhos De Moriu",
+    "en-us": "Moriu Eyes"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

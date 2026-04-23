@@ -1,0 +1,19 @@
+{
+  "id": "perfect_memory",
+  "name": { "pt-br": "Memória Perfeita", "en-us": "Perfect Memory" },
+  "description": {
+    "pt-br": "O usuário é capaz de lembrar-se de tudo o que já viu. Contudo, traumas têm efeito fortalecido, impondo 1 dado de prejuízo na aquisição de traumas.",
+    "en-us": "The user can remember everything they have ever seen. However, traumas have a strengthened effect, imposing 1 disadvantage die when acquiring traumas."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

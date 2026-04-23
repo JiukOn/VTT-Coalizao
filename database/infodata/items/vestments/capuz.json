@@ -1,0 +1,19 @@
+{
+  "id": "capuz",
+  "name": {
+    "pt-br": "Capuz",
+    "en-us": "Hood"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Um capuz de tecido.",
+    "en-us": "A fabric hood."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 8,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

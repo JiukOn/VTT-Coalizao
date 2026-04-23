@@ -1,0 +1,9 @@
+{
+  "id": "dense_forest",
+  "name": { "pt-br": "Floresta Densa", "en-us": "Dense Forest" },
+  "description": {
+    "pt-br": "Bioma de vegetação intensa e úmida, com dossel fechado e enorme biodiversidade. Elemento predominante: Madeira e Água.",
+    "en-us": "Biome of intense and humid vegetation, with closed canopy and enormous biodiversity. Predominant element: Wood and Water."
+  },
+  "type": { "pt-br": "Bioma Natural", "en-us": "Natural Biome" }
+}

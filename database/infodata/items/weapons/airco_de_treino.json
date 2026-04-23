@@ -1,0 +1,21 @@
+{
+  "id": "airco_de_treino",
+  "name": {
+    "pt-br": "Arco de Treino",
+    "en-us": "Arco De Treino"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Capaz de lançar projéteis finos e alongados, confere +1 PRE. Distância Máxima de lançamento: 8 metros. Possui a modificação Leve, concedendo +1 no dado em testes de ataque com PRE. .",
+    "en-us": ""
+  },
+  "stats": {
+    "pre": 1
+  },
+  "damage": "",
+  "price": 12,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

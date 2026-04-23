@@ -1,0 +1,19 @@
+{
+  "id": "sandalia",
+  "name": {
+    "pt-br": "Sandalia",
+    "en-us": "Sandal"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Sandalias simples.",
+    "en-us": "Simple sandals."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

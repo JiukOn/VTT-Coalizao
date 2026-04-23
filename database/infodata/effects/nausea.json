@@ -1,0 +1,19 @@
+{
+  "id": "nausea",
+  "name": {
+    "pt-br": "Náusea",
+    "en-us": "Nausea"
+  },
+  "description": {
+    "pt-br": "O afetado recebe -1 nos dados de movimentação e -2 nos dados de precisão e percepção.",
+    "en-us": "The affected receives -1 on movement dice and -2 on precision and perception dice."
+  },
+  "category": "condicao",
+  "type": "condicao",
+  "sub_type": "penalidade_multipla",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até amenizar.",
+    "en-us": "Until alleviated."
+  }
+}

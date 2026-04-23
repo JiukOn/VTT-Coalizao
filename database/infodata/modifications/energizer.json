@@ -1,0 +1,11 @@
+{
+  "id": "energizer",
+  "name": { "pt-br": "Energizador", "en-us": "Energizer" },
+  "description": {
+    "pt-br": "Uma vez por combate, anula 1 de dano elemental que o usuário sofreria. Aplicável a Armas e Itens diversos.",
+    "en-us": "Once per combat, nullifies 1 elemental damage the user would receive. Applicable to Weapons and miscellaneous Items."
+  },
+  "category": "defensivo",
+  "applicableTo": ["weapon", "general"],
+  "attribute_modifiers": {}
+}

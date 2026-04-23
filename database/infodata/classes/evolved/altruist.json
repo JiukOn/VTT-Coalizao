@@ -1,0 +1,23 @@
+{
+  "id": "altruist",
+  "name": {
+    "pt-br": "Altruista",
+    "en-us": "Altruist"
+  },
+  "description": {
+    "pt-br": "Um curador e apoiador dedicado que sacrifica seu próprio bem pelo do grupo. Possui alta vitalidade e resiliência, e usa carisma para fortalecer e proteger aliados.",
+    "en-us": "A dedicated healer and supporter who sacrifices their own well-being for the group. Has high vitality and resilience, using charisma to strengthen and protect allies."
+  },
+  "multipliers": {
+    "vit": 2,
+    "dex": 1,
+    "crm": 2,
+    "frc": 1,
+    "int": 1.5,
+    "res": 2,
+    "pre": 1,
+    "enr": 1
+  },
+  "legacyAbilityId": "invincible_courage",
+  "isCustom": false
+}

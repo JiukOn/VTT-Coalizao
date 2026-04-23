@@ -1,0 +1,19 @@
+{
+  "id": "theft",
+  "name": { "pt-br": "Furto", "en-us": "Theft" },
+  "description": {
+    "pt-br": "Durante a tentativa de furto, o usuário recebe +2 DEX. Se o teste (1d20 + DEX) for maior que (1d20 + PRE do alvo, se for um ser), o furto é bem-sucedido.",
+    "en-us": "During the theft attempt, the user receives +2 DEX. If test (1d20 + DEX) exceeds (1d20 + target PRE, if a being), the theft succeeds."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "rogue" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

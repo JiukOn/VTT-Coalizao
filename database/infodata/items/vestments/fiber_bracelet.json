@@ -1,0 +1,19 @@
+{
+  "id": "fiber_bracelet",
+  "name": {
+    "pt-br": "Bracelete de Fibra",
+    "en-us": "Fiber Bracelet"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mao",
+  "description": {
+    "pt-br": "Um bracelete simples de fibra.",
+    "en-us": "A simple fiber bracelet."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

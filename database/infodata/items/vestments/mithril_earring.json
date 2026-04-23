@@ -1,0 +1,21 @@
+{
+  "id": "mithril_earring",
+  "name": {
+    "pt-br": "Brinco de Mithril",
+    "en-us": "Mithril Earring"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Um brinco forjado em mithril. Concede +1 ENR.",
+    "en-us": "A mithril-forged earring. Grants +1 ENR."
+  },
+  "stats": {
+    "enr": 1
+  },
+  "damage": "",
+  "price": 30,
+  "weight": 0,
+  "rarity": "especial",
+  "isCustom": false
+}

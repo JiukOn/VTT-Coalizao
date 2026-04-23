@@ -1,0 +1,10 @@
+{
+  "id": "book_h_freeze",
+  "name": {
+    "pt-br": "Book H Freeze",
+    "en-us": "Book H Freeze"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

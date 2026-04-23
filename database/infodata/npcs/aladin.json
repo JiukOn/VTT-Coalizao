@@ -1,0 +1,94 @@
+{
+  "id": "aladin",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Aladin",
+    "en-us": "Aladin"
+  },
+  "description": {
+    "pt-br": "Passou por diversas aventuras com um djinn azul em sua terra natal. Foi transportado para essa terra em meio a uma guerra em seu povoado. Conheceu Nu, um Inue confiável e vaidoso.",
+    "en-us": "Went through various adventures with a blue djinn in his homeland. Was transported to this land in the midst of a war in his village. Met Nu, a trustworthy and vain Inue."
+  },
+  "age": 38,
+  "level": 4,
+  "classId": "tamer",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "unknown",
+  "ouris": 3178,
+  "stats": {
+    "attributes": {
+      "VIT": 8,
+      "DEX": 4,
+      "CRM": 5,
+      "FRC": 5,
+      "INT": 3,
+      "RES": 3,
+      "PRE": 4,
+      "ENR": 1
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "cloth_turban",
+    "Face": "",
+    "Neck": "",
+    "Chest": "cloth_tunic",
+    "Back": "",
+    "Right Hand": "lanca_de_aco",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "cloth_pants",
+    "Feet": "leather_sandal"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "blood_contract",
+      "2": "explodir",
+      "3": "nuvem_de_fumaca",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "calm",
+  "possibleBenefit": {
+    "pt-br": "Ganha um Aliado.",
+    "en-us": "Gain an Ally."
+  },
+  "possibleHarm": {
+    "pt-br": "Inicia uma batalha.",
+    "en-us": "Starts a battle."
+  },
+  "inventory": {
+    "1": "water_skin",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

@@ -1,0 +1,13 @@
+{
+  "id": "human",
+  "name": {
+    "pt-br": "Humano",
+    "en-us": "Human"
+  },
+  "description": {
+    "pt-br": "A espécie mais comum e adaptável do mundo de Coalizão. Humanos não possuem bônus naturais extremos, mas sua versatilidade e resiliência os tornam aptos para qualquer classe ou caminho.",
+    "en-us": "The most common and adaptable species in the world of Coalition. Humans have no extreme natural bonuses, but their versatility and resilience make them suited for any class or path."
+  },
+  "attributeModifiers": {},
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "faca_de_serra",
+  "name": {
+    "pt-br": "Faca de Serra",
+    "en-us": "Faca De Serra"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma faca pequena e pouco cortante, com baixa resistência. Causa 1d4 - 2 de dano. Possui a modificação Afiado, aumentando sua capacidade de corte em +1 de dano. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 - 2",
+  "price": 8,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

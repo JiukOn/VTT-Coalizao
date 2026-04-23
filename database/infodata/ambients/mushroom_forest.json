@@ -1,0 +1,9 @@
+{
+  "id": "mushroom_forest",
+  "name": { "pt-br": "Floresta dos Cogumelos", "en-us": "Mushroom Forest" },
+  "description": {
+    "pt-br": "Uma floresta onde cogumelos gigantes substituem as árvores, repleta de esporos luminescentes e vida fungal.",
+    "en-us": "A forest where giant mushrooms replace trees, filled with luminescent spores and fungal life."
+  },
+  "type": { "pt-br": "Ecossistema", "en-us": "Ecosystem" }
+}

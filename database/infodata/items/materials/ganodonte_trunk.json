@@ -1,0 +1,10 @@
+{
+  "id": "ganodonte_trunk",
+  "name": {
+    "pt-br": "Tromba De Ganodonte",
+    "en-us": "Ganodonte Trunk"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

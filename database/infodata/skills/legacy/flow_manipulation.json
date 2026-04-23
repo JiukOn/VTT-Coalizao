@@ -1,0 +1,19 @@
+{
+  "id": "flow_manipulation",
+  "name": { "pt-br": "Manipulação de Fluxo", "en-us": "Flow Manipulation" },
+  "description": {
+    "pt-br": "O usuário pode sentir a energia no ambiente em até 1km. Ao focar em um único ponto, aumenta o dano da munição somando ENR/4, mas ENR reduz a 0 após o uso. Usar segunda vez sem recuperação causa desmaio por 4 turnos.",
+    "en-us": "The user can sense energy in the environment up to 1km. By focusing on a single point, increases ammunition damage by ENR/4, but ENR reduces to 0 after use. Using a second time without recovery causes unconsciousness for 4 turns."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "flow_gunner" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

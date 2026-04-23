@@ -1,0 +1,11 @@
+{
+  "id": "perceptive",
+  "name": { "pt-br": "Perceptivo", "en-us": "Perceptive" },
+  "description": {
+    "pt-br": "Uma vez por combate, o usuário pode realizar um teste (1d20 + PRE > 10 + DEX do alvo) para ignorar a defesa do alvo em um ataque. Aplicável a Armas.",
+    "en-us": "Once per combat, the user can roll (1d20 + PRE > 10 + target DEX) to bypass the target's defense in an attack. Applicable to Weapons."
+  },
+  "category": "ofensivo",
+  "applicableTo": ["weapon"],
+  "attribute_modifiers": {}
+}

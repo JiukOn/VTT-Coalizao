@@ -1,0 +1,19 @@
+{
+  "id": "florescence",
+  "name": {
+    "pt-br": "Florada",
+    "en-us": "Florescence"
+  },
+  "description": {
+    "pt-br": "Causa 1d4 de dano por turno ao afetado. Não pode reduzir VIT para 0; se VIT = 1 o personagem recebe o efeito TRAVADO.",
+    "en-us": "Causes 1d4 damage per turn to the affected. Cannot reduce VIT to 0; if VIT = 1, the character receives the LOCKED effect."
+  },
+  "category": "doenca",
+  "type": "doenca",
+  "sub_type": "dano_por_turno",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até curar.",
+    "en-us": "Until cured."
+  }
+}

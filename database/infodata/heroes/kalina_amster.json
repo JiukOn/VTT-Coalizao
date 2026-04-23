@@ -1,0 +1,114 @@
+{
+  "id": "kalina_amster",
+  "name": {
+    "pt-br": "Kalina Amster",
+    "en-us": "Kalina Amster"
+  },
+  "age": 28,
+  "level": 4,
+  "classId": "merchant",
+  "species1": "human",
+  "species2": "demon",
+  "ouris": 854,
+  "tendencies": {
+    "1": "sewing",
+    "2": "cooking",
+    "3": "mercantilism"
+  },
+  "avatar": "kalina.png",
+  "stats": {
+    "multipliers": {
+      "VIT": 1.5,
+      "DEX": 1.5,
+      "CRM": 2,
+      "FRC": 1,
+      "INT": 2,
+      "RES": 1,
+      "PRE": 1.5,
+      "ENR": 0
+    },
+    "stats_base": {
+      "VIT": 7,
+      "DEX": 2,
+      "CRM": 5,
+      "FRC": 9,
+      "INT": 5,
+      "RES": 1,
+      "PRE": 4,
+      "ENR": 0
+    },
+    "stats_add": {
+      "VIT": 0,
+      "DEX": 1,
+      "CRM": 0,
+      "FRC": 1,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    },
+    "stats_remove": {
+      "VIT": 0,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "steel_chestplate",
+    "Back": "",
+    "Right Hand": "straw_basket",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "lace_skirt",
+    "Feet": "wolf_leather_shoes"
+  },
+  "abilities": {
+    "legacy": "sales_airea",
+    "active": {
+      "1": "demonic_bite",
+      "2": "negotiate",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "history": {
+    "pt-br": "Nascida na Cidade dos Porcos, seus pais são lavradores, seu avô paterno é um demônio. Aprendeu a vender e negociar bem pequena. Faz parte do Mercado Negro. Fez um pacto com seu ancestral mais antigo para ser capaz de matar Lorde Roan.",
+    "en-us": "Born in the City of Pigs, her parents are farmers, her paternal grandfather is a demon. She learned to sell and negotiate very young. Part of the Black Market. Made a pact with her oldest ancestor to be able to kill Lord Roan."
+  },
+  "auraId": "",
+  "personalityId": "",
+  "catchphrase": {
+    "pt-br": "Vou Bordar uma Flor para o seu Túmulo!",
+    "en-us": "I'll Embroider a Flower for Your Tombstone!",
+    "attribute_id": "frc"
+  },
+  "inventory": {
+    "1": "sun_embroidered_cloth",
+    "2": "unsato_embroidered_cloth",
+    "3": "square_embroidered_cloth",
+    "4": "needle",
+    "5": "merchant_record",
+    "6": "black_market_coin",
+    "7": "undino_king_eye",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "blue_tower",
+  "name": { "pt-br": "Torre Azul", "en-us": "Blue Tower" },
+  "description": {
+    "pt-br": "Uma torre misteriosa de pedra azulada cujo interior parece maior que seu exterior. Guarda segredos e desafios para os mais corajosos.",
+    "en-us": "A mysterious tower of bluish stone whose interior seems larger than its exterior. It guards secrets and challenges for the bravest."
+  },
+  "type": { "pt-br": "Especial", "en-us": "Special" }
+}

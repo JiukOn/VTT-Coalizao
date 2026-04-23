@@ -1,0 +1,12 @@
+{
+  "id": "unclassified",
+  "name": {
+    "pt-br": "Sem Classe",
+    "en-us": "Unclassified"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

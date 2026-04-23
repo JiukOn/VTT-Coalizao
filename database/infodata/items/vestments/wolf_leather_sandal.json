@@ -1,0 +1,21 @@
+{
+  "id": "wolf_leather_sandal",
+  "name": {
+    "pt-br": "Sandalia de Couro de Lobo",
+    "en-us": "Wolf Leather Sandal"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Sandalias de couro de lobo. Concedem +1 DEX.",
+    "en-us": "Wolf leather sandals. Grant +1 DEX."
+  },
+  "stats": {
+    "dex": 1
+  },
+  "damage": "",
+  "price": 15,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "impostor",
+  "name": {
+    "pt-br": "Impostor",
+    "en-us": "Impostor"
+  },
+  "description": {
+    "pt-br": "Se 1d4 <= 2 o afetado se sente inferior aos outros. Se 1d4 <= 2 o afetado se torna indeciso e perde seu turno.",
+    "en-us": "If 1d4 <= 2, the affected feels inferior to others. If 1d4 <= 2, the affected becomes indecisive and loses their turn."
+  },
+  "category": "psicologico_ativo",
+  "type": "psicologico_ativo",
+  "sub_type": "controle_de_acao",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 16 a partir do 2º turno.",
+    "en-us": "1d20 + RES > 16 from 2nd turn."
+  }
+}

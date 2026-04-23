@@ -1,0 +1,11 @@
+{
+  "id": "imbued",
+  "name": { "pt-br": "Imbuídor", "en-us": "Imbued" },
+  "description": {
+    "pt-br": "O usuário pode gastar 1 ENR temporária por turno para aumentar o dano do ataque em 1. Aplicável a Itens Manipuláveis.",
+    "en-us": "The user can spend 1 temporary ENR per turn to increase attack damage by 1. Applicable to Manipulable Items."
+  },
+  "category": "essencial",
+  "applicableTo": ["weapon", "tool"],
+  "attribute_modifiers": { "attribute": "damage", "value": "+1 per ENR" }
+}

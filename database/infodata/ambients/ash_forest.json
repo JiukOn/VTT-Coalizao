@@ -1,0 +1,9 @@
+{
+  "id": "ash_forest",
+  "name": { "pt-br": "Floresta de Cinzas", "en-us": "Ash Forest" },
+  "description": {
+    "pt-br": "Uma floresta permanentemente encoberta por cinzas, onde a vegetação cresceu de forma estranha após um grande incêndio.",
+    "en-us": "A forest permanently covered in ash, where vegetation grew in strange ways after a great fire."
+  },
+  "type": { "pt-br": "Ecossistema", "en-us": "Ecosystem" }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "manoplas_de_leonidas",
+  "name": {
+    "pt-br": "Manoplas de Leonidas",
+    "en-us": "Leonidas Gauntlets"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Manoplas resistentes de Leonidas. Concedem +2 FRC e causam 1d4 + 2 de dano.",
+    "en-us": "Leonidas gauntlets. Grant +2 FRC and deal 1d4 + 2 damage."
+  },
+  "stats": {
+    "frc": 2
+  },
+  "damage": "1d4 + 2",
+  "price": 45,
+  "weight": 3,
+  "rarity": "especial",
+  "isCustom": false
+}

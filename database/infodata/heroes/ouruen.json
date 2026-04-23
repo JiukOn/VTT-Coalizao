@@ -1,0 +1,114 @@
+{
+  "id": "ouruen",
+  "name": {
+    "pt-br": "Ouruen",
+    "en-us": "Ouruen"
+  },
+  "age": 26,
+  "level": 6,
+  "classId": "recluse",
+  "species1": "human",
+  "species2": "",
+  "ouris": 12420,
+  "tendencies": {
+    "1": "history",
+    "2": "runic_language",
+    "3": "systems"
+  },
+  "avatar": "ouruen.png",
+  "stats": {
+    "multipliers": {
+      "VIT": 2,
+      "DEX": 1.5,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1.5,
+      "RES": 1.5,
+      "PRE": 1,
+      "ENR": 2
+    },
+    "stats_base": {
+      "VIT": 12,
+      "DEX": 5,
+      "CRM": 2,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 4,
+      "PRE": 1,
+      "ENR": 13
+    },
+    "stats_add": {
+      "VIT": 0,
+      "DEX": 2,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    },
+    "stats_remove": {
+      "VIT": 0,
+      "DEX": 0,
+      "CRM": 0,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    }
+  },
+  "equipment": {
+    "Head": "wolf_leather_hat",
+    "Face": "",
+    "Neck": "",
+    "Chest": "silk_shirt",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "silk_pants",
+    "Feet": "wolf_leather_shoes"
+  },
+  "abilities": {
+    "legacy": "bite",
+    "active": {
+      "1": "bloodhound_sense",
+      "2": "sharp_eyes",
+      "3": "total_reclusion",
+      "4": "fly",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "history": {
+    "pt-br": "Tinha problemas com os pais. Sofreu Bullying. Gostava de Magia em Jogos. Era um viciado em videogames e mangás isekai. Morava no Paraguai.",
+    "en-us": "Had problems with parents. Was bullied. Liked Magic in Games. Was addicted to video games and isekai manga. Lived in Paraguay."
+  },
+  "auraId": "disorder",
+  "personalityId": "jubilation",
+  "catchphrase": {
+    "pt-br": "Curvem-se ao prota seus lixo!",
+    "en-us": "Bow to the protagonist, you trash!",
+    "attribute_id": "dex"
+  },
+  "inventory": {
+    "1": "nasal_serum",
+    "2": "videogame_controller",
+    "3": "undino_roasted_meat",
+    "4": "bati_fruit",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

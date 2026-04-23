@@ -1,0 +1,19 @@
+{
+  "id": "forge_skill",
+  "name": { "pt-br": "Forja", "en-us": "Forge" },
+  "description": {
+    "pt-br": "O usuário é capaz de manipular diversos materiais de alta resistência para a criação de itens, recebendo +5 no valor dos dados.",
+    "en-us": "The user is capable of manipulating various high-resistance materials to create items, receiving +5 on dice values."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": true, "class_id": "blacksmith" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

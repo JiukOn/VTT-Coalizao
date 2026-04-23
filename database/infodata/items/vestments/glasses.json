@@ -1,0 +1,21 @@
+{
+  "id": "glasses",
+  "name": {
+    "pt-br": "Oculos",
+    "en-us": "Glasses"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Rosto",
+  "description": {
+    "pt-br": "Oculos de leitura. Concedem +1 INT.",
+    "en-us": "Reading glasses. Grant +1 INT."
+  },
+  "stats": {
+    "int": 1
+  },
+  "damage": "",
+  "price": 15,
+  "weight": 0,
+  "rarity": "sentimental",
+  "isCustom": false
+}

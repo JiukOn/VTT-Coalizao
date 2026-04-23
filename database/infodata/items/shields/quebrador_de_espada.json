@@ -1,0 +1,19 @@
+{
+  "id": "quebrador_de_espada",
+  "name": {
+    "pt-br": "Quebrador de Espada",
+    "en-us": "Quebrador De Espada"
+  },
+  "category": "shields",
+  "type": "Escudo",
+  "description": {
+    "pt-br": "Embora possa oferecer uma defesa mínima, este item é primariamente projetado para quebrar espadas de baixa durabilidade. Concede 1d4 - 3 de defesa. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 - 3",
+  "price": 20,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

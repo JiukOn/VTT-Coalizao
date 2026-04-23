@@ -1,0 +1,19 @@
+{
+  "id": "unconscious",
+  "name": {
+    "pt-br": "Desmaio",
+    "en-us": "Unconscious"
+  },
+  "description": {
+    "pt-br": "O afetado se torna incapaz de realizar qualquer ação e perde seu turno.",
+    "en-us": "The affected becomes unable to perform any action and loses their turn."
+  },
+  "category": "condicao",
+  "type": "condicao",
+  "sub_type": "perda_de_turno",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até amenizar.",
+    "en-us": "Until alleviated."
+  }
+}

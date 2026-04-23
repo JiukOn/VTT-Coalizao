@@ -1,0 +1,19 @@
+{
+  "id": "dagger_de_cobre",
+  "name": {
+    "pt-br": "Adaga de Cobre",
+    "en-us": "Dagger De Cobre"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma lâmina simples e leve, ideal para tarefas do campo, mas de pouca resistência em combate. Causa 1d4 - 2 de dano. Possui a modificação Frágil, tornando-a mais suscetível a quebrar sob pressão. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 - 2",
+  "price": 10,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "monk",
+  "name": {
+    "pt-br": "Monge",
+    "en-us": "Monk"
+  },
+  "description": {
+    "pt-br": "Um guerreiro espiritual que combina força física com disciplina mental. Domina o combate corpo a corpo e resiste a influências externas.",
+    "en-us": "A spiritual warrior who combines physical strength with mental discipline. Masters hand-to-hand combat and resists external influences."
+  },
+  "multipliers": {
+    "vit": 2,
+    "dex": 1,
+    "crm": 1.5,
+    "frc": 1.5,
+    "int": 1,
+    "res": 2,
+    "pre": 1,
+    "enr": 1
+  },
+  "legacyAbilityId": "unbreakable_spirit",
+  "isCustom": false
+}

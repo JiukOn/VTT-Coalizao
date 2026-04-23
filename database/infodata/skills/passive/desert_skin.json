@@ -1,0 +1,19 @@
+{
+  "id": "desert_skin",
+  "name": { "pt-br": "Pele do Deserto", "en-us": "Desert Skin" },
+  "description": {
+    "pt-br": "O usuário é adaptado a ambientes áridos e tórridos. Reduz em 1 o dano sofrido por ataques do elemento Fogo e se torna imune ao efeito 'Queimadura'.",
+    "en-us": "The user is adapted to arid and scorching environments. Reduces Fire element attack damage by 1 and becomes immune to the 'Burning' effect."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "RES": 4 },
+  "isCustom": false
+}

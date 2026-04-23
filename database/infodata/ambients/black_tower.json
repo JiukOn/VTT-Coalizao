@@ -1,0 +1,9 @@
+{
+  "id": "black_tower",
+  "name": { "pt-br": "Torre Negra", "en-us": "Black Tower" },
+  "description": {
+    "pt-br": "Uma torre sombria que absorve a luz ao redor. Aqueles que entram raramente saem iguais ao que eram.",
+    "en-us": "A dark tower that absorbs surrounding light. Those who enter rarely leave the same as they were."
+  },
+  "type": { "pt-br": "Especial", "en-us": "Special" }
+}

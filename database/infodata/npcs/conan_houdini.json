@@ -1,0 +1,94 @@
+{
+  "id": "conan_houdini",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Conan Houdini",
+    "en-us": "Conan Houdini"
+  },
+  "description": {
+    "pt-br": "É filho de Harry Houdini, um Ilusionista Impressionante que veio da Terra. Sua maior paixão é cuidar de seu jardim. Vive no Bunker desde a morte de seu pai, pelas mãos de seu ex-companheiro.",
+    "en-us": "Son of Harry Houdini, an Impressive Illusionist who came from Earth. His greatest passion is tending to his garden. Has lived in the Bunker since his father's death at the hands of his ex-companion."
+  },
+  "age": 26,
+  "level": 5,
+  "classId": "druid",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "bunker",
+  "ouris": 1348,
+  "stats": {
+    "attributes": {
+      "VIT": 6,
+      "DEX": 3,
+      "CRM": 6,
+      "FRC": 2,
+      "INT": 3,
+      "RES": 5,
+      "PRE": 1,
+      "ENR": 8
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "cloth_blazer",
+    "Back": "",
+    "Right Hand": "magic_wand",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "cloth_pants",
+    "Feet": "leather_shoes"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "enraizar",
+      "2": "agricultura_rapida",
+      "3": "florescer",
+      "4": "abalo_sismico",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "elemental_wood_resistance",
+      "2": "barreira_de_vinhas",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "quiet",
+  "possibleBenefit": {
+    "pt-br": "Pode entrar no Bunker.",
+    "en-us": "Can enter the Bunker."
+  },
+  "possibleHarm": {
+    "pt-br": "Se torna inimigo de Nero.",
+    "en-us": "Becomes Nero's enemy."
+  },
+  "inventory": {
+    "1": "sunflower_seeds",
+    "2": "blood_cabbage_seeds",
+    "3": "cerne_dagger",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "vine_barrier",
+  "name": { "pt-br": "Barreira de Vinhas", "en-us": "Vine Barrier" },
+  "description": {
+    "pt-br": "Cria uma barreira de vinhas de até 20m por 3 turnos que não pode ser movida. Resiste a energia pura, maligna, água e madeira. Se desfaz contra fogo, gelo ou ataques físicos cortantes/perfurantes. Para reativar: 1d20 > 16. Se falhar (1d20 < 16), perde 1 ENR temporariamente.",
+    "en-us": "Creates a vine barrier up to 20m for 3 turns, immovable. Resists pure, malign, water, and wood energy attacks. Dissolves against fire, ice, or slashing/piercing attacks. To reactivate: 1d20 > 16. On failure (1d20 < 16), loses 1 ENR temporarily."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 5 },
+  "isCustom": false
+}

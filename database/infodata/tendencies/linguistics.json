@@ -1,0 +1,12 @@
+{
+  "id": "linguistics",
+  "name": {
+    "pt-br": "Linguistica",
+    "en-us": "Linguistics"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

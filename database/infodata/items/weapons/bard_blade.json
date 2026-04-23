@@ -1,0 +1,19 @@
+{
+  "id": "bard_blade",
+  "name": {
+    "pt-br": "Lamina do Bardo",
+    "en-us": "Bard Blade"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma lamina que produz sons musicais em batalha. Causa 1d4 + 1 de dano. (Ethan)",
+    "en-us": "A blade that produces musical sounds in battle. Deals 1d4 + 1 damage."
+  },
+  "stats": {},
+  "damage": "1d4 + 1",
+  "price": 15,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "coastal_wetlands",
+  "name": { "pt-br": "Pântanos Costeiros", "en-us": "Coastal Wetlands" },
+  "description": {
+    "pt-br": "Bioma de transição entre terra e água, rico em vida anfíbia e vegetação aquática. Elemento predominante: Água e Madeira.",
+    "en-us": "Transition biome between land and water, rich in amphibian life and aquatic vegetation. Predominant element: Water and Wood."
+  },
+  "type": { "pt-br": "Bioma Natural", "en-us": "Natural Biome" }
+}

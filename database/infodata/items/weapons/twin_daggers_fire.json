@@ -1,0 +1,21 @@
+{
+  "id": "twin_daggers_fire",
+  "name": {
+    "pt-br": "Adagas Gemeas de Fogo",
+    "en-us": "Fire Twin Daggers"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Um par de adagas infundidas com fogo. Causa 1d4 + 1 de dano e concede +1 ENR.",
+    "en-us": "A pair of fire-infused daggers. Deals 1d4 + 1 damage and grants +1 ENR."
+  },
+  "stats": {
+    "enr": 1
+  },
+  "damage": "1d4 + 1",
+  "price": 30,
+  "weight": 2,
+  "rarity": "especial",
+  "isCustom": false
+}

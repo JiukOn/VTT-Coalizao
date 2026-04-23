@@ -1,0 +1,16 @@
+{
+  "id": "inspiration",
+  "name": {
+    "pt-br": "Inspiração",
+    "en-us": "Inspiration"
+  },
+  "description": {
+    "pt-br": "Uma aura motivadora que eleva o potencial de todos ao redor. Aliados próximos sentem-se encorajados a superar seus limites, enquanto inimigos podem sentir sua resolução fraquejar.",
+    "en-us": "A motivating aura that elevates the potential of everyone nearby. Nearby allies feel encouraged to surpass their limits, while enemies may feel their resolve weaken."
+  },
+  "activationMoments": {
+    "pt-br": "Sempre ativa. Fortalece-se em momentos de adversidade ou quando aliados estão em desvantagem.",
+    "en-us": "Always active. Strengthens in moments of adversity or when allies are at a disadvantage."
+  },
+  "isCustom": false
+}

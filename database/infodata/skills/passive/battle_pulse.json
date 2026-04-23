@@ -1,0 +1,19 @@
+{
+  "id": "battle_pulse",
+  "name": { "pt-br": "Pulso de Batalha", "en-us": "Battle Pulse" },
+  "description": {
+    "pt-br": "O usuário sente uma excitação crescente durante o combate. A cada vez que causar dano em um inimigo, recebe +1 PRE (máximo de 4) até o fim do combate.",
+    "en-us": "The user feels growing excitement during combat. Each time they deal damage to an enemy, receives +1 PRE (maximum 4) until end of combat."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "FRC": 4 },
+  "isCustom": false
+}

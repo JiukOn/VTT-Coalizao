@@ -1,0 +1,19 @@
+{
+  "id": "executors_domain",
+  "name": { "pt-br": "Domínio do Executor", "en-us": "Executor's Domain" },
+  "description": {
+    "pt-br": "O Executor determina o Alvo e a Guarda. O Executor fica imortal a danos que não sejam da Guarda. O Alvo é imune a qualquer dano exceto o do Executor. O Domínio dura 4 turnos. Para reativar: 1d20 > 16.",
+    "en-us": "The Executor names the Target and the Guard. The Executor becomes immortal to damage not from the Guard. The Target is immune to all damage except the Executor's. The Domain lasts 4 turns. To reactivate: 1d20 > 16."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 4,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

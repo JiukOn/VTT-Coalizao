@@ -1,0 +1,22 @@
+{
+  "id": "cajado_de_grama",
+  "name": {
+    "pt-br": "Cajado de Grama",
+    "en-us": "Cajado De Grama"
+  },
+  "category": "general",
+  "type": "Item Mágico",
+  "description": {
+    "pt-br": "Um cajado leve, com bons bônus +1 PRE e +1 DEX. Possui a modificação Leve, conferindo uma agilidade surpreendente ao portador e concedendo +1 no dado em testes de ataque com PRE. .",
+    "en-us": ""
+  },
+  "stats": {
+    "dex": 1,
+    "pre": 1
+  },
+  "damage": "",
+  "price": 15,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

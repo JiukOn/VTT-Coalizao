@@ -1,0 +1,19 @@
+{
+  "id": "divine_acceleration",
+  "name": { "pt-br": "Aceleração Divina", "en-us": "Divine Acceleration" },
+  "description": {
+    "pt-br": "O usuário ganha um dado extra para ações de desvio.",
+    "en-us": "The user gains an extra die for evasion actions."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": true, "item_id": "hermes_boots" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "DEX": 10, "ENR": 10 },
+  "isCustom": false
+}

@@ -1,0 +1,94 @@
+{
+  "id": "georgius",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Geórgius",
+    "en-us": "Geórgius"
+  },
+  "description": {
+    "pt-br": "Foi membro do esquadrão de mercenários Thanatos. Seu filho foi sequestrado. Sua mãe era um gigante e foi caçada na 'Guerra do Extermínio'. Ingeriu o Coração de Tinta para se livrar do controle Unsato.",
+    "en-us": "Was a member of the Thanatos mercenary squad. His son was kidnapped. His mother was a giant and was hunted in the 'War of Extermination'. Ingested the Ink Heart to free himself from Unsato control."
+  },
+  "age": 50,
+  "level": 8,
+  "classId": "mercenary",
+  "species1": "ink_king",
+  "species2": "",
+  "avatar": "",
+  "locationId": "unknown",
+  "ouris": 40450,
+  "stats": {
+    "attributes": {
+      "VIT": 14,
+      "DEX": 3,
+      "CRM": 5,
+      "FRC": 22,
+      "INT": 2,
+      "RES": 4,
+      "PRE": 1,
+      "ENR": 11
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "brinco_de_gold",
+    "Face": "",
+    "Neck": "",
+    "Chest": "pochete",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "calca_de_leather_de_ganlan",
+    "Feet": "wolf_leather_shoes"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "contract",
+      "2": "accelerate",
+      "3": "arte_maos_livres",
+      "4": "beserk",
+      "5": "dominio_de_tinta",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "absolute_strength",
+  "possibleBenefit": {
+    "pt-br": "Sobrevive.",
+    "en-us": "Survives."
+  },
+  "possibleHarm": {
+    "pt-br": "Se torna Tinta.",
+    "en-us": "Becomes Ink."
+  },
+  "inventory": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

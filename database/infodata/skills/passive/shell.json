@@ -1,0 +1,19 @@
+{
+  "id": "shell",
+  "name": { "pt-br": "Carapaça", "en-us": "Shell" },
+  "description": {
+    "pt-br": "Ao sofrer uma alta quantidade de dano, o usuário cria involuntariamente uma carapaça: +4 FRC, -4 DEX, e qualquer dano recebido é diminuído em 2 no valor final por 3 turnos. A espécie do usuário se mistura com a de um Gran Belis permanentemente.",
+    "en-us": "Upon receiving a high amount of damage, the user involuntarily creates a shell: +4 FRC, -4 DEX, and damage received is reduced by 2 for 3 turns. The user's species permanently merges with that of a Gran Belis."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

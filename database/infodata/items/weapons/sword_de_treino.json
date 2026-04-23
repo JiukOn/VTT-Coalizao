@@ -1,0 +1,19 @@
+{
+  "id": "sword_de_treino",
+  "name": {
+    "pt-br": "Espada de Treino",
+    "en-us": "Training Sword"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma espada embotada para treino. Causa 1d4 - 1 de dano.",
+    "en-us": "A blunted training sword. Deals 1d4 - 1 damage."
+  },
+  "stats": {},
+  "damage": "1d4 - 1",
+  "price": 10,
+  "weight": 2,
+  "rarity": "comum",
+  "isCustom": false
+}

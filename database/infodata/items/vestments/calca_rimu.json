@@ -1,0 +1,19 @@
+{
+  "id": "calca_rimu",
+  "name": {
+    "pt-br": "Calça Rimu",
+    "en-us": "Calca Rimu"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Perna",
+  "description": {
+    "pt-br": "Calças pesadas que completam o conjunto Rimu, oferecendo proteção densa. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "dagger_thanatos",
+  "name": {
+    "pt-br": "Adaga Thanatos",
+    "en-us": "Thanatos Dagger"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Adaga cerimonial da guilda Thanatos. Concede +1 DEX e causa 1d4 + 1 de dano.",
+    "en-us": "Ceremonial dagger of the Thanatos guild. Grants +1 DEX and deals 1d4 + 1 damage."
+  },
+  "stats": {
+    "dex": 1
+  },
+  "damage": "1d4 + 1",
+  "price": 30,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

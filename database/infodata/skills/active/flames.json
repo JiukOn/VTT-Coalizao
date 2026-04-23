@@ -1,0 +1,19 @@
+{
+  "id": "flames",
+  "name": { "pt-br": "Chamas", "en-us": "Flames" },
+  "description": {
+    "pt-br": "O usuário é capaz de convocar o elemento Fogo em um ataque de média distância, causando 1d4 de dano. Recarrega em 1 turno.",
+    "en-us": "The user summons the Fire element in a medium-range attack, dealing 1d4 damage. Recharges in 1 turn."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": 1,
+  "requirements": { "ENR": 4 },
+  "isCustom": false
+}

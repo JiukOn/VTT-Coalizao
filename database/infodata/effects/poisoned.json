@@ -1,0 +1,19 @@
+{
+  "id": "poisoned",
+  "name": {
+    "pt-br": "Envenenado",
+    "en-us": "Poisoned"
+  },
+  "description": {
+    "pt-br": "O afetado recebe o dano e/ou efeito do veneno utilizado.",
+    "en-us": "The affected receives the damage and/or effect of the poison used."
+  },
+  "category": "condicao",
+  "type": "condicao",
+  "sub_type": "veneno",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até amenizar.",
+    "en-us": "Until alleviated."
+  }
+}

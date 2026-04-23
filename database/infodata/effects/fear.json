@@ -1,0 +1,19 @@
+{
+  "id": "fear",
+  "name": {
+    "pt-br": "Medo",
+    "en-us": "Fear"
+  },
+  "description": {
+    "pt-br": "O usuário faz um teste (1d20 <= 11) no início de seu turno, se falhar ele não pode fazer nenhuma ação no turno.",
+    "en-us": "The user rolls (1d20 <= 11) at the start of their turn; on failure, they cannot take any action that turn."
+  },
+  "category": "psicologico_ativo",
+  "type": "psicologico_ativo",
+  "sub_type": "controle_de_acao",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 16 a partir do 2º turno.",
+    "en-us": "1d20 + RES > 16 from 2nd turn."
+  }
+}

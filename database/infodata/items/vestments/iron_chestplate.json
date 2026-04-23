@@ -1,0 +1,19 @@
+{
+  "id": "iron_chestplate",
+  "name": {
+    "pt-br": "Peitoral de Ferro",
+    "en-us": "Iron Chestplate"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Corpo",
+  "description": {
+    "pt-br": "Peitoral forjado em ferro, pesado e durável. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 8,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

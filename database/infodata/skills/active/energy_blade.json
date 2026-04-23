@@ -1,0 +1,19 @@
+{
+  "id": "energy_blade",
+  "name": { "pt-br": "Lâmina de Energia", "en-us": "Energy Blade" },
+  "description": {
+    "pt-br": "O usuário molda sua energia no formato de uma lâmina como item temporário. Gasta 1 ENR temporariamente. O dano recebe o elemento da energia utilizada e fornece +1 PRE. A lâmina se dissipa em 3 turnos. Recarrega em 1 turno.",
+    "en-us": "The user shapes their energy into a temporary blade item. Spends 1 ENR temporarily. Damage gains the element of the energy used and provides +1 PRE. The blade dissipates in 3 turns. Recharges in 1 turn."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "1 ENR",
+  "turns_duration": 3,
+  "turns_cooldown": 1,
+  "requirements": {},
+  "isCustom": false
+}

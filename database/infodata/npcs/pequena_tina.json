@@ -1,0 +1,94 @@
+{
+  "id": "pequena_tina",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Pequena Tina",
+    "en-us": "Little Tina"
+  },
+  "description": {
+    "pt-br": "Ministra Rebelde. Homúnculo de espécie indefinida.",
+    "en-us": "Rebel Minister. Homunculus of undefined species."
+  },
+  "age": 25,
+  "level": 1,
+  "classId": "unclassified",
+  "species1": "human",
+  "species2": "homunculus",
+  "avatar": "",
+  "locationId": "dampened_reserve",
+  "ouris": 3234,
+  "stats": {
+    "attributes": {
+      "VIT": 0,
+      "DEX": 0,
+      "CRM": 3,
+      "FRC": 0,
+      "INT": 0,
+      "RES": 0,
+      "PRE": 0,
+      "ENR": 0
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "",
+    "Feet": "leather_shoes"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "charming",
+  "possibleBenefit": {
+    "pt-br": "Ganha um favor.",
+    "en-us": "Gain a favor."
+  },
+  "possibleHarm": {
+    "pt-br": "Menor afeição rebelde.",
+    "en-us": "Reduced rebel affection."
+  },
+  "inventory": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "wrist_crossbow",
+  "name": {
+    "pt-br": "Besta de Pulso",
+    "en-us": "Wrist Crossbow"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma besta compacta de pulso. Concede +2 PRE e causa 1d4 + 1 de dano.",
+    "en-us": "A compact wrist crossbow. Grants +2 PRE and deals 1d4 + 1 damage."
+  },
+  "stats": {
+    "pre": 2
+  },
+  "damage": "1d4 + 1",
+  "price": 35,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

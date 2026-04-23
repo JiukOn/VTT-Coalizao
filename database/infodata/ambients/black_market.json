@@ -1,0 +1,9 @@
+{
+  "id": "black_market",
+  "name": { "pt-br": "Mercado Negro", "en-us": "Black Market" },
+  "description": {
+    "pt-br": "Um mercado clandestino onde itens raros, ilegais ou malditos são negociados longe dos olhos das autoridades.",
+    "en-us": "A clandestine market where rare, illegal, or cursed items are traded away from the eyes of authorities."
+  },
+  "type": { "pt-br": "Civilização", "en-us": "Civilization" }
+}

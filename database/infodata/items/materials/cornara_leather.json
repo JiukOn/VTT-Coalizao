@@ -1,0 +1,10 @@
+{
+  "id": "cornara_leather",
+  "name": {
+    "pt-br": "Couro de Cornara",
+    "en-us": "Cornara Leather"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

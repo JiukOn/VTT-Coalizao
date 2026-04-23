@@ -1,0 +1,21 @@
+{
+  "id": "botas_shadows_abaixo",
+  "name": {
+    "pt-br": "Botas Sombras Abaixo",
+    "en-us": "Botas Sombras Abaixo"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pé",
+  "description": {
+    "pt-br": "Botas leves e escuras, projetadas para discrição e agilidade. Conferem +2 DEX. Possuem a modificação Camuflado, concedendo +1 no dado em testes de Furtividade. .",
+    "en-us": ""
+  },
+  "stats": {
+    "dex": 2
+  },
+  "damage": "",
+  "price": 15,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

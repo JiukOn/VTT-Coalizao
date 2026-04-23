@@ -1,0 +1,19 @@
+{
+  "id": "bateria_energetica",
+  "name": {
+    "pt-br": "Bateria Energética",
+    "en-us": "Bateria Energetica"
+  },
+  "category": "general",
+  "type": "Item Diverso",
+  "description": {
+    "pt-br": "Uma bateria capaz de armazenar até 5 ENR, essa energia pode ser utilizada por seres e outros itens.",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 0,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

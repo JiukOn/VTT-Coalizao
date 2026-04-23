@@ -1,0 +1,21 @@
+{
+  "id": "twin_daggers_water",
+  "name": {
+    "pt-br": "Adagas Gemeas de Agua",
+    "en-us": "Water Twin Daggers"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Um par de adagas infundidas com agua. Causa 1d4 + 1 de dano e concede +1 RES.",
+    "en-us": "A pair of water-infused daggers. Deals 1d4 + 1 damage and grants +1 RES."
+  },
+  "stats": {
+    "res": 1
+  },
+  "damage": "1d4 + 1",
+  "price": 30,
+  "weight": 2,
+  "rarity": "especial",
+  "isCustom": false
+}

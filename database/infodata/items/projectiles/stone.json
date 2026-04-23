@@ -1,0 +1,19 @@
+{
+  "id": "stone",
+  "name": {
+    "pt-br": "Pedra",
+    "en-us": "Pedra"
+  },
+  "category": "projectiles",
+  "type": "Projetil",
+  "description": {
+    "pt-br": "Uma simples pedra que pode ser lançada. Causa 1d4 - 2 de dano",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4 - 2",
+  "price": 0,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "prosopagnosia",
+  "name": {
+    "pt-br": "Prosopagnosia",
+    "en-us": "Prosopagnosia"
+  },
+  "description": {
+    "pt-br": "Se 1d4 <= 2 o afetado se torna incapaz de identificar rostos. Se não for capaz de identificar outro personagem já conhecido com esse efeito ativo, recebe -1 CRM temporariamente.",
+    "en-us": "If 1d4 <= 2, the affected becomes unable to recognize faces. If unable to identify a known character with this effect active, receives -1 CRM temporarily."
+  },
+  "category": "psicologico_ativo",
+  "type": "psicologico_ativo",
+  "sub_type": "penalidade_percepcao",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "1d20 + RES > 16 a partir do 2º turno.",
+    "en-us": "1d20 + RES > 16 from 2nd turn."
+  }
+}

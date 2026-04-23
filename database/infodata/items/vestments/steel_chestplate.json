@@ -1,0 +1,21 @@
+{
+  "id": "steel_chestplate",
+  "name": {
+    "pt-br": "Peitoral de Aço",
+    "en-us": "Steel Chestplate"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Corpo",
+  "description": {
+    "pt-br": "Peitoral forjado em aço, oferecendo proteção frontal robusta. Fornece +1 FRC. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {
+    "frc": 1
+  },
+  "damage": "",
+  "price": 8,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

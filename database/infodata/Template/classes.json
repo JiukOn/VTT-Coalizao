@@ -1,0 +1,27 @@
+{
+  "id": "",
+  "name": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "legacyAbility_id": "",
+  "stat_multipliers": {
+    "VIT": 1,
+    "SEX": 1,
+    "CRM": 1,
+    "FRC": 1,
+    "INT": 1,
+    "RES": 1,
+    "PRE": 1,
+    "ENR": 1
+  },
+  "have_skills": false,
+  "evolved_class": {
+    "isevolved": false,
+    "class_base_id": []
+  }
+}

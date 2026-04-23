@@ -1,0 +1,94 @@
+{
+  "id": "amelia",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Amélia",
+    "en-us": "Amélia"
+  },
+  "description": {
+    "pt-br": "Filha de uma dona de Restaurante. Nasceu no Vilarejo Hamelin. Secretamente é uma Revolucionária.",
+    "en-us": "Daughter of a restaurant owner. Born in Hamelin Village. Secretly a Revolutionary."
+  },
+  "age": 67,
+  "level": 1,
+  "classId": "blocked",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 8306,
+  "stats": {
+    "attributes": {
+      "VIT": 6,
+      "DEX": 2,
+      "CRM": 8,
+      "FRC": 4,
+      "INT": 3,
+      "RES": 4,
+      "PRE": 2,
+      "ENR": 0
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "pano",
+    "Face": "",
+    "Neck": "",
+    "Chest": "avental",
+    "Back": "",
+    "Right Hand": "colher_de_wood",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "cloth_skirt",
+    "Feet": "wolf_leather_shoes"
+  },
+  "abilities": {
+    "legacy": "blocked",
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "gentle",
+  "possibleBenefit": {
+    "pt-br": "Desconto no Restaurante.",
+    "en-us": "Discount at the Restaurant."
+  },
+  "possibleHarm": {
+    "pt-br": "Aumento dos preços de refeições.",
+    "en-us": "Increased meal prices."
+  },
+  "inventory": {
+    "1": "undino_meat",
+    "2": "geleia_de_bati",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

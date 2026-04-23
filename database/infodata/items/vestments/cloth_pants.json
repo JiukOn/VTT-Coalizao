@@ -1,0 +1,19 @@
+{
+  "id": "cloth_pants",
+  "name": {
+    "pt-br": "Calca de Pano",
+    "en-us": "Cloth Pants"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Calcas simples de pano.",
+    "en-us": "Simple cloth pants."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 8,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

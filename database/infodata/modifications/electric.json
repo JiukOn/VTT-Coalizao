@@ -1,0 +1,11 @@
+{
+  "id": "electric",
+  "name": { "pt-br": "Elétrico", "en-us": "Electric" },
+  "description": {
+    "pt-br": "As ações ofensivas adquirem o elemento Elétrico. Pode causar o efeito 'Curto' se o teste (1d20 > 1d20 + FRC do alvo) for bem-sucedido.",
+    "en-us": "Offensive actions gain the Electric element. Can cause the 'Short Circuit' effect if test (1d20 > 1d20 + target FRC) succeeds."
+  },
+  "category": "elemental",
+  "applicableTo": ["weapon"],
+  "attribute_modifiers": { "attribute": "element", "value": "electric" }
+}

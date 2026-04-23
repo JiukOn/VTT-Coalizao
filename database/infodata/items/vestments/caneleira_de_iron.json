@@ -1,0 +1,21 @@
+{
+  "id": "caneleira_de_iron",
+  "name": {
+    "pt-br": "Caneleira de Ferro",
+    "en-us": "Iron Greave"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Caneleira de ferro. Concede +1 RES.",
+    "en-us": "Iron greave. Grants +1 RES."
+  },
+  "stats": {
+    "res": 1
+  },
+  "damage": "",
+  "price": 18,
+  "weight": 2,
+  "rarity": "comum",
+  "isCustom": false
+}

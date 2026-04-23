@@ -1,0 +1,19 @@
+{
+  "id": "draconic_resistance",
+  "name": { "pt-br": "Resistência Dracônica", "en-us": "Draconic Resistance" },
+  "description": {
+    "pt-br": "Concede Resistência Elemental a Fogo, Raio e Gelo. Caso o usuário entre em estado de Quase Morte, ele ganha 1 dado bônus nos testes.",
+    "en-us": "Grants Elemental Resistance to Fire, Lightning, and Ice. If the user enters Near-Death state, they gain 1 bonus die on tests."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "elemental_resistance" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

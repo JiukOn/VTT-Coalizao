@@ -1,0 +1,19 @@
+{
+  "id": "peitoral_de_couro",
+  "name": {
+    "pt-br": "Peitoral de Couro",
+    "en-us": "Peitoral De Couro"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Corpo",
+  "description": {
+    "pt-br": "Peitoral de couro simples, leve e confortável para o torso. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 6,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

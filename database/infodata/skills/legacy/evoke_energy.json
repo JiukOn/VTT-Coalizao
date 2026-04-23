@@ -1,0 +1,19 @@
+{
+  "id": "evoke_energy",
+  "name": { "pt-br": "Evocar Energia", "en-us": "Evoke Energy" },
+  "description": {
+    "pt-br": "O usuário libera energia mágica em proximidade, causando 1d4 de dano mágico. Se o teste (1d20 > 16) for bem-sucedido, remove efeitos psicológicos negativos de si mesmo.",
+    "en-us": "The user releases magical energy in proximity, causing 1d4 magical damage. If test (1d20 > 16) succeeds, removes negative psychological effects from themselves."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "evoker" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

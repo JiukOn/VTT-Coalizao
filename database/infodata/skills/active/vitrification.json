@@ -1,0 +1,19 @@
+{
+  "id": "vitrification",
+  "name": { "pt-br": "Vitralização", "en-us": "Vitrification" },
+  "description": {
+    "pt-br": "O usuário é capaz de transformar qualquer tipo de areia em vidro se o teste (1d20 > 14) for bem-sucedido. O vidro pode aplicar o status 'Sangramento' em um alvo atingido se o teste (1d20 > 18) for bem-sucedido. Se um segundo teste (1d20 > 16) falhar, perde 1 ENR temporariamente.",
+    "en-us": "The user transforms any sand into glass if test (1d20 > 14) succeeds. The glass can apply 'Bleeding' to a hit target if test (1d20 > 18) succeeds. If a second test (1d20 > 16) fails, loses 1 ENR temporarily."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 8 },
+  "isCustom": false
+}

@@ -1,0 +1,12 @@
+{
+  "id": "instrument_creation",
+  "name": {
+    "pt-br": "Criacao_de_instrumentos",
+    "en-us": "Instrument Creation"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "undead",
+  "name": {
+    "pt-br": "Morto-Vivo",
+    "en-us": "Undead"
+  },
+  "description": {
+    "pt-br": "Se 1d4 <= 2 recebe 1 de dano. Mantém o afetado vivo por 2 turnos após atingir VIT = 0.",
+    "en-us": "If 1d4 <= 2, receives 1 damage. Keeps the affected alive for 2 turns after reaching VIT = 0."
+  },
+  "category": "condicao",
+  "type": "condicao",
+  "sub_type": "estado_especial",
+  "duration": 2,
+  "removalCondition": {
+    "pt-br": "Até amenizar.",
+    "en-us": "Until alleviated."
+  }
+}

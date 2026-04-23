@@ -1,0 +1,23 @@
+{
+  "id": "loyal_shadow",
+  "name": {
+    "pt-br": "Sombra Leal",
+    "en-us": "Loyal Shadow"
+  },
+  "description": {
+    "pt-br": "Um agente furtivo dedicado a proteger um aliado específico nas sombras. Possui extrema destreza e precisão para eliminar ameaças antes que elas alcancem seu protegido.",
+    "en-us": "A stealthy agent dedicated to protecting a specific ally from the shadows. Has extreme dexterity and precision to eliminate threats before they reach their ward."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 2.5,
+    "crm": 1,
+    "frc": 1,
+    "int": 1,
+    "res": 1.5,
+    "pre": 2.5,
+    "enr": 0.5
+  },
+  "legacyAbilityId": "silent_steps",
+  "isCustom": false
+}

@@ -1,0 +1,12 @@
+{
+  "id": "first_aid",
+  "name": {
+    "pt-br": "Primeiros_socorros",
+    "en-us": "First Aid"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

@@ -1,0 +1,94 @@
+{
+  "id": "ukhel_he_who_is_like_death",
+  "type": "Hostil",
+  "name": {
+    "pt-br": "Ukhel, Aquele que é como a Morte",
+    "en-us": "Ukhel, He Who Is Like Death"
+  },
+  "description": {
+    "pt-br": "Se tornou jogador no nascimento. Toda sua família foi morta pela coalisão inumana. Viveu com a tribo da vila Figo. Foi o maior Alquímista da 2ª Guerra HomoElfis. Criou a Thanatos com intuito de vingar os humanos mortos nas guerras.",
+    "en-us": "Became a player at birth. His entire family was killed by the inhuman coalition. Lived with the Figo village tribe. Was the greatest Alchemist of the 2nd HomoElfis War. Created Thanatos to avenge humans killed in wars."
+  },
+  "age": 345,
+  "level": 99,
+  "classId": "unclassified",
+  "species1": "",
+  "species2": "",
+  "avatar": "",
+  "locationId": "unknown",
+  "ouris": 4456000,
+  "stats": {
+    "attributes": {
+      "VIT": 12,
+      "DEX": 12,
+      "CRM": 0,
+      "FRC": 20,
+      "INT": 10,
+      "RES": 12,
+      "PRE": 5,
+      "ENR": 16
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "mithril_earring",
+    "Face": "",
+    "Neck": "",
+    "Chest": "sobretudo_de_leather_de_jopopis",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "inoue_leather_pants",
+    "Feet": "shoes_de_areat"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "liderar",
+      "2": "stealth",
+      "3": "olhar_divino",
+      "4": "killing_fang",
+      "5": "envenenamento_lacrino",
+      "6": "distorcer_aparencia"
+    },
+    "passive": {
+      "1": "regeneration",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": "stair_of_betlehem"
+  },
+  "auraId": "",
+  "personalityId": "completely_cruel",
+  "possibleBenefit": {
+    "pt-br": "Poderá formar um Contrato.",
+    "en-us": "Can form a Contract."
+  },
+  "possibleHarm": {
+    "pt-br": "Será assassinado lentamente.",
+    "en-us": "Will be slowly assassinated."
+  },
+  "inventory": {
+    "1": "star_of_betlehem",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

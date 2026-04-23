@@ -1,0 +1,9 @@
+{
+  "id": "volcanic_region",
+  "name": { "pt-br": "Região Vulcânica", "en-us": "Volcanic Region" },
+  "description": {
+    "pt-br": "Bioma de intensa atividade geológica, com lava, gases tóxicos e temperaturas altíssimas. Elemento predominante: Fogo e Areia.",
+    "en-us": "Biome of intense geological activity, with lava, toxic gases, and extremely high temperatures. Predominant element: Fire and Sand."
+  },
+  "type": { "pt-br": "Bioma Natural", "en-us": "Natural Biome" }
+}

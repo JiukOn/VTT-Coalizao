@@ -1,0 +1,19 @@
+{
+  "id": "manoplas_rimu",
+  "name": {
+    "pt-br": "Manoplas Rimu",
+    "en-us": "Manoplas Rimu"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mãos / Acessório das Mãos",
+  "description": {
+    "pt-br": "Luvas pesadas para proteção das mãos. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "botas_hiunrimu",
+  "name": {
+    "pt-br": "Botas HiunRimu",
+    "en-us": "Botas Hiunrimu"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pé",
+  "description": {
+    "pt-br": "Botas feitas de casco de HiunRimu, oferecendo proteção exótica. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

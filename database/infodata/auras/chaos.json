@@ -1,0 +1,16 @@
+{
+  "id": "chaos",
+  "name": {
+    "pt-br": "Caos",
+    "en-us": "Chaos"
+  },
+  "description": {
+    "pt-br": "Uma aura de imprevisibilidade e desordem que perturba o ambiente ao redor. Aliados e inimigos próximos podem ter suas ações alteradas de forma inesperada, gerando confusão no campo de batalha.",
+    "en-us": "An aura of unpredictability and disorder that disturbs the surrounding environment. Nearby allies and enemies may have their actions altered in unexpected ways, generating confusion on the battlefield."
+  },
+  "activationMoments": {
+    "pt-br": "Sempre ativa. Em situações de alta tensão ou combate, os efeitos se intensificam, podendo desencadear efeitos aleatórios nos seres ao redor.",
+    "en-us": "Always active. In high-tension situations or combat, the effects intensify and may trigger random effects on nearby beings."
+  },
+  "isCustom": false
+}

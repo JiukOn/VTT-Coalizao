@@ -1,0 +1,19 @@
+{
+  "id": "chaos_wings",
+  "name": { "pt-br": "Asas do Caos", "en-us": "Chaos Wings" },
+  "description": {
+    "pt-br": "O usuário pode voar até 10m de altura por 3 turnos. No último turno, pode realizar um ataque de investida aérea corpo a corpo com +3 FRC. Se (1d20 > 16) falhar, perde 2 ENR temporariamente. Para reativar: 1d20 > 12.",
+    "en-us": "The user can fly up to 10m high for 3 turns. On the last turn, can perform an aerial melee charge with +3 FRC. If (1d20 > 16) fails, loses 2 ENR temporarily. To reactivate: 1d20 > 12."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": true, "skill_id": "fly" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 3,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 6, "DEX": 6 },
+  "isCustom": false
+}

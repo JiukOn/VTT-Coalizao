@@ -1,0 +1,94 @@
+{
+  "id": "nies_stratowisk",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Nies Stratowisk",
+    "en-us": "Nies Stratowisk"
+  },
+  "description": {
+    "pt-br": "Colega de Cayro Byron. Ajudou Deco após a doença de seu irmão. É um aventureiro de nível ouro na AAU.",
+    "en-us": "Colleague of Cayro Byron. Helped Deco after his brother's illness. Is a gold-rank adventurer in the AAU."
+  },
+  "age": 46,
+  "level": 6,
+  "classId": "shadow_leal",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "city_of_pigs",
+  "ouris": 13276,
+  "stats": {
+    "attributes": {
+      "VIT": 10,
+      "DEX": 4,
+      "CRM": 4,
+      "FRC": 6,
+      "INT": 9,
+      "RES": 3,
+      "PRE": 2,
+      "ENR": 4
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "colete_de_leather",
+    "Back": "",
+    "Right Hand": "sword_de_steel",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "fabric_pants",
+    "Feet": "boots_de_leather_de_enbarr"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "rastejo_sombrio",
+      "2": "passos_silenciosos",
+      "3": "distorcer_aparencia",
+      "4": "contract",
+      "5": "beserk",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "curioso",
+  "possibleBenefit": {
+    "pt-br": "Pode Acompanhar as aventuras.",
+    "en-us": "Can accompany adventures."
+  },
+  "possibleHarm": {
+    "pt-br": "N/A",
+    "en-us": "N/A"
+  },
+  "inventory": {
+    "1": "coin_mn",
+    "2": "potion_extravagente",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

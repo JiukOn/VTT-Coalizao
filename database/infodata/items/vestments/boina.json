@@ -1,0 +1,19 @@
+{
+  "id": "boina",
+  "name": {
+    "pt-br": "Boina",
+    "en-us": "Beret"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Cabeca",
+  "description": {
+    "pt-br": "Uma boina simples.",
+    "en-us": "A simple beret."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 5,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

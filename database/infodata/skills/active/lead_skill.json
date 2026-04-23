@@ -1,0 +1,19 @@
+{
+  "id": "lead_skill",
+  "name": { "pt-br": "Liderar", "en-us": "Lead" },
+  "description": {
+    "pt-br": "O usuário aumenta o poder de seus 'soldados': todos os atributos deles aumentam em +1 por 2 turnos. Para reativar: 1d20 > 16.",
+    "en-us": "The user increases their 'soldiers'' power: all their attributes increase by +1 for 2 turns. To reactivate: 1d20 > 16."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": 2,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

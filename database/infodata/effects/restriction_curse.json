@@ -1,0 +1,19 @@
+{
+  "id": "restriction_curse",
+  "name": {
+    "pt-br": "Restrição",
+    "en-us": "Restriction Curse"
+  },
+  "description": {
+    "pt-br": "O afetado deve jogar um dado de prejuízo em qualquer uso de habilidade.",
+    "en-us": "The affected must roll a disadvantage die on any skill use."
+  },
+  "category": "maldicao",
+  "type": "maldicao",
+  "sub_type": "penalidade_habilidade",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "Até conseguir remover.",
+    "en-us": "Until removed."
+  }
+}

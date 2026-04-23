@@ -1,0 +1,19 @@
+{
+  "id": "colher_de_wood",
+  "name": {
+    "pt-br": "Colher de Madeira",
+    "en-us": "Wooden Spoon"
+  },
+  "category": "general",
+  "type": "Item Geral",
+  "description": {
+    "pt-br": "Uma colher de madeira. Pode ser usada como arma improvisada.",
+    "en-us": "A wooden spoon. Can be used as an improvised weapon."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 1,
+  "weight": 0,
+  "rarity": "comum",
+  "isCustom": false
+}

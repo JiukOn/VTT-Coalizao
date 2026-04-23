@@ -1,0 +1,19 @@
+{
+  "id": "botas_avancadas",
+  "name": {
+    "pt-br": "Botas Avançadas",
+    "en-us": "Botas Avancadas"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pé",
+  "description": {
+    "pt-br": "Botas resistentes e leves para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "",
+  "price": 3,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

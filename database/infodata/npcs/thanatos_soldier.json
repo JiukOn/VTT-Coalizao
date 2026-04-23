@@ -1,0 +1,94 @@
+{
+  "id": "thanatos_soldier",
+  "type": "Hostil",
+  "name": {
+    "pt-br": "Soldado Thanatos",
+    "en-us": "Thanatos Soldier"
+  },
+  "description": {
+    "pt-br": "Mercenário do esquadrão Thanatos. Treinado para sigilo e combate.",
+    "en-us": "Mercenary of the Thanatos squad. Trained for stealth and combat."
+  },
+  "age": 31,
+  "level": 4,
+  "classId": "henchman",
+  "species1": "human",
+  "species2": "",
+  "avatar": "",
+  "locationId": "unknown",
+  "ouris": 0,
+  "stats": {
+    "attributes": {
+      "VIT": 5,
+      "DEX": 12,
+      "CRM": 0,
+      "FRC": 8,
+      "INT": 0,
+      "RES": 6,
+      "PRE": 6,
+      "ENR": 1
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "mascara_thanatos",
+    "Face": "",
+    "Neck": "",
+    "Chest": "chestplate_thanatos",
+    "Back": "",
+    "Right Hand": "dagger_thanatos",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "calca_thanatos",
+    "Feet": "thanatos_shoes"
+  },
+  "abilities": {
+    "legacy": "juntos_somos_mais",
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "obedient",
+  "possibleBenefit": {
+    "pt-br": "Pode treinar com a Thanatos.",
+    "en-us": "Can train with Thanatos."
+  },
+  "possibleHarm": {
+    "pt-br": "A Thanatos irá te atacar.",
+    "en-us": "Thanatos will attack you."
+  },
+  "inventory": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

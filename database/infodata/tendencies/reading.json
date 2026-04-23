@@ -1,0 +1,12 @@
+{
+  "id": "reading",
+  "name": {
+    "pt-br": "Leitura",
+    "en-us": "Reading"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

@@ -1,0 +1,17 @@
+{
+  "id": "demon",
+  "name": {
+    "pt-br": "Demônio",
+    "en-us": "Demon"
+  },
+  "description": {
+    "pt-br": "Seres de origem infernal ou com sangue demoníaco em suas veias. Possuem energia e força superiores, mas tendem a enfrentar resistência social por sua natureza intimidadora.",
+    "en-us": "Beings of infernal origin or with demonic blood in their veins. They possess superior energy and strength, but tend to face social resistance due to their intimidating nature."
+  },
+  "attributeModifiers": {
+    "frc": 1,
+    "enr": 2,
+    "crm": -1
+  },
+  "isCustom": false
+}

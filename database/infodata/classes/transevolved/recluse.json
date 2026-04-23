@@ -1,0 +1,23 @@
+{
+  "id": "recluse",
+  "name": {
+    "pt-br": "Recluso",
+    "en-us": "Recluse"
+  },
+  "description": {
+    "pt-br": "Uma classe de TransEvolução de um ser que transcendeu sua humanidade. O Recluso abandona convenções sociais para abraçar uma natureza quase bestial, ganhando habilidades únicas de percepção e incorporação.",
+    "en-us": "A TransEvolution class of a being who transcended their humanity. The Recluse abandons social conventions to embrace an almost bestial nature, gaining unique abilities of perception and incorporation."
+  },
+  "multipliers": {
+    "vit": 2,
+    "dex": 1.5,
+    "crm": 1,
+    "frc": 1,
+    "int": 1.5,
+    "res": 1.5,
+    "pre": 1,
+    "enr": 2
+  },
+  "legacyAbilityId": "unrestricted_incorporation",
+  "isCustom": false
+}

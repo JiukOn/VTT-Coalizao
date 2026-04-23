@@ -1,0 +1,94 @@
+{
+  "id": "t_17",
+  "type": "Hostil",
+  "name": {
+    "pt-br": "T-17",
+    "en-us": "T-17"
+  },
+  "description": {
+    "pt-br": "Foi uma escrava de Carter Unsato. Conheceu Kalina. Supostamente foi morta por heresia. Foi transmutada com partes do corpo de diversas criaturas. Não perdeu suas memórias. Quer matar Carter Unsato.",
+    "en-us": "Was a slave of Carter Unsato. Met Kalina. Supposedly killed for heresy. Transmuted with body parts from various creatures. Did not lose her memories. Wants to kill Carter Unsato."
+  },
+  "age": 25,
+  "level": 3,
+  "classId": "unclassified",
+  "species1": "human",
+  "species2": "demon",
+  "avatar": "",
+  "locationId": "unknown",
+  "ouris": 0,
+  "stats": {
+    "attributes": {
+      "VIT": 6,
+      "DEX": 5,
+      "CRM": 5,
+      "FRC": 6,
+      "INT": 6,
+      "RES": 4,
+      "PRE": 1,
+      "ENR": 8
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Face": "",
+    "Neck": "",
+    "Chest": "marca_de_transmutacao",
+    "Back": "",
+    "Right Hand": "",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "",
+    "Feet": ""
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "strength_de_bico",
+      "2": "envenenamento_ricino",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "prey_habit",
+      "2": "resistance_elemental_wood",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "creature",
+  "possibleBenefit": {
+    "pt-br": "Salvação dos Transmutos.",
+    "en-us": "Salvation of the Transmuted."
+  },
+  "possibleHarm": {
+    "pt-br": "Extermínio da Humanidade.",
+    "en-us": "Extermination of Humanity."
+  },
+  "inventory": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

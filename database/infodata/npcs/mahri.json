@@ -1,0 +1,94 @@
+{
+  "id": "mahri",
+  "type": "Aliado",
+  "name": {
+    "pt-br": "Mahri",
+    "en-us": "Mahri"
+  },
+  "description": {
+    "pt-br": "Aprendeu agricultura com os pais na capital dos elfos. Por ser uma Híbrida foi expulsa da cidade e agora vive na Muralha do Exílio. Tem 1 filha. É dona de uma loja de ervas medicinais.",
+    "en-us": "Learned farming from her parents in the elf capital. Being a Hybrid was expelled from the city and now lives in the Exile Wall. Has 1 daughter. Owns a medicinal herb shop."
+  },
+  "age": 42,
+  "level": 5,
+  "classId": "farmer",
+  "species1": "kobold",
+  "species2": "elf",
+  "avatar": "",
+  "locationId": "exile_wall",
+  "ouris": 94000,
+  "stats": {
+    "attributes": {
+      "VIT": 8,
+      "DEX": 1,
+      "CRM": 4,
+      "FRC": 4,
+      "INT": 8,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 2
+    },
+    "multipliers": {
+      "VIT": 1,
+      "DEX": 1,
+      "CRM": 1,
+      "FRC": 1,
+      "INT": 1,
+      "RES": 1,
+      "PRE": 1,
+      "ENR": 1
+    }
+  },
+  "equipment": {
+    "Head": "floral_bandana",
+    "Face": "",
+    "Neck": "",
+    "Chest": "cloth_dress",
+    "Back": "",
+    "Right Hand": "wicker_basket",
+    "Left Hand": "",
+    "Hand Accessories": "",
+    "Legs": "cloth_skirt",
+    "Feet": "wolf_leather_sandal"
+  },
+  "abilities": {
+    "legacy": "",
+    "active": {
+      "1": "agricultura_rapida",
+      "2": "envenenamento_ricino",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    },
+    "passive": {
+      "1": "memoria_perfeita",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "myth": ""
+  },
+  "auraId": "",
+  "personalityId": "eloquent",
+  "possibleBenefit": {
+    "pt-br": "Ensina sobre Herbologia, Ganha Desconto.",
+    "en-us": "Teaches about Herbology, Gain a Discount."
+  },
+  "possibleHarm": {
+    "pt-br": "Você é expulso da Muralha do Exílio.",
+    "en-us": "You are expelled from the Exile Wall."
+  },
+  "inventory": {
+    "1": "scissors",
+    "2": "seed_bag_daisies",
+    "3": "lantern",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": ""
+  },
+  "isCustom": false
+}

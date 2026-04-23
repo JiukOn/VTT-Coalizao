@@ -1,0 +1,19 @@
+{
+  "id": "straw_basket",
+  "name": {
+    "pt-br": "Cesta de Palha",
+    "en-us": "Straw Basket"
+  },
+  "category": "general",
+  "type": "Item Geral",
+  "description": {
+    "pt-br": "Uma cesta de palha trancada.",
+    "en-us": "A woven straw basket."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 4,
+  "weight": 2,
+  "rarity": "comum",
+  "isCustom": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frailty_curse",
+  "name": {
+    "pt-br": "Fraqueza",
+    "en-us": "Frailty Curse"
+  },
+  "description": {
+    "pt-br": "Se o personagem possuir maior valor de FRC que o alvo, ele perde -2 FRC e -1 DEX.",
+    "en-us": "If the character has a higher FRC value than the target, they lose -2 FRC and -1 DEX."
+  },
+  "category": "maldicao",
+  "type": "maldicao",
+  "sub_type": "penalidade_atributo",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "Até conseguir remover.",
+    "en-us": "Until removed."
+  }
+}

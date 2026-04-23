@@ -1,0 +1,22 @@
+{
+  "id": "peitoral_rimu",
+  "name": {
+    "pt-br": "Peitoral Rimu",
+    "en-us": "Peitoral Rimu"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Corpo",
+  "description": {
+    "pt-br": "Peitoral pesado de couro alquimizado, com grande capacidade de proteção. Concede +1 FRC, -4 DEX. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
+    "en-us": ""
+  },
+  "stats": {
+    "dex": -4,
+    "frc": 1
+  },
+  "damage": "",
+  "price": 10,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

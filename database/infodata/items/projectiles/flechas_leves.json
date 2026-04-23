@@ -1,0 +1,19 @@
+{
+  "id": "flechas_leves",
+  "name": {
+    "pt-br": "Flechas Leves",
+    "en-us": "Flechas Leves"
+  },
+  "category": "projectiles",
+  "type": "Projetil",
+  "description": {
+    "pt-br": "Flechas projetadas para serem rápidas. Causam 1d4 de dano.",
+    "en-us": ""
+  },
+  "stats": {},
+  "damage": "1d4",
+  "price": 0,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

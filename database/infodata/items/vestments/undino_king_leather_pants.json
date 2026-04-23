@@ -1,0 +1,21 @@
+{
+  "id": "undino_king_leather_pants",
+  "name": {
+    "pt-br": "Calca de Couro de Rei Undino",
+    "en-us": "Undino King Leather Pants"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pernas",
+  "description": {
+    "pt-br": "Calcas de couro do Rei Undino. Concedem +2 RES.",
+    "en-us": "Undino King leather pants. Grant +2 RES."
+  },
+  "stats": {
+    "res": 2
+  },
+  "damage": "",
+  "price": 45,
+  "weight": 3,
+  "rarity": "especial",
+  "isCustom": false
+}

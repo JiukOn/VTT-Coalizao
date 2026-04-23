@@ -1,0 +1,19 @@
+{
+  "id": "water_fold",
+  "name": { "pt-br": "Dobra de Água", "en-us": "Water Fold" },
+  "description": {
+    "pt-br": "O usuário recebe a capacidade de controlar o elemento Água. Causa 2d4-1 de dano. Se o teste (1d20 > 18) for bem-sucedido, o alvo recebe o efeito 'Afogamento'. Se o teste falhar (1d20 < 16), perde 1 ENR temporariamente.",
+    "en-us": "The user gains the ability to control the Water element, dealing 2d4-1 damage. If test (1d20 > 18) succeeds, the target receives the 'Drowning' effect. If test fails (1d20 < 16), loses 1 ENR temporarily."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 6, "PRE": 6 },
+  "isCustom": false
+}

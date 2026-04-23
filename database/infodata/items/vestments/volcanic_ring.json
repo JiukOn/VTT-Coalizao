@@ -1,0 +1,21 @@
+{
+  "id": "volcanic_ring",
+  "name": {
+    "pt-br": "Anel Vulcânico",
+    "en-us": "Volcanic Ring"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Mãos / Acessório das Mãos",
+  "description": {
+    "pt-br": "Um anel que confere +3 ENR. Possui a modificação Quente, fazendo seus ataques possuírem o elemento Fogo e poderem causar Queimadura. .",
+    "en-us": ""
+  },
+  "stats": {
+    "enr": 3
+  },
+  "damage": "",
+  "price": 20,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

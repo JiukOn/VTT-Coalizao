@@ -1,0 +1,11 @@
+{
+  "id": "camouflaged",
+  "name": { "pt-br": "Camuflado", "en-us": "Camouflaged" },
+  "description": {
+    "pt-br": "Concede +1 no dado em testes de Furtividade. Ideal para Itens que buscam discrição e Vestimentas.",
+    "en-us": "Grants +1 to Stealth test dice. Ideal for Items seeking discretion and Vestments."
+  },
+  "category": "essencial",
+  "applicableTo": ["vestment", "general"],
+  "attribute_modifiers": { "attribute": "stealth_dice", "value": "+1" }
+}

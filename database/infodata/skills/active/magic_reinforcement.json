@@ -1,0 +1,19 @@
+{
+  "id": "magic_reinforcement",
+  "name": { "pt-br": "Reforço Mágico", "en-us": "Magic Reinforcement" },
+  "description": {
+    "pt-br": "Gasta 1 ENR temporariamente para aumentar 1 FRC por 2 turnos. Para reativar na mesma situação: 1d20 > 16.",
+    "en-us": "Spends 1 ENR temporarily to increase FRC by 1 for 2 turns. To reactivate in the same situation: 1d20 > 16."
+  },
+  "category": "active",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "1 ENR",
+  "turns_duration": 2,
+  "turns_cooldown": null,
+  "requirements": { "ENR": 4 },
+  "isCustom": false
+}

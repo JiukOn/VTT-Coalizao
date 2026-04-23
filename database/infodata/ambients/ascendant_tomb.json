@@ -1,0 +1,9 @@
+{
+  "id": "ascendant_tomb",
+  "name": { "pt-br": "Tumba dos Ascendentes", "en-us": "Ascendant Tomb" },
+  "description": {
+    "pt-br": "A tumba sagrada dos primeiros TransEvoluídos, onde o poder dos ancestrais ainda ressoa e pode ser sentido pelos mais sensíveis.",
+    "en-us": "The sacred tomb of the first TransEvolved, where the power of the ancestors still resonates and can be felt by the most sensitive."
+  },
+  "type": { "pt-br": "Especial", "en-us": "Special" }
+}

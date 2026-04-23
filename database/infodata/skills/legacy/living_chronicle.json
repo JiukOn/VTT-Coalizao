@@ -1,0 +1,19 @@
+{
+  "id": "living_chronicle",
+  "name": { "pt-br": "Crônica Viva", "en-us": "Living Chronicle" },
+  "description": {
+    "pt-br": "O usuário escreve eventos significativos da campanha em tempo real. Isso permite alterar uma rolagem já feita (de qualquer personagem visível), uma vez por sessão para Desastre ou Crítico, justificando narrativamente. Requer aprovação do Mestre.",
+    "en-us": "The user writes significant campaign events in real time. This allows altering a roll already made (of any visible character), once per session to Disaster or Critical, with narrative justification. Requires Master approval."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "writer" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": { "INT": 7 },
+  "isCustom": false
+}

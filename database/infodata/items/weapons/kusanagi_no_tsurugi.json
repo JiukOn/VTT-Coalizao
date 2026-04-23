@@ -1,0 +1,22 @@
+{
+  "id": "kusanagi_no_tsurugi",
+  "name": {
+    "pt-br": "Kusanagi no Tsurugi",
+    "en-us": "Kusanagi no Tsurugi"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma espada lendaria. Concede +2 FRC e +2 DEX. Causa 1d4 + 3 de dano.",
+    "en-us": "A legendary sword. Grants +2 FRC and +2 DEX. Deals 1d4 + 3 damage."
+  },
+  "stats": {
+    "frc": 2,
+    "dex": 2
+  },
+  "damage": "1d4 + 3",
+  "price": 100,
+  "weight": 2,
+  "rarity": "mito",
+  "isCustom": false
+}

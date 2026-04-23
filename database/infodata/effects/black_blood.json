@@ -1,0 +1,19 @@
+{
+  "id": "black_blood",
+  "name": {
+    "pt-br": "Sangue Negro",
+    "en-us": "Black Blood"
+  },
+  "description": {
+    "pt-br": "Pode ser contraída ao entrar em contato com o sangue de um ser infectado ou ao utilizar magia negra. Se 1d4 <= 2, o personagem recebe temporariamente -1 DEX, -1 FRC, -1 PRE. Se VIT <= 0 enquanto a doença estiver ativa, o personagem recebe o efeito MORTO-VIVO.",
+    "en-us": "Can be contracted by contacting infected blood or using dark magic. If 1d4 <= 2, the character temporarily receives -1 DEX, -1 FRC, -1 PRE. If VIT <= 0 while the disease is active, the character receives the UNDEAD effect."
+  },
+  "category": "doenca",
+  "type": "doenca",
+  "sub_type": "transmissivel",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até curar.",
+    "en-us": "Until cured."
+  }
+}

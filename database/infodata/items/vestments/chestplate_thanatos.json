@@ -1,0 +1,21 @@
+{
+  "id": "chestplate_thanatos",
+  "name": {
+    "pt-br": "Peitoral Thanatos",
+    "en-us": "Thanatos Chestplate"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Armadura de peitoral da guilda Thanatos. Concede +2 RES.",
+    "en-us": "Thanatos guild breastplate. Grants +2 RES."
+  },
+  "stats": {
+    "res": 2
+  },
+  "damage": "",
+  "price": 40,
+  "weight": 3,
+  "rarity": "especial",
+  "isCustom": false
+}

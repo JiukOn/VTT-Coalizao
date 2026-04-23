@@ -1,0 +1,12 @@
+{
+  "id": "curse",
+  "name": {
+    "pt-br": "Amaldicoar",
+    "en-us": "Curse"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}

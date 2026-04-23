@@ -1,0 +1,19 @@
+{
+  "id": "servitude",
+  "name": {
+    "pt-br": "Servidão",
+    "en-us": "Servitude"
+  },
+  "description": {
+    "pt-br": "O afetado teme o seu 'soberano'.",
+    "en-us": "The affected fears their 'sovereign'."
+  },
+  "category": "psicologico_passivo",
+  "type": "psicologico_passivo",
+  "sub_type": "penalidade_social",
+  "duration": -1,
+  "removalCondition": {
+    "pt-br": "",
+    "en-us": ""
+  }
+}

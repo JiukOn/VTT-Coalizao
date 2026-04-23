@@ -1,0 +1,11 @@
+{
+  "id": "fortified",
+  "name": { "pt-br": "Fortificado", "en-us": "Fortified" },
+  "description": {
+    "pt-br": "Concede +1 no dado em testes de Defesa. Ideal para Vestimentas e Escudos.",
+    "en-us": "Grants +1 to Defense test dice. Ideal for Vestments and Shields."
+  },
+  "category": "defensivo",
+  "applicableTo": ["vestment", "shield"],
+  "attribute_modifiers": { "attribute": "defense_dice", "value": "+1" }
+}

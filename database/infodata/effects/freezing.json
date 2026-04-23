@@ -1,0 +1,19 @@
+{
+  "id": "freezing",
+  "name": {
+    "pt-br": "Congelamento",
+    "en-us": "Freezing"
+  },
+  "description": {
+    "pt-br": "O afetado fica paralisado pelo frio e não pode se mover enquanto o efeito durar.",
+    "en-us": "The affected is paralyzed by cold and cannot move while the effect lasts."
+  },
+  "category": "condicao",
+  "type": "condicao",
+  "sub_type": "dano_elemental",
+  "duration": 0,
+  "removalCondition": {
+    "pt-br": "Até amenizar.",
+    "en-us": "Until alleviated."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "thanatos_shoes",
+  "name": {
+    "pt-br": "Sapatos Thanatos",
+    "en-us": "Thanatos Shoes"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Calcados da guilda Thanatos. Concedem +1 DEX e +1 FRC.",
+    "en-us": "Thanatos guild footwear. Grant +1 DEX and +1 FRC."
+  },
+  "stats": {
+    "dex": 1,
+    "frc": 1
+  },
+  "damage": "",
+  "price": 25,
+  "weight": 1,
+  "rarity": "especial",
+  "isCustom": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "culverin",
+  "name": {
+    "pt-br": "Culverin",
+    "en-us": "Culverin"
+  },
+  "category": "weapons",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Capaz de lançar projéteis esféricos e duráveis, necessita de pólvora, e confere +3 PRE. Distância Máxima de lançamento: 20 metros. Possui a modificação Pesado, concedendo +1 no dado em testes de ataque, mas impondo -1 no dado em testes de esquiva. .",
+    "en-us": ""
+  },
+  "stats": {
+    "pre": 3
+  },
+  "damage": "",
+  "price": 20,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

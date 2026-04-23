@@ -1,0 +1,19 @@
+{
+  "id": "cloth_shoes",
+  "name": {
+    "pt-br": "Sapatos de Pano",
+    "en-us": "Cloth Shoes"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Pe",
+  "description": {
+    "pt-br": "Sapatos simples de pano.",
+    "en-us": "Simple cloth shoes."
+  },
+  "stats": {},
+  "damage": "",
+  "price": 6,
+  "weight": 1,
+  "rarity": "comum",
+  "isCustom": false
+}

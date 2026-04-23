@@ -1,0 +1,21 @@
+{
+  "id": "sweet_flute",
+  "name": {
+    "pt-br": "Flauta Doce",
+    "en-us": "Sweet Flute"
+  },
+  "category": "general",
+  "type": "Arma",
+  "description": {
+    "pt-br": "Uma flauta de madeira com som adocicado. Pode ser usada como arma e concede +1 CRM.",
+    "en-us": "A wooden flute with a sweet sound. Can be used as a weapon and grants +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 15,
+  "weight": 0,
+  "rarity": "especial",
+  "isCustom": false
+}

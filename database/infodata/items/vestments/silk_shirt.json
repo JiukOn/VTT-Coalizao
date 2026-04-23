@@ -1,0 +1,21 @@
+{
+  "id": "silk_shirt",
+  "name": {
+    "pt-br": "Camisa de Seda",
+    "en-us": "Silk Shirt"
+  },
+  "category": "vestments",
+  "type": "Vestimenta - Torso",
+  "description": {
+    "pt-br": "Uma camisa de seda suave. Concede +1 CRM.",
+    "en-us": "A smooth silk shirt. Grants +1 CRM."
+  },
+  "stats": {
+    "crm": 1
+  },
+  "damage": "",
+  "price": 18,
+  "weight": 1,
+  "rarity": "sentimental",
+  "isCustom": false
+}

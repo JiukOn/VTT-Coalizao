@@ -1,0 +1,19 @@
+{
+  "id": "absolute_control",
+  "name": { "pt-br": "Controle Absoluto", "en-us": "Absolute Control" },
+  "description": {
+    "pt-br": "O usuário ganha 1 dado bônus no uso de qualquer habilidade uma vez a cada 3 turnos. Também possibilita aprender habilidades de outras classes.",
+    "en-us": "The user gains 1 bonus die on any skill use once every 3 turns. Also enables learning skills from other classes."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": false, "class_id": "" },
+  "myth": { "ismyth": true, "item_id": "lovelace_secret" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": 3,
+  "requirements": { "ENR": 8 },
+  "isCustom": false
+}

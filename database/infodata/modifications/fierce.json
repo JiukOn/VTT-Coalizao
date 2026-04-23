@@ -1,0 +1,11 @@
+{
+  "id": "fierce",
+  "name": { "pt-br": "Feroz", "en-us": "Fierce" },
+  "description": {
+    "pt-br": "Após um acerto crítico com este item, o próximo ataque do usuário recebe +1 no dado de dano. Aplicável a Armas.",
+    "en-us": "After a critical hit with this item, the user's next attack receives +1 on the damage die. Applicable to Weapons."
+  },
+  "category": "ofensivo",
+  "applicableTo": ["weapon"],
+  "attribute_modifiers": {}
+}

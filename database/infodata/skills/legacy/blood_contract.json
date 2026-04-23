@@ -1,0 +1,19 @@
+{
+  "id": "blood_contract",
+  "name": { "pt-br": "Contrato de Sangue", "en-us": "Blood Contract" },
+  "description": {
+    "pt-br": "Ao gastar 10 XP, o usuário pode tentar estabelecer um contrato com um ser não inteligente. Teste de (1d20 + maior entre INT ou CRM) vs (1d20 + maior entre INT ou CRM do alvo). Se falhar duplamente, perde 15 XP adicionais.",
+    "en-us": "By spending 10 XP, the user can attempt to establish a contract with a non-intelligent being. Test (1d20 + highest of INT or CRM) vs (1d20 + target's highest of INT or CRM). On double failure, loses 15 additional XP."
+  },
+  "category": "active",
+  "legacy": { "islegacy": true, "class_id": "tamer" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "10 XP",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

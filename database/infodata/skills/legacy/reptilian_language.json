@@ -1,0 +1,19 @@
+{
+  "id": "reptilian_language",
+  "name": { "pt-br": "Linguagem Reptiliana", "en-us": "Reptilian Language" },
+  "description": {
+    "pt-br": "O usuário é capaz de se comunicar com répteis.",
+    "en-us": "The user is capable of communicating with reptiles."
+  },
+  "category": "passive",
+  "legacy": { "islegacy": true, "class_id": "reptilian" },
+  "myth": { "ismyth": false, "item_id": "" },
+  "succession": { "issuccession": false, "npc_id": "" },
+  "evolved": { "isevolved": false, "skill_id": "" },
+  "single_use": false,
+  "cost": "",
+  "turns_duration": null,
+  "turns_cooldown": null,
+  "requirements": {},
+  "isCustom": false
+}

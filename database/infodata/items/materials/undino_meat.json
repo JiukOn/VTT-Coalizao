@@ -1,0 +1,10 @@
+{
+  "id": "undino_meat",
+  "name": {
+    "pt-br": "Carne De Undino",
+    "en-us": "Undino Meat"
+  },
+  "category": "materials",
+  "type": "Material",
+  "isCustom": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "revelation",
+  "name": {
+    "pt-br": "Revelação",
+    "en-us": "Revelation"
+  },
+  "description": {
+    "pt-br": "Uma aura de clareza e percepção aguçada que revela verdades ocultas ao redor. Seres próximos tendem a ter insights repentinos e dificuldade em manter segredos ou ilusões.",
+    "en-us": "An aura of clarity and heightened perception that reveals hidden truths nearby. Beings in range tend to have sudden insights and difficulty maintaining secrets or illusions."
+  },
+  "activationMoments": {
+    "pt-br": "Sempre ativa. Os efeitos de revelação são mais intensos quando o portador está em investigação ativa ou meditação.",
+    "en-us": "Always active. The revelation effects are more intense when the bearer is actively investigating or meditating."
+  },
+  "isCustom": false
+}

@@ -1,0 +1,12 @@
+{
+  "id": "pairkour",
+  "name": {
+    "pt-br": "Parkour",
+    "en-us": "Parkour"
+  },
+  "description": {
+    "pt-br": "",
+    "en-us": ""
+  },
+  "isCustom": false
+}
