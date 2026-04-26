@@ -68,9 +68,18 @@ function Root() {
 
 // ── Bootstrap: await DB seed, then mount ──────────────────────────────────────
 ;(async () => {
-  await seedDatabase()
+  try {
+    await seedDatabase()
+  } catch (err) {
+    console.error('[Bootstrap] seedDatabase failed:', err)
+  }
 
-  createRoot(document.getElementById('root')).render(
+  const container = document.getElementById('root')
+  if (!window.__reactRoot) {
+    window.__reactRoot = createRoot(container)
+  }
+
+  window.__reactRoot.render(
     <StrictMode>
       <Root />
     </StrictMode>

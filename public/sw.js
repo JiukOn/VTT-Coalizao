@@ -1,8 +1,8 @@
 /* VTP Coalizão — Service Worker (offline cache) */
 const CACHE_NAME = 'vtp-coalizao-v1'
 const PRECACHE = [
-  '/Projeto-VTP/',
-  '/Projeto-VTP/index.html',
+  '/VTT-Coalizao/',
+  '/VTT-Coalizao/index.html',
 ]
 
 self.addEventListener('install', event => {
@@ -39,7 +39,7 @@ self.addEventListener('fetch', event => {
           caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone))
         }
         return response
-      }).catch(() => caches.match('/Projeto-VTP/index.html'))
+      }).catch(() => caches.match('/VTT-Coalizao/index.html'))
     })
   )
 })

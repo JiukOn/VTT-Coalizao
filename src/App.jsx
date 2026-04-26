@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Map } from 'lucide-react'
 import Header from './components/layout/Header.jsx'
 import Sidebar from './components/layout/Sidebar.jsx'
 import MainContent from './components/layout/MainContent.jsx'
@@ -32,7 +31,7 @@ const TABS = [
   { id: 'habilidades', label: 'Habilidades', icon: 'zap' },
   { id: 'itens',       label: 'Itens',       icon: 'swords' },
   { id: 'campanha',    label: 'Campanha',    icon: 'book-open' },
-  { id: 'dominios',   label: { 'pt-br': 'Domínios', 'en-us': 'Domains' }, icon: Map },
+  { id: 'dominios',   label: 'Domínios',   icon: 'globe' },
   { id: 'servidor',    label: 'Servidor',    icon: 'server' },
 ]
 
@@ -91,6 +90,31 @@ function App() {
     window.addEventListener('vtp:turn_change', handler)
     return () => window.removeEventListener('vtp:turn_change', handler)
   }, [serverOnline, broadcast])
+
+  // ── Apply player token moves from server ───────────────────────────────────
+  useEffect(() => {
+    const handler = (evt) => {
+      const { id, changes } = evt.detail?.data || {}
+      if (id && changes) handleUpdateTableEntity(id, changes)
+    }
+    window.addEventListener('vtp:token_move', handler)
+    return () => window.removeEventListener('vtp:token_move', handler)
+  }, [handleUpdateTableEntity])
+
+  // Broadcast full state whenever table changes
+  useEffect(() => {
+    if (!serverOnline) return
+    const entityMap = {}
+    tableEntities.forEach(e => {
+      entityMap[e.tableId || e.id] = e
+    })
+    broadcast('game_state_update', {
+      order: [...tableEntities].sort((a, b) => (Number(b.initiative) || 0) - (Number(a.initiative) || 0)),
+      round: 1, // To be implemented by a real tracker
+      currentIndex: 0,
+      entityMap
+    })
+  }, [tableEntities, serverOnline, broadcast])
 
   // ── Page renderer ──────────────────────────────────────────────────────────
 

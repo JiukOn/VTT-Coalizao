@@ -1531,5 +1531,420 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
 
 
 ================================================================================
+  12. TRANSIÇÃO ARQUITETURAL — SEPARAÇÃO HOST / USER-PLAYER / USER-MASTER
+================================================================================
+
+  CONTEXTO
+  ─────────
+  Atualmente todo o código-fonte (Mestre + Jogador) vive em /host/src/ sem
+  separação de responsabilidades por pasta. O objetivo desta seção é guiar
+  a reorganização progressiva do repositório em três domínios independentes:
+
+    HOST          →  Servidor central, relay e lógica compartilhada
+    USER-MASTER   →  Interface e dados exclusivos do Mestre
+    USER-PLAYER   →  Interface e dados exclusivos do Jogador
+
+  Cada domínio terá sua própria estrutura de pastas, arquivos de acesso/
+  validação, memória de sessão e arquivos temporários antes de se tornarem
+  definitivos.
+
+  ─────────────────────────────────────────────────────────────────────────────
+  12.1 ESTRUTURA-ALVO DE DIRETÓRIOS
+  ─────────────────────────────────────────────────────────────────────────────
+
+  D:\Repositorios\Projeto VTT\
+  │
+  ├── HOST\                          (servidor + relay + lógica partilhada)
+  │   ├── server\                    ← host/server/ — sem alteração de conteúdo
+  │   │   ├── index.js               (Express + WS local, Fase 7A)
+  │   │   └── sessionManager.js      (geração de código, descoberta de IP)
+  │   ├── relay\                     ← host/relay/ — sem alteração de conteúdo
+  │   │   ├── index.js               (relay stateless multi-room, Fase 7B)
+  │   │   └── package.json / configs
+  │   ├── shared\                    (NOVO — código partilhado por ambos os lados)
+  │   │   ├── components\            (Modal, SearchBar, FilterBar, ConfirmDialog)
+  │   │   ├── context\               (ThemeContext, LanguageContext)
+  │   │   ├── hooks\                 (useWebSocket.js, useLocalStorage.js)
+  │   │   ├── utils\                 (diceRoller.js, combatUtils.js)
+  │   │   ├── styles\                (index.css, layout.css, components.css, pages.css)
+  │   │   └── i18n\                  (ui.js — traduções PT/EN)
+  │   └── services\                  (database.js, dataSeeder.js, campaignIO.js)
+  │
+  ├── USER-MASTER\                   (interface e dados exclusivos do Mestre)
+  │   ├── src\
+  │   │   ├── App.jsx                (MasterApp com abas e providers completos)
+  │   │   ├── pages\                 (DashboardPage, MapPage, CharactersPage,
+  │   │   │                           NPCsPage, BestiaryPage, AbilitiesPage,
+  │   │   │                           ItemsPage, CampaignPage, DomainPage,
+  │   │   │                           ServerPage)
+  │   │   ├── components\            (componentes master-only: CampaignManager,
+  │   │   │                           MasterToolsPanel, MapCanvas, EntityForm,
+  │   │   │                           CombatAssistant, CharacterForm, etc.)
+  │   │   └── context\
+  │   │       ├── CampaignContext.jsx (leitura/escrita total de estado de campanha)
+  │   │       └── ServerContext.jsx   (cliente WS do lado do host — envia broadcast)
+  │   ├── access\                    (NOVO — autenticação e validação do Mestre)
+  │   │   ├── masterAuth.js          (verifica código-mestre, protege rotas master)
+  │   │   └── sessionGuard.jsx       (HOC que bloqueia acesso sem credencial válida)
+  │   ├── memory\                    (NOVO — persistência temporária e definitiva)
+  │   │   ├── temp\                  (rascunhos de sessão, estados não confirmados)
+  │   │   │   ├── draft_session.json (estado em andamento antes de salvar)
+  │   │   │   └── undo_stack.json    (histórico de ações reversíveis da sessão)
+  │   │   └── saves\                 (arquivos definitivos exportados pelo Mestre)
+  │   │       └── [campaign-name]\   (JSON completo exportado via CampaignPage)
+  │   └── assets\                    (ícones e imagens exclusivos da interface master)
+  │
+  ├── USER-PLAYER\                   (interface e dados exclusivos do Jogador)
+  │   ├── src\
+  │   │   ├── PlayerApp.jsx          (PlayerApp com providers limitados)
+  │   │   ├── pages\
+  │   │   │   ├── PlayerLoginPage.jsx (entrada: endereço + código de campanha)
+  │   │   │   └── PlayerDashboard.jsx (6 abas: Dados, Iniciativa, Ficha,
+  │   │   │                            Combate, Notas, Log)
+  │   │   ├── components\            (componentes player-only: PlayerMap,
+  │   │   │                           DiceRollerWidget, CombatResolver limitado,
+  │   │   │                           InitiativeTracker read-only)
+  │   │   └── context\
+  │   │       └── PlayerContext.jsx   (NOVO — estado local do jogador: personagem
+  │   │                               selecionado, notas, log filtrado)
+  │   ├── access\                    (NOVO — autenticação e validação do Jogador)
+  │   │   ├── playerAuth.js          (valida código de sessão + nome do jogador)
+  │   │   ├── codeValidator.js       (verifica formato do código 6-char, lida
+  │   │   │                           com expiração e rejeição do servidor)
+  │   │   └── characterSelector.jsx  (tela de seleção de personagem após entrada)
+  │   ├── memory\                    (NOVO — dados temporários do jogador)
+  │   │   ├── temp\                  (cache local de dados recebidos via WS)
+  │   │   │   ├── received_map.json  (snapshot do mapa sincronizado do host)
+  │   │   │   ├── initiative.json    (estado atual da iniciativa recebido)
+  │   │   │   └── combat_state.json  (dados de combate em andamento)
+  │   │   └── saves\                 (notas e preferências locais do jogador)
+  │   │       └── [player-name].json (notas da sessão + config de UI)
+  │   └── assets\                    (ícones e imagens exclusivos da interface player)
+  │
+  ├── database\                      (sem alteração — dados de jogo pré-populados)
+  │   ├── infodata\                  (habilidades, itens, criaturas, NPCs, efeitos…)
+  │   ├── savedata\                  (saves de jogadores escritos pelo servidor)
+  │   ├── metadata\                  (índices/cache de busca)
+  │   └── backup\                    (cópias de segurança)
+  │
+  ├── public\                        (PWA manifest + service worker — sem alteração)
+  └── scripts\                       (scripts de migração de dados — sem alteração)
+
+  ─────────────────────────────────────────────────────────────────────────────
+  12.2 RESPONSABILIDADES POR DOMÍNIO
+  ─────────────────────────────────────────────────────────────────────────────
+
+  ┌──────────────────┬──────────────────────────────────────────────────────┐
+  │ DOMÍNIO          │ RESPONSABILIDADE                                     │
+  ├──────────────────┼──────────────────────────────────────────────────────┤
+  │ HOST/server      │ Aceitar conexões WS (LAN), gerar código de sessão,  │
+  │                  │ autenticar jogadores, repassar mensagens, salvar     │
+  │                  │ dados de jogadores em database/savedata/             │
+  ├──────────────────┼──────────────────────────────────────────────────────┤
+  │ HOST/relay       │ Relay stateless (online), rotear mensagens entre     │
+  │                  │ salas sem guardar estado de campanha                 │
+  ├──────────────────┼──────────────────────────────────────────────────────┤
+  │ HOST/shared      │ Código compilado nos dois bundles (master + player): │
+  │                  │ hooks WS, tema, idioma, utilitários de dados,        │
+  │                  │ componentes UI genéricos                             │
+  ├──────────────────┼──────────────────────────────────────────────────────┤
+  │ HOST/services    │ IndexedDB (Dexie), seed de dados, export/import de   │
+  │                  │ campanha — usados pelo bundle master                 │
+  ├──────────────────┼──────────────────────────────────────────────────────┤
+  │ USER-MASTER/src  │ Toda a UI de controle do Mestre: abas, mapa tático  │
+  │                  │ completo, gestão de entidades, campanha, servidor    │
+  ├──────────────────┼──────────────────────────────────────────────────────┤
+  │ USER-MASTER/     │ Verificação de credencial do Mestre (código-mestre   │
+  │ access           │ ou flag localStorage), proteção de rota, HOC guard  │
+  ├──────────────────┼──────────────────────────────────────────────────────┤
+  │ USER-MASTER/     │ temp/: rascunhos de sessão não confirmados e pilha  │
+  │ memory           │ de desfazer; saves/: JSONs exportados definitivos   │
+  ├──────────────────┼──────────────────────────────────────────────────────┤
+  │ USER-PLAYER/src  │ UI limitada do Jogador: login, dashboard 6 abas,    │
+  │                  │ mapa com névoa, resolução de combate do personagem   │
+  ├──────────────────┼──────────────────────────────────────────────────────┤
+  │ USER-PLAYER/     │ Validação de código 6-char, join WS, seleção de     │
+  │ access           │ personagem, guarda de sessão ativa (expiração)      │
+  ├──────────────────┼──────────────────────────────────────────────────────┤
+  │ USER-PLAYER/     │ temp/: cache de mapa/iniciativa/combate recebidos   │
+  │ memory           │ via WS; saves/: notas e prefs locais do jogador     │
+  └──────────────────┴──────────────────────────────────────────────────────┘
+
+  ─────────────────────────────────────────────────────────────────────────────
+  12.3 MAPEAMENTO DE ARQUIVOS EXISTENTES → DESTINO
+  ─────────────────────────────────────────────────────────────────────────────
+
+  ORIGEM (atual)                         DESTINO                         STATUS
+  ──────────────────────────────────────────────────────────────────────────────
+  host/server/index.js                → HOST/server/index.js            🔲 mover
+  host/server/sessionManager.js       → HOST/server/sessionManager.js   🔲 mover
+  host/relay/index.js (+ configs)     → HOST/relay/                     🔲 mover
+
+  host/src/hooks/useWebSocket.js      → HOST/shared/hooks/              🔲 mover
+  host/src/hooks/index.js             → HOST/shared/hooks/              🔲 mover
+  host/src/i18n/ui.js                 → HOST/shared/i18n/               🔲 mover
+  host/src/styles/                    → HOST/shared/styles/             🔲 mover
+  host/src/context/ThemeContext.jsx   → HOST/shared/context/            🔲 mover
+  host/src/context/LanguageContext.jsx→ HOST/shared/context/            🔲 mover
+  host/src/utils/diceRoller.js        → HOST/shared/utils/              🔲 mover
+  host/src/utils/combatUtils.js       → HOST/shared/utils/              🔲 mover
+  host/src/components/common/        → HOST/shared/components/          🔲 mover
+  host/src/services/                  → HOST/services/                  🔲 mover
+
+  host/src/App.jsx                    → USER-MASTER/src/App.jsx         🔲 mover
+  host/src/pages/DashboardPage.jsx    → USER-MASTER/src/pages/          🔲 mover
+  host/src/pages/MapPage.jsx          → USER-MASTER/src/pages/          🔲 mover
+  host/src/pages/CharactersPage.jsx   → USER-MASTER/src/pages/          🔲 mover
+  host/src/pages/NPCsPage.jsx         → USER-MASTER/src/pages/          🔲 mover
+  host/src/pages/BestiaryPage.jsx     → USER-MASTER/src/pages/          🔲 mover
+  host/src/pages/AbilitiesPage.jsx    → USER-MASTER/src/pages/          🔲 mover
+  host/src/pages/ItemsPage.jsx        → USER-MASTER/src/pages/          🔲 mover
+  host/src/pages/CampaignPage.jsx     → USER-MASTER/src/pages/          🔲 mover
+  host/src/pages/DomainPage.jsx       → USER-MASTER/src/pages/          🔲 mover
+  host/src/pages/ServerPage.jsx       → USER-MASTER/src/pages/          🔲 mover
+  host/src/context/CampaignContext.jsx→ USER-MASTER/src/context/        🔲 mover
+  host/src/context/ServerContext.jsx  → USER-MASTER/src/context/        🔲 mover
+  host/src/utils/characterUtils.js    → USER-MASTER/src/utils/          🔲 mover
+  host/src/utils/visionUtils.js       → USER-MASTER/src/utils/          🔲 mover
+  host/src/components/campaign/      → USER-MASTER/src/components/      🔲 mover
+  host/src/components/characters/    → USER-MASTER/src/components/      🔲 mover
+  host/src/components/combat/        → USER-MASTER/src/components/      🔲 mover
+  host/src/components/entities/      → USER-MASTER/src/components/      🔲 mover
+  host/src/components/effects/       → USER-MASTER/src/components/      🔲 mover
+  host/src/components/items/         → USER-MASTER/src/components/      🔲 mover
+  host/src/components/map/MapCanvas.jsx→ USER-MASTER/src/components/map/🔲 mover
+  host/src/components/layout/        → USER-MASTER/src/components/layout/🔲 mover
+  host/src/components/dice/          → USER-MASTER/src/components/dice/ 🔲 mover
+  host/src/components/abilities/     → USER-MASTER/src/components/      🔲 mover
+
+  host/src/pages/PlayerLoginPage.jsx  → USER-PLAYER/src/pages/          🔲 mover
+  host/src/pages/PlayerDashboard.jsx  → USER-PLAYER/src/pages/          🔲 mover
+  host/src/components/map/PlayerMap.jsx→USER-PLAYER/src/components/map/ 🔲 mover
+  (novo) PlayerContext.jsx            → USER-PLAYER/src/context/        🔲 criar
+  (novo) playerAuth.js                → USER-PLAYER/access/             🔲 criar
+  (novo) codeValidator.js             → USER-PLAYER/access/             🔲 criar
+  (novo) characterSelector.jsx        → USER-PLAYER/access/             🔲 criar
+  (novo) masterAuth.js                → USER-MASTER/access/             🔲 criar
+  (novo) sessionGuard.jsx             → USER-MASTER/access/             🔲 criar
+
+  ─────────────────────────────────────────────────────────────────────────────
+  12.4 ADAPTAÇÕES NECESSÁRIAS NO SISTEMA
+  ─────────────────────────────────────────────────────────────────────────────
+
+  ── VITE (vite.config.js) ───────────────────────────────────────────────────
+
+  🔲 Criar dois entry points separados:
+     • master: index.html → USER-MASTER/src/App.jsx
+     • player: player.html → USER-PLAYER/src/PlayerApp.jsx
+  🔲 Atualizar aliases de import:
+     • @shared  → HOST/shared/
+     • @master  → USER-MASTER/src/
+     • @player  → USER-PLAYER/src/
+     • @host    → HOST/  (server + relay configs acessíveis em dev)
+     • @data    → database/  (mantido)
+  🔲 Ajustar code splitting: chunks separados por domínio (master-bundle,
+     player-bundle, shared-bundle) para reduzir payload por usuário
+
+  ── ROTEAMENTO (main.jsx) ───────────────────────────────────────────────────
+
+  🔲 Separar main.jsx em dois entry points independentes:
+     • host/src/main.jsx   → app master (providers completos: Campaign, Server,
+                               Theme, Language + MasterApp)
+     • player/src/main.jsx → app player (providers limitados: Theme, Language +
+                               PlayerApp, sem Dexie/IndexedDB)
+  🔲 Remover a detecção de rota por hash (#/player) do main.jsx unificado —
+     cada bundle serve apenas sua interface
+
+  ── SERVIDOR (HOST/server/index.js) ─────────────────────────────────────────
+
+  🔲 Atualizar paths de savedata para apontar a USER-PLAYER/memory/saves/
+     em vez de /saves/ raiz do projeto
+  🔲 Separar handlers de mensagem em módulos:
+     • masterHandlers.js  (host_hello, broadcast, map_update, entity_update)
+     • playerHandlers.js  (join, get_characters, player_action, save_note)
+  🔲 Adicionar middleware de validação de papel (role): toda mensagem deve
+     declarar role: 'master' | 'player' e ser verificada antes de processar
+
+  ── AUTENTICAÇÃO (access/) ──────────────────────────────────────────────────
+
+  🔲 USER-MASTER/access/masterAuth.js
+     • Verificar presença de flag 'isMaster' no localStorage
+     • Opcional: senha simples configurável para sessões compartilhadas
+     • Expor hook useMasterSession() para componentes master
+  🔲 USER-MASTER/access/sessionGuard.jsx
+     • HOC que redireciona para PlayerLoginPage se não autenticado como mestre
+  🔲 USER-PLAYER/access/playerAuth.js
+     • Armazenar em sessionStorage: { code, playerName, serverAddress, role }
+     • Limpar ao fechar aba (sessionStorage expira com o browser tab)
+     • Expor hook usePlayerSession()
+  🔲 USER-PLAYER/access/codeValidator.js
+     • Validar formato: 6 chars alfanuméricos, uppercase
+     • Verificar se código está ativo enviando handshake ping ao servidor
+     • Retornar { valid, reason } para exibir feedback ao jogador
+  🔲 USER-PLAYER/access/characterSelector.jsx
+     • Exibido após validação do código antes do PlayerDashboard
+     • Recebe lista de personagens disponíveis do servidor
+     • Permite escolha e confirma seleção via WS message join_character
+
+  ── MEMÓRIA E ARQUIVOS TEMPORÁRIOS ──────────────────────────────────────────
+
+  🔲 USER-MASTER/memory/temp/
+     • draft_session.json — estado atual da sessão salvo automaticamente
+       a cada 60s (heartbeat de auto-save antes de ser confirmado no export)
+     • undo_stack.json — últimas 20 ações reversíveis (add entity, apply damage,
+       move token) para suportar Ctrl+Z futuro
+  🔲 USER-MASTER/memory/saves/
+     • Destino do export de campanha do CampaignPage (hoje vai para download do
+       browser; futuramente também pode salvar em disco via servidor)
+  🔲 USER-PLAYER/memory/temp/
+     • received_map.json — snapshot do mapa enviado pelo servidor (permite
+       recarregar sem reconectar)
+     • initiative.json — estado de iniciativa atual
+     • combat_state.json — dados do combate em andamento (atacante, HP, etc.)
+  🔲 USER-PLAYER/memory/saves/
+     • [player-name].json — notas da sessão + preferências de UI do jogador
+       (salvo localmente, sincronizado com HOST/server ao salvar)
+
+  ── CONTEXTOS ───────────────────────────────────────────────────────────────
+
+  🔲 Criar USER-PLAYER/src/context/PlayerContext.jsx
+     • Estado local do jogador: personagem selecionado, notas, log filtrado,
+       snapshots recebidos via WS
+     • Substitui dependência direta do CampaignContext no lado do jogador
+  🔲 Mover CampaignContext para USER-MASTER — deixa de ser compartilhado,
+     pois o jogador não acessa IndexedDB diretamente
+
+  ── IMPORTS E ALIASES ───────────────────────────────────────────────────────
+
+  🔲 Após mover arquivos, atualizar todos os imports relativos para usar os
+     novos aliases (@shared/, @master/, @player/)
+  🔲 Criar um script de migração de imports (scripts/migrate-imports.mjs)
+     que substitui paths relativos pelos aliases corretos em todos os .jsx/.js
+  🔲 Verificar que nenhum componente de USER-MASTER importa de USER-PLAYER
+     e vice-versa (verificação CI futura)
+
+  ─────────────────────────────────────────────────────────────────────────────
+  12.5 ORDEM DE EXECUÇÃO DA TRANSIÇÃO (FASEADA)
+  ─────────────────────────────────────────────────────────────────────────────
+
+  A migração deve ser feita em passos pequenos e testáveis, sem quebrar
+  o sistema em nenhum momento intermediário. Sugestão de ordem:
+
+  ETAPA 1 — Criar estrutura de pastas (sem mover nada)            🔲 PENDENTE
+  ──────────────────────────────────────────────────────────────────────────
+  🔲 Criar HOST/, USER-MASTER/, USER-PLAYER/ no root
+  🔲 Criar subpastas access/, memory/temp/, memory/saves/, src/, assets/
+     dentro de USER-MASTER/ e USER-PLAYER/
+  🔲 Criar HOST/shared/ com subpastas components/, context/, hooks/, utils/,
+     styles/, i18n/
+  🔲 Não mover nada ainda — só garantir que a estrutura existe
+
+  ETAPA 2 — Mover shared (menor risco)                            🔲 PENDENTE
+  ──────────────────────────────────────────────────────────────────────────
+  🔲 Mover ThemeContext, LanguageContext → HOST/shared/context/
+  🔲 Mover useWebSocket.js, useLocalStorage → HOST/shared/hooks/
+  🔲 Mover i18n/ui.js → HOST/shared/i18n/
+  🔲 Mover styles/* → HOST/shared/styles/
+  🔲 Mover diceRoller.js, combatUtils.js → HOST/shared/utils/
+  🔲 Mover components/common/* → HOST/shared/components/
+  🔲 Atualizar aliases em vite.config.js (@shared)
+  🔲 Corrigir todos os imports nos arquivos que referenciavam os originais
+  🔲 Verificar que o build não quebra e a app funciona igual
+
+  ETAPA 3 — Mover USER-MASTER (maior massa de arquivos)           🔲 PENDENTE
+  ──────────────────────────────────────────────────────────────────────────
+  🔲 Mover App.jsx e todos os pages/ master → USER-MASTER/src/
+  🔲 Mover CampaignContext, ServerContext → USER-MASTER/src/context/
+  🔲 Mover services/* → HOST/services/ (serviço de DB fica em HOST)
+  🔲 Mover componentes master-only → USER-MASTER/src/components/
+  🔲 Mover characterUtils.js, visionUtils.js → USER-MASTER/src/utils/
+  🔲 Atualizar alias @master em vite.config.js
+  🔲 Corrigir imports e verificar build
+
+  ETAPA 4 — Mover USER-PLAYER                                     🔲 PENDENTE
+  ──────────────────────────────────────────────────────────────────────────
+  🔲 Mover PlayerLoginPage, PlayerDashboard → USER-PLAYER/src/pages/
+  🔲 Mover PlayerMap → USER-PLAYER/src/components/map/
+  🔲 Criar PlayerContext.jsx em USER-PLAYER/src/context/
+  🔲 Atualizar alias @player em vite.config.js
+  🔲 Separar entry point: criar player.html e USER-PLAYER/src/main.jsx
+  🔲 Configurar segundo entry no vite.config.js (multi-page)
+  🔲 Verificar build e fluxo completo: login → seleção → dashboard
+
+  ETAPA 5 — Criar camada de access/                               🔲 PENDENTE
+  ──────────────────────────────────────────────────────────────────────────
+  🔲 Criar USER-MASTER/access/masterAuth.js (hook + flag localStorage)
+  🔲 Criar USER-MASTER/access/sessionGuard.jsx (HOC de proteção)
+  🔲 Criar USER-PLAYER/access/playerAuth.js (sessionStorage com expiração)
+  🔲 Criar USER-PLAYER/access/codeValidator.js (formato + ping ao servidor)
+  🔲 Criar USER-PLAYER/access/characterSelector.jsx (tela de seleção pós-login)
+  🔲 Integrar guards ao roteamento de cada domínio
+
+  ETAPA 6 — Adaptar servidor e memory/                            🔲 PENDENTE
+  ──────────────────────────────────────────────────────────────────────────
+  🔲 Mover HOST/server/ para novo caminho, atualizar package.json scripts
+  🔲 Separar handlers em masterHandlers.js e playerHandlers.js
+  🔲 Adicionar validação de role por mensagem WS
+  🔲 Atualizar paths de savedata para USER-PLAYER/memory/saves/
+  🔲 Implementar auto-save heartbeat (draft_session.json a cada 60s)
+  🔲 Implementar cache local de mapa/iniciativa em USER-PLAYER/memory/temp/
+
+  ETAPA 7 — Limpeza e validação final                             🔲 PENDENTE
+  ──────────────────────────────────────────────────────────────────────────
+  🔲 Remover /host/src/ após confirmar que nada mais referencia o caminho
+  🔲 Atualizar README.md com nova estrutura de diretórios
+  🔲 Atualizar vite.config.js: remover alias @host legado
+  🔲 Executar script migrate-imports.mjs para verificar imports órfãos
+  🔲 Rodar build completo (master bundle + player bundle) sem erros
+  🔲 Teste manual: fluxo completo offline (Mestre solo)
+  🔲 Teste manual: fluxo LAN (Mestre + 2 Jogadores)
+  🔲 Teste manual: fluxo relay (Mestre online + Jogador remoto)
+  🔲 Bump versão para 6.0 após transição completa
+
+  ─────────────────────────────────────────────────────────────────────────────
+  12.6 REGRAS DE ISOLAMENTO (O QUE NÃO PODE CRUZAR)
+  ─────────────────────────────────────────────────────────────────────────────
+
+  ✗ USER-MASTER NÃO pode importar de USER-PLAYER/
+  ✗ USER-PLAYER NÃO pode importar de USER-MASTER/ (exceto via WS protocol)
+  ✗ USER-PLAYER NÃO usa Dexie/IndexedDB — toda persistência passa pelo servidor
+  ✗ HOST/server NÃO importa React — é Node.js puro
+  ✗ HOST/shared NÃO importa de USER-MASTER/ nem USER-PLAYER/
+
+  ✓ Ambos os lados podem importar de HOST/shared/
+  ✓ USER-MASTER importa de HOST/services/ (Dexie, seeder, campaignIO)
+  ✓ Comunicação entre domínios: APENAS via mensagens WebSocket tipadas
+
+  ─────────────────────────────────────────────────────────────────────────────
+  12.7 PROTOCOLO WS ENTRE DOMÍNIOS (REFERÊNCIA)
+  ─────────────────────────────────────────────────────────────────────────────
+
+  As mensagens WebSocket são a única fronteira de comunicação entre
+  USER-MASTER e USER-PLAYER. Cada mensagem carrega role para validação:
+
+  MASTER → SERVER → PLAYER:
+  ┌────────────────────┬──────────────────────────────────────────────┐
+  │ type               │ payload                                      │
+  ├────────────────────┼──────────────────────────────────────────────┤
+  │ map_update         │ { mapData, fogCells, wallSegments }          │
+  │ entity_update      │ { entities[] } (filtrado: sem dados privados)│
+  │ initiative_update  │ { order[], currentTurn }                     │
+  │ combat_event       │ { log entry, attacker, defender, result }    │
+  │ broadcast_message  │ { text, sender: 'master' }                   │
+  └────────────────────┴──────────────────────────────────────────────┘
+
+  PLAYER → SERVER → MASTER:
+  ┌────────────────────┬──────────────────────────────────────────────┐
+  │ type               │ payload                                      │
+  ├────────────────────┼──────────────────────────────────────────────┤
+  │ join               │ { code, playerName, role: 'player' }         │
+  │ join_character     │ { characterId }                              │
+  │ player_roll        │ { result, type, context }                    │
+  │ player_action      │ { action, characterId }                      │
+  │ save_note          │ { text, timestamp }                          │
+  │ ping               │ { timestamp } (keepalive 25s)                │
+  └────────────────────┴──────────────────────────────────────────────┘
+
+================================================================================
   FIM DO PLANO — VTP COALIZÃO v5.0
 ================================================================================

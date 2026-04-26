@@ -50,6 +50,7 @@ function getOrCreateRoom(code) {
       host: null,
       players: new Map(),
       cachedGameState: null,
+      cachedMapState:  null,
     })
   }
   return rooms.get(code)
@@ -60,7 +61,7 @@ function cleanupRoom(code) {
   if (!room) return
   if (!room.host && room.players.size === 0) {
     rooms.delete(code)
-    console.log(`[Relay] Sala ${code} removida (vazia)`)
+    console.log(`[Relay] Room ${code} removed (empty)`)
   }
 }
 
@@ -105,7 +106,7 @@ wss.on('connection', (ws) => {
 
   ws.on('close', () => onClientDisconnect(clientId))
   ws.on('error', (err) => {
-    console.error(`[WS] Erro cliente ${clientId}:`, err.message)
+    console.error(`[WS] Client error ${clientId}:`, err.message)
     onClientDisconnect(clientId)
   })
 
@@ -142,7 +143,7 @@ function onClientDisconnect(clientId) {
     for (const player of room.players.values()) {
       safeSend(player.ws, { type: 'host_disconnected', message: 'O Mestre se desconectou.' })
     }
-    console.log(`[Relay] Mestre desconectou da sala ${roomCode}`)
+    console.log(`[Relay] Host disconnected from room ${roomCode}`)
   } else if (role === 'player') {
     const player = room.players.get(clientId)
     if (player) {
@@ -154,7 +155,7 @@ function onClientDisconnect(clientId) {
           playerId: player.playerId,
         })
       }
-      console.log(`[Relay] Jogador ${player.playerName} saiu da sala ${roomCode}`)
+      console.log(`[Relay] Player ${player.playerName} left room ${roomCode}`)
     }
   }
 
@@ -190,7 +191,7 @@ function handleMessage(clientId, ws, msg) {
       meta.role = 'host'
       clients.set(clientId, meta)
 
-      console.log(`[Relay] Mestre conectado → sala ${code}`)
+      console.log(`[Relay] Host connected → room ${code}`)
       ws.send(JSON.stringify({ type: 'host_welcome', sessionCode: code }))
       break
     }
@@ -228,18 +229,34 @@ function handleMessage(clientId, ws, msg) {
       meta.role = 'player'
       clients.set(clientId, meta)
 
-      console.log(`[Relay] Jogador ${playerName} → sala ${code} (${room.players.size}/8)`)
+      console.log(`[Relay] Player ${playerName} → room ${code} (${room.players.size}/8)`)
 
-      // Welcome + cached game state
+      // Welcome + cached game/map state
       safeSend(ws, {
         type: 'welcome',
         playerId,
         playerName,
         gameState: room.cachedGameState || null,
+        mapState:  room.cachedMapState  || null,
       })
 
       // Notify host
       safeSend(room.host.ws, { type: 'player_joined', playerName, playerId })
+      break
+    }
+
+    // ── Pre-join: player fetches character list before committing ─────────────
+    case 'get_characters': {
+      const code = msg.campaignCode?.toUpperCase()?.trim()
+      const room = rooms.get(code)
+      if (!room) {
+        safeSend(ws, { type: 'error', message: 'Código de campanha inválido ou sala não existe.' })
+        return
+      }
+      const characters = room.cachedGameState?.order
+        ? room.cachedGameState.order.map(e => e.name)
+        : []
+      safeSend(ws, { type: 'character_list', characters })
       break
     }
 
@@ -254,7 +271,15 @@ function handleMessage(clientId, ws, msg) {
     }
 
     // ── Delta events: host → all players ──────────────────────────────────────
-    case 'map_update':
+    case 'map_update': {
+      if (meta.role !== 'host') return
+      const room = rooms.get(meta.roomCode)
+      if (!room) return
+      room.cachedMapState = msg.data
+      relayToPlayers(room, { type: 'map_update', data: msg.data })
+      break
+    }
+
     case 'entity_update':
     case 'turn_change':
     case 'combat_event': {
@@ -302,7 +327,7 @@ function handleMessage(clientId, ws, msg) {
     }
 
     default:
-      console.warn(`[Relay] Mensagem desconhecida: ${msg.type} (cliente ${clientId})`)
+      console.warn(`[Relay] Unknown message type: ${msg.type} (client ${clientId})`)
   }
 }
 
@@ -337,18 +362,18 @@ const PORT = parseInt(process.env.PORT || '4001', 10)
 server.listen(PORT, '0.0.0.0', () => {
   console.log('')
   console.log('┌────────────────────────────────────────────────┐')
-  console.log('│   VTP COALIZÃO — Relay Server (Fase 7B)       │')
+  console.log('│   VTP Coalizão — Relay Server (Phase 7B)      │')
   console.log('├────────────────────────────────────────────────┤')
-  console.log(`│   Porta  : ${PORT}`)
+  console.log(`│   Port   : ${PORT}`)
   console.log('│   Health : GET /health')
-  console.log('│   Sala   : GET /api/room/:code')
-  console.log('│   Modo   : stateless relay (sem persistência)  │')
+  console.log('│   Room   : GET /api/room/:code')
+  console.log('│   Mode   : stateless relay (no persistence)   │')
   console.log('└────────────────────────────────────────────────┘')
   console.log('')
 })
 
 process.on('SIGINT', () => {
   clearInterval(heartbeatInterval)
-  console.log('\n[Relay] Encerrando...')
+  console.log('\n[Relay] Shutting down...')
   server.close(() => process.exit(0))
 })

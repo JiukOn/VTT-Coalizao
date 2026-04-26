@@ -87,14 +87,14 @@ export default function CharacterList({ campaignId, onSelectCharacter, onContext
             >
               <div className="cl-avatar" style={{ background: char.tokenColor || 'var(--accent-primary)' }}>
                 {char.tokenImage
-                  ? <img src={char.tokenImage} alt={char.name} />
-                  : <span>{char.name?.[0] || '?'}</span>
+                  ? <img src={char.tokenImage} alt={t(char.name)} />
+                  : <span>{t(char.name)?.[0] || '?'}</span>
                 }
               </div>
               <div className="cl-info">
-                <div className="cl-name">{char.name}</div>
+                <div className="cl-name">{t(char.name)}</div>
                 <div className="cl-meta">
-                  {char.classId && <span className="badge badge-accent">{char.classId}</span>}
+                  {char.classId && <span className="badge badge-accent">{t(char.classId)}</span>}
                   <span className="badge badge-warning">Nv {char.level}</span>
                   {char.evolution && (
                     <span className="badge" style={{ background: 'var(--accent-subtle)', color: 'var(--accent-primary)', border: '1px solid var(--accent-primary)' }}>
@@ -147,7 +147,7 @@ export default function CharacterList({ campaignId, onSelectCharacter, onContext
       <Modal
         isOpen={!!viewChar}
         onClose={() => setViewChar(null)}
-        title={viewChar?.name || 'Ficha do Personagem'}
+        title={t(viewChar?.name) || 'Ficha do Personagem'}
       >
         <CharacterSheet character={viewChar} onUpdate={handleCharUpdate} />
       </Modal>

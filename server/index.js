@@ -52,7 +52,8 @@ let sessionCode = generateCode()
 const clients = new Map()
 
 // Shared game state relayed from host to players on join
-let cachedGameState = null  // { order, round, entityMap, mapState }
+let cachedGameState = null  // { order, round, entityMap }
+let cachedMapState  = null  // { imageData, gridConfig, revealedCells, wallSegments... }
 
 // ── REST endpoints ────────────────────────────────────────────────────────────
 
@@ -83,7 +84,7 @@ app.post('/api/save-entity', (req, res) => {
   }
   
   // Validate path traversal (only allow known folders)
-  const allowedFolders = ['personalities', 'classes', 'effects', 'auras', 'species', 'tendencies', 'environments', 'modifications', 'heroes', 'npcs', 'creatures', 'items', 'abilities']
+  const allowedFolders = ['personalities', 'classes', 'effects', 'auras', 'species', 'tendencies', 'ambients', 'biomes', 'elements', 'locations', 'modifications', 'sessions', 'heroes', 'npcs', 'creatures', 'items', 'skills']
   
   if (!allowedFolders.includes(folder)) {
     return res.status(400).json({ error: 'Invalid folder' })
@@ -96,7 +97,7 @@ app.post('/api/save-entity', (req, res) => {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf-8')
     res.json({ success: true, path: filePath })
   } catch (e) {
-    console.error('[Server] Erro ao salvar JSON:', e.message)
+    console.error('[Server] Error saving JSON file:', e.message)
     res.status(500).json({ error: e.message })
   }
 })
@@ -137,8 +138,21 @@ function handleMessage(clientId, ws, msg) {
     case 'host_hello': {
       client.role = 'host'
       clients.set(clientId, client)
-      console.log('[WS] Mestre conectado')
+      console.log('[WS] Host connected')
       ws.send(JSON.stringify({ type: 'host_welcome', sessionCode }))
+      break
+    }
+
+    // ── Pre-join: Get characters ────────────────────────────────────────────
+    case 'get_characters': {
+      if (msg.campaignCode !== sessionCode) {
+        ws.send(JSON.stringify({ type: 'error', message: 'Código de campanha inválido.' }))
+        return
+      }
+      const characters = cachedGameState?.order 
+        ? cachedGameState.order.map(e => e.name) 
+        : []
+      ws.send(JSON.stringify({ type: 'character_list', characters }))
       break
     }
 
@@ -157,7 +171,7 @@ function handleMessage(clientId, ws, msg) {
       client.playerName = msg.playerName.trim()
       client.playerId = playerId
       clients.set(clientId, client)
-      console.log(`[WS] Jogador conectado: ${client.playerName} (${playerId})`)
+      console.log(`[WS] Player connected: ${client.playerName} (${playerId})`)
 
       // Send welcome + current game state to the new player
       ws.send(JSON.stringify({
@@ -165,6 +179,7 @@ function handleMessage(clientId, ws, msg) {
         playerId,
         playerName: client.playerName,
         gameState: cachedGameState || null,
+        mapState: cachedMapState || null,
       }))
 
       // Notify host
@@ -185,7 +200,12 @@ function handleMessage(clientId, ws, msg) {
     }
 
     // ── Delta events from host → relay to all players ───────────────────────
-    case 'map_update':
+    case 'map_update': {
+      cachedMapState = msg.data
+      broadcastToRole('player', { type: msg.type, data: msg.data })
+      break
+    }
+
     case 'entity_update':
     case 'turn_change':
     case 'combat_event': {
@@ -218,14 +238,20 @@ function handleMessage(clientId, ws, msg) {
           JSON.stringify({ playerName: name, sessionCode: code, notes, savedAt: new Date().toISOString() }, null, 2)
         )
       } catch (e) {
-        console.error('[Server] Erro ao salvar notas:', e.message)
+        console.error('[Server] Error saving player notes:', e.message)
       }
       broadcastToRole('host', { type: 'notes_received', playerName: name, notes })
       break
     }
 
+    // ── Ping (client keepalive) ──────────────────────────────────────────────
+    case 'ping': {
+      ws.send(JSON.stringify({ type: 'pong' }))
+      break
+    }
+
     default:
-      console.warn(`[WS] Mensagem desconhecida: ${msg.type}`)
+      console.warn(`[WS] Unknown message type: ${msg.type}`)
   }
 }
 
@@ -248,25 +274,25 @@ server.listen(PORT, '0.0.0.0', () => {
   const ips = getLocalIPs()
   console.log('')
   console.log('┌────────────────────────────────────────────────┐')
-  console.log('│   VTP COALIZÃO — Servidor Local (Fase 7A)     │')
+  console.log('│   VTP Coalizão — Local Server (Phase 7A)      │')
   console.log('├────────────────────────────────────────────────┤')
-  console.log(`│   Porta     : ${PORT}`)
-  console.log(`│   Código    : ${sessionCode}`)
-  console.log('│   IPs da rede:')
+  console.log(`│   Port      : ${PORT}`)
+  console.log(`│   Code      : ${sessionCode}`)
+  console.log('│   Network IPs:')
   if (ips.length === 0) {
-    console.log('│     (nenhuma interface de rede detectada)')
+    console.log('│     (no network interface detected)')
   } else {
     ips.forEach(n => console.log(`│     ${n.iface}: http://${n.address}:${PORT}`))
   }
   console.log('├────────────────────────────────────────────────┤')
-  console.log('│   Mestre:  http://localhost:5173               │')
-  console.log(`│   Jogador: http://{ip}:${PORT}/#/player        │`)
+  console.log('│   Host:    http://localhost:5173               │')
+  console.log(`│   Player:  http://{ip}:${PORT}/#/player        │`)
   console.log('└────────────────────────────────────────────────┘')
   console.log('')
 })
 
 // Graceful shutdown
 process.on('SIGINT', () => {
-  console.log('\n[Server] Encerrando...')
+  console.log('\n[Server] Shutting down...')
   server.close(() => process.exit(0))
 })

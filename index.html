@@ -6,8 +6,8 @@
     <meta name="description" content="VTT Coalizão — Virtual Tabletop RPG for the Coalizao system. Manage characters, dice, maps, and combat." />
     <meta name="theme-color" content="#9B59E8" />
     <title>VTT Coalizao — Virtual Tabletop</title>
-    <link rel="icon" type="image/svg+xml" href="/VTT-Coalizao/favicon.svg" />
-    <link rel="manifest" href="/VTT-Coalizao/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <link rel="manifest" href="%BASE_URL%manifest.json" />
   </head>
   <body>
     <div id="root"></div>
@@ -15,7 +15,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/VTT-Coalizao/sw.js').catch(() => {})
+          navigator.serviceWorker.register('%BASE_URL%sw.js').catch(() => {})
         })
       }
     </script>

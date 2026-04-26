@@ -61,6 +61,9 @@ export function ServerProvider({ children }) {
       case 'dice_roll':
         window.dispatchEvent(new CustomEvent('vtp:player_dice', { detail: msg }))
         break
+      case 'token_move':
+        window.dispatchEvent(new CustomEvent('vtp:token_move', { detail: msg }))
+        break
       case 'notes_received':
         window.dispatchEvent(new CustomEvent('vtp:player_notes', { detail: msg }))
         break

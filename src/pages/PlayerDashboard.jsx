@@ -1,25 +1,28 @@
 /* PlayerDashboard.jsx — Restricted player view (Fase 7A + 7B)
-   Tabs: Dados | Iniciativa | Ficha | Combate | Notas | Log
+   Tabs: Dados | Iniciativa | Ficha | Combate | Mapa | Notas | Log
    Receives game state via WebSocket; sends dice rolls, token moves, notes.
 */
 import { useState, useEffect, useRef, useCallback } from 'react'
 import {
   Dices, Activity, User, Swords, FileText, ScrollText,
   LogOut, Wifi, WifiOff, ChevronRight, RotateCcw,
-  CheckSquare, Square,
+  CheckSquare, Square, Map
 } from 'lucide-react'
 import { rollDice, classifyD20 } from '../utils/diceRoller.js'
 import { getBonus } from '../utils/characterUtils.js'
 import { resolveMeleeAttack, resolveRangedAttack, resolveMagicAttack } from '../utils/combatUtils.js'
+import PlayerMap from '../components/map/PlayerMap.jsx'
+
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 const TABS = [
-  { id: 'dados',      label: 'Dice',      icon: Dices },
-  { id: 'iniciativa', label: 'Initiative', icon: Activity },
-  { id: 'ficha',      label: 'Sheet',      icon: User },
-  { id: 'combate',    label: 'Combat',    icon: Swords },
-  { id: 'notas',      label: 'Notes',      icon: FileText },
+  { id: 'dados',      label: 'Dados',      icon: Dices },
+  { id: 'iniciativa', label: 'Iniciativa', icon: Activity },
+  { id: 'ficha',      label: 'Ficha',      icon: User },
+  { id: 'combate',    label: 'Combate',    icon: Swords },
+  { id: 'mapa',       label: 'Mapa',       icon: Map },
+  { id: 'notas',      label: 'Notas',      icon: FileText },
   { id: 'log',        label: 'Log',        icon: ScrollText },
 ]
 
@@ -40,6 +43,7 @@ export default function PlayerDashboard({ session, onDisconnect }) {
   const [round, setRound]         = useState(initialGameState?.round || 1)
   const [currentIdx, setCurrentIdx] = useState(initialGameState?.currentIndex || 0)
   const [entityMap, setEntityMap] = useState(initialGameState?.entityMap || {})
+  const [mapData, setMapData]     = useState(session.mapState || null)
 
   // Local character data (from entityMap, keyed by playerName)
   const myEntity = Object.values(entityMap).find(
@@ -95,6 +99,9 @@ export default function PlayerDashboard({ session, onDisconnect }) {
       case 'entity_update':
         setEntityMap(prev => ({ ...prev, [msg.data?.id]: { ...(prev[msg.data?.id] || {}), ...msg.data?.changes } }))
         break
+      case 'map_update':
+        setMapData(msg.data)
+        break
       case 'combat_event':
         addLog(`⚔️ ${msg.data?.summary || 'Evento de combate'}`)
         break
@@ -140,7 +147,7 @@ export default function PlayerDashboard({ session, onDisconnect }) {
           <span style={{ fontFamily: 'var(--font-title)', color: 'var(--accent-primary)', fontWeight: 700, fontSize: '1rem' }}>
             ⚔️ VTT
           </span>
-          <span style={{ color: 'var(--text-muted)', fontSize: '0.75rem' }}>Player Mode</span>
+          <span style={{ color: 'var(--text-muted)', fontSize: '0.75rem' }}>Modo Jogador</span>
           <span style={{
             background: 'var(--accent-subtle)', color: 'var(--accent-primary)',
             borderRadius: 4, padding: '1px 8px', fontSize: '0.78rem', fontWeight: 600,
@@ -160,10 +167,10 @@ export default function PlayerDashboard({ session, onDisconnect }) {
           <button
             className="btn btn-ghost btn-sm"
             onClick={handleDisconnect}
-            title="Leave Session"
+            title="Sair da Sessão"
             style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: '0.75rem' }}
           >
-            <LogOut size={12} /> Leave
+            <LogOut size={12} /> Sair
           </button>
         </div>
       </div>
@@ -200,12 +207,17 @@ export default function PlayerDashboard({ session, onDisconnect }) {
         })}
       </div>
 
-      {/* Tab content */}
-      <div style={{ flex: 1, overflow: 'auto', padding: 16 }}>
+      {/* Tab content — map tab is full-bleed (no padding, no scroll) */}
+      <div style={{
+        flex: 1,
+        overflow: activeTab === 'mapa' ? 'hidden' : 'auto',
+        padding: activeTab === 'mapa' ? 0 : 16,
+      }}>
         {activeTab === 'dados'      && <TabDados      wsSend={wsSend} playerName={playerName} addLog={addLog} />}
         {activeTab === 'iniciativa' && <TabIniciativa order={order} round={round} currentIdx={currentIdx} playerName={playerName} />}
         {activeTab === 'ficha'      && <TabFicha      entity={myEntity} playerName={playerName} />}
         {activeTab === 'combate'    && <TabCombate    myEntity={myEntity} entities={Object.values(entityMap)} wsSend={wsSend} playerName={playerName} addLog={addLog} />}
+        {activeTab === 'mapa'       && <PlayerMap     mapData={mapData} myEntity={myEntity} wsSend={wsSend} entityMap={entityMap} />}
         {activeTab === 'notas'      && <TabNotas      notes={notes} onChange={handleNotesChange} />}
         {activeTab === 'log'        && <TabLog        entries={logEntries} />}
       </div>
