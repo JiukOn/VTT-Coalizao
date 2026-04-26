@@ -55,5 +55,13 @@ db.version(3).stores({
   domains: '++id, name, type',
 })
 
+// v4 — add classes, species, auras, ambients tables
+db.version(4).stores({
+  classes: '++id, &classId, name, isCustom',
+  species: '++id, &speciesId, name, isCustom',
+  auras: '++id, &auraId, name, isCustom',
+  ambients: '++id, &ambientId, name, category',
+})
+
 // Export for use across the app
 export default db

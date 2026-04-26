@@ -1,0 +1,16 @@
+{
+  "id": "kobold",
+  "name": {
+    "pt-br": "Kobold",
+    "en-us": "Kobold"
+  },
+  "description": {
+    "pt-br": "Pequenas criaturas ágeis e furtivas com instintos de sobrevivência aguçados. Sua velocidade e carisma peculiar os tornam perigosos nas sombras e surpreendentemente persuasivos.",
+    "en-us": "Small, agile, and stealthy creatures with sharp survival instincts. Their speed and peculiar charisma make them dangerous in the shadows and surprisingly persuasive."
+  },
+  "attributeModifiers": {
+    "dex": 1,
+    "crm": 1
+  },
+  "isCustom": false
+}

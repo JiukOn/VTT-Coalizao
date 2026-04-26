@@ -1,10 +1,10 @@
 ================================================================================
-                  PLANO DE DESENVOLVIMENTO — VTP COALIZÃO
+                  PLANO DE DESENVOLVIMENTO — VTT COALIZÃO
               Virtual Table Program para o Sistema de RPG Coalizão
 ================================================================================
 
-Versão: 5.0
-Data: 09/04/2026 (Atualizado: 18/04/2026)
+Versão: 5.1
+Data: 09/04/2026 (Atualizado: 26/04/2026)
 Autor: Mestre da Campanha
 Status: Fases 1-9 CONCLUÍDAS ✅ | Fase 10 EM PROGRESSO 🔄 | Fase 11-12 Planejadas 🔲
 
@@ -19,7 +19,7 @@ Status: Fases 1-9 CONCLUÍDAS ✅ | Fase 10 EM PROGRESSO 🔄 | Fase 11-12 Plane
   ✅ Fase 7B — Conectividade Online (Relay stateless, WSS, multi-room, keepalive)
   ✅ Fase 8  — Sistemas de Suporte (EffectManager panel, Investigação/Furtividade, Descanso, Visibilidade por token)
   ✅ Fase 9  — Progressão (Equipamento slots, Sistema de Domínio, Evolução/TransEvolução)
-  🔄 Fase 10 — Dados Pré-Populados (Habilidades ✅ | Efeitos ✅ | Mods ✅ | Ambientes ✅ | Criaturas 🔲 | Itens 🔲 | Classes 🔲)
+  🔄 Fase 10 — Dados Pré-Populados (Habilidades ✅ | Efeitos ✅ | Mods ✅ | Ambientes ✅ | Classes ✅ | Espécies ✅ | Auras ✅ | Criaturas 🔲 | Itens 🔲)
 
 
 ================================================================================
@@ -27,7 +27,7 @@ Status: Fases 1-9 CONCLUÍDAS ✅ | Fase 10 EM PROGRESSO 🔄 | Fase 11-12 Plane
 ================================================================================
 
   1.  Visão Geral do Projeto
-  2.  Arquitetura do Sistema (Host/Client — REVISADO v4.0)
+  2.  Arquitetura do Sistema (host/Client — REVISADO v4.0)
   3.  Estratégia de Distribuição
   4.  Design System — Identidade Visual
   5.  Estrutura de Módulos e Funcionalidades
@@ -61,7 +61,7 @@ Status: Fases 1-9 CONCLUÍDAS ✅ | Fase 10 EM PROGRESSO 🔄 | Fase 11-12 Plane
   1. VISÃO GERAL DO PROJETO
 ================================================================================
 
-O VTP Coalizão é uma Mesa Virtual de RPG (Virtual Tabletop) projetada
+O VTT Coalizão é uma Mesa Virtual de RPG (Virtual Tabletop) projetada
 exclusivamente para o sistema homebrew "Coalizão". Seu objetivo é fornecer
 ao Mestre todas as ferramentas para conduzir sessões completas de RPG e,
 progressivamente, permitir que os jogadores participem remotamente com suas
@@ -128,9 +128,9 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   HOSPEDAGEM:      GitHub Pages para página de login/lobby
 
   COMO FUNCIONA (7A):
-  1. Mestre abre o VTP e inicia um servidor local (botão "Iniciar Servidor")
-  2. VTP exibe o IP local da máquina e um código de sessão (ex: "GH4K9X")
-  3. Jogadores acessam: https://[usuario].github.io/vtp-coalizao
+  1. Mestre abre o VTT e inicia um servidor local (botão "Iniciar Servidor")
+  2. VTT exibe o IP local da máquina e um código de sessão (ex: "GH4K9X")
+  3. Jogadores acessam: https://[usuario].github.io/VTT-coalizao
   4. Digitam o IP do Host + código da sessão para conectar
   5. Após autenticar, recebem a visão de jogador com seu personagem
   6. Sincronização em tempo real via WebSocket
@@ -173,7 +173,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
 
   FASE 1-6 (ATUAL):
   • Build estático via "npm run build" → pasta /dist
-  • GitHub Pages: https://[usuario].github.io/vtp-coalizao
+  • GitHub Pages: https://[usuario].github.io/VTT-coalizao
   • Funciona offline após primeiro carregamento (Service Worker / PWA)
   • Tamanho estimado: < 2MB (sem imagens do usuário)
 
@@ -190,7 +190,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   • Limite: manter o tier gratuito (512MB RAM, ~500 conexões simultâneas)
 
   CONFIGURAÇÃO DO VITE:
-  • vite.config.ts → base: '/vtp-coalizao/'
+  • vite.config.ts → base: '/VTT-coalizao/'
   • Manifest.json para PWA
   • Service Worker para cache offline
 
@@ -249,7 +249,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   Layout da tela principal:
 
   ┌──────────────────────────────────────────────────────────────────────┐
-  │  HEADER: Logo VTP | Abas de Navegação | 🌙/☀️ Tema | Config/Conexão │
+  │  HEADER: Logo VTT | Abas de Navegação | 🌙/☀️ Tema | Config/Conexão │
   ├──────────┬───────────────────────────────────────┬───────────────────┤
   │          │                                       │                   │
   │  SIDEBAR │         ÁREA CENTRAL                  │  PAINEL DIREITO   │
@@ -806,11 +806,11 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   5.17 MODO JOGADOR — PLAYER VIEW (NOVO v4.0)
 ────────────────────────────────────────────────────────────────────────────────
 
-  O Modo Jogador é uma visão restrita do VTP acessada pelos jogadores
+  O Modo Jogador é uma visão restrita do VTT acessada pelos jogadores
   através de um código de campanha fornecido pelo Mestre.
 
   ACESSO E AUTENTICAÇÃO:
-  • Jogador acessa: https://[usuario].github.io/vtp-coalizao
+  • Jogador acessa: https://[usuario].github.io/VTT-coalizao
   • Página inicial: campo "Nome do Personagem" + campo "Código da Campanha"
   • Código gerado pelo Mestre (6 caracteres alfanuméricos, ex: "GH4K9X")
   • Após autenticar, jogador entra no modo player com seu personagem carregado
@@ -877,7 +877,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
 
   COMO O MESTRE INICIA O SERVIDOR:
   1. Mestre clica em "Iniciar Servidor" no painel de configurações
-  2. VTP inicia servidor Node.js na porta 3000 (configurável)
+  2. VTT inicia servidor Node.js na porta 3000 (configurável)
   3. App exibe: IP local da máquina + código de sessão gerado
   4. Mestre compartilha o código com os jogadores (WhatsApp, Discord, etc.)
   5. Jogadores conectam via página no GitHub Pages
@@ -1015,7 +1015,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   6. BANCO DE DADOS PRÉ-POPULADO
 ================================================================================
 
-  O VTP é entregue com dados pré-preenchidos baseados nos documentos
+  O VTT é entregue com dados pré-preenchidos baseados nos documentos
   do sistema Coalizão disponíveis na pasta Reference:
 
   CRIATURAS PRÉ-CADASTRADAS (82 criaturas):
@@ -1090,7 +1090,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
 
   MODO MESTRE — PREPARAÇÃO DA SESSÃO:
   ─────────────────────────────────────────────────────────────────────
-  1. Mestre abre o VTP no navegador (localhost ou GitHub Pages)
+  1. Mestre abre o VTT no navegador (localhost ou GitHub Pages)
   2. Seleciona ou cria uma campanha
   3. Cadastra/edita personagens dos jogadores (fichas completas)
   4. Prepara encontros: seleciona criaturas/NPCs do banco
@@ -1307,14 +1307,23 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   │ ✅ Domínios: academia_rebelde, capital_dos_elfos, capital_unsato,   │
   │    cidade_caida, cidade_dos_porcos, reino_evoluido, reserva_amort., │
   │    la_montana, taverna_byron                                        │
+  │ ✅ Classes: 23 classes base (22 + Não Classificado) + 13 evoluídas  │
+  │    Criadas: researcher, defender, rogue, swordsman, shadow, archer, │
+  │    mentalist, cultist, cook, florist, enchanter, technologist,      │
+  │    seller, registrar, unclassified. Fix: tamer→blood_contract.      │
+  │    DB v4: tabela 'classes' + seeder SEED_VERSION 8.0.0             │
+  │ ✅ Espécies: 15 espécies com descrição e attributeModifiers         │
+  │    Criadas: elf, dwarf, kobold, goblin, yomunkai, angel, bom.       │
+  │    DB v4: tabela 'species' + seeder integrado                       │
+  │ ✅ Auras: 6 auras com descrição e activationMoments                 │
+  │    DB v4: tabela 'auras' + seeder integrado                         │
+  │ ✅ Integração: tabelas classes/species/auras/ambients no IndexedDB  │
+  │    database.js v4 | seeder v8.0.0 | classes/index.js → ./**/*.json │
+  │ ✅ Build: corrigido index.html (src/main.jsx) — 2458 módulos, 0 err │
   │                                                                     │
   │ ── STUBS A COMPLETAR 🔲 ────────────────────────────────────────── │
   │ 🔲 Itens (184 stubs): preencher dano, defesa, peso, DP, lore,      │
   │    raridade, modificações para cada item (armas, vestimentas, etc.) │
-  │ 🔲 Classes (24 stubs): preencher descrição, multiplicadores por     │
-  │    atributo (VIT/DEX/CRM/FRC/INT/RES/PRE/ENR) e habilidade legado  │
-  │ 🔲 Auras (6 stubs): preencher descrição e momentos de ativação      │
-  │ 🔲 Espécies (8 stubs): preencher descrição e modificadores          │
   │                                                                     │
   │ ── CRIATURAS (banco incompleto) ──────────────────────────────────  │
   │ ✅ 11 criaturas com ficha completa                                  │
@@ -1334,13 +1343,13 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   │ 🔲 CreatureSheet.jsx — componente de ficha de criatura              │
   │ 🔲 CreatureForm.jsx — formulário de criação/edição de criatura       │
   │                                                                     │
-  │ ── INTEGRAÇÃO DOS NOVOS BANCOS ────────────────────────────────── │
-  │ 🔲 Integrar elementos ao seeder (tabela 'elements' no IndexedDB)    │
-  │ 🔲 Integrar domínios ao seeder (tabela 'domains' no IndexedDB)      │
-  │ 🔲 Integrar ambientes ao seeder (tabela 'ambients' no IndexedDB)    │
-  │ 🔲 Integrar modificações ao seeder (tabela 'modifications')         │
+  │ ── INTEGRAÇÃO RESTANTE ────────────────────────────────────────── │
+  │ ✅ Integrar elementos ao seeder (tabela 'elements' no IndexedDB)    │
+  │ ✅ Integrar domínios ao seeder (tabela 'domains' no IndexedDB)      │
+  │ ✅ Integrar ambientes ao seeder (tabela 'ambients' no IndexedDB)    │
+  │ ✅ Integrar modificações ao seeder (tabela 'modifications')         │
+  │ ✅ DomainPage.jsx — tela de listagem de domínios                    │
   │ 🔲 Exibir elementos disponíveis nos formulários de criatura/item     │
-  │ 🔲 DomainPage.jsx — tela de listagem de domínios                    │
   │ 🔲 Endpoint Node.js para auto-salvar criações nos diretórios        │
   │    físicos database/infodata/* quando enviadas via web              │
   └─────────────────────────────────────────────────────────────────────┘
@@ -1414,7 +1423,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   │ Build muito pesado           │ Code splitting, tree shaking,        │
   │                              │ lazy loading por aba                │
   ├──────────────────────────────┼─────────────────────────────────────┤
-  │ GitHub Pages com path errado │ base: '/vtp-coalizao/' no vite.config│
+  │ GitHub Pages com path errado │ base: '/VTT-coalizao/' no vite.config│
   │                              │ + HashRouter no React               │
   ├──────────────────────────────┼─────────────────────────────────────┤
   │ Jogador com acesso indevido  │ Código de sessão expira; Player View │
@@ -1536,7 +1545,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
 
   CONTEXTO
   ─────────
-  Atualmente todo o código-fonte (Mestre + Jogador) vive em /host/src/ sem
+  Atualmente todo o código-fonte (Mestre + Jogador) vive em src/ sem
   separação de responsabilidades por pasta. O objetivo desta seção é guiar
   a reorganização progressiva do repositório em três domínios independentes:
 
@@ -1554,11 +1563,11 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
 
   D:\Repositorios\Projeto VTT\
   │
-  ├── HOST\                          (servidor + relay + lógica partilhada)
-  │   ├── server\                    ← host/server/ — sem alteração de conteúdo
+  ├── host\                          (servidor + relay + lógica partilhada)
+  │   ├── server\                    ← server/ — sem alteração de conteúdo
   │   │   ├── index.js               (Express + WS local, Fase 7A)
   │   │   └── sessionManager.js      (geração de código, descoberta de IP)
-  │   ├── relay\                     ← host/relay/ — sem alteração de conteúdo
+  │   ├── relay\                     ← relay/ — sem alteração de conteúdo
   │   │   ├── index.js               (relay stateless multi-room, Fase 7B)
   │   │   └── package.json / configs
   │   ├── shared\                    (NOVO — código partilhado por ambos os lados)
@@ -1570,7 +1579,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   │   │   └── i18n\                  (ui.js — traduções PT/EN)
   │   └── services\                  (database.js, dataSeeder.js, campaignIO.js)
   │
-  ├── USER-MASTER\                   (interface e dados exclusivos do Mestre)
+  ├── user\master\                   (interface e dados exclusivos do Mestre)
   │   ├── src\
   │   │   ├── App.jsx                (MasterApp com abas e providers completos)
   │   │   ├── pages\                 (DashboardPage, MapPage, CharactersPage,
@@ -1594,7 +1603,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   │   │       └── [campaign-name]\   (JSON completo exportado via CampaignPage)
   │   └── assets\                    (ícones e imagens exclusivos da interface master)
   │
-  ├── USER-PLAYER\                   (interface e dados exclusivos do Jogador)
+  ├── user\player\                   (interface e dados exclusivos do Jogador)
   │   ├── src\
   │   │   ├── PlayerApp.jsx          (PlayerApp com providers limitados)
   │   │   ├── pages\
@@ -1637,37 +1646,37 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   ┌──────────────────┬──────────────────────────────────────────────────────┐
   │ DOMÍNIO          │ RESPONSABILIDADE                                     │
   ├──────────────────┼──────────────────────────────────────────────────────┤
-  │ HOST/server      │ Aceitar conexões WS (LAN), gerar código de sessão,  │
+  │ host/server      │ Aceitar conexões WS (LAN), gerar código de sessão,  │
   │                  │ autenticar jogadores, repassar mensagens, salvar     │
   │                  │ dados de jogadores em database/savedata/             │
   ├──────────────────┼──────────────────────────────────────────────────────┤
-  │ HOST/relay       │ Relay stateless (online), rotear mensagens entre     │
+  │ host/relay       │ Relay stateless (online), rotear mensagens entre     │
   │                  │ salas sem guardar estado de campanha                 │
   ├──────────────────┼──────────────────────────────────────────────────────┤
-  │ HOST/shared      │ Código compilado nos dois bundles (master + player): │
+  │ host/shared      │ Código compilado nos dois bundles (master + player): │
   │                  │ hooks WS, tema, idioma, utilitários de dados,        │
   │                  │ componentes UI genéricos                             │
   ├──────────────────┼──────────────────────────────────────────────────────┤
-  │ HOST/services    │ IndexedDB (Dexie), seed de dados, export/import de   │
+  │ host/services    │ IndexedDB (Dexie), seed de dados, export/import de   │
   │                  │ campanha — usados pelo bundle master                 │
   ├──────────────────┼──────────────────────────────────────────────────────┤
-  │ USER-MASTER/src  │ Toda a UI de controle do Mestre: abas, mapa tático  │
+  │ user/master/src  │ Toda a UI de controle do Mestre: abas, mapa tático  │
   │                  │ completo, gestão de entidades, campanha, servidor    │
   ├──────────────────┼──────────────────────────────────────────────────────┤
-  │ USER-MASTER/     │ Verificação de credencial do Mestre (código-mestre   │
+  │ user/master/     │ Verificação de credencial do Mestre (código-mestre   │
   │ access           │ ou flag localStorage), proteção de rota, HOC guard  │
   ├──────────────────┼──────────────────────────────────────────────────────┤
-  │ USER-MASTER/     │ temp/: rascunhos de sessão não confirmados e pilha  │
-  │ memory           │ de desfazer; saves/: JSONs exportados definitivos   │
+  │ user/master/     │ temp/: rascunhos de sessão não confirmados e pilha  │
+  │ temp          │ de desfazer; saves/: JSONs exportados definitivos   │
   ├──────────────────┼──────────────────────────────────────────────────────┤
-  │ USER-PLAYER/src  │ UI limitada do Jogador: login, dashboard 6 abas,    │
+  │ user/player/src  │ UI limitada do Jogador: login, dashboard 6 abas,    │
   │                  │ mapa com névoa, resolução de combate do personagem   │
   ├──────────────────┼──────────────────────────────────────────────────────┤
-  │ USER-PLAYER/     │ Validação de código 6-char, join WS, seleção de     │
+  │ user/player/     │ Validação de código 6-char, join WS, seleção de     │
   │ access           │ personagem, guarda de sessão ativa (expiração)      │
   ├──────────────────┼──────────────────────────────────────────────────────┤
-  │ USER-PLAYER/     │ temp/: cache de mapa/iniciativa/combate recebidos   │
-  │ memory           │ via WS; saves/: notas e prefs locais do jogador     │
+  │ user/player/     │ temp/: cache de mapa/iniciativa/combate recebidos   │
+  │ temp           │ via WS; saves/: notas e prefs locais do jogador     │
   └──────────────────┴──────────────────────────────────────────────────────┘
 
   ─────────────────────────────────────────────────────────────────────────────
@@ -1676,56 +1685,56 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
 
   ORIGEM (atual)                         DESTINO                         STATUS
   ──────────────────────────────────────────────────────────────────────────────
-  host/server/index.js                → HOST/server/index.js            🔲 mover
-  host/server/sessionManager.js       → HOST/server/sessionManager.js   🔲 mover
-  host/relay/index.js (+ configs)     → HOST/relay/                     🔲 mover
+  server/index.js                → host/server/index.js            🔲 mover
+  server/sessionManager.js       → host/server/sessionManager.js   🔲 mover
+  relay/index.js (+ configs)     → host/relay/                     🔲 mover
 
-  host/src/hooks/useWebSocket.js      → HOST/shared/hooks/              🔲 mover
-  host/src/hooks/index.js             → HOST/shared/hooks/              🔲 mover
-  host/src/i18n/ui.js                 → HOST/shared/i18n/               🔲 mover
-  host/src/styles/                    → HOST/shared/styles/             🔲 mover
-  host/src/context/ThemeContext.jsx   → HOST/shared/context/            🔲 mover
-  host/src/context/LanguageContext.jsx→ HOST/shared/context/            🔲 mover
-  host/src/utils/diceRoller.js        → HOST/shared/utils/              🔲 mover
-  host/src/utils/combatUtils.js       → HOST/shared/utils/              🔲 mover
-  host/src/components/common/        → HOST/shared/components/          🔲 mover
-  host/src/services/                  → HOST/services/                  🔲 mover
+  src/hooks/useWebSocket.js      → host/shared/hooks/              🔲 mover
+  src/hooks/index.js             → host/shared/hooks/              🔲 mover
+  src/i18n/ui.js                 → host/shared/i18n/               🔲 mover
+  src/styles/                    → host/shared/styles/             🔲 mover
+  src/context/ThemeContext.jsx   → host/shared/context/            🔲 mover
+  src/context/LanguageContext.jsx→ host/shared/context/            🔲 mover
+  src/utils/diceRoller.js        → host/shared/utils/              🔲 mover
+  src/utils/combatUtils.js       → host/shared/utils/              🔲 mover
+  src/components/common/        → host/shared/components/          🔲 mover
+  src/services/                  → host/services/                  🔲 mover
 
-  host/src/App.jsx                    → USER-MASTER/src/App.jsx         🔲 mover
-  host/src/pages/DashboardPage.jsx    → USER-MASTER/src/pages/          🔲 mover
-  host/src/pages/MapPage.jsx          → USER-MASTER/src/pages/          🔲 mover
-  host/src/pages/CharactersPage.jsx   → USER-MASTER/src/pages/          🔲 mover
-  host/src/pages/NPCsPage.jsx         → USER-MASTER/src/pages/          🔲 mover
-  host/src/pages/BestiaryPage.jsx     → USER-MASTER/src/pages/          🔲 mover
-  host/src/pages/AbilitiesPage.jsx    → USER-MASTER/src/pages/          🔲 mover
-  host/src/pages/ItemsPage.jsx        → USER-MASTER/src/pages/          🔲 mover
-  host/src/pages/CampaignPage.jsx     → USER-MASTER/src/pages/          🔲 mover
-  host/src/pages/DomainPage.jsx       → USER-MASTER/src/pages/          🔲 mover
-  host/src/pages/ServerPage.jsx       → USER-MASTER/src/pages/          🔲 mover
-  host/src/context/CampaignContext.jsx→ USER-MASTER/src/context/        🔲 mover
-  host/src/context/ServerContext.jsx  → USER-MASTER/src/context/        🔲 mover
-  host/src/utils/characterUtils.js    → USER-MASTER/src/utils/          🔲 mover
-  host/src/utils/visionUtils.js       → USER-MASTER/src/utils/          🔲 mover
-  host/src/components/campaign/      → USER-MASTER/src/components/      🔲 mover
-  host/src/components/characters/    → USER-MASTER/src/components/      🔲 mover
-  host/src/components/combat/        → USER-MASTER/src/components/      🔲 mover
-  host/src/components/entities/      → USER-MASTER/src/components/      🔲 mover
-  host/src/components/effects/       → USER-MASTER/src/components/      🔲 mover
-  host/src/components/items/         → USER-MASTER/src/components/      🔲 mover
-  host/src/components/map/MapCanvas.jsx→ USER-MASTER/src/components/map/🔲 mover
-  host/src/components/layout/        → USER-MASTER/src/components/layout/🔲 mover
-  host/src/components/dice/          → USER-MASTER/src/components/dice/ 🔲 mover
-  host/src/components/abilities/     → USER-MASTER/src/components/      🔲 mover
+  src/App.jsx                    → user/master/src/App.jsx         🔲 mover
+  src/pages/DashboardPage.jsx    → user/master/src/pages/          🔲 mover
+  src/pages/MapPage.jsx          → user/master/src/pages/          🔲 mover
+  src/pages/CharactersPage.jsx   → user/master/src/pages/          🔲 mover
+  src/pages/NPCsPage.jsx         → user/master/src/pages/          🔲 mover
+  src/pages/BestiaryPage.jsx     → user/master/src/pages/          🔲 mover
+  src/pages/AbilitiesPage.jsx    → user/master/src/pages/          🔲 mover
+  src/pages/ItemsPage.jsx        → user/master/src/pages/          🔲 mover
+  src/pages/CampaignPage.jsx     → user/master/src/pages/          🔲 mover
+  src/pages/DomainPage.jsx       → user/master/src/pages/          🔲 mover
+  src/pages/ServerPage.jsx       → user/master/src/pages/          🔲 mover
+  src/context/CampaignContext.jsx→ user/master/src/context/        🔲 mover
+  src/context/ServerContext.jsx  → user/master/src/context/        🔲 mover
+  src/utils/characterUtils.js    → user/master/src/utils/          🔲 mover
+  src/utils/visionUtils.js       → user/master/src/utils/          🔲 mover
+  src/components/campaign/      → user/master/src/components/      🔲 mover
+  src/components/characters/    → user/master/src/components/      🔲 mover
+  src/components/combat/        → user/master/src/components/      🔲 mover
+  src/components/entities/      → user/master/src/components/      🔲 mover
+  src/components/effects/       → user/master/src/components/      🔲 mover
+  src/components/items/         → user/master/src/components/      🔲 mover
+  src/components/map/MapCanvas.jsx→ user/master/src/components/map/🔲 mover
+  src/components/layout/        → user/master/src/components/layout/🔲 mover
+  src/components/dice/          → user/master/src/components/dice/ 🔲 mover
+  src/components/abilities/     → user/master/src/components/      🔲 mover
 
-  host/src/pages/PlayerLoginPage.jsx  → USER-PLAYER/src/pages/          🔲 mover
-  host/src/pages/PlayerDashboard.jsx  → USER-PLAYER/src/pages/          🔲 mover
-  host/src/components/map/PlayerMap.jsx→USER-PLAYER/src/components/map/ 🔲 mover
-  (novo) PlayerContext.jsx            → USER-PLAYER/src/context/        🔲 criar
-  (novo) playerAuth.js                → USER-PLAYER/access/             🔲 criar
-  (novo) codeValidator.js             → USER-PLAYER/access/             🔲 criar
-  (novo) characterSelector.jsx        → USER-PLAYER/access/             🔲 criar
-  (novo) masterAuth.js                → USER-MASTER/access/             🔲 criar
-  (novo) sessionGuard.jsx             → USER-MASTER/access/             🔲 criar
+  src/pages/PlayerLoginPage.jsx  → user/player/src/pages/          🔲 mover
+  src/pages/PlayerDashboard.jsx  → user/player/src/pages/          🔲 mover
+  src/components/map/PlayerMap.jsx→user/player/src/components/map/ 🔲 mover
+  (novo) PlayerContext.jsx            → user/player/src/context/        🔲 criar
+  (novo) playerAuth.js                → user/player/access/             🔲 criar
+  (novo) codeValidator.js             → user/player/access/             🔲 criar
+  (novo) characterSelector.jsx        → user/player/access/             🔲 criar
+  (novo) masterAuth.js                → user/master/access/             🔲 criar
+  (novo) sessionGuard.jsx             → user/master/access/             🔲 criar
 
   ─────────────────────────────────────────────────────────────────────────────
   12.4 ADAPTAÇÕES NECESSÁRIAS NO SISTEMA
@@ -1734,13 +1743,13 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   ── VITE (vite.config.js) ───────────────────────────────────────────────────
 
   🔲 Criar dois entry points separados:
-     • master: index.html → USER-MASTER/src/App.jsx
-     • player: player.html → USER-PLAYER/src/PlayerApp.jsx
+     • master: index.html → user/master/src/App.jsx
+     • player: player.html → user/player/src/PlayerApp.jsx
   🔲 Atualizar aliases de import:
-     • @shared  → HOST/shared/
-     • @master  → USER-MASTER/src/
-     • @player  → USER-PLAYER/src/
-     • @host    → HOST/  (server + relay configs acessíveis em dev)
+     • @shared  → host/shared/
+     • @master  → user/master/src/
+     • @player  → user/player/src/
+     • @host    → host/  (server + relay configs acessíveis em dev)
      • @data    → database/  (mantido)
   🔲 Ajustar code splitting: chunks separados por domínio (master-bundle,
      player-bundle, shared-bundle) para reduzir payload por usuário
@@ -1748,16 +1757,16 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   ── ROTEAMENTO (main.jsx) ───────────────────────────────────────────────────
 
   🔲 Separar main.jsx em dois entry points independentes:
-     • host/src/main.jsx   → app master (providers completos: Campaign, Server,
+     • src/main.jsx   → app master (providers completos: Campaign, Server,
                                Theme, Language + MasterApp)
      • player/src/main.jsx → app player (providers limitados: Theme, Language +
                                PlayerApp, sem Dexie/IndexedDB)
   🔲 Remover a detecção de rota por hash (#/player) do main.jsx unificado —
      cada bundle serve apenas sua interface
 
-  ── SERVIDOR (HOST/server/index.js) ─────────────────────────────────────────
+  ── SERVIDOR (host/server/index.js) ─────────────────────────────────────────
 
-  🔲 Atualizar paths de savedata para apontar a USER-PLAYER/memory/saves/
+  🔲 Atualizar paths de savedata para apontar a user/player/memory/saves/
      em vez de /saves/ raiz do projeto
   🔲 Separar handlers de mensagem em módulos:
      • masterHandlers.js  (host_hello, broadcast, map_update, entity_update)
@@ -1767,47 +1776,47 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
 
   ── AUTENTICAÇÃO (access/) ──────────────────────────────────────────────────
 
-  🔲 USER-MASTER/access/masterAuth.js
+  🔲 user/master/access/masterAuth.js
      • Verificar presença de flag 'isMaster' no localStorage
      • Opcional: senha simples configurável para sessões compartilhadas
      • Expor hook useMasterSession() para componentes master
-  🔲 USER-MASTER/access/sessionGuard.jsx
+  🔲 user/master/access/sessionGuard.jsx
      • HOC que redireciona para PlayerLoginPage se não autenticado como mestre
-  🔲 USER-PLAYER/access/playerAuth.js
+  🔲 user/player/access/playerAuth.js
      • Armazenar em sessionStorage: { code, playerName, serverAddress, role }
      • Limpar ao fechar aba (sessionStorage expira com o browser tab)
      • Expor hook usePlayerSession()
-  🔲 USER-PLAYER/access/codeValidator.js
+  🔲 user/player/access/codeValidator.js
      • Validar formato: 6 chars alfanuméricos, uppercase
      • Verificar se código está ativo enviando handshake ping ao servidor
      • Retornar { valid, reason } para exibir feedback ao jogador
-  🔲 USER-PLAYER/access/characterSelector.jsx
+  🔲 user/player/access/characterSelector.jsx
      • Exibido após validação do código antes do PlayerDashboard
      • Recebe lista de personagens disponíveis do servidor
      • Permite escolha e confirma seleção via WS message join_character
 
   ── MEMÓRIA E ARQUIVOS TEMPORÁRIOS ──────────────────────────────────────────
 
-  🔲 USER-MASTER/memory/temp/
+  🔲 user/master/memory/temp/
      • draft_session.json — estado atual da sessão salvo automaticamente
        a cada 60s (heartbeat de auto-save antes de ser confirmado no export)
      • undo_stack.json — últimas 20 ações reversíveis (add entity, apply damage,
        move token) para suportar Ctrl+Z futuro
-  🔲 USER-MASTER/memory/saves/
+  🔲 user/master/memory/saves/
      • Destino do export de campanha do CampaignPage (hoje vai para download do
        browser; futuramente também pode salvar em disco via servidor)
-  🔲 USER-PLAYER/memory/temp/
+  🔲 user/player/memory/temp/
      • received_map.json — snapshot do mapa enviado pelo servidor (permite
        recarregar sem reconectar)
      • initiative.json — estado de iniciativa atual
      • combat_state.json — dados do combate em andamento (atacante, HP, etc.)
-  🔲 USER-PLAYER/memory/saves/
+  🔲 user/player/memory/saves/
      • [player-name].json — notas da sessão + preferências de UI do jogador
-       (salvo localmente, sincronizado com HOST/server ao salvar)
+       (salvo localmente, sincronizado com host/server ao salvar)
 
   ── CONTEXTOS ───────────────────────────────────────────────────────────────
 
-  🔲 Criar USER-PLAYER/src/context/PlayerContext.jsx
+  🔲 Criar user/player/src/context/PlayerContext.jsx
      • Estado local do jogador: personagem selecionado, notas, log filtrado,
        snapshots recebidos via WS
      • Substitui dependência direta do CampaignContext no lado do jogador
@@ -1832,62 +1841,62 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
 
   ETAPA 1 — Criar estrutura de pastas (sem mover nada)            🔲 PENDENTE
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Criar HOST/, USER-MASTER/, USER-PLAYER/ no root
+  🔲 Criar host/, user/master/, user/player/ no root
   🔲 Criar subpastas access/, memory/temp/, memory/saves/, src/, assets/
-     dentro de USER-MASTER/ e USER-PLAYER/
-  🔲 Criar HOST/shared/ com subpastas components/, context/, hooks/, utils/,
+     dentro de user/master/ e user/player/
+  🔲 Criar host/shared/ com subpastas components/, context/, hooks/, utils/,
      styles/, i18n/
   🔲 Não mover nada ainda — só garantir que a estrutura existe
 
   ETAPA 2 — Mover shared (menor risco)                            🔲 PENDENTE
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Mover ThemeContext, LanguageContext → HOST/shared/context/
-  🔲 Mover useWebSocket.js, useLocalStorage → HOST/shared/hooks/
-  🔲 Mover i18n/ui.js → HOST/shared/i18n/
-  🔲 Mover styles/* → HOST/shared/styles/
-  🔲 Mover diceRoller.js, combatUtils.js → HOST/shared/utils/
-  🔲 Mover components/common/* → HOST/shared/components/
+  🔲 Mover ThemeContext, LanguageContext → host/shared/context/
+  🔲 Mover useWebSocket.js, useLocalStorage → host/shared/hooks/
+  🔲 Mover i18n/ui.js → host/shared/i18n/
+  🔲 Mover styles/* → host/shared/styles/
+  🔲 Mover diceRoller.js, combatUtils.js → host/shared/utils/
+  🔲 Mover components/common/* → host/shared/components/
   🔲 Atualizar aliases em vite.config.js (@shared)
   🔲 Corrigir todos os imports nos arquivos que referenciavam os originais
   🔲 Verificar que o build não quebra e a app funciona igual
 
   ETAPA 3 — Mover USER-MASTER (maior massa de arquivos)           🔲 PENDENTE
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Mover App.jsx e todos os pages/ master → USER-MASTER/src/
-  🔲 Mover CampaignContext, ServerContext → USER-MASTER/src/context/
-  🔲 Mover services/* → HOST/services/ (serviço de DB fica em HOST)
-  🔲 Mover componentes master-only → USER-MASTER/src/components/
-  🔲 Mover characterUtils.js, visionUtils.js → USER-MASTER/src/utils/
+  🔲 Mover App.jsx e todos os pages/ master → user/master/src/
+  🔲 Mover CampaignContext, ServerContext → user/master/src/context/
+  🔲 Mover services/* → host/services/ (serviço de DB fica em HOST)
+  🔲 Mover componentes master-only → user/master/src/components/
+  🔲 Mover characterUtils.js, visionUtils.js → user/master/src/utils/
   🔲 Atualizar alias @master em vite.config.js
   🔲 Corrigir imports e verificar build
 
   ETAPA 4 — Mover USER-PLAYER                                     🔲 PENDENTE
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Mover PlayerLoginPage, PlayerDashboard → USER-PLAYER/src/pages/
-  🔲 Mover PlayerMap → USER-PLAYER/src/components/map/
-  🔲 Criar PlayerContext.jsx em USER-PLAYER/src/context/
+  🔲 Mover PlayerLoginPage, PlayerDashboard → user/player/src/pages/
+  🔲 Mover PlayerMap → user/player/src/components/map/
+  🔲 Criar PlayerContext.jsx em user/player/src/context/
   🔲 Atualizar alias @player em vite.config.js
-  🔲 Separar entry point: criar player.html e USER-PLAYER/src/main.jsx
+  🔲 Separar entry point: criar player.html e user/player/src/main.jsx
   🔲 Configurar segundo entry no vite.config.js (multi-page)
   🔲 Verificar build e fluxo completo: login → seleção → dashboard
 
   ETAPA 5 — Criar camada de access/                               🔲 PENDENTE
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Criar USER-MASTER/access/masterAuth.js (hook + flag localStorage)
-  🔲 Criar USER-MASTER/access/sessionGuard.jsx (HOC de proteção)
-  🔲 Criar USER-PLAYER/access/playerAuth.js (sessionStorage com expiração)
-  🔲 Criar USER-PLAYER/access/codeValidator.js (formato + ping ao servidor)
-  🔲 Criar USER-PLAYER/access/characterSelector.jsx (tela de seleção pós-login)
+  🔲 Criar user/master/access/masterAuth.js (hook + flag localStorage)
+  🔲 Criar user/master/access/sessionGuard.jsx (HOC de proteção)
+  🔲 Criar user/player/access/playerAuth.js (sessionStorage com expiração)
+  🔲 Criar user/player/access/codeValidator.js (formato + ping ao servidor)
+  🔲 Criar user/player/access/characterSelector.jsx (tela de seleção pós-login)
   🔲 Integrar guards ao roteamento de cada domínio
 
   ETAPA 6 — Adaptar servidor e memory/                            🔲 PENDENTE
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Mover HOST/server/ para novo caminho, atualizar package.json scripts
+  🔲 Mover host/server/ para novo caminho, atualizar package.json scripts
   🔲 Separar handlers em masterHandlers.js e playerHandlers.js
   🔲 Adicionar validação de role por mensagem WS
-  🔲 Atualizar paths de savedata para USER-PLAYER/memory/saves/
+  🔲 Atualizar paths de savedata para user/player/memory/saves/
   🔲 Implementar auto-save heartbeat (draft_session.json a cada 60s)
-  🔲 Implementar cache local de mapa/iniciativa em USER-PLAYER/memory/temp/
+  🔲 Implementar cache local de mapa/iniciativa em user/player/memory/temp/
 
   ETAPA 7 — Limpeza e validação final                             🔲 PENDENTE
   ──────────────────────────────────────────────────────────────────────────
@@ -1905,14 +1914,14 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   12.6 REGRAS DE ISOLAMENTO (O QUE NÃO PODE CRUZAR)
   ─────────────────────────────────────────────────────────────────────────────
 
-  ✗ USER-MASTER NÃO pode importar de USER-PLAYER/
-  ✗ USER-PLAYER NÃO pode importar de USER-MASTER/ (exceto via WS protocol)
+  ✗ USER-MASTER NÃO pode importar de user/player/
+  ✗ USER-PLAYER NÃO pode importar de user/master/ (exceto via WS protocol)
   ✗ USER-PLAYER NÃO usa Dexie/IndexedDB — toda persistência passa pelo servidor
-  ✗ HOST/server NÃO importa React — é Node.js puro
-  ✗ HOST/shared NÃO importa de USER-MASTER/ nem USER-PLAYER/
+  ✗ host/server NÃO importa React — é Node.js puro
+  ✗ host/shared NÃO importa de user/master/ nem user/player/
 
-  ✓ Ambos os lados podem importar de HOST/shared/
-  ✓ USER-MASTER importa de HOST/services/ (Dexie, seeder, campaignIO)
+  ✓ Ambos os lados podem importar de host/shared/
+  ✓ USER-MASTER importa de host/services/ (Dexie, seeder, campaignIO)
   ✓ Comunicação entre domínios: APENAS via mensagens WebSocket tipadas
 
   ─────────────────────────────────────────────────────────────────────────────
@@ -1945,6 +1954,15 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   │ ping               │ { timestamp } (keepalive 25s)                │
   └────────────────────┴──────────────────────────────────────────────┘
 
+  ─────────────────────────────────────────────────────────────────────────────
+  13 QUESTÃO DE ERROS E ORGANIZAÇÃO DE LOGS
+  ─────────────────────────────────────────────────────────────────────────────
+
+  Os erros que acontecem em meio a execução do programa devem gerar logs salvos em uma pasta de logs/error ou algo do tipo
+  salvos e exprotados de maneira completa e eprsistente em um arquivo txt descritivo do problema encontardo juntamnte de todo o texto apresenatdo no console
+  alem de precisar de mais console logs para mapear a execução do programa caso falhe saber em que ponto pode etr falhado
+
+
 ================================================================================
-  FIM DO PLANO — VTP COALIZÃO v5.0
+  FIM DO PLANO — VTT COALIZÃO
 ================================================================================

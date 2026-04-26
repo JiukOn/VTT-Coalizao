@@ -5,8 +5,8 @@
     "en-us": "Farmer"
   },
   "description": {
-    "pt-br": "Um trabalhador rural resistente com profundo conhecimento da terra e da natureza. Sua força e vitalidade compensam a falta de treinamento formal em combate.",
-    "en-us": "A resilient rural worker with deep knowledge of the land and nature. Their strength and vitality compensate for the lack of formal combat training."
+    "pt-br": "Um trabalhador rural com profundo conhecimento da terra. Sua força e vitalidade compensam a falta de treinamento formal em combate, e sua conexão com a natureza lhe permite cultivar recursos essenciais.",
+    "en-us": "A rural worker with deep knowledge of the land. Their strength and vitality compensate for the lack of formal combat training, and their connection with nature allows them to cultivate essential resources."
   },
   "multipliers": {
     "vit": 1.5,
@@ -16,8 +16,8 @@
     "int": 1,
     "res": 1.5,
     "pre": 1,
-    "enr": 0.5
+    "enr": 1
   },
-  "legacyAbilityId": "enroot",
+  "legacyAbilityId": null,
   "isCustom": false
 }

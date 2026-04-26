@@ -1,0 +1,23 @@
+{
+  "id": "researcher",
+  "name": {
+    "pt-br": "Pesquisador",
+    "en-us": "Researcher"
+  },
+  "description": {
+    "pt-br": "Um analista perspicaz que usa foco aguçado para detectar informações ocultas sobre o ambiente e os seres ao redor. Mestre em investigação, estratégia e coleta de dados.",
+    "en-us": "A sharp-minded analyst who uses keen focus to detect hidden information about the environment and nearby beings. Master of investigation, strategy, and data collection."
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1.5,
+    "crm": 1.5,
+    "frc": 1,
+    "int": 2,
+    "res": 1.5,
+    "pre": 2,
+    "enr": 0.5
+  },
+  "legacyAbilityId": "inquiry",
+  "isCustom": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "elf",
+  "name": {
+    "pt-br": "Elfo",
+    "en-us": "Elf"
+  },
+  "description": {
+    "pt-br": "Seres graciosos com sentidos aguçados e uma conexão profunda com a magia e a natureza. Sua elegância natural se traduz em destreza elevada e mente perspicaz.",
+    "en-us": "Graceful beings with sharp senses and a deep connection to magic and nature. Their natural elegance translates into high dexterity and a keen mind."
+  },
+  "attributeModifiers": {
+    "dex": 1,
+    "int": 1
+  },
+  "isCustom": false
+}

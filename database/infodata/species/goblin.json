@@ -1,0 +1,16 @@
+{
+  "id": "goblin",
+  "name": {
+    "pt-br": "Goblin",
+    "en-us": "Goblin"
+  },
+  "description": {
+    "pt-br": "Seres espertos e caóticos com uma mente que nunca para de calcular. Sua inteligência veloz e destreza natural compensam sua aparência desfavorável.",
+    "en-us": "Clever and chaotic beings with a mind that never stops calculating. Their quick intelligence and natural dexterity compensate for their unfavorable appearance."
+  },
+  "attributeModifiers": {
+    "int": 1,
+    "dex": 1
+  },
+  "isCustom": false
+}

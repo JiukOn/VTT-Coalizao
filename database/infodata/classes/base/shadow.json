@@ -1,0 +1,23 @@
+{
+  "id": "shadow",
+  "name": {
+    "pt-br": "Sombra",
+    "en-us": "Shadow"
+  },
+  "description": {
+    "pt-br": "Um mestre da furtividade que se move nas sombras aumentando sua destreza e reduzindo a percepção dos inimigos. Opera à margem da visibilidade para golpear no momento certo.",
+    "en-us": "A master of stealth who moves through shadows boosting their dexterity and dulling enemy perception. Operates at the edge of visibility to strike at the perfect moment."
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 2,
+    "crm": 1.5,
+    "frc": 1,
+    "int": 1,
+    "res": 1,
+    "pre": 2,
+    "enr": 1.5
+  },
+  "legacyAbilityId": "silent_steps",
+  "isCustom": false
+}

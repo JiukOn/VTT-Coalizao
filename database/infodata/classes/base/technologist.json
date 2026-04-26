@@ -1,0 +1,23 @@
+{
+  "id": "technologist",
+  "name": {
+    "pt-br": "Tecnólogo",
+    "en-us": "Technologist"
+  },
+  "description": {
+    "pt-br": "Um inventor brilhante capaz de criar itens de alta qualidade usando materiais brutos. Usa inteligência e precisão para transformar recursos em ferramentas e armas sofisticadas.",
+    "en-us": "A brilliant inventor capable of creating high-quality items from raw materials. Uses intelligence and precision to transform resources into sophisticated tools and weapons."
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1.5,
+    "crm": 1,
+    "frc": 1,
+    "int": 2,
+    "res": 1,
+    "pre": 2,
+    "enr": 1.5
+  },
+  "legacyAbilityId": "invention",
+  "isCustom": false
+}

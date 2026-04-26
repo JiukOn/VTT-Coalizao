@@ -1,0 +1,23 @@
+{
+  "id": "rogue",
+  "name": {
+    "pt-br": "Ladino",
+    "en-us": "Rogue"
+  },
+  "description": {
+    "pt-br": "Um especialista em furto e subterfúgio que usa agilidade e carisma para agir nas sombras. Hábil em furtar, enganar e se mover sem ser notado.",
+    "en-us": "A specialist in theft and subterfuge who uses agility and charisma to act in the shadows. Skilled at stealing, deceiving, and moving unnoticed."
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 2,
+    "crm": 2,
+    "frc": 1,
+    "int": 1.5,
+    "res": 1,
+    "pre": 1.5,
+    "enr": 1
+  },
+  "legacyAbilityId": "theft",
+  "isCustom": false
+}

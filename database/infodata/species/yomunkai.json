@@ -1,0 +1,16 @@
+{
+  "id": "yomunkai",
+  "name": {
+    "pt-br": "Yomunkai",
+    "en-us": "Yomunkai"
+  },
+  "description": {
+    "pt-br": "Seres disciplinados de origem oriental com uma postura guerreira refinada. Sua resiliência mental e precisão nos atos os tornam adversários formidáveis e aliados confiáveis.",
+    "en-us": "Disciplined beings of eastern origin with a refined warrior posture. Their mental resilience and precision in action make them formidable adversaries and reliable allies."
+  },
+  "attributeModifiers": {
+    "res": 1,
+    "pre": 1
+  },
+  "isCustom": false
+}

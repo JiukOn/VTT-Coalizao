@@ -1,0 +1,16 @@
+{
+  "id": "bom",
+  "name": {
+    "pt-br": "Bom",
+    "en-us": "Bom"
+  },
+  "description": {
+    "pt-br": "Seres de alinhamento puro que emanam bondade inata. Seu carisma elevado e resistência a influências mágicas os tornam protetores naturais da ordem e da luz.",
+    "en-us": "Beings of pure alignment who emanate innate goodness. Their elevated charisma and resistance to magical influences make them natural protectors of order and light."
+  },
+  "attributeModifiers": {
+    "crm": 1,
+    "res": 1
+  },
+  "isCustom": false
+}

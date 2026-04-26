@@ -1,0 +1,23 @@
+{
+  "id": "registrar",
+  "name": {
+    "pt-br": "Registrador",
+    "en-us": "Registrar"
+  },
+  "description": {
+    "pt-br": "Um guardião do conhecimento capaz de revelar a ficha de qualquer ser de nível igual ou inferior ao seu. Usa seu Livro Mágico para catalogar entidades e desvendar segredos.",
+    "en-us": "A keeper of knowledge capable of revealing the character sheet of any being at or below their own level. Uses their Magic Book to catalog entities and uncover secrets."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 1,
+    "crm": 1.5,
+    "frc": 1,
+    "int": 2.5,
+    "res": 1,
+    "pre": 2,
+    "enr": 0.5
+  },
+  "legacyAbilityId": "magic_book_skill",
+  "isCustom": false
+}

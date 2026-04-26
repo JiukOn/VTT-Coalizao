@@ -1,0 +1,23 @@
+{
+  "id": "swordsman",
+  "name": {
+    "pt-br": "Espadachim",
+    "en-us": "Swordsman"
+  },
+  "description": {
+    "pt-br": "Um duelista refinado que domina a arte da esgrima com lâminas. Combina destreza e precisão para golpes elegantes e letais.",
+    "en-us": "A refined duelist who masters the art of fencing with blades. Combines dexterity and precision for elegant and lethal strikes."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 2,
+    "crm": 1,
+    "frc": 1.5,
+    "int": 1,
+    "res": 1,
+    "pre": 2,
+    "enr": 0.5
+  },
+  "legacyAbilityId": "blade_skill",
+  "isCustom": false
+}

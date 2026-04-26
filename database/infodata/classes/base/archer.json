@@ -1,0 +1,23 @@
+{
+  "id": "archer",
+  "name": {
+    "pt-br": "Atirador",
+    "en-us": "Archer"
+  },
+  "description": {
+    "pt-br": "Um especialista em combate à distância que aumenta o dano de seus ataques com munição. Mira certeira e posicionamento estratégico são suas principais armas.",
+    "en-us": "A specialist in ranged combat who increases the damage of their ranged attacks with ammunition. Accurate aim and strategic positioning are their main weapons."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 1.5,
+    "crm": 1,
+    "frc": 1,
+    "int": 1.5,
+    "res": 1,
+    "pre": 2.5,
+    "enr": 0.5
+  },
+  "legacyAbilityId": "aimed_shot",
+  "isCustom": false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cook",
+  "name": {
+    "pt-br": "Cozinheiro",
+    "en-us": "Cook"
+  },
+  "description": {
+    "pt-br": "Um especialista culinário que prepara alimentos complexos concedendo bônus específicos ao grupo. Usa inteligência e carisma para transformar ingredientes em vantagens táticas.",
+    "en-us": "A culinary specialist who prepares complex foods granting specific bonuses to the group. Uses intelligence and charisma to transform ingredients into tactical advantages."
+  },
+  "multipliers": {
+    "vit": 1.5,
+    "dex": 1.5,
+    "crm": 2,
+    "frc": 1,
+    "int": 2,
+    "res": 1,
+    "pre": 1,
+    "enr": 0.5
+  },
+  "legacyAbilityId": "cook_skill",
+  "isCustom": false
+}

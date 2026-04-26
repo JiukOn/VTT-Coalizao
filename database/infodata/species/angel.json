@@ -1,0 +1,17 @@
+{
+  "id": "angel",
+  "name": {
+    "pt-br": "Anjo",
+    "en-us": "Angel"
+  },
+  "description": {
+    "pt-br": "Seres divinos com uma presença avassaladora e energia transcendente. Seu carisma celestial e energia elevada os tornam únicos — e por isso não podem misturar sua natureza com outra espécie.",
+    "en-us": "Divine beings with an overwhelming presence and transcendent energy. Their celestial charisma and elevated energy make them unique — which is why they cannot mix their nature with another species."
+  },
+  "attributeModifiers": {
+    "crm": 2,
+    "enr": 2
+  },
+  "noSecondarySpecies": true,
+  "isCustom": false
+}

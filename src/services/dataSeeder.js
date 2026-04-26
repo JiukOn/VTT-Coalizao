@@ -13,9 +13,12 @@ import { BASE_NPCS } from '@data/npcs/index.js'
 import { BASE_HEROES } from '@data/heroes/index.js'
 import { BASE_ELEMENTS } from '@data/elements/index.js'
 import { BASE_DOMAINS } from '@data/ambients/index.js'
+import { CLASS_DATA } from '@data/classes/index.js'
+import { BASE_SPECIES } from '@data/species/index.js'
+import { BASE_AURAS } from '@data/auras/index.js'
 
 const SEED_VERSION_KEY = 'vtp-seed-version'
-const CURRENT_SEED_VERSION = '7.2.0' // Bump: 133 new/updated item JSON files (stubs filled + missing equipment items)
+const CURRENT_SEED_VERSION = '8.0.0' // Bump: classes (22+1), species, auras, ambients tables added to IndexedDB
 
 /** Base sessions extracted from campaign reference documents */
 const BASE_SESSIONS = [
@@ -179,7 +182,7 @@ export async function seedDatabase() {
 
   try {
     await db.transaction('rw',
-      [db.creatures, db.abilities, db.items, db.modifications, db.npcs, db.characters, db.sessionNotes, db.elements, db.domains],
+      [db.creatures, db.abilities, db.items, db.modifications, db.npcs, db.characters, db.sessionNotes, db.elements, db.domains, db.classes, db.species, db.auras, db.ambients],
       async () => {
         // Creatures
         await db.creatures.where('isCustom').equals(0).delete()
@@ -213,10 +216,30 @@ export async function seedDatabase() {
         await db.elements.bulkAdd(BASE_ELEMENTS.map(e => ({ ...e, isCustom: 0 })))
         console.log(`[Seeder] ✓ ${BASE_ELEMENTS.length} elementos`)
 
-        // Domains
+        // Domains (geographic/political locations)
         await db.domains.clear()
         await db.domains.bulkAdd(BASE_DOMAINS.map(d => ({ ...d, isCustom: 0 })))
         console.log(`[Seeder] ✓ ${BASE_DOMAINS.length} domínios`)
+
+        // Ambients (same geographic locations, separate table for filtering UI)
+        await db.ambients.clear()
+        await db.ambients.bulkAdd(BASE_DOMAINS.map(d => ({ ...d, ambientId: d.id, isCustom: 0 })))
+        console.log(`[Seeder] ✓ ${BASE_DOMAINS.length} ambientes`)
+
+        // Classes
+        await db.classes.clear()
+        await db.classes.bulkAdd(CLASS_DATA.map(c => ({ ...c, classId: c.id, isCustom: c.isCustom ? 1 : 0 })))
+        console.log(`[Seeder] ✓ ${CLASS_DATA.length} classes`)
+
+        // Species
+        await db.species.clear()
+        await db.species.bulkAdd(BASE_SPECIES.map(s => ({ ...s, speciesId: s.id, isCustom: s.isCustom ? 1 : 0 })))
+        console.log(`[Seeder] ✓ ${BASE_SPECIES.length} espécies`)
+
+        // Auras
+        await db.auras.clear()
+        await db.auras.bulkAdd(BASE_AURAS.map(a => ({ ...a, auraId: a.id, isCustom: a.isCustom ? 1 : 0 })))
+        console.log(`[Seeder] ✓ ${BASE_AURAS.length} auras`)
 
         // Heroes (as characters)
         await db.characters.where('isCustom').equals(0).delete()

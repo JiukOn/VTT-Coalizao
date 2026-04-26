@@ -1,0 +1,16 @@
+{
+  "id": "dwarf",
+  "name": {
+    "pt-br": "Anão",
+    "en-us": "Dwarf"
+  },
+  "description": {
+    "pt-br": "Seres de baixa estatura mas incrivelmente resistentes, forjados nas profundezas da terra. Sua constituição robusta lhes confere vitalidade e força superiores à média.",
+    "en-us": "Short-statured but incredibly resilient beings, forged in the depths of the earth. Their robust constitution grants them vitality and strength above average."
+  },
+  "attributeModifiers": {
+    "vit": 1,
+    "frc": 1
+  },
+  "isCustom": false
+}

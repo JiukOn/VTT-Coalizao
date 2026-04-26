@@ -1,0 +1,24 @@
+{
+  "id": "unclassified",
+  "name": {
+    "pt-br": "Não Classificado",
+    "en-us": "Unclassified"
+  },
+  "description": {
+    "pt-br": "Um personagem sem classe definida, sem acesso a habilidades energéticas ou legado de classe. ENR permanece em 0 e não pode ser aumentado. Todos os atributos têm multiplicador neutro.",
+    "en-us": "A character with no defined class, without access to energy abilities or class legacy. ENR stays at 0 and cannot be increased. All attributes have a neutral multiplier."
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1,
+    "crm": 1,
+    "frc": 1,
+    "int": 1,
+    "res": 1,
+    "pre": 1,
+    "enr": 0
+  },
+  "legacyAbilityId": null,
+  "lockEnr": true,
+  "isCustom": false
+}

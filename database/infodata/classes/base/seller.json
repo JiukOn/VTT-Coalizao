@@ -1,0 +1,23 @@
+{
+  "id": "seller",
+  "name": {
+    "pt-br": "Vendedor",
+    "en-us": "Seller"
+  },
+  "description": {
+    "pt-br": "Um convencedor nato que usa lábia afiada para forçar acordos e manipular opiniões. Mistura carisma e inteligência para obter o que deseja de qualquer interlocutor.",
+    "en-us": "A born persuader who uses sharp talk to force agreements and manipulate opinions. Blends charisma and intelligence to get what they want from any interlocutor."
+  },
+  "multipliers": {
+    "vit": 1,
+    "dex": 1.5,
+    "crm": 2,
+    "frc": 1,
+    "int": 2,
+    "res": 1.5,
+    "pre": 1,
+    "enr": 0
+  },
+  "legacyAbilityId": "smooth_talk",
+  "isCustom": false
+}
