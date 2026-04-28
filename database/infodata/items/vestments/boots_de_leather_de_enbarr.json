@@ -8,7 +8,7 @@
   "type": "Vestimenta - Pe",
   "description": {
     "pt-br": "Botas de couro de Enbarr. Concedem +1 DEX.",
-    "en-us": "Enbarr leather boots. Grant +1 DEX."
+    "en-us": "Boots of leather de Enbarr. Grant +1 DEX."
   },
   "stats": {
     "dex": 1
@@ -17,5 +17,6 @@
   "price": 18,
   "weight": 2,
   "rarity": "especial",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

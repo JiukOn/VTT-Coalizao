@@ -8,7 +8,7 @@
   "type": "Vestimenta - Mãos / Acessório das Mãos",
   "description": {
     "pt-br": "Um anel que confere +3 ENR. Possui a modificação Quente, fazendo seus ataques possuírem o elemento Fogo e poderem causar Queimadura. .",
-    "en-us": ""
+    "en-us": "A ring which grants +3 ENR. Has the modification Quente, fazendo seus ataques possuírem o elemento Fogo e poderem causar Queimadura. ."
   },
   "stats": {
     "enr": 3
@@ -17,5 +17,6 @@
   "price": 20,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 20
 }

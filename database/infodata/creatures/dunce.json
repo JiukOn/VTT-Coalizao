@@ -1,0 +1,58 @@
+{
+  "id": "dunce",
+  "name": {
+    "pt-br": "Dunce",
+    "en-us": "Dunce"
+  },
+  "description": {
+    "pt-br": "Mamífero monotremado adaptado a florestas tropicais. Predador onívoro que se alimenta de peixes, crustáceos, insetos, frutas e sementes. Sua boca é semelhante a um bico, mas com dentes poderosos capazes de triturar cascas duras. Solitário, mas reúne-se em grupos para alimentação e defesa.",
+    "en-us": "Monotreme mammal adapted to tropical forests. Omnivorous predator feeding on fish, crustaceans, insects, fruits, and seeds. Its mouth resembles a beak but has powerful teeth capable of crushing hard shells. Solitary, but gathers in groups for feeding and defense."
+  },
+  "element": "",
+  "size": "medium",
+  "coreSize": "pequeno",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 2,
+  "attributes": {
+    "VIT": 5,
+    "DEX": 6,
+    "CRM": 2,
+    "FRC": 5,
+    "INT": 3,
+    "RES": 3,
+    "PRE": 4,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "dunce_leather", "chance": "100%", "amount": 2 },
+    "2": { "item": "", "chance": "", "amount": 0 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

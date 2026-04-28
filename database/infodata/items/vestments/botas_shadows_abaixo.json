@@ -8,7 +8,7 @@
   "type": "Vestimenta - Pé",
   "description": {
     "pt-br": "Botas leves e escuras, projetadas para discrição e agilidade. Conferem +2 DEX. Possuem a modificação Camuflado, concedendo +1 no dado em testes de Furtividade. .",
-    "en-us": ""
+    "en-us": "Boots light and dark, designed for discretion and agility. Grant +2 DEX. Have a modificação Camuflado, grantsndo +1 no dado em testes de Furtividade. ."
   },
   "stats": {
     "dex": 2
@@ -17,5 +17,6 @@
   "price": 15,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 15
 }

@@ -1,0 +1,58 @@
+{
+  "id": "fabarr",
+  "name": {
+    "pt-br": "Fabarr",
+    "en-us": "Fabarr"
+  },
+  "description": {
+    "pt-br": "Herbívoro de grande porte com até 5 metros de altura. Alimenta-se de plantas e musgos, com dentes fortes capazes de triturar as plantas mais duras. Reproduz-se de forma ovípara, chocando ovos em ninhos de galhos e folhas. Extremamente protetora com sua família.",
+    "en-us": "Large herbivore reaching up to 5 meters tall. Feeds on plants and mosses, with strong teeth capable of crushing the hardest plants. Reproduces by laying eggs in nests of branches and leaves. Extremely protective of its family."
+  },
+  "element": "",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "herbívoro",
+  "imagePath": "",
+  "level": 5,
+  "attributes": {
+    "VIT": 16,
+    "DEX": 3,
+    "CRM": 3,
+    "FRC": 14,
+    "INT": 3,
+    "RES": 7,
+    "PRE": 2,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "fabarr_leather", "chance": "100%", "amount": 4 },
+    "2": { "item": "fabarr_egg_shell", "chance": "40%", "amount": 1 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

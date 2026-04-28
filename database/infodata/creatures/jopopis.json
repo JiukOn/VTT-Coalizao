@@ -1,0 +1,58 @@
+{
+  "id": "jopopis",
+  "name": {
+    "pt-br": "Jopópis",
+    "en-us": "Jopopis"
+  },
+  "description": {
+    "pt-br": "Mamífero semi-aquático pesado com elemento madeira. Uma pequena seleção de vegetais cresce em suas costas, fazendo-o se camuflar como extensão do solo ao ficar sob a água. A pele é em tons de cinza e azul, com textura suave e aveludada. As patas são curtas e robustas, com garras afiadas e pontiagudas.",
+    "en-us": "Heavy semi-aquatic mammal with the wood element. A small selection of plants grows on its back, making it camouflage as an extension of the ground when underwater. Its skin is in gray and blue tones, with a smooth and velvety texture. The paws are short and robust, with sharp and pointed claws."
+  },
+  "element": "wood",
+  "size": "large",
+  "coreSize": "médio",
+  "diet": "herbívoro",
+  "imagePath": "",
+  "level": 4,
+  "attributes": {
+    "VIT": 12,
+    "DEX": 3,
+    "CRM": 3,
+    "FRC": 10,
+    "INT": 3,
+    "RES": 7,
+    "PRE": 3,
+    "ENR": 3
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "jopopis_leather", "chance": "100%", "amount": 3 },
+    "2": { "item": "jopopis_plant_growth", "chance": "70%", "amount": 2 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

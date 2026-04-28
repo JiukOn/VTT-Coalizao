@@ -1,0 +1,58 @@
+{
+  "id": "manuk",
+  "name": {
+    "pt-br": "Manuk",
+    "en-us": "Manuk"
+  },
+  "description": {
+    "pt-br": "Ave majestosa com crista em forma de chamas, asas que lembram vestes nobres e cauda de longas penas. Possui capacidade de resistir e evocar chamas.",
+    "en-us": "Majestic bird with a flame-shaped crest, wings resembling noble robes, and a long-feathered tail. Capable of resisting and evoking flames."
+  },
+  "element": "fire",
+  "size": "large",
+  "coreSize": "médio",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 5,
+  "attributes": {
+    "VIT": 9,
+    "DEX": 8,
+    "CRM": 7,
+    "FRC": 6,
+    "INT": 5,
+    "RES": 7,
+    "PRE": 7,
+    "ENR": 5
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "manuk_feather", "chance": "100%", "amount": 3 },
+    "2": { "item": "manuk_flame_crest", "chance": "30%", "amount": 1 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

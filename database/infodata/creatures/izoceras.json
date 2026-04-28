@@ -1,0 +1,58 @@
+{
+  "id": "izoceras",
+  "name": {
+    "pt-br": "Izoceras",
+    "en-us": "Izoceras"
+  },
+  "description": {
+    "pt-br": "Animal enorme cujo único dente pode pesar até 3 quilos. Pele escamosa e altamente resistente. Seus ataques carregam o elemento água. Os chifres no nariz podem perfurar árvores como papel. Tão grande e bruto que altera o ambiente ao redor, derrubando árvores e movendo pedras. Não é agressivo, mas sua proximidade pode causar morte por esmagamento.",
+    "en-us": "Enormous animal whose single tooth can weigh up to 3 kilos. Scaly and highly resistant skin. Its attacks carry the water element. The horns on its nose can pierce trees like paper. So large and brute it alters the surrounding environment, toppling trees and moving stones. Not very aggressive, but proximity can cause death by crushing."
+  },
+  "element": "water",
+  "size": "colossal",
+  "coreSize": "grande",
+  "diet": "herbívoro",
+  "imagePath": "",
+  "level": 9,
+  "attributes": {
+    "VIT": 25,
+    "DEX": 2,
+    "CRM": 2,
+    "FRC": 20,
+    "INT": 2,
+    "RES": 12,
+    "PRE": 3,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "izoceras_scale", "chance": "100%", "amount": 5 },
+    "2": { "item": "izoceras_tooth", "chance": "30%", "amount": 1 },
+    "3": { "item": "izoceras_horn", "chance": "50%", "amount": 2 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

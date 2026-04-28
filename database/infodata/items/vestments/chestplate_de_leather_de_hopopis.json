@@ -8,7 +8,7 @@
   "type": "Vestimenta - Torso",
   "description": {
     "pt-br": "Peitoral de couro no estilo Hopopis. Concede +1 RES.",
-    "en-us": "Hopopis-style leather chestplate. Grants +1 RES."
+    "en-us": "Chestplate of leather no estilo Hopopis. Grants +1 RES."
   },
   "stats": {
     "res": 1
@@ -17,5 +17,6 @@
   "price": 22,
   "weight": 3,
   "rarity": "especial",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 10
 }

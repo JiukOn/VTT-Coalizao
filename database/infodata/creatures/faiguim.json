@@ -1,0 +1,58 @@
+{
+  "id": "faiguim",
+  "name": {
+    "pt-br": "Faiguim",
+    "en-us": "Faiguim"
+  },
+  "description": {
+    "pt-br": "Ser mágico capaz de voar mesmo com asas levemente atrofiadas. Onívoro que se alimenta de pequenos peixes, crustáceos, insetos, frutas e sementes. Não é tão poderoso mas é muito belo e dócil.",
+    "en-us": "Magical being capable of flying despite slightly atrophied wings. Omnivore feeding on small fish, crustaceans, insects, fruits, and seeds. Not very powerful but very beautiful and gentle."
+  },
+  "element": "lightning",
+  "size": "small",
+  "coreSize": "pequeno",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 1,
+  "attributes": {
+    "VIT": 3,
+    "DEX": 6,
+    "CRM": 7,
+    "FRC": 2,
+    "INT": 4,
+    "RES": 3,
+    "PRE": 5,
+    "ENR": 3
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "faiguim_feather", "chance": "100%", "amount": 3 },
+    "2": { "item": "", "chance": "", "amount": 0 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

@@ -1,0 +1,58 @@
+{
+  "id": "gayutu",
+  "name": {
+    "pt-br": "Gayutu",
+    "en-us": "Gayutu"
+  },
+  "description": {
+    "pt-br": "Criatura pequena e charmosa capaz de voar com suas pequenas asas. Vive de forma domesticada junto de elfos negros e não existe mais na natureza. Os elfos negros os vestem com pequenas armaduras para protegê-los de quedas. Carrega uma pedra escura na cabeça que mantém constantemente uma chama azulada.",
+    "en-us": "Small and charming creature capable of flying with its tiny wings. Lives domesticated with dark elves and no longer exists in the wild. Dark elves dress them in small armors to protect them from falls. Carries a dark stone on its head that constantly maintains a bluish flame."
+  },
+  "element": "fire",
+  "size": "small",
+  "coreSize": "pequeno",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 2,
+  "attributes": {
+    "VIT": 3,
+    "DEX": 7,
+    "CRM": 8,
+    "FRC": 2,
+    "INT": 5,
+    "RES": 4,
+    "PRE": 6,
+    "ENR": 4
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "gayutu_flame_stone", "chance": "50%", "amount": 1 },
+    "2": { "item": "", "chance": "", "amount": 0 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

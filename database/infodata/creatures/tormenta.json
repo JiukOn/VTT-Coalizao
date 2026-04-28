@@ -1,0 +1,98 @@
+{
+  "id": "tormenta",
+  "name": {
+    "pt-br": "Tormenta",
+    "en-us": "Tormenta"
+  },
+  "description": {
+    "pt-br": "Uma criatura de caos e tempestade que altera o clima ao redor de forma dramatica. A Tormenta e constituida por energia eletrica pura e pode chamar raios do ceu a vontade. Sua presença faz os eletronicos e bussolas pararem de funcionar.",
+    "en-us": "A chaos and storm creature that dramatically alters the surrounding climate. The Storm is made of pure electrical energy and can summon lightning from the sky at will. Its presence causes electronics and compasses to stop working."
+  },
+  "element": "lightning",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "energivoro",
+  "imagePath": "",
+  "level": 11,
+  "attributes": {
+    "VIT": 22,
+    "DEX": 14,
+    "CRM": 8,
+    "FRC": 18,
+    "INT": 10,
+    "RES": 14,
+    "PRE": 12,
+    "ENR": 14
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 16,
+  "dex": 20,
+  "crm": 8,
+  "frc": 14,
+  "int": 12,
+  "res": 12,
+  "pre": 18,
+  "enr": 22
+}

@@ -8,7 +8,7 @@
   "type": "Vestimenta - Mao",
   "description": {
     "pt-br": "Um anel de ouro fino. Concede +1 CRM.",
-    "en-us": "A fine gold ring. Grants +1 CRM."
+    "en-us": "A ring de ouro fino. Grants +1 CRM."
   },
   "stats": {
     "crm": 1
@@ -17,5 +17,6 @@
   "price": 25,
   "weight": 0,
   "rarity": "sentimental",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

@@ -8,7 +8,7 @@
   "type": "Vestimenta - Corpo",
   "description": {
     "pt-br": "Peitoral feito de casco de HiunRimu, com resistência exótica. Concede +1 FRC, -1 DEX. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
-    "en-us": ""
+    "en-us": "Chestplate feito of HiunRimu carapace, com exotic resistance. Grants +1 FRC, -1 DEX. Has the modification Armored, reducing received damage by 1. ."
   },
   "stats": {
     "dex": -1,
@@ -18,5 +18,6 @@
   "price": 8,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 8
 }

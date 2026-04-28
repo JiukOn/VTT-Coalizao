@@ -8,12 +8,13 @@
   "type": "Vestimenta - Pé",
   "description": {
     "pt-br": "Botas resistentes e leves para a armadura avançada. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
-    "en-us": ""
+    "en-us": "Boots resistant and lightweight for the advanced armor. Has the modification Armored, reducing received damage by 1. ."
   },
   "stats": {},
   "damage": "",
   "price": 3,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 3
 }

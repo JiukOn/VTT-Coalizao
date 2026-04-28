@@ -8,12 +8,13 @@
   "type": "Vestimenta - Pernas",
   "description": {
     "pt-br": "Calcas simples de pano.",
-    "en-us": "Simple cloth pants."
+    "en-us": "Calcas simples de pano."
   },
   "stats": {},
   "damage": "",
   "price": 8,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

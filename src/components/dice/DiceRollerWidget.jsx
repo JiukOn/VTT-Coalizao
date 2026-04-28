@@ -1,2 +1,2 @@
-/* DiceRollerWidget.jsx — Re-exports the canonical widget implementation */
-export { default } from '../widgets/DiceRollerWidget.jsx'
+/* Re-export stub — canonical source in user/master/src/ */
+export { default } from '../../../user/master/src/components/dice/DiceRollerWidget.jsx'

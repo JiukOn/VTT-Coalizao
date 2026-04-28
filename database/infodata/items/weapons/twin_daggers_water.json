@@ -11,11 +11,13 @@
     "en-us": "A pair of water-infused daggers. Deals 1d4 + 1 damage and grants +1 RES."
   },
   "stats": {
-    "res": 1
+    "frc": 4,
+    "pre": 3
   },
-  "damage": "1d4 + 1",
+  "damage": "1d4 + 2",
   "price": 30,
   "weight": 2,
   "rarity": "especial",
+  "dp": 25,
   "isCustom": false
 }

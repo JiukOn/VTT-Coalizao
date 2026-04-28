@@ -8,12 +8,13 @@
   "type": "Vestimenta - Cabeca",
   "description": {
     "pt-br": "Um capuz de tecido.",
-    "en-us": "A fabric hood."
+    "en-us": "Um capuz de tecido."
   },
   "stats": {},
   "damage": "",
   "price": 8,
   "weight": 0,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 2
 }

@@ -8,14 +8,15 @@
   "type": "Vestimenta - Torso",
   "description": {
     "pt-br": "Um peitoral de ferro. Concede +2 RES.",
-    "en-us": "An iron breastplate. Grants +2 RES."
+    "en-us": "Um peitoral de ferro. Grants +2 RES."
   },
   "stats": {
-    "res": 2
+    "frc": 1
   },
   "damage": "",
   "price": 30,
   "weight": 4,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 8
 }

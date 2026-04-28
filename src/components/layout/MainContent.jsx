@@ -1,9 +1,2 @@
-/* MainContent.jsx — Central area wrapper for page content */
-
-export default function MainContent({ children }) {
-  return (
-    <main className="main-content">
-      {children}
-    </main>
-  )
-}
+/* Re-export stub — canonical source in user/master/src/ */
+export { default } from '../../../user/master/src/components/layout/MainContent.jsx'

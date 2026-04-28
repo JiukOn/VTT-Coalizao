@@ -8,12 +8,13 @@
   "type": "Vestimenta - Perna",
   "description": {
     "pt-br": "Calças feitas de casco de HiunRimu, resistentes e exóticas. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
-    "en-us": ""
+    "en-us": "Pants feitas of HiunRimu carapace, resistentes e exóticas. Has the modification Armored, reducing received damage by 1. ."
   },
   "stats": {},
   "damage": "",
   "price": 4,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 4
 }

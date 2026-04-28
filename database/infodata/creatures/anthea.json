@@ -1,0 +1,98 @@
+{
+  "id": "anthea",
+  "name": {
+    "pt-br": "Anthea",
+    "en-us": "Anthea"
+  },
+  "description": {
+    "pt-br": "Uma criatura floral de inteligencia elevada que governa uma floresta encantada. Anthea manipula plantas e fungos como extensoes do seu corpo, criando armadilhas vivas e curando aliados com pollen magico. Defensiva por natureza, mas letal quando provocada.",
+    "en-us": "A highly intelligent floral creature that governs an enchanted forest. Anthea manipulates plants and fungi as extensions of her body, creating living traps and healing allies with magical pollen. Defensive by nature, but lethal when provoked."
+  },
+  "element": "wood",
+  "size": "large",
+  "coreSize": "grande",
+  "diet": "herbivoro",
+  "imagePath": "",
+  "level": 7,
+  "attributes": {
+    "VIT": 14,
+    "DEX": 6,
+    "CRM": 9,
+    "FRC": 8,
+    "INT": 8,
+    "RES": 10,
+    "PRE": 7,
+    "ENR": 8
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 14,
+  "dex": 8,
+  "crm": 10,
+  "frc": 12,
+  "int": 14,
+  "res": 16,
+  "pre": 6,
+  "enr": 12
+}

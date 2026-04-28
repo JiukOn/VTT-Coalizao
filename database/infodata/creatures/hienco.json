@@ -1,0 +1,58 @@
+{
+  "id": "hienco",
+  "name": {
+    "pt-br": "Hienco",
+    "en-us": "Hienco"
+  },
+  "description": {
+    "pt-br": "Criatura majoritariamente terrestre com dentes resistentes para triturar ossos de pequenos mamíferos. Possui resistência ao elemento água.",
+    "en-us": "Mostly terrestrial creature with resistant teeth for crushing the bones of small mammals. Has resistance to the water element."
+  },
+  "element": "water",
+  "size": "medium",
+  "coreSize": "pequeno",
+  "diet": "carnívoro",
+  "imagePath": "",
+  "level": 3,
+  "attributes": {
+    "VIT": 7,
+    "DEX": 6,
+    "CRM": 2,
+    "FRC": 7,
+    "INT": 3,
+    "RES": 5,
+    "PRE": 5,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "hienco_leather", "chance": "100%", "amount": 2 },
+    "2": { "item": "hienco_fang", "chance": "70%", "amount": 2 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

@@ -1,0 +1,58 @@
+{
+  "id": "areat",
+  "name": {
+    "pt-br": "Areat",
+    "en-us": "Areat"
+  },
+  "description": {
+    "pt-br": "Crustáceo terrestre que habita desertos. Predador onívoro que se alimenta de insetos, répteis e plantas do subsolo. Constrói cidades subterrâneas labirínticas que protegem sua colônia de predadores e do calor.",
+    "en-us": "Terrestrial crustacean native to deserts. An omnivorous predator feeding on insects, reptiles, and underground plants. Builds labyrinthine underground cities to protect its colony from predators and heat."
+  },
+  "element": "earth",
+  "size": "medium",
+  "coreSize": "pequeno",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 3,
+  "attributes": {
+    "VIT": 6,
+    "DEX": 3,
+    "CRM": 2,
+    "FRC": 7,
+    "INT": 4,
+    "RES": 5,
+    "PRE": 2,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "areat_shell", "chance": "100%", "amount": 2 },
+    "2": { "item": "areat_claw", "chance": "60%", "amount": 1 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

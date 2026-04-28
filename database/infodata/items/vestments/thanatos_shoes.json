@@ -8,7 +8,7 @@
   "type": "Vestimenta - Pe",
   "description": {
     "pt-br": "Calcados da guilda Thanatos. Concedem +1 DEX e +1 FRC.",
-    "en-us": "Thanatos guild footwear. Grant +1 DEX and +1 FRC."
+    "en-us": "Calcados da guilda Thanatos. Grant +1 DEX e +1 FRC."
   },
   "stats": {
     "dex": 1,
@@ -18,5 +18,6 @@
   "price": 25,
   "weight": 1,
   "rarity": "especial",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

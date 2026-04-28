@@ -1,0 +1,98 @@
+{
+  "id": "abismo",
+  "name": {
+    "pt-br": "Abismo",
+    "en-us": "Abyss"
+  },
+  "description": {
+    "pt-br": "Uma entidade do abismo profundo, feita de escuridao e energia do vazio. Sua simples presenca corrompeo pensamento das criaturas ao redor, induzindo terror e desorientacao. Ataca atraves de manipulacao psiquica e projecoes de energia sombria.",
+    "en-us": "An entity from the deep abyss, made of darkness and void energy. Its mere presence corrupts the thoughts of surrounding creatures, inducing terror and disorientation. It attacks through psychic manipulation and shadow energy projections."
+  },
+  "element": "void",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "energivoro",
+  "imagePath": "",
+  "level": 10,
+  "attributes": {
+    "VIT": 20,
+    "DEX": 8,
+    "CRM": 6,
+    "FRC": 16,
+    "INT": 10,
+    "RES": 14,
+    "PRE": 8,
+    "ENR": 10
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 18,
+  "dex": 10,
+  "crm": 6,
+  "frc": 14,
+  "int": 22,
+  "res": 16,
+  "pre": 18,
+  "enr": 20
+}

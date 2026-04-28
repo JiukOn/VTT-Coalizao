@@ -8,12 +8,13 @@
   "type": "Vestimenta - Cabeça",
   "description": {
     "pt-br": "Capacete resistente de couro alquimizado, moldado para alta proteção. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
-    "en-us": ""
+    "en-us": "Helmet resistente of alchemized leather, molded for high protection. Has the modification Fortificado, reforçando sua estrutura e grantsndo +1 no dado em testes de Defesa. ."
   },
   "stats": {},
   "damage": "",
   "price": 5,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

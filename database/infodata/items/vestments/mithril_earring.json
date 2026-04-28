@@ -8,7 +8,7 @@
   "type": "Vestimenta - Cabeca",
   "description": {
     "pt-br": "Um brinco forjado em mithril. Concede +1 ENR.",
-    "en-us": "A mithril-forged earring. Grants +1 ENR."
+    "en-us": "Um brinco forjado em mithril. Grants +1 ENR."
   },
   "stats": {
     "enr": 1
@@ -17,5 +17,6 @@
   "price": 30,
   "weight": 0,
   "rarity": "especial",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 15
 }

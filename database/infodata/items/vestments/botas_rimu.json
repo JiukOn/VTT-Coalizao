@@ -8,12 +8,13 @@
   "type": "Vestimenta - Pé",
   "description": {
     "pt-br": "Botas resistentes e pesadas que completam o conjunto Rimu. Possuem a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
-    "en-us": ""
+    "en-us": "Boots resistant and heavy completing the Rimu set. Have a modificação Fortificado, reforçando sua estrutura e grantsndo +1 no dado em testes de Defesa. ."
   },
   "stats": {},
   "damage": "",
   "price": 5,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

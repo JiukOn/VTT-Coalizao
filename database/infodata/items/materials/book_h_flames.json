@@ -1,10 +1,15 @@
 {
   "id": "book_h_flames",
   "name": {
-    "pt-br": "Livro H Chamas",
-    "en-us": "Book H Flames"
+    "pt-br": "Livro de Chamas",
+    "en-us": "Flames Tome"
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Um grimorio fragmentado que pulsa com calor residual. Pode ser usado para aprender habilidades de fogo.",
+    "en-us": "A fragmented grimoire pulsing with residual heat. Can be used to learn fire abilities."
+  }
 }

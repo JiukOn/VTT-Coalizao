@@ -1,0 +1,98 @@
+{
+  "id": "mandargus",
+  "name": {
+    "pt-br": "Mandargus",
+    "en-us": "Mandargus"
+  },
+  "description": {
+    "pt-br": "Uma criatura colossal de rocha viva e ira primordial. O Mandargus destroi tudo em seu caminho com forca devastadora, criando terremotos ao andar. Sua pele e feita de granito denso e seus golpes podem partir montanhas.",
+    "en-us": "A colossal creature of living rock and primordial fury. The Mandargus destroys everything in its path with devastating force, creating earthquakes as it walks. Its skin is made of dense granite and its strikes can split mountains."
+  },
+  "element": "earth",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "minerivoro",
+  "imagePath": "",
+  "level": 9,
+  "attributes": {
+    "VIT": 22,
+    "DEX": 5,
+    "CRM": 4,
+    "FRC": 20,
+    "INT": 6,
+    "RES": 14,
+    "PRE": 5,
+    "ENR": 5
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 18,
+  "dex": 8,
+  "crm": 4,
+  "frc": 22,
+  "int": 6,
+  "res": 16,
+  "pre": 6,
+  "enr": 10
+}

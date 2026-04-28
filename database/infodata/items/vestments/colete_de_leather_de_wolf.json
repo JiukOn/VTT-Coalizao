@@ -8,7 +8,7 @@
   "type": "Vestimenta - Torso",
   "description": {
     "pt-br": "Colete de couro de lobo. Concede +1 DEX.",
-    "en-us": "Wolf leather vest. Grants +1 DEX."
+    "en-us": "Colete of wolf leather. Grants +1 DEX."
   },
   "stats": {
     "dex": 1
@@ -17,5 +17,6 @@
   "price": 22,
   "weight": 2,
   "rarity": "especial",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 6
 }

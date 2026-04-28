@@ -1,8 +1,52 @@
 {
   "id": "lancax",
   "name": {
-    "pt-br": "lancax",
+    "pt-br": "Lancax",
     "en-us": "Lancax"
+  },
+  "description": {
+    "pt-br": "Uma criatura aquatica rara com corpo alongado e aerodinamico coberto por escamas prateadas. Seu chifre em forma de lanca pode perfurar cascos de navios. O Lancax possui inteligencia acima da media para criaturas, sendo capaz de reconhecer aliados e estabelecer vinculos de lealdade profunda. Foi o ser ao qual Apolo se uniu para evoluir.",
+    "en-us": "A rare aquatic creature with an elongated, aerodynamic body covered in silver scales. Its lance-shaped horn can pierce ship hulls. The Lancax possesses above-average intelligence for a creature, capable of recognizing allies and forming deep bonds of loyalty. It was the being with which Apolo merged to evolve."
+  },
+  "element": "water",
+  "size": "grande",
+  "coreSize": "medio",
+  "diet": "carnivoro",
+  "imagePath": "",
+  "level": 7,
+  "vit": 12,
+  "dex": 16,
+  "crm": 8,
+  "frc": 14,
+  "int": 10,
+  "res": 12,
+  "pre": 10,
+  "enr": 8,
+  "abilities": {
+    "active": {
+      "1": "dobra_de_water",
+      "2": "curse_water",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "drops": {
+    "1": {
+      "item": "undino_feather",
+      "chance": 0.5,
+      "amount": 2
+    },
+    "2": {
+      "item": "medium_core",
+      "chance": 0.25,
+      "amount": 1
+    }
   },
   "isCustom": false
 }

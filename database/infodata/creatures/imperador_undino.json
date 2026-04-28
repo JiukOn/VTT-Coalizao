@@ -1,0 +1,98 @@
+{
+  "id": "imperador_undino",
+  "name": {
+    "pt-br": "Imperador Undino",
+    "en-us": "Emperor Undino"
+  },
+  "description": {
+    "pt-br": "O soberano supremo dos Undinos, uma criatura aquatica de poder e autoridade absolutas. O Imperador Undino controla correntes de agua com precisao cirurgica e pode invocar tempestades submarinas. Sua pele e quase impenetravel e seu rugido ressoa por quilometros.",
+    "en-us": "The supreme sovereign of the Undinos, an aquatic creature of absolute power and authority. The Undino Emperor controls water currents with surgical precision and can summon underwater storms. Its skin is nearly impenetrable and its roar resonates for kilometers."
+  },
+  "element": "water",
+  "size": "colossal",
+  "coreSize": "colossal",
+  "diet": "carnivoro",
+  "imagePath": "",
+  "level": 12,
+  "attributes": {
+    "VIT": 30,
+    "DEX": 10,
+    "CRM": 15,
+    "FRC": 25,
+    "INT": 15,
+    "RES": 20,
+    "PRE": 12,
+    "ENR": 15
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 22,
+  "dex": 14,
+  "crm": 14,
+  "frc": 20,
+  "int": 16,
+  "res": 20,
+  "pre": 12,
+  "enr": 18
+}

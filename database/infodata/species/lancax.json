@@ -1,0 +1,17 @@
+{
+  "id": "lancax",
+  "name": {
+    "pt-br": "Lancax",
+    "en-us": "Lancax"
+  },
+  "description": {
+    "pt-br": "Hibridos com o ser aquatico Lancax, adquiridos atraves de um vinculo de alma profundo. Possuem maior destreza aquatica, percepcao agucada e uma conexao especial com a agua.",
+    "en-us": "Hybrids bonded with the aquatic Lancax through a deep soul connection. They possess enhanced aquatic dexterity, sharp perception, and a special connection to water."
+  },
+  "attributeModifiers": {
+    "dex": 2,
+    "pre": 1,
+    "vit": -1
+  },
+  "isCustom": false
+}

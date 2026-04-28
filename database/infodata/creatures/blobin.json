@@ -1,0 +1,58 @@
+{
+  "id": "blobin",
+  "name": {
+    "pt-br": "Blobin",
+    "en-us": "Blobin"
+  },
+  "description": {
+    "pt-br": "Réptil gigante onívoro que se alimenta de metais, pequenos animais, plantas e fungos. Sua casca de metal se desenvolve completamente na fase adulta. Criatura solitária e territorialista que habita cavernas e montanhas. Ataca apenas quando ameaçada, mas possui inteligência superior à de um animal comum.",
+    "en-us": "Giant omnivorous reptile that feeds on metals, small animals, plants, and fungi. Its metal shell fully develops in adulthood. A solitary and territorial creature inhabiting caves and mountains. Attacks only when threatened, but possesses above-average intelligence."
+  },
+  "element": "earth",
+  "size": "large",
+  "coreSize": "médio",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 5,
+  "attributes": {
+    "VIT": 12,
+    "DEX": 3,
+    "CRM": 2,
+    "FRC": 10,
+    "INT": 5,
+    "RES": 8,
+    "PRE": 2,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "blobin_metal_scale", "chance": "100%", "amount": 3 },
+    "2": { "item": "blobin_fang", "chance": "60%", "amount": 2 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

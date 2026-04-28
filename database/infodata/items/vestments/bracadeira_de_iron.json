@@ -8,7 +8,7 @@
   "type": "Vestimenta - Mao",
   "description": {
     "pt-br": "Um bracelete de ferro resistente. Concede +1 RES.",
-    "en-us": "A sturdy iron bracelet. Grants +1 RES."
+    "en-us": "A bracelet de ferro resistente. Grants +1 RES."
   },
   "stats": {
     "res": 1
@@ -17,5 +17,6 @@
   "price": 15,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

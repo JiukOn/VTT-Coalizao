@@ -1,0 +1,98 @@
+{
+  "id": "lamentador",
+  "name": {
+    "pt-br": "Lamentador",
+    "en-us": "Lamenter"
+  },
+  "description": {
+    "pt-br": "Uma criatura do vazio associada ao sofrimento e ao lamento. O Lamentador alimenta-se da energia emocional negativa das criaturas ao redor, amplificando o desespero e o medo. Seu lamento ativa efeitos psicologicos em todos que o ouvem.",
+    "en-us": "A void creature associated with suffering and lament. The Lamenter feeds on the negative emotional energy of surrounding creatures, amplifying despair and fear. Its wail activates psychological effects in all who hear it."
+  },
+  "element": "void",
+  "size": "large",
+  "coreSize": "medio",
+  "diet": "energivoro",
+  "imagePath": "",
+  "level": 8,
+  "attributes": {
+    "VIT": 14,
+    "DEX": 7,
+    "CRM": 10,
+    "FRC": 10,
+    "INT": 12,
+    "RES": 12,
+    "PRE": 8,
+    "ENR": 10
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 12,
+  "dex": 10,
+  "crm": 18,
+  "frc": 8,
+  "int": 20,
+  "res": 14,
+  "pre": 20,
+  "enr": 16
+}

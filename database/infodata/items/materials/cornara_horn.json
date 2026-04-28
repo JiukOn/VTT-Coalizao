@@ -6,5 +6,10 @@
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Um chifre resistente de Cornara, criatura ignea. Excelente material para armas e armaduras.",
+    "en-us": "A tough horn from a Cornara, a fiery creature. Excellent for crafting weapons and armor."
+  }
 }

@@ -8,12 +8,13 @@
   "type": "Vestimenta - Pescoço",
   "description": {
     "pt-br": "Um item Mito único feito das sombras, de alta durabilidade. Possui a modificação Malicioso, infundido com uma aura sombria e corruptora. Sua Habilidade Mito, Olhar do Abismo, faz a maioria dos seres que fitam os olhos do usuário ficarem com MEDO por 2 turnos, e concede 1 dado bônus para convencimento forçado. . (Requer ENR 8 e CRM menor que 5).",
-    "en-us": ""
+    "en-us": "A Myth item único feito of shadows, of high durability. Has the modification Malicioso, infused with a dark, corrupting aura. Its Myth Ability, Abyss Gaze, makes most beings who gaze into the user's eyes become AFRAID for 2 turns, e grants 1 dado bônus para convencimento forçado. . (Requires ENR 8 e CRM menor que 5)."
   },
   "stats": {},
   "damage": "",
   "price": 50,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 50
 }

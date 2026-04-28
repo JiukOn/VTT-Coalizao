@@ -1,0 +1,58 @@
+{
+  "id": "ganlan",
+  "name": {
+    "pt-br": "Ganlan",
+    "en-us": "Ganlan"
+  },
+  "description": {
+    "pt-br": "Criatura grande com chifres metálicos. Predador mamífero que se alimenta de animais de médio e grande porte, muitas vezes atacando criaturas maiores que si próprio.",
+    "en-us": "Large creature with metallic horns. Mammalian predator that feeds on medium and large animals, often attacking creatures larger than itself."
+  },
+  "element": "earth",
+  "size": "large",
+  "coreSize": "médio",
+  "diet": "carnívoro",
+  "imagePath": "",
+  "level": 6,
+  "attributes": {
+    "VIT": 13,
+    "DEX": 6,
+    "CRM": 2,
+    "FRC": 14,
+    "INT": 3,
+    "RES": 8,
+    "PRE": 5,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "ganlan_leather", "chance": "100%", "amount": 3 },
+    "2": { "item": "ganlan_metal_horn", "chance": "70%", "amount": 2 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

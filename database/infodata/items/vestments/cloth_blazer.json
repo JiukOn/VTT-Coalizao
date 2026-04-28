@@ -8,7 +8,7 @@
   "type": "Vestimenta - Torso",
   "description": {
     "pt-br": "Um blazer de pano leve. Concede +1 CRM.",
-    "en-us": "A light cloth blazer. Grants +1 CRM."
+    "en-us": "Um blazer de pano leve. Grants +1 CRM."
   },
   "stats": {
     "crm": 1
@@ -17,5 +17,6 @@
   "price": 12,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 3
 }

@@ -8,12 +8,13 @@
   "type": "Vestimenta - Mao",
   "description": {
     "pt-br": "Um bracelete de madeira.",
-    "en-us": "A wooden bracelet."
+    "en-us": "A bracelet de madeira."
   },
   "stats": {},
   "damage": "",
   "price": 5,
   "weight": 0,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

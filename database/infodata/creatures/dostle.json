@@ -1,0 +1,58 @@
+{
+  "id": "dostle",
+  "name": {
+    "pt-br": "Dostle",
+    "en-us": "Dostle"
+  },
+  "description": {
+    "pt-br": "Mamífero marinho que habita águas profundas e cristalinas. Predador onívoro que se alimenta de peixes, plânctons e algas. Sua pele absorve e emite luz como prismas, criando um arco-íris como camuflagem e comunicação. Conhecida por sua inteligência e habilidade de se comunicar com outros animais marinhos.",
+    "en-us": "Marine mammal inhabiting deep, crystal-clear waters. Omnivorous predator feeding on fish, plankton, and algae. Its skin absorbs and emits light like prisms, creating a rainbow as camouflage and communication. Known for its intelligence and ability to communicate with other marine animals."
+  },
+  "element": "water",
+  "size": "large",
+  "coreSize": "médio",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 5,
+  "attributes": {
+    "VIT": 10,
+    "DEX": 8,
+    "CRM": 6,
+    "FRC": 7,
+    "INT": 7,
+    "RES": 5,
+    "PRE": 6,
+    "ENR": 3
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "dostle_scale", "chance": "100%", "amount": 2 },
+    "2": { "item": "dostle_prism_shard", "chance": "50%", "amount": 1 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

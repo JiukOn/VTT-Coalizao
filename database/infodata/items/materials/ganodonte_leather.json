@@ -1,10 +1,15 @@
 {
   "id": "ganodonte_leather",
   "name": {
-    "pt-br": "Couro De Ganodonte",
+    "pt-br": "Couro de Ganodonte",
     "en-us": "Ganodonte Leather"
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Couro espesso e resistente obtido do Ganodonte. Material valioso para armaduras pesadas.",
+    "en-us": "Thick, resistant leather from the Ganodonte. Valuable for heavy armor crafting."
+  }
 }

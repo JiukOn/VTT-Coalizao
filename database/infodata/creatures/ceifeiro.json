@@ -1,0 +1,98 @@
+{
+  "id": "ceifeiro",
+  "name": {
+    "pt-br": "Ceifeiro",
+    "en-us": "Reaper"
+  },
+  "description": {
+    "pt-br": "A forma mais poderosa da linhagem Moriu. O Ceifeiro e uma ave draconiana com asas de fogo e garras capazes de atravessar armaduras pesadas. Seus ataques sao rapidos e mortais, e o calor emanado de suas asas pode incendiar o campo ao redor.",
+    "en-us": "The most powerful form of the Moriu lineage. The Reaper is a draconian bird with wings of fire and claws capable of piercing heavy armor. Its attacks are swift and lethal, and the heat emanating from its wings can set the surrounding field ablaze."
+  },
+  "element": "fire",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "carnivoro",
+  "imagePath": "",
+  "level": 8,
+  "attributes": {
+    "VIT": 18,
+    "DEX": 10,
+    "CRM": 7,
+    "FRC": 16,
+    "INT": 8,
+    "RES": 10,
+    "PRE": 10,
+    "ENR": 12
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 14,
+  "dex": 18,
+  "crm": 6,
+  "frc": 16,
+  "int": 8,
+  "res": 10,
+  "pre": 16,
+  "enr": 14
+}

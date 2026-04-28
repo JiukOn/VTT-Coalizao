@@ -8,7 +8,7 @@
   "type": "Vestimenta - Corpo",
   "description": {
     "pt-br": "Peitoral robusto, feito de ossos reforçados, fortalece seu usuário (+2 FRC). Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
-    "en-us": ""
+    "en-us": "Chestplate robusto, feito of reinforced bones, fortalece its user (+2 FRC). Has the modification Fortificado, reforçando sua estrutura e grantsndo +1 no dado em testes de Defesa. ."
   },
   "stats": {
     "frc": 2
@@ -17,5 +17,6 @@
   "price": 6,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 6
 }

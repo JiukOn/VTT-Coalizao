@@ -1,0 +1,98 @@
+{
+  "id": "moriu_nobre",
+  "name": {
+    "pt-br": "Móriu Nobre",
+    "en-us": "Noble Moriu"
+  },
+  "description": {
+    "pt-br": "Uma variante nobre e mais poderosa do Moriu comum. Sua plumagem e de um vermelho vibrante com reflexos dourados, marcando sua distincao na hierarquia da especie. Mais inteligente e coordenado que seus pares, o Moriu Nobre pode liderar bandos.",
+    "en-us": "A noble and more powerful variant of the common Moriu. Its plumage is a vibrant red with golden reflections, marking its distinction in the species hierarchy. More intelligent and coordinated than its peers, the Noble Moriu can lead flocks."
+  },
+  "element": "fire",
+  "size": "large",
+  "coreSize": "medio",
+  "diet": "carnivoro",
+  "imagePath": "",
+  "level": 5,
+  "attributes": {
+    "VIT": 10,
+    "DEX": 8,
+    "CRM": 7,
+    "FRC": 8,
+    "INT": 6,
+    "RES": 6,
+    "PRE": 8,
+    "ENR": 6
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 10,
+  "dex": 14,
+  "crm": 8,
+  "frc": 12,
+  "int": 6,
+  "res": 8,
+  "pre": 12,
+  "enr": 10
+}

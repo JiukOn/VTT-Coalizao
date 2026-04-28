@@ -8,12 +8,13 @@
   "type": "Vestimenta - Cabeça",
   "description": {
     "pt-br": "Um chapéu de pele macia, com design chamativo. Possui a modificação Chamativo, concedendo +1 no dado em testes de CRM, mas impondo -1 no dado em testes de Furtividade. .",
-    "en-us": ""
+    "en-us": "Um chapéu of soft hide, with an eye-catching design. Has the modification Chamativo, grantsndo +1 no dado em testes de CRM, mas impondo -1 no dado em testes de Furtividade. ."
   },
   "stats": {},
   "damage": "",
   "price": 2,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 2
 }

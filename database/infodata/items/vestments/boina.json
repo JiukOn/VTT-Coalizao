@@ -8,12 +8,13 @@
   "type": "Vestimenta - Cabeca",
   "description": {
     "pt-br": "Uma boina simples.",
-    "en-us": "A simple beret."
+    "en-us": "Uma boina simples."
   },
   "stats": {},
   "damage": "",
   "price": 5,
   "weight": 0,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 2
 }

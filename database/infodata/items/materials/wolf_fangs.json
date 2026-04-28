@@ -1,10 +1,15 @@
 {
   "id": "wolf_fangs",
   "name": {
-    "pt-br": "Presas De Lobo",
+    "pt-br": "Presas de Lobo",
     "en-us": "Wolf Fangs"
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Presas afiadas de um lobo selvagem. Usadas em armas e itens de caca.",
+    "en-us": "Sharp fangs from a wild wolf. Used in weapons and hunting items."
+  }
 }

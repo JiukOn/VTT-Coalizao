@@ -8,12 +8,13 @@
   "type": "Vestimenta - Pé",
   "description": {
     "pt-br": "Botas resistentes feitas de ferro forjado. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
-    "en-us": ""
+    "en-us": "Boots resistentes feitas of forged iron. Has the modification Armored, reducing received damage by 1. ."
   },
   "stats": {},
   "damage": "",
   "price": 4,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 4
 }

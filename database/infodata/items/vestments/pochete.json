@@ -8,12 +8,13 @@
   "type": "Vestimenta - Torso",
   "description": {
     "pt-br": "Uma pochete pratica.",
-    "en-us": "A practical fanny pack."
+    "en-us": "Uma pochete pratica."
   },
   "stats": {},
   "damage": "",
   "price": 8,
   "weight": 0,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 4
 }

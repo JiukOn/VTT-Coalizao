@@ -1,0 +1,98 @@
+{
+  "id": "gran_cornara",
+  "name": {
+    "pt-br": "Gran Cornara",
+    "en-us": "Gran Cornara"
+  },
+  "description": {
+    "pt-br": "Uma Cornara de dimensoes legendarias, rara e extremamente dificil de domar. A Gran Cornara e considerada a montaria dos lendarios pelo mundo de Coalizao. Sua carga e capaz de derrubar muralhas e seu rugido intimida qualquer criatura nas proximidades.",
+    "en-us": "A legendary-sized Cornara, rare and extremely difficult to tame. The Gran Cornara is considered the mount of legends across the Coalizao world. Its charge can topple walls and its roar intimidates any nearby creature."
+  },
+  "element": "fire",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "herbivoro",
+  "imagePath": "",
+  "level": 7,
+  "attributes": {
+    "VIT": 20,
+    "DEX": 6,
+    "CRM": 5,
+    "FRC": 18,
+    "INT": 4,
+    "RES": 10,
+    "PRE": 4,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 16,
+  "dex": 12,
+  "crm": 6,
+  "frc": 18,
+  "int": 6,
+  "res": 12,
+  "pre": 8,
+  "enr": 10
+}

@@ -8,12 +8,13 @@
   "type": "Vestimenta - Torso",
   "description": {
     "pt-br": "Um casaco comprido para protecao contra o frio.",
-    "en-us": "A long coat for cold weather protection."
+    "en-us": "Um casaco comprido para protecao contra o frio."
   },
   "stats": {},
   "damage": "",
   "price": 15,
   "weight": 2,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 4
 }

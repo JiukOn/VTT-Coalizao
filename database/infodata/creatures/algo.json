@@ -1,0 +1,98 @@
+{
+  "id": "algo",
+  "name": {
+    "pt-br": "Algo",
+    "en-us": "Algo"
+  },
+  "description": {
+    "pt-br": "Uma criatura de identidade incerta, que parece mudar de forma dependendo de quem a observa. Nao possui elemento definido, mas demonstra resistencia a todo tipo de ataque. Sua origem e natureza sao desconhecidas.",
+    "en-us": "A creature of uncertain identity that seems to shift form depending on the observer. It has no defined element but shows resistance to all attack types. Its origin and nature are unknown."
+  },
+  "element": "",
+  "size": "large",
+  "coreSize": "medio",
+  "diet": "onivoro",
+  "imagePath": "",
+  "level": 8,
+  "attributes": {
+    "VIT": 15,
+    "DEX": 10,
+    "CRM": 5,
+    "FRC": 12,
+    "INT": 8,
+    "RES": 10,
+    "PRE": 7,
+    "ENR": 5
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 14,
+  "dex": 12,
+  "crm": 8,
+  "frc": 14,
+  "int": 10,
+  "res": 12,
+  "pre": 10,
+  "enr": 8
+}

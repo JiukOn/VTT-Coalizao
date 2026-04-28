@@ -1,0 +1,98 @@
+{
+  "id": "ouroboros",
+  "name": {
+    "pt-br": "Ouroboros",
+    "en-us": "Ouroboros"
+  },
+  "description": {
+    "pt-br": "Entidade serpentina mitica que representa o ciclo eterno. O Ouroboros e considerado uma das criaturas mais poderosas do mundo de Coalizao, se nao a mais poderosa. Sua existencia desafia as leis da fisica e da energia. Atacar o Ouroboros e arriscar a propria existencia.",
+    "en-us": "A mythic serpentine entity representing the eternal cycle. The Ouroboros is considered one of the most powerful creatures in the Coalizao world, if not the most powerful. Its existence defies the laws of physics and energy. Attacking the Ouroboros is risking one's own existence."
+  },
+  "element": "void",
+  "size": "colossal",
+  "coreSize": "colossal",
+  "diet": "energivoro",
+  "imagePath": "",
+  "level": 15,
+  "attributes": {
+    "VIT": 40,
+    "DEX": 15,
+    "CRM": 15,
+    "FRC": 35,
+    "INT": 20,
+    "RES": 25,
+    "PRE": 15,
+    "ENR": 20
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 30,
+  "dex": 20,
+  "crm": 16,
+  "frc": 25,
+  "int": 28,
+  "res": 25,
+  "pre": 22,
+  "enr": 30
+}

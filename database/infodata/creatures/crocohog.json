@@ -1,0 +1,58 @@
+{
+  "id": "crocohog",
+  "name": {
+    "pt-br": "Crocohog",
+    "en-us": "Crocohog"
+  },
+  "description": {
+    "pt-br": "Predador onívoro com focinho de porco e mandíbula poderosa. Filhotes nascem com uma casca dura que se desenvolve em espinhos de queratina. Adapta-se a diferentes ambientes mas prefere florestas úmidas, rios e lagos.",
+    "en-us": "Omnivorous predator with a pig-like snout and powerful jaws. Offspring are born with a hard shell that develops into keratin spines. Adapts to various environments but prefers humid forests, rivers, and lakes."
+  },
+  "element": "",
+  "size": "medium",
+  "coreSize": "pequeno",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 3,
+  "attributes": {
+    "VIT": 7,
+    "DEX": 5,
+    "CRM": 2,
+    "FRC": 8,
+    "INT": 3,
+    "RES": 4,
+    "PRE": 4,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "crocohog_leather", "chance": "100%", "amount": 2 },
+    "2": { "item": "crocohog_spine", "chance": "80%", "amount": 3 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

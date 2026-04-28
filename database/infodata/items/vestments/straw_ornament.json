@@ -8,12 +8,13 @@
   "type": "Vestimenta - Cabeca",
   "description": {
     "pt-br": "Um enfeite trancado com palha.",
-    "en-us": "A braided straw ornament."
+    "en-us": "Um enfeite trancado com palha."
   },
   "stats": {},
   "damage": "",
   "price": 3,
   "weight": 0,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 2
 }

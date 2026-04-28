@@ -1,10 +1,15 @@
 {
   "id": "undino_feather",
   "name": {
-    "pt-br": "Pena De Undino",
+    "pt-br": "Pena de Undino",
     "en-us": "Undino Feather"
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Uma pena resistente de um Undino. Material usado em flechas e vestimentas leves.",
+    "en-us": "A tough feather from an Undino. Material used in arrows and light vestments."
+  }
 }

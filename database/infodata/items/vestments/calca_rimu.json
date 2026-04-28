@@ -8,12 +8,13 @@
   "type": "Vestimenta - Perna",
   "description": {
     "pt-br": "Calças pesadas que completam o conjunto Rimu, oferecendo proteção densa. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
-    "en-us": ""
+    "en-us": "Pants pesadas completing the Rimu set, offering dense protection. Has the modification Fortificado, reforçando sua estrutura e grantsndo +1 no dado em testes de Defesa. ."
   },
   "stats": {},
   "damage": "",
   "price": 5,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

@@ -8,12 +8,13 @@
   "type": "Vestimenta - Cabeca",
   "description": {
     "pt-br": "Um chapeu de pano leve.",
-    "en-us": "A light cloth hat."
+    "en-us": "A hat de pano leve."
   },
   "stats": {},
   "damage": "",
   "price": 5,
   "weight": 0,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 2
 }

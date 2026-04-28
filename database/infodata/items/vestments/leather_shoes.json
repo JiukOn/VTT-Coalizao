@@ -8,12 +8,13 @@
   "type": "Vestimenta - Pe",
   "description": {
     "pt-br": "Sapatos simples de couro.",
-    "en-us": "Simple leather shoes."
+    "en-us": "Sapatos simples of leather."
   },
   "stats": {},
   "damage": "",
   "price": 10,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 3
 }

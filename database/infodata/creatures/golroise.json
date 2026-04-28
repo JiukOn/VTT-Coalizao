@@ -1,0 +1,58 @@
+{
+  "id": "golroise",
+  "name": {
+    "pt-br": "Golroise",
+    "en-us": "Golroise"
+  },
+  "description": {
+    "pt-br": "Réptil gigante que se alimenta de rochas, solo, metais e recursos minerais. Possui uma densa e dura camada rochosa por toda a extensão do corpo. Apesar do peso, é surpreendentemente ágil. Possui uma das mordidas mais poderosas entre todas as criaturas.",
+    "en-us": "Giant reptile that feeds on rocks, soil, metals, and mineral resources. Has a dense and hard rocky layer covering its entire body. Despite its weight, it is surprisingly agile. Has one of the most powerful bites among all creatures."
+  },
+  "element": "earth",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "minerívoro",
+  "imagePath": "",
+  "level": 7,
+  "attributes": {
+    "VIT": 18,
+    "DEX": 6,
+    "CRM": 1,
+    "FRC": 16,
+    "INT": 2,
+    "RES": 14,
+    "PRE": 4,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "golroise_rock_scale", "chance": "100%", "amount": 4 },
+    "2": { "item": "golroise_fang", "chance": "50%", "amount": 2 },
+    "3": { "item": "mineral_ore", "chance": "70%", "amount": 3 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

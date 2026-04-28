@@ -8,7 +8,7 @@
   "type": "Vestimenta - Cabeca",
   "description": {
     "pt-br": "Um brinco fino de ouro. Concede +1 CRM.",
-    "en-us": "A fine gold earring. Grants +1 CRM."
+    "en-us": "Um brinco fino de ouro. Grants +1 CRM."
   },
   "stats": {
     "crm": 1
@@ -17,5 +17,6 @@
   "price": 20,
   "weight": 0,
   "rarity": "sentimental",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 10
 }

@@ -8,7 +8,7 @@
   "type": "Vestimenta - Torso",
   "description": {
     "pt-br": "Sobretudo de couro no estilo Jopopis. Concede +1 RES e +1 DEX.",
-    "en-us": "Jopopis-style leather overcoat. Grants +1 RES and +1 DEX."
+    "en-us": "Sobretudo of leather no estilo Jopopis. Grants +1 RES e +1 DEX."
   },
   "stats": {
     "res": 1,
@@ -18,5 +18,6 @@
   "price": 35,
   "weight": 3,
   "rarity": "especial",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 8
 }

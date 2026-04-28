@@ -1,0 +1,58 @@
+{
+  "id": "hopopis",
+  "name": {
+    "pt-br": "Hopopis",
+    "en-us": "Hopopis"
+  },
+  "description": {
+    "pt-br": "Grande e aterrorizante mamífero capaz de manter anéis de fogo e bafo flamejante simultaneamente. A área de calor ao seu redor pode derreter espadas. Sua enorme cabeça com olhos vermelhos brilhosos aterroriza criaturas próximas. Em épocas de frio, outras criaturas se aproximam para se aquecer e acabam sendo devoradas.",
+    "en-us": "Large and terrifying mammal capable of maintaining fire rings and a flaming breath simultaneously. The heat area around it can melt swords. Its enormous head with glowing red eyes terrifies nearby creatures. In cold seasons, other creatures approach for warmth and end up being devoured."
+  },
+  "element": "fire",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "carnívoro",
+  "imagePath": "",
+  "level": 8,
+  "attributes": {
+    "VIT": 16,
+    "DEX": 4,
+    "CRM": 5,
+    "FRC": 15,
+    "INT": 5,
+    "RES": 10,
+    "PRE": 5,
+    "ENR": 8
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "hopopis_leather", "chance": "100%", "amount": 4 },
+    "2": { "item": "hopopis_flame_gland", "chance": "50%", "amount": 1 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

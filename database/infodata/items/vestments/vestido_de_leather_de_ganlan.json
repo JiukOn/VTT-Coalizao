@@ -8,7 +8,7 @@
   "type": "Vestimenta - Torso",
   "description": {
     "pt-br": "Vestido de couro no estilo Ganlan. Concede +1 CRM.",
-    "en-us": "Ganlan-style leather dress. Grants +1 CRM."
+    "en-us": "Vestido of leather no estilo Ganlan. Grants +1 CRM."
   },
   "stats": {
     "crm": 1
@@ -17,5 +17,6 @@
   "price": 30,
   "weight": 2,
   "rarity": "especial",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

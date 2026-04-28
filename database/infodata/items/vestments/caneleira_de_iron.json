@@ -8,7 +8,7 @@
   "type": "Vestimenta - Pernas",
   "description": {
     "pt-br": "Caneleira de ferro. Concede +1 RES.",
-    "en-us": "Iron greave. Grants +1 RES."
+    "en-us": "Caneleira de ferro. Grants +1 RES."
   },
   "stats": {
     "res": 1
@@ -17,5 +17,6 @@
   "price": 18,
   "weight": 2,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

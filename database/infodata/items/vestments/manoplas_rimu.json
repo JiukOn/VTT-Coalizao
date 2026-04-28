@@ -8,12 +8,13 @@
   "type": "Vestimenta - Mãos / Acessório das Mãos",
   "description": {
     "pt-br": "Luvas pesadas para proteção das mãos. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
-    "en-us": ""
+    "en-us": "Gloves pesadas para proteção das mãos. Has the modification Fortificado, reforçando sua estrutura e grantsndo +1 no dado em testes de Defesa. ."
   },
   "stats": {},
   "damage": "",
   "price": 5,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

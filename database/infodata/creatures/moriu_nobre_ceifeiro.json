@@ -1,0 +1,98 @@
+{
+  "id": "moriu_nobre_ceifeiro",
+  "name": {
+    "pt-br": "Móriu Nobre Ceifeiro",
+    "en-us": "Noble Moriu Reaper"
+  },
+  "description": {
+    "pt-br": "A forma mais evoluida e lendaria da linhagem Moriu. Um Moriu Nobre que atingiu o estagio Ceifeiro representa uma ameaca de escala catastrofica. Suas chamas sao tao intensas que derretem o proprio solo e suas garras cortam através do aco como se fosse seda.",
+    "en-us": "The most evolved and legendary form of the Moriu lineage. A Noble Moriu that reached the Reaper stage represents a catastrophic-scale threat. Its flames are so intense they melt the ground itself and its claws cut through steel as if it were silk."
+  },
+  "element": "fire",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "carnivoro",
+  "imagePath": "",
+  "level": 12,
+  "attributes": {
+    "VIT": 25,
+    "DEX": 14,
+    "CRM": 10,
+    "FRC": 20,
+    "INT": 12,
+    "RES": 14,
+    "PRE": 14,
+    "ENR": 16
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 18,
+  "dex": 22,
+  "crm": 8,
+  "frc": 18,
+  "int": 10,
+  "res": 14,
+  "pre": 20,
+  "enr": 20
+}

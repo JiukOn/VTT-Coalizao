@@ -8,7 +8,7 @@
   "type": "Vestimenta - Pe",
   "description": {
     "pt-br": "Sapatos de artesanato Areat. Concedem +1 DEX.",
-    "en-us": "Areat-crafted shoes. Grant +1 DEX."
+    "en-us": "Sapatos de artesanato Areat. Grant +1 DEX."
   },
   "stats": {
     "dex": 1
@@ -17,5 +17,6 @@
   "price": 20,
   "weight": 1,
   "rarity": "especial",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

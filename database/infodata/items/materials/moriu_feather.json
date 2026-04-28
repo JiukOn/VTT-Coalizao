@@ -1,10 +1,15 @@
 {
   "id": "moriu_feather",
   "name": {
-    "pt-br": "Pena De Moriu",
+    "pt-br": "Pena de Moriu",
     "en-us": "Moriu Feather"
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Uma pena leve e reluzente de um Moriu. Usada em confeccao de flechas ou encantamentos de voo.",
+    "en-us": "A light, shimmering feather from a Moriu. Used in arrow crafting or flight enchantments."
+  }
 }

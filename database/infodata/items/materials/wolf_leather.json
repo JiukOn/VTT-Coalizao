@@ -1,10 +1,15 @@
 {
   "id": "wolf_leather",
   "name": {
-    "pt-br": "Couro De Lobo",
+    "pt-br": "Couro de Lobo",
     "en-us": "Wolf Leather"
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Couro resistente obtido de um lobo. Material popular para vestimentas rusticas e resistentes.",
+    "en-us": "Tough leather from a wolf. Popular material for rustic and durable vestments."
+  }
 }

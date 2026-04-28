@@ -1,0 +1,58 @@
+{
+  "id": "esfinge",
+  "name": {
+    "pt-br": "Esfinge",
+    "en-us": "Sphinx"
+  },
+  "description": {
+    "pt-br": "Criatura lendária e monstruosa de biologia misteriosa. Onívora, capaz de se alimentar de qualquer coisa. Reproduz-se assexuadamente por fissão. Coberta por pele grossa e escura resistente a ataques físicos. Tem o hábito de fazer perguntas a seres inteligentes, tornando-se extremamente agressiva se perceber uma mentira.",
+    "en-us": "Legendary and monstrous creature of mysterious biology. Omnivorous, capable of feeding on anything. Reproduces asexually by fission. Covered in thick, dark, physically resistant skin. Has the habit of asking questions to intelligent beings, becoming extremely aggressive if it perceives a lie."
+  },
+  "element": "",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 8,
+  "attributes": {
+    "VIT": 18,
+    "DEX": 5,
+    "CRM": 8,
+    "FRC": 14,
+    "INT": 10,
+    "RES": 12,
+    "PRE": 5,
+    "ENR": 4
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "sphinx_stone_hide", "chance": "100%", "amount": 2 },
+    "2": { "item": "sphinx_riddle_core", "chance": "20%", "amount": 1 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

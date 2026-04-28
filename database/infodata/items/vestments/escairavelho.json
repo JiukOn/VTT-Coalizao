@@ -8,7 +8,7 @@
   "type": "Vestimenta - Acessório das Mãos",
   "description": {
     "pt-br": "Um item Mito, um bracelete mágico especial que confere +2 ENR e +3 INT. Sua Habilidade Mito, Impulso Espectral, utiliza a própria alma como combustível, recebendo +2 em um atributo físico (FRC ou DEX) por 4 turnos e perdendo 1 de XP (Limitado ao XP 0 e sem regressão de nível). . (Requer INT 8).",
-    "en-us": ""
+    "en-us": "A Myth item, um bracelete mágico especial which grants +2 ENR e +3 INT. Its Myth Ability, Impulso Espectral, utiliza a própria alma como combustível, gaining +2 in a physical attribute (STR or DEX) for 4 turns and losing 1 XP (Limited to XP 0 without level regression). . (Requires INT 8)."
   },
   "stats": {
     "int": 3,
@@ -18,5 +18,6 @@
   "price": 50,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 50
 }

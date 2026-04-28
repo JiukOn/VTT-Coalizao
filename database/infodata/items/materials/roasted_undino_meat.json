@@ -1,10 +1,15 @@
 {
   "id": "roasted_undino_meat",
   "name": {
-    "pt-br": "Carne Assada De Undino",
+    "pt-br": "Carne Assada de Undino",
     "en-us": "Roasted Undino Meat"
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Carne de Undino assada, com sabor forte e nutritivo. Fornece alimento e recuperacao moderada de VIT.",
+    "en-us": "Roasted Undino meat with strong, nutritious flavor. Provides food and moderate VIT recovery."
+  }
 }

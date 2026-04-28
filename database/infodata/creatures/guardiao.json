@@ -1,0 +1,98 @@
+{
+  "id": "guardiao",
+  "name": {
+    "pt-br": "Guardião",
+    "en-us": "Guardian"
+  },
+  "description": {
+    "pt-br": "Uma criatura criada ou designada para guardar um local ou artefato sagrado. O Guardiao possui resistencia sobre-humana a danos e nao recua diante de nada que ameace seu territorio. Sua estrutura corporal foi reforçada por energias ancestrais.",
+    "en-us": "A creature created or designated to guard a sacred location or artifact. The Guardian possesses superhuman damage resistance and does not retreat before anything that threatens its territory. Its physical structure was reinforced by ancestral energies."
+  },
+  "element": "",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "energivoro",
+  "imagePath": "",
+  "level": 9,
+  "attributes": {
+    "VIT": 22,
+    "DEX": 6,
+    "CRM": 6,
+    "FRC": 18,
+    "INT": 8,
+    "RES": 15,
+    "PRE": 6,
+    "ENR": 8
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 20,
+  "dex": 8,
+  "crm": 8,
+  "frc": 16,
+  "int": 10,
+  "res": 20,
+  "pre": 8,
+  "enr": 10
+}

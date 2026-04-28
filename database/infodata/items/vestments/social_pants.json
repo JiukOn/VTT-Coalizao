@@ -8,7 +8,7 @@
   "type": "Vestimenta - Pernas",
   "description": {
     "pt-br": "Calca elegante que concede +1 CRM.",
-    "en-us": "Elegant pants that grant +1 CRM."
+    "en-us": "Calca elegante que grants +1 CRM."
   },
   "stats": {
     "crm": 1
@@ -17,5 +17,6 @@
   "price": 12,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 3
 }

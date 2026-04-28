@@ -8,12 +8,13 @@
   "type": "Vestimenta - Pernas",
   "description": {
     "pt-br": "Calcas feitas de fibra natural.",
-    "en-us": "Pants made from natural fiber."
+    "en-us": "Calcas feitas de fibra natural."
   },
   "stats": {},
   "damage": "",
   "price": 6,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

@@ -1,10 +1,15 @@
 {
   "id": "roasted_tuctuc_meat",
   "name": {
-    "pt-br": "Carne Assada De Tuctuc",
+    "pt-br": "Carne Assada de Tuctuc",
     "en-us": "Roasted Tuctuc Meat"
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Carne de Tuctuc bem temperada e assada. Fornece alimento e pequena recuperacao de VIT quando consumida.",
+    "en-us": "Well-seasoned roasted Tuctuc meat. Provides food and minor VIT recovery when consumed."
+  }
 }

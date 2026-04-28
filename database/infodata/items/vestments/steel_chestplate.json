@@ -8,7 +8,7 @@
   "type": "Vestimenta - Corpo",
   "description": {
     "pt-br": "Peitoral forjado em aço, oferecendo proteção frontal robusta. Fornece +1 FRC. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
-    "en-us": ""
+    "en-us": "Chestplate forged in steel, oferecendo proteção frontal robust. Fornece +1 FRC. Has the modification Armored, reducing received damage by 1. ."
   },
   "stats": {
     "frc": 1
@@ -17,5 +17,6 @@
   "price": 8,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 8
 }

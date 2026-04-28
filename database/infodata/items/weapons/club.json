@@ -17,5 +17,6 @@
   "price": 5,
   "weight": 2,
   "rarity": "comum",
+  "dp": 8,
   "isCustom": false
 }

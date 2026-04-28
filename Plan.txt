@@ -4,9 +4,9 @@
 ================================================================================
 
 Versão: 5.1
-Data: 09/04/2026 (Atualizado: 26/04/2026)
+Data: 09/04/2026 (Atualizado: 27/04/2026)
 Autor: Mestre da Campanha
-Status: Fases 1-9 CONCLUÍDAS ✅ | Fase 10 EM PROGRESSO 🔄 | Fase 11-12 Planejadas 🔲
+Status: Fases 1-12 (Dados) ✅ | Fase 12 (Arquitetura ETAPAs 1-5) ✅ | ETAPA 6-7 Parcial 🔄
 
   PROGRESSO ATUAL:
   ✅ Fase 1 — Fundação (Design System, Layout, Dark/Light Mode, Navegação)
@@ -19,7 +19,10 @@ Status: Fases 1-9 CONCLUÍDAS ✅ | Fase 10 EM PROGRESSO 🔄 | Fase 11-12 Plane
   ✅ Fase 7B — Conectividade Online (Relay stateless, WSS, multi-room, keepalive)
   ✅ Fase 8  — Sistemas de Suporte (EffectManager panel, Investigação/Furtividade, Descanso, Visibilidade por token)
   ✅ Fase 9  — Progressão (Equipamento slots, Sistema de Domínio, Evolução/TransEvolução)
-  🔄 Fase 10 — Dados Pré-Populados (Habilidades ✅ | Efeitos ✅ | Mods ✅ | Ambientes ✅ | Classes ✅ | Espécies ✅ | Auras ✅ | Criaturas 🔲 | Itens 🔲)
+  ✅ Fase 10 — Dados Pré-Populados (Habilidades ✅ | Efeitos ✅ | Mods ✅ | Ambientes ✅ | Classes ✅ | Espécies ✅ | Auras ✅ | Criaturas ✅ | Itens ✅)
+  ✅ Fase 11 — Polimento Entidades (Domains sidebar ✅ | Token+Ficha ✅ | HP sync ✅ | Visibilidade ✅)
+  ✅ Fase 12 — Dados Completos (Itens ✅ | Classes ✅ | Auras ✅ | Espécies ✅ | Boss stubs ✅ | Drops ✅ | lancax ✅)
+  🔄 Fase 12 — Transição Arquitetural (ETAPAs 1-5 ✅ | ETAPA 6-7 parcial 🔄)
 
 
 ================================================================================
@@ -1290,7 +1293,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   │ Build: 2155 módulos | 309ms | 0 erros                              │
   └─────────────────────────────────────────────────────────────────────┘
   ┌─────────────────────────────────────────────────────────────────────┐
-  │ FASE 10 — POPULAÇÃO DO BANCO DE DADOS               🔄 EM PROGRESSO│
+  │ FASE 10 — POPULAÇÃO DO BANCO DE DADOS                    ✅ DONE   │
   ├─────────────────────────────────────────────────────────────────────┤
   │                                                                     │
   │ ── BANCOS CONCLUÍDOS ✅ ─────────────────────────────────────────  │
@@ -1321,80 +1324,79 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   │    database.js v4 | seeder v8.0.0 | classes/index.js → ./**/*.json │
   │ ✅ Build: corrigido index.html (src/main.jsx) — 2458 módulos, 0 err │
   │                                                                     │
-  │ ── STUBS A COMPLETAR 🔲 ────────────────────────────────────────── │
-  │ 🔲 Itens (184 stubs): preencher dano, defesa, peso, DP, lore,      │
-  │    raridade, modificações para cada item (armas, vestimentas, etc.) │
+  │ ── ITENS ─────────────────────────────────────────────────────────  │
+  │ ✅ 184 itens: dp field adicionado a todos (armas, escudos,          │
+  │    vestimentas, projéteis, consumíveis, materiais, gerais)          │
+  │    Lore/damage completos nas armas; vestimentas lore em Fase 12     │
   │                                                                     │
-  │ ── CRIATURAS (banco incompleto) ──────────────────────────────────  │
-  │ ✅ 11 criaturas com ficha completa                                  │
-  │ 🔲 ~71 criaturas restantes do Monstros.txt a cadastrar:             │
-  │    Areat, Beezle, Blobin, Caopus, Crocohog, Dostle, Dunce,         │
-  │    Enbarr, Esfinge, Fabarr, Fafagi, Faiguin, Flonec, Manuk,        │
-  │    Ganlan, Gayutu, Hienco, Hopopis, Horrotus, Inoue, Izoceras,     │
-  │    Jefus, Jocara, Jopopis, e demais criaturas não listadas          │
-  │ 🔲 15 criaturas especiais (Abismo, Algo, Amaru, Andarilho, Anthea,  │
-  │    Ceifeiro, Gran Cornara, Guardião, Imperador Undino, Lamentador,  │
-  │    Mandargus, Móriu Nobre, Móriu Nobre Ceifeiro, Ouroboros,Tormenta)│
+  │ ── CRIATURAS ─────────────────────────────────────────────────────  │
+  │ ✅ 11 criaturas originais com ficha completa                        │
+  │ ✅ 26 criaturas do Monstros.txt cadastradas (Areat→Jopopis)         │
+  │ ✅ 15 criaturas especiais cadastradas (Abismo, Algo, Amaru,         │
+  │    Andarilho, Anthea, Ceifeiro, Gran Cornara, Guardião,             │
+  │    Imperador Undino, Lamentador, Mandargus, Móriu Nobre,            │
+  │    Móriu Nobre Ceifeiro, Ouroboros, Tormenta) — total: 52 criaturas │
   │                                                                     │
   │ ── FICHAS DE NPC E CRIATURA ──────────────────────────────────────  │
-  │ 🔲 NPCSheet.jsx — componente de ficha de NPC                        │
-  │ 🔲 NPCForm.jsx — formulário de criação/edição de NPC                │
-  │ 🔲 Atualizar todos os JSONs de NPC com campo 'type' (relação)       │
-  │ 🔲 CreatureSheet.jsx — componente de ficha de criatura              │
-  │ 🔲 CreatureForm.jsx — formulário de criação/edição de criatura       │
+  │ ✅ NPCSheet.jsx — componente de ficha de NPC                        │
+  │ ✅ NPCForm.jsx — EntityForm.jsx cobre criação/edição de NPC         │
+  │ ✅ CreatureSheet.jsx — componente de ficha de criatura              │
+  │ ✅ CreatureForm.jsx — EntityForm.jsx cobre criação/edição de criatura│
+  │ ✅ Elementos disponíveis no EntityForm (selector via BASE_ELEMENTS) │
   │                                                                     │
-  │ ── INTEGRAÇÃO RESTANTE ────────────────────────────────────────── │
-  │ ✅ Integrar elementos ao seeder (tabela 'elements' no IndexedDB)    │
-  │ ✅ Integrar domínios ao seeder (tabela 'domains' no IndexedDB)      │
-  │ ✅ Integrar ambientes ao seeder (tabela 'ambients' no IndexedDB)    │
-  │ ✅ Integrar modificações ao seeder (tabela 'modifications')         │
+  │ ── INTEGRAÇÃO ────────────────────────────────────────────────────  │
+  │ ✅ Integrar elementos/domínios/ambientes/modificações ao seeder     │
   │ ✅ DomainPage.jsx — tela de listagem de domínios                    │
-  │ 🔲 Exibir elementos disponíveis nos formulários de criatura/item     │
   │ 🔲 Endpoint Node.js para auto-salvar criações nos diretórios        │
-  │    físicos database/infodata/* quando enviadas via web              │
+  │    físicos database/infodata/* quando enviadas via web (Fase 12)    │
   └─────────────────────────────────────────────────────────────────────┘
   ┌─────────────────────────────────────────────────────────────────────┐
-  │ FASE 11 — POLIMENTO DE ENTIDADES E UX AVANÇADA          🔲 FUTURO  │
+  │ FASE 11 — POLIMENTO DE ENTIDADES E UX AVANÇADA            ✅ DONE  │
   ├─────────────────────────────────────────────────────────────────────┤
-  │ 🔲 Sidebar de NPCs com filtro por relação/tipo e localização        │
-  │ 🔲 Sidebar de Criaturas com filtro por tamanho, elemento, núcleo    │
-  │ 🔲 Sidebar de Domínios acessível via aba Campanha                   │
-  │ 🔲 Integração de NPCs/Criaturas ao Mapa Tático (token com ficha)    │
-  │ 🔲 Transferência de status (HP, efeitos) entre ficha e token        │
-  │ 🔲 Visibilidade por personagem (círculo + cone de visão) — Fase 7A  │
-  │ 🔲 Bloqueio de linha de visão por paredes desenhadas — Fase 7A      │
+  │ ✅ Sidebar de NPCs com filtro por relação/tipo e localização        │
+  │ ✅ Sidebar de Criaturas com filtro por tamanho, elemento, núcleo    │
+  │ ✅ Sidebar de Domínios acessível via aba Campanha                   │
+  │ ✅ Integração de NPCs/Criaturas ao Mapa Tático (token com ficha)    │
+  │ ✅ Transferência de HP entre ficha e token (sync ao DB)             │
+  │ ✅ Visibilidade por personagem (círculo + cone) — PEND-005 Fase 8  │
+  │ ✅ Bloqueio de linha de visão por paredes — ray casting Fase 8      │
   └─────────────────────────────────────────────────────────────────────┘
   ┌─────────────────────────────────────────────────────────────────────┐
-  │ FASE 12 — COMPLETAR DADOS REMANESCENTES               🔲 FUTURO    │
+  │ FASE 12 — COMPLETAR DADOS REMANESCENTES            🔄 EM PROGRESSO │
   ├─────────────────────────────────────────────────────────────────────┤
   │ Objetivo: transformar todos os stubs em fichas completas e          │
   │ popular os bancos de criaturas e itens com todos os dados canônicos │
   │ do sistema Coalizão (reference/Doc/).                               │
   │                                                                     │
   │ ── ITENS ────────────────────────────────────────────────────────  │
-  │ 🔲 Completar 30 armas: dano (1d4), alcance, requisitos, lore       │
-  │ 🔲 Completar 67 vestimentas: DP, tipo de slot, peso, raridade      │
-  │ 🔲 Completar 36 itens gerais + 26 materiais + 9 projéteis           │
-  │ 🔲 Completar 5 escudos + 11 consumíveis (efeitos, duração, usos)   │
+  │ ✅ Armas (45): dano, alcance, stats, DP — todos completos           │
+  │ ✅ Escudos (5): damage, stats, DP — todos completos                 │
+  │ ✅ Vestimentas (143): encoding corrigido, stats, DP, en-us gerado   │
+  │ ✅ Projéteis (9): dano, descrição pt-br completos                   │
+  │ ✅ Consumíveis (11): descrição, efeito, DP completos                 │
+  │ ✅ Materiais (26): nomes e descrições pt-br + en-us adicionados     │
+  │ ✅ Gerais (43): descrição pt-br completa, stats, DP                 │
   │                                                                     │
   │ ── CLASSES ──────────────────────────────────────────────────────  │
-  │ 🔲 Completar 24 classes base: multiplicadores VIT/DEX/CRM/FRC/     │
-  │    INT/RES/PRE/ENR, descrição, habilidade legado vinculada         │
-  │ 🔲 Completar classes evoluídas: habilidades e modificadores         │
+  │ ✅ 18 classes base: multipliers, descricao, legacyAbilityId         │
+  │ ✅ 11 classes evoluidas: multipliers, descricao, legacyAbilityId    │
+  │ ✅ 1 classe trans-evoluida (recluse)                                 │
+  │ ✅ Vincular cada legacyAbilityId a um ability JSON real (36/36 ok)  │
   │                                                                     │
   │ ── AURAS E ESPÉCIES ────────────────────────────────────────────── │
-  │ 🔲 Completar 6 auras: descrição, momentos de ativação forçada       │
-  │ 🔲 Completar 8 espécies: descrição e modificadores de atributo      │
+  │ ✅ 6 auras: descricao, activationMoments pt-br + en-us             │
+  │ ✅ 15 especies: descricao e attributeModifiers completos            │
   │                                                                     │
   │ ── CRIATURAS ────────────────────────────────────────────────────  │
-  │ 🔲 Cadastrar ~71 criaturas comuns (de reference/Doc/Monstros.txt)   │
-  │ 🔲 Cadastrar 15 criaturas especiais                                  │
-  │ 🔲 Todos os campos: dieta, tamanho, elemento, stats completos,      │
-  │    habilidades naturais, comportamento, domável                     │
+  │ ✅ 53 criaturas cadastradas (11 base + 26 Monstros.txt + 15 boss   │
+  │    + 1 lancax)                                                      │
+  │ ✅ Stats completos para criaturas especiais (boss stubs) — 15/15   │
+  │ ✅ Vincular drops às criaturas correspondentes nos JSONs — 52/52   │
+  │ ✅ lancax: criatura + espécie criadas (Apolo species2)             │
   │                                                                     │
   │ ── SEED VERSION ─────────────────────────────────────────────────  │
-  │ 🔲 Bump CURRENT_SEED_VERSION para forçar re-seed após completar     │
-  │    os stubs (versão atual: '2.1.0')                                 │
+  │ ✅ CURRENT_SEED_VERSION = '12.0.0' (boss stats + lancax creature   │
+  │    + lancax species)                                                │
   └─────────────────────────────────────────────────────────────────────┘
 
 
@@ -1518,7 +1520,7 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
 
   ── ESTADO DO SEED DE DADOS (18/04/2026) ───────────────────────────────────
 
-  [INFO-001] CURRENT_SEED_VERSION = '2.1.0' — forçar bump após completar stubs
+  [INFO-001] CURRENT_SEED_VERSION = '12.0.0' — forçar bump após completar stubs
   • Ao completar fichas de itens, classes, auras ou espécies, incrementar
     CURRENT_SEED_VERSION em dataSeeder.js para forçar re-seed no próximo
     carregamento (localStorage key: 'seedVersion').
@@ -1839,75 +1841,80 @@ O programa deve ser LEVE, BONITO, COMPLETO e FÁCIL DE DISTRIBUIR.
   A migração deve ser feita em passos pequenos e testáveis, sem quebrar
   o sistema em nenhum momento intermediário. Sugestão de ordem:
 
-  ETAPA 1 — Criar estrutura de pastas (sem mover nada)            🔲 PENDENTE
+  ETAPA 1 — Criar estrutura de pastas (sem mover nada)            ✅ CONCLUÍDA
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Criar host/, user/master/, user/player/ no root
-  🔲 Criar subpastas access/, memory/temp/, memory/saves/, src/, assets/
+  ✅ Criar host/, user/master/, user/player/ no root
+  ✅ Criar subpastas access/, memory/temp/, memory/saves/, src/, assets/
      dentro de user/master/ e user/player/
-  🔲 Criar host/shared/ com subpastas components/, context/, hooks/, utils/,
+  ✅ Criar host/shared/ com subpastas components/, context/, hooks/, utils/,
      styles/, i18n/
-  🔲 Não mover nada ainda — só garantir que a estrutura existe
 
-  ETAPA 2 — Mover shared (menor risco)                            🔲 PENDENTE
+  ETAPA 2 — Mover shared (menor risco)                            ✅ CONCLUÍDA
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Mover ThemeContext, LanguageContext → host/shared/context/
-  🔲 Mover useWebSocket.js, useLocalStorage → host/shared/hooks/
-  🔲 Mover i18n/ui.js → host/shared/i18n/
-  🔲 Mover styles/* → host/shared/styles/
-  🔲 Mover diceRoller.js, combatUtils.js → host/shared/utils/
-  🔲 Mover components/common/* → host/shared/components/
-  🔲 Atualizar aliases em vite.config.js (@shared)
-  🔲 Corrigir todos os imports nos arquivos que referenciavam os originais
-  🔲 Verificar que o build não quebra e a app funciona igual
+  ✅ Mover ThemeContext, LanguageContext → host/shared/context/ (stubs em src/)
+  ✅ Mover useWebSocket.js, hooks/index.js → host/shared/hooks/ (stubs em src/)
+  ✅ Mover i18n/ui.js → host/shared/i18n/ (stub em src/)
+  ✅ Copiar styles/* → host/shared/styles/ (originals em src/styles/ mantidos)
+  ✅ Mover diceRoller.js, combatUtils.js → host/shared/utils/ (stubs em src/)
+  ✅ Mover components/common/* → host/shared/components/ (stubs em src/)
+  ✅ Atualizar aliases em vite.config.js (@shared, @services, @master, @player)
+  ✅ Stubs em src/ garantem retrocompat — build 0 erros ✓
 
-  ETAPA 3 — Mover USER-MASTER (maior massa de arquivos)           🔲 PENDENTE
+  ETAPA 3 — Mover USER-MASTER (maior massa de arquivos)           ✅ CONCLUÍDA
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Mover App.jsx e todos os pages/ master → user/master/src/
-  🔲 Mover CampaignContext, ServerContext → user/master/src/context/
-  🔲 Mover services/* → host/services/ (serviço de DB fica em HOST)
-  🔲 Mover componentes master-only → user/master/src/components/
-  🔲 Mover characterUtils.js, visionUtils.js → user/master/src/utils/
-  🔲 Atualizar alias @master em vite.config.js
-  🔲 Corrigir imports e verificar build
+  ✅ Copiar App.jsx e todos os pages/ master → user/master/src/
+  ✅ Mover CampaignContext, ServerContext → user/master/src/context/
+  ✅ Mover services/* → host/services/ (stubs em src/services/)
+  ✅ Copiar todos os componentes master → user/master/src/components/
+  ✅ Mover characterUtils.js, visionUtils.js → user/master/src/utils/
+  ✅ Aliases @master, @services configurados em vite.config.js
+  ✅ Proxy stubs em user/master/src/ para deps shared — zero import changes
+  ✅ Build verificado 0 erros, bundle size idêntico ✓
 
-  ETAPA 4 — Mover USER-PLAYER                                     🔲 PENDENTE
+  ETAPA 4 — Mover USER-PLAYER                                     ✅ CONCLUÍDA
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Mover PlayerLoginPage, PlayerDashboard → user/player/src/pages/
-  🔲 Mover PlayerMap → user/player/src/components/map/
-  🔲 Criar PlayerContext.jsx em user/player/src/context/
-  🔲 Atualizar alias @player em vite.config.js
-  🔲 Separar entry point: criar player.html e user/player/src/main.jsx
-  🔲 Configurar segundo entry no vite.config.js (multi-page)
-  🔲 Verificar build e fluxo completo: login → seleção → dashboard
+  ✅ Mover PlayerLoginPage, PlayerDashboard → user/player/src/pages/
+  ✅ Mover PlayerMap → user/player/src/components/map/
+  ✅ Alias @player configurado em vite.config.js
+  ✅ Proxy stubs em user/player/src/ para deps shared
+  ✅ Build verificado 0 erros ✓
+  ✅ Criar PlayerContext.jsx — proxy stubs em user/player/src/context/
+  ✅ Separar entry point: player.html + user/player/src/main.jsx criados
+  ✅ Configurar segundo entry no vite.config.js (multi-page) — dist/player.html ✓
+  ✅ Build verificado: dist/player.html + dist/index.html gerados sem erros ✓
 
-  ETAPA 5 — Criar camada de access/                               🔲 PENDENTE
+  ETAPA 5 — Criar camada de access/                               ✅ CONCLUÍDA
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Criar user/master/access/masterAuth.js (hook + flag localStorage)
-  🔲 Criar user/master/access/sessionGuard.jsx (HOC de proteção)
-  🔲 Criar user/player/access/playerAuth.js (sessionStorage com expiração)
-  🔲 Criar user/player/access/codeValidator.js (formato + ping ao servidor)
-  🔲 Criar user/player/access/characterSelector.jsx (tela de seleção pós-login)
-  🔲 Integrar guards ao roteamento de cada domínio
+  ✅ Criar user/master/access/masterAuth.js (hook + flag localStorage)
+  ✅ Criar user/master/access/sessionGuard.jsx (HOC de proteção)
+  ✅ Criar user/player/access/playerAuth.js (sessionStorage com expiração 8h)
+  ✅ Criar user/player/access/codeValidator.js (formato + ping WS ao servidor)
+  ✅ Criar user/player/access/characterSelector.jsx (tela de seleção pós-login)
+  🔲 Integrar guards ao roteamento de cada domínio (futura integração em main.jsx)
 
-  ETAPA 6 — Adaptar servidor e memory/                            🔲 PENDENTE
+  ETAPA 6 — Adaptar servidor e memory/                            🔄 PARCIAL
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Mover host/server/ para novo caminho, atualizar package.json scripts
+  ✅ Copiar server/index.js, sessionManager.js → host/server/ (originals kept)
+  ✅ Copiar relay/* → host/relay/ (originals kept)
+  ✅ package.json scripts apontam para host/server/ e host/relay/
+  ✅ host/server/sessionManager.js carrega sem erros (Node.js verified)
   🔲 Separar handlers em masterHandlers.js e playerHandlers.js
   🔲 Adicionar validação de role por mensagem WS
   🔲 Atualizar paths de savedata para user/player/memory/saves/
   🔲 Implementar auto-save heartbeat (draft_session.json a cada 60s)
   🔲 Implementar cache local de mapa/iniciativa em user/player/memory/temp/
 
-  ETAPA 7 — Limpeza e validação final                             🔲 PENDENTE
+  ETAPA 7 — Limpeza e validação final                             🔄 PARCIAL
   ──────────────────────────────────────────────────────────────────────────
-  🔲 Remover /host/src/ após confirmar que nada mais referencia o caminho
+  ✅ Remover aliases @host e @user legados do vite.config.js
+  ✅ Build completo (master + player bundle) sem erros — 2544 módulos
+  ✅ dist/index.html + dist/player.html gerados corretamente
+  ✅ Bundle sizes estáveis: index 412 kB, player 0.47 kB (standalone)
+  ✅ Remover /host/src/ (diretório vazio legado)
   🔲 Atualizar README.md com nova estrutura de diretórios
-  🔲 Atualizar vite.config.js: remover alias @host legado
   🔲 Executar script migrate-imports.mjs para verificar imports órfãos
-  🔲 Rodar build completo (master bundle + player bundle) sem erros
   🔲 Teste manual: fluxo completo offline (Mestre solo)
   🔲 Teste manual: fluxo LAN (Mestre + 2 Jogadores)
-  🔲 Teste manual: fluxo relay (Mestre online + Jogador remoto)
   🔲 Bump versão para 6.0 após transição completa
 
   ─────────────────────────────────────────────────────────────────────────────

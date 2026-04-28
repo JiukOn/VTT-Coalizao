@@ -13,10 +13,14 @@ export default defineConfig({
     alias: {
       // @data → database/infodata (accessible from any file in host/src)
       '@data': path.resolve(__dirname, 'database/infodata'),
-      // @host → host/src
-      '@host': path.resolve(__dirname, 'host/src'),
-      // @user → user/src
-      '@user': path.resolve(__dirname, 'user/src'),
+      // @shared → host/shared (contexts, hooks, utils, components used by both master and player)
+      '@shared': path.resolve(__dirname, 'host/shared'),
+      // @master → user/master/src (master-only UI)
+      '@master': path.resolve(__dirname, 'user/master/src'),
+      // @player → user/player/src (player-only UI)
+      '@player': path.resolve(__dirname, 'user/player/src'),
+      // @services → host/services (database, dataSeeder, campaignIO)
+      '@services': path.resolve(__dirname, 'host/services'),
     },
   },
   server: {
@@ -34,6 +38,12 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: false,
     rollupOptions: {
+      input: {
+        // Master entry (default — full GM app with IndexedDB)
+        index: path.resolve(__dirname, 'index.html'),
+        // Player entry (standalone — login + dashboard, no DB)
+        player: path.resolve(__dirname, 'player.html'),
+      },
       output: {
         manualChunks(id) {
           if (id.includes('node_modules/react')) return 'vendor-react'

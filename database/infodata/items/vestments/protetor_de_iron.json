@@ -8,7 +8,7 @@
   "type": "Vestimenta - Pe",
   "description": {
     "pt-br": "Um protetor de ferro para os pes. Concede +1 RES.",
-    "en-us": "An iron foot guard. Grants +1 RES."
+    "en-us": "Um protetor de ferro para os pes. Grants +1 RES."
   },
   "stats": {
     "res": 1
@@ -17,5 +17,6 @@
   "price": 20,
   "weight": 2,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

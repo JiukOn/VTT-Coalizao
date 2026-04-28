@@ -1,0 +1,58 @@
+{
+  "id": "inoue",
+  "name": {
+    "pt-br": "Inoue",
+    "en-us": "Inoue"
+  },
+  "description": {
+    "pt-br": "Alimenta-se de frutas, raízes e peixes. Possui corpo pesado e couro rígido e pouco flexível, tornando-o lento. Sua face plena e listras belas são enganosas — a cauda dessa criatura realiza ataques que se assemelham a chicotadas, mas muito mais pesadas.",
+    "en-us": "Feeds on fruits, roots, and fish. Has a heavy body and rigid, inflexible hide, making it slow. Its serene face and beautiful stripes are deceiving — the creature's tail delivers attacks resembling whiplashes, but far heavier."
+  },
+  "element": "",
+  "size": "large",
+  "coreSize": "médio",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 4,
+  "attributes": {
+    "VIT": 12,
+    "DEX": 2,
+    "CRM": 4,
+    "FRC": 12,
+    "INT": 3,
+    "RES": 6,
+    "PRE": 4,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "inoue_leather", "chance": "100%", "amount": 3 },
+    "2": { "item": "inoue_tail_bone", "chance": "60%", "amount": 1 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

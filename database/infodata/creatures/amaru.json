@@ -1,0 +1,98 @@
+{
+  "id": "amaru",
+  "name": {
+    "pt-br": "Amaru",
+    "en-us": "Amaru"
+  },
+  "description": {
+    "pt-br": "Uma cobra colossal de origem mitica, com escamas que refletem a luz de forma irreal. O Amaru e adorado por certas tribos como divindade serpentina. Possui forca bruta devastadora e pode engolir adversarios de tamanho medio em um unico golpe.",
+    "en-us": "A colossal mythic serpent with scales that reflect light in an unreal manner. The Amaru is worshipped by certain tribes as a serpentine deity. It possesses devastating brute strength and can swallow medium-sized opponents in a single strike."
+  },
+  "element": "",
+  "size": "huge",
+  "coreSize": "grande",
+  "diet": "carnivoro",
+  "imagePath": "",
+  "level": 9,
+  "attributes": {
+    "VIT": 22,
+    "DEX": 7,
+    "CRM": 5,
+    "FRC": 18,
+    "INT": 6,
+    "RES": 12,
+    "PRE": 6,
+    "ENR": 8
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 16,
+  "dex": 10,
+  "crm": 6,
+  "frc": 20,
+  "int": 8,
+  "res": 14,
+  "pre": 10,
+  "enr": 12
+}

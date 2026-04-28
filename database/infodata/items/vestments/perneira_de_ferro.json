@@ -8,12 +8,13 @@
   "type": "Vestimenta - Perna",
   "description": {
     "pt-br": "Perneiras feitas de placas de ferro, pesadas e protetoras para as pernas. Possui a modificação Blindado, diminuindo em 1 o dano recebido. .",
-    "en-us": ""
+    "en-us": "Greaves feitas of iron plates, heavy and protective para as pernas. Has the modification Armored, reducing received damage by 1. ."
   },
   "stats": {},
   "damage": "",
   "price": 4,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 4
 }

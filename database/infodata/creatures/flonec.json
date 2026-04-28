@@ -1,0 +1,58 @@
+{
+  "id": "flonec",
+  "name": {
+    "pt-br": "Flonec",
+    "en-us": "Flonec"
+  },
+  "description": {
+    "pt-br": "Mamífero adaptado a ambientes perenemente floridos. Orelhas extremamente grandes lhe conferem audição aguçada e auxiliam na dissipação de calor. Capaz de criar flores em seu próprio corpo — essas flores se alimentam de seu sangue, ajudam na camuflagem e atraem polinizadores, mas após um longo período suas raízes preenchem o coração do Flonec, matando-o por dentro.",
+    "en-us": "Mammal adapted to perennially flowering environments. Extremely large ears provide acute hearing and help dissipate heat. Can grow flowers on its own body — these flowers feed on its blood, aid in camouflage, and attract pollinators, but after a long period their roots fill the Flonec's heart, killing it from within."
+  },
+  "element": "wood",
+  "size": "medium",
+  "coreSize": "pequeno",
+  "diet": "herbívoro",
+  "imagePath": "",
+  "level": 2,
+  "attributes": {
+    "VIT": 5,
+    "DEX": 5,
+    "CRM": 5,
+    "FRC": 3,
+    "INT": 3,
+    "RES": 4,
+    "PRE": 4,
+    "ENR": 2
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "flonec_leather", "chance": "100%", "amount": 2 },
+    "2": { "item": "flonec_flower", "chance": "80%", "amount": 2 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

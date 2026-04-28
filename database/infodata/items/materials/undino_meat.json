@@ -1,10 +1,15 @@
 {
   "id": "undino_meat",
   "name": {
-    "pt-br": "Carne De Undino",
+    "pt-br": "Carne de Undino",
     "en-us": "Undino Meat"
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Carne crua de um Undino, nutritiva mas de preparo cuidadoso. Pode ser assada para recuperacao de VIT.",
+    "en-us": "Raw Undino meat, nutritious but requiring careful prep. Can be roasted for VIT recovery."
+  }
 }

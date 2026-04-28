@@ -1,0 +1,58 @@
+{
+  "id": "beezle",
+  "name": {
+    "pt-br": "Beezle",
+    "en-us": "Beezle"
+  },
+  "description": {
+    "pt-br": "Criatura herbívora de cerca de 1,20 metro, com dieta baseada em néctar, pólen e frutas. Muito ágil, capaz de voar longas distâncias em alta velocidade. Vive em sociedades organizadas e hierárquicas, sendo fundamental para a manutenção do ecossistema.",
+    "en-us": "An herbivorous creature about 1.2 meters tall, feeding on nectar, pollen, and fruits. Very agile, capable of flying long distances at high speed. Lives in organized hierarchical societies and plays a key role in maintaining the ecosystem."
+  },
+  "element": "lightning",
+  "size": "medium",
+  "coreSize": "pequeno",
+  "diet": "herbívoro",
+  "imagePath": "",
+  "level": 2,
+  "attributes": {
+    "VIT": 4,
+    "DEX": 7,
+    "CRM": 4,
+    "FRC": 3,
+    "INT": 3,
+    "RES": 2,
+    "PRE": 5,
+    "ENR": 1
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "beezle_wing", "chance": "100%", "amount": 2 },
+    "2": { "item": "beezle_nectar", "chance": "70%", "amount": 1 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

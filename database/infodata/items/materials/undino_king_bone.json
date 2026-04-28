@@ -1,10 +1,15 @@
 {
   "id": "undino_king_bone",
   "name": {
-    "pt-br": "Osso De Rei Undino",
+    "pt-br": "Osso de Rei Undino",
     "en-us": "Undino King Bone"
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Um osso denso e resistente de um Rei Undino. Material precioso para armas e armaduras de alto nivel.",
+    "en-us": "A dense, tough bone from an Undino King. Precious material for high-level weapons and armor."
+  }
 }

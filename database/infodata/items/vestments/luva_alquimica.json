@@ -8,12 +8,13 @@
   "type": "Vestimenta - Mãos / Acessório das Mãos",
   "description": {
     "pt-br": "Uma luva leve de durabilidade média, capaz de utilizar poções nos golpes físicos. Possui a modificação Prático, concedendo um dado de vantagem em testes de criação ou reparo de itens quando este item é o principal utilizado na ação. .",
-    "en-us": ""
+    "en-us": "A glove leve of medium durability, capable of applying potions on physical strikes. Has the modification Prático, grantsndo um dado de vantagem em testes de criação ou reparo de itens quando este item é o principal utilizado na ação. ."
   },
   "stats": {},
   "damage": "",
   "price": 15,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 15
 }

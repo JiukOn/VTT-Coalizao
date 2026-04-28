@@ -1,0 +1,58 @@
+{
+  "id": "caopus",
+  "name": {
+    "pt-br": "Caopus",
+    "en-us": "Caopus"
+  },
+  "description": {
+    "pt-br": "Mamífero semi-aquático dos oásis do deserto. A protuberância em seu dorso armazena grandes quantidades de água e nutrientes, permitindo sobreviver longos períodos sem beber. Tentáculos auxiliam na alimentação. Considerado em lendas como mensageiro — sua aparição é vista como um bom presságio.",
+    "en-us": "Semi-aquatic mammal of desert oases. The protrusion on its back stores large amounts of water and nutrients, allowing it to survive long periods without drinking. Tentacles assist in feeding. Considered a messenger in legends — its appearance is seen as a good omen."
+  },
+  "element": "water",
+  "size": "large",
+  "coreSize": "médio",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 3,
+  "attributes": {
+    "VIT": 10,
+    "DEX": 4,
+    "CRM": 6,
+    "FRC": 7,
+    "INT": 5,
+    "RES": 4,
+    "PRE": 3,
+    "ENR": 2
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "caopus_water_sac", "chance": "100%", "amount": 1 },
+    "2": { "item": "caopus_leather", "chance": "100%", "amount": 2 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

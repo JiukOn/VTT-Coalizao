@@ -6,5 +6,10 @@
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Couro espesso e resistente ao calor obtido da Cornara. Usado em vestimentas resistentes ao fogo.",
+    "en-us": "Thick, heat-resistant leather from the Cornara. Used in fire-resistant clothing."
+  }
 }

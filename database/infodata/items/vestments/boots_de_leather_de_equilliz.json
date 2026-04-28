@@ -8,7 +8,7 @@
   "type": "Vestimenta - Pe",
   "description": {
     "pt-br": "Botas de couro de Equiliz. Concedem +1 DEX.",
-    "en-us": "Equiliz leather boots. Grant +1 DEX."
+    "en-us": "Boots of leather de Equiliz. Grant +1 DEX."
   },
   "stats": {
     "dex": 1
@@ -17,5 +17,6 @@
   "price": 18,
   "weight": 2,
   "rarity": "especial",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

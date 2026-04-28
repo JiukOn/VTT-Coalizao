@@ -8,7 +8,7 @@
   "type": "Vestimenta - Pernas",
   "description": {
     "pt-br": "Uma placa de ferro para proteger as pernas. Concede +1 RES.",
-    "en-us": "An iron plate to protect the legs. Grants +1 RES."
+    "en-us": "Uma placa de ferro para proteger as pernas. Grants +1 RES."
   },
   "stats": {
     "res": 1
@@ -17,5 +17,6 @@
   "price": 22,
   "weight": 3,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 5
 }

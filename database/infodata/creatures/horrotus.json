@@ -1,0 +1,58 @@
+{
+  "id": "horrotus",
+  "name": {
+    "pt-br": "Horrotus",
+    "en-us": "Horrotus"
+  },
+  "description": {
+    "pt-br": "Enorme inseto com 6 patas, 4 asas, 4 olhos, uma cauda e um par de antenas. Capaz de se alimentar de qualquer coisa que encontra em seu ambiente. Sobrevive em desertos ou grandes florestas. Animal muito agressivo e uma das únicas criaturas que mata outros seres por diversão.",
+    "en-us": "Enormous insect with 6 legs, 4 wings, 4 eyes, a tail, and a pair of antennae. Capable of feeding on anything found in its environment. Survives in deserts or large forests. Very aggressive animal and one of the only creatures that kills other beings for sport."
+  },
+  "element": "",
+  "size": "large",
+  "coreSize": "médio",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 6,
+  "attributes": {
+    "VIT": 12,
+    "DEX": 8,
+    "CRM": 1,
+    "FRC": 11,
+    "INT": 4,
+    "RES": 7,
+    "PRE": 7,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "horrotus_carapace", "chance": "100%", "amount": 3 },
+    "2": { "item": "horrotus_wing", "chance": "80%", "amount": 2 },
+    "3": { "item": "horrotus_stinger", "chance": "50%", "amount": 1 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

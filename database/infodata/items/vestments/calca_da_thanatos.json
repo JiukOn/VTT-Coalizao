@@ -8,12 +8,13 @@
   "type": "Vestimenta - Perna",
   "description": {
     "pt-br": "Calças de couro de quimera, parte do conjunto Thanatos. Possui a modificação Mochileiro, que dá maior velocidade para longas distancias. .",
-    "en-us": ""
+    "en-us": "Pants of chimera leather, part of the Thanatos set. Has the modification Backpacker, granting faster movement over long distances. ."
   },
   "stats": {},
   "damage": "",
   "price": 4,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 4
 }

@@ -1,0 +1,58 @@
+{
+  "id": "conara",
+  "name": {
+    "pt-br": "Conara",
+    "en-us": "Conara"
+  },
+  "description": {
+    "pt-br": "Roedor gigante nativo de florestas. Herbívoro com dieta variada de gramíneas, raízes, sementes e frutas. Seu couro tem resistência ao elemento fogo. Os chifres crescem na fase adulta e servem como defesa. Vive em grupos familiares matriarcais. Muito dócil e inteligente, popular como montaria e animal de carga.",
+    "en-us": "Giant forest-native rodent. Herbivore with a varied diet of grasses, roots, seeds, and fruits. Its hide is fire-resistant. Horns grow in adulthood and serve as defense. Lives in matriarchal family groups. Very docile and intelligent, popular as a mount and pack animal."
+  },
+  "element": "fire",
+  "size": "large",
+  "coreSize": "médio",
+  "diet": "herbívoro",
+  "imagePath": "Criatura/Cornara.jpeg",
+  "level": 3,
+  "attributes": {
+    "VIT": 9,
+    "DEX": 5,
+    "CRM": 5,
+    "FRC": 8,
+    "INT": 4,
+    "RES": 6,
+    "PRE": 3,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "conara_leather", "chance": "100%", "amount": 3 },
+    "2": { "item": "conara_horn", "chance": "100%", "amount": 2 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

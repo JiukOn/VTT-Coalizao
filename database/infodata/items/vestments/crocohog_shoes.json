@@ -8,12 +8,13 @@
   "type": "Vestimenta - Pe",
   "description": {
     "pt-br": "Sapatos robustos feitos do couro do Crocohog.",
-    "en-us": "Sturdy shoes made from Crocohog leather."
+    "en-us": "Sapatos robustos feitos do couro do Crocohog."
   },
   "stats": {},
   "damage": "",
   "price": 15,
   "weight": 1,
   "rarity": "especial",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 6
 }

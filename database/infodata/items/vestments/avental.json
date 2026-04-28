@@ -8,12 +8,13 @@
   "type": "Vestimenta - Torso",
   "description": {
     "pt-br": "Um avental de cozinha.",
-    "en-us": "A kitchen apron."
+    "en-us": "Um avental de cozinha."
   },
   "stats": {},
   "damage": "",
   "price": 5,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 3
 }

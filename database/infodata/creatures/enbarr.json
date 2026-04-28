@@ -1,0 +1,58 @@
+{
+  "id": "enbarr",
+  "name": {
+    "pt-br": "Enbarr",
+    "en-us": "Enbarr"
+  },
+  "description": {
+    "pt-br": "Mamífero reptiliano conhecido por sua beleza e velocidade, que habita ambientes montanhosos e florestas frias. Sua crina e rabo são formados por escamas em tons de azul-celeste, que lembram a crista de um dragão.",
+    "en-us": "Reptilian mammal known for its beauty and speed, inhabiting mountainous environments and cold forests. Its mane and tail are formed by sky-blue scales resembling a dragon's crest."
+  },
+  "element": "ice",
+  "size": "large",
+  "coreSize": "médio",
+  "diet": "carnívoro",
+  "imagePath": "",
+  "level": 4,
+  "attributes": {
+    "VIT": 8,
+    "DEX": 9,
+    "CRM": 5,
+    "FRC": 7,
+    "INT": 4,
+    "RES": 5,
+    "PRE": 6,
+    "ENR": 2
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "enbarr_scale", "chance": "100%", "amount": 3 },
+    "2": { "item": "enbarr_crest", "chance": "40%", "amount": 1 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

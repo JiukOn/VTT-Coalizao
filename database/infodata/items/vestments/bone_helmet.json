@@ -8,12 +8,13 @@
   "type": "Vestimenta - Cabeça",
   "description": {
     "pt-br": "Elmo esculpido em ossos, com aparência intimidadora e robusta. Possui a modificação Fortificado, reforçando sua estrutura e concedendo +1 no dado em testes de Defesa. .",
-    "en-us": ""
+    "en-us": "Helm esculpido em ossos, with intimidating appearance e robust. Has the modification Fortificado, reforçando sua estrutura e grantsndo +1 no dado em testes de Defesa. ."
   },
   "stats": {},
   "damage": "",
   "price": 3,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 3
 }

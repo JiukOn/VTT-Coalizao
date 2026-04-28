@@ -8,12 +8,13 @@
   "type": "Vestimenta - Pé",
   "description": {
     "pt-br": "Um par de tênis simples, focado em leveza e conforto. Possui a modificação Mochileiro, que dá maior velocidade para longas distancias. .",
-    "en-us": ""
+    "en-us": "A pair of tênis simples, focused on lightness and comfort. Has the modification Backpacker, granting faster movement over long distances. ."
   },
   "stats": {},
   "damage": "",
   "price": 10,
   "weight": 1,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 10
 }

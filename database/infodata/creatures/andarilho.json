@@ -1,0 +1,98 @@
+{
+  "id": "andarilho",
+  "name": {
+    "pt-br": "Andarilho",
+    "en-us": "Wanderer"
+  },
+  "description": {
+    "pt-br": "Uma criatura nomade de grandes dimensoes que percorre todo o mundo sem destino fixo. O Andarilho e excepcionalmente rapido para seu tamanho e dificil de surpreender. Raras vezes ataca sem provocacao, mas quando o faz e implacavel.",
+    "en-us": "A nomadic large creature that roams the entire world without a fixed destination. The Wanderer is exceptionally fast for its size and difficult to surprise. It rarely attacks without provocation, but when it does, it is relentless."
+  },
+  "element": "",
+  "size": "large",
+  "coreSize": "medio",
+  "diet": "onivoro",
+  "imagePath": "",
+  "level": 7,
+  "attributes": {
+    "VIT": 14,
+    "DEX": 9,
+    "CRM": 4,
+    "FRC": 12,
+    "INT": 7,
+    "RES": 9,
+    "PRE": 7,
+    "ENR": 4
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "2": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "3": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "4": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "5": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "6": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "7": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    },
+    "8": {
+      "item": "",
+      "chance": "",
+      "amount": 0
+    }
+  },
+  "isCustom": false,
+  "vit": 12,
+  "dex": 16,
+  "crm": 6,
+  "frc": 10,
+  "int": 10,
+  "res": 10,
+  "pre": 14,
+  "enr": 8
+}

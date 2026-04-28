@@ -11,11 +11,13 @@
     "en-us": "A staff made of woven branches and grass. Grants +1 INT."
   },
   "stats": {
-    "int": 1
+    "pre": 1,
+    "dex": 1
   },
   "damage": "1d4 - 1",
   "price": 10,
   "weight": 1,
   "rarity": "especial",
+  "dp": 15,
   "isCustom": false
 }

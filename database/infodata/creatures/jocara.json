@@ -1,0 +1,58 @@
+{
+  "id": "jocara",
+  "name": {
+    "pt-br": "Jocara",
+    "en-us": "Jocara"
+  },
+  "description": {
+    "pt-br": "Roedor com um par de caninos expostos e cauda de pelos alongados. Tranquilo e não territorialista. Costuma ser adotado para rastrear o cheiro de algo.",
+    "en-us": "Rodent with a pair of exposed canines and a long-haired tail. Calm and not territorial. Often adopted to track the scent of something."
+  },
+  "element": "",
+  "size": "small",
+  "coreSize": "pequeno",
+  "diet": "onívoro",
+  "imagePath": "",
+  "level": 1,
+  "attributes": {
+    "VIT": 3,
+    "DEX": 7,
+    "CRM": 5,
+    "FRC": 2,
+    "INT": 4,
+    "RES": 2,
+    "PRE": 6,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "jocara_fur", "chance": "100%", "amount": 2 },
+    "2": { "item": "", "chance": "", "amount": 0 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

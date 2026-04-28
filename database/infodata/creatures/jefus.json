@@ -1,0 +1,58 @@
+{
+  "id": "jefus",
+  "name": {
+    "pt-br": "Jefus",
+    "en-us": "Jefus"
+  },
+  "description": {
+    "pt-br": "Ser canino aquático. Um conjunto de guelras junto de suas patas e cauda o faz um excelente nadador ou corredor. Seus dentes finos e boca alongada permitem se alimentar de peixes com grande facilidade.",
+    "en-us": "Aquatic canine being. A set of gills alongside its paws and tail makes it an excellent swimmer or runner. Its thin teeth and elongated mouth allow it to feed on fish with great ease."
+  },
+  "element": "water",
+  "size": "medium",
+  "coreSize": "pequeno",
+  "diet": "carnívoro",
+  "imagePath": "",
+  "level": 2,
+  "attributes": {
+    "VIT": 5,
+    "DEX": 8,
+    "CRM": 3,
+    "FRC": 5,
+    "INT": 3,
+    "RES": 4,
+    "PRE": 6,
+    "ENR": 0
+  },
+  "abilities": {
+    "active": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    },
+    "passive": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": ""
+    }
+  },
+  "equipment": {
+    "Head": "",
+    "Torso": "",
+    "Hands": "",
+    "Feet": ""
+  },
+  "drops": {
+    "1": { "item": "jefus_leather", "chance": "100%", "amount": 2 },
+    "2": { "item": "jefus_fang", "chance": "60%", "amount": 2 },
+    "3": { "item": "", "chance": "", "amount": 0 },
+    "4": { "item": "", "chance": "", "amount": 0 },
+    "5": { "item": "", "chance": "", "amount": 0 },
+    "6": { "item": "", "chance": "", "amount": 0 },
+    "7": { "item": "", "chance": "", "amount": 0 },
+    "8": { "item": "", "chance": "", "amount": 0 }
+  },
+  "isCustom": false
+}

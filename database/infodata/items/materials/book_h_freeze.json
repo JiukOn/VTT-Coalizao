@@ -1,10 +1,15 @@
 {
   "id": "book_h_freeze",
   "name": {
-    "pt-br": "Book H Freeze",
-    "en-us": "Book H Freeze"
+    "pt-br": "Livro de Gelo",
+    "en-us": "Freeze Tome"
   },
   "category": "materials",
   "type": "Material",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 1,
+  "description": {
+    "pt-br": "Um grimorio fragmentado que emana frio intenso. Pode ser usado para aprender habilidades de gelo.",
+    "en-us": "A fragmented grimoire emanating intense cold. Can be used to learn ice abilities."
+  }
 }

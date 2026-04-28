@@ -8,12 +8,13 @@
   "type": "Vestimenta - Cabeca",
   "description": {
     "pt-br": "Uma faixa de renda delicada.",
-    "en-us": "A delicate lace headband."
+    "en-us": "Uma faixa de renda delicada."
   },
   "stats": {},
   "damage": "",
   "price": 5,
   "weight": 0,
   "rarity": "comum",
-  "isCustom": false
+  "isCustom": false,
+  "dp": 2
 }
