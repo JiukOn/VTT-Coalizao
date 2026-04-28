@@ -10,7 +10,7 @@
  *  - Expose session code, connected players, and connection status
  *  - Provide broadcast() to send game events to all connected players
  */
-
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useState, useCallback, useRef, useEffect } from 'react'
 import { useWebSocket, WS_STATUS } from '../../../../src/hooks/useWebSocket.js'
 import { useLocalStorage } from '../../../../src/hooks/index.js'

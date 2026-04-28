@@ -2,7 +2,7 @@
    VTP COALIZÃO — Language / i18n Context
    Provides locale state and translation helpers.
    ============================================================ */
-
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useState, useEffect, useCallback } from 'react'
 import { UI_STRINGS } from '../i18n/ui.js'
 

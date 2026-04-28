@@ -1,6 +1,7 @@
+/* global process */
 /**
- * VTP Coalizão — Relay Server (Fase 7B)
- * Servidor de retransmissão WebSocket para conexão Host ↔ Jogadores via internet.
+ * VTP Coalizão — Relay Server (Phase 7B)
+ * WebSocket relay server for Host ↔ Player connections via internet.
  *
  * Características:
  *   • Totalmente stateless: nenhum dado da campanha é persistido

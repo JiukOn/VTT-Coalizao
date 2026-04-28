@@ -14,14 +14,6 @@
   "diet": "carnivoro",
   "imagePath": "",
   "level": 7,
-  "vit": 12,
-  "dex": 16,
-  "crm": 8,
-  "frc": 14,
-  "int": 10,
-  "res": 12,
-  "pre": 10,
-  "enr": 8,
   "abilities": {
     "active": {
       "1": "dobra_de_water",

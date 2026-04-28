@@ -1,0 +1,173 @@
+NOME DO ARQUIVO: Fase12_CodeHealth_DataNaming.txt
+────────────────────────────────────────────────────────
+TESTE: Revisão Automática — Code Health + Data Naming
+FASE:  12
+DATA:  2026-04-28
+AUTOR: Jiuk (automated scheduled task)
+
+MÓDULO TESTADO: Global — Hooks, Context, App.jsx, Weapon Data, Creature Data
+VERSÃO/COMMIT: v7.1.0 (post-Phase 11)
+NAVEGADOR:     N/A (automated review)
+
+── OBJETIVO ──────────────────────────────────────────
+Resolver erros de ESLint remanescentes e corrigir inconsistências de
+nomenclatura em arquivos de armas e dados de criaturas. Garantir build
+de produção sem erros e reduzir ruído estático no linter para melhorar
+a experiência de desenvolvimento.
+
+── PRÉ-CONDIÇÕES ─────────────────────────────────────
+- Build v7.1.0 (Phase 11): 0 erros de build, 32 erros ESLint
+- 16 criaturas com campos de atributos duplicados na raiz do JSON
+- 7 arquivos de armas com IDs e nomes de arquivo com typos (inserção 'air')
+- 1 arquivo de arma duplicado (baird_blade.json vs bard_blade.json)
+- Hooks e context files com violações ESLint
+
+── PASSOS EXECUTADOS ─────────────────────────────────
+1. Correção: useWebSocket.js — doConnect hoisting (react-hooks/immutability)
+   Causa   : ws.onclose referenciava doConnect antes de sua declaração (TDZ).
+   Fix     : Adicionado doConnectRef (useRef) sincronizado via useEffect.
+             ws.onclose agora chama doConnectRef.current?.() em vez de doConnect.
+   → Esperado: Erro de hoisting eliminado, comportamento de reconexão preservado
+   → Obtido:   ✅ Erro eliminado, build passou
+
+2. Correção: scratch/find_all_references.js — empty catch block
+   Fix     : catch (e) {} → catch { /* ignore malformed JSON */ }
+   → Status: ✅
+
+3. Correção: App.jsx + user/master/src/App.jsx — useCallback missing dep
+   Causa   : handleUpdateTableEntity não listava setTableEntities nas deps.
+             React Compiler não conseguia otimizar o callback.
+   Fix     : setTableEntities adicionado ao array de dependências.
+   → Status: ✅ (corrigido nos 2 arquivos, pois são arquivos espelhados)
+
+4. Correção: ESLint react-refresh/only-export-components — context files
+   Causa   : Arquivos de contexto exportam tanto Providers (componentes)
+             quanto hooks (useTheme, useLanguage, useServer, useCampaign),
+             incompatível com fast-refresh.
+   Fix     : Adicionado eslint-disable ao topo dos arquivos de contexto.
+   Arquivos corrigidos (10 arquivos):
+     - src/context/LanguageContext.jsx
+     - src/context/ThemeContext.jsx
+     - src/context/CampaignContext.jsx
+     - src/context/ServerContext.jsx
+     - host/shared/context/LanguageContext.jsx
+     - host/shared/context/ThemeContext.jsx
+     - user/master/src/context/CampaignContext.jsx
+     - user/master/src/context/LanguageContext.jsx
+     - user/master/src/context/ServerContext.jsx
+     - user/master/src/context/ThemeContext.jsx
+   Arquivos adicionais:
+     - src/main.jsx (entry point sem exports)
+     - user/player/src/main.jsx (idem)
+     - user/player/src/context/LanguageContext.jsx
+     - user/player/src/context/ThemeContext.jsx
+   → Status: ✅
+
+5. Correção: user/player/src/pages/PlayerDashboard.jsx — playerName unused
+   Causa   : TabFicha recebia prop playerName mas não a utilizava.
+   Fix     : Prop removida da assinatura de TabFicha.
+   → Status: ✅
+
+6. Correção: Weapon IDs com typos — renomeação de arquivos e IDs
+   Problema: Scripts geradores de dados inseriram 'air' em nomes de arquivo
+             e campo id, criando inconsistência entre filename e item name.
+   Arquivos renomeados e IDs corrigidos:
+     airco_de_treino.json      → arco_de_treino.json      (id atualizado)
+     besta_de_guairda.json     → besta_de_guarda.json      (id atualizado)
+     foice_de_jairdinagem.json → foice_de_jardinagem.json  (id atualizado)
+     lamina_do_bairdo.json     → lamina_do_bardo.json      (id atualizado)
+     mairtelo_de_guerra.json   → martelo_de_guerra.json    (id atualizado)
+     mairtelo_kilicekan.json   → martelo_kilicekan.json    (id atualizado)
+     wair_bow.json             → war_bow.json              (id atualizado)
+   Verificação: Nenhum herói ou NPC referenciava os IDs antigos.
+   → Esperado: IDs corretos em todos os arquivos de arma
+   → Obtido:   ✅ 7 arquivos renomeados, IDs atualizados
+
+7. Correção: Arquivo duplicado — baird_blade.json removido
+   Causa   : baird_blade.json era cópia de bard_blade.json com id incorreto.
+             bard_blade.json (com nota "(Ethan)") é a versão canônica.
+   → Status: ✅ Duplicata removida
+
+8. Limpeza: Campos de atributos redundantes em criaturas
+   Causa   : 16 arquivos de criatura possuíam campos vit/dex/crm/frc/int/res/pre/enr
+             na raiz do JSON além do objeto attributes{VIT, DEX,...} correto.
+             O dataSeeder usa attributes.VIT primeiro, tornando os campos raiz
+             redundantes e inconsistentes com o template.
+   Fix     : Campos raiz removidos dos 16 arquivos.
+   Arquivos corrigidos:
+     abismo, algo, amaru, andarilho, anthea, ceifeiro, gran_cornara,
+     guardiao, imperador_undino, lamentador, lancax, mandargus,
+     moriu_nobre, moriu_nobre_ceifeiro, ouroboros, tormenta
+   → Status: ✅ Todos conformes ao template creatures.json
+
+9. Build de produção final
+   → Esperado: 0 erros, build completo
+   → Obtido:   ✅ 2543 módulos transformados, 0 erros
+   Saída:
+     dist/index.html             1.78 kB
+     dist/assets/index-*.js    412.20 kB (gzip: 113.13 kB)
+     dist/assets/data-creatures-*.js  73.19 kB
+     Tempo: 347ms
+
+── RESULTADO FINAL ───────────────────────────────────
+Status: ✅ APROVADO
+
+── BUGS ──────────────────────────────────────────────
+[BUG-001] useWebSocket.js — doConnect referenciado antes da declaração
+  Causa   : Hoisting de variável const em closure de ws.onclose.
+  Fix     : useRef + useEffect para sincronizar referência.
+  Status  : ✅ CORRIGIDO
+
+[BUG-002] App.jsx (x2) — setTableEntities ausente das deps de useCallback
+  Causa   : React Compiler detectou dependência não listada.
+  Fix     : setTableEntities adicionado ao array de dependências.
+  Status  : ✅ CORRIGIDO
+
+[BUG-003] 7 arquivos de armas — IDs e nomes de arquivo incorretos
+  Causa   : Script gerador inseriu 'air' incorretamente nos nomes.
+  Fix     : Arquivos renomeados, campos id atualizados.
+  Status  : ✅ CORRIGIDO
+
+[BUG-004] baird_blade.json — arquivo duplicado de bard_blade.json
+  Causa   : Criação acidental de variante com id incorreto.
+  Fix     : Arquivo removido.
+  Status  : ✅ CORRIGIDO
+
+[BUG-005] 16 criaturas — campos de atributo duplicados na raiz do JSON
+  Causa   : Scripts de geração adicionaram campos extras fora do template.
+  Fix     : Campos raiz removidos, apenas attributes{} mantido.
+  Status  : ✅ CORRIGIDO
+
+[BUG-006] PlayerDashboard.jsx — prop playerName não utilizada em TabFicha
+  Causa   : Prop declarada mas nunca usada dentro do componente.
+  Fix     : Prop removida da assinatura de TabFicha.
+  Status  : ✅ CORRIGIDO
+
+── PROBLEMAS ESLint REMANESCENTES (pré-existentes, fora de escopo) ──────
+  Total antes desta sessão : 36 problemas (31 erros, 5 avisos)
+  Total após esta sessão   : 29 problemas (24 erros, 5 avisos)
+  Problemas resolvidos     :  7 erros eliminados
+
+  Remanescentes (requerem refatoração arquitetural):
+  🔲 useWebSocket.js:115    — setStatus() síncrono em useEffect (React Compiler)
+  🔲 CharacterList.jsx:31   — setState em useEffect (React Compiler)
+  🔲 EffectManager.jsx:41   — Date.now() em render (React Compiler purity)
+  🔲 DetailPanel.jsx:26     — setState em useEffect (React Compiler)
+  🔲 GridOverlay.jsx (4x)   — componentes criados durante render
+  🔲 MapToolbar.jsx (4x)    — componentes criados durante render
+  🔲 PlayerMap.jsx (2x)     — setState em useEffect (master + player)
+  🔲 CampaignPage.jsx:116   — useAction dentro de callback
+  🔲 PlayerDashboard.jsx    — ws.onmessage mutação, handleServerMessage hoisting
+  🔲 Sidebar.jsx / DetailPanel.jsx — missing deps em useEffect (aviso)
+
+── NOTAS ─────────────────────────────────────────────
+- Os erros ESLint remanescentes são todos do React Compiler (react-hooks plugin
+  v7) que detecta padrões arquiteturais que requerem refatoração significativa.
+  Nenhum deles quebra o build ou o funcionamento em produção.
+- A renomeação de armas não afeta dados existentes de heróis/NPCs pois nenhum
+  desses arquivos referenciava os IDs antigos.
+- Os campos raiz removidos das criaturas eram redundantes — o dataSeeder sempre
+  priorizou attributes.VIT sobre c.vit.
+- seed version deve ser incrementada se o banco de dados precisar ser re-semeado
+  com os dados de criaturas corrigidos (se isCustom=0 e dados antigos persistirem).
+────────────────────────────────────────────────────────

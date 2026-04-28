@@ -86,13 +86,5 @@
       "amount": 0
     }
   },
-  "isCustom": false,
-  "vit": 18,
-  "dex": 8,
-  "crm": 4,
-  "frc": 22,
-  "int": 6,
-  "res": 16,
-  "pre": 6,
-  "enr": 10
+  "isCustom": false
 }

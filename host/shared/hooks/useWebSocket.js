@@ -36,6 +36,8 @@ export function useWebSocket(url, onMessage, { autoReconnect = true } = {}) {
   const keepaliveTimerRef  = useRef(null)
   const reconnectDelayRef  = useRef(RECONNECT_BASE_MS)
   const intentionalClose   = useRef(false)
+  // Stable ref so ws.onclose can call doConnect without hoisting issues
+  const doConnectRef       = useRef(null)
 
   // Keep onMessage ref current without re-running effect
   useEffect(() => { onMessageRef.current = onMessage }, [onMessage])
@@ -94,7 +96,7 @@ export function useWebSocket(url, onMessage, { autoReconnect = true } = {}) {
       if (!intentionalClose.current && autoReconnect) {
         const delay = reconnectDelayRef.current
         reconnectDelayRef.current = Math.min(delay * RECONNECT_FACTOR, RECONNECT_MAX_MS)
-        reconnectTimerRef.current = setTimeout(() => doConnect(wsUrl), delay)
+        reconnectTimerRef.current = setTimeout(() => doConnectRef.current?.(wsUrl), delay)
       }
     }
 
@@ -103,6 +105,9 @@ export function useWebSocket(url, onMessage, { autoReconnect = true } = {}) {
       setStatus(WS_STATUS.ERROR)
     }
   }, [autoReconnect])
+
+  // Keep ref in sync with the latest doConnect callback (effect avoids render-time ref mutation)
+  useEffect(() => { doConnectRef.current = doConnect }, [doConnect])
 
   // Connect / disconnect when url changes
   useEffect(() => {

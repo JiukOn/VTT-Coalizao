@@ -67,7 +67,7 @@ function App() {
     if (serverOnline) {
       broadcast('entity_update', { id, changes: updates })
     }
-  }, [serverOnline, broadcast])
+  }, [serverOnline, broadcast, setTableEntities])
 
   const handleEntityContextMenu = (e, entity) => {
     e.preventDefault()

@@ -46,7 +46,7 @@ function processFile(filePath) {
         if (content.habilities_id) collectValues(content.habilities_id, 'habilities_id');
         if (content.inventory_id) collectValues(content.inventory_id, 'inventory_id');
         if (content.item_drops) collectValues(content.item_drops, 'item_drops');
-    } catch (e) {}
+    } catch { /* ignore malformed JSON */ }
 }
 
 function walk(dir) {

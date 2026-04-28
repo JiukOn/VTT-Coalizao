@@ -392,7 +392,7 @@ function TabIniciativa({ order, round, currentIdx, playerName }) {
 // ── Tab: Ficha ─────────────────────────────────────────────────────────────────
 const ATTR_LABELS = { vit: 'VIT', dex: 'DEX', crm: 'CRM', frc: 'FRC', int: 'INT', res: 'RES', pre: 'PRE', enr: 'ENR' }
 
-function TabFicha({ entity, playerName }) {
+function TabFicha({ entity }) {
   const tVal = (val) => {
     if (val == null) return ''
     if (typeof val === 'object') return val['pt-br'] || val['en-us'] || ''

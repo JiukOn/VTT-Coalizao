@@ -1,6 +1,7 @@
+/* global process */
 /**
- * VTP Coalizão — Local Server (Fase 7A)
- * Node.js + Express + WebSocket para conexão de jogadores via LAN/VPN
+ * VTP Coalizão — Local Server (Phase 7A)
+ * Node.js + Express + WebSocket for player connections via LAN/VPN
  *
  * Uso:
  *   npm run server          — inicia em modo produção

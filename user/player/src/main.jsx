@@ -3,6 +3,7 @@
    Standalone player app: Login → Dashboard
    No master providers, no IndexedDB (all data via WS from Host)
    ============================================================ */
+/* eslint-disable react-refresh/only-export-components */
 import { StrictMode, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { ThemeProvider } from './context/ThemeContext.jsx'
