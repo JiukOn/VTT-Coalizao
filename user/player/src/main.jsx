@@ -8,9 +8,13 @@ import { StrictMode, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { ThemeProvider } from './context/ThemeContext.jsx'
 import { LanguageProvider } from './context/LanguageContext.jsx'
+import { initErrorLogger } from './utils/errorLogger.js'
 import PlayerLoginPage from './pages/PlayerLoginPage.jsx'
 import PlayerDashboard from './pages/PlayerDashboard.jsx'
 import '../../../src/styles/index.css'
+
+// ── Initialize error capture before anything else ─────────────────────────────
+initErrorLogger()
 
 function PlayerApp() {
   const [session, setSession] = useState(null)

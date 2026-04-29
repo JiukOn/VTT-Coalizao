@@ -1,7 +1,14 @@
 /* global process */
 /**
- * VTP Coalizão — Local Server (Phase 7A)
+ * VTP Coalizão — Local Server (Phase 7A, refactored v8.0)
  * Node.js + Express + WebSocket for player connections via LAN/VPN
+ *
+ * Architecture:
+ *   - masterHandlers.js  — WS handlers for Master (host) messages
+ *   - playerHandlers.js  — WS handlers for Player messages
+ *   - serverLogger.js    — Persistent logging to logs/error/
+ *   - autoSave.js        — Session auto-save heartbeat
+ *   - sessionManager.js  — Code generation + IP detection
  *
  * Uso:
  *   npm run server          — inicia em modo produção
@@ -20,6 +27,10 @@ import path from 'path'
 import fs from 'fs'
 import { randomUUID } from 'node:crypto'
 import { generateCode, getLocalIPs } from './sessionManager.js'
+import { initServerLogger, log } from './serverLogger.js'
+import { handleMasterMessage } from './masterHandlers.js'
+import { handlePlayerMessage } from './playerHandlers.js'
+import { initAutoSave, saveSnapshot } from './autoSave.js'
 
 // ── Paths ─────────────────────────────────────────────────────────────────────
 const __filename = fileURLToPath(import.meta.url)
@@ -27,9 +38,19 @@ const __dirname  = path.dirname(__filename)
 // server lives at host/server/ → go up two levels to reach project root
 const ROOT_DIR   = path.join(__dirname, '../..')
 const DIST_DIR   = path.join(ROOT_DIR, 'dist')
-const SAVES_DIR  = path.join(ROOT_DIR, 'saves')
+// Player saves now go to user/player/memory/saves/ per architectural plan
+const SAVES_DIR  = path.join(ROOT_DIR, 'user', 'player', 'memory', 'saves')
+const LOGS_DIR   = path.join(ROOT_DIR, 'logs', 'error')
 
+// ── Initialize logger first (captures all console output) ─────────────────────
+initServerLogger(ROOT_DIR)
+
+// ── Create directories ────────────────────────────────────────────────────────
 fs.mkdirSync(SAVES_DIR, { recursive: true })
+fs.mkdirSync(LOGS_DIR, { recursive: true })
+
+// ── Initialize auto-save ──────────────────────────────────────────────────────
+initAutoSave(ROOT_DIR)
 
 // ── Server setup ──────────────────────────────────────────────────────────────
 const app    = express()
@@ -49,7 +70,7 @@ if (fs.existsSync(DIST_DIR)) {
 // ── Session state ─────────────────────────────────────────────────────────────
 let sessionCode = generateCode()
 
-// clientId → { ws, role: 'host'|'player', playerName?, playerId? }
+// clientId → { ws, role: 'host'|'player'|'unknown', playerName?, playerId? }
 const clients = new Map()
 
 // Shared game state relayed from host to players on join
@@ -75,6 +96,7 @@ app.get('/api/status', (_req, res) => {
 app.post('/api/new-code', (_req, res) => {
   sessionCode = generateCode()
   broadcastToRole('host', { type: 'code_changed', sessionCode })
+  log('info', `[Server] New session code generated: ${sessionCode}`)
   res.json({ sessionCode })
 })
 
@@ -96,9 +118,32 @@ app.post('/api/save-entity', (req, res) => {
     fs.mkdirSync(dir, { recursive: true })
     const filePath = path.join(dir, `${id}.json`)
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf-8')
+    log('info', `[Server] Saved entity ${folder}/${id}`)
     res.json({ success: true, path: filePath })
   } catch (e) {
-    console.error('[Server] Error saving JSON file:', e.message)
+    log('error', `[Server] Error saving JSON file: ${e.message}`)
+    res.status(500).json({ error: e.message })
+  }
+})
+
+// ── Error log endpoint (receives frontend errors) ─────────────────────────────
+app.post('/api/save-error-log', (req, res) => {
+  const { errors } = req.body
+  if (!Array.isArray(errors) || errors.length === 0) {
+    return res.status(400).json({ error: 'Missing or empty errors array' })
+  }
+
+  try {
+    for (const entry of errors) {
+      const msg = `[FRONTEND ${entry.level || 'error'}] ${entry.message || 'Unknown error'}` +
+        (entry.stack ? `\n  Stack: ${entry.stack}` : '') +
+        (entry.source ? `\n  Source: ${entry.source}` : '') +
+        (entry.timestamp ? `\n  At: ${entry.timestamp}` : '')
+      log('error', msg)
+    }
+    res.json({ success: true, saved: errors.length })
+  } catch (e) {
+    log('error', `[Server] Error saving frontend error log: ${e.message}`)
     res.status(500).json({ error: e.message })
   }
 })
@@ -108,6 +153,7 @@ app.post('/api/save-entity', (req, res) => {
 wss.on('connection', (ws) => {
   const clientId = randomUUID()
   clients.set(clientId, { ws, role: 'unknown' })
+  log('debug', `[WS] New connection: ${clientId}`)
 
   ws.on('message', (raw) => {
     let msg
@@ -118,142 +164,55 @@ wss.on('connection', (ws) => {
   ws.on('close', () => {
     const client = clients.get(clientId)
     if (client?.role === 'player') {
+      log('info', `[WS] Player disconnected: ${client.playerName}`)
       broadcastToRole('host', { type: 'player_left', playerName: client.playerName, playerId: client.playerId })
+    } else if (client?.role === 'host') {
+      log('info', '[WS] Host disconnected')
     }
     clients.delete(clientId)
   })
 
   ws.on('error', (err) => {
-    console.error(`[WS] Client ${clientId} error:`, err.message)
+    log('error', `[WS] Client ${clientId} error: ${err.message}`)
     clients.delete(clientId)
   })
 })
+
+// ── Shared context for handlers ───────────────────────────────────────────────
+
+function getHandlerContext() {
+  return {
+    sessionCode,
+    clients,
+    broadcastToRole,
+    cachedGameState,
+    cachedMapState,
+    savesDir: SAVES_DIR,
+    setCachedGameState: (data) => { cachedGameState = data },
+    setCachedMapState:  (data) => { cachedMapState = data },
+    saveAutoSnapshot:   (data) => { saveSnapshot(data) },
+  }
+}
 
 function handleMessage(clientId, ws, msg) {
   const client = clients.get(clientId)
   if (!client) return
 
-  switch (msg.type) {
-
-    // ── Host identifies itself ──────────────────────────────────────────────
-    case 'host_hello': {
-      client.role = 'host'
-      clients.set(clientId, client)
-      console.log('[WS] Host connected')
-      ws.send(JSON.stringify({ type: 'host_welcome', sessionCode }))
-      break
-    }
-
-    // ── Pre-join: Get characters ────────────────────────────────────────────
-    case 'get_characters': {
-      if (msg.campaignCode !== sessionCode) {
-        ws.send(JSON.stringify({ type: 'error', message: 'Código de campanha inválido.' }))
-        return
-      }
-      const characters = cachedGameState?.order 
-        ? cachedGameState.order.map(e => e.name) 
-        : []
-      ws.send(JSON.stringify({ type: 'character_list', characters }))
-      break
-    }
-
-    // ── Player joins ────────────────────────────────────────────────────────
-    case 'join': {
-      if (msg.campaignCode !== sessionCode) {
-        ws.send(JSON.stringify({ type: 'error', message: 'Código de campanha inválido.' }))
-        return
-      }
-      if (!msg.playerName?.trim()) {
-        ws.send(JSON.stringify({ type: 'error', message: 'Nome do jogador obrigatório.' }))
-        return
-      }
-      const playerId = randomUUID()
-      client.role = 'player'
-      client.playerName = msg.playerName.trim()
-      client.playerId = playerId
-      clients.set(clientId, client)
-      console.log(`[WS] Player connected: ${client.playerName} (${playerId})`)
-
-      // Send welcome + current game state to the new player
-      ws.send(JSON.stringify({
-        type: 'welcome',
-        playerId,
-        playerName: client.playerName,
-        gameState: cachedGameState || null,
-        mapState: cachedMapState || null,
-      }))
-
-      // Notify host
-      broadcastToRole('host', {
-        type: 'player_joined',
-        playerName: client.playerName,
-        playerId,
-      })
-      break
-    }
-
-    // ── Host broadcasts game state to all players ────────────────────────────
-    case 'game_state_update': {
-      // Cache so new players get it on join
-      cachedGameState = msg.data
-      broadcastToRole('player', { type: 'game_state', data: msg.data })
-      break
-    }
-
-    // ── Delta events from host → relay to all players ───────────────────────
-    case 'map_update': {
-      cachedMapState = msg.data
-      broadcastToRole('player', { type: msg.type, data: msg.data })
-      break
-    }
-
-    case 'entity_update':
-    case 'turn_change':
-    case 'combat_event': {
-      broadcastToRole('player', { type: msg.type, data: msg.data })
-      break
-    }
-
-    // ── Events from player → relay to host ──────────────────────────────────
-    case 'dice_roll':
-    case 'token_move': {
-      broadcastToRole('host', {
-        type: msg.type,
-        data: msg.data,
-        from: client.playerName,
-        playerId: client.playerId,
-      })
-      break
-    }
-
-    // ── Notes: save to disk + relay to host ─────────────────────────────────
-    case 'notes_save': {
-      const name  = client.playerName || 'desconhecido'
-      const code  = sessionCode
-      const notes = msg.notes ?? ''
-      try {
-        const dir = path.join(SAVES_DIR, code)
-        fs.mkdirSync(dir, { recursive: true })
-        fs.writeFileSync(
-          path.join(dir, `${name}_notes.json`),
-          JSON.stringify({ playerName: name, sessionCode: code, notes, savedAt: new Date().toISOString() }, null, 2)
-        )
-      } catch (e) {
-        console.error('[Server] Error saving player notes:', e.message)
-      }
-      broadcastToRole('host', { type: 'notes_received', playerName: name, notes })
-      break
-    }
-
-    // ── Ping (client keepalive) ──────────────────────────────────────────────
-    case 'ping': {
-      ws.send(JSON.stringify({ type: 'pong' }))
-      break
-    }
-
-    default:
-      console.warn(`[WS] Unknown message type: ${msg.type}`)
+  // ── Role validation: reject typed messages from wrong role ────────────────
+  // Messages that declare a role must match the client's established role
+  if (msg.role && client.role !== 'unknown' && msg.role !== client.role) {
+    log('warn', `[WS] Role mismatch: client ${clientId} is ${client.role} but msg declares ${msg.role}`)
+    ws.send(JSON.stringify({ type: 'error', message: 'Role mismatch — ação não autorizada.' }))
+    return
   }
+
+  const ctx = getHandlerContext()
+
+  // Try master handlers first, then player handlers
+  if (handleMasterMessage(ctx, clientId, ws, msg)) return
+  if (handlePlayerMessage(ctx, clientId, ws, msg)) return
+
+  log('warn', `[WS] Unknown message type: ${msg.type}`)
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -275,7 +234,7 @@ server.listen(PORT, '0.0.0.0', () => {
   const ips = getLocalIPs()
   console.log('')
   console.log('┌────────────────────────────────────────────────┐')
-  console.log('│   VTP Coalizão — Local Server (Phase 7A)      │')
+  console.log('│   VTP Coalizão — Local Server v8.0             │')
   console.log('├────────────────────────────────────────────────┤')
   console.log(`│   Port      : ${PORT}`)
   console.log(`│   Code      : ${sessionCode}`)
@@ -286,6 +245,9 @@ server.listen(PORT, '0.0.0.0', () => {
     ips.forEach(n => console.log(`│     ${n.iface}: http://${n.address}:${PORT}`))
   }
   console.log('├────────────────────────────────────────────────┤')
+  console.log(`│   Saves     : ${SAVES_DIR}`)
+  console.log(`│   Logs      : ${LOGS_DIR}`)
+  console.log('├────────────────────────────────────────────────┤')
   console.log('│   Host:    http://localhost:5173               │')
   console.log(`│   Player:  http://{ip}:${PORT}/#/player        │`)
   console.log('└────────────────────────────────────────────────┘')
@@ -294,6 +256,7 @@ server.listen(PORT, '0.0.0.0', () => {
 
 // Graceful shutdown
 process.on('SIGINT', () => {
+  log('info', '[Server] Shutting down...')
   console.log('\n[Server] Shutting down...')
   server.close(() => process.exit(0))
 })

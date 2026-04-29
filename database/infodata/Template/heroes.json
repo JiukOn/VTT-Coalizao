@@ -4,6 +4,9 @@
     "pt-br": "",
     "en-us": ""
   },
+  "userid": "",
+  "password": "",
+  "isPlayer": true,
   "age": 1,
   "level": 1,
   "classId": "",

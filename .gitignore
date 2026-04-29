@@ -50,5 +50,11 @@ desktop.ini
 scripts/
 reference/
 saves/
+scratch/
 *.json.bak
 *.dev
+
+# Memory temp files (auto-generated)
+user/master/memory/temp/
+user/player/memory/temp/
+user/player/memory/saves/

@@ -21,13 +21,13 @@ A complete virtual tabletop — offline-first, no registration, no mandatory ser
 ## Features
 
 | Module | Description |
-|--------|-----------|
+|--------|-----------:|
 | **GM's Table (Dashboard)** | Dashboard with active entities, dice, logs, quick actions, and system reference |
 | **Hero Sheets** | 4-step wizard: Identity, Class & Attributes, Equipment, Review |
 | **Bestiary** | 82 creatures + 15 special ones pre-registered, searchable and editable |
 | **NPCs** | 70+ NPCs separated by location, with relations and private GM notes |
-| **Abilities** | ~131 abilities (Legacy, Active, Passive, Myth, Single Use, Lineage) |
-| **Items** | ~127 items with 43 types of modifications, rarities, and full stats |
+| **Abilities** | ~140 abilities (Legacy, Active, Passive, Myth, Single Use, Lineage) |
+| **Items** | ~184 items with 41 types of modifications, rarities, and full stats |
 | **Tactical Map** | 3000×3000 Canvas, multi-tabs, configurable grid, fog of war, tokens, walls |
 | **Assisted Combat** | Melee / Ranged / Magic — automatic rolls with damage application |
 | **Initiative Tracker** | Turn order, turn-by-turn effect counting, action checklist, stealth alert |
@@ -42,6 +42,7 @@ A complete virtual tabletop — offline-first, no registration, no mandatory ser
 | **Online Relay** | Stateless multi-room server for internet sessions |
 | **PWA** | Works offline after first load, installable on desktop/mobile |
 | **Export/Import** | Full campaign export to JSON for backup and transfer |
+| **Error Logging** | Persistent error capture (frontend + backend) with daily log files |
 
 ---
 
@@ -101,7 +102,7 @@ The server displays your local IP and a session code (e.g., `GH4K9X`).
 
 ### 4. Online Multiplayer Mode (Relay)
 
-Requires deploying the relay on a cloud service. See [`relay/README.md`](relay/README.md).
+Requires deploying the relay on a cloud service. See [`host/relay/README.md`](host/relay/README.md).
 
 After deployment:
 - **GM:** Server Tab → toggle "Online (Relay)" → input the relay's `wss://` URL → Connect
@@ -112,7 +113,7 @@ After deployment:
 ## Available Scripts
 
 | Script | Description |
-|--------|-----------|
+|--------|-----------:|
 | `npm run dev` | Vite development server (localhost:5173) |
 | `npm run build` | Production build in `/dist` |
 | `npm run preview` | Local preview of the production build |
@@ -126,58 +127,73 @@ After deployment:
 ## Project Structure
 
 ```
-VTP Project/
-├── src/
-│   ├── components/           # Reusable React components
-│   │   ├── abilities/        # AbilityCard, AbilityList
-│   │   ├── campaign/         # MasterToolsPanel, CampaignManager
-│   │   ├── characters/       # CharacterForm (4-step wizard), CharacterList,
-│   │   │                     # CharacterSheet, AttributeDistributor, EvolutionModal
-│   │   ├── combat/           # CombatResolver, CombatLog, InitiativeTracker
-│   │   ├── common/           # Modal, SearchBar, FilterBar, ConfirmDialog
-│   │   ├── dice/             # DiceRollerWidget, DiceHistory, DiceResultCard
-│   │   ├── effects/          # EffectManager
-│   │   ├── entities/         # CreatureCard, EntityForm
-│   │   ├── items/            # ItemCard, ItemList
-│   │   ├── layout/           # Header, Sidebar, BottomBar, DetailPanel, MainContent
-│   │   └── map/              # Token, GridOverlay, MapToolbar, MapCanvas
-│   ├── context/              # CampaignContext, ServerContext, ThemeContext
-│   ├── data/                 # Pre-populated data (one file per entity)
-│   │   ├── abilities/        # ~131 abilities
-│   │   ├── auras/            # 10 auras
-│   │   ├── classes/          # Classes with multipliers and legacy abilities
-│   │   ├── creatures/        # 82 creatures + 15 specials
-│   │   ├── effects/          # ~30 effects/conditions
-│   │   ├── heroes/           # 11 heroes from the Coalizao campaign
-│   │   ├── items/            # ~127 items with stats and modifications
-│   │   ├── modifications/    # 43 types of item modifications
-│   │   ├── npcs/             # 70+ NPCs per location
-│   │   └── personalities/    # 13 personalities
-│   ├── hooks/                # useWebSocket (auto-reconnect, keepalive 25s)
-│   ├── pages/                # App pages (one per navigation tab)
-│   ├── services/             # database.js (Dexie), campaignIO.js, dataSeeder.js
-│   ├── styles/               # CSS Design System (4 files)
-│   ├── utils/                # characterUtils.js, combatUtils.js, diceRoller.js
-│   ├── App.jsx               # Hash routing + global state (tableEntities, etc.)
-│   └── main.jsx              # Entry point — await seedDatabase() before React mount
-├── server/
-│   ├── index.js              # Local server (Express + WS, port 3001)
-│   └── sessionManager.js     # generateCode(), getLocalIPs()
-├── relay/
-│   ├── index.js              # Stateless multi-room relay
-│   ├── Procfile              # Railway/Heroku Deploy
-│   ├── railway.json          # Railway Config
-│   └── render.yaml           # Render Config
-├── public/
-│   ├── sw.js                 # Service Worker (PWA)
-│   └── manifest.json         # Web App Manifest
-├── Docs/
-│   ├── Plan.txt              # Complete development plan (v4.5)
-│   ├── ARCHITECTURE.md       # Detailed technical architecture
-│   ├── CHANGELOG.md          # Version history
-│   └── Logs/                 # Test logs by phase (Phases 1–9)
-├── vite.config.js            # base: '/Projeto-VTP/', code splitting, proxy /api
-└── package.json              # v7.1.0, scripts, deps
+VTT Coalizão/
+│
+├── host/                              # Server + relay + shared code
+│   ├── server/                        # Local server (Express + WS, Phase 7A)
+│   │   ├── index.js                   # Main server entry point
+│   │   ├── sessionManager.js          # Code generation + IP detection
+│   │   ├── masterHandlers.js          # WS message handlers for Master
+│   │   ├── playerHandlers.js          # WS message handlers for Players
+│   │   ├── serverLogger.js            # Persistent logging to logs/error/
+│   │   └── autoSave.js               # Session auto-save heartbeat
+│   ├── relay/                         # Stateless multi-room relay (Phase 7B)
+│   │   ├── index.js                   # Relay entry point
+│   │   ├── Procfile                   # Railway/Heroku deploy
+│   │   ├── railway.json               # Railway config
+│   │   └── render.yaml                # Render config
+│   ├── shared/                        # Code shared by both Master & Player
+│   │   ├── components/                # Modal, SearchBar, FilterBar, ConfirmDialog
+│   │   ├── context/                   # ThemeContext, LanguageContext
+│   │   ├── hooks/                     # useWebSocket.js (auto-reconnect, keepalive)
+│   │   ├── utils/                     # diceRoller, combatUtils, errorLogger
+│   │   ├── styles/                    # CSS Design System (4 files)
+│   │   └── i18n/                      # UI translations (pt-br + en-us)
+│   └── services/                      # database.js (Dexie), dataSeeder.js, campaignIO.js
+│
+├── user/
+│   ├── master/                        # Master (GM) interface
+│   │   ├── src/
+│   │   │   ├── App.jsx                # Master app with tabs and providers
+│   │   │   ├── pages/                 # Dashboard, Map, Characters, NPCs,
+│   │   │   │                          # Bestiary, Abilities, Items, Campaign,
+│   │   │   │                          # Domain, Server
+│   │   │   ├── components/            # All master-only components
+│   │   │   ├── context/               # CampaignContext, ServerContext
+│   │   │   └── utils/                 # characterUtils, visionUtils
+│   │   ├── access/                    # masterAuth.js, sessionGuard.jsx
+│   │   └── memory/                    # temp/ (drafts, undo) + saves/ (exports)
+│   │
+│   └── player/                        # Player interface
+│       ├── src/
+│       │   ├── main.jsx               # Standalone player entry point
+│       │   ├── pages/                 # PlayerLoginPage, PlayerDashboard
+│       │   ├── components/            # PlayerMap, dice, combat (limited)
+│       │   └── context/               # PlayerContext (stub)
+│       ├── access/                    # playerAuth.js, codeValidator.js,
+│       │                              # characterSelector.jsx
+│       └── memory/                    # temp/ (cached WS data) + saves/ (notes)
+│
+├── src/                               # Legacy entry point (stubs → host/shared)
+│   ├── main.jsx                       # Master entry point (seeds DB + mounts React)
+│   ├── App.jsx                        # Hash router → MasterApp or PlayerApp
+│   └── [stubs]                        # Re-exports to canonical files in host/user
+│
+├── database/                          # Pre-populated game data (I18N: pt-br + en-us)
+│   └── infodata/                      # skills, items, creatures, NPCs, effects,
+│                                      # modifications, ambients, biomes, classes,
+│                                      # auras, species, heroes, elements, domains
+│
+├── logs/                              # Server error logs (daily .txt files)
+│   └── error/                         # Auto-created by serverLogger
+│
+├── public/                            # PWA manifest + service worker
+├── scripts/                           # migrate-imports.mjs (import audit)
+│
+├── index.html                         # Master entry HTML
+├── player.html                        # Player entry HTML
+├── vite.config.js                     # Multi-page build, aliases, code splitting
+└── package.json                       # v8.0.0
 ```
 
 ---
@@ -201,7 +217,7 @@ The system uses **only D20 and D4**.
 ### 8 Attributes
 
 | Code | Name | Main Use |
-|--------|------|--------------|
+|--------|------|--------------:|
 | `VIT` | Vitality | HP, damage resistance |
 | `DEX` | Dexterity | Dodge, movement, initiative |
 | `CHA` | Charisma | Persuasion, social stealth |
@@ -254,13 +270,13 @@ The system uses **only D20 and D4**.
 
 ### Relay Server — Railway / Render / Fly.io
 
-See full instructions in [`relay/README.md`](relay/README.md).
+See full instructions in [`host/relay/README.md`](host/relay/README.md).
 
 Quick summary (Railway):
 ```bash
-cd relay
+cd host/relay
 # Create a Railway project, connect the repository
-# Set the root directory to relay/
+# Set the root directory to host/relay/
 # The PORT variable is defined automatically
 ```
 
@@ -273,4 +289,4 @@ Use a peer-to-peer VPN:
 
 ---
 
-*Build v7.1.0 · Phases 1–9 Complete · 2155 modules · 0 errors*
+*Build v8.0.0 · Phases 1–12 Complete · Architectural Transition Done · 2543 modules · 0 errors*

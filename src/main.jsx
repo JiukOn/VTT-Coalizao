@@ -7,9 +7,13 @@ import { LanguageProvider } from './context/LanguageContext.jsx'
 import { CampaignProvider } from './context/CampaignContext.jsx'
 import { ServerProvider } from './context/ServerContext.jsx'
 import { seedDatabase } from './services/dataSeeder.js'
+import { initErrorLogger } from './utils/errorLogger.js'
 import PlayerLoginPage from './pages/PlayerLoginPage.jsx'
 import PlayerDashboard from './pages/PlayerDashboard.jsx'
 import './styles/index.css'
+
+// ── Initialize error capture before anything else ─────────────────────────────
+initErrorLogger()
 
 // ── Simple hash router ─────────────────────────────────────────────────────────
 function useHashRoute() {
