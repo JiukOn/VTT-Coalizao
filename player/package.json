@@ -1,0 +1,7 @@
+{
+  "name": "@vtt-coalizao/player",
+  "version": "8.0.0",
+  "type": "module",
+  "main": "src/main.jsx",
+  "description": "VTT Coalizão — Player View Application"
+}

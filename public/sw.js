@@ -1,45 +1,71 @@
-/* VTP Coalizão — Service Worker (offline cache) */
-const CACHE_NAME = 'vtp-coalizao-v1'
-const PRECACHE = [
-  '/VTT-Coalizao/',
-  '/VTT-Coalizao/index.html',
+/* sw.js — Service Worker for VTT Coalizão PWA */
+
+const CACHE_NAME = 'vtt-coalizao-v1'
+const STATIC_ASSETS = [
+  './',
+  './index.html',
+  './player.html',
+  './manifest.json',
+  './favicon.svg',
 ]
 
-self.addEventListener('install', event => {
+self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(PRECACHE))
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(STATIC_ASSETS).catch((err) => {
+        console.warn('[SW] Pre-caching static assets failed:', err)
+      })
+    })
   )
   self.skipWaiting()
 })
 
-self.addEventListener('activate', event => {
+self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
-    )
+    caches.keys().then((keys) => {
+      return Promise.all(
+        keys.map((key) => {
+          if (key !== CACHE_NAME) {
+            return caches.delete(key)
+          }
+        })
+      )
+    })
   )
   self.clients.claim()
 })
 
-self.addEventListener('fetch', event => {
-  // Only cache same-origin GET requests
-  if (event.request.method !== 'GET') return
-  if (!event.request.url.startsWith(self.location.origin)) return
+self.addEventListener('fetch', (event) => {
+  // Ignore non-GET, WebSocket and chrome-extension requests
+  if (
+    event.request.method !== 'GET' ||
+    event.request.url.startsWith('ws') ||
+    event.request.url.startsWith('chrome-extension')
+  ) {
+    return
+  }
 
+  // Network-first with Cache fallback strategy
   event.respondWith(
-    caches.match(event.request).then(cached => {
-      if (cached) return cached
-      return fetch(event.request).then(response => {
-        // Cache successful responses for JS/CSS/fonts
-        if (response.ok && (
-          event.request.url.includes('/assets/') ||
-          event.request.url.endsWith('.html')
-        )) {
-          const clone = response.clone()
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone))
+    fetch(event.request)
+      .then((response) => {
+        // Cache successful responses for static assets
+        if (response.status === 200 && response.type === 'basic') {
+          const resClone = response.clone()
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, resClone).catch(() => {})
+          })
         }
         return response
-      }).catch(() => caches.match('/VTT-Coalizao/index.html'))
-    })
+      })
+      .catch(async () => {
+        const cachedResponse = await caches.match(event.request)
+        if (cachedResponse) return cachedResponse
+        // Fallback for navigation requests
+        if (event.request.mode === 'navigate') {
+          return caches.match('./index.html')
+        }
+        return new Response('Offline', { status: 503, statusText: 'Offline' })
+      })
   )
 })

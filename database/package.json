@@ -1,0 +1,7 @@
+{
+  "name": "@vtt-coalizao/database",
+  "version": "8.0.0",
+  "type": "module",
+  "main": "index.js",
+  "description": "VTT Coalizão — Canonical JSON Database and Dexie.js IndexedDB persistence layer"
+}

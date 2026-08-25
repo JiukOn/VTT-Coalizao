@@ -1,0 +1,17 @@
+{
+  "name": "@vtt-coalizao/server",
+  "version": "8.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "relay": "node relay/index.js",
+    "relay:dev": "node --watch relay/index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "ws": "^8.20.0",
+    "zod": "^4.4.3"
+  }
+}

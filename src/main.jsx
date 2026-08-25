@@ -1,16 +1,16 @@
 /* eslint-disable react-refresh/only-export-components */
 import { StrictMode, useState, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import { ThemeProvider } from './context/ThemeContext.jsx'
-import { LanguageProvider } from './context/LanguageContext.jsx'
-import { CampaignProvider } from './context/CampaignContext.jsx'
-import { ServerProvider } from './context/ServerContext.jsx'
-import { seedDatabase } from './services/dataSeeder.js'
-import { initErrorLogger } from './utils/errorLogger.js'
-import PlayerLoginPage from './pages/PlayerLoginPage.jsx'
-import PlayerDashboard from './pages/PlayerDashboard.jsx'
-import './styles/index.css'
+import App from '@master/App.jsx'
+import { ThemeProvider } from '@shared/context/ThemeContext.jsx'
+import { LanguageProvider } from '@shared/context/LanguageContext.jsx'
+import { CampaignProvider } from '@master/context/CampaignContext.jsx'
+import { ServerProvider } from '@master/context/ServerContext.jsx'
+import { seedDatabase } from '@services/dataSeeder.js'
+import { initErrorLogger } from '@shared/utils/errorLogger.js'
+import PlayerLoginPage from '@player/pages/PlayerLoginPage.jsx'
+import PlayerDashboard from '@player/pages/PlayerDashboard.jsx'
+import '@shared/styles/index.css'
 
 // ── Initialize error capture before anything else ─────────────────────────────
 initErrorLogger()

@@ -4,15 +4,31 @@
   "version": "8.0.0",
   "type": "module",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "node host/server/index.js",
-    "server:dev": "node --watch host/server/index.js",
-    "start": "node host/server/index.js",
-    "relay": "node host/relay/index.js",
-    "relay:dev": "node --watch host/relay/index.js"
+    "server": "node server/src/index.js",
+    "server:dev": "node --watch server/src/index.js",
+    "relay": "node server/relay/index.js",
+    "relay:dev": "node --watch server/relay/index.js",
+    "engine": "python -m uvicorn server.engine.main:app --port 8000 --reload",
+    "engine:start": "python -m uvicorn server.engine.main:app --host 0.0.0.0 --port 8000",
+    "validate:db": "python infra/scripts/validate_db.py",
+    "stats": "python infra/scripts/export_stats.py",
+    "launch": "python infra/scripts/launcher.py",
+    "vtt": "python infra/scripts/vtt_cli.py",
+    "vtt:init": "python infra/scripts/vtt_cli.py init",
+    "vtt:start": "python infra/scripts/vtt_cli.py start",
+    "vtt:dev": "python infra/scripts/vtt_cli.py dev",
+    "vtt:log": "python infra/scripts/vtt_cli.py log",
+    "vtt:test": "python infra/scripts/vtt_cli.py test",
+    "vtt:backup": "python infra/scripts/vtt_cli.py backup",
+    "vtt:check": "python infra/scripts/vtt_cli.py check",
+    "vtt:status": "python infra/scripts/vtt_cli.py status",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "dexie": "^4.4.2",
@@ -20,7 +36,8 @@
     "lucide-react": "^1.8.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "ws": "^8.20.0"
+    "ws": "^8.20.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
@@ -31,6 +48,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
-    "vite": "^8.0.4"
+    "vite": "^8.0.4",
+    "vitest": "^4.1.11"
   }
 }

@@ -1,21 +1,20 @@
 {
-  "name": "VTP Coalizão",
-  "short_name": "VTP",
-  "description": "Virtual Tabletop para o sistema de RPG Coalizão",
-  "start_url": "/VTT-Coalizao/",
-  "scope": "/VTT-Coalizao/",
+  "name": "VTT Coalizão RPG",
+  "short_name": "Coalizão VTT",
+  "description": "Mesa Virtual Tática Oficial para o RPG Coalizão. Gestão de fichas, combate, mapas táteis e áudio imersivo.",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "orientation": "landscape",
-  "background_color": "#0D0D12",
-  "theme_color": "#9B59E8",
+  "orientation": "any",
+  "background_color": "#0B0D13",
+  "theme_color": "#7C3AED",
   "icons": [
     {
       "src": "favicon.svg",
+      "sizes": "192x192 512x512",
       "type": "image/svg+xml",
-      "sizes": "any",
       "purpose": "any maskable"
     }
   ],
-  "categories": ["games", "entertainment"],
-  "lang": "pt-BR"
+  "categories": ["games", "entertainment", "utilities"]
 }

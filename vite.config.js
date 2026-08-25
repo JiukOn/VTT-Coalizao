@@ -1,3 +1,4 @@
+/* global process */
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
@@ -5,22 +6,25 @@ import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/VTT-Coalizao/',
+  publicDir: path.resolve(__dirname, 'shared/public'),
+  test: {
+    include: ['infra/tests/**/*.test.js'],
+  },
+  base: process.env.NODE_ENV === 'production' ? '/VTT-Coalizao/' : '/',
   resolve: {
     alias: {
-      // @data → database/infodata (accessible from any file in host/src)
+      // @data → database/infodata (accessible from any module)
       '@data': path.resolve(__dirname, 'database/infodata'),
-      // @shared → host/shared (contexts, hooks, utils, components used by both master and player)
-      '@shared': path.resolve(__dirname, 'host/shared'),
-      // @master → user/master/src (master-only UI)
-      '@master': path.resolve(__dirname, 'user/master/src'),
-      // @player → user/player/src (player-only UI)
-      '@player': path.resolve(__dirname, 'user/player/src'),
-      // @services → host/services (database, dataSeeder, campaignIO)
-      '@services': path.resolve(__dirname, 'host/services'),
+      // @shared → shared (contexts, hooks, utils, components used by both master and player)
+      '@shared': path.resolve(__dirname, 'shared'),
+      // @master → master/src (master-only UI)
+      '@master': path.resolve(__dirname, 'master/src'),
+      // @player → player/src (player-only UI)
+      '@player': path.resolve(__dirname, 'player/src'),
+      // @services → database/services (database, dataSeeder, campaignIO)
+      '@services': path.resolve(__dirname, 'database/services'),
     },
   },
   server: {

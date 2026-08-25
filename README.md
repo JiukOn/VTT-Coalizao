@@ -1,292 +1,167 @@
-# VTT Coalizao
+# ⚔️ VTT COALIZÃO — Virtual Tabletop Tático
 
-**Virtual Tabletop Program** for the **Coalizao** homebrew RPG system.
-
-A complete virtual tabletop — offline-first, no registration, no mandatory server. Runs in the browser, supports local multiplayer (LAN/VPN) and online via WebSocket relay.
+> **Plataforma Completa de RPG de Mesa Virtual** desenvolvida especificamente para o sistema de RPG **Coalizão** (D20 + D4), com arquitetura híbrida de altíssimo desempenho, inteligência procedural, banco de dados relacional e comunicação em tempo real.
 
 ---
 
-## Summary
+## 🏛️ Arquitetura do Sistema: Híbrida Ativa
 
-- [Features](#features)
-- [Stack](#stack)
-- [Installation and Usage](#installation-and-usage)
-- [Available Scripts](#available-scripts)
-- [Project Structure](#project-structure)
-- [Coalizao System — Basic Rules](#coalizao-system--basic-rules)
-- [Deployment](#deployment)
+O **VTT Coalizão** adota uma **Arquitetura Híbrida Ativa**, combinando o melhor do ecossistema **Node.js** para sinalização de rede ultrarrápida com o poder analítico e procedural do **Python**:
+
+```
+                              ┌────────────────────────┐
+                              │    🌐 NAVEGADORES      │
+                              │  Mestre & Jogadores    │
+                              └───────────┬────────────┘
+                                          │
+                  ┌───────────────────────┴───────────────────────┐
+                  │                                               │
+       ⚡ HTTP / Assets (:5173)                       🔌 WebSocket (<1ms) (:3001)
+                  │                                               │
+                  ▼                                               ▼
+      ┌───────────────────────┐                       ┌───────────────────────┐
+      │     FRONTEND VITE     │                       │  🟢 GATEWAY NODE.JS   │
+      │  React 19 + Canvas 2D │                       │  Broadcast & Salas    │
+      └───────────────────────┘                       └───────────┬───────────┘
+                                                                  │
+                                                        Proxy Transparente
+                                                        /api/engine/*
+                                                                  │
+                                                                  ▼
+                                                      ┌───────────────────────┐
+                                                      │  🐍 PYTHON ENGINE     │
+                                                      │  FastAPI (Porta 8000) │
+                                                      └───────────┬───────────┘
+                                                                  │
+                                             ┌────────────────────┴────────────────────┐
+                                             ▼                                         ▼
+                                   ┌───────────────────┐                     ┌───────────────────┐
+                                   │  💾 ARMAZENAMENTO │                     │  🗄️ BANCO RELAC.  │
+                                   │  Gravação Atômica │                     │  SQLite Modo WAL  │
+                                   │  & Backups ZIP    │                     │  (coalizao.db)    │
+                                   └───────────────────┘                     └───────────────────┘
+```
+
+### 1. 🟢 Gateway Node.js (`server/src/` — Porta 3001)
+- **Comunicação em Tempo Real**: WebSocket de baixa latência (<1ms) para sincronização de tokens, iniciativa, dados e pings.
+- **Proxy Integrado**: Redirecionamento transparente de `/api/engine/*` para o motor Python com fallback inteligente.
+- **Sinalização WebRTC / Áudio**: Broadcast de estados de voz, efeitos sonoros (SFX) e chat com sussurros (`/whisper`).
+
+### 2. 🐍 Python Intelligence Engine (`server/engine/` — Porta 8000)
+- **🏰 Geração Procedural de Masmorras (`dungeon_gen.py`)**: Geração de salas temáticas, corredores, tochas e paredes de Linha de Visão (LoS) automáticas.
+- **🧭 Pathfinding Tático A\* (`pathfinding.py`)**: Cálculo da menor rota desviando de cantos, portas e obstáculos no grid.
+- **🗄️ Motor Relacional SQLite WAL (`db.py`)**: Banco relacional em `database/coalizao.db` com Write-Ahead Logging para histórico de combates e rolagens.
+- **💾 Gravação Atômica Anti-Corrupção (`storage.py`)**: Gravação segura com `tempfile` + `os.replace` + checksum SHA-256 e criação de backups `.vttpack` em ZIP.
+- **📡 Assistente de Conectividade (`tunnel.py`)**: Detecção de IP local (Wi-Fi/LAN) e IP público com geração de QR Code para smartphones.
+
+### 3. ⚡ Frontend Modular (`master/` & `player/` — Porta 5173)
+- **👑 Interface do Mestre (`master/`)**: Controle total de combate, mapas com camadas, névoa de guerra, marcadores secretos, clima dinâmico, criador de masmorras LoS e painel analítico.
+- **🛡️ Interface do Jogador (`player/`)**: HUD tático com névoa de exploração 3-Tier, Laser Ping, medidor de latência em milissegundos, ficha dinâmica e lançamento rápido de habilidades com consumo de Energia (ENR).
 
 ---
 
-## Features
+## 📁 Organização Modular do Repositório
 
-| Module | Description |
-|--------|-----------:|
-| **GM's Table (Dashboard)** | Dashboard with active entities, dice, logs, quick actions, and system reference |
-| **Hero Sheets** | 4-step wizard: Identity, Class & Attributes, Equipment, Review |
-| **Bestiary** | 82 creatures + 15 special ones pre-registered, searchable and editable |
-| **NPCs** | 70+ NPCs separated by location, with relations and private GM notes |
-| **Abilities** | ~140 abilities (Legacy, Active, Passive, Myth, Single Use, Lineage) |
-| **Items** | ~184 items with 41 types of modifications, rarities, and full stats |
-| **Tactical Map** | 3000×3000 Canvas, multi-tabs, configurable grid, fog of war, tokens, walls |
-| **Assisted Combat** | Melee / Ranged / Magic — automatic rolls with damage application |
-| **Initiative Tracker** | Turn order, turn-by-turn effect counting, action checklist, stealth alert |
-| **Effects and Conditions** | Apply/remove effects with per-turn duration; visible badges on tokens |
-| **Investigation & Stealth** | 4 types of investigation + 3 stealth modes with Coalizao classification |
-| **Rest and Recovery** | 1d20 → Critical/Good/Normal/Bad/Disaster with automatic HP recovery |
-| **Token Visibility** | Configurable radius, 120° cone with free angle, ray casting against walls |
-| **Domain System** | CP (Command Points) = INT bonus + CHA bonus; 6 command actions; coalition mechanics |
-| **Evolution & TransEvolution** | 3 Lv5 paths + 3 Lv10 paths with applied mechanical effects |
-| **Player Mode** | Player View with 6 tabs: Dice, Initiative, Sheet, Combat, Notes, Log |
-| **Local Server** | Node.js + WebSocket for LAN/VPN sessions — no internet required |
-| **Online Relay** | Stateless multi-room server for internet sessions |
-| **PWA** | Works offline after first load, installable on desktop/mobile |
-| **Export/Import** | Full campaign export to JSON for backup and transfer |
-| **Error Logging** | Persistent error capture (frontend + backend) with daily log files |
+O projeto é estruturado em diretórios canônicos e modulares:
+
+```
+Projeto VTT/
+├── master/             # 👑 Frontend e interface exclusiva do Mestre de Jogo
+├── player/             # 🛡️ Frontend e interface exclusiva dos Jogadores
+├── server/             # 🟢 Gateway Node.js (:3001) & 🐍 Python FastAPI Engine (:8000)
+│   ├── src/            # Gateway WebSocket e rotas REST Node.js
+│   └── engine/         # Inteligência procedural, masmorras, SQLite WAL e storage Python
+├── database/           # 🗄️ Dados canônicos (758 JSONs), SQLite WAL (coalizao.db) e backups
+├── shared/             # 📦 Componentes, hooks, schemas Zod, utilitários e assets públicos
+├── infra/              # ⚙️ Scripts de automação (CLI, launcher, validação) e testes
+└── docs/               # 📚 Manuais, relatórios de campanha e documentação técnica
+```
 
 ---
 
-## Stack
+## ⌨️ Comandos da CLI Oficial (`vtt`)
 
-| Layer | Technology |
-|--------|------------|
-| Frontend | React 19, Vite 8 |
-| Styling | Pure CSS with Design System (tokens, dark/light mode) |
-| Local Storage | IndexedDB via Dexie.js 4 |
-| Icons | Lucide React |
-| Fonts | Inter (UI) · Cinzel (titles) · JetBrains Mono (stats) |
-| Local Server | Node.js + Express 5 + ws |
-| Online Relay | Node.js + Express 5 + ws (stateless, multi-room) |
-| PWA | Cache-first Service Worker |
+O projeto inclui a ferramenta de linha de comando **`vtt`**, que unifica todas as operações da mesa com comandos simples:
 
-**Node.js 18+** is required for the server/relay. For the frontend, any modern browser works.
+| Comando | Atalho npm | Descrição |
+| :--- | :--- | :--- |
+| **`.\vtt init`** | `npm run vtt:init` | 🚀 **Prepara o Ambiente**: Cria diretórios, instala dependências (Node + Python) e valida o banco. |
+| **`.\vtt start`** | `npm run vtt:start` | ⚔️ **Inicia a Mesa Completa**: Sobe Node (:3001), Python (:8000), Vite (:5173) e abre o navegador. |
+| **`.\vtt log`** | `npm run vtt:log` | 📊 **Gera Métricas de Sessão**: Cria o relatório analítico em Markdown em `docs/session_reports/`. |
+| **`.\vtt test`** | `npm run vtt:test` | 🧪 **Executa Testes**: Roda Python unittest (10/10) + JavaScript Vitest (216/216) + ESLint. |
+| **`.\vtt backup`** | `npm run vtt:backup` | 💾 **Snapshot com 1 Clique**: Gera um arquivo `.vttpack` com checksum SHA-256 em `database/backups/`. |
+| **`.\vtt check`** | `npm run vtt:check` | 🔍 **Auditor Canônico**: Valida 100% dos 758 arquivos JSON de regras e dados. |
+| **`.\vtt status`** | `npm run vtt:status` | 📡 **Monitor de Saúde**: Verifica o status das portas de rede (3001, 8000, 5173). |
 
 ---
 
-## Installation and Usage
+## 🌟 Principais Funcionalidades
 
-### 1. Install Dependencies
+### 🗺️ Mapa Tático & Linha de Visão (Canvas 2D)
+- **Névoa de Guerra em 3 Camadas (3-Tier Fog)**: Área visível em tempo real (100% clara), área já explorada (Shroud 50% cinza) e escuridão total (0%).
+- **🏰 Gerador de Masmorras LoS**: O motor Python gera a masmorra e injeta as paredes e portas no Canvas com 1 clique.
+- **🧭 Pathfinding Tático A\***: Cálculo visual de rota contornando paredes com medição precisa em metros.
+- **📍 Laser Pointer & Ping**: Mestre e Jogadores podem apontar pontos no mapa com anéis luminosos sincronizados.
+- **🌧️ Clima Dinâmico**: Chuva de plasma, tempestade de areia, neve e cinzas vulcânicas renderizadas no Canvas.
+- **📐 Áreas de Efeito (AoE)**: Modelos geométricos de magias (Círculo, Cone e Linha) com detecção de tokens atingidos.
 
+### ⚔️ Combate e Resolução de Regras (Coalizão)
+- **Regras Oficiais Integradas**:
+  - *Corpo a Corpo*: $1\text{d}20 + \text{FRC}$ vs $1\text{d}20 + \text{FRC}$
+  - *Distância*: $1\text{d}20 + \text{PRE}$ vs $1\text{d}20 + \text{DEX}$
+  - *Mágico*: Formação ($1\text{d}20 + \text{PRE} \ge 12$) seguido de $1\text{d}20 + \text{ENR}$ vs $1\text{d}20 + \text{RES}$
+  - *Dano Base*: $1\text{d}4$ + Bônus
+- **Baralho de Iniciativa Dinâmico**: Cartas de iniciativa táticas com controle de rodadas.
+- **Auras e Condições**: Emissão visual de auras e gerenciamento de condições persistentes.
+- **Sintetizador Procedural de Áudio (SFX)**: Efeitos sonoros gerados via Web Audio API para dados, acertos, erros e turnos.
+
+### 📊 Telemetria e Analytics em Tempo Real
+- **Registro no SQLite WAL**: Cada rolagem e ataque é salvo transacionalmente em `database/coalizao.db`.
+- **Painel de Métricas da Sessão**: Acompanhamento de Dano Total, Acertos Críticos, Média de D20 e MVP da Mesa.
+- **Exportação de Relatórios**: Geração de relatórios analíticos de campanha em Markdown com 1 clique.
+
+---
+
+## 🚀 Instalação e Execução
+
+### Pré-requisitos
+- **Node.js** v18 ou superior.
+- **Python** 3.10 ou superior.
+
+### Passo 1: Clonar o Repositório
 ```bash
-npm install
+git clone https://github.com/JiukOn/VTT-Coalizao.git
+cd "VTT-Coalizao"
 ```
 
-### 2. Solo Mode (No Server)
-
-Works entirely in the browser. Data is saved to the browser's IndexedDB.
-
+### Passo 2: Inicializar o Ambiente
 ```bash
-npm run dev
-# Opens at http://localhost:5173
+# Executa a preparação completa (instala Node, Python e valida o banco)
+.\vtt init
 ```
 
-### 3. Local Multiplayer Mode (LAN/VPN)
-
-**Terminal 1 — WebSocket Server:**
+### Passo 3: Iniciar a Mesa
 ```bash
-npm run server:dev     # hot-reload
-# or
-npm run server         # production (uses /dist)
-```
-
-**Terminal 2 — Frontend:**
-```bash
-npm run dev
-```
-
-The server displays your local IP and a session code (e.g., `GH4K9X`).
-
-- GM: `http://localhost:5173`
-- Players (same network): `http://{GM_IP}:3001/#/player`
-- Players via VPN (Hamachi/ZeroTier/Tailscale): same address, using the VPN IP
-
-### 4. Online Multiplayer Mode (Relay)
-
-Requires deploying the relay on a cloud service. See [`host/relay/README.md`](host/relay/README.md).
-
-After deployment:
-- **GM:** Server Tab → toggle "Online (Relay)" → input the relay's `wss://` URL → Connect
-- **Players:** Access VTP → toggle "Online" → input the URL + code provided by the GM
-
----
-
-## Available Scripts
-
-| Script | Description |
-|--------|-----------:|
-| `npm run dev` | Vite development server (localhost:5173) |
-| `npm run build` | Production build in `/dist` |
-| `npm run preview` | Local preview of the production build |
-| `npm run server` | Local server (port 3001, uses /dist) |
-| `npm run server:dev` | Local server with hot-reload (node --watch) |
-| `npm run relay` | Relay server (default port 4001) |
-| `npm run relay:dev` | Relay server with hot-reload |
-
----
-
-## Project Structure
-
-```
-VTT Coalizão/
-│
-├── host/                              # Server + relay + shared code
-│   ├── server/                        # Local server (Express + WS, Phase 7A)
-│   │   ├── index.js                   # Main server entry point
-│   │   ├── sessionManager.js          # Code generation + IP detection
-│   │   ├── masterHandlers.js          # WS message handlers for Master
-│   │   ├── playerHandlers.js          # WS message handlers for Players
-│   │   ├── serverLogger.js            # Persistent logging to logs/error/
-│   │   └── autoSave.js               # Session auto-save heartbeat
-│   ├── relay/                         # Stateless multi-room relay (Phase 7B)
-│   │   ├── index.js                   # Relay entry point
-│   │   ├── Procfile                   # Railway/Heroku deploy
-│   │   ├── railway.json               # Railway config
-│   │   └── render.yaml                # Render config
-│   ├── shared/                        # Code shared by both Master & Player
-│   │   ├── components/                # Modal, SearchBar, FilterBar, ConfirmDialog
-│   │   ├── context/                   # ThemeContext, LanguageContext
-│   │   ├── hooks/                     # useWebSocket.js (auto-reconnect, keepalive)
-│   │   ├── utils/                     # diceRoller, combatUtils, errorLogger
-│   │   ├── styles/                    # CSS Design System (4 files)
-│   │   └── i18n/                      # UI translations (pt-br + en-us)
-│   └── services/                      # database.js (Dexie), dataSeeder.js, campaignIO.js
-│
-├── user/
-│   ├── master/                        # Master (GM) interface
-│   │   ├── src/
-│   │   │   ├── App.jsx                # Master app with tabs and providers
-│   │   │   ├── pages/                 # Dashboard, Map, Characters, NPCs,
-│   │   │   │                          # Bestiary, Abilities, Items, Campaign,
-│   │   │   │                          # Domain, Server
-│   │   │   ├── components/            # All master-only components
-│   │   │   ├── context/               # CampaignContext, ServerContext
-│   │   │   └── utils/                 # characterUtils, visionUtils
-│   │   ├── access/                    # masterAuth.js, sessionGuard.jsx
-│   │   └── memory/                    # temp/ (drafts, undo) + saves/ (exports)
-│   │
-│   └── player/                        # Player interface
-│       ├── src/
-│       │   ├── main.jsx               # Standalone player entry point
-│       │   ├── pages/                 # PlayerLoginPage, PlayerDashboard
-│       │   ├── components/            # PlayerMap, dice, combat (limited)
-│       │   └── context/               # PlayerContext (stub)
-│       ├── access/                    # playerAuth.js, codeValidator.js,
-│       │                              # characterSelector.jsx
-│       └── memory/                    # temp/ (cached WS data) + saves/ (notes)
-│
-├── src/                               # Legacy entry point (stubs → host/shared)
-│   ├── main.jsx                       # Master entry point (seeds DB + mounts React)
-│   ├── App.jsx                        # Hash router → MasterApp or PlayerApp
-│   └── [stubs]                        # Re-exports to canonical files in host/user
-│
-├── database/                          # Pre-populated game data (I18N: pt-br + en-us)
-│   └── infodata/                      # skills, items, creatures, NPCs, effects,
-│                                      # modifications, ambients, biomes, classes,
-│                                      # auras, species, heroes, elements, domains
-│
-├── logs/                              # Server error logs (daily .txt files)
-│   └── error/                         # Auto-created by serverLogger
-│
-├── public/                            # PWA manifest + service worker
-├── scripts/                           # migrate-imports.mjs (import audit)
-│
-├── index.html                         # Master entry HTML
-├── player.html                        # Player entry HTML
-├── vite.config.js                     # Multi-page build, aliases, code splitting
-└── package.json                       # v8.0.0
+# Sobe todos os servidores e abre o navegador automaticamente
+.\vtt start
 ```
 
 ---
 
-## Coalizao System — Basic Rules
+## 🧪 Qualidade de Código e Testes Automatizados
 
-### Dice Used
+O repositório possui garantia rigorosa de integridade e cobertura de testes:
 
-The system uses **only D20 and D4**.
-
-**D20 Classification:**
-
-| Result | Classification | Color |
-|-----------|---------------|-----|
-| 20 | Critical | 🟢 Green |
-| 13–19 | Good | 🟢 Light Green |
-| 10–12 | Normal | 🟡 Yellow |
-| 2–9 | Bad | 🔴 Light Red |
-| 1 | Disaster | 🔴 Red |
-
-### 8 Attributes
-
-| Code | Name | Main Use |
-|--------|------|--------------:|
-| `VIT` | Vitality | HP, damage resistance |
-| `DEX` | Dexterity | Dodge, movement, initiative |
-| `CHA` | Charisma | Persuasion, social stealth |
-| `STR` | Strength | Melee, wielding |
-| `INT` | Intelligence | Investigation, logic, domain |
-| `RES` | Resilience | Magic defense |
-| `PRE` | Precision | Ranged, magic formation |
-| `ENR` | Energy | Magic power |
-
-**Bonus** = `⌊finalValue / 5⌋`  
-**Final Value** = `basePoints × classMultiplier`
-
-### Combat
-
-| Type | Attack | Defense |
-|------|--------|--------|
-| Melee | 1d20 + STR bonus | 1d20 + STR bonus |
-| Ranged | 1d20 + PRE bonus | 1d20 + DEX bonus |
-| Magic | Formation PRE ≥ 12, then 1d20 + ENR | 1d20 + RES bonus |
-
-**Damage:** 1d4 (applied to defender's HP if total attack > total defense)  
-**Dodge/Evade:** 1d20 + DEX bonus > attack total (before applying damage)
-
-### Evolution
-
-- **Level 5** — Class Evolution: Focused (×+0.2 to primary mult.) | Balanced (+0.05 to all) | Legacy (+3 INT or CHA)
-- **Level 10** — TransEvolution (requires base sum > 43): Ascendant | Transcendent | Descendant
-
-### Command Points (Domain)
-
-`CP = INT bonus + CHA bonus`
-
-6 available actions (see Domain System in the Campaign tab).
+| Suíte de Testes | Escopo | Resultado |
+| :--- | :--- | :---: |
+| **Python Unittest** (`infra/tests/test_python_engine.py`) | Storage, Geradores, Masmorras, SQLite WAL, Tunnel | ✅ **10/10 Testes (100%)** |
+| **JavaScript Vitest** (`infra/tests/*.test.js`) | Regras, Combate, Fichas, WebSocket, Pathfinding, Backups | ✅ **216/216 Testes (100%)** |
+| **Auditoria Canônica** (`infra/scripts/validate_db.py`) | Validação dos 758 arquivos JSON de regras e dados | ✅ **758/758 Arquivos (100%)** |
+| **ESLint** (`eslint .`) | Qualidade estática e regras de React | ✅ **0 Erros, 0 Avisos** |
+| **Compilação de Produção** (`vite build`) | Build dos clientes Mestre e Jogador | ✅ **Sucesso (~400ms)** |
 
 ---
 
-## Deployment
+## 📜 Licença
 
-### Frontend — GitHub Pages
-
-1. Adjust `base` in `vite.config.js` to your repository's name:
-   ```js
-   base: '/your-repo-name/'
-   ```
-2. Build and deploy:
-   ```bash
-   npm run build
-   # Deploy /dist to your gh-pages branch
-   ```
-
-### Relay Server — Railway / Render / Fly.io
-
-See full instructions in [`host/relay/README.md`](host/relay/README.md).
-
-Quick summary (Railway):
-```bash
-cd host/relay
-# Create a Railway project, connect the repository
-# Set the root directory to host/relay/
-# The PORT variable is defined automatically
-```
-
-### Local Server — No Router Configuration
-
-Use a peer-to-peer VPN:
-- [ZeroTier](https://www.zerotier.com/) (recommended, free)
-- [Tailscale](https://tailscale.com/) (free for personal use)
-- [Hamachi](https://www.vpn.net/) (classic alternative)
-
----
-
-*Build v8.0.0 · Phases 1–12 Complete · Architectural Transition Done · 2543 modules · 0 errors*
+Desenvolvido para uso na campanha e sistema de RPG **Coalizão**. Todos os direitos reservados.

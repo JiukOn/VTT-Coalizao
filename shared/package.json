@@ -1,0 +1,7 @@
+{
+  "name": "@vtt-coalizao/shared",
+  "version": "8.0.0",
+  "type": "module",
+  "main": "index.js",
+  "description": "VTT Coalizão — Canonical Rules Engine, Combat Formulas, Audio Synthesizers and Shared UI"
+}

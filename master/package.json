@@ -1,0 +1,7 @@
+{
+  "name": "@vtt-coalizao/master",
+  "version": "8.0.0",
+  "type": "module",
+  "main": "src/App.jsx",
+  "description": "VTT Coalizão — Master / Game Master UI Application"
+}
