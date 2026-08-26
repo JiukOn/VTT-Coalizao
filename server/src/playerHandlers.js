@@ -217,14 +217,17 @@ export function handlePlayerMessage(ctx, clientId, ws, msg) {
     // ── Chat Messages ─────────────────────────────────────────────────────────
     case 'chat_message': {
       if (client.role !== 'player') return true;
-      msg.sender = client.playerName;
-      
-      const out = JSON.stringify(msg);
+      const text = msg.text || msg.data?.text || '';
+      const sender = client.playerName || msg.sender || 'Jogador';
+      const target = msg.target || msg.data?.target;
+      const isWhisper = Boolean(msg.isWhisper || msg.data?.isWhisper);
+      const normalizedMsg = { type: 'chat_message', sender, text, target, isWhisper, timestamp: msg.timestamp || new Date().toISOString() };
+      const out = JSON.stringify(normalizedMsg);
 
-      if (msg.isWhisper && msg.target) {
+      if (isWhisper && target) {
         let targetClient = null;
         for (const c of ctx.clients.values()) {
-          if (c.playerName === msg.target || c.role === msg.target || (msg.target === 'Mestre' && c.role === 'host')) {
+          if (c.playerName === target || c.role === target || (target === 'Mestre' && c.role === 'host')) {
             targetClient = c;
             break;
           }

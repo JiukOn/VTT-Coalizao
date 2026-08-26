@@ -128,7 +128,16 @@ export function useWebSocket(url, onMessage, { autoReconnect = true, onReconnect
       }
       if (wsRef.current) {
         intentionalClose.current = true
-        wsRef.current.close()
+        try {
+          if (wsRef.current.readyState === 0 /* CONNECTING */) {
+            wsRef.current.onopen = () => {
+              try { wsRef.current?.close() } catch { /* ignore */ }
+            }
+            wsRef.current.onerror = () => {}
+          } else {
+            wsRef.current.close()
+          }
+        } catch { /* ignore */ }
         wsRef.current = null
       }
     }

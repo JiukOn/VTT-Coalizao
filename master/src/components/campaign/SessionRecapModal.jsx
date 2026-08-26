@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { BarChart3, Swords, Award, Dices, Copy, Send, Check, X, ShieldAlert, Sparkles } from 'lucide-react'
 import { generateSessionMarkdownReport } from '@shared/utils/sessionRecap.js'
 import { sfx } from '@shared/utils/sfxPlayer.js'
+import { copyToClipboard } from '@shared/utils/clipboard.js'
 
 export default function SessionRecapModal({
   isOpen,
@@ -27,8 +28,8 @@ export default function SessionRecapModal({
 
   const markdownReport = generateSessionMarkdownReport(stats)
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(markdownReport)
+  const handleCopy = async () => {
+    await copyToClipboard(markdownReport)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }

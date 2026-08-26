@@ -1,11 +1,13 @@
 /* ServerPage.jsx — Host server control panel (Fase 7A + 7B) */
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import {
   Wifi, WifiOff, Users, Copy, RefreshCw, Server, Check,
-  AlertCircle, Loader, Globe, Network,
+  AlertCircle, Loader, Globe, Network, QrCode, Smartphone,
 } from 'lucide-react'
 import { useServer } from '../context/ServerContext.jsx'
 import { WS_STATUS } from '../hooks/useWebSocket.js'
+import { generateQRCodeSvg } from '@shared/utils/qrCodeGenerator.js'
+import { copyToClipboard } from '@shared/utils/clipboard.js'
 
 const STATUS_CONFIG = {
   [WS_STATUS.DISCONNECTED]: { label: 'Desconectado', color: 'var(--text-muted)',    icon: WifiOff,     cls: '' },
@@ -50,8 +52,24 @@ export default function ServerPage() {
     setTimeout(() => setCopied(false), 2000)
   }
 
-  function copyPlayerUrl() {
-    navigator.clipboard.writeText(playerUrl).catch(() => {})
+  const joinUrl = useMemo(() => {
+    if (typeof window === 'undefined') return ''
+    const origin = window.location.origin
+    const wsTarget = relayMode ? relayInput : `ws://${window.location.hostname}:${portInput}`
+    return `${origin}/player.html?code=${sessionCode || ''}&server=${encodeURIComponent(wsTarget)}`
+  }, [relayMode, relayInput, portInput, sessionCode])
+
+  const qrSvg = useMemo(() => {
+    if (!joinUrl) return ''
+    try {
+      return generateQRCodeSvg(joinUrl, 180)
+    } catch {
+      return ''
+    }
+  }, [joinUrl])
+
+  async function copyPlayerUrl() {
+    await copyToClipboard(joinUrl || playerUrl)
     setCopiedUrl(true)
     setTimeout(() => setCopiedUrl(false), 2000)
   }
@@ -60,9 +78,6 @@ export default function ServerPage() {
   const playerUrl = relayMode
     ? `${relayInput.replace(/^ws/, 'http')}/#/player`   // show HTTP equivalent for info
     : `http://{ip}:${portInput}/#/player`
-
-  const relayWsLabel = relayInput.startsWith('wss://') ? relayInput
-    : relayInput ? relayInput : 'wss://seu-relay.railway.app'
 
   return (
     <div className="page">
@@ -269,41 +284,43 @@ export default function ServerPage() {
             </button>
           </div>
 
-          {relayMode ? (
-            <>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: 10 }}>
-                Jogadores acessam o relay em qualquer navegador. Compartilhe a URL e o código:
+          <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: 20, alignItems: 'center' }}>
+            {qrSvg && (
+              <div style={{
+                background: '#FFFFFF',
+                padding: 10,
+                borderRadius: 12,
+                boxShadow: '0 4px 14px rgba(0,0,0,0.3)',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: 6,
+              }}>
+                <div dangerouslySetInnerHTML={{ __html: qrSvg }} style={{ width: 150, height: 150 }} />
+                <span style={{ fontSize: '0.68rem', color: '#1E293B', fontWeight: 700, display: 'flex', alignItems: 'center', gap: 4 }}>
+                  <Smartphone size={12} /> Escaneie p/ Entrar
+                </span>
+              </div>
+            )}
+
+            <div>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: 8 }}>
+                Link direto com código de sessão embutido (jogadores entram direto no login):
               </p>
               <div style={{
                 fontFamily: 'var(--font-mono)', fontSize: '0.82rem',
                 background: 'var(--bg-tertiary)', padding: '10px 14px',
                 borderRadius: 8, border: '1px solid var(--border-subtle)',
                 color: 'var(--accent-primary)', wordBreak: 'break-all',
+                marginBottom: 8,
               }}>
-                {relayWsLabel.replace(/^wss?:\/\//, 'https://')}/#/player
+                {joinUrl || playerUrl}
               </div>
-              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: 8 }}>
-                No campo "Relay URL" do login do jogador, insira: <strong style={{ fontFamily: 'var(--font-mono)', fontSize: '0.78rem' }}>{relayWsLabel}</strong>
+              <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', margin: 0 }}>
+                💡 {relayMode ? 'Pela internet via Relay' : 'Na rede local Wi-Fi / LAN'} — jogadores em smartphones e tablets podem escanear o QR Code acima com a câmera.
               </p>
-            </>
-          ) : (
-            <>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: 10 }}>
-                Os jogadores devem acessar este endereço no navegador (substitua {'{ip}'} pelo IP desta máquina):
-              </p>
-              <div style={{
-                fontFamily: 'var(--font-mono)', fontSize: '0.9rem',
-                background: 'var(--bg-tertiary)', padding: '10px 14px',
-                borderRadius: 8, border: '1px solid var(--border-subtle)',
-                color: 'var(--accent-primary)', wordBreak: 'break-all',
-              }}>
-                {playerUrl}
-              </div>
-              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: 8 }}>
-                Para VPN: use o IP do Hamachi/ZeroTier/Tailscale em vez do IP local.
-              </p>
-            </>
-          )}
+            </div>
+          </div>
         </div>
       )}
 

@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
-import { useTheme } from '../../context/ThemeContext.jsx'
 import { useLanguage } from '../../context/LanguageContext.jsx'
-import { Sun, Moon, Download, Upload, Settings, Wifi, Volume2, VolumeX, QrCode, Radio, Scroll, Target, Image as ImageIcon, Tv, MessageSquareQuote, BarChart3, BookOpen, Layers, Activity, Trees, ShieldAlert, Sparkles } from 'lucide-react'
+import { Download, Upload, Settings, Wifi, Volume2, VolumeX, QrCode, Radio, Scroll, Target, Image as ImageIcon, Tv, MessageSquareQuote, BarChart3, BookOpen, Layers, Activity, Trees, ShieldAlert, Sparkles, ChevronDown } from 'lucide-react'
 import { sfx } from '@shared/utils/sfxPlayer.js'
 import '../../styles/layout.css'
 import ShareSessionModal from '../server/ShareSessionModal.jsx'
@@ -22,9 +21,9 @@ import { useServer } from '../../context/ServerContext.jsx'
 import { db } from '@services/database.js'
 import { createCampaignPackage, downloadCampaignPackage, validateCampaignPackage, restoreCampaignPackage } from '@shared/utils/campaignPackage.js'
 import { dynamicMusic, MUSIC_MOODS } from '@shared/utils/ambientMusicSynth.js'
+import SettingsModal from '@shared/components/SettingsModal.jsx'
 
-export default function Header({ tabs, activeTab, onTabChange, serverOnline = false, onToggleTvMode }) {
-  const { theme, toggleTheme } = useTheme()
+export default function Header({ tabs, activeTab, onTabChange, serverOnline = false, onToggleTvMode, onOpenGenerator }) {
   const { t } = useLanguage()
   const [isMuted, setIsMuted] = useState(sfx.isMuted())
   const [shareModalOpen, setShareModalOpen] = useState(false)
@@ -42,7 +41,10 @@ export default function Header({ tabs, activeTab, onTabChange, serverOnline = fa
   const [biomeModalOpen, setBiomeModalOpen] = useState(false)
   const [conditionModalOpen, setConditionModalOpen] = useState(false)
   const [spotlightModalOpen, setSpotlightModalOpen] = useState(false)
+  const [settingsModalOpen, setSettingsModalOpen] = useState(false)
   const [dynamicMusicMood, setDynamicMusicMood] = useState('off')
+  const [narrativeDropdownOpen, setNarrativeDropdownOpen] = useState(false)
+  const [tacticsDropdownOpen, setTacticsDropdownOpen] = useState(false)
 
   const [handouts, setHandouts] = useState(() => {
     try {
@@ -156,119 +158,178 @@ export default function Header({ tabs, activeTab, onTabChange, serverOnline = fa
         </nav>
 
         <div className="header-actions">
+          {/* Quick NPC Generator */}
+          {onOpenGenerator && (
+            <button
+              className="btn btn-ghost btn-sm"
+              onClick={onOpenGenerator}
+              title="Gerador Rápido de NPC & Criaturas da Coalizão"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 4,
+                height: 28,
+                fontSize: '0.75rem',
+                border: '1px solid var(--accent-primary)',
+                background: 'rgba(56, 189, 248, 0.12)',
+                color: 'var(--accent-primary)',
+                fontWeight: 600,
+              }}
+            >
+              <Sparkles size={14} />
+              <span>Gerador Rápido</span>
+            </button>
+          )}
+
+          {/* Quick Access: Share / QR Code */}
           <button 
             className="btn btn-ghost btn-icon" 
             title="Compartilhar Sessão / QR Code" 
             aria-label="Compartilhar Sessão / QR Code"
             onClick={() => setShareModalOpen(true)}
           >
-            <QrCode size={18} />
+            <QrCode size={17} />
           </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setHandoutModalOpen(true)}
-            title="Documentos, Cartas e Pistas (Handouts)"
-            aria-label="Documentos, Cartas e Pistas"
-          >
-            <Scroll size={18} />
-          </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setQuestModalOpen(true)}
-            title="Quadro de Missões & Objetivos"
-            aria-label="Quadro de Missões"
-          >
-            <Target size={18} />
-          </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setSceneModalOpen(true)}
-            title="Teatro da Mente & Cenários Cinematográficos"
-            aria-label="Cenários Cinematográficos"
-          >
-            <ImageIcon size={18} />
-          </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setRumorsModalOpen(true)}
-            title="Gerador de Rumores de Taverna & Ganchos Narrativos"
-            aria-label="Rumores de Taverna"
-            style={{ color: '#38BDF8' }}
-          >
-            <MessageSquareQuote size={18} />
-          </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setRecapModalOpen(true)}
-            title="Resumo da Sessão & Estatísticas Pós-Jogo"
-            aria-label="Resumo da Sessão"
-            style={{ color: '#10B981' }}
-          >
-            <BarChart3 size={18} />
-          </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setJournalModalOpen(true)}
-            title="Diário de Campanha & Linha do Tempo"
-            aria-label="Diário da Campanha"
-            style={{ color: '#A855F7' }}
-          >
-            <BookOpen size={18} />
-          </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setInitDeckModalOpen(true)}
-            title="Baralho de Iniciativa Tática & Cartas de Ação"
-            aria-label="Baralho de Iniciativa"
-            style={{ color: '#F59E0B' }}
-          >
-            <Layers size={18} />
-          </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setInjuryModalOpen(true)}
-            title="Sequelas de Combate & Ferimentos Persistentes"
-            aria-label="Sequelas de Combate"
-            style={{ color: '#EF4444' }}
-          >
-            <Activity size={18} />
-          </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setAuraModalOpen(true)}
-            title="Auras Táticas da Coalizão"
-            aria-label="Auras da Coalizão"
-            style={{ color: '#38BDF8' }}
-          >
-            <Sparkles size={18} />
-          </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setBiomeModalOpen(true)}
-            title="Biomas & Climas Canônicos da Coalizão"
-            aria-label="Biomas da Coalizão"
-            style={{ color: '#10B981' }}
-          >
-            <Trees size={18} />
-          </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setConditionModalOpen(true)}
-            title="Condições, Maldições & Doenças Canônicas"
-            aria-label="Condições da Coalizão"
-            style={{ color: '#DC2626' }}
-          >
-            <ShieldAlert size={18} />
-          </button>
-          <button
-            className="btn btn-ghost btn-icon"
-            onClick={() => setSpotlightModalOpen(true)}
-            title="Diálogo Cinemático de NPC & Narração (Spotlight)"
-            aria-label="Diálogo de NPC"
-            style={{ color: '#C084FC' }}
-          >
-            <MessageSquareQuote size={18} />
-          </button>
+
+          {/* Narrative & Storytelling Tools Dropdown */}
+          <div style={{ position: 'relative' }}>
+            <button
+              className="btn btn-ghost btn-sm"
+              onClick={() => { setNarrativeDropdownOpen(v => !v); setTacticsDropdownOpen(false) }}
+              title="Ferramentas Narrativas, Missões e Cenários"
+              style={{ display: 'flex', alignItems: 'center', gap: 4, height: 28, fontSize: '0.75rem' }}
+            >
+              <Scroll size={14} color="#38BDF8" />
+              <span>Narrativa</span>
+              <ChevronDown size={12} />
+            </button>
+
+            {narrativeDropdownOpen && (
+              <div
+                style={{
+                  position: 'absolute', top: 'calc(100% + 4px)', left: 0,
+                  background: 'var(--bg-secondary)', border: '1px solid var(--border-subtle)',
+                  borderRadius: 8, padding: 6, width: 220, zIndex: 1000,
+                  boxShadow: '0 8px 24px rgba(0,0,0,0.5)',
+                  display: 'flex', flexDirection: 'column', gap: 4,
+                }}
+              >
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setHandoutModalOpen(true); setNarrativeDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <Scroll size={14} color="#38BDF8" /> Documentos & Pistas
+                </button>
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setQuestModalOpen(true); setNarrativeDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <Target size={14} color="#F59E0B" /> Quadro de Missões
+                </button>
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setSceneModalOpen(true); setNarrativeDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <ImageIcon size={14} color="#10B981" /> Cenas Cinematográficas
+                </button>
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setSpotlightModalOpen(true); setNarrativeDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <MessageSquareQuote size={14} color="#C084FC" /> Diálogo de NPC (Spotlight)
+                </button>
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setRumorsModalOpen(true); setNarrativeDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <MessageSquareQuote size={14} color="#38BDF8" /> Rumores de Taverna
+                </button>
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setJournalModalOpen(true); setNarrativeDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <BookOpen size={14} color="#A855F7" /> Diário de Campanha
+                </button>
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setRecapModalOpen(true); setNarrativeDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <BarChart3 size={14} color="#10B981" /> Resumo da Sessão
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* Tactical & Rules Dropdown */}
+          <div style={{ position: 'relative' }}>
+            <button
+              className="btn btn-ghost btn-sm"
+              onClick={() => { setTacticsDropdownOpen(v => !v); setNarrativeDropdownOpen(false) }}
+              title="Ferramentas Táticas, Auras e Condições"
+              style={{ display: 'flex', alignItems: 'center', gap: 4, height: 28, fontSize: '0.75rem' }}
+            >
+              <Layers size={14} color="#F59E0B" />
+              <span>Tática</span>
+              <ChevronDown size={12} />
+            </button>
+
+            {tacticsDropdownOpen && (
+              <div
+                style={{
+                  position: 'absolute', top: 'calc(100% + 4px)', left: 0,
+                  background: 'var(--bg-secondary)', border: '1px solid var(--border-subtle)',
+                  borderRadius: 8, padding: 6, width: 220, zIndex: 1000,
+                  boxShadow: '0 8px 24px rgba(0,0,0,0.5)',
+                  display: 'flex', flexDirection: 'column', gap: 4,
+                }}
+              >
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setInitDeckModalOpen(true); setTacticsDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <Layers size={14} color="#F59E0B" /> Baralho de Iniciativa
+                </button>
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setInjuryModalOpen(true); setTacticsDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <Activity size={14} color="#EF4444" /> Sequelas de Combate
+                </button>
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setAuraModalOpen(true); setTacticsDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <Sparkles size={14} color="#38BDF8" /> Auras da Coalizão
+                </button>
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setBiomeModalOpen(true); setTacticsDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <Trees size={14} color="#10B981" /> Biomas & Clima
+                </button>
+                <button
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => { setConditionModalOpen(true); setTacticsDropdownOpen(false) }}
+                  style={{ justifyContent: 'flex-start', gap: 8, fontSize: '0.75rem', height: 28 }}
+                >
+                  <ShieldAlert size={14} color="#DC2626" /> Condições & Efeitos
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* TV Mode */}
           {onToggleTvMode && (
             <button
               className="btn btn-ghost btn-icon"
@@ -276,16 +337,18 @@ export default function Header({ tabs, activeTab, onTabChange, serverOnline = fa
               title="Modo Telão / TV Tabletop"
               aria-label="Modo Telão"
             >
-              <Tv size={18} />
+              <Tv size={17} />
             </button>
           )}
+
+          {/* Import / Export Package */}
           <button
             className="btn btn-ghost btn-icon"
             onClick={() => fileInputRef.current?.click()}
             title="Importar Pacote de Campanha (.coalizao)"
             aria-label="Importar Campanha"
           >
-            <Upload size={18} />
+            <Upload size={17} />
           </button>
           <button
             className="btn btn-ghost btn-icon"
@@ -293,8 +356,10 @@ export default function Header({ tabs, activeTab, onTabChange, serverOnline = fa
             title="Exportar Pacote de Campanha (.coalizao)"
             aria-label="Exportar Campanha"
           >
-            <Download size={18} />
+            <Download size={17} />
           </button>
+
+          {/* Ambient Audio & Music */}
           <button
             className={`btn btn-ghost btn-icon ${currentAmbientTheme !== 'none' ? 'active' : ''}`}
             onClick={() => setAmbientModalOpen(true)}
@@ -302,7 +367,7 @@ export default function Header({ tabs, activeTab, onTabChange, serverOnline = fa
             aria-label="Trilha Sonora & Ambiência da Sessão"
             style={{ color: currentAmbientTheme !== 'none' ? 'var(--accent-primary)' : 'inherit' }}
           >
-            <Radio size={18} />
+            <Radio size={17} />
           </button>
 
           {/* Dynamic Adaptive Music Mood Selector */}
@@ -320,30 +385,50 @@ export default function Header({ tabs, activeTab, onTabChange, serverOnline = fa
             title="Música Ambiente Adaptativa Procedural"
             style={{
               height: 28,
-              fontSize: '0.75rem',
-              padding: '2px 6px',
+              fontSize: '0.72rem',
+              padding: '2px 4px',
               background: dynamicMusicMood !== 'off' ? 'rgba(155, 89, 232, 0.2)' : 'var(--bg-tertiary)',
               borderColor: dynamicMusicMood !== 'off' ? 'var(--accent-primary)' : 'var(--border-subtle)',
               color: dynamicMusicMood !== 'off' ? 'var(--accent-primary)' : 'var(--text-secondary)',
               fontWeight: 600,
-              cursor: 'pointer',
             }}
           >
             {Object.values(MUSIC_MOODS).map(m => (
-              <option key={m.id} value={m.id}>{m.label}</option>
+              <option key={m.id} value={m.id}>
+                {m.label || m.name}
+              </option>
             ))}
           </select>
-          <button className="btn btn-ghost btn-icon" onClick={handleMuteToggle} title="Toggle Sound" aria-label="Toggle Sound">
-            {!isMuted ? <Volume2 size={16} /> : <VolumeX size={16} />}
+
+          {/* SFX Mute Button */}
+          <button
+            className="btn btn-ghost btn-icon"
+            onClick={handleMuteToggle}
+            title={isMuted ? 'Ativar Efeitos Sonoros' : 'Silenciar Efeitos Sonoros'}
+            aria-label="Controle de Áudio"
+            style={{ color: isMuted ? 'var(--color-danger)' : 'inherit' }}
+          >
+            {isMuted ? <VolumeX size={17} /> : <Volume2 size={17} />}
           </button>
-          <button className="btn btn-ghost btn-icon" onClick={toggleTheme} title="Toggle Theme" aria-label="Toggle Theme">
-            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
-          <button className="btn btn-ghost btn-icon" title="Settings" aria-label="Settings">
-            <Settings size={18} />
+
+          {/* General Settings */}
+          <button
+            className="btn btn-ghost btn-icon"
+            onClick={() => setSettingsModalOpen(true)}
+            title="Configurações Gerais (Tema, Cores, Idioma, Áudio)"
+            aria-label="Configurações Gerais"
+          >
+            <Settings size={17} />
           </button>
         </div>
       </header>
+
+      {settingsModalOpen && (
+        <SettingsModal
+          isOpen={settingsModalOpen}
+          onClose={() => setSettingsModalOpen(false)}
+        />
+      )}
 
       {shareModalOpen && (
         <ShareSessionModal 

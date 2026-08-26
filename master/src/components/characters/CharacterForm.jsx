@@ -8,6 +8,7 @@ import { BASE_AURAS } from '@data/auras/index'
 import { CLASS_DATA } from '@data/classes/index'
 import db from '../../services/database'
 import { compressToWebP } from '@shared/utils/imageCompressor.js'
+import { getI18nText } from '@shared/utils/entityFormatting.js'
 
 // ── Species data ──────────────────────────────────────────────────────────────
 
@@ -49,8 +50,39 @@ export default function CharacterForm({ campaignId, onSave, onCancel, editCharac
 
   const [step, setStep] = useState(0)
   const [character, setCharacter] = useState(() => {
-    if (editCharacter) return { ...createBlankCharacter(campaignId), ...editCharacter }
-    return createBlankCharacter(campaignId)
+    const blank = createBlankCharacter(campaignId)
+    if (editCharacter) {
+      const initialName = typeof editCharacter.name === 'object'
+        ? getI18nText(editCharacter.name)
+        : (editCharacter.name || '')
+      const initialSurname = typeof editCharacter.surname === 'object'
+        ? getI18nText(editCharacter.surname)
+        : (editCharacter.surname || '')
+      const initialAppearance = typeof editCharacter.appearance === 'object'
+        ? getI18nText(editCharacter.appearance)
+        : (editCharacter.appearance || '')
+      const initialBackstory = typeof editCharacter.backstory === 'object'
+        ? getI18nText(editCharacter.backstory)
+        : (editCharacter.backstory || '')
+      const initialCatchphrase = typeof editCharacter.catchphrase === 'object'
+        ? getI18nText(editCharacter.catchphrase)
+        : (editCharacter.catchphrase || '')
+
+      return {
+        ...blank,
+        ...editCharacter,
+        name: initialName,
+        surname: initialSurname,
+        appearance: initialAppearance,
+        backstory: initialBackstory,
+        catchphrase: initialCatchphrase,
+        attributes: editCharacter.attributes || blank.attributes,
+        equipment: editCharacter.equipment || blank.equipment,
+        tendencies: editCharacter.tendencies || [],
+        alignments: editCharacter.alignments || [],
+      }
+    }
+    return blank
   })
   const [saving, setSaving] = useState(false)
   const [saveError, setSaveError] = useState('')
@@ -127,10 +159,11 @@ export default function CharacterForm({ campaignId, onSave, onCancel, editCharac
   }
 
   function canAdvance() {
-    if (step === 0) return character.name.trim().length > 0
+    const nameStr = typeof character.name === 'object' ? getI18nText(character.name) : String(character.name || '')
+    if (step === 0) return nameStr.trim().length > 0
     if (step === 1) {
       if (!character.classId) return false
-      const used = Object.values(character.attributes).reduce((s, v) => s + v, 0)
+      const used = Object.values(character.attributes || {}).reduce((s, v) => s + (Number(v) || 0), 0)
       return used === totalPoints
     }
     return true
@@ -250,7 +283,7 @@ function StepIdentity({ character, updateField, toggleTendency, onPrimarySpecies
         <label className="input-label">Nome *</label>
         <input
           className="input"
-          value={character.name}
+          value={typeof character.name === 'object' ? getI18nText(character.name) : (character.name || '')}
           onChange={e => updateField('name', e.target.value)}
           placeholder="Nome do personagem"
         />
@@ -366,7 +399,7 @@ function StepIdentity({ character, updateField, toggleTendency, onPrimarySpecies
         >
           <option value="">Selecione...</option>
           {BASE_PERSONALITIES.map(p => (
-            <option key={p.id} value={p.id}>{p.name} — {p.description}</option>
+            <option key={p.id} value={p.id}>{getI18nText(p.name)} — {getI18nText(p.description)}</option>
           ))}
         </select>
       </div>
@@ -381,7 +414,7 @@ function StepIdentity({ character, updateField, toggleTendency, onPrimarySpecies
         >
           <option value="">Nenhuma</option>
           {BASE_AURAS.map(a => (
-            <option key={a.id} value={a.id}>{a.name}</option>
+            <option key={a.id} value={a.id}>{getI18nText(a.name)}</option>
           ))}
         </select>
       </div>
@@ -499,7 +532,7 @@ function StepClassAttributes({ character, classData, updateField, updateAttribut
           onChange={e => onClassChange(e.target.value)}
         >
           <option value="">Selecione uma classe...</option>
-          {CLASS_DATA.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
+          {CLASS_DATA.map(c => <option key={c.id} value={c.id}>{getI18nText(c.name)}</option>)}
         </select>
       </div>
 
@@ -513,10 +546,10 @@ function StepClassAttributes({ character, classData, updateField, updateAttribut
           marginBottom: 12,
         }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
-            <span style={{ fontWeight: 700, fontSize: '0.9rem' }}>{classData.name}</span>
+            <span style={{ fontWeight: 700, fontSize: '0.9rem' }}>{getI18nText(classData.name)}</span>
             {classData.legacyAbilityName && (
               <span style={{ fontSize: '0.72rem', background: 'var(--accent-subtle)', color: 'var(--accent-primary)', borderRadius: 4, padding: '2px 6px' }}>
-                Legado: {classData.legacyAbilityName}
+                Legado: {getI18nText(classData.legacyAbilityName)}
               </span>
             )}
             {isUnclassified && (
@@ -563,7 +596,7 @@ function StepClassAttributes({ character, classData, updateField, updateAttribut
       )}
 
       {/* Second skill picker */}
-      {classData && !isUnclassified && classData.selectableAbilities.length > 0 && (
+      {classData && !isUnclassified && Array.isArray(classData.selectableAbilities) && classData.selectableAbilities.length > 0 && (
         <div className="form-group form-group-full" style={{ marginBottom: 12 }}>
           <label className="input-label">
             2ª Habilidade Inicial

@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect } from 'react'
 import { Copy, Check, Smartphone, Globe, Wifi } from 'lucide-react'
 import { generateQRCodeSvg } from '@shared/utils/qrCodeGenerator.js'
+import { copyToClipboard } from '@shared/utils/clipboard.js'
 
 export default function ShareSessionModal({ onClose, sessionCode, serverUrl, serverIps = [] }) {
   const [copied, setCopied] = useState(false)
@@ -50,12 +51,10 @@ export default function ShareSessionModal({ onClose, sessionCode, serverUrl, ser
   }, [joinUrl])
 
   const handleCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(joinUrl)
+    const success = await copyToClipboard(joinUrl)
+    if (success) {
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
-    } catch (err) {
-      console.error('Failed to copy', err)
     }
   }
 

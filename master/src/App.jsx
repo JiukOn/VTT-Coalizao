@@ -7,6 +7,10 @@ import DetailPanel from './components/layout/DetailPanel.jsx'
 import ContextMenu from './components/ui/ContextMenu.jsx'
 import NpcSpotlightOverlay from '@shared/components/NpcSpotlightOverlay.jsx'
 
+import NpcQuickGeneratorModal from './components/entities/NpcQuickGeneratorModal.jsx'
+import Modal from './components/common/Modal.jsx'
+import CharacterForm from './components/characters/CharacterForm.jsx'
+
 import { useLocalStorage } from './hooks/index.js'
 import { useServer } from './context/ServerContext.jsx'
 import { WS_STATUS } from './hooks/useWebSocket.js'
@@ -27,7 +31,6 @@ import TvDisplayPage    from './pages/TvDisplayPage.jsx'
 import SessionAnalyticsPage from './pages/SessionAnalyticsPage.jsx'
 
 const TABS = [
-  { id: 'mesa',        label: 'Mesa',        icon: 'zap' },
   { id: 'mapa',        label: 'Mapa',        icon: 'map' },
   { id: 'personagens', label: 'Personagens', icon: 'users' },
   { id: 'npcs',        label: 'NPCs',        icon: 'users' },
@@ -35,18 +38,19 @@ const TABS = [
   { id: 'habilidades', label: 'Habilidades', icon: 'zap' },
   { id: 'itens',       label: 'Itens',       icon: 'swords' },
   { id: 'campanha',    label: 'Campanha',    icon: 'book-open' },
-  { id: 'dominios',   label: 'Domínios',   icon: 'globe' },
+  { id: 'dominios',    label: 'Domínios',    icon: 'globe' },
   { id: 'metricas',    label: 'Métricas',    icon: 'bar-chart-2' },
   { id: 'servidor',    label: 'Servidor',    icon: 'server' },
 ]
 
 function App() {
-  const [activeTab, setActiveTab] = useState('mesa')
+  const [activeTab, setActiveTab] = useState('mapa')
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [detailPanelOpen, setDetailPanelOpen] = useState(false)
   const [selectedEntity, setSelectedEntity] = useState(null)
   const [contextMenu, setContextMenu] = useState(null)
   const [isTvMode, setIsTvMode] = useState(false)
+  const [generatorModalOpen, setGeneratorModalOpen] = useState(false)
 
   const [tableEntities, setTableEntities] = useLocalStorage('vtp_tableEntities', [])
 
@@ -85,15 +89,43 @@ function App() {
     }
   }, [serverOnline, broadcast, setTableEntities])
 
+  const [editingCharacter, setEditingCharacter] = useState(null)
+
+  const handleEditEntity = (entity) => {
+    if (!entity) return
+    // If it's a character/hero, open CharacterForm in edit mode
+    if (entity.classId || entity.speciesPrimary || entity.species || entity.tendencies) {
+      setEditingCharacter(entity)
+    } else {
+      // For other entities, select and open DetailPanel
+      handleSelectEntity(entity)
+    }
+  }
+
+  const handleDeleteEntity = async (entity) => {
+    if (!entity) return
+    try {
+      // Remove from active combat table
+      setTableEntities(prev => prev.filter(e => e.tableId !== entity.tableId && e.id !== entity.id))
+      // If it exists in characters database, delete it
+      if (entity.id && db.characters) {
+        await db.characters.delete(entity.id).catch(() => {})
+        window.dispatchEvent(new CustomEvent('vtp:roster_changed'))
+      }
+    } catch (err) {
+      console.error('Erro ao deletar entidade:', err)
+    }
+  }
+
   const handleEntityContextMenu = (e, entity) => {
     e.preventDefault()
     setContextMenu({
       position: { x: e.clientX, y: e.clientY },
       options: [
-        { label: 'Ver Detalhes',     action: () => handleSelectEntity(entity) },
-        { label: 'Adicionar à Mesa', action: () => handleAddToTable(entity) },
-        { label: 'Editar',           action: () => console.log('Editar', entity.name) },
-        { label: 'Deletar',          action: () => console.log('Deletar', entity.name), danger: true },
+        { label: 'Ver Detalhes / Ficha', action: () => handleSelectEntity(entity) },
+        { label: 'Adicionar à Mesa',     action: () => handleAddToTable(entity) },
+        { label: 'Editar',               action: () => handleEditEntity(entity) },
+        { label: 'Deletar',              action: () => handleDeleteEntity(entity), danger: true },
       ],
     })
   }
@@ -207,14 +239,17 @@ function App() {
         onTabChange={setActiveTab}
         serverOnline={serverOnline}
         onToggleTvMode={() => setIsTvMode(true)}
+        onOpenGenerator={() => setGeneratorModalOpen(true)}
       />
       <div className="app-body">
-        <Sidebar
-          isOpen={sidebarOpen}
-          onToggle={() => setSidebarOpen(!sidebarOpen)}
-          activeTab={activeTab}
-          onSelectEntity={handleSelectEntity}
-        />
+        {['personagens', 'npcs', 'bestiario', 'habilidades', 'itens'].includes(activeTab) && (
+          <Sidebar
+            isOpen={sidebarOpen}
+            onToggle={() => setSidebarOpen(!sidebarOpen)}
+            activeTab={activeTab}
+            onSelectEntity={handleSelectEntity}
+          />
+        )}
         <MainContent>
           {renderPage()}
         </MainContent>
@@ -232,6 +267,32 @@ function App() {
         setTableEntities={setTableEntities}
         onUpdateTableEntity={handleUpdateTableEntity}
       />
+
+      {generatorModalOpen && (
+        <NpcQuickGeneratorModal
+          isOpen={generatorModalOpen}
+          onClose={() => setGeneratorModalOpen(false)}
+          onAddEntity={handleAddToTable}
+        />
+      )}
+
+      {editingCharacter && (
+        <Modal
+          isOpen={!!editingCharacter}
+          onClose={() => setEditingCharacter(null)}
+          title={`Editar Personagem — ${editingCharacter.name || 'Herói'}`}
+        >
+          <CharacterForm
+            campaignId={editingCharacter.campaignId || 'coalizao'}
+            editCharacter={editingCharacter}
+            onSave={() => {
+              setEditingCharacter(null)
+              window.dispatchEvent(new CustomEvent('vtp:roster_changed'))
+            }}
+            onCancel={() => setEditingCharacter(null)}
+          />
+        </Modal>
+      )}
 
       {contextMenu && (
         <ContextMenu

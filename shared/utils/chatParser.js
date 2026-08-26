@@ -158,3 +158,29 @@ export function parseChatMessage(text, sender = 'Jogador') {
     error: `Comando desconhecido "/${command}". Digite /help para ver os comandos válidos.`,
   }
 }
+
+/**
+ * Quick helper to parse a dice command directly.
+ * @param {string} text 
+ * @returns {object|null}
+ */
+export function parseChatDiceCommand(text) {
+  const result = parseChatMessage(text, 'Mestre')
+  if (result.isCommand && result.type === 'roll' && !result.error) {
+    return result.data
+  }
+  return null
+}
+
+/**
+ * Formats a dice roll result object into readable display text.
+ * @param {object} rollData 
+ * @returns {{ fullText: string, result: number }}
+ */
+export function formatDiceResult(rollData) {
+  if (!rollData) return { fullText: '', result: 0 }
+  return {
+    fullText: rollData.formattedText || `Rolou ${rollData.formula}: ${rollData.total}`,
+    result: rollData.total || 0,
+  }
+}

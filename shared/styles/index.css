@@ -1,16 +1,18 @@
 /* ============================================================
    VTP COALIZÃO — Design System & Global Styles
+   Theme: LitRPG / Solo Leveling / SAO + Medieval Fantasy System
    ============================================================ */
 
 /* ── Google Fonts ─────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cinzel:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cinzel:wght@600;700;800&family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 /* ── CSS Custom Properties (Design Tokens) ───────────────── */
 :root {
   /* Typography */
-  --font-ui: 'Inter', sans-serif;
-  --font-heading: 'Cinzel', serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Cinzel', 'Times New Roman', serif;
+  --font-title: 'Rajdhani', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 
   /* Spacing Scale */
   --space-xs: 4px;
@@ -20,28 +22,30 @@
   --space-xl: 32px;
   --space-2xl: 48px;
 
-  /* Border Radius */
-  --radius-sm: 4px;
+  /* Border Radius — Sharp LitRPG Cyber-Fantasy aesthetic */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-xl: 16px;
   --radius-full: 9999px;
 
   /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-base: 300ms ease;
-  --transition-slow: 500ms ease;
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+  /* Shadows & Neon LitRPG Glows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --shadow-hud: 0 0 15px rgba(56, 189, 248, 0.25), inset 0 0 10px rgba(56, 189, 248, 0.05);
 
   /* Layout */
   --header-height: 56px;
   --sidebar-width: 280px;
   --detail-panel-width: 320px;
-  --bottom-bar-height: 200px;
+  --bottom-bar-height: 220px;
 
   /* Z-Index Scale */
   --z-base: 1;
@@ -53,109 +57,115 @@
   --z-toast: 60;
 }
 
-/* ── Dark Theme (Default) ────────────────────────────────── */
-[data-theme="dark"] {
-  --bg-primary: #0D0D12;
-  --bg-secondary: #16161F;
-  --bg-tertiary: #1E1E2E;
-  --bg-hover: #252536;
-  --border-subtle: #2A2A3C;
-  --border-focus: #9B59E8;
+/* ── Dark Theme (Default — Solo Leveling System / SAO HUD) ────────────────── */
+[data-theme="dark"], :root {
+  --bg-primary: #0A0A10;
+  --bg-secondary: #12121D;
+  --bg-tertiary: #1A1A28;
+  --bg-hover: #242438;
+  --border-subtle: #2A2B42;
+  --border-focus: #38BDF8;
 
-  --text-primary: #E8E8F0;
-  --text-secondary: #8888A0;
-  --text-muted: #555566;
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
 
-  --accent-primary: #9B59E8;
-  --accent-hover: #B07AFF;
-  --accent-active: #7B3FCC;
-  --accent-glow: rgba(155, 89, 232, 0.3);
-  --accent-subtle: rgba(155, 89, 232, 0.1);
+  /* Radiant Blue/Amber System Accent */
+  --accent-primary: #38BDF8;
+  --accent-hover: #60A5FA;
+  --accent-active: #0284C7;
+  --accent-glow: rgba(56, 189, 248, 0.35);
+  --accent-subtle: rgba(56, 189, 248, 0.12);
 
-  --color-success: #4ADE80;
-  --color-danger: #F87171;
-  --color-warning: #FBBF24;
-  --color-info: #60A5FA;
+  /* HP, ENR, and Status Colors */
+  --hp-bar-start: #DC2626;
+  --hp-bar-end: #EF4444;
+  --enr-bar-start: #2563EB;
+  --enr-bar-end: #38BDF8;
+  --xp-bar-start: #D97706;
+  --xp-bar-end: #FBBF24;
 
-  --color-critical: #4ADE80;
-  --color-disaster: #F87171;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-info: #38BDF8;
+
+  --color-critical: #10B981;
+  --color-disaster: #EF4444;
   --color-good: #86EFAC;
   --color-bad: #FCA5A5;
   --color-neutral: #FBBF24;
 
-  --scrollbar-thumb: #3A3A50;
-  --scrollbar-track: #16161F;
+  --scrollbar-thumb: #2D2E47;
+  --scrollbar-track: #10101A;
 
-  --shadow-glow: 0 0 20px rgba(155, 89, 232, 0.2);
+  --shadow-glow: 0 0 16px rgba(56, 189, 248, 0.25);
 }
 
-/* ── Light Theme ─────────────────────────────────────────── */
+/* ── Light Theme (Parchment & Mythic Scroll) ─────────────────── */
 [data-theme="light"] {
-  --bg-primary: #F5F3FF;
+  --bg-primary: #F8F6F0;
   --bg-secondary: #FFFFFF;
-  --bg-tertiary: #EDE9FE;
-  --bg-hover: #E4E0F5;
-  --border-subtle: #D4D0E8;
-  --border-focus: #7C3AED;
+  --bg-tertiary: #EFECE4;
+  --bg-hover: #E5E0D5;
+  --border-subtle: #D8D2C5;
+  --border-focus: #B45309;
 
-  --text-primary: #1A1A2E;
-  --text-secondary: #6B6B80;
-  --text-muted: #9999AA;
+  --text-primary: #1C1917;
+  --text-secondary: #57534E;
+  --text-muted: #78716C;
 
-  --accent-primary: #7C3AED;
-  --accent-hover: #6D28D9;
-  --accent-active: #5B21B6;
-  --accent-glow: rgba(124, 58, 237, 0.2);
-  --accent-subtle: rgba(124, 58, 237, 0.08);
+  --accent-primary: #D97706;
+  --accent-hover: #F59E0B;
+  --accent-active: #B45309;
+  --accent-glow: rgba(217, 119, 6, 0.25);
+  --accent-subtle: rgba(217, 119, 6, 0.1);
 
-  --color-success: #22C55E;
-  --color-danger: #EF4444;
-  --color-warning: #EAB308;
-  --color-info: #3B82F6;
+  --hp-bar-start: #DC2626;
+  --hp-bar-end: #EF4444;
+  --enr-bar-start: #2563EB;
+  --enr-bar-end: #38BDF8;
+  --xp-bar-start: #D97706;
+  --xp-bar-end: #FBBF24;
 
-  --color-critical: #22C55E;
-  --color-disaster: #EF4444;
-  --color-good: #4ADE80;
-  --color-bad: #F87171;
-  --color-neutral: #EAB308;
+  --color-success: #059669;
+  --color-danger: #DC2626;
+  --color-warning: #D97706;
+  --color-info: #0284C7;
 
-  --scrollbar-thumb: #C4C0D8;
-  --scrollbar-track: #EDE9FE;
+  --color-critical: #059669;
+  --color-disaster: #DC2626;
+  --color-good: #16A34A;
+  --color-bad: #DC2626;
+  --color-neutral: #D97706;
 
-  --shadow-glow: 0 0 20px rgba(124, 58, 237, 0.15);
+  --scrollbar-thumb: #C8C0B2;
+  --scrollbar-track: #EFECE4;
+
+  --shadow-glow: 0 0 16px rgba(217, 119, 6, 0.2);
 }
 
-/* ── Reset & Base ────────────────────────────────────────── */
-*,
-*::before,
-*::after {
+/* ── Global Reset & Base Styles ──────────────────────────── */
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html {
-  font-size: 16px;
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  font-family: var(--font-ui);
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  line-height: 1.5;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-}
-
-#root {
-  height: 100%;
-  width: 100%;
-}
-
-/* ── Scrollbar ───────────────────────────────────────────── */
+/* ── Scrollbars ──────────────────────────────────────────── */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -171,39 +181,39 @@ body {
   background: var(--accent-primary);
 }
 
-/* ── Typography ──────────────────────────────────────────── */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  color: var(--text-primary);
-  line-height: 1.2;
+/* ── System HUD Overlay Card Effects ─────────────────────── */
+.system-window {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 0 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
-h1 { font-size: 1.75rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.25rem; }
-h4 { font-size: 1.1rem; }
-
-.mono {
-  font-family: var(--font-mono);
+.system-window::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+  opacity: 0.8;
 }
 
-/* ── Links ───────────────────────────────────────────────── */
-a {
-  color: var(--accent-primary);
-  text-decoration: none;
-  transition: color var(--transition-fast);
-}
-a:hover { color: var(--accent-hover); }
-
-/* ── Selection ───────────────────────────────────────────── */
-::selection {
-  background: var(--accent-glow);
-  color: var(--text-primary);
+/* ── Utility Classes ─────────────────────────────────────── */
+.divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: var(--space-md) 0;
 }
 
-/* ── Focus ───────────────────────────────────────────────── */
-:focus-visible {
-  outline: 2px solid var(--accent-primary);
-  outline-offset: 2px;
+.glow-text {
+  text-shadow: 0 0 10px var(--accent-glow);
+}
+
+.glow-border {
+  border-color: var(--accent-primary) !important;
+  box-shadow: 0 0 12px var(--accent-glow);
 }

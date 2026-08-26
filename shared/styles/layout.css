@@ -11,14 +11,19 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  max-height: 100vh;
   width: 100vw;
+  max-width: 100vw;
   overflow: hidden;
+  position: fixed;
+  inset: 0;
 }
 
 /* ── App Body (below header) ─────────────────────────────── */
 .app-body {
   display: flex;
   flex: 1;
+  min-height: 0;
   overflow: hidden;
 }
 
@@ -116,6 +121,7 @@
 /* ── Main Content ────────────────────────────────────────── */
 .main-content {
   flex: 1;
+  min-height: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -151,20 +157,51 @@
 }
 
 /* ── Bottom Bar ──────────────────────────────────────────── */
+.bottom-bar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  z-index: 30;
+}
 .bottom-bar {
   height: var(--bottom-bar-height);
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-subtle);
-  display: flex;
+  display: flex !important;
+  flex-direction: column !important;
   flex-shrink: 0;
   overflow: hidden;
+  width: 100%;
   transition: height var(--transition-base);
 }
 .bottom-bar.collapsed {
+  height: 36px !important;
+}
+.bottom-bar-tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 10px;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+  width: 100%;
   height: 36px;
+}
+.bottom-bar-content {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+  height: calc(100% - 36px);
 }
 .bottom-bar-section {
   flex: 1;
+  min-width: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid var(--border-subtle);

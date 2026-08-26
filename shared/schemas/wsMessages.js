@@ -121,12 +121,16 @@ export const ResyncRequestSchema = z.object({
 
 export const ChatMessageSchema = z.object({
   type: z.literal('chat_message'),
-  sender: z.string(),
-  text: z.string().min(1).max(1000),
+  sender: z.string().optional(),
+  text: z.string().min(1).max(1000).optional(),
   target: z.string().optional(),
   isWhisper: z.boolean().optional(),
   timestamp: z.string().optional(),
-});
+  data: z.any().optional(),
+}).refine(
+  (msg) => (typeof msg.text === 'string' && msg.text.trim().length > 0) || (msg.data && typeof msg.data.text === 'string' && msg.data.text.trim().length > 0),
+  { message: 'chat_message must contain text either at root or inside data' }
+);
 
 export const MapPingSchema = z.object({
   type: z.literal('map_ping'),
@@ -168,19 +172,20 @@ export const AwardXpSchema = z.object({
 
 export const QuestUpdateSchema = z.object({
   type: z.literal('quest_update'),
-  quests: z.array(z.object({
-    id: z.string().or(z.number()),
-    title: z.string(),
-    description: z.string().optional(),
-    objectives: z.array(z.object({
-      id: z.string().or(z.number()),
-      text: z.string(),
-      completed: z.boolean(),
-    })).optional(),
-    rewardXp: z.number().optional(),
-    rewardGold: z.number().optional(),
-    status: z.enum(['active', 'completed', 'failed']).optional(),
-  })),
+  quests: z.array(z.any()).optional(),
+  data: z.any().optional(),
+});
+
+export const NpcDialogueSchema = z.object({
+  type: z.literal('npc_dialogue'),
+  data: z.object({
+    speakerName: z.string(),
+    text: z.string(),
+    portrait: z.string().optional(),
+    avatar: z.string().optional(),
+    tone: z.string().optional(),
+    subtitle: z.string().optional(),
+  }).or(z.record(z.any())),
 });
 
 export const SceneRevealSchema = z.object({
@@ -239,6 +244,7 @@ export const masterMessageSchema = z.discriminatedUnion('type', [
   AwardXpSchema,
   QuestUpdateSchema,
   SceneRevealSchema,
+  NpcDialogueSchema,
   VoiceSignalSchema,
   WeatherChangeSchema,
   AwardInspirationSchema,

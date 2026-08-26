@@ -1,7 +1,7 @@
-/* InventoryList.jsx — Backpack inventory list with encumbrance gauge and equip actions */
 import { useState } from 'react'
 import { Package, Plus, Trash2, Shield, Swords, PlusCircle, MinusCircle, AlertTriangle } from 'lucide-react'
 import { calculateTotalWeight, calculateMaxWeight, getEncumbranceStatus } from '@shared/utils/inventoryUtils.js'
+import { generateUUID } from '@shared/utils/uuid.js'
 
 export default function InventoryList({
   items = [],
@@ -25,7 +25,7 @@ export default function InventoryList({
     e.preventDefault()
     if (!newItemName.trim()) return
     const newItem = {
-      id: crypto.randomUUID(),
+      id: generateUUID(),
       name: newItemName.trim(),
       weight: parseFloat(newItemWeight) || 0.5,
       quantity: 1,

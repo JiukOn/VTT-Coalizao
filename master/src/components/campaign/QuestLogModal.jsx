@@ -1,6 +1,6 @@
-/* QuestLogModal.jsx — Master quest board manager and player synchronization */
 import { useState } from 'react'
 import { Target, CheckCircle2, Circle, Plus, Trash2, X, Award, Coins } from 'lucide-react'
+import { generateUUID } from '@shared/utils/uuid.js'
 
 export default function QuestLogModal({ isOpen, onClose, quests = [], onSaveQuests, onBroadcastQuests }) {
   const [selectedId, setSelectedId] = useState(quests[0]?.id || null)
@@ -12,14 +12,14 @@ export default function QuestLogModal({ isOpen, onClose, quests = [], onSaveQues
 
   const handleCreate = () => {
     const newQuest = {
-      id: crypto.randomUUID(),
+      id: generateUUID(),
       title: 'Nova Missão',
       description: 'Descrição dos objetivos desta missão...',
       status: 'active', // 'active' | 'completed' | 'failed'
       rewardXp: 100,
       rewardGold: 50,
       objectives: [
-        { id: crypto.randomUUID(), text: 'Primeiro objetivo', completed: false },
+        { id: generateUUID(), text: 'Primeiro objetivo', completed: false },
       ],
     }
     const updated = [...quests, newQuest]
@@ -235,7 +235,7 @@ export default function QuestLogModal({ isOpen, onClose, quests = [], onSaveQues
                           className="btn btn-ghost btn-sm"
                           onClick={() => setEditing({
                             ...editing,
-                            objectives: [...(editing.objectives || []), { id: crypto.randomUUID(), text: '', completed: false }],
+                            objectives: [...(editing.objectives || []), { id: generateUUID(), text: '', completed: false }],
                           })}
                         >
                           <Plus size={12} /> Adicionar Objetivo

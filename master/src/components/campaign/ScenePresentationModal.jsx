@@ -1,7 +1,7 @@
-/* ScenePresentationModal.jsx — Master modal to manage and broadcast immersive cinematic scenes / theater of the mind */
 import { useState } from 'react'
 import { Image as ImageIcon, Send, X, Plus, Sparkles, Eye } from 'lucide-react'
 import { compressToWebP } from '@shared/utils/imageCompressor.js'
+import { generateUUID } from '@shared/utils/uuid.js'
 
 const PRESET_SCENES = [
   {
@@ -71,7 +71,7 @@ export default function ScenePresentationModal({ isOpen, onClose, onBroadcastSce
     if (!newTitle.trim() || !newImage) return
 
     const newScene = {
-      id: crypto.randomUUID(),
+      id: generateUUID(),
       title: newTitle.trim(),
       subtitle: newSubtitle.trim() || undefined,
       description: newDesc.trim() || undefined,

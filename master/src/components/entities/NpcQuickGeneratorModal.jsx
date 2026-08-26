@@ -1,6 +1,6 @@
-/* NpcQuickGeneratorModal.jsx — Quick procedural NPC and creature generator for Master improvisation */
 import { useState } from 'react'
 import { Sparkles, Plus, RefreshCw, X, Shield, Swords, Heart, Zap, User } from 'lucide-react'
+import { generateUUID } from '@shared/utils/uuid.js'
 
 const ARCHETYPES = [
   {
@@ -85,7 +85,7 @@ function generateNpc(archetypeId) {
   const enr = Math.max(6, arch.baseEnr + variance)
 
   return {
-    id: crypto.randomUUID(),
+    id: generateUUID(),
     name: `${fullName} (${arch.name})`,
     title: arch.category,
     type: arch.type,
@@ -124,7 +124,7 @@ export default function NpcQuickGeneratorModal({ isOpen, onClose, onAddEntity })
       if (res.ok) {
         const pyNpc = await res.json()
         setGeneratedNpc({
-          id: crypto.randomUUID(),
+          id: generateUUID(),
           name: `${pyNpc.name} (${pyNpc.species} ${pyNpc.character_class} Nv ${pyNpc.level})`,
           title: `${pyNpc.species} · ${pyNpc.character_class}`,
           type: 'npc',

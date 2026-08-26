@@ -5,6 +5,7 @@ import EffectManager from '../effects/EffectManager.jsx'
 import NPCSheet from '../entities/NPCSheet.jsx'
 import CreatureSheet from '../entities/CreatureSheet.jsx'
 import { useLanguage } from '../../context/LanguageContext.jsx'
+import { getI18nText } from '@shared/utils/entityFormatting.js'
 
 const ATTR_LABELS = {
   vit: 'VIT', dex: 'DEX', crm: 'CRM', frc: 'FRC',
@@ -107,12 +108,12 @@ export default function DetailPanel({ isOpen, onToggle, entity, onAddToTable, ta
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-md)' }}>
                       <div className="entity-avatar" style={{ width: 56, height: 56, fontSize: '1.4rem' }}>
-                        {entity.name?.[0] || '?'}
+                        {getI18nText(entity.name)?.[0] || '?'}
                       </div>
                       <div>
-                        <div style={{ fontWeight: 600, fontSize: '1.1rem' }}>{entity.name}</div>
+                        <div style={{ fontWeight: 600, fontSize: '1.1rem' }}>{getI18nText(entity.name)}</div>
                         <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                          {entity.class || entity.type || '—'} {entity.level ? `· Nível ${entity.level}` : ''}
+                          {getI18nText(entity.class || entity.type) || '—'} {entity.level ? `· Nível ${entity.level}` : ''}
                         </div>
                       </div>
                     </div>
@@ -123,25 +124,25 @@ export default function DetailPanel({ isOpen, onToggle, entity, onAddToTable, ta
                       {entity.species && (
                         <div className="detail-info-row">
                           <span className="stat-label">Espécie</span>
-                          <span style={{ fontSize: '0.85rem' }}>{entity.species}</span>
+                          <span style={{ fontSize: '0.85rem' }}>{getI18nText(entity.species)}</span>
                         </div>
                       )}
                       {entity.personality && (
                         <div className="detail-info-row">
                           <span className="stat-label">Personalidade</span>
-                          <span style={{ fontSize: '0.85rem' }}>{entity.personality}</span>
+                          <span style={{ fontSize: '0.85rem' }}>{getI18nText(entity.personality)}</span>
                         </div>
                       )}
                       {entity.size && (
                         <div className="detail-info-row">
                           <span className="stat-label">Tamanho</span>
-                          <span style={{ fontSize: '0.85rem' }}>{entity.size}</span>
+                          <span style={{ fontSize: '0.85rem' }}>{getI18nText(entity.size)}</span>
                         </div>
                       )}
                       {entity.behavior && (
                         <div className="detail-info-row">
                           <span className="stat-label">Comportamento</span>
-                          <span style={{ fontSize: '0.85rem' }}>{entity.behavior}</span>
+                          <span style={{ fontSize: '0.85rem' }}>{getI18nText(entity.behavior)}</span>
                         </div>
                       )}
                       {entity.element && entity.element !== '—' && (

@@ -11,6 +11,7 @@ import MasterToolsPanel from '../components/campaign/MasterToolsPanel.jsx'
 import NpcQuickGeneratorModal from '../components/entities/NpcQuickGeneratorModal.jsx'
 import { useLanguage } from '../context/LanguageContext.jsx'
 import { useUndoStack, useUndoKeyboard } from '@shared/hooks/useUndoStack.js'
+import { generateUUID } from '@shared/utils/uuid.js'
 
 const QUICK_STATS = [
   { icon: Users, label: 'Heroes', color: '#4ADE80', table: 'characters' },
@@ -398,14 +399,18 @@ export default function DashboardPage({ onSelectEntity, onEntityContextMenu, tab
           onAddEntity={(npc) => {
             const tableEntity = {
               ...npc,
-              tableId: crypto.randomUUID(),
+              tableId: generateUUID(),
               initiative: Math.floor(Math.random() * 20) + 1 + Math.floor(((npc.attributes?.dex || 10) - 10) / 2),
             }
-            setTableEntities?.(prev => {
-              const next = [...prev, tableEntity]
-              push({ type: 'table_update', description: 'Add quick NPC', inverse: prev, data: next })
-              return next
-            })
+            if (setTableEntities) {
+              setTableEntities(prev => {
+                const next = [...prev, tableEntity]
+                setTimeout(() => {
+                  push({ type: 'table_update', description: 'Add quick NPC', inverse: prev, data: next })
+                }, 0)
+                return next
+              })
+            }
           }}
         />
       )}

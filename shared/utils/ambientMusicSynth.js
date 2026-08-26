@@ -27,9 +27,11 @@ class DynamicAmbientMusic {
 
     if (typeof window !== 'undefined') {
       const unlock = () => {
-        this._initContext()
-        if (this._ctx && this._ctx.state === 'suspended') {
-          this._ctx.resume().catch(() => {})
+        if (this._activeMood !== 'off') {
+          this._initContext()
+          if (this._ctx && this._ctx.state === 'suspended') {
+            this._ctx.resume().catch(() => {})
+          }
         }
       }
       window.addEventListener('pointerdown', unlock, { once: true, passive: true })
@@ -39,13 +41,15 @@ class DynamicAmbientMusic {
 
   _initContext() {
     if (!this._ctx && typeof window !== 'undefined') {
-      const AudioContextClass = window.AudioContext || window.webkitAudioContext
-      if (AudioContextClass) {
-        this._ctx = new AudioContextClass()
-        this._masterGain = this._ctx.createGain()
-        this._masterGain.gain.setValueAtTime(this._volume, this._ctx.currentTime)
-        this._masterGain.connect(this._ctx.destination)
-      }
+      try {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext
+        if (AudioContextClass) {
+          this._ctx = new AudioContextClass()
+          this._masterGain = this._ctx.createGain()
+          this._masterGain.gain.setValueAtTime(this._volume, this._ctx.currentTime)
+          this._masterGain.connect(this._ctx.destination)
+        }
+      } catch { /* ignore autoplay policy before user gesture */ }
     }
   }
 

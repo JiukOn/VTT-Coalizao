@@ -156,8 +156,9 @@ export function handleMasterMessage(ctx, clientId, ws, msg) {
     // ── Quest Board Updates ───────────────────────────────────────────────────
     case 'quest_update': {
       if (client.role !== 'host') return true;
-      ctx.setCachedQuests?.(msg.quests || []);
-      ctx.broadcastToRole('player', { type: 'quest_update', quests: msg.quests });
+      const quests = msg.quests || msg.data?.quests || msg.data || [];
+      ctx.setCachedQuests?.(Array.isArray(quests) ? quests : []);
+      ctx.broadcastToRole('player', { type: 'quest_update', quests: Array.isArray(quests) ? quests : [] });
       return true;
     }
 
@@ -165,6 +166,13 @@ export function handleMasterMessage(ctx, clientId, ws, msg) {
     case 'scene_reveal': {
       if (client.role !== 'host') return true;
       ctx.broadcastToRole('player', { type: 'scene_reveal', data: msg.data });
+      return true;
+    }
+
+    // ── NPC Visual Novel Dialogue ─────────────────────────────────────────────
+    case 'npc_dialogue': {
+      if (client.role !== 'host') return true;
+      ctx.broadcastToRole('player', { type: 'npc_dialogue', data: msg.data });
       return true;
     }
 
@@ -192,13 +200,17 @@ export function handleMasterMessage(ctx, clientId, ws, msg) {
     // ── Chat Messages ─────────────────────────────────────────────────────────
     case 'chat_message': {
       if (client.role !== 'host') return true;
-      msg.sender = msg.sender || 'Mestre';
-      const out = JSON.stringify(msg);
+      const text = msg.text || msg.data?.text || '';
+      const sender = msg.sender || msg.data?.sender || 'Mestre';
+      const target = msg.target || msg.data?.target;
+      const isWhisper = Boolean(msg.isWhisper || msg.data?.isWhisper);
+      const normalizedMsg = { type: 'chat_message', sender, text, target, isWhisper, timestamp: msg.timestamp || new Date().toISOString() };
+      const out = JSON.stringify(normalizedMsg);
 
-      if (msg.isWhisper && msg.target) {
+      if (isWhisper && target) {
         let targetClient = null;
         for (const c of ctx.clients.values()) {
-          if (c.playerName === msg.target || c.role === msg.target) {
+          if (c.playerName === target || c.role === target) {
             targetClient = c;
             break;
           }

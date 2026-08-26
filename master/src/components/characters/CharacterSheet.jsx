@@ -6,6 +6,7 @@ import {
 } from 'lucide-react'
 import { ATTRIBUTES, getBonus } from '../../utils/characterUtils'
 import { BASE_AURAS, AURA_RULES } from '@data/auras/index'
+import { getI18nText } from '@shared/utils/entityFormatting.js'
 
 const EQUIP_SLOTS = [
   { key: 'cabeca',      label: 'Cabeça',   icon: Crown },
@@ -37,15 +38,15 @@ export default function CharacterSheet({ character, onUpdate }) {
       <div className="cs-header">
         <div className="cs-avatar" style={{ background: character.tokenColor || 'var(--accent-primary)' }}>
           {character.tokenImage
-            ? <img src={character.tokenImage} alt={character.name} />
-            : <span>{character.name?.[0] || '?'}</span>
+            ? <img src={character.tokenImage} alt={getI18nText(character.name)} />
+            : <span>{getI18nText(character.name)?.[0] || '?'}</span>
           }
         </div>
         <div className="cs-identity">
-          <h2 className="cs-name">{character.name} {character.surname}</h2>
+          <h2 className="cs-name">{getI18nText(character.name)} {getI18nText(character.surname)}</h2>
           <div className="cs-meta">
-            {character.classId && <span className="badge badge-accent">{character.classId}</span>}
-            {character.species && <span className="badge badge-info">{character.species}</span>}
+            {character.classId && <span className="badge badge-accent">{getI18nText(character.classId)}</span>}
+            {character.species && <span className="badge badge-info">{getI18nText(character.species)}</span>}
             <span className="badge badge-warning">Nível {character.level}</span>
           </div>
           <div className="cs-xp-bar">
@@ -160,7 +161,7 @@ export default function CharacterSheet({ character, onUpdate }) {
               <div key={slot.key} className={`cs-equip-slot ${item ? 'cs-equip-filled' : ''}`}>
                 <Icon size={18} />
                 <span className="cs-equip-label">{slot.label}</span>
-                <span className="cs-equip-item">{item?.name || '—'}</span>
+                <span className="cs-equip-item">{item ? getI18nText(item.name || item) : '—'}</span>
               </div>
             )
           })}
@@ -176,9 +177,9 @@ export default function CharacterSheet({ character, onUpdate }) {
           <div className="cs-ability-list">
             {character.abilities.map((ab, i) => (
               <div key={i} className="cs-ability-item card">
-                <div className="cs-ability-name">{ab.name || ab}</div>
-                {ab.description && <div className="cs-ability-desc text-muted">{ab.description}</div>}
-                {ab.category && <span className="badge badge-accent">{ab.category}</span>}
+                <div className="cs-ability-name">{getI18nText(ab.name || ab)}</div>
+                {ab.description && <div className="cs-ability-desc text-muted">{getI18nText(ab.description)}</div>}
+                {ab.category && <span className="badge badge-accent">{getI18nText(ab.category)}</span>}
               </div>
             ))}
           </div>
@@ -196,7 +197,7 @@ export default function CharacterSheet({ character, onUpdate }) {
           <div className="cs-effects-list">
             {character.activeEffects.map((ef, i) => (
               <div key={i} className="cs-effect-item">
-                <span className="cs-effect-name">{ef.name || ef}</span>
+                <span className="cs-effect-name">{getI18nText(ef.name || ef)}</span>
                 {ef.duration != null && (
                   <span className="badge badge-warning">{ef.duration} turno{ef.duration !== 1 ? 's' : ''}</span>
                 )}
@@ -217,7 +218,7 @@ export default function CharacterSheet({ character, onUpdate }) {
           <div className="cs-inventory-grid">
             {character.inventory.map((item, i) => (
               <div key={i} className="cs-inv-item card">
-                <span>{item.name || item}</span>
+                <span>{getI18nText(item.name || item)}</span>
                 {item.quantity > 1 && <span className="badge badge-info">x{item.quantity}</span>}
               </div>
             ))}
@@ -239,17 +240,17 @@ export default function CharacterSheet({ character, onUpdate }) {
             <h3 className="cs-section-title"><Eye size={16} /> Aura</h3>
             {auraData ? (
               <div className="cs-aura card">
-                <div className="cs-aura-name">{auraData.name}</div>
-                <p className="text-muted" style={{ fontSize: '0.85rem' }}>{auraData.description}</p>
+                <div className="cs-aura-name">{getI18nText(auraData.name)}</div>
+                <p className="text-muted" style={{ fontSize: '0.85rem' }}>{getI18nText(auraData.description)}</p>
                 <div className="cs-aura-meta">
-                  <span className="badge badge-accent">{auraData.effect}</span>
+                  <span className="badge badge-accent">{getI18nText(auraData.effect)}</span>
                   <span className="text-muted" style={{ fontSize: '0.75rem' }}>
                     Alcance: {6 + character.level}m | Duração: {AURA_RULES.duration}
                   </span>
                 </div>
               </div>
             ) : (
-              <p className="text-muted" style={{ fontSize: '0.85rem' }}>{character.aura}</p>
+              <p className="text-muted" style={{ fontSize: '0.85rem' }}>{getI18nText(character.aura)}</p>
             )}
           </section>
         </>

@@ -1,7 +1,7 @@
-/* HandoutModal.jsx — Master handout manager with cinematic player reveal */
 import { useState } from 'react'
 import { Scroll, Eye, Plus, Trash2, X, Send, Sparkles, Image as ImageIcon } from 'lucide-react'
 import { compressToWebP } from '@shared/utils/imageCompressor.js'
+import { generateUUID } from '@shared/utils/uuid.js'
 
 const HANDOUT_TYPES = [
   { id: 'letter',   name: '📜 Carta / Pergaminho', bg: '#2C2018', border: '#8B5A2B', font: 'serif' },
@@ -21,7 +21,7 @@ export default function HandoutModal({ isOpen, onClose, handouts = [], onSaveHan
 
   const handleCreate = () => {
     const newHandout = {
-      id: crypto.randomUUID(),
+      id: generateUUID(),
       title: 'Novo Documento',
       type: 'letter',
       author: 'Desconhecido',

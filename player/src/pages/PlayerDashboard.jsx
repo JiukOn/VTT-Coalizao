@@ -6,7 +6,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import {
   Dices, Activity, User, Swords, FileText, ScrollText,
   LogOut, Wifi, WifiOff, ChevronRight, Map,
-  Target, Scroll, CheckCircle2, Circle, Award, Coins, Moon, Store, Wrench, Sparkles
+  Target, Scroll, CheckCircle2, Circle, Award, Coins, Moon, Store, Wrench, Sparkles, Settings
 } from 'lucide-react'
 import { rollDice, classifyD20, classifyD4 } from '../utils/diceRoller.js'
 import { getBonus } from '../utils/characterUtils.js'
@@ -19,6 +19,8 @@ import PlayerHandoutOverlay from '../components/handouts/PlayerHandoutOverlay.js
 import PlayerSceneOverlay from '../components/scenes/PlayerSceneOverlay.jsx'
 import NpcSpotlightOverlay from '@shared/components/NpcSpotlightOverlay.jsx'
 import ActionHotbar from '@shared/components/ActionHotbar.jsx'
+import SettingsModal from '@shared/components/SettingsModal.jsx'
+import { generateUUID } from '@shared/utils/uuid.js'
 import EquipmentSlots from '../components/character/EquipmentSlots.jsx'
 import InventoryList from '../components/character/InventoryList.jsx'
 import QuickMacrosBar from '../components/hud/QuickMacrosBar.jsx'
@@ -82,6 +84,7 @@ export default function PlayerDashboard({ session, onDisconnect }) {
   const [merchantModalOpen, setMerchantModalOpen] = useState(false)
   const [craftingModalOpen, setCraftingModalOpen] = useState(false)
   const [skillModalOpen, setSkillModalOpen]       = useState(false)
+  const [settingsModalOpen, setSettingsModalOpen] = useState(false)
   const [activeDialogue, setActiveDialogue]       = useState(null)
   const [latencyMs, setLatencyMs]                 = useState(null)
   const pingTimestampRef                          = useRef(0)
@@ -134,7 +137,7 @@ export default function PlayerDashboard({ session, onDisconnect }) {
 
   // ── WebSocket event handler ───────────────────────────────────────────────
   const addLog = useCallback((msg, chatData = null, rollData = null) => {
-    const id = crypto.randomUUID()
+    const id = generateUUID()
     const time = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
     if (rollData) {
       setLogEntries(prev => [{ id, time, msg: msg || '', rollData }, ...prev].slice(0, 100))
@@ -398,6 +401,14 @@ export default function PlayerDashboard({ session, onDisconnect }) {
             {wsStatus === 'connected' ? <Wifi size={12} /> : <WifiOff size={12} />}
             {wsStatus === 'connected' ? `${latencyMs != null ? `${latencyMs}ms · ` : ''}Online` : 'Offline'}
           </span>
+          <button
+            className="btn btn-ghost btn-sm"
+            onClick={() => setSettingsModalOpen(true)}
+            title="Configurações Gerais"
+            style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: '0.75rem' }}
+          >
+            <Settings size={12} />
+          </button>
           <button
             className="btn btn-ghost btn-sm"
             onClick={handleDisconnect}
@@ -699,6 +710,14 @@ export default function PlayerDashboard({ session, onDisconnect }) {
           onDismiss={() => setActiveDialogue(null)}
         />
       )}
+
+      {/* Central Settings & Customization Modal */}
+      {settingsModalOpen && (
+        <SettingsModal
+          isOpen={settingsModalOpen}
+          onClose={() => setSettingsModalOpen(false)}
+        />
+      )}
     </div>
   )
 }
@@ -714,7 +733,7 @@ function TabDados({ wsSend, playerName, addLog }) {
     const used  = advantage ? Math.max(...results) : results[0]
     const cl    = sides === 20 ? classifyD20(used) : null
 
-    const id = crypto.randomUUID()
+    const id = generateUUID()
     const time = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
     const entry = { id, sides, results, used, label: cl?.label || '', time }
     setHistory(prev => [entry, ...prev].slice(0, 30))

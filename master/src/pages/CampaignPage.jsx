@@ -7,6 +7,7 @@ import { exportCampaign, downloadJSON, importCampaign } from '../services/campai
 import { getBonus } from '../utils/characterUtils.js'
 import { useLanguage } from '../context/LanguageContext.jsx'
 import CampaignBackupsModal from '../components/campaign/CampaignBackupsModal.jsx'
+import { getI18nText } from '@shared/utils/entityFormatting.js'
 
 // ── 5.14 Domain System ────────────────────────────────────────────────────────
 
@@ -80,7 +81,7 @@ function DomainPanel({ characters }) {
               onChange={e => { setLeaderId(e.target.value); setSpentPc(0); setActionLog([]) }}
             >
               <option value="">Selecione um personagem...</option>
-              {characters.map(c => <option key={c.id} value={c.id}>{c.name} — Nv{c.level}</option>)}
+              {characters.map(c => <option key={c.id} value={c.id}>{getI18nText(c.name)} — Nv{c.level}</option>)}
             </select>
           </div>
 

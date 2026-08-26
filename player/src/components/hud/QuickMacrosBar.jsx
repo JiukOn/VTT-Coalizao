@@ -1,6 +1,6 @@
-/* QuickMacrosBar.jsx — Customizable quick macro shortcuts bar for players */
 import { useState, useEffect } from 'react'
 import { Terminal, Plus, Trash2, X, Play } from 'lucide-react'
+import { generateUUID } from '@shared/utils/uuid.js'
 
 const DEFAULT_MACROS = [
   { id: 'm1', label: 'Percepção', command: '/r 1d20+int [Teste de Percepção]', color: '#38BDF8' },
@@ -31,7 +31,7 @@ export default function QuickMacrosBar({ onExecuteCommand }) {
     e.preventDefault()
     if (!editLabel.trim() || !editCommand.trim()) return
     const newMacro = {
-      id: crypto.randomUUID(),
+      id: generateUUID(),
       label: editLabel.trim(),
       command: editCommand.trim(),
       color: editColor,

@@ -31,17 +31,64 @@ export default function PlayerLoginPage({ onConnect }) {
     const nameParam = params.get('name')
     const serverParam = params.get('server')
 
+    let effectiveCode = ''
+    let effectiveServer = ''
+
     if (codeParam) {
-      setCampaignCode(codeParam.toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 6))
+      effectiveCode = codeParam.toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 6)
+      setCampaignCode(effectiveCode)
       setHasInvite(true)
     }
     if (nameParam) {
       setPlayerName(nameParam)
     }
     if (serverParam) {
+      effectiveServer = serverParam
       setCustomServerUrl(serverParam)
       setMode('custom')
       setShowAdvanced(true)
+    }
+
+    // Auto-connect if code is provided via URL
+    if (effectiveCode && effectiveCode.length === 6) {
+      const targetWs = effectiveServer || (serverParam ? serverParam : `ws://${window.location.hostname}:3001`)
+      setConnecting(true)
+      const ws = new WebSocket(targetWs)
+      const timeout = setTimeout(() => {
+        try { ws.close() } catch { /* ignore */ }
+        setConnecting(false)
+      }, 6000)
+
+      ws.onopen = () => {
+        ws.send(JSON.stringify({ type: 'get_characters', campaignCode: effectiveCode }))
+      }
+      ws.onmessage = (evt) => {
+        try {
+          const msg = JSON.parse(evt.data)
+          if (msg.type === 'character_list') {
+            clearTimeout(timeout)
+            ws.close()
+            const normalized = (msg.characters || []).map(c => {
+              if (typeof c === 'string') return { id: c, name: c, hasPassword: false }
+              return c
+            })
+            setAvailableCharacters(normalized)
+            if (normalized.length > 0) {
+              setPlayerName(nameParam || normalized[0].name)
+              setSelectedCharacterId(normalized[0].id || '')
+            }
+            setStep(2)
+            setConnecting(false)
+          }
+        } catch {
+          clearTimeout(timeout)
+          setConnecting(false)
+        }
+      }
+      ws.onerror = () => {
+        clearTimeout(timeout)
+        setConnecting(false)
+      }
     }
   }, [])
 

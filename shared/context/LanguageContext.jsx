@@ -6,6 +6,8 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react'
 import { UI_STRINGS } from '../i18n/ui.js'
 
+import { getI18nText } from '../utils/entityFormatting.js'
+
 const LanguageContext = createContext()
 
 const STORAGE_KEY = 'vtp-locale'
@@ -22,12 +24,9 @@ export function LanguageProvider({ children }) {
     document.documentElement.setAttribute('data-locale', locale)
   }, [locale])
 
-  /** Resolve an i18n object or passthrough a plain string */
+  /** Resolve an i18n object or passthrough a plain string safely */
   const t = useCallback((value) => {
-    if (value == null) return ''
-    if (typeof value === 'string') return value
-    if (typeof value === 'object') return value[locale] || value['pt-br'] || ''
-    return String(value)
+    return getI18nText(value, locale)
   }, [locale])
 
   /** Lookup a UI label from the static dictionary */

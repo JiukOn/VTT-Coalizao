@@ -19,11 +19,28 @@ let initialized = false
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
+const IGNORED_PATTERNS = [
+  'chrome-extension://',
+  'moz-extension://',
+  'spa-maker',
+  'cuponomia',
+  'wrapper-cuponomia',
+  'Access to storage is not allowed',
+  'ResizeObserver loop',
+]
+
+function shouldIgnoreEntry(entry) {
+  if (!entry) return true
+  const text = `${entry.message || ''} ${entry.source || ''} ${entry.stack || ''}`.toLowerCase()
+  return IGNORED_PATTERNS.some(p => text.includes(p.toLowerCase()))
+}
+
 function getTimestamp() {
   return new Date().toISOString()
 }
 
 function addEntry(entry) {
+  if (shouldIgnoreEntry(entry)) return
   errorBuffer.push(entry)
   if (errorBuffer.length > MAX_STORED_ERRORS) {
     errorBuffer = errorBuffer.slice(-MAX_STORED_ERRORS)
